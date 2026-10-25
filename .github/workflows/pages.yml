@@ -1,0 +1,44 @@
+name: "FatoVia | Hospedagem publica de imagens"
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "docs/**"
+      - ".github/workflows/pages.yml"
+  workflow_run:
+    workflows: ["FatoVia | Radar documental seguro"]
+    types: [completed]
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "fatovia-pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout do ultimo commit disponivel
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Configurar hospedagem Pages
+        uses: actions/configure-pages@v5
+      - name: Enviar apenas conteudo publico (docs)
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./docs
+      - name: Publicar site e JPEGs
+        id: deployment
+        uses: actions/deploy-pages@v4
