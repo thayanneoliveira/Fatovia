@@ -1,0 +1,4 @@
+FatoVia | teste de hospedagem GitHub Pages
+Proposito: verificar deploy do workflow personalizado.
+Sem informacoes eleitorais e sem publicacao no Instagram.
+Verificacao inicial: 2026-10-25
