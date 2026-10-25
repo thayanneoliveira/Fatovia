@@ -1,34 +1,71 @@
-# FatoVia | Motor editorial autônomo
+# FatoVia | Motor editorial autônomo (fase 1)
 
-Projeto de monitoramento documental de políticas públicas, com fontes oficiais, histórico de publicações, prevenção de repetição e produção automática de carrosséis.
+> **Estado: radar documental instalado no GitHub e executado com sucesso. Publicação no Instagram DESATIVADA.**
 
-**Estado inicial: modo seguro. A publicação no Instagram não está ativada.**
+## O que está funcionando
 
-## Fases
+- Workflow do GitHub Actions: varreduras às 02h17, 08h17, 14h17 e 20h17 (America/Fortaleza), sujeitas a atrasos do GitHub.
+- Fonte inicial: dados abertos da Câmara dos Deputados, com ementa e registro de tramitação.
+- Classificação e seleção por assunto, fonte, novidade e diversidade editorial, sem ranqueamento de candidaturas.
+- Memória anti-repetição por ID, versão da tramitação e resumo; histórico dos **3 posts do @fato.via** importado.
+- Geração de **7 imagens JPEG 1080×1350** em verde profundo e creme, armazenadas em `docs/media/` quando houver pauta aprovada.
+- Até 8 itens na fila; cada varredura prepara no máximo 2 pautas.
+- Métricas opcionais da API Meta, com parâmetros conservadores na ausência de dados.
+- Testes automatizados antes de cada varredura e relatório em `data/last_report.json`.
+- Sincronização segura dos commits para evitar perda de atualizações por concorrência.
 
-1. **Radar:** consultar propostas e tramitações em fonte oficial, salvar pautas novas.
-2. **Produção:** criar 7 JPEGs no formato 1080×1350 e legenda com rastreabilidade.
-3. **Memória:** manter IDs, versões e 3 posts históricos já publicados no @fato.via.
-4. **Aprendizado:** comparar métricas, desde que a coleta esteja conectada e haja amostra.
-5. **Distribuição:** habilitar hospedagem pública e API Meta após testes ponta a ponta e revisão de segurança.
+**Importante:** apenas a seleção documental e a produção mecânica estão implementadas. Não há ainda análise multiponte, geração por LLM, site público, publicação nem retroalimentação efetiva sem dados de métricas.
 
 ## Executar
+
 ```bash
 python -m pip install -r requirements.txt
 python -m unittest discover -s tests -v
 python -m fatovia report
 python -m fatovia scan
+python -m fatovia demo
+python -m fatovia metrics
 ```
 
-## Segurança
-- Dados oficiais não equivalem a comprovação de viabilidade ou implementação.
-- Nada é publicado automaticamente no Instagram nesta versão.
-- Conteúdo sem fonte verificável não entra na fila.
-- O sistema não ranqueia candidatos nem recomenda voto.
-- Sem fontes válidas, gera relatório e não inventa publicações.
-- Credenciais nunca devem ser armazenadas em arquivos versionados.
+O comando `demo` cria arquivos de teste fictícios em `demo/cards` (não destinados ao Instagram). O comando `scan` requer acesso à API da Câmara.
 
-## Atenção: repositório privado
-O GitHub Pages gratuito pode não estar disponível neste repositório privado. Não altere a visibilidade sem avaliar o impacto. Hospedagem das imagens será configurada separadamente.
+## Automação agendada
 
-Este repositório será aprimorado gradualmente, começando pelo teste do radar e das imagens.
+Workflow: [FatoVia | Radar documental seguro](.github/workflows/editorial.yml).
+
+No GitHub, abra **Actions**, selecione o workflow e use **Run workflow** para executar fora do agendamento.
+
+As imagens não aparecem se nenhum assunto passar nos filtros. Isso é uma decisão intencional: não se inventam pautas para completar a meta de posts.
+
+## Métricas (inativas até configurar)
+
+A coleta opcional usa a API oficial Meta. Para habilitar, é necessária credencial válida em **Settings > Secrets and variables > Actions**:
+
+- Secret: `META_ACCESS_TOKEN` obtido por fluxo oficial do seu app Meta, com permissões de leitura adequadas.
+- Variable: `METRICS_ENABLED=true`.
+
+Nunca cole o token em arquivos, issues ou conversas. A integração Windsor.ai existente no ChatGPT não transfere automaticamente credenciais para o GitHub.
+
+## Próxima fase, ainda não executada
+
+1. Estender radar a outras fontes oficiais e monitorar alterações de propostas antigas.
+2. Implantar etapa de investigação com verificações e fontes cruzadas.
+3. Habilitar uma hospedagem pública gratuita para JPEGs.
+4. Integrar publicação pela API Meta e conferir o retorno real.
+5. Ativar aprendizado de horários e frequência com amostra suficiente.
+6. Alertas, auditoria de qualidade e mecanismos para pausar/publicar novamente apenas com segurança.
+
+## Visibilidade e custo
+
+O repositório está **privado**. No GitHub Free, o Pages para hospedagem é oferecido em repositórios públicos. Para manter o código privado, será preciso escolher outra hospedagem pública de imagens, ou separar um repositório público somente para mídias.
+
+Os workflows privados podem consumir a franquia gratuita de minutos do GitHub Actions. Consulte seu limite antes de elevar a frequência.
+
+## Regras permanentes
+
+- Sem fonte confiável, **não há postagem**.
+- Proposição não equivale a lei nem comprova resultado.
+- Não recomendar votos nem ranquear candidaturas.
+- Impedir repetição sem mudança material, e manter rastreabilidade.
+- Sem autorização expressa e infraestrutura validada, **não publicar externamente**.
+- Credenciais nunca devem ser versionadas.
