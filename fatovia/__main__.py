@@ -5,6 +5,7 @@ from pathlib import Path
 
 from .engine import choose, load, now_local, rollup_report, save, scan_camara, from_camara
 from .render import render
+from .analytics import pull_metrics
 
 STATE = Path("data/state.json")
 REPORT = Path("data/last_report.json")
@@ -12,10 +13,15 @@ REPORT = Path("data/last_report.json")
 
 def main():
     parser = argparse.ArgumentParser(description="FatoVia: radar documental seguro")
-    parser.add_argument("command", choices=("scan", "report", "demo"))
+    parser.add_argument("command", choices=("scan", "report", "demo", "metrics"))
     command = parser.parse_args().command
     state = load(STATE)
     now = now_local()
+    if command == "metrics":
+        result = pull_metrics(state)
+        save(STATE, state)
+        print(json.dumps(result, ensure_ascii=False))
+        return
     if command == "report":
         print(json.dumps(rollup_report(state, now, 0, 0), indent=2, ensure_ascii=False))
         return
