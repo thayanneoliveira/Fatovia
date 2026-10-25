@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "blackout_dates": [
+    "2026-10-25",
+    "2026-10-26"
+  ],
+  "metrics": [],
+  "pending": [],
+  "published": [
+    {
+      "id": "historico:boas-vindas",
+      "version": "original",
+      "title": "A eleição passou. Agora começa a cobrança.",
+      "media_id": "18133851565669131",
+      "published_at": "2026-10-25T17:15:09-03:00",
+      "permalink": "https://www.instagram.com/p/De7islTPxzQ/",
+      "topics": [
+        "cidadania"
+      ]
+    },
+    {
+      "id": "historico:ia-sus",
+      "version": "original",
+      "title": "IA no SUS: agendamento e prontuário eletrônico",
+      "media_id": "18640219321045689",
+      "published_at": "2026-10-25T17:33:43-03:00",
+      "permalink": "https://www.instagram.com/p/De7k2bSD-1H/",
+      "topics": [
+        "saude",
+        "tecnologia"
+      ]
+    },
+    {
+      "id": "historico:conta-luz",
+      "version": "original",
+      "title": "Conta de luz: descontos e encargos",
+      "media_id": "18133402687752028",
+      "published_at": "2026-10-25T17:49:13-03:00",
+      "permalink": "https://www.instagram.com/p/De7mnC2jSYq/",
+      "topics": [
+        "economia",
+        "infraestrutura"
+      ]
+    }
+  ]
+}
