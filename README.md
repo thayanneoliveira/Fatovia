@@ -46,18 +46,26 @@ A coleta opcional usa a API oficial Meta. Para habilitar, é necessária credenc
 
 Nunca cole o token em arquivos, issues ou conversas. A integração Windsor.ai existente no ChatGPT não transfere automaticamente credenciais para o GitHub.
 
+## Infraestrutura de mídias públicas (fase 2)
+
+O repositório já é público. O projeto tem um segundo workflow [FatoVia | Hospedagem pública de imagens](.github/workflows/pages.yml). Ele só publica os arquivos de `docs/`, inclusive os JPEGs. **O GitHub Pages ainda requer ativação nas configurações.**
+
+**Passo obrigatório uma única vez:** no repositório, entre em **Settings → Pages → Build and deployment → Source → GitHub Actions**. Após a ativação, o próximo workflow bem-sucedido pode publicar as imagens automaticamente. O arquivo `docs/media/healthcheck.jpg` é apenas teste técnico, não pode ser publicado como post.
+
+A página tem um catálogo `docs/manifest.json` atualizado pelo motor para facilitar inspeção e testes. Ter imagens visíveis por URL **não ativa nem autoriza** publicação no Instagram.
+
 ## Próxima fase, ainda não executada
 
 1. Estender radar a outras fontes oficiais e monitorar alterações de propostas antigas.
 2. Implantar etapa de investigação com verificações e fontes cruzadas.
-3. Habilitar uma hospedagem pública gratuita para JPEGs.
+3. Confirmar que o Pages publicou o JPEG de teste via HTTP.
 4. Integrar publicação pela API Meta e conferir o retorno real.
 5. Ativar aprendizado de horários e frequência com amostra suficiente.
-6. Alertas, auditoria de qualidade e mecanismos para pausar/publicar novamente apenas com segurança.
+6. Alertas, auditoria de qualidade e mecanismos de suspensão segura.
 
 ## Visibilidade e custo
 
-O repositório está **privado**. No GitHub Free, o Pages para hospedagem é oferecido em repositórios públicos. Para manter o código privado, será preciso escolher outra hospedagem pública de imagens, ou separar um repositório público somente para mídias.
+O repositório está **público**. Isso permite habilitar GitHub Pages no GitHub Free; lembre que o código, a memória de pautas e os arquivos versionados ficam públicos. Nunca armazene tokens ou dados sensíveis no repositório.
 
 Os workflows privados podem consumir a franquia gratuita de minutos do GitHub Actions. Consulte seu limite antes de elevar a frequência.
 
