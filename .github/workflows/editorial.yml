@@ -16,7 +16,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: fatovia-radar
+  group: fatovia-state
   cancel-in-progress: false
 
 jobs:
