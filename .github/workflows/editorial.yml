@@ -1,0 +1,40 @@
+name: "FatoVia | Radar documental seguro"
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 5,11,17,23 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fatovia-radar
+  cancel-in-progress: false
+
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar dependencias
+        run: python -m pip install -r requirements.txt
+      - name: Validar motor editorial
+        run: python -m unittest discover -s tests -v
+      - name: Consultar fonte oficial e preparar cards (sem publicar)
+        run: python -m fatovia scan
+      - name: Preservar memoria, imagens e relatorio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data docs
+          if ! git diff --cached --quiet; then
+            git commit -m "FatoVia: atualizar memoria e pautas [skip ci]"
+            git push
+          fi
