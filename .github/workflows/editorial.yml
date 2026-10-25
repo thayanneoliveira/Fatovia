@@ -49,5 +49,7 @@ jobs:
           git add -A data docs
           if ! git diff --cached --quiet; then
             git commit -m "FatoVia: atualizar memoria e pautas [skip ci]"
-            git push
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
           fi
