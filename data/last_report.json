@@ -1,1 +1,14 @@
-{"status":"not_executed","publication":"DISABLED"}
+{
+  "already_published": 3,
+  "errors": [],
+  "found": 0,
+  "pending": 0,
+  "publication": "DISABLED",
+  "recommended_daily_limit": 2,
+  "recommended_hours": [
+    9,
+    19
+  ],
+  "staged": 0,
+  "timestamp": "2026-10-25T20:22:24.387559-03:00"
+}
