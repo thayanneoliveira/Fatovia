@@ -60,6 +60,25 @@ def main():
             errors.append(f'Falha no card {item["id"]}: {type(exc).__name__}')
     report = rollup_report(state, now, len(candidates), staged)
     report["errors"] = errors
+    # Apenas imagens prontas, geradas dentro de docs/media. Nenhuma credencial no catálogo público.
+    catalog = []
+    for item in state.get("pending", [])[:8]:
+        cards = item.get("cards", [])
+        if item.get("status") != "ready" or len(cards) != 7:
+            continue
+        paths = [Path(path) for path in cards]
+        try:
+            urls = [str(path.relative_to("docs")).replace("\\", "/") for path in paths]
+            if not all(url.startswith("media/") and ".." not in url for url in urls):
+                continue
+        except ValueError:
+            continue
+        catalog.append({"title": item.get("title", "Documento"), "cards": urls})
+    save(Path("docs/manifest.json"), {
+        "schema": 1,
+        "items": catalog,
+        "note": "Preparacao editorial: a presenca de um JPEG nao representa publicacao no Instagram."
+    })
     save(STATE, state)
     save(REPORT, report)
     print(json.dumps(report, ensure_ascii=False))
