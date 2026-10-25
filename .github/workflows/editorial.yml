@@ -40,6 +40,8 @@ jobs:
           META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
           META_GRAPH_VERSION: v25.0
         run: python -m fatovia metrics
+      - name: Gerar JPEG de verificacao tecnica (nao publicar)
+        run: python -m fatovia.healthcheck
       - name: Consultar fonte oficial e preparar cards (sem publicar)
         run: python -m fatovia scan
       - name: Preservar memoria, imagens e relatorio
