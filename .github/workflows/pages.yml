@@ -33,12 +33,19 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
-      - name: Configurar hospedagem Pages
+      - name: Verificar se Pages esta habilitado
+        id: pages_setup
+        continue-on-error: true
         uses: actions/configure-pages@v5
+      - name: Informar ativacao manual pendente
+        if: steps.pages_setup.outcome != 'success'
+        run: echo '::warning::Ative GitHub Pages em Settings > Pages > Source > GitHub Actions.'
       - name: Enviar apenas conteudo publico (docs)
+        if: steps.pages_setup.outcome == 'success'
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./docs
       - name: Publicar site e JPEGs
+        if: steps.pages_setup.outcome == 'success'
         id: deployment
         uses: actions/deploy-pages@v4
