@@ -44,14 +44,29 @@ jobs:
         run: python -m fatovia.healthcheck
       - name: Consultar fonte oficial e preparar cards (sem publicar)
         run: python -m fatovia scan
-      - name: Preservar memoria, imagens e relatorio
+      - name: Persistir dados com reconciliacao de concorrencia
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A data docs
-          if ! git diff --cached --quiet; then
-            git commit -m "FatoVia: atualizar memoria e pautas [skip ci]"
+          for attempt in 1 2 3; do
             git fetch origin main
-            git rebase origin/main
-            git push origin HEAD:main
-          fi
+            if [ "$attempt" -gt 1 ]; then
+              git reset --hard origin/main
+              python -m fatovia.healthcheck
+              python -m fatovia scan
+            fi
+            git add -A data docs
+            if git diff --cached --quiet; then
+              echo "Sem alteracoes de memoria"
+              exit 0
+            fi
+            git commit -m "FatoVia: atualizar memoria e pautas [skip ci]"
+            if git rebase origin/main && git push origin HEAD:main; then
+              echo "Memoria persistida com sucesso"
+              exit 0
+            fi
+            git rebase --abort || true
+            echo "Conflito detectado: reconciliando com a ultima versao do repositorio"
+          done
+          echo "::error::Nao foi possivel persistir o estado sem sobrescrever trabalho remoto"
+          exit 1
