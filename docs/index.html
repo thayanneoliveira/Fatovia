@@ -1,1 +1,54 @@
-<!doctype html><html lang="pt-BR"><meta charset="utf-8"><title>FatoVia | Imagens</title><body><h1>FatoVia</h1><p>Area de imagens geradas. Hospedagem publica ainda nao ativada.</p></body></html>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FatoVia | Arquivo editorial</title>
+<meta name="robots" content="noindex,nofollow">
+<style>
+:root{color-scheme:light;font-family:system-ui,-apple-system,sans-serif}
+*{box-sizing:border-box}body{margin:0;background:#F5F1E7;color:#102F28}
+header{background:#102F28;color:#F5F1E7;padding:40px 7vw 46px}
+.logo{font-size:44px;letter-spacing:-2px;font-weight:900}.logo span{color:#A5CEB7}
+.tag{font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin-top:7px;opacity:.76}
+main{max-width:980px;margin:auto;padding:32px 7vw 70px}
+.notice{border:1px solid #BDCEC0;border-radius:13px;padding:18px;line-height:1.65}
+small{color:#566A5A}h2{margin-top:40px}a{color:#124D3C}
+#gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:18px;margin-top:20px}
+figure{margin:0}figure img{width:100%;aspect-ratio:4/5;object-fit:contain;border:1px solid #CBD6CB;border-radius:10px}
+figcaption{font-size:12px;overflow-wrap:anywhere;margin-top:8px}
+</style>
+</head>
+<body>
+<header><div class="logo">FATO<span>VIA</span></div><div class="tag">Arquivo técnico de mídia | conteúdo editorial rastreável</div></header>
+<main>
+<div class="notice"><strong>Ambiente de preparação.</strong> As imagens aqui são arquivos estáticos acessíveis por URL pública.
+Sua presença neste site <strong>não significa que tenham sido publicadas no Instagram</strong> nem que tenham passado por auditoria editorial final.</div>
+<h2>Validação de hospedagem</h2>
+<p><a href="media/healthcheck.jpg">Verificar JPEG técnico de teste</a></p>
+<p><small>Esse arquivo não é conteúdo político e não pode ser usado como postagem.</small></p>
+<h2>Imagens preparadas pelo motor</h2><div id="gallery"><p>Nenhuma pauta pronta disponível no catálogo.</p></div>
+<script>
+(async function(){
+try {
+ const response=await fetch('manifest.json',{cache:'no-store'});
+ if(!response.ok) return;
+ const manifest=await response.json();
+ const all=Array.isArray(manifest.items)?manifest.items:[];
+ const node=document.getElementById('gallery');
+ if(!all.length)return;
+ node.textContent='';
+ for (const item of all) {
+  if(!Array.isArray(item.cards))continue;
+  const title=String(item.title||'Documento');
+  for(const src of item.cards) {
+   const path=String(src);
+   if(!/^media\/[a-zA-Z0-9_./-]+\.jpg$/.test(path)||path.includes('..'))continue;
+   const fig=document.createElement('figure'),img=document.createElement('img'),cap=document.createElement('figcaption');
+   img.src=path;img.loading='lazy';img.alt='Prévia técnica: '+title;cap.textContent=title;
+   fig.append(img,cap);node.append(fig);
+  }
+ }
+}catch(e){console.warn('Catalogo indisponivel');}
+})();
+</script>
+</main></body></html>
