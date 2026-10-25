@@ -34,6 +34,12 @@ jobs:
         run: python -m pip install -r requirements.txt
       - name: Validar motor editorial
         run: python -m unittest discover -s tests -v
+      - name: Atualizar metricas opcionais
+        if: vars.METRICS_ENABLED == 'true'
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          META_GRAPH_VERSION: v25.0
+        run: python -m fatovia metrics
       - name: Consultar fonte oficial e preparar cards (sem publicar)
         run: python -m fatovia scan
       - name: Preservar memoria, imagens e relatorio
