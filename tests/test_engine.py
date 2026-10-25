@@ -1,4 +1,6 @@
 import tempfile
+import os
+from unittest.mock import patch
 import unittest
 from datetime import datetime
 from pathlib import Path
@@ -6,6 +8,7 @@ from zoneinfo import ZoneInfo
 
 from fatovia.engine import choose, classify, daily_limit, from_camara, preferred_hours, validate_candidate
 from fatovia.render import render
+from fatovia.analytics import pull_metrics
 
 NOW = datetime(2026, 10, 25, 18, tzinfo=ZoneInfo("America/Fortaleza"))
 
@@ -49,6 +52,12 @@ class EditorialTests(unittest.TestCase):
     def test_frequencia_conservadora(self):
         self.assertEqual(daily_limit(self.state), 2)
         self.assertEqual(preferred_hours(self.state), [9, 19])
+
+    def test_metricas_sem_token(self):
+        with patch.dict(os.environ, {"META_ACCESS_TOKEN": ""}):
+            result = pull_metrics(self.state)
+        self.assertEqual(result["updated"], 0)
+        self.assertEqual(self.state["metrics"], [])
 
     def test_carrossel_sete_jpeg(self):
         item = proposal()
