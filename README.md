@@ -48,9 +48,9 @@ Nunca cole o token em arquivos, issues ou conversas. A integração Windsor.ai e
 
 ## Infraestrutura de mídias públicas (fase 2)
 
-O repositório já é público. O projeto tem um segundo workflow [FatoVia | Hospedagem pública de imagens](.github/workflows/pages.yml). Ele só publica os arquivos de `docs/`, inclusive os JPEGs. **O GitHub Pages ainda requer ativação nas configurações.**
+O repositório já é público. O projeto tem um segundo workflow [FatoVia | Hospedagem pública de imagens](.github/workflows/pages.yml). Ele só publica os arquivos de `docs/`, inclusive os JPEGs. **O GitHub Pages foi ativado e o deploy personalizado passou na execução de 25/10/2026.**
 
-**Passo obrigatório uma única vez:** no repositório, entre em **Settings → Pages → Build and deployment → Source → GitHub Actions**. Após a ativação, o próximo workflow bem-sucedido pode publicar as imagens automaticamente. O arquivo `docs/media/healthcheck.jpg` é apenas teste técnico, não pode ser publicado como post.
+**Deploy comprovado pelo GitHub Actions:** [execução bem-sucedida](https://github.com/thayanneoliveira/Fatovia/actions/runs/40246733658). O pacote contém `media/healthcheck.jpg`, `manifest.json` e `deployment-verification.txt`. URL pública publicada: https://thayanneoliveira.github.io/Fatovia/. O teste HTTP direto a partir do assistente ainda não foi possível e requer validação de cliente. O arquivo `docs/media/healthcheck.jpg` é apenas teste técnico, não pode ser publicado como post.
 
 A página tem um catálogo `docs/manifest.json` atualizado pelo motor para facilitar inspeção e testes. Ter imagens visíveis por URL **não ativa nem autoriza** publicação no Instagram.
 
