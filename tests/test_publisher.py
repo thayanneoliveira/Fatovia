@@ -71,6 +71,24 @@ class PublishTests(unittest.TestCase):
         self.state = {"blackout_dates": ["2026-10-25", "2026-10-26"],
                       "metrics": [], "published": [], "pending": [item()]}
 
+    def test_tres_janelas_com_metricas_suficientes(self):
+        from fatovia.engine import daily_limit, preferred_hours
+        metrics = []
+        for hour in (9, 14, 19):
+            for i in range(15):
+                metrics.append({"hour": hour, "reach": 100, "shares": 5, "saves": 5})
+        self.state["metrics"] = metrics
+        self.assertEqual(daily_limit(self.state), 3)
+        hours = preferred_hours(self.state)
+        self.assertEqual(len(hours), 3)
+        self.assertTrue(all(b - a >= 4 for a, b in zip(hours, hours[1:])))
+
+    def test_configuracao_meta_sem_host_expresso(self):
+        import os
+        from fatovia.publisher import config
+        with patch.dict(os.environ, {"META_API_HOST": "", "META_GRAPH_VERSION": ""}):
+            self.assertIn("graph.instagram.com/v25.0", config()["base"])
+
     def test_sem_publicacao_em_bloqueio(self):
         self.assertIsNone(choose_due(self.state, datetime.fromisoformat("2026-10-25T09:12:00-03:00")))
 
