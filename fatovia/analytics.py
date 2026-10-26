@@ -16,6 +16,9 @@ def pull_metrics(state):
     version = os.environ.get("META_GRAPH_VERSION", "v25.0")
     if not version.startswith("v") or not version[1:].replace(".", "").isdigit():
         return {"updated": 0, "reason": "Versão de API inválida"}
+    host = (os.getenv("META_API_HOST") or "graph.instagram.com").strip().lower()
+    if host not in {"graph.instagram.com", "graph.facebook.com"}:
+        return {"updated": 0, "reason": "Host Meta inválido"}
     import requests
     by_media = {str(row.get("media_id")): row for row in state.get("metrics", [])}
     updated = 0
@@ -26,7 +29,7 @@ def pull_metrics(state):
             continue
         try:
             response = requests.get(
-                f"https://graph.facebook.com/{version}/{mid}/insights",
+                f"https://{host}/{version}/{mid}/insights",
                 headers={"Authorization": f"Bearer {token}"},
                 params={"metric": "reach,saved,shares"},
                 timeout=25,
