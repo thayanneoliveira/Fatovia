@@ -33,8 +33,8 @@ class PublicationError(Exception):
 
 
 def config():
-    host = os.getenv("META_API_HOST", "graph.instagram.com").strip().lower()
-    version = os.getenv("META_GRAPH_VERSION", "v25.0").strip()
+    host = (os.getenv("META_API_HOST") or "graph.instagram.com").strip().lower()
+    version = (os.getenv("META_GRAPH_VERSION") or "v25.0").strip()
     if host not in API_HOSTS or not re.fullmatch(r"v\d+\.\d+", version):
         raise PublicationError("Host ou versão da API Meta não permitidos")
     return {
