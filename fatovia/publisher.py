@@ -318,8 +318,8 @@ def reconcile(state, now, cfg, client=None):
 
 
 def main():
-    if len(sys.argv) != 2 or sys.argv[1] not in {"status", "prepare", "deliver", "reconcile"}:
-        raise SystemExit("Uso: python -m fatovia.publisher status|prepare|deliver|reconcile")
+    if len(sys.argv) != 2 or sys.argv[1] not in {"status", "prepare", "deliver", "reconcile", "probe"}:
+        raise SystemExit("Uso: python -m fatovia.publisher status|prepare|deliver|reconcile|probe")
     cmd = sys.argv[1]
     state = load(STATE_PATH)
     cfg = config()
@@ -334,6 +334,9 @@ def main():
                 "allowed_hours": preferred_hours(state),
                 "limit": daily_limit(state),
             }
+        elif cmd == "probe":
+            verify_media([PAGE_ROOT + "/media/healthcheck.jpg"])
+            result = {"action": "hosting_verified", "status": "JPEG_PUBLIC_OK"}
         elif cmd == "prepare":
             result = prepare(state, now, cfg)
         elif cmd == "deliver":
