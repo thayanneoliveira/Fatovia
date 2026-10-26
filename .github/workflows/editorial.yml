@@ -39,6 +39,7 @@ jobs:
         env:
           META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
           META_GRAPH_VERSION: v25.0
+          META_API_HOST: ${{ vars.META_API_HOST }}
         run: python -m fatovia metrics
       - name: Gerar JPEG de verificacao tecnica (nao publicar)
         run: python -m fatovia.healthcheck
