@@ -1,6 +1,19 @@
-# FatoVia | Motor editorial autônomo (fase 1)
+# FatoVia | Motor editorial e publicador de Instagram (fases 1 e 2)
 
-> **Estado: radar documental instalado no GitHub e executado com sucesso. Publicação no Instagram DESATIVADA.**
+> **Estado: radar ativo, hospedagem JPEG testada por HTTP e publicador Meta implementado e testado com simulações. Publicação real no Instagram DESATIVADA até autorizar as credenciais.**
+
+## Integração com Instagram (código implantado)
+
+- [Configuração obrigatória de Meta e GitHub](INSTAGRAM_SETUP.md)
+- [Workflow de publicação agendada](.github/workflows/publish.yml)
+- [Testes automatizados de segurança e idempotência](tests/test_publisher.py)
+- [Validação da URL pública do JPEG](https://thayanneoliveira.github.io/Fatovia/media/healthcheck.jpg)
+
+O envio foi desenvolvido para utilizar a **Instagram API com Instagram Login** (`graph.instagram.com`, ou Facebook Login mediante configuração), validar o perfil `@fato.via`, criar carrosséis de 7 imagens e confirmar cada publicação.
+
+**A publicação real ainda NÃO foi testada nem autorizada:** é necessário obter o token e o IG ID pelo fluxo oficial da Meta, registrá-los com segurança no GitHub e habilitar `IG_PUBLISH_ENABLED`. A conexão Windsor.ai disponível dentro do ChatGPT não fornece esse token automaticamente.
+
+O publicador usa o limite conservador de 2 posts por dia e escolhe janelas automaticamente quando há métricas suficientes. Em erros de resposta ambígua, ele interrompe reenvios, guarda a transação e verifica se o post já existe.
 
 ## O que está funcionando
 
@@ -59,7 +72,7 @@ A página tem um catálogo `docs/manifest.json` atualizado pelo motor para facil
 1. Estender radar a outras fontes oficiais e monitorar alterações de propostas antigas.
 2. Implantar etapa de investigação com verificações e fontes cruzadas.
 3. Confirmar que o Pages publicou o JPEG de teste via HTTP.
-4. Integrar publicação pela API Meta e conferir o retorno real.
+4. Validar o primeiro post real usando credenciais da Meta (integração implementada; primeira publicação pendente).
 5. Ativar aprendizado de horários e frequência com amostra suficiente.
 6. Alertas, auditoria de qualidade e mecanismos de suspensão segura.
 
