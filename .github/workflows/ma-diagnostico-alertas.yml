@@ -1,4 +1,4 @@
-name: "FatoVia | Diagnosticar divergencias MA"
+name: "FatoVia | Verificar zeros de carga MA"
 on:
   push:
     paths:
