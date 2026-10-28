@@ -77,6 +77,8 @@ def main():
     from .proveniencia_ma import FILES,read_selected_rows
     from .tse import sha512_expected
     ceft={}
+    comprimento_ceft=Counter()
+    ceft_secoes_com_carga_menor_24=0
     with TemporaryDirectory() as tmp:
         path=Path(tmp)/"ceft.zip"
         hashval,size=download_zip(FILES["efetivada_26"],path)
@@ -84,9 +86,15 @@ def main():
             raise ValueError("hash CEFT diferente")
         for row in read_selected_rows(path,"ceft_"):
             key=(int(row["CD_MUNICIPIO"]),int(row["NR_ZONA"]),int(row["NR_SECAO"]))
+            codigo=row.get("CD_CARGA_URNA_EFETIVADA","")
+            comprimento_ceft[len(codigo)]+=1
+            if len(codigo)<24:ceft_secoes_com_carga_menor_24+=1
             if key in FOCO:ceft[key]=row
     out={"utc":datetime.now(timezone.utc).isoformat(),
          "fontes":"BU, CEFT, RDV, logs publicados pelo TSE",
+         "distribuicao_comprimentos_codigo_carga_ceft":dict(comprimento_ceft),
+         "ceft_secoes_com_codigo_carga_menor_24":ceft_secoes_com_carga_menor_24,
+         "amostra_1775_alarmes_codigo_carga":"Verificar se total de códigos CEFT com menos de 24 dígitos coincide com 1775 alertas",
          "secoes":{}}
     with RemoteZip() as remote:
         with zipfile.ZipFile(remote) as archive:
