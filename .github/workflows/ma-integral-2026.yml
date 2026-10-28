@@ -1,4 +1,4 @@
-name: "FatoVia | Auditoria integral Maranhão 2T 2026"
+name: "FatoVia | MA integral 2026 - RDV logs hashes"
 on:
   push:
     paths:
