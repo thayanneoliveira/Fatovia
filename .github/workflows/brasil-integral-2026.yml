@@ -1,0 +1,86 @@
+name: "FatoVia | Auditoria Brasil 2026 segundo turno"
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/brasil-integral-2026.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fatovia-auditoria-brasil-2026
+  cancel-in-progress: false
+
+jobs:
+  auditar-uf:
+    name: "Auditar ${{ matrix.uf }}"
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        uf: [AC, AL, AM, AP, BA, CE, DF, ES, GO, MA, MG, MS, MT, PA, PB, PE, PI, PR, RJ, RN, RO, RR, RS, SC, SE, SP, TO, ZZ]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar decodificador ASN1
+        run: python -m pip install 'asn1tools==0.167.0'
+      - name: Validar codigo antes da coleta
+        run: |
+          python -m unittest discover -s tests -p 'test_codigos_carga.py' -v
+          python -m compileall -q auditoria
+          df -h .
+      - name: Executar conferencia da UF
+        run: python -u -m auditoria.brasil_2026 --uf ${{ matrix.uf }} --out work/brasil/${{ matrix.uf }}.json
+      - name: Guardar relatorio mesmo se incompleto
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: audit-br-uf-${{ matrix.uf }}
+          path: work/brasil/${{ matrix.uf }}.json
+          if-no-files-found: warn
+          retention-days: 90
+
+  consolidar:
+    name: Consolidar resultados nacionais (inclusive lacunas)
+    needs: [auditar-uf]
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: audit-br-uf-*
+          path: work/brasil
+          merge-multiple: true
+        continue-on-error: true
+      - name: Publicar cobertura nacional sem ocultar UFs pendentes
+        run: python -u -m auditoria.brasil_consolidar --input work/brasil --output work/brasil-consolidado
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fatovia-brasil-2026-2t-consolidado
+          path: work/brasil-consolidado/*
+          if-no-files-found: warn
+          retention-days: 90
+      - name: Versionar relatorios por UF e consolidado
+        run: |
+          mkdir -p docs/auditoria/brasil-2026-2t/ufs
+          cp work/brasil/*.json docs/auditoria/brasil-2026-2t/ufs/ 2>/dev/null || true
+          cp work/brasil-consolidado/brasil-2026-2t.json docs/auditoria/brasil-2026-2t/
+          cp work/brasil-consolidado/brasil-2026-2t.md docs/auditoria/brasil-2026-2t/
+          git config user.name "fatovia-audita[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/auditoria/brasil-2026-2t
+          if ! git diff --cached --quiet; then
+            git commit -m "docs(auditoria): cobertura real de auditoria nacional 2026 [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
