@@ -9,6 +9,7 @@ from __future__ import annotations
 import csv
 from collections import Counter
 import hashlib
+from html.parser import HTMLParser
 import io
 import json
 from pathlib import Path
@@ -60,7 +61,41 @@ def resources(dataset):
     result = obj.get("result")
     if not isinstance(result, dict) or not isinstance(result.get("resources"), list):
         raise ValueError("Metadados CKAN inválidos")
-    return result["resources"]
+    current = result["resources"]
+    if dataset != DATASET_BU or any("bweb_2t_" in r.get("url", "") for r in current):
+        return current
+    # O CKAN pode servir um catálogo em cache só com os dados do 1º turno.
+    # A página de recursos do próprio TSE já contém os URLs do 2º turno.
+    class TSELinks(HTMLParser):
+        def __init__(self):
+            super().__init__()
+            self.urls = set()
+        def handle_starttag(self, tag, attrs):
+            if tag != "a":
+                return
+            link = dict(attrs).get("href", "")
+            if link.startswith("https://cdn.tse.jus.br/"):
+                self.urls.add(link)
+    page = fetch("https://dadosabertos.tse.jus.br/sr_Latn/dataset/" + dataset,
+                 max_bytes=3_000_000).decode("utf-8")
+    parser = TSELinks()
+    parser.feed(page)
+    fallback = []
+    for url in sorted(parser.urls):
+        match = re.fullmatch(
+            r"https://cdn\.tse\.jus\.br/estatistica/sead/eleicoes/eleicoes2026/"
+            r"buweb/bweb_2t_([A-Z]{2})_\d+\.zip(\.sha512)?", url)
+        if not match or match.group(1) not in UFS:
+            continue
+        uf = match.group(1)
+        is_hash = bool(match.group(2))
+        title = ("Hash SHA2" if is_hash else "Boletim de Urna")
+        fallback.append({"id": "pagina-tse-" + uf + ("-sha512" if is_hash else "-bu"),
+                         "name": uf + " - " + title + " - Segundo turno",
+                         "url": url})
+    if len(fallback) != len(UFS) * 2:
+        raise ValueError("Catálogo CKAN ainda incompleto e página do TSE não contém 28 pares BU/SHA512")
+    return fallback
 
 
 def bu_resources(uf, all_resources):
