@@ -1,0 +1,179 @@
+{
+  "ano": 2026,
+  "assinatura_criptografica_validada": false,
+  "cobertura": {
+    "chaves_sem_correspondencia": {
+      "bu_sem_ceft": 0,
+      "bu_sem_pacote_bruto": 0,
+      "ceft_sem_bu": 0,
+      "pacote_bruto_sem_bu": 0
+    },
+    "inventario": {
+      "amostra_duplicados": [],
+      "amostra_tipos_incompletos": [],
+      "arquivos_duplicados": 0,
+      "arquivos_fora_padrao_amostra": [
+        "leiame.pdf",
+        "mHm+9-yBE66nEOsWDu+Y-buxBFj2b-NhZkq9mTx2G-U=.id",
+        "MS-buTTRoIHn-81E45UnKAme6xgJgu+wESCX7oCRkXw=.id",
+        "OfjIIpMd86tWEfHee0GoemGJ2-bui79JeBZ-Thb4w-g=.id",
+        "ifz9AiU87wRKxej-xB2ftMYTJNtr1k-buj1AhiXw4WY=.id",
+        "rywhzCVRiTm-buCI+y4ZldbfKzHGU-C1MxdKoC2q6bo=.id",
+        "cLgfTyJMfj5zbXT2-Rf8-xL-buR8pwAKBjdziltMMfM=.id",
+        "1Tw0vSWm3mW5Qq-9Ud-bubwctmmVuqxomIwb9GKOXug=.id",
+        "CF4ozZdvbIt5GHh-bukJgt9BoxOaiiQUixQ2+SOABio=.id",
+        "UlEkwL8c4ZFeULwUx3AS-4l-bu1FFoc0hKzIH8550XU=.id",
+        "OqtZ0tX5YEisIVMWV50ew-buZl+vTVrHYAHronFr7dM=.id"
+      ],
+      "secoes_com_arquivos": 37675,
+      "secoes_com_tipos_incompletos": 0,
+      "tipos": {
+        "bu.dat": 37675,
+        "imgbu.dat": 37675,
+        "log.jez": 37675,
+        "rdv.dat": 37675,
+        "vota.vsc": 37675
+      }
+    },
+    "secoes_alertadas": 2,
+    "secoes_bu": 37675,
+    "secoes_ceft": 37675,
+    "secoes_distintas": 37675,
+    "secoes_pacote_bruto": 37675,
+    "secoes_processadas": 37675
+  },
+  "data_utc": "2026-10-28T15:04:26.034352+00:00",
+  "fontes": {
+    "arquivo_bruto": {
+      "bytes_remotos": 9637646040,
+      "bytes_transferidos_por_range": 10992406232,
+      "metodo": "HTTP Range",
+      "requisicoes_range": 5242,
+      "sha512_zip_externo_conferido": false,
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/arqurnatot/bu_imgbu_logjez_rdv_vscmr_2026_2t_RJ.zip"
+    },
+    "bu": {
+      "bytes": 10004912,
+      "hash_conferido": true,
+      "sha512": "dcb3131b618b9c394b50576ead626a85ebb115c9f984f9b464d21a64eb69a735f11123fb189a3f8b906c29f9511557f46565cc1d4adc10a68fa0ebf69a70a205",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_RJ_261020260742.zip"
+    },
+    "catalogos": {
+      "bruto": "https://dadosabertos.tse.jus.br/dataset/resultados-2026-arquivos-transmitidos-para-totalizacao",
+      "bu": "https://dadosabertos.tse.jus.br/dataset/resultados-2026-boletim-de-urna",
+      "ceft": "https://dadosabertos.tse.jus.br/dataset/resultados-2026-correspondencias-esperadas-e-efetivadas-2-turno"
+    },
+    "ceft": {
+      "bytes": 3233694,
+      "hash_conferido": true,
+      "sha512": "ee501fe7028a645d794b4a3393224ab286bca751b411ebfc45f5c00a0a41c49397d06903c3897782d22f399e3ee0f707b0a7ad820ac88e960f069fd435cdaba5",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/correspefet/CEFT_2t_RJ_261020261201.zip"
+    },
+    "origens": {
+      "bruto": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/arqurnatot/bu_imgbu_logjez_rdv_vscmr_2026_2t_RJ.zip",
+      "bruto_bytes": 9637646040,
+      "bu": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_RJ_261020260742.zip",
+      "ceft": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/correspefet/CEFT_2t_RJ_261020261201.zip"
+    }
+  },
+  "limitacoes": [
+    "Somente dados totalizados publicados pelo TSE.",
+    "Conferir SHA512 com VSC NÃO verifica criptograficamente a assinatura.",
+    "Rastreabilidade dos dados internos não prova intenção do eleitor.",
+    "Log com contingência pode exigir prova documental complementar."
+  ],
+  "ocorrencias": {
+    "CEFT_URNA_AUSENTE_DOS_LOGS": 1,
+    "EXCECAO_AUDITORIA_SECAO": 1
+  },
+  "ocorrencias_amostra": {
+    "CEFT_URNA_AUSENTE_DOS_LOGS": [
+      [
+        58971,
+        68,
+        154
+      ]
+    ],
+    "EXCECAO_AUDITORIA_SECAO": [
+      [
+        58696,
+        84,
+        29
+      ]
+    ]
+  },
+  "projeto": "FATOVIA AUDITA",
+  "resultado_por_secao": {
+    "58696/84/29": {
+      "alertas": [
+        "EXCECAO_AUDITORIA_SECAO"
+      ],
+      "erro": "TimeoutError: The read operation timed out",
+      "secao": [
+        58696,
+        84,
+        29
+      ]
+    },
+    "58971/68/154": {
+      "alertas": [
+        "CEFT_URNA_AUSENTE_DOS_LOGS"
+      ],
+      "limitacoes": [],
+      "resultados": {
+        "hashes_sha512": {
+          "arquivos_presentes_conferidos": 4,
+          "assinatura_digital_criptograficamente_validada": false,
+          "hashes_diferentes": {},
+          "referencias_a_arquivos_nao_presentes": 7
+        },
+        "log": {
+          "aplicavel": true,
+          "comparecimento_bu": 248,
+          "eventos_em_outras_datas": {
+            "04/10/2026": 242
+          },
+          "eventos_igual_comparecimento": true,
+          "eventos_voto_25_10": 248,
+          "qtd_arquivos_logd": 2,
+          "urnas_eventos": [
+            2226870
+          ]
+        },
+        "proveniencia": {
+          "carga_rdv_confere_ceft": true,
+          "identidade_rdv_confere_ceft": true,
+          "origem": "Urna Eletrônica",
+          "tipo_divergencia": "C",
+          "urna_efetivada_no_log": false,
+          "urna_prevista_diferente_da_efetivada": true
+        },
+        "rdv": {
+          "comparecimento_bu": 248,
+          "contagens_confere_bu": true,
+          "identidade_secao_confere": true,
+          "registros": 248
+        }
+      },
+      "secao": [
+        58971,
+        68,
+        154
+      ]
+    }
+  },
+  "status": "ALERTAS_TECNICOS_REQUEREM_ANALISE",
+  "turno": 2,
+  "uf": "RJ",
+  "verificacoes": {
+    "log_eventos_igual_comparecimento_ok": 37673,
+    "logs_nao_aplicaveis": 1,
+    "proveniencia_carga_rdv_confere_ceft_ok": 37674,
+    "proveniencia_identidade_rdv_confere_ceft_ok": 37674,
+    "proveniencia_urna_efetivada_no_log_ok": 37673,
+    "rdv_contagens_confere_bu_ok": 37674,
+    "rdv_identidade_secao_confere_ok": 37674,
+    "sha512_arquivos_ok": 150696,
+    "urnas_trocadas": 267
+  }
+}

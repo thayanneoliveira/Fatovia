@@ -1,0 +1,22 @@
+{
+  "ano": 2026,
+  "assinatura_criptografica_validada": false,
+  "cobertura": {},
+  "data_utc": "2026-10-28T14:59:04.675855+00:00",
+  "erro": "ValueError: PE: bu requer exatamente um arquivo no catálogo; encontrados=0",
+  "fontes": {},
+  "limitacoes": [
+    "Somente dados totalizados publicados pelo TSE.",
+    "Conferir SHA512 com VSC NÃO verifica criptograficamente a assinatura.",
+    "Rastreabilidade dos dados internos não prova intenção do eleitor.",
+    "Log com contingência pode exigir prova documental complementar."
+  ],
+  "ocorrencias": {},
+  "ocorrencias_amostra": {},
+  "projeto": "FATOVIA AUDITA",
+  "resultado_por_secao": {},
+  "status": "INCONCLUSIVO",
+  "turno": 2,
+  "uf": "PE",
+  "verificacoes": {}
+}

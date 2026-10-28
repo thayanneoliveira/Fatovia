@@ -1,0 +1,207 @@
+{
+  "ano": 2026,
+  "assinatura_criptografica_validada": false,
+  "cobertura": {
+    "chaves_sem_correspondencia": {
+      "bu_sem_ceft": 0,
+      "bu_sem_pacote_bruto": 0,
+      "ceft_sem_bu": 0,
+      "pacote_bruto_sem_bu": 0
+    },
+    "inventario": {
+      "amostra_duplicados": [],
+      "amostra_tipos_incompletos": [],
+      "arquivos_duplicados": 0,
+      "arquivos_fora_padrao_amostra": [
+        "leiame.pdf",
+        "-buB1jW5D2aeDIR1zsYnj1tehv0Oqp2Ch6-CtUzmCmo=.id",
+        "21awuPGtqxpHKSnr1DE5JN8WT7e-buiiA7g+ey9DMZI=.id",
+        "mjjFpiDSmJrNYnmb-buYaqOCEB8w5YwdQA8JIvT5muE=.id",
+        "9k+vUgfO-bu0FNx3O8gz0X4rgp+5p9ZZRh4Qo-qHkG4=.id",
+        "GveqlHeSfusKVLVBGJ-YeRTtxSkr-bukpE+NCZ94ubY=.id"
+      ],
+      "secoes_com_arquivos": 20827,
+      "secoes_com_tipos_incompletos": 0,
+      "tipos": {
+        "bu.dat": 20827,
+        "imgbu.dat": 20827,
+        "log.jez": 20827,
+        "rdv.dat": 20827,
+        "vota.vsc": 20827
+      }
+    },
+    "secoes_alertadas": 2,
+    "secoes_bu": 20827,
+    "secoes_ceft": 20827,
+    "secoes_distintas": 20827,
+    "secoes_pacote_bruto": 20827,
+    "secoes_processadas": 20827
+  },
+  "data_utc": "2026-10-28T14:56:39.092280+00:00",
+  "fontes": {
+    "arquivo_bruto": {
+      "bytes_remotos": 5009831870,
+      "bytes_transferidos_por_range": 5798361022,
+      "metodo": "HTTP Range",
+      "requisicoes_range": 2765,
+      "sha512_zip_externo_conferido": false,
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/arqurnatot/bu_imgbu_logjez_rdv_vscmr_2026_2t_PA.zip"
+    },
+    "bu": {
+      "bytes": 5158441,
+      "hash_conferido": true,
+      "sha512": "5908978e998fc61b505c42971b3a29c7ffd858624e64b864e1c8dc8248172373bb59f5be3d27ad1d93703c73d9b11bc836eb9875c55180470b6e68061d773d9e",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_PA_261020260742.zip"
+    },
+    "catalogos": {
+      "bruto": "https://dadosabertos.tse.jus.br/dataset/resultados-2026-arquivos-transmitidos-para-totalizacao",
+      "bu": "https://dadosabertos.tse.jus.br/dataset/resultados-2026-boletim-de-urna",
+      "ceft": "https://dadosabertos.tse.jus.br/dataset/resultados-2026-correspondencias-esperadas-e-efetivadas-2-turno"
+    },
+    "ceft": {
+      "bytes": 1927311,
+      "hash_conferido": true,
+      "sha512": "050a9f185e7def07a73998f8db5dfa08ddd1faa2602bac2c25890d1eb900101bdb3341341ce8d584be36d32696a43f40da16081a45f68cac1f78beaa02f0c28d",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/correspefet/CEFT_2t_PA_261020261201.zip"
+    },
+    "origens": {
+      "bruto": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/arqurnatot/bu_imgbu_logjez_rdv_vscmr_2026_2t_PA.zip",
+      "bruto_bytes": 5009831870,
+      "bu": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_PA_261020260742.zip",
+      "ceft": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/correspefet/CEFT_2t_PA_261020261201.zip"
+    }
+  },
+  "limitacoes": [
+    "Somente dados totalizados publicados pelo TSE.",
+    "Conferir SHA512 com VSC NÃO verifica criptograficamente a assinatura.",
+    "Rastreabilidade dos dados internos não prova intenção do eleitor.",
+    "Log com contingência pode exigir prova documental complementar."
+  ],
+  "ocorrencias": {
+    "CEFT_URNA_AUSENTE_DOS_LOGS": 2
+  },
+  "ocorrencias_amostra": {
+    "CEFT_URNA_AUSENTE_DOS_LOGS": [
+      [
+        4278,
+        98,
+        294
+      ],
+      [
+        5290,
+        36,
+        441
+      ]
+    ]
+  },
+  "projeto": "FATOVIA AUDITA",
+  "resultado_por_secao": {
+    "4278/98/294": {
+      "alertas": [
+        "CEFT_URNA_AUSENTE_DOS_LOGS"
+      ],
+      "limitacoes": [],
+      "resultados": {
+        "hashes_sha512": {
+          "arquivos_presentes_conferidos": 4,
+          "assinatura_digital_criptograficamente_validada": false,
+          "hashes_diferentes": {},
+          "referencias_a_arquivos_nao_presentes": 7
+        },
+        "log": {
+          "aplicavel": true,
+          "comparecimento_bu": 291,
+          "eventos_em_outras_datas": {
+            "04/10/2026": 300
+          },
+          "eventos_igual_comparecimento": true,
+          "eventos_voto_25_10": 291,
+          "qtd_arquivos_logd": 2,
+          "urnas_eventos": [
+            2156713
+          ]
+        },
+        "proveniencia": {
+          "carga_rdv_confere_ceft": true,
+          "identidade_rdv_confere_ceft": true,
+          "origem": "Urna Eletrônica",
+          "tipo_divergencia": "C",
+          "urna_efetivada_no_log": false,
+          "urna_prevista_diferente_da_efetivada": true
+        },
+        "rdv": {
+          "comparecimento_bu": 291,
+          "contagens_confere_bu": true,
+          "identidade_secao_confere": true,
+          "registros": 291
+        }
+      },
+      "secao": [
+        4278,
+        98,
+        294
+      ]
+    },
+    "5290/36/441": {
+      "alertas": [
+        "CEFT_URNA_AUSENTE_DOS_LOGS"
+      ],
+      "limitacoes": [],
+      "resultados": {
+        "hashes_sha512": {
+          "arquivos_presentes_conferidos": 4,
+          "assinatura_digital_criptograficamente_validada": false,
+          "hashes_diferentes": {},
+          "referencias_a_arquivos_nao_presentes": 7
+        },
+        "log": {
+          "aplicavel": true,
+          "comparecimento_bu": 255,
+          "eventos_em_outras_datas": {
+            "04/10/2026": 263
+          },
+          "eventos_igual_comparecimento": true,
+          "eventos_voto_25_10": 255,
+          "qtd_arquivos_logd": 3,
+          "urnas_eventos": [
+            1657575,
+            1790728
+          ]
+        },
+        "proveniencia": {
+          "carga_rdv_confere_ceft": true,
+          "identidade_rdv_confere_ceft": true,
+          "origem": "Urna Eletrônica",
+          "tipo_divergencia": "C",
+          "urna_efetivada_no_log": false,
+          "urna_prevista_diferente_da_efetivada": true
+        },
+        "rdv": {
+          "comparecimento_bu": 255,
+          "contagens_confere_bu": true,
+          "identidade_secao_confere": true,
+          "registros": 255
+        }
+      },
+      "secao": [
+        5290,
+        36,
+        441
+      ]
+    }
+  },
+  "status": "ALERTAS_TECNICOS_REQUEREM_ANALISE",
+  "turno": 2,
+  "uf": "PA",
+  "verificacoes": {
+    "log_eventos_igual_comparecimento_ok": 20826,
+    "logs_nao_aplicaveis": 1,
+    "proveniencia_carga_rdv_confere_ceft_ok": 20827,
+    "proveniencia_identidade_rdv_confere_ceft_ok": 20827,
+    "proveniencia_urna_efetivada_no_log_ok": 20825,
+    "rdv_contagens_confere_bu_ok": 20827,
+    "rdv_identidade_secao_confere_ok": 20827,
+    "sha512_arquivos_ok": 83308,
+    "urnas_trocadas": 110
+  }
+}

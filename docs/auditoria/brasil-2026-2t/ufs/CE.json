@@ -1,0 +1,198 @@
+{
+  "ano": 2026,
+  "assinatura_criptografica_validada": false,
+  "cobertura": {
+    "chaves_sem_correspondencia": {
+      "bu_sem_ceft": 0,
+      "bu_sem_pacote_bruto": 0,
+      "ceft_sem_bu": 0,
+      "pacote_bruto_sem_bu": 0
+    },
+    "inventario": {
+      "amostra_duplicados": [],
+      "amostra_tipos_incompletos": [],
+      "arquivos_duplicados": 0,
+      "arquivos_fora_padrao_amostra": [
+        "leiame.pdf",
+        "cRGqyOHhAs-buRhaOR9YoqZ0HVR8NfHZ94diPboJv7E=.id",
+        "3ukMI+5BbbqTl-bu7rpS-FFLEB+O4amF8LX7fsM2nxA=.id",
+        "1FreSGQVC7TTGzjY5Wy16BTki2NU-buShgKAMsmwKYI=.id",
+        "FUYXzEoLadLOF3-buAkav4W8Ecy1ZT6w4PYWTgmxOQc=.id"
+      ],
+      "secoes_com_arquivos": 23765,
+      "secoes_com_tipos_incompletos": 0,
+      "tipos": {
+        "bu.dat": 23765,
+        "imgbu.dat": 23765,
+        "log.jez": 23765,
+        "rdv.dat": 23765,
+        "vota.vsc": 23765
+      }
+    },
+    "secoes_alertadas": 6,
+    "secoes_bu": 23765,
+    "secoes_ceft": 23765,
+    "secoes_distintas": 23765,
+    "secoes_pacote_bruto": 23765,
+    "secoes_processadas": 23765
+  },
+  "data_utc": "2026-10-28T14:53:58.506139+00:00",
+  "fontes": {
+    "arquivo_bruto": {
+      "bytes_remotos": 5908815459,
+      "bytes_transferidos_por_range": 7697686115,
+      "metodo": "HTTP Range",
+      "requisicoes_range": 3671,
+      "sha512_zip_externo_conferido": false,
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/arqurnatot/bu_imgbu_logjez_rdv_vscmr_2026_2t_CE.zip"
+    },
+    "bu": {
+      "bytes": 6151144,
+      "hash_conferido": true,
+      "sha512": "4d0abf43322e353074782f533a728513924e7820898b8b3ef1ebbe45771dd61504e031f0efc62071442632669a11e1523890b5b49a196a04cc25884124e76357",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_CE_261020260742.zip"
+    },
+    "catalogos": {
+      "bruto": "https://dadosabertos.tse.jus.br/dataset/resultados-2026-arquivos-transmitidos-para-totalizacao",
+      "bu": "https://dadosabertos.tse.jus.br/dataset/resultados-2026-boletim-de-urna",
+      "ceft": "https://dadosabertos.tse.jus.br/dataset/resultados-2026-correspondencias-esperadas-e-efetivadas-2-turno"
+    },
+    "ceft": {
+      "bytes": 2194163,
+      "hash_conferido": true,
+      "sha512": "b759546e4cd539ec127eb38ed021312e79f8e0891b443ec88231c5f0b1e5e200e23e25e70f5a220bfb3435191906d54743c7a2c94eccef87a4aeaf1cfda26792",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/correspefet/CEFT_2t_CE_261020261201.zip"
+    },
+    "origens": {
+      "bruto": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/arqurnatot/bu_imgbu_logjez_rdv_vscmr_2026_2t_CE.zip",
+      "bruto_bytes": 5908815459,
+      "bu": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_CE_261020260742.zip",
+      "ceft": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/correspefet/CEFT_2t_CE_261020261201.zip"
+    }
+  },
+  "limitacoes": [
+    "Somente dados totalizados publicados pelo TSE.",
+    "Conferir SHA512 com VSC NÃO verifica criptograficamente a assinatura.",
+    "Rastreabilidade dos dados internos não prova intenção do eleitor.",
+    "Log com contingência pode exigir prova documental complementar."
+  ],
+  "ocorrencias": {
+    "EXCECAO_AUDITORIA_SECAO": 6
+  },
+  "ocorrencias_amostra": {
+    "EXCECAO_AUDITORIA_SECAO": [
+      [
+        13897,
+        113,
+        218
+      ],
+      [
+        13897,
+        113,
+        219
+      ],
+      [
+        13897,
+        113,
+        220
+      ],
+      [
+        13897,
+        113,
+        389
+      ],
+      [
+        15113,
+        59,
+        160
+      ],
+      [
+        15440,
+        38,
+        133
+      ]
+    ]
+  },
+  "projeto": "FATOVIA AUDITA",
+  "resultado_por_secao": {
+    "13897/113/218": {
+      "alertas": [
+        "EXCECAO_AUDITORIA_SECAO"
+      ],
+      "erro": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+      "secao": [
+        13897,
+        113,
+        218
+      ]
+    },
+    "13897/113/219": {
+      "alertas": [
+        "EXCECAO_AUDITORIA_SECAO"
+      ],
+      "erro": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+      "secao": [
+        13897,
+        113,
+        219
+      ]
+    },
+    "13897/113/220": {
+      "alertas": [
+        "EXCECAO_AUDITORIA_SECAO"
+      ],
+      "erro": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+      "secao": [
+        13897,
+        113,
+        220
+      ]
+    },
+    "13897/113/389": {
+      "alertas": [
+        "EXCECAO_AUDITORIA_SECAO"
+      ],
+      "erro": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+      "secao": [
+        13897,
+        113,
+        389
+      ]
+    },
+    "15113/59/160": {
+      "alertas": [
+        "EXCECAO_AUDITORIA_SECAO"
+      ],
+      "erro": "URLError: <urlopen error _ssl.c:993: The handshake operation timed out>",
+      "secao": [
+        15113,
+        59,
+        160
+      ]
+    },
+    "15440/38/133": {
+      "alertas": [
+        "EXCECAO_AUDITORIA_SECAO"
+      ],
+      "erro": "TimeoutError: The read operation timed out",
+      "secao": [
+        15440,
+        38,
+        133
+      ]
+    }
+  },
+  "status": "ALERTAS_TECNICOS_REQUEREM_ANALISE",
+  "turno": 2,
+  "uf": "CE",
+  "verificacoes": {
+    "log_eventos_igual_comparecimento_ok": 23759,
+    "proveniencia_carga_rdv_confere_ceft_ok": 23759,
+    "proveniencia_identidade_rdv_confere_ceft_ok": 23759,
+    "proveniencia_urna_efetivada_no_log_ok": 23759,
+    "rdv_contagens_confere_bu_ok": 23759,
+    "rdv_identidade_secao_confere_ok": 23759,
+    "sha512_arquivos_ok": 95036,
+    "urnas_trocadas": 84
+  }
+}

@@ -1,0 +1,359 @@
+{
+  "projeto": "FATOVIA AUDITA",
+  "ano": 2026,
+  "turno": 2,
+  "gerado_utc": "2026-10-28T15:36:20.159138+00:00",
+  "status": "PARCIAL",
+  "ufs_esperadas": 28,
+  "ufs_com_auditoria_executada": 8,
+  "ufs_pendentes": [
+    "AC",
+    "AL",
+    "AM",
+    "BA",
+    "ES",
+    "GO",
+    "MA",
+    "MG",
+    "MS",
+    "MT",
+    "PB",
+    "PE",
+    "PR",
+    "RO",
+    "RR",
+    "SC",
+    "SE",
+    "SP",
+    "TO",
+    "ZZ"
+  ],
+  "secoes_processadas_em_ufs_concluidas": 137037,
+  "secoes_rdv_igual_bu_em_ufs_concluidas": 137030,
+  "sha512_de_arquivos_conferidos_em_ufs_concluidas": 548120,
+  "ocorrencias_agregadas": {
+    "EXCECAO_AUDITORIA_SECAO": 7,
+    "CEFT_URNA_AUSENTE_DOS_LOGS": 4,
+    "LOG_EVENTOS_VOTO_DIFERENTE_COMPARECIMENTO": 2
+  },
+  "por_uf": {
+    "AC": {
+      "uf": "AC",
+      "status": "INCONCLUSIVO",
+      "secoes_referencia_bu": null,
+      "secoes_processadas": null,
+      "secoes_alertadas": null,
+      "rdv_bu_coincidentes": 0,
+      "sha512_arquivos_coincidentes": 0,
+      "ocorrencias": {},
+      "erro": "ValueError: AC: bu requer exatamente um arquivo no catálogo; encontrados=0"
+    },
+    "AL": {
+      "uf": "AL",
+      "status": "INCONCLUSIVO",
+      "secoes_referencia_bu": null,
+      "secoes_processadas": null,
+      "secoes_alertadas": null,
+      "rdv_bu_coincidentes": 0,
+      "sha512_arquivos_coincidentes": 0,
+      "ocorrencias": {},
+      "erro": "ValueError: AL: bu requer exatamente um arquivo no catálogo; encontrados=0"
+    },
+    "AM": {
+      "uf": "AM",
+      "status": "INCONCLUSIVO",
+      "secoes_referencia_bu": null,
+      "secoes_processadas": null,
+      "secoes_alertadas": null,
+      "rdv_bu_coincidentes": 0,
+      "sha512_arquivos_coincidentes": 0,
+      "ocorrencias": {},
+      "erro": "ValueError: AM: bu requer exatamente um arquivo no catálogo; encontrados=0"
+    },
+    "AP": {
+      "uf": "AP",
+      "status": "CONFERENCIA_INTERNA_CONSISTENTE_COM_RESSALVAS",
+      "secoes_referencia_bu": 1914,
+      "secoes_processadas": 1914,
+      "secoes_alertadas": 0,
+      "rdv_bu_coincidentes": 1914,
+      "sha512_arquivos_coincidentes": 7656,
+      "ocorrencias": {}
+    },
+    "BA": {
+      "uf": "BA",
+      "status": "INCONCLUSIVO",
+      "secoes_referencia_bu": null,
+      "secoes_processadas": null,
+      "secoes_alertadas": null,
+      "rdv_bu_coincidentes": 0,
+      "sha512_arquivos_coincidentes": 0,
+      "ocorrencias": {},
+      "erro": "ValueError: BA: bu requer exatamente um arquivo no catálogo; encontrados=0"
+    },
+    "CE": {
+      "uf": "CE",
+      "status": "ALERTAS_TECNICOS_REQUEREM_ANALISE",
+      "secoes_referencia_bu": 23765,
+      "secoes_processadas": 23765,
+      "secoes_alertadas": 6,
+      "rdv_bu_coincidentes": 23759,
+      "sha512_arquivos_coincidentes": 95036,
+      "ocorrencias": {
+        "EXCECAO_AUDITORIA_SECAO": 6
+      }
+    },
+    "DF": {
+      "uf": "DF",
+      "status": "CONFERENCIA_INTERNA_CONSISTENTE_COM_RESSALVAS",
+      "secoes_referencia_bu": 6969,
+      "secoes_processadas": 6969,
+      "secoes_alertadas": 0,
+      "rdv_bu_coincidentes": 6969,
+      "sha512_arquivos_coincidentes": 27876,
+      "ocorrencias": {}
+    },
+    "ES": {
+      "uf": "ES",
+      "status": "INCONCLUSIVO",
+      "secoes_referencia_bu": null,
+      "secoes_processadas": null,
+      "secoes_alertadas": null,
+      "rdv_bu_coincidentes": 0,
+      "sha512_arquivos_coincidentes": 0,
+      "ocorrencias": {},
+      "erro": "ValueError: ES: bu requer exatamente um arquivo no catálogo; encontrados=0"
+    },
+    "GO": {
+      "uf": "GO",
+      "status": "INCONCLUSIVO",
+      "secoes_referencia_bu": null,
+      "secoes_processadas": null,
+      "secoes_alertadas": null,
+      "rdv_bu_coincidentes": 0,
+      "sha512_arquivos_coincidentes": 0,
+      "ocorrencias": {},
+      "erro": "ValueError: GO: bu requer exatamente um arquivo no catálogo; encontrados=0"
+    },
+    "MA": {
+      "uf": "MA",
+      "status": "INCONCLUSIVO",
+      "secoes_referencia_bu": null,
+      "secoes_processadas": null,
+      "secoes_alertadas": null,
+      "rdv_bu_coincidentes": 0,
+      "sha512_arquivos_coincidentes": 0,
+      "ocorrencias": {},
+      "erro": "ValueError: MA: bu requer exatamente um arquivo no catálogo; encontrados=0"
+    },
+    "MG": {
+      "uf": "MG",
+      "status": "INCONCLUSIVO",
+      "secoes_referencia_bu": null,
+      "secoes_processadas": null,
+      "secoes_alertadas": null,
+      "rdv_bu_coincidentes": 0,
+      "sha512_arquivos_coincidentes": 0,
+      "ocorrencias": {},
+      "erro": "ValueError: MG: bu requer exatamente um arquivo no catálogo; encontrados=0"
+    },
+    "MS": {
+      "uf": "MS",
+      "status": "INCONCLUSIVO",
+      "secoes_referencia_bu": null,
+      "secoes_processadas": null,
+      "secoes_alertadas": null,
+      "rdv_bu_coincidentes": 0,
+      "sha512_arquivos_coincidentes": 0,
+      "ocorrencias": {},
+      "erro": "ValueError: MS: bu requer exatamente um arquivo no catálogo; encontrados=0"
+    },
+    "MT": {
+      "uf": "MT",
+      "status": "INCONCLUSIVO",
+      "secoes_referencia_bu": null,
+      "secoes_processadas": null,
+      "secoes_alertadas": null,
+      "rdv_bu_coincidentes": 0,
+      "sha512_arquivos_coincidentes": 0,
+      "ocorrencias": {},
+      "erro": "ValueError: MT: bu requer exatamente um arquivo no catálogo; encontrados=0"
+    },
+    "PA": {
+      "uf": "PA",
+      "status": "ALERTAS_TECNICOS_REQUEREM_ANALISE",
+      "secoes_referencia_bu": 20827,
+      "secoes_processadas": 20827,
+      "secoes_alertadas": 2,
+      "rdv_bu_coincidentes": 20827,
+      "sha512_arquivos_coincidentes": 83308,
+      "ocorrencias": {
+        "CEFT_URNA_AUSENTE_DOS_LOGS": 2
+      }
+    },
+    "PB": {
+      "uf": "PB",
+      "status": "INCONCLUSIVO",
+      "secoes_referencia_bu": null,
+      "secoes_processadas": null,
+      "secoes_alertadas": null,
+      "rdv_bu_coincidentes": 0,
+      "sha512_arquivos_coincidentes": 0,
+      "ocorrencias": {},
+      "erro": "ValueError: PB: bu requer exatamente um arquivo no catálogo; encontrados=0"
+    },
+    "PE": {
+      "uf": "PE",
+      "status": "INCONCLUSIVO",
+      "secoes_referencia_bu": null,
+      "secoes_processadas": null,
+      "secoes_alertadas": null,
+      "rdv_bu_coincidentes": 0,
+      "sha512_arquivos_coincidentes": 0,
+      "ocorrencias": {},
+      "erro": "ValueError: PE: bu requer exatamente um arquivo no catálogo; encontrados=0"
+    },
+    "PI": {
+      "uf": "PI",
+      "status": "ALERTAS_TECNICOS_REQUEREM_ANALISE",
+      "secoes_referencia_bu": 10225,
+      "secoes_processadas": 10225,
+      "secoes_alertadas": 1,
+      "rdv_bu_coincidentes": 10225,
+      "sha512_arquivos_coincidentes": 40900,
+      "ocorrencias": {
+        "LOG_EVENTOS_VOTO_DIFERENTE_COMPARECIMENTO": 1
+      }
+    },
+    "PR": {
+      "uf": "PR",
+      "status": "INCONCLUSIVO",
+      "secoes_referencia_bu": null,
+      "secoes_processadas": null,
+      "secoes_alertadas": null,
+      "rdv_bu_coincidentes": 0,
+      "sha512_arquivos_coincidentes": 0,
+      "ocorrencias": {},
+      "erro": "ValueError: PR: bu requer exatamente um arquivo no catálogo; encontrados=0"
+    },
+    "RJ": {
+      "uf": "RJ",
+      "status": "ALERTAS_TECNICOS_REQUEREM_ANALISE",
+      "secoes_referencia_bu": 37675,
+      "secoes_processadas": 37675,
+      "secoes_alertadas": 2,
+      "rdv_bu_coincidentes": 37674,
+      "sha512_arquivos_coincidentes": 150696,
+      "ocorrencias": {
+        "CEFT_URNA_AUSENTE_DOS_LOGS": 1,
+        "EXCECAO_AUDITORIA_SECAO": 1
+      }
+    },
+    "RN": {
+      "uf": "RN",
+      "status": "CONFERENCIA_INTERNA_CONSISTENTE_COM_RESSALVAS",
+      "secoes_referencia_bu": 8115,
+      "secoes_processadas": 8115,
+      "secoes_alertadas": 0,
+      "rdv_bu_coincidentes": 8115,
+      "sha512_arquivos_coincidentes": 32460,
+      "ocorrencias": {}
+    },
+    "RO": {
+      "uf": "RO",
+      "status": "INCONCLUSIVO",
+      "secoes_referencia_bu": null,
+      "secoes_processadas": null,
+      "secoes_alertadas": null,
+      "rdv_bu_coincidentes": 0,
+      "sha512_arquivos_coincidentes": 0,
+      "ocorrencias": {},
+      "erro": "ValueError: RO: bu requer exatamente um arquivo no catálogo; encontrados=0"
+    },
+    "RR": {
+      "uf": "RR",
+      "status": "INCONCLUSIVO",
+      "secoes_referencia_bu": null,
+      "secoes_processadas": null,
+      "secoes_alertadas": null,
+      "rdv_bu_coincidentes": 0,
+      "sha512_arquivos_coincidentes": 0,
+      "ocorrencias": {},
+      "erro": "ValueError: RR: bu requer exatamente um arquivo no catálogo; encontrados=0"
+    },
+    "RS": {
+      "uf": "RS",
+      "status": "ALERTAS_TECNICOS_REQUEREM_ANALISE",
+      "secoes_referencia_bu": 27547,
+      "secoes_processadas": 27547,
+      "secoes_alertadas": 2,
+      "rdv_bu_coincidentes": 27547,
+      "sha512_arquivos_coincidentes": 110188,
+      "ocorrencias": {
+        "CEFT_URNA_AUSENTE_DOS_LOGS": 1,
+        "LOG_EVENTOS_VOTO_DIFERENTE_COMPARECIMENTO": 1
+      }
+    },
+    "SC": {
+      "uf": "SC",
+      "status": "INCONCLUSIVO",
+      "secoes_referencia_bu": null,
+      "secoes_processadas": null,
+      "secoes_alertadas": null,
+      "rdv_bu_coincidentes": 0,
+      "sha512_arquivos_coincidentes": 0,
+      "ocorrencias": {},
+      "erro": "ValueError: SC: bu requer exatamente um arquivo no catálogo; encontrados=0"
+    },
+    "SE": {
+      "uf": "SE",
+      "status": "INCONCLUSIVO",
+      "secoes_referencia_bu": null,
+      "secoes_processadas": null,
+      "secoes_alertadas": null,
+      "rdv_bu_coincidentes": 0,
+      "sha512_arquivos_coincidentes": 0,
+      "ocorrencias": {},
+      "erro": "ValueError: SE: bu requer exatamente um arquivo no catálogo; encontrados=0"
+    },
+    "SP": {
+      "uf": "SP",
+      "status": "INCONCLUSIVO",
+      "secoes_referencia_bu": null,
+      "secoes_processadas": null,
+      "secoes_alertadas": null,
+      "rdv_bu_coincidentes": 0,
+      "sha512_arquivos_coincidentes": 0,
+      "ocorrencias": {},
+      "erro": "ValueError: SP: bu requer exatamente um arquivo no catálogo; encontrados=0"
+    },
+    "TO": {
+      "uf": "TO",
+      "status": "INCONCLUSIVO",
+      "secoes_referencia_bu": null,
+      "secoes_processadas": null,
+      "secoes_alertadas": null,
+      "rdv_bu_coincidentes": 0,
+      "sha512_arquivos_coincidentes": 0,
+      "ocorrencias": {},
+      "erro": "ValueError: TO: bu requer exatamente um arquivo no catálogo; encontrados=0"
+    },
+    "ZZ": {
+      "uf": "ZZ",
+      "status": "INCONCLUSIVO",
+      "secoes_referencia_bu": null,
+      "secoes_processadas": null,
+      "secoes_alertadas": null,
+      "rdv_bu_coincidentes": 0,
+      "sha512_arquivos_coincidentes": 0,
+      "ocorrencias": {},
+      "erro": "ValueError: ZZ: bu requer exatamente um arquivo no catálogo; encontrados=0"
+    }
+  },
+  "ressalvas": [
+    "A validação integral de assinatura criptográfica e certificado NÃO foi realizada.",
+    "Os arquivos de urna aqui analisados são somente os publicados como Totalizado.",
+    "Correspondência de RDV e BU não demonstra necessariamente intenção do eleitor.",
+    "UF sem artefato validado NÃO pode ser contada como auditada."
+  ]
+}

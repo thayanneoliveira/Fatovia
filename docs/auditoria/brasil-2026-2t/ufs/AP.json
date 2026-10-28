@@ -1,0 +1,92 @@
+{
+  "ano": 2026,
+  "assinatura_criptografica_validada": false,
+  "cobertura": {
+    "chaves_sem_correspondencia": {
+      "bu_sem_ceft": 0,
+      "bu_sem_pacote_bruto": 0,
+      "ceft_sem_bu": 0,
+      "pacote_bruto_sem_bu": 0
+    },
+    "inventario": {
+      "amostra_duplicados": [],
+      "amostra_tipos_incompletos": [],
+      "arquivos_duplicados": 0,
+      "arquivos_fora_padrao_amostra": [
+        "leiame.pdf",
+        "se0-sdjkADYayq-9IGAwt7Kc4ewW+hrQ09v-buq4S84=.id"
+      ],
+      "secoes_com_arquivos": 1914,
+      "secoes_com_tipos_incompletos": 0,
+      "tipos": {
+        "bu.dat": 1914,
+        "imgbu.dat": 1914,
+        "log.jez": 1914,
+        "rdv.dat": 1914,
+        "vota.vsc": 1914
+      }
+    },
+    "secoes_alertadas": 0,
+    "secoes_bu": 1914,
+    "secoes_ceft": 1914,
+    "secoes_distintas": 1914,
+    "secoes_pacote_bruto": 1914,
+    "secoes_processadas": 1914
+  },
+  "data_utc": "2026-10-28T14:53:53.949616+00:00",
+  "fontes": {
+    "arquivo_bruto": {
+      "bytes": 438924137,
+      "sha512_calculado": "dde41b008a3c4e09da763c380b300499175205281229421ff4241d9ffc5d4a7a7b0a181bbcb413b17a08c4b27bcbcb1db7f20423d696d8b47527b2219e0ba774",
+      "sha512_conferido": null,
+      "sha512_publicado_disponivel": false,
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/arqurnatot/bu_imgbu_logjez_rdv_vscmr_2026_2t_AP.zip"
+    },
+    "bu": {
+      "bytes": 596704,
+      "hash_conferido": true,
+      "sha512": "66f56ba91e90cd715994bba078014e57a9124e5667d5047b84cedeaf67dfbfc86a0c85537d65c49810817a73d0eaab6222fecdbb57d9077cc6a1da18a6d21cd6",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_AP_261020260742.zip"
+    },
+    "catalogos": {
+      "bruto": "https://dadosabertos.tse.jus.br/dataset/resultados-2026-arquivos-transmitidos-para-totalizacao",
+      "bu": "https://dadosabertos.tse.jus.br/dataset/resultados-2026-boletim-de-urna",
+      "ceft": "https://dadosabertos.tse.jus.br/dataset/resultados-2026-correspondencias-esperadas-e-efetivadas-2-turno"
+    },
+    "ceft": {
+      "bytes": 430996,
+      "hash_conferido": true,
+      "sha512": "dffc8dc41161e1f5c2c52d7ee70e1902c8cbc90dd030885c7efa02756f721ce12e74ee4a2351967c0e9ce209f44265118176d5aea76275a8e0ae9931b954b1b3",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/correspefet/CEFT_2t_AP_261020261201.zip"
+    },
+    "origens": {
+      "bruto": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/arqurnatot/bu_imgbu_logjez_rdv_vscmr_2026_2t_AP.zip",
+      "bruto_bytes": 438924137,
+      "bu": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_AP_261020260742.zip",
+      "ceft": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/correspefet/CEFT_2t_AP_261020261201.zip"
+    }
+  },
+  "limitacoes": [
+    "Somente dados totalizados publicados pelo TSE.",
+    "Conferir SHA512 com VSC NÃO verifica criptograficamente a assinatura.",
+    "Rastreabilidade dos dados internos não prova intenção do eleitor.",
+    "Log com contingência pode exigir prova documental complementar."
+  ],
+  "ocorrencias": {},
+  "ocorrencias_amostra": {},
+  "projeto": "FATOVIA AUDITA",
+  "resultado_por_secao": {},
+  "status": "CONFERENCIA_INTERNA_CONSISTENTE_COM_RESSALVAS",
+  "turno": 2,
+  "uf": "AP",
+  "verificacoes": {
+    "log_eventos_igual_comparecimento_ok": 1914,
+    "proveniencia_carga_rdv_confere_ceft_ok": 1914,
+    "proveniencia_identidade_rdv_confere_ceft_ok": 1914,
+    "proveniencia_urna_efetivada_no_log_ok": 1914,
+    "rdv_contagens_confere_bu_ok": 1914,
+    "rdv_identidade_secao_confere_ok": 1914,
+    "sha512_arquivos_ok": 7656,
+    "urnas_trocadas": 16
+  }
+}
