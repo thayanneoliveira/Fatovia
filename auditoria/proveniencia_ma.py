@@ -90,6 +90,8 @@ def summarize_comparison(paths):
                  and r["NR_URNA_ESPERADA"]!=r["NR_URNA_EFETIVADA"]]
     nonmatching_expected=[k for k,r in effective.items() if k in latest and
                           r.get("NR_URNA_ESPERADA","")!=latest[k].get("NR_URNA_ESPERADA","")]
+    changed_without_code=[k for k in changed_urn if not effective[k].get("TP_DIVERGENCIA","").strip()]
+    coded_without_number_change=[k for k,r in effective.items() if r.get("TP_DIVERGENCIA","").strip() and k not in changed_urn]
     classifications=Counter(r.get("TP_DIVERGENCIA","") or "(vazio)" for r in effective.values())
     origins=Counter(r.get("DS_ORIGEM_VOTO","") or "(vazio)" for r in effective.values())
     coverage={
@@ -107,6 +109,12 @@ def summarize_comparison(paths):
         "urnas_esperada_versus_efetivada":{
             "numero_urna_diferente":len(changed_urn),
             "amostra_secoes":samples(changed_urn),
+            "urna_diferente_sem_codigo_divergencia":{
+                "quantidade":len(changed_without_code),
+                "secoes":samples(changed_without_code)},
+            "codigo_divergencia_sem_numero_diferente":{
+                "quantidade":len(coded_without_number_change),
+                "secoes":samples(coded_without_number_change)},
             "urna_esperada_publicada_25_nao_bate_com_campo_de_ceft":len(nonmatching_expected),
             "amostra_nao_coincidentes":samples(nonmatching_expected),
         },
