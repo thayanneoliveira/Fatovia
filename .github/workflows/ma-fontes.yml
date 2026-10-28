@@ -1,0 +1,24 @@
+name: "FatoVia | Teste de fontes MA"
+on:
+  push:
+    paths:
+      - ".github/workflows/ma-fontes.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  fontes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verificar catálogo e metadados públicos
+        run: python -m auditoria.ma_fontes
+      - uses: actions/upload-artifact@v4
+        with:
+          name: diagnostico-fontes-ma
+          path: work/aprofundada/ma_fontes.json
+          retention-days: 30
