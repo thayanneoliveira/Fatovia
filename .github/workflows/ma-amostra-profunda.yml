@@ -1,4 +1,4 @@
-name: "FatoVia | MA RDV, logs e topologia ASN1"
+name: "FatoVia | MA assinatura BER e hashes SHA512"
 on:
   push:
     paths:
