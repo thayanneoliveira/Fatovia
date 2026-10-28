@@ -227,10 +227,16 @@ def run():
                     rawfiles={kind:archive.read(info) for kind,info in entries.items()}
                     signed_name,signed_blob=next(((k,v) for k,v in rawfiles.items() if k.endswith("vota.vsc")), (None,None))
                     if not signed_blob:raise ValueError("Assinatura vota.vsc ausente")
-                    hashes,sigmeta=signature_hashes(signed_blob,sigc)
-                    rec["assinatura"]=sigmeta
-                    rec["assinatura"]["hashes_listados"]=len(hashes)
-                    rec["assinatura"]["comparacao_sha512"]=compare_hashes(rawfiles,hashes)
+                    try:
+                        hashes,sigmeta=signature_hashes(signed_blob,sigc)
+                        rec["assinatura"]=sigmeta
+                        rec["assinatura"]["hashes_listados"]=len(hashes)
+                        rec["assinatura"]["comparacao_sha512"]=compare_hashes(rawfiles,hashes)
+                    except Exception as exc:
+                        rec["assinatura"]={"status":"NAO_DECODIFICADA",
+                                          "erro":f"{type(exc).__name__}: {exc}",
+                                          "assinaturas_digitalmente_verificadas":False,
+                                          "comparacao_sha512":{}}
                     rdvname,rdvraw=select("rdv.dat")
                     rdv=decode_rdv(rawfiles[rdvname],rdvc)
                     if rdv["secao_interna"]!=key:raise ValueError("ID seção RDV difere da seção no caminho")
