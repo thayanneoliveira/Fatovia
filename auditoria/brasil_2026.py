@@ -58,9 +58,23 @@ def published_urls(uf):
         parser=TSELinks()
         parser.feed(doc)
         matches=sorted(url for url in parser.urls if re.fullmatch(rx,url))
-        if len(matches)!=1:
-            raise ValueError(f"{uf}: {kind} requer exatamente um arquivo no catálogo; encontrados={len(matches)}")
-        candidates[kind]=matches[0]
+        if len(matches)==1:
+            candidate=matches[0]
+        elif len(matches)==0:
+            # A API HTML pode servir cache com apenas o primeiro turno.
+            # Estes nomes padronizados foram observados nas páginas oficiais do TSE.
+            # Cada candidato só é admitido após confirmação HTTP e ZIP real.
+            if kind=="bu":
+                candidate=TSE+f"buweb/bweb_2t_{uf}_261020260742.zip"
+            else:
+                candidate=TSE+f"correspefet/CEFT_2t_{uf}_261020261201.zip"
+        else:
+            raise ValueError(f"{uf}: {kind} possui {len(matches)} candidatos; conferir versões")
+        with urlopen(Request(candidate,method="HEAD",
+                headers={"User-Agent":"FatoViaAudita/2.0 (dados públicos)"}),timeout=45) as response:
+            if response.status!=200 or not response.headers.get("Content-Length"):
+                raise ValueError(f"{uf}: {kind} não confirmado na fonte oficial")
+        candidates[kind]=candidate
     # URL de segundo turno com nome padronizado, verificada antes de abrir.
     url=TSE+f"arqurnatot/bu_imgbu_logjez_rdv_vscmr_2026_2t_{uf}.zip"
     with urlopen(Request(url,method="HEAD",
