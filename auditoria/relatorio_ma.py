@@ -13,6 +13,8 @@ def render(report):
         checks.update(r.get("assinatura",{}).get("comparacao_sha512",{}).values())
     rdv_ok=sum(r.get("rdv_presidente",{}).get("igual_ao_bu") is True for r in secs.values())
     logs_ok=sum(r.get("logs",{}).get("eventos_igual_comparecimento") is True for r in secs.values())
+    urnas_rdv_ok=sum(r.get("correspondencia_equipamento",{}).get("identificacao_rdv_confere_com_ceft") is True for r in secs.values())
+    urnas_log_ok=sum(r.get("correspondencia_equipamento",{}).get("urna_efetivada_presente_nos_logs_de_voto") is True for r in secs.values())
     lines=[
         "# FATOVIA AUDITA | Maranhão, segundo turno 2026",
         "",f"Data UTC: {report['gerado_utc']}.",
@@ -21,18 +23,23 @@ def render(report):
         f"- Seções amostradas: **{len(secs)}** (3 com diferenças de identificação e 3 controles).",
         f"- RDV presidencial igual ao BU publicado: **{rdv_ok}/{len(secs)}**.",
         f"- Eventos de voto nos logs iguais ao comparecimento: **{logs_ok}/{len(secs)}**.",
+        f"- Número da urna no RDV coincide com a urna efetivada: **{urnas_rdv_ok}/{len(secs)}**.",
+        f"- Urna efetivada aparece nos eventos de voto dos logs: **{urnas_log_ok}/{len(secs)}**.",
         f"- SHA-512 dos arquivos presentes no pacote igual ao declarado na estrutura VSC: **{checks['HASH_OK']}**.",
         f"- SHA-512 divergente entre arquivos presentes e hash declarado: **{checks['HASH_DIVERGENTE']}**.",
         f"- Referências na estrutura VSC sem arquivo correspondente nesse pacote: **{checks['SEM_ARQUIVO_OU_AMBIGUO']}** (não se trata, por si só, de falha).",
         "",
-        "| Município (código TSE) / Zona / Seção | Tipo | RDV x BU | Log x comparecimento | Hashes locais |",
-        "|---|---|---|---|---|",
+        "| Município (código TSE) / Zona / Seção | Tipo | RDV x BU | Log x comparecimento | Urna RDV x CEFT | Urna CEFT no log | Hashes locais |",
+        "|---|---|---|---|---|---|---|",
     ]
     for tag,r in secs.items():
         hashes=Counter(r.get("assinatura",{}).get("comparacao_sha512",{}).values())
         rdv="coincide" if r.get("rdv_presidente",{}).get("igual_ao_bu") else "não confirmado"
         log="coincide" if r.get("logs",{}).get("eventos_igual_comparecimento") else "não confirmado"
-        lines.append(f"| {tag} | {r['grupo']} | {rdv} | {log} | {hashes['HASH_OK']} OK |")
+        prov=r.get("correspondencia_equipamento",{})
+        urna_rdv="sim" if prov.get("identificacao_rdv_confere_com_ceft") else "não confirmado"
+        urna_log="sim" if prov.get("urna_efetivada_presente_nos_logs_de_voto") else "não confirmado"
+        lines.append(f"| {tag} | {r['grupo']} | {rdv} | {log} | {urna_rdv} | {urna_log} | {hashes['HASH_OK']} OK |")
     lines += [
         "", "## Limitações cruciais", "",
         "1. **Assinatura criptográfica não validada**: foi conferida somente a igualdade dos hashes "
