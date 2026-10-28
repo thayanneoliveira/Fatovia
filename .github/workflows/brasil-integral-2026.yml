@@ -1,4 +1,4 @@
-name: "FatoVia | Auditoria Brasil 2026 segundo turno"
+name: "FatoVia | Auditoria nacional 2026 com fontes validadas"
 on:
   workflow_dispatch:
   push:
