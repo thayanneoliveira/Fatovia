@@ -92,6 +92,14 @@ def summarize_comparison(paths):
                           r.get("NR_URNA_ESPERADA","")!=latest[k].get("NR_URNA_ESPERADA","")]
     changed_without_code=[k for k in changed_urn if not effective[k].get("TP_DIVERGENCIA","").strip()]
     coded_without_number_change=[k for k,r in effective.items() if r.get("TP_DIVERGENCIA","").strip() and k not in changed_urn]
+    # Campos administrativos públicos, sem dados de pessoas.
+    detail_columns=("NR_URNA_ESPERADA","NR_URNA_EFETIVADA",
+                    "CD_CARGA_URNA_ESPERADA","CD_CARGA_URNA_EFETIVADA",
+                    "CD_FLASHCARD_URNA_ESPERADA","CD_FLASHCARD_URNA_EFETIVADA",
+                    "CD_ORIGEM_VOTO","DS_ORIGEM_VOTO","TP_DIVERGENCIA")
+    details_without_code=[
+        {"secao":list(k), "campos":{p:effective[k].get(p,"") for p in detail_columns}}
+        for k in sorted(changed_without_code)]
     classifications=Counter(r.get("TP_DIVERGENCIA","") or "(vazio)" for r in effective.values())
     origins=Counter(r.get("DS_ORIGEM_VOTO","") or "(vazio)" for r in effective.values())
     coverage={
@@ -111,7 +119,8 @@ def summarize_comparison(paths):
             "amostra_secoes":samples(changed_urn),
             "urna_diferente_sem_codigo_divergencia":{
                 "quantidade":len(changed_without_code),
-                "secoes":samples(changed_without_code)},
+                "secoes":samples(changed_without_code),
+                "campos_para_investigacao":details_without_code},
             "codigo_divergencia_sem_numero_diferente":{
                 "quantidade":len(coded_without_number_change),
                 "secoes":samples(coded_without_number_change)},
