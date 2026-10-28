@@ -102,6 +102,16 @@ def summarize_comparison(paths):
         for k in sorted(changed_without_code)]
     classifications=Counter(r.get("TP_DIVERGENCIA","") or "(vazio)" for r in effective.values())
     origins=Counter(r.get("DS_ORIGEM_VOTO","") or "(vazio)" for r in effective.values())
+    # Verificar se TP_DIVERGENCIA marca troca da mídia, e não simplesmente troca da urna.
+    code_vs_media=Counter()
+    for key,row in effective.items():
+        changed_number=(row.get("NR_URNA_ESPERADA")!=row.get("NR_URNA_EFETIVADA"))
+        changed_flashcard=(row.get("CD_FLASHCARD_URNA_ESPERADA")!=row.get("CD_FLASHCARD_URNA_EFETIVADA"))
+        has_code=bool(row.get("TP_DIVERGENCIA","").strip())
+        if changed_number or has_code:
+            code_vs_media[("codigo" if has_code else "sem_codigo",
+                           "urna_diferente" if changed_number else "urna_igual",
+                           "flashcard_diferente" if changed_flashcard else "flashcard_igual")]+=1
     coverage={
         "esperada_24":len(older),"esperada_25":len(latest),
         "efetivada_26":len(effective),"bu_presidente":len(bu),
@@ -129,6 +139,7 @@ def summarize_comparison(paths):
         },
         "codigos_tipo_divergencia_ceft":dict(classifications),
         "origem_votos_ceft":dict(origins),
+        "classificacao_por_codigo_urna_e_flashcard":{" / ".join(k):v for k,v in code_vs_media.items()},
         "alerta_metodologico":("Divergência de equipamento, código TP_DIVERGENCIA e alteração antes do pleito "
                                "não são fraude por si. Consultar os PDF leia-me e os logs da urna para qualificar."),
     }
