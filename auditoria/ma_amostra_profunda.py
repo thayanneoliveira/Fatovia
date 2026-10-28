@@ -142,36 +142,58 @@ def asn1_topology(raw):
     return {"arquivo_bytes":len(raw),"raiz":root,"filhos":children}
 
 def signature_hashes(raw,compiler):
-    decoded=compiler.decode("EntidadeAssinaturaEcourna",bytearray(raw))
+    """Extrai hashes declarados sem alegar validação criptográfica da assinatura."""
+    mode="direto"
+    try:
+        decoded=compiler.decode("EntidadeAssinaturaEcourna",bytearray(raw))
+        envelopes=[decoded[k] for k in ("assinaturaSW","assinaturaHW") if k in decoded]
+        model=str(decoded.get("modeloEquipamento"))
+    except Exception as exc:
+        # Formato real 2026 observado: SEQUENCE de dois envelopes ASN.1
+        # mais uma pequena SEQUENCE. Fallback estrito, não permissivo.
+        topology=asn1_topology(raw)
+        chunks=topology["filhos"]
+        if len(chunks)!=3 or topology["raiz"]["fim"]!=len(raw) or any(
+                x["tag"]!="0x30" for x in chunks):
+            raise ValueError(f"VSC com estrutura não reconhecida: {exc}")
+        envelopes=[]
+        for chunk in chunks[:2]:
+            data=raw[chunk["inicio"]:chunk["fim"]]
+            envelopes.append(compiler.decode("EntidadeAssinatura",bytearray(data)))
+        mode="envelopes_ber_2026"
+        model="terceiro_campo_nao_interpretado"
     hashes={}
-    for side in ("assinaturaSW","assinaturaHW"):
-        item=decoded.get(side) or {}
-        content=item.get("conteudoAutoAssinado")
-        if not content:continue
-        signed=compiler.decode("Assinatura",bytearray(content))
-        for file in signed.get("arquivosAssinados",[]):
-            name=file.get("nomeArquivo")
+    for item in envelopes:
+        signed=item.get("conteudoAutoAssinado")
+        if not signed:continue
+        body=compiler.decode("Assinatura",bytearray(signed))
+        for file in body.get("arquivosAssinados",[]):
+            name=str(file.get("nomeArquivo",""))
             digest=file.get("assinatura",{}).get("hash")
-            if name and digest:
-                hashes.setdefault(str(name),set()).add(digest.hex())
-    return hashes, {"modelo_equipamento":decoded.get("modeloEquipamento"),
-                    "tem_envelope_sw":bool(decoded.get("assinaturaSW")),
-                    "tem_envelope_hw":bool(decoded.get("assinaturaHW")),
-                    "assinaturas_digitalmente_verificadas":False}
+            if name and digest:hashes.setdefault(name,set()).add(digest.hex())
+    if not hashes:
+        raise ValueError("Nenhum hash de arquivo encontrado no VSC")
+    return hashes,{"modo_decodificacao":mode,"modelo":model,
+                   "envelopes_decodificados":len(envelopes),
+                   "assinaturas_digitalmente_verificadas":False}
 
 def compare_hashes(files,hashed):
     result={}
     for name,digests in hashed.items():
         if not name or "/" in name or "\\" in name or ".." in name:
-            result[str(name)]="NOME_INVALIDO"
+            result[name]="NOME_INVALIDO"
             continue
-        matches=[k for k in files if k.endswith(name)]
+        # Casar nome completo terminando em "-bu.dat" com chave "bu.dat",
+        # sem confundir com "imgbu.dat".
+        matches=[k for k in files if name==k or name.endswith("-"+k)]
         if len(matches)!=1:
-            result[str(name)]="SEM_ARQUIVO_OU_AMBIGUO"
-        elif hashlib.sha512(files[matches[0]]).hexdigest() in digests:
-            result[str(name)]="HASH_OK"
+            result[name]="SEM_ARQUIVO_OU_AMBIGUO"
+        elif len(digests)!=1:
+            result[name]="HASHES_DECLARADOS_DIVERGENTES"
+        elif hashlib.sha512(files[matches[0]]).hexdigest()==next(iter(digests)):
+            result[name]="HASH_OK"
         else:
-            result[str(name)]="HASH_DIVERGENTE"
+            result[name]="HASH_DIVERGENTE"
     return result
 
 def log_summary(blob):
