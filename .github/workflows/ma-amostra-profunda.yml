@@ -1,4 +1,4 @@
-name: "FatoVia | MA RDV x BU, assinatura e logs"
+name: "FatoVia | MA RDV x BU e logs com VSC independente"
 on:
   push:
     paths:
