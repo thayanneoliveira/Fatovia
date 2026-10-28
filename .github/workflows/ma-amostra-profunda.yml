@@ -1,4 +1,4 @@
-name: "FatoVia | MA auditoria aprofundada - relatório público"
+name: "FatoVia | MA cruzamento RDV CEFT e logs"
 on:
   push:
     paths:
