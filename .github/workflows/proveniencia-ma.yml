@@ -1,4 +1,4 @@
-name: "FatoVia | Proveniência eleitoral MA (dados públicos)"
+name: "FatoVia | Proveniência e cruzamento eleitoral MA"
 
 on:
   workflow_dispatch:
