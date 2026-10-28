@@ -1,5 +1,5 @@
 {
-  "gerado_utc": "2026-10-28T11:10:56.152993+00:00",
+  "gerado_utc": "2026-10-28T11:12:30.383566+00:00",
   "escopo": "MA, 2º turno 2026",
   "metodo": "Conferência seletiva e inventário integral de nomes em ZIP bruto",
   "fonte_bruta": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/arqurnatot/bu_imgbu_logjez_rdv_vscmr_2026_2t_MA.zip",
@@ -7,6 +7,11 @@
     "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_MA_261020260742.zip",
     "sha512_calculado": "90c1c9d2d1d0635c9e6900ee51dbb81b4a1f2dee113ed3a5145a2dacbe8d2da97bec55c78caa74fb635412cd29c413f2204a05d22ae6e0516ef249811c9d075c",
     "bytes": 4609442
+  },
+  "ceft_csv": {
+    "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/correspefet/CEFT_2t_MA_261020261201.zip",
+    "sha512_conferido": true,
+    "bytes": 1774248
   },
   "secoes": {
     "7536/26/88": {
@@ -79,6 +84,9 @@
       "logs": {
         "logs_internos": 3,
         "total_eventos_voto_25_10": 254,
+        "urnas_com_eventos_voto_25_10": [
+          2287775
+        ],
         "eventos_voto_por_data": {
           "04/10/2026": 249,
           "25/10/2026": 254
@@ -93,6 +101,16 @@
         "metodo": "contagem de eventos 'O voto do eleitor foi computado' após união de cópias de log",
         "comparecimento_bu": 254,
         "eventos_igual_comparecimento": true
+      },
+      "correspondencia_equipamento": {
+        "urna_esperada": "2309878",
+        "urna_efetivada": "2287775",
+        "urna_reportada_no_rdv": 2287775,
+        "codigo_carga_efetivada": "129792566684128047003820",
+        "codigo_carga_no_rdv": "129792566684128047003820",
+        "codigo_divergencia": "",
+        "identificacao_rdv_confere_com_ceft": true,
+        "urna_efetivada_presente_nos_logs_de_voto": true
       }
     },
     "9210/1/124": {
@@ -163,6 +181,9 @@
       "logs": {
         "logs_internos": 1,
         "total_eventos_voto_25_10": 297,
+        "urnas_com_eventos_voto_25_10": [
+          1813889
+        ],
         "eventos_voto_por_data": {
           "04/10/2026": 295,
           "25/10/2026": 297
@@ -175,6 +196,16 @@
         "metodo": "contagem de eventos 'O voto do eleitor foi computado' após união de cópias de log",
         "comparecimento_bu": 297,
         "eventos_igual_comparecimento": true
+      },
+      "correspondencia_equipamento": {
+        "urna_esperada": "1656375",
+        "urna_efetivada": "1813889",
+        "urna_reportada_no_rdv": 1813889,
+        "codigo_carga_efetivada": "778388440553633326167944",
+        "codigo_carga_no_rdv": "778388440553633326167944",
+        "codigo_divergencia": "",
+        "identificacao_rdv_confere_com_ceft": true,
+        "urna_efetivada_presente_nos_logs_de_voto": true
       }
     },
     "9210/1/125": {
@@ -247,6 +278,9 @@
       "logs": {
         "logs_internos": 1,
         "total_eventos_voto_25_10": 306,
+        "urnas_com_eventos_voto_25_10": [
+          1813386
+        ],
         "eventos_voto_por_data": {
           "04/10/2026": 306,
           "25/10/2026": 306
@@ -259,6 +293,16 @@
         "metodo": "contagem de eventos 'O voto do eleitor foi computado' após união de cópias de log",
         "comparecimento_bu": 306,
         "eventos_igual_comparecimento": true
+      },
+      "correspondencia_equipamento": {
+        "urna_esperada": "1651908",
+        "urna_efetivada": "1813386",
+        "urna_reportada_no_rdv": 1813386,
+        "codigo_carga_efetivada": "434954210919380372716104",
+        "codigo_carga_no_rdv": "434954210919380372716104",
+        "codigo_divergencia": "",
+        "identificacao_rdv_confere_com_ceft": true,
+        "urna_efetivada_presente_nos_logs_de_voto": true
       }
     },
     "7030/52/32": {
@@ -331,6 +375,9 @@
       "logs": {
         "logs_internos": 2,
         "total_eventos_voto_25_10": 192,
+        "urnas_com_eventos_voto_25_10": [
+          2295302
+        ],
         "eventos_voto_por_data": {
           "04/10/2026": 197,
           "25/10/2026": 192
@@ -345,6 +392,16 @@
         "metodo": "contagem de eventos 'O voto do eleitor foi computado' após união de cópias de log",
         "comparecimento_bu": 192,
         "eventos_igual_comparecimento": true
+      },
+      "correspondencia_equipamento": {
+        "urna_esperada": "2307731",
+        "urna_efetivada": "2295302",
+        "urna_reportada_no_rdv": 2295302,
+        "codigo_carga_efetivada": "181475183354327069832475",
+        "codigo_carga_no_rdv": "181475183354327069832475",
+        "codigo_divergencia": "C",
+        "identificacao_rdv_confere_com_ceft": true,
+        "urna_efetivada_presente_nos_logs_de_voto": true
       }
     },
     "7048/70/184": {
@@ -417,6 +474,10 @@
       "logs": {
         "logs_internos": 2,
         "total_eventos_voto_25_10": 227,
+        "urnas_com_eventos_voto_25_10": [
+          2083663,
+          2129857
+        ],
         "eventos_voto_por_data": {
           "04/10/2026": 238,
           "25/10/2026": 227
@@ -431,6 +492,16 @@
         "metodo": "contagem de eventos 'O voto do eleitor foi computado' após união de cópias de log",
         "comparecimento_bu": 227,
         "eventos_igual_comparecimento": true
+      },
+      "correspondencia_equipamento": {
+        "urna_esperada": "2083663",
+        "urna_efetivada": "2129857",
+        "urna_reportada_no_rdv": 2129857,
+        "codigo_carga_efetivada": "997848990170531022580169",
+        "codigo_carga_no_rdv": "997848990170531022580169",
+        "codigo_divergencia": "C",
+        "identificacao_rdv_confere_com_ceft": true,
+        "urna_efetivada_presente_nos_logs_de_voto": true
       }
     },
     "7005/12/21": {
@@ -503,6 +574,9 @@
       "logs": {
         "logs_internos": 1,
         "total_eventos_voto_25_10": 235,
+        "urnas_com_eventos_voto_25_10": [
+          2305445
+        ],
         "eventos_voto_por_data": {
           "04/10/2026": 226,
           "25/10/2026": 235
@@ -515,6 +589,16 @@
         "metodo": "contagem de eventos 'O voto do eleitor foi computado' após união de cópias de log",
         "comparecimento_bu": 235,
         "eventos_igual_comparecimento": true
+      },
+      "correspondencia_equipamento": {
+        "urna_esperada": "2305445",
+        "urna_efetivada": "2305445",
+        "urna_reportada_no_rdv": 2305445,
+        "codigo_carga_efetivada": "162445411763162978930283",
+        "codigo_carga_no_rdv": "162445411763162978930283",
+        "codigo_divergencia": "",
+        "identificacao_rdv_confere_com_ceft": true,
+        "urna_efetivada_presente_nos_logs_de_voto": true
       }
     }
   },

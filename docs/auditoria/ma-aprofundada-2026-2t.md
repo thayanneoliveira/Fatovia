@@ -1,6 +1,6 @@
 # FATOVIA AUDITA | Maranhão, segundo turno 2026
 
-Data UTC: 2026-10-28T11:10:56.152993+00:00.
+Data UTC: 2026-10-28T11:12:30.383566+00:00.
 
 ## Resultado das verificações
 
@@ -8,18 +8,20 @@ Data UTC: 2026-10-28T11:10:56.152993+00:00.
 - Seções amostradas: **6** (3 com diferenças de identificação e 3 controles).
 - RDV presidencial igual ao BU publicado: **6/6**.
 - Eventos de voto nos logs iguais ao comparecimento: **6/6**.
+- Número da urna no RDV coincide com a urna efetivada: **6/6**.
+- Urna efetivada aparece nos eventos de voto dos logs: **6/6**.
 - SHA-512 dos arquivos presentes no pacote igual ao declarado na estrutura VSC: **24**.
 - SHA-512 divergente entre arquivos presentes e hash declarado: **0**.
 - Referências na estrutura VSC sem arquivo correspondente nesse pacote: **42** (não se trata, por si só, de falha).
 
-| Município (código TSE) / Zona / Seção | Tipo | RDV x BU | Log x comparecimento | Hashes locais |
-|---|---|---|---|---|
-| 7536/26/88 | foco | coincide | coincide | 4 OK |
-| 9210/1/124 | foco | coincide | coincide | 4 OK |
-| 9210/1/125 | foco | coincide | coincide | 4 OK |
-| 7030/52/32 | controle | coincide | coincide | 4 OK |
-| 7048/70/184 | controle | coincide | coincide | 4 OK |
-| 7005/12/21 | controle | coincide | coincide | 4 OK |
+| Município (código TSE) / Zona / Seção | Tipo | RDV x BU | Log x comparecimento | Urna RDV x CEFT | Urna CEFT no log | Hashes locais |
+|---|---|---|---|---|---|---|
+| 7536/26/88 | foco | coincide | coincide | sim | sim | 4 OK |
+| 9210/1/124 | foco | coincide | coincide | sim | sim | 4 OK |
+| 9210/1/125 | foco | coincide | coincide | sim | sim | 4 OK |
+| 7030/52/32 | controle | coincide | coincide | sim | sim | 4 OK |
+| 7048/70/184 | controle | coincide | coincide | sim | sim | 4 OK |
+| 7005/12/21 | controle | coincide | coincide | sim | sim | 4 OK |
 
 ## Limitações cruciais
 
