@@ -203,7 +203,7 @@ def audit_section(archive, key, entries, bu_counts, expected_turnout, ceft, rdvc
         reported=rdv.get("numero_interno_urna") if rdv else None
         actual=effective["NR_URNA_EFETIVADA"]
         rdv_matches=reported is not None and actual and int(reported)==int(actual)
-        load_matches=rdv and str(rdv.get("codigo_carga_urna"))==effective["CD_CARGA_URNA_EFETIVADA"]
+        load_matches=bool(rdv) and str(rdv.get("codigo_carga_urna", "")).zfill(24)==effective["CD_CARGA_URNA_EFETIVADA"].zfill(24)
         log_matches=(actual and logs and int(actual) in logs["urnas_com_eventos_voto_25_10"])
         if not rdv_matches:rec["alertas"].append("RDV_URNA_DIFERENTE_CEFT")
         if not load_matches:rec["alertas"].append("RDV_CARGA_DIFERENTE_CEFT")
