@@ -16,7 +16,8 @@ import tempfile
 import zipfile
 
 from .ma_arqurna_range import RemoteZip,URL
-from .tse import csv_rows,download_zip
+from .tse import csv_rows,download_zip,sha512_expected
+from .proveniencia_ma import FILES,read_selected_rows
 
 FOCO=((7536,26,88),(9210,1,124),(9210,1,125))
 CONTROLES=((7030,52,32),(7048,70,184),(7005,12,21))
@@ -67,6 +68,25 @@ def sample_bu_counts():
                 out[key][str(int(r["NR_VOTAVEL"]))]+=int(r["QT_VOTOS"])
     return out,{"url":BU_URL,"sha512_calculado":digest,"bytes":bytes_downloaded}
 
+def sample_ceft():
+    result={}
+    with tempfile.TemporaryDirectory() as tmp:
+        path=Path(tmp)/"ceft.zip"
+        url=FILES["efetivada_26"]
+        expected=sha512_expected(url+".sha512")
+        digest,size=download_zip(url,path)
+        if digest!=expected:
+            raise ValueError("SHA512 CEFT diferente do hash oficial")
+        for row in read_selected_rows(path,"ceft_"):
+            key=(int(row["CD_MUNICIPIO"]),int(row["NR_ZONA"]),int(row["NR_SECAO"]))
+            if key in ALVOS:
+                result[key]={k:row.get(k,"") for k in (
+                    "NR_URNA_ESPERADA","NR_URNA_EFETIVADA",
+                    "CD_CARGA_URNA_ESPERADA","CD_CARGA_URNA_EFETIVADA",
+                    "CD_FLASHCARD_URNA_ESPERADA","CD_FLASHCARD_URNA_EFETIVADA",
+                    "TP_DIVERGENCIA","DS_ORIGEM_VOTO")}
+    return result,{"url":url,"sha512_conferido":True,"bytes":size}
+
 def decode_rdv(data, compiler):
     rdv=compiler.decode("EntidadeResultadoRDV",bytearray(data))
     r=rdv["rdv"]
@@ -107,10 +127,14 @@ def decode_rdv(data, compiler):
         raise ValueError("RDV sem cargo Presidente")
     if any(c!=1 for c in choices):
         raise ValueError("RDV presidente com número de escolhas inesperado")
+    urna=rdv.get("urna") or {}
+    carga=(urna.get("correspondenciaResultado") or {}).get("carga") or {}
     return {"secao_interna":ident_key,"origem":origin,
             "fase":str(r.get("fase")),"pleito":int(r.get("pleito")),
             "votos":dict(counts),"registros_presidente":registered,
-            "blocos_presidente":president_blocks}
+            "blocos_presidente":president_blocks,
+            "numero_interno_urna":carga.get("numeroInternoUrna"),
+            "codigo_carga_urna":carga.get("codigoCarga")}
 
 def asn1_topology(raw):
     """Somente metadados TLV (tag e comprimentos), sem expor certificados."""
@@ -223,6 +247,7 @@ def log_summary(blob):
         for line,n in local.items():
             union[line]=max(union[line],n)
     total_votes=0
+    urnas_com_evento_voto=set()
     dates=Counter()
     opening=0
     closing=0
@@ -234,12 +259,15 @@ def log_summary(blob):
         day=when[:10]
         if app=="VOTA" and "O voto do eleitor foi computado" in msg:
             dates[day]+=n
-            if day=="25/10/2026":total_votes+=n
+            if day=="25/10/2026":
+                total_votes+=n
+                if serial.isdigit():urnas_com_evento_voto.add(int(serial))
         if "Urna pronta para receber votos" in msg:opening+=n
         if "Inicio do Encerramento" in msg or "Início do Encerramento" in msg:closing+=n
         if any(x in msg.casefold() for x in ("erro","falha","reinici")):
             errors[app]+=n
     return {"logs_internos":len(texts),"total_eventos_voto_25_10":total_votes,
+            "urnas_com_eventos_voto_25_10":sorted(urnas_com_evento_voto),
             "eventos_voto_por_data":dict(dates),
             "marcadores_urna_pronta":opening,"marcadores_inicio_encerramento":closing,
             "mensagens_tecnicas_por_aplicativo":dict(errors),
@@ -250,9 +278,10 @@ def run():
     rdvc=asn1tools.compile_files(str(SPEC/"rdv.asn1"),codec="ber")
     sigc=asn1tools.compile_files(str(SPEC/"assinatura.asn1"),codec="ber")
     expected,buinfo=sample_bu_counts()
+    ceft,ceftinfo=sample_ceft()
     out={"gerado_utc":datetime.now(timezone.utc).isoformat(),"escopo":"MA, 2º turno 2026",
          "metodo":"Conferência seletiva e inventário integral de nomes em ZIP bruto",
-         "fonte_bruta":URL,"bu_csv":buinfo,"secoes":{},
+         "fonte_bruta":URL,"bu_csv":buinfo,"ceft_csv":ceftinfo,"secoes":{},
          "limitacoes":["Verificação dos hashes listados no .vsc NÃO equivale à validação "
                        "criptográfica da assinatura, cadeia de certificados ou chave da urna.",
                        "Comparação de conteúdo RDV/BU depende de artefatos produzidos pela urna.",
@@ -308,6 +337,23 @@ def run():
                     logs["comparecimento_bu"]=sum(bu.values())
                     logs["eventos_igual_comparecimento"]=logs["total_eventos_voto_25_10"]==sum(bu.values())
                     rec["logs"]=logs
+                    ceft_row=ceft.get(key)
+                    if ceft_row is None:raise ValueError("CEFT não contém a seção")
+                    serial_ef=ceft_row.get("NR_URNA_EFETIVADA")
+                    internal=rdv.get("numero_interno_urna")
+                    serial_in_log=logs.get("urnas_com_eventos_voto_25_10") or []
+                    rec["correspondencia_equipamento"]={
+                        "urna_esperada":ceft_row.get("NR_URNA_ESPERADA"),
+                        "urna_efetivada":serial_ef,
+                        "urna_reportada_no_rdv":internal,
+                        "codigo_carga_efetivada":ceft_row.get("CD_CARGA_URNA_EFETIVADA"),
+                        "codigo_carga_no_rdv":rdv.get("codigo_carga_urna"),
+                        "codigo_divergencia":ceft_row.get("TP_DIVERGENCIA"),
+                        "identificacao_rdv_confere_com_ceft":(
+                            internal is not None and serial_ef is not None
+                            and int(internal)==int(serial_ef)),
+                        "urna_efetivada_presente_nos_logs_de_voto":(
+                            serial_ef is not None and int(serial_ef) in serial_in_log)}
                     statuses=rec["assinatura"]["comparacao_sha512"]
                     hashes_ok=(bool(statuses) and all(v=="HASH_OK" for v in statuses.values()))
                     if rdv["fase"]!="oficial" or not rec["rdv_presidente"]["igual_ao_bu"]:
