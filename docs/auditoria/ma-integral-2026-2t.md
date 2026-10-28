@@ -2,7 +2,7 @@
 
 **Status: ALERTAS TÉCNICOS: verificar documentação e exceções.**
 
-Gerado em UTC: 2026-10-28T11:23:48.298586+00:00.
+Gerado em UTC: 2026-10-28T14:52:37.678829+00:00.
 
 ## Cobertura
 
@@ -12,7 +12,7 @@ Gerado em UTC: 2026-10-28T11:23:48.298586+00:00.
 | Seções na correspondência efetivada (CEFT) | 18093 |
 | Seções no pacote bruto | 18093 |
 | Seções efetivamente processadas | 18093 |
-| Seções com alertas | 1776 |
+| Seções com alertas | 1 |
 
 ### Conferências por seção
 
@@ -23,7 +23,7 @@ Gerado em UTC: 2026-10-28T11:23:48.298586+00:00.
 | Quantidade de eventos de voto no log = comparecimento | 18091 |
 | Log não aplicável (origem especial) | 1 |
 | Identidade de urna RDV = CEFT | 18093 |
-| Código de carga RDV = CEFT | 16318 |
+| Código de carga RDV = CEFT | 18093 |
 | Identidade de urna CEFT presente no log | 18093 |
 | SHA-512 de arquivos presentes = hashes declarados no VSC | 72372 |
 | SHA-512 divergentes | 0 |
@@ -33,7 +33,6 @@ Gerado em UTC: 2026-10-28T11:23:48.298586+00:00.
 
 | Tipo | Ocorrências | Exemplo (município/zona/seção) |
 |---|---:|---|
-| RDV_CARGA_DIFERENTE_CEFT | 1775 | 7005/12/28, 7005/12/61, 7005/12/176 |
 | LOG_EVENTOS_VOTO_DIFERENTE_COMPARECIMENTO | 1 | 8893/47/609 |
 
 ## Ressalvas fundamentais
