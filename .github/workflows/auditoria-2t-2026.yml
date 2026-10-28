@@ -1,0 +1,103 @@
+name: "FatoVia | Auditoria presidencial 2026 2T"
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fatovia-auditoria-2026-2t
+  cancel-in-progress: false
+
+jobs:
+  testes:
+    name: Validar motor offline
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m unittest discover -s tests -p 'test_auditoria.py' -v
+
+  unidades:
+    name: "BU + SHA512 | ${{ matrix.uf }}"
+    needs: testes
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        uf: [AC, AL, AM, AP, BA, CE, DF, ES, GO, MA, MG, MS, MT, PA, PB, PE, PI, PR, RJ, RN, RO, RR, RS, SC, SE, SP, TO, ZZ]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Baixar, verificar SHA512 e recontar por seção
+        run: python -m auditoria uf --uf "${{ matrix.uf }}" --out "work/states/${{ matrix.uf }}.json"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: "auditoria-uf-${{ matrix.uf }}"
+          path: "work/states/${{ matrix.uf }}.json"
+          if-no-files-found: warn
+          retention-days: 30
+
+  consolidar:
+    name: Conferência nacional e relatório público
+    needs: [testes, unidades]
+    if: always() && needs.testes.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: auditoria-uf-*
+          path: work/states
+          merge-multiple: true
+      - name: Somar 28 UFs e comparar com base de resultados do TSE
+        id: auditar
+        continue-on-error: true
+        run: python -m auditoria consolidar --states work/states --out work/report
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: "fatovia-auditoria-2026-2t-relatorios"
+          path: work/report/
+          if-no-files-found: warn
+          retention-days: 90
+      - name: Publicar relatório completo no GitHub Pages
+        if: always()
+        run: |
+          if [ ! -f work/report/relatorio.json ]; then
+            echo "Relatório ausente: não publicar."
+            exit 1
+          fi
+          mkdir -p docs/auditoria
+          cp work/report/relatorio.json docs/auditoria/2026-2t-presidente.json
+          cp work/report/relatorio.md docs/auditoria/2026-2t-presidente.md
+          git config user.name "fatovia-audita[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/auditoria/2026-2t-presidente.json docs/auditoria/2026-2t-presidente.md
+          if git diff --cached --quiet; then
+            echo "Sem alterações no relatório"
+          else
+            git commit -m "docs(auditoria): atualizar relatório presidencial 2026 2T [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Não aprovar execução com pendências
+        if: steps.auditar.outcome != 'success'
+        run: |
+          echo "Auditoria não concluída sem pendências. Consulte relatório."
+          exit 1
