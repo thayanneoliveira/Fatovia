@@ -1,0 +1,550 @@
+{
+  "gerado_utc": "2026-10-28T11:10:56.152993+00:00",
+  "escopo": "MA, 2º turno 2026",
+  "metodo": "Conferência seletiva e inventário integral de nomes em ZIP bruto",
+  "fonte_bruta": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/arqurnatot/bu_imgbu_logjez_rdv_vscmr_2026_2t_MA.zip",
+  "bu_csv": {
+    "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_MA_261020260742.zip",
+    "sha512_calculado": "90c1c9d2d1d0635c9e6900ee51dbb81b4a1f2dee113ed3a5145a2dacbe8d2da97bec55c78caa74fb635412cd29c413f2204a05d22ae6e0516ef249811c9d075c",
+    "bytes": 4609442
+  },
+  "secoes": {
+    "7536/26/88": {
+      "secao": [
+        7536,
+        26,
+        88
+      ],
+      "grupo": "foco",
+      "arquivos": {
+        "vota.vsc": {
+          "bytes": 62607,
+          "comprimido_bytes": 61280
+        },
+        "bu.dat": {
+          "bytes": 946,
+          "comprimido_bytes": 759
+        },
+        "rdv.dat": {
+          "bytes": 2552,
+          "comprimido_bytes": 272
+        },
+        "imgbu.dat": {
+          "bytes": 5804,
+          "comprimido_bytes": 4336
+        },
+        "log.jez": {
+          "bytes": 210991,
+          "comprimido_bytes": 210955
+        }
+      },
+      "resultado": "RESSALVA_TECNICA",
+      "assinatura": {
+        "modo_decodificacao": "envelopes_ber_2026",
+        "modelo": "terceiro_campo_nao_interpretado",
+        "envelopes_decodificados": 2,
+        "assinaturas_digitalmente_verificadas": false,
+        "hashes_listados": 11,
+        "comparacao_sha512": {
+          "o03221ma0753600260088-bu.dat": "HASH_OK",
+          "o03221ma0753600260088-rdv.dat": "HASH_OK",
+          "o03221ma0753600260088-jufa.dat": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0753600260088-imgbu.dat": "HASH_OK",
+          "o03221ma0753600260088-imgze.dat": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0753600260088-hash.dat": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0753600260088-wsqbio.jez": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0753600260088-wsqman.jez": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0753600260088-wsqmes.jez": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0753600260088-mr.ver": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0753600260088-log.jez": "HASH_OK"
+        }
+      },
+      "rdv_presidente": {
+        "fase": "oficial",
+        "quantidade_registros": 254,
+        "contagens": {
+          "13": 160,
+          "22": 87,
+          "95": 3,
+          "96": 4
+        },
+        "bu_publicado": {
+          "13": 160,
+          "22": 87,
+          "96": 4,
+          "95": 3
+        },
+        "igual_ao_bu": true
+      },
+      "logs": {
+        "logs_internos": 3,
+        "total_eventos_voto_25_10": 254,
+        "eventos_voto_por_data": {
+          "04/10/2026": 249,
+          "25/10/2026": 254
+        },
+        "marcadores_urna_pronta": 2,
+        "marcadores_inicio_encerramento": 2,
+        "mensagens_tecnicas_por_aplicativo": {
+          "ATUE": 28,
+          "VOTA": 9,
+          "GAP": 6
+        },
+        "metodo": "contagem de eventos 'O voto do eleitor foi computado' após união de cópias de log",
+        "comparecimento_bu": 254,
+        "eventos_igual_comparecimento": true
+      }
+    },
+    "9210/1/124": {
+      "secao": [
+        9210,
+        1,
+        124
+      ],
+      "grupo": "foco",
+      "arquivos": {
+        "vota.vsc": {
+          "bytes": 62609,
+          "comprimido_bytes": 61121
+        },
+        "bu.dat": {
+          "bytes": 875,
+          "comprimido_bytes": 689
+        },
+        "rdv.dat": {
+          "bytes": 2951,
+          "comprimido_bytes": 271
+        },
+        "imgbu.dat": {
+          "bytes": 5815,
+          "comprimido_bytes": 4337
+        },
+        "log.jez": {
+          "bytes": 209090,
+          "comprimido_bytes": 209113
+        }
+      },
+      "resultado": "RESSALVA_TECNICA",
+      "assinatura": {
+        "modo_decodificacao": "envelopes_ber_2026",
+        "modelo": "terceiro_campo_nao_interpretado",
+        "envelopes_decodificados": 2,
+        "assinaturas_digitalmente_verificadas": false,
+        "hashes_listados": 11,
+        "comparacao_sha512": {
+          "o03221ma0921000010124-bu.dat": "HASH_OK",
+          "o03221ma0921000010124-rdv.dat": "HASH_OK",
+          "o03221ma0921000010124-jufa.dat": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0921000010124-imgbu.dat": "HASH_OK",
+          "o03221ma0921000010124-imgze.dat": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0921000010124-hash.dat": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0921000010124-wsqbio.jez": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0921000010124-wsqman.jez": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0921000010124-wsqmes.jez": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0921000010124-mr.ver": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0921000010124-log.jez": "HASH_OK"
+        }
+      },
+      "rdv_presidente": {
+        "fase": "oficial",
+        "quantidade_registros": 297,
+        "contagens": {
+          "13": 216,
+          "22": 75,
+          "96": 6
+        },
+        "bu_publicado": {
+          "96": 6,
+          "22": 75,
+          "13": 216
+        },
+        "igual_ao_bu": true
+      },
+      "logs": {
+        "logs_internos": 1,
+        "total_eventos_voto_25_10": 297,
+        "eventos_voto_por_data": {
+          "04/10/2026": 295,
+          "25/10/2026": 297
+        },
+        "marcadores_urna_pronta": 2,
+        "marcadores_inicio_encerramento": 2,
+        "mensagens_tecnicas_por_aplicativo": {
+          "VOTA": 4
+        },
+        "metodo": "contagem de eventos 'O voto do eleitor foi computado' após união de cópias de log",
+        "comparecimento_bu": 297,
+        "eventos_igual_comparecimento": true
+      }
+    },
+    "9210/1/125": {
+      "secao": [
+        9210,
+        1,
+        125
+      ],
+      "grupo": "foco",
+      "arquivos": {
+        "vota.vsc": {
+          "bytes": 62611,
+          "comprimido_bytes": 61159
+        },
+        "bu.dat": {
+          "bytes": 953,
+          "comprimido_bytes": 762
+        },
+        "rdv.dat": {
+          "bytes": 3028,
+          "comprimido_bytes": 277
+        },
+        "imgbu.dat": {
+          "bytes": 5815,
+          "comprimido_bytes": 4322
+        },
+        "log.jez": {
+          "bytes": 213043,
+          "comprimido_bytes": 213069
+        }
+      },
+      "resultado": "RESSALVA_TECNICA",
+      "assinatura": {
+        "modo_decodificacao": "envelopes_ber_2026",
+        "modelo": "terceiro_campo_nao_interpretado",
+        "envelopes_decodificados": 2,
+        "assinaturas_digitalmente_verificadas": false,
+        "hashes_listados": 11,
+        "comparacao_sha512": {
+          "o03221ma0921000010125-bu.dat": "HASH_OK",
+          "o03221ma0921000010125-rdv.dat": "HASH_OK",
+          "o03221ma0921000010125-jufa.dat": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0921000010125-imgbu.dat": "HASH_OK",
+          "o03221ma0921000010125-imgze.dat": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0921000010125-hash.dat": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0921000010125-wsqbio.jez": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0921000010125-wsqman.jez": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0921000010125-wsqmes.jez": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0921000010125-mr.ver": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0921000010125-log.jez": "HASH_OK"
+        }
+      },
+      "rdv_presidente": {
+        "fase": "oficial",
+        "quantidade_registros": 306,
+        "contagens": {
+          "13": 218,
+          "22": 79,
+          "95": 1,
+          "96": 8
+        },
+        "bu_publicado": {
+          "96": 8,
+          "22": 79,
+          "13": 218,
+          "95": 1
+        },
+        "igual_ao_bu": true
+      },
+      "logs": {
+        "logs_internos": 1,
+        "total_eventos_voto_25_10": 306,
+        "eventos_voto_por_data": {
+          "04/10/2026": 306,
+          "25/10/2026": 306
+        },
+        "marcadores_urna_pronta": 2,
+        "marcadores_inicio_encerramento": 2,
+        "mensagens_tecnicas_por_aplicativo": {
+          "VOTA": 4
+        },
+        "metodo": "contagem de eventos 'O voto do eleitor foi computado' após união de cópias de log",
+        "comparecimento_bu": 306,
+        "eventos_igual_comparecimento": true
+      }
+    },
+    "7030/52/32": {
+      "secao": [
+        7030,
+        52,
+        32
+      ],
+      "grupo": "controle",
+      "arquivos": {
+        "vota.vsc": {
+          "bytes": 62605,
+          "comprimido_bytes": 61314
+        },
+        "bu.dat": {
+          "bytes": 966,
+          "comprimido_bytes": 781
+        },
+        "rdv.dat": {
+          "bytes": 2028,
+          "comprimido_bytes": 278
+        },
+        "imgbu.dat": {
+          "bytes": 5922,
+          "comprimido_bytes": 4466
+        },
+        "log.jez": {
+          "bytes": 163907,
+          "comprimido_bytes": 163876
+        }
+      },
+      "resultado": "RESSALVA_TECNICA",
+      "assinatura": {
+        "modo_decodificacao": "envelopes_ber_2026",
+        "modelo": "terceiro_campo_nao_interpretado",
+        "envelopes_decodificados": 2,
+        "assinaturas_digitalmente_verificadas": false,
+        "hashes_listados": 11,
+        "comparacao_sha512": {
+          "o03221ma0703000520032-bu.dat": "HASH_OK",
+          "o03221ma0703000520032-rdv.dat": "HASH_OK",
+          "o03221ma0703000520032-jufa.dat": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0703000520032-imgbu.dat": "HASH_OK",
+          "o03221ma0703000520032-imgze.dat": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0703000520032-hash.dat": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0703000520032-wsqbio.jez": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0703000520032-wsqman.jez": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0703000520032-wsqmes.jez": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0703000520032-mr.ver": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0703000520032-log.jez": "HASH_OK"
+        }
+      },
+      "rdv_presidente": {
+        "fase": "oficial",
+        "quantidade_registros": 192,
+        "contagens": {
+          "13": 164,
+          "22": 26,
+          "95": 1,
+          "96": 1
+        },
+        "bu_publicado": {
+          "22": 26,
+          "96": 1,
+          "13": 164,
+          "95": 1
+        },
+        "igual_ao_bu": true
+      },
+      "logs": {
+        "logs_internos": 2,
+        "total_eventos_voto_25_10": 192,
+        "eventos_voto_por_data": {
+          "04/10/2026": 197,
+          "25/10/2026": 192
+        },
+        "marcadores_urna_pronta": 2,
+        "marcadores_inicio_encerramento": 2,
+        "mensagens_tecnicas_por_aplicativo": {
+          "VOTA": 4,
+          "GAP": 2,
+          "ATUE": 1
+        },
+        "metodo": "contagem de eventos 'O voto do eleitor foi computado' após união de cópias de log",
+        "comparecimento_bu": 192,
+        "eventos_igual_comparecimento": true
+      }
+    },
+    "7048/70/184": {
+      "secao": [
+        7048,
+        70,
+        184
+      ],
+      "grupo": "controle",
+      "arquivos": {
+        "vota.vsc": {
+          "bytes": 62605,
+          "comprimido_bytes": 61278
+        },
+        "bu.dat": {
+          "bytes": 968,
+          "comprimido_bytes": 780
+        },
+        "rdv.dat": {
+          "bytes": 2341,
+          "comprimido_bytes": 281
+        },
+        "imgbu.dat": {
+          "bytes": 5930,
+          "comprimido_bytes": 4474
+        },
+        "log.jez": {
+          "bytes": 184083,
+          "comprimido_bytes": 184077
+        }
+      },
+      "resultado": "RESSALVA_TECNICA",
+      "assinatura": {
+        "modo_decodificacao": "envelopes_ber_2026",
+        "modelo": "terceiro_campo_nao_interpretado",
+        "envelopes_decodificados": 2,
+        "assinaturas_digitalmente_verificadas": false,
+        "hashes_listados": 11,
+        "comparacao_sha512": {
+          "o03221ma0704800700184-bu.dat": "HASH_OK",
+          "o03221ma0704800700184-rdv.dat": "HASH_OK",
+          "o03221ma0704800700184-jufa.dat": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0704800700184-imgbu.dat": "HASH_OK",
+          "o03221ma0704800700184-imgze.dat": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0704800700184-hash.dat": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0704800700184-wsqbio.jez": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0704800700184-wsqman.jez": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0704800700184-wsqmes.jez": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0704800700184-mr.ver": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0704800700184-log.jez": "HASH_OK"
+        }
+      },
+      "rdv_presidente": {
+        "fase": "oficial",
+        "quantidade_registros": 227,
+        "contagens": {
+          "13": 170,
+          "22": 54,
+          "95": 2,
+          "96": 1
+        },
+        "bu_publicado": {
+          "95": 2,
+          "13": 170,
+          "96": 1,
+          "22": 54
+        },
+        "igual_ao_bu": true
+      },
+      "logs": {
+        "logs_internos": 2,
+        "total_eventos_voto_25_10": 227,
+        "eventos_voto_por_data": {
+          "04/10/2026": 238,
+          "25/10/2026": 227
+        },
+        "marcadores_urna_pronta": 5,
+        "marcadores_inicio_encerramento": 2,
+        "mensagens_tecnicas_por_aplicativo": {
+          "ATUE": 3,
+          "VOTA": 12,
+          "GAP": 2
+        },
+        "metodo": "contagem de eventos 'O voto do eleitor foi computado' após união de cópias de log",
+        "comparecimento_bu": 227,
+        "eventos_igual_comparecimento": true
+      }
+    },
+    "7005/12/21": {
+      "secao": [
+        7005,
+        12,
+        21
+      ],
+      "grupo": "controle",
+      "arquivos": {
+        "vota.vsc": {
+          "bytes": 62605,
+          "comprimido_bytes": 61258
+        },
+        "bu.dat": {
+          "bytes": 946,
+          "comprimido_bytes": 760
+        },
+        "rdv.dat": {
+          "bytes": 2389,
+          "comprimido_bytes": 259
+        },
+        "imgbu.dat": {
+          "bytes": 5967,
+          "comprimido_bytes": 4479
+        },
+        "log.jez": {
+          "bytes": 189224,
+          "comprimido_bytes": 189251
+        }
+      },
+      "resultado": "RESSALVA_TECNICA",
+      "assinatura": {
+        "modo_decodificacao": "envelopes_ber_2026",
+        "modelo": "terceiro_campo_nao_interpretado",
+        "envelopes_decodificados": 2,
+        "assinaturas_digitalmente_verificadas": false,
+        "hashes_listados": 11,
+        "comparacao_sha512": {
+          "o03221ma0700500120021-bu.dat": "HASH_OK",
+          "o03221ma0700500120021-rdv.dat": "HASH_OK",
+          "o03221ma0700500120021-jufa.dat": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0700500120021-imgbu.dat": "HASH_OK",
+          "o03221ma0700500120021-imgze.dat": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0700500120021-hash.dat": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0700500120021-wsqbio.jez": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0700500120021-wsqman.jez": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0700500120021-wsqmes.jez": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0700500120021-mr.ver": "SEM_ARQUIVO_OU_AMBIGUO",
+          "o03221ma0700500120021-log.jez": "HASH_OK"
+        }
+      },
+      "rdv_presidente": {
+        "fase": "oficial",
+        "quantidade_registros": 235,
+        "contagens": {
+          "13": 198,
+          "22": 34,
+          "95": 1,
+          "96": 2
+        },
+        "bu_publicado": {
+          "96": 2,
+          "13": 198,
+          "95": 1,
+          "22": 34
+        },
+        "igual_ao_bu": true
+      },
+      "logs": {
+        "logs_internos": 1,
+        "total_eventos_voto_25_10": 235,
+        "eventos_voto_por_data": {
+          "04/10/2026": 226,
+          "25/10/2026": 235
+        },
+        "marcadores_urna_pronta": 2,
+        "marcadores_inicio_encerramento": 2,
+        "mensagens_tecnicas_por_aplicativo": {
+          "VOTA": 5
+        },
+        "metodo": "contagem de eventos 'O voto do eleitor foi computado' após união de cópias de log",
+        "comparecimento_bu": 235,
+        "eventos_igual_comparecimento": true
+      }
+    }
+  },
+  "limitacoes": [
+    "Verificação dos hashes listados no .vsc NÃO equivale à validação criptográfica da assinatura, cadeia de certificados ou chave da urna.",
+    "Comparação de conteúdo RDV/BU depende de artefatos produzidos pela urna.",
+    "Ausência de um evento no log pode ter causas operacionais; não implica fraude."
+  ],
+  "inventario": {
+    "secoes_com_arquivos": 18093,
+    "tipos": {
+      "vota.vsc": 18093,
+      "bu.dat": 18093,
+      "rdv.dat": 18093,
+      "imgbu.dat": 18093,
+      "log.jez": 18093
+    },
+    "secoes_com_numero_tipos_distinto_de_5_amostra": [],
+    "colisoes_amostra": [],
+    "fora_do_padrao_amostra": [
+      "leiame.pdf",
+      "wPqSuFeqFirabY+cUs1c9fUe78xcT-bu+4qPP6yDNNM=.id",
+      "52gd8V3HZtnVyW7IfYnJX5pga5dTWC3rY5YEn--bui4=.id",
+      "YZAYXSEEOv3s7pMk1H-loggFc1HESRi0shgMlDrjqKA=.id"
+    ]
+  },
+  "alvos": 6,
+  "bytes_transferidos_range": 22804742,
+  "requisicoes_range": 11,
+  "resumo": {
+    "RESSALVA_TECNICA": 6
+  }
+}
