@@ -1,0 +1,28 @@
+name: "FatoVia | Diagnosticar divergencias MA"
+on:
+  push:
+    paths:
+      - ".github/workflows/ma-diagnostico-alertas.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  diagnosticar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar interpretador ASN.1
+        run: python -m pip install 'asn1tools==0.167.0'
+      - name: Extrair exemplos de alertas de carga e log
+        run: python -u -m auditoria.ma_diagnosticar_alertas
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ma-diagnostico-alertas
+          path: work/aprofundada/ma_diagnostico_alertas.json
+          if-no-files-found: warn
+          retention-days: 30
