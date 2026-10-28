@@ -112,6 +112,35 @@ def decode_rdv(data, compiler):
             "votos":dict(counts),"registros_presidente":registered,
             "blocos_presidente":president_blocks}
 
+def asn1_topology(raw):
+    """Somente metadados TLV (tag e comprimentos), sem expor certificados."""
+    def tlv(at):
+        if at+2>len(raw):return None
+        tag=raw[at]
+        first=raw[at+1]
+        if first==128:raise ValueError("BER indefinido: não suportado na inspeção")
+        if first<128:n,ln=first,1
+        else:
+            count=first&127
+            if count>4:raise ValueError("Comprimento ASN.1 anormal")
+            n=int.from_bytes(raw[at+2:at+2+count],"big")
+            ln=1+count
+        val=at+1+ln
+        return {"tag":hex(tag),"inicio":at,"valor_inicio":val,
+                "fim":val+n,"comprimento":n}
+    root=tlv(0)
+    if not root:return []
+    children=[]
+    pos=root["valor_inicio"]
+    for _ in range(8):
+        if pos>=min(root["fim"],len(raw)):break
+        part=tlv(pos)
+        if not part:break
+        children.append(part)
+        if part["fim"]<=pos:break
+        pos=part["fim"]
+    return {"arquivo_bytes":len(raw),"raiz":root,"filhos":children}
+
 def signature_hashes(raw,compiler):
     decoded=compiler.decode("EntidadeAssinaturaEcourna",bytearray(raw))
     hashes={}
@@ -236,7 +265,8 @@ def run():
                         rec["assinatura"]={"status":"NAO_DECODIFICADA",
                                           "erro":f"{type(exc).__name__}: {exc}",
                                           "assinaturas_digitalmente_verificadas":False,
-                                          "comparacao_sha512":{}}
+                                          "comparacao_sha512":{},
+                                          "topologia_asn1":asn1_topology(signed_blob)}
                     rdvname,rdvraw=select("rdv.dat")
                     rdv=decode_rdv(rawfiles[rdvname],rdvc)
                     if rdv["secao_interna"]!=key:raise ValueError("ID seção RDV difere da seção no caminho")
