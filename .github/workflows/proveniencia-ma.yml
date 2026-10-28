@@ -1,4 +1,4 @@
-name: "FatoVia | Proveniência e cruzamento eleitoral MA"
+name: "FatoVia | Proveniência MA - qualificar divergências"
 
 on:
   workflow_dispatch:
