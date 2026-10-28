@@ -2,9 +2,6 @@ name: "FatoVia | Auditoria presidencial 2026 2T"
 
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - "auditoria/launch-2026.txt"
 
 permissions:
   contents: write
