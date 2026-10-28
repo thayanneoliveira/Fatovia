@@ -93,8 +93,19 @@ def resources(dataset):
         fallback.append({"id": "pagina-tse-" + uf + ("-sha512" if is_hash else "-bu"),
                          "name": uf + " - " + title + " - Segundo turno",
                          "url": url})
-    if len(fallback) != len(UFS) * 2:
-        raise ValueError("Catálogo CKAN ainda incompleto e página do TSE não contém 28 pares BU/SHA512")
+    # Padrão de arquivo publicado para o 2º turno em 26/10/2026.
+    # A URL derivada é apenas uma *tentativa* de download; nenhum resultado é
+    # validado sem obter o ZIP real e comparar com o SHA512 remoto.
+    for uf in UFS:
+        root = ("https://cdn.tse.jus.br/estatistica/sead/eleicoes/"
+                "eleicoes2026/buweb/bweb_2t_" + uf + "_261020260742.zip")
+        for url, is_hash in ((root, False), (root + ".sha512", True)):
+            if not any(item["url"] == url for item in fallback):
+                fallback.append({
+                    "id": "padrao-publicado-tse-" + uf + ("-sha512" if is_hash else "-bu"),
+                    "name": uf + " - " + ("Hash SHA2" if is_hash else "Boletim de Urna") + " - Segundo turno",
+                    "url": url,
+                })
     return fallback
 
 
