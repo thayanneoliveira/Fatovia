@@ -29,6 +29,7 @@ from .ma_amostra_profunda import (
 )
 from .proveniencia_ma import read_selected_rows
 from .tse import csv_rows, download_zip, sha512_expected
+from .codigos import codigos_carga_conferem
 
 MAX_BYTES = 5_000_000_000
 PROGRESS_EVERY = 1000
@@ -203,7 +204,7 @@ def audit_section(archive, key, entries, bu_counts, expected_turnout, ceft, rdvc
         reported=rdv.get("numero_interno_urna") if rdv else None
         actual=effective["NR_URNA_EFETIVADA"]
         rdv_matches=reported is not None and actual and int(reported)==int(actual)
-        load_matches=bool(rdv) and str(rdv.get("codigo_carga_urna", "")).zfill(24)==effective["CD_CARGA_URNA_EFETIVADA"].zfill(24)
+        load_matches=bool(rdv) and codigos_carga_conferem(rdv.get("codigo_carga_urna"),effective["CD_CARGA_URNA_EFETIVADA"])
         log_matches=(actual and logs and int(actual) in logs["urnas_com_eventos_voto_25_10"])
         if not rdv_matches:rec["alertas"].append("RDV_URNA_DIFERENTE_CEFT")
         if not load_matches:rec["alertas"].append("RDV_CARGA_DIFERENTE_CEFT")
