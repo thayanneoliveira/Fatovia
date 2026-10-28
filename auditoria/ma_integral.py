@@ -259,7 +259,7 @@ def main():
         try:
             digest=sha512_expected(URL+".sha512")
             print("Hash SHA512 do arquivo bruto disponível no TSE",flush=True)
-        except (ValueError,HTTPError,OSError) as exc:
+        except (ValueError,HTTPError,OSError,RuntimeError) as exc:
             print(f"Hash externo do ZIP bruto não disponível: {type(exc).__name__}: {exc}",flush=True)
             report["limitacoes"].append("Hash externo do ZIP bruto não foi obtido; hashes por arquivo via VSC são verificados individualmente.")
         raw_path=Path(tmp)/"arqurna_ma.zip"
