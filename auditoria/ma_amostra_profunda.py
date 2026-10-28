@@ -242,10 +242,10 @@ def run():
                     if rdv["secao_interna"]!=key:raise ValueError("ID seção RDV difere da seção no caminho")
                     bu=expected.get(key)
                     if bu is None:raise ValueError("Seção não consta no CSV BU de referência")
-                    counts=Counter(rdv["votos"])
-                    for votable in ("13","22","95","96"):
-                        counts.setdefault(votable,0)
-                    buout={v:int(n) for v,n in bu.items()}
+                    # Zero ausente e campo com valor zero são equivalentes.
+                    # Evitar falso positivo em seção sem votos brancos/nulos.
+                    counts={str(k):int(n) for k,n in rdv["votos"].items() if int(n)>0}
+                    buout={str(v):int(n) for v,n in bu.items() if int(n)>0}
                     rec["rdv_presidente"]={
                         "fase":rdv["fase"],"quantidade_registros":rdv["registros_presidente"],
                         "contagens":dict(counts),
