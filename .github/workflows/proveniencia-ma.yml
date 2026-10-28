@@ -1,4 +1,4 @@
-name: "FatoVia | Proveniência MA - evidência técnica"
+name: "FatoVia | Proveniência MA - validar troca de mídia"
 
 on:
   workflow_dispatch:
