@@ -1,0 +1,40 @@
+name: "FatoVia | Auditoria - teste real MA"
+
+on:
+  push:
+    paths:
+      - ".github/workflows/auditoria-smoke.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Ler dados reais MA, conferir SHA-512 e recontar Presidente
+        run: python -m auditoria uf --uf MA --out work/states/MA.json
+      - name: Confirmar recontagem e hash antes de afirmar sucesso
+        run: |
+          python - <<'PY'
+          import json
+          with open("work/states/MA.json", encoding="utf-8") as f:
+              r=json.load(f)
+          print(json.dumps({k:r.get(k) for k in (
+              "uf", "status", "secoes", "total_votos",
+              "hash_conferido", "erro", "ocorrencias_amostra")}, ensure_ascii=False))
+          assert r["status"]=="OK" and r.get("hash_conferido") is True, r.get("erro") or r.get("ocorrencias_amostra")
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: auditoria-smoke-ma
+          path: work/states/MA.json
+          if-no-files-found: warn
+          retention-days: 30
