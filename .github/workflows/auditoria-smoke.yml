@@ -1,4 +1,4 @@
-name: "FatoVia | Auditoria - teste real MA"
+name: "FatoVia | Auditoria - teste real MA e integridade"
 
 on:
   push:
