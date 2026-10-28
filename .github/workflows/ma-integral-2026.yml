@@ -1,0 +1,56 @@
+name: "FatoVia | Auditoria integral Maranhão 2T 2026"
+on:
+  push:
+    paths:
+      - ".github/workflows/ma-integral-2026.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fatovia-auditoria-integral-ma
+  cancel-in-progress: false
+
+jobs:
+  auditar:
+    name: "MA 18.093 seções | RDV, BU, CEFT, logs, SHA512"
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar decodificador ASN.1 (especificações v2)
+        run: python -m pip install 'asn1tools==0.167.0'
+      - name: Verificar espaço disponível antes do download
+        run: |
+          df -h .
+          python -m compileall -q auditoria
+      - name: Baixar pacote público uma vez e conferir as 18.093 seções
+        id: auditar
+        run: python -u -m auditoria.ma_integral --out work/ma-integral
+      - name: Produzir relatório Markdown
+        run: python -m auditoria.ma_integral_relatorio
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: auditoria-integral-ma-2t-2026
+          path: work/ma-integral/ma-2026-2t-integral.*
+          if-no-files-found: warn
+          retention-days: 90
+      - name: Publicar resultados e metodologia no repositório
+        if: success()
+        run: |
+          mkdir -p docs/auditoria
+          cp work/ma-integral/ma-2026-2t-integral.json docs/auditoria/ma-integral-2026-2t.json
+          cp work/ma-integral/ma-2026-2t-integral.md docs/auditoria/ma-integral-2026-2t.md
+          git config user.name "fatovia-audita[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/auditoria/ma-integral-2026-2t.json docs/auditoria/ma-integral-2026-2t.md
+          if ! git diff --cached --quiet; then
+            git commit -m "docs(auditoria): resultados integrais Maranhão 2026 2T [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
