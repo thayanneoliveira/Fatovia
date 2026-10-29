@@ -1,0 +1,81 @@
+name: "FatoVia | Cruza urnas efetivadas e encerramento apos 17h"
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/cruzar-trocas-horarios-brasil-2026.yml"
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  uf:
+    name: "Verificar ${{ matrix.uf }}"
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    strategy:
+      fail-fast: false
+      max-parallel: 5
+      matrix:
+        uf: [AC, AL, AM, AP, BA, CE, DF, ES, GO, MA, MG, MS, MT, PA, PB, PE, PI, PR, RJ, RN, RO, RR, RS, SC, SE, SP, TO, ZZ]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Recuperar cadastro BU CEFT anterior verificado
+        uses: actions/download-artifact@v4
+        with:
+          name: fatovia-geografia-uf-${{ matrix.uf }}
+          run-id: 40877055121
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: work/base2t
+      - name: Cruzar dados temporal com base hashes oficiais por seção
+        run: python -u -m auditoria.cruzar_trocas_horarios_2026 --uf ${{ matrix.uf }} --geodir work/base2t --out work/horarios
+      - name: Preservar cruzamento temporal e ocorrência por seção
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fatovia-trocas-horarios-${{ matrix.uf }}
+          path: work/horarios
+          if-no-files-found: warn
+          retention-days: 90
+
+  resumir:
+    name: "Consolidar horarios e validar criterios TSE"
+    needs: uf
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: fatovia-trocas-horarios-*
+          path: work/horarios
+          merge-multiple: true
+        continue-on-error: true
+      - name: Comparar relação nacional com divulgação estatística oficial
+        run: python -u -m auditoria.consolidar_trocas_horarios_2026 --input work/horarios --out work/consolidado
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fatovia-cruzamento-trocas-horarios-nacional
+          path: work/consolidado
+          retention-days: 90
+      - name: Publicar relatório com ressalvas explícitas
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+          mkdir -p docs/auditoria/horarios-e-contingencias-2026
+          cp work/horarios/*.json docs/auditoria/horarios-e-contingencias-2026/
+          cp work/consolidado/* docs/auditoria/horarios-e-contingencias-2026/
+          git config user.name "fatovia-audita[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/auditoria/horarios-e-contingencias-2026
+          if ! git diff --cached --quiet; then
+            git commit -m "docs(auditoria): sobreposição de urnas e encerramentos com ressalvas [skip ci]"
+            git push origin HEAD:main
+          fi
