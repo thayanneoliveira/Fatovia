@@ -1,4 +1,4 @@
-name: "FatoVia | Gedai segunda camada e vinculo de urnas"
+name: "FatoVia | Gedai aninhado e referências por urna 2026"
 on:
   workflow_dispatch:
   push:
