@@ -26,6 +26,12 @@ jobs:
           python-version: "3.12"
       - name: Coletar arquivos do TSE e comparar GEDAI MG e PE
         run: python auditoria-tse-2026/auditar_gedai.py
+      - name: Instalar extrator 7z para pacotes JEZ do TSE
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y p7zip-full
+      - name: Ler eventos dos arquivos JEZ alterados
+        run: python auditoria-tse-2026/auditar_eventos_jez.py
       - name: Salvar evidencias de resultado
         if: always()
         uses: actions/upload-artifact@v4
@@ -34,6 +40,8 @@ jobs:
           path: |
             auditoria-resultados/RESULTADO_GEDAI.json
             auditoria-resultados/RESULTADO_GEDAI.md
+            auditoria-resultados/RESULTADO_EVENTOS.json
+            auditoria-resultados/RESULTADO_EVENTOS.md
           if-no-files-found: warn
       - name: Registrar relatorio no ramo de auditoria
         if: always()
@@ -42,6 +50,7 @@ jobs:
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add auditoria-resultados/RESULTADO_GEDAI.json auditoria-resultados/RESULTADO_GEDAI.md
+            git add auditoria-resultados/RESULTADO_EVENTOS.json auditoria-resultados/RESULTADO_EVENTOS.md 2>/dev/null || true
             if ! git diff --cached --quiet; then
               git commit -m "Registrar auditoria GEDAI com proveniencia e hashes"
               git push origin HEAD:auditoria-tse-2026
