@@ -1,0 +1,33 @@
+name: "FatoVia | Piloto biometria TSE 2026 AP MA"
+on:
+  push:
+    paths:
+      - ".github/workflows/biometria-piloto-2026.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  piloto:
+    name: "Extrair ${{ matrix.uf }}"
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        uf: [AP, MA]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verificar sintaxe
+        run: python -m compileall -q auditoria
+      - name: Baixar BWeb TSE e extrair campos por seção
+        run: python -u -m auditoria.biometria_2026 --uf ${{ matrix.uf }} --out work/biometria
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: piloto-bio-${{ matrix.uf }}
+          path: work/biometria/
+          if-no-files-found: warn
+          retention-days: 30
