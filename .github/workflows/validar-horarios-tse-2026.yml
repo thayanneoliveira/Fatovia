@@ -1,0 +1,67 @@
+name: "FatoVia | Reconciliar encerramentos BWeb e TSE por UF"
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/validar-horarios-tse-2026.yml"
+permissions:
+  contents: write
+jobs:
+  uf:
+    name: "Conferir cortes ${{ matrix.uf }}"
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    strategy:
+      fail-fast: false
+      max-parallel: 6
+      matrix:
+        uf: [AC, AL, AM, AP, BA, CE, DF, ES, GO, MA, MG, MS, MT, PA, PB, PE, PI, PR, RJ, RN, RO, RR, RS, SC, SE, SP, TO]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Calcular cortes de tempo sem ajustar por aproximação
+        run: python -u -m auditoria.horarios_validacao_2026 --uf ${{ matrix.uf }} --out work/horarios
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fatovia-horarios-validacao-${{ matrix.uf }}
+          path: work/horarios
+          if-no-files-found: warn
+          retention-days: 90
+  consolidar:
+    needs: uf
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: fatovia-horarios-validacao-*
+          merge-multiple: true
+          path: work/horarios
+        continue-on-error: true
+      - name: Consolidar sem transformar diferenças de critérios em irregularidade
+        run: python -u -m auditoria.horarios_validacao_consolidar_2026 --input work/horarios --out work/horarios-final
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fatovia-horarios-reconciliacao-2026
+          path: work/horarios-final
+          if-no-files-found: warn
+          retention-days: 90
+      - name: Publicar resultados e limitações
+        if: success()
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+          mkdir -p docs/auditoria/validacao-horarios-2026/ufs
+          cp work/horarios/*.json docs/auditoria/validacao-horarios-2026/ufs/ 2>/dev/null || true
+          cp work/horarios-final/* docs/auditoria/validacao-horarios-2026/
+          git config user.name "fatovia-audita[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/auditoria/validacao-horarios-2026
+          if ! git diff --cached --quiet; then
+            git commit -m "docs(auditoria): diferenças de definição de horário TSE e BWeb [skip ci]"
+            git push origin HEAD:main
+          fi
