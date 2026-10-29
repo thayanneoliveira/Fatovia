@@ -1,0 +1,35 @@
+name: "FatoVia | Recuperar 16 excecoes de leitura 2026"
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/reprocessar-excecoes-2026.yml"
+permissions:
+  contents: read
+jobs:
+  reprocessar:
+    name: "Reprocessar ${{ matrix.uf }}"
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        uf: [BA, MG, RJ]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar ASN.1
+        run: python -m pip install 'asn1tools==0.167.0'
+      - name: Reabrir arquivos brutos publicados e repetir os testes
+        run: python -u -m auditoria.reprocessar_excecoes_2026 --uf ${{ matrix.uf }} --out work/retries/${{ matrix.uf }}.json
+      - name: Preservar relatório mesmo com falhas
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fatovia-reprocessamento-${{ matrix.uf }}
+          path: work/retries/${{ matrix.uf }}.json
+          if-no-files-found: warn
+          retention-days: 90
