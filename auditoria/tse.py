@@ -26,7 +26,7 @@ DATASET_RESULTADOS = "resultados-2026"
 API = "https://dadosabertos.tse.jus.br/api/3/action/package_show?id="
 UFS = tuple("AC AL AM AP BA CE DF ES GO MA MG MS MT PA PB PE PI PR RJ RN RO RR RS SC SE SP TO ZZ".split())
 MAX_ZIP_BYTES = 1_500_000_000
-MAX_CSV_BYTES = 6_000_000_000
+MAX_CSV_BYTES = 20_000_000_000  # streaming CSV de SP 1T; ZIP validado SHA512, sem extracao no disco
 
 
 def normal(text):
