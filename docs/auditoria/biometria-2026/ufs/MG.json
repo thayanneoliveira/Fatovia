@@ -1,0 +1,43 @@
+{
+  "ano": 2026,
+  "cobertura": {
+    "amostra_erros": [],
+    "linhas_bweb": 203235,
+    "secoes": 52062,
+    "secoes_com_votos_validos": 52062,
+    "secoes_exportadas": 52062,
+    "secoes_invalidas": 0,
+    "secoes_sem_comparecimento": 0
+  },
+  "definicao": "QT_ELEI_BIOM_SEM_HABILITACAO: contagem de eleitores sem habilitação biométrica registrada na urna; não é sinônimo de fraude, voto irregular ou identificação individual de uma candidatura.",
+  "fontes": {
+    "bytes": 14071007,
+    "hash_publicado_conferido": true,
+    "hash_referencia_28_10_conferido": true,
+    "sha512": "b2123700c7a520ccfb0e1be9aa3bab205c9c5f5b64cd537c80a1eaca69a9b96a67c440c88ca2a0f30f63aeed72a1c9dfca0e5ede8358eca1c64698e0c8054bb9",
+    "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_MG_261020260742.zip"
+  },
+  "gerado_utc": "2026-10-29T12:40:20.579616+00:00",
+  "limitacoes": [
+    "A métrica de identificação é agregada por seção, não vinculada ao voto individual.",
+    "Uma associação estatística agregada não estabelece causalidade ou irregularidade.",
+    "BWeb do TSE, não um conjunto independente coletado de BUs impressos.",
+    "O significado operacional preciso do campo exige consulta ao leia-me oficial e regulamentos."
+  ],
+  "metodo": "Uma linha consolidada por seção/cargo, evitando somar metadados repetidos nas linhas de votáveis",
+  "projeto": "FATOVIA AUDITA",
+  "status": "OK",
+  "totais": {
+    "aptos": 16372144,
+    "brancos": 164141,
+    "comparecimento": 13044203,
+    "nulos": 287177,
+    "sem_biometria": 887910,
+    "taxa_sem_biometria_comparecimento": 0.06806931784180298,
+    "votos_13": 6351099,
+    "votos_22": 6241786,
+    "votos_validos": 12592885
+  },
+  "turno": 2,
+  "uf": "MG"
+}

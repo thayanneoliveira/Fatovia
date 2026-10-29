@@ -1,0 +1,43 @@
+{
+  "ano": 2026,
+  "cobertura": {
+    "amostra_erros": [],
+    "linhas_bweb": 37819,
+    "secoes": 10225,
+    "secoes_com_votos_validos": 10225,
+    "secoes_exportadas": 10225,
+    "secoes_invalidas": 0,
+    "secoes_sem_comparecimento": 0
+  },
+  "definicao": "QT_ELEI_BIOM_SEM_HABILITACAO: contagem de eleitores sem habilitação biométrica registrada na urna; não é sinônimo de fraude, voto irregular ou identificação individual de uma candidatura.",
+  "fontes": {
+    "bytes": 2648710,
+    "hash_publicado_conferido": true,
+    "hash_referencia_28_10_conferido": true,
+    "sha512": "d864c6f671daf94d0c3a8464b74052f1827fe6ac43a7666bc1d4cd37f3a4375ccb51ccc83ef04832487349a40e1d73b72e2ab0934b99d62465422b80c4499b54",
+    "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_PI_261020260742.zip"
+  },
+  "gerado_utc": "2026-10-29T12:40:33.490499+00:00",
+  "limitacoes": [
+    "A métrica de identificação é agregada por seção, não vinculada ao voto individual.",
+    "Uma associação estatística agregada não estabelece causalidade ou irregularidade.",
+    "BWeb do TSE, não um conjunto independente coletado de BUs impressos.",
+    "O significado operacional preciso do campo exige consulta ao leia-me oficial e regulamentos."
+  ],
+  "metodo": "Uma linha consolidada por seção/cargo, evitando somar metadados repetidos nas linhas de votáveis",
+  "projeto": "FATOVIA AUDITA",
+  "status": "OK",
+  "totais": {
+    "aptos": 2704695,
+    "brancos": 16137,
+    "comparecimento": 2239830,
+    "nulos": 43845,
+    "sem_biometria": 201641,
+    "taxa_sem_biometria_comparecimento": 0.09002513583620185,
+    "votos_13": 1653989,
+    "votos_22": 525859,
+    "votos_validos": 2179848
+  },
+  "turno": 2,
+  "uf": "PI"
+}

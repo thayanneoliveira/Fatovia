@@ -1,0 +1,1498 @@
+{
+  "ano": 2026,
+  "descricao": {
+    "exterior_incluido_na_contagem_nacional": false,
+    "fontes": {
+      "AC": {
+        "secoes": 2270,
+        "sha512": "95f19aad9534d21ea703670030ea1d51b5a89c2b40f3ba5466d60de2765b9067f225fd863000c282fe47fb6457a9f43df5fd536dec7753f3813667c99b3efa3b",
+        "totais": {
+          "aptos": 613715,
+          "brancos": 5016,
+          "comparecimento": 453654,
+          "nulos": 16410,
+          "sem_biometria": 22654,
+          "taxa_sem_biometria_comparecimento": 0.04993673592649905,
+          "votos_13": 144513,
+          "votos_22": 287715,
+          "votos_validos": 432228
+        }
+      },
+      "AL": {
+        "secoes": 7101,
+        "sha512": "392ebb110ac066be0bc1113b1cd4f15feadac11deb97c1786a2a9bc824affa5abce5fdfad051a6a3d4bf2b42909ba4b27b87af586dc888c17f8319401b24a848",
+        "totais": {
+          "aptos": 2442081,
+          "brancos": 16983,
+          "comparecimento": 1951632,
+          "nulos": 37888,
+          "sem_biometria": 135874,
+          "taxa_sem_biometria_comparecimento": 0.06962070718250161,
+          "votos_13": 1152621,
+          "votos_22": 744140,
+          "votos_validos": 1896761
+        }
+      },
+      "AM": {
+        "secoes": 8157,
+        "sha512": "c87f558d88f478afaed40d452855e34eb99772fb4214b2c913824fd5adb816d324c6c040ab35d5e17e953e0d752b882c27304bd3c9139a9f96a765e2356c5ce8",
+        "totais": {
+          "aptos": 2798661,
+          "brancos": 18324,
+          "comparecimento": 2192059,
+          "nulos": 52707,
+          "sem_biometria": 118955,
+          "taxa_sem_biometria_comparecimento": 0.05426633133505987,
+          "votos_13": 1145783,
+          "votos_22": 975245,
+          "votos_validos": 2121028
+        }
+      },
+      "AP": {
+        "secoes": 1914,
+        "sha512": "66f56ba91e90cd715994bba078014e57a9124e5667d5047b84cedeaf67dfbfc86a0c85537d65c49810817a73d0eaab6222fecdbb57d9077cc6a1da18a6d21cd6",
+        "totais": {
+          "aptos": 576910,
+          "brancos": 3320,
+          "comparecimento": 429975,
+          "nulos": 5013,
+          "sem_biometria": 19685,
+          "taxa_sem_biometria_comparecimento": 0.04578173149601721,
+          "votos_13": 222968,
+          "votos_22": 198674,
+          "votos_validos": 421642
+        }
+      },
+      "BA": {
+        "secoes": 35476,
+        "sha512": "15db0c47b3b445ccbc1dd15ef77291e1bb5fe1af20a3e444381f7c32057794ed97e0c901cb46ea09cc7172a5d3d25cfe6435910e3f3fbdb8479c0c599f46e5c3",
+        "totais": {
+          "aptos": 11312891,
+          "brancos": 92721,
+          "comparecimento": 9422047,
+          "nulos": 235307,
+          "sem_biometria": 702255,
+          "taxa_sem_biometria_comparecimento": 0.07453316673117848,
+          "votos_13": 6485258,
+          "votos_22": 2608761,
+          "votos_validos": 9094019
+        }
+      },
+      "CE": {
+        "secoes": 23765,
+        "sha512": "4d0abf43322e353074782f533a728513924e7820898b8b3ef1ebbe45771dd61504e031f0efc62071442632669a11e1523890b5b49a196a04cc25884124e76357",
+        "totais": {
+          "aptos": 6996521,
+          "brancos": 56386,
+          "comparecimento": 6024843,
+          "nulos": 112855,
+          "sem_biometria": 429294,
+          "taxa_sem_biometria_comparecimento": 0.0712539729251036,
+          "votos_13": 4036124,
+          "votos_22": 1819478,
+          "votos_validos": 5855602
+        }
+      },
+      "DF": {
+        "secoes": 6969,
+        "sha512": "204e65d5d3eff30f7bbb27f3f21547d0146da31edaf15c27848452a245462144e2bf53ba520a0dfc09493231f2a43218d967cda1b6633af112ef3b1ac1a6c823",
+        "totais": {
+          "aptos": 2258995,
+          "brancos": 22386,
+          "comparecimento": 1868280,
+          "nulos": 41128,
+          "sem_biometria": 84114,
+          "taxa_sem_biometria_comparecimento": 0.045022159419358984,
+          "votos_13": 825224,
+          "votos_22": 979542,
+          "votos_validos": 1804766
+        }
+      },
+      "ES": {
+        "secoes": 9844,
+        "sha512": "e8805337ab66ffa5effea88a28ce74cc0fe1e856bcf58c2dad09f71cc04837d2113830aa6e1f4a4a17c14d1092a2cc2a6d88d578f64780e0a99627c0912f8883",
+        "totais": {
+          "aptos": 2991515,
+          "brancos": 33080,
+          "comparecimento": 2409214,
+          "nulos": 79665,
+          "sem_biometria": 151401,
+          "taxa_sem_biometria_comparecimento": 0.06284248721782291,
+          "votos_13": 1001965,
+          "votos_22": 1294504,
+          "votos_validos": 2296469
+        }
+      },
+      "GO": {
+        "secoes": 15686,
+        "sha512": "e5b6635dc3a05b7f6c175bdbe8a23e4daa3f4029f79cf3b7c82ac2cc48a43c315b00cac68162dd134f3187ba973bd3ddea5a26cb6f91c44449945bb094f93e0e",
+        "totais": {
+          "aptos": 5080385,
+          "brancos": 43214,
+          "comparecimento": 4047280,
+          "nulos": 73177,
+          "sem_biometria": 268656,
+          "taxa_sem_biometria_comparecimento": 0.0663793955446621,
+          "votos_13": 1585555,
+          "votos_22": 2345334,
+          "votos_validos": 3930889
+        }
+      },
+      "MA": {
+        "secoes": 18093,
+        "sha512": "90c1c9d2d1d0635c9e6900ee51dbb81b4a1f2dee113ed3a5145a2dacbe8d2da97bec55c78caa74fb635412cd29c413f2204a05d22ae6e0516ef249811c9d075c",
+        "totais": {
+          "aptos": 5183049,
+          "brancos": 30855,
+          "comparecimento": 4127771,
+          "nulos": 58714,
+          "sem_biometria": 259852,
+          "taxa_sem_biometria_comparecimento": 0.06295213566837889,
+          "votos_13": 2808231,
+          "votos_22": 1229971,
+          "votos_validos": 4038202
+        }
+      },
+      "MG": {
+        "secoes": 52062,
+        "sha512": "b2123700c7a520ccfb0e1be9aa3bab205c9c5f5b64cd537c80a1eaca69a9b96a67c440c88ca2a0f30f63aeed72a1c9dfca0e5ede8358eca1c64698e0c8054bb9",
+        "totais": {
+          "aptos": 16372144,
+          "brancos": 164141,
+          "comparecimento": 13044203,
+          "nulos": 287177,
+          "sem_biometria": 887910,
+          "taxa_sem_biometria_comparecimento": 0.06806931784180298,
+          "votos_13": 6351099,
+          "votos_22": 6241786,
+          "votos_validos": 12592885
+        }
+      },
+      "MS": {
+        "secoes": 7106,
+        "sha512": "c16d211246f35c9d1e7dfef39e6f718522987873d5304144744d9ba98783320710060844ca212800204c53d144d7cdea777aead343d817033fb5b49ada518db1",
+        "totais": {
+          "aptos": 2024437,
+          "brancos": 14958,
+          "comparecimento": 1594460,
+          "nulos": 22637,
+          "sem_biometria": 115545,
+          "taxa_sem_biometria_comparecimento": 0.07246654039612158,
+          "votos_13": 628973,
+          "votos_22": 927892,
+          "votos_validos": 1556865
+        }
+      },
+      "MT": {
+        "secoes": 8287,
+        "sha512": "cf0e1bf1c0af0af4326e9db2532d8ae0f3d28287d0c5ba48229e484696ef27d4e848922f73b1b7126847d2841b3bdea5ee36327c12a23d207860549640c5ce72",
+        "totais": {
+          "aptos": 2637879,
+          "brancos": 15431,
+          "comparecimento": 2085334,
+          "nulos": 24637,
+          "sem_biometria": 137579,
+          "taxa_sem_biometria_comparecimento": 0.06597456330736468,
+          "votos_13": 694167,
+          "votos_22": 1351099,
+          "votos_validos": 2045266
+        }
+      },
+      "PA": {
+        "secoes": 20827,
+        "sha512": "5908978e998fc61b505c42971b3a29c7ffd858624e64b864e1c8dc8248172373bb59f5be3d27ad1d93703c73d9b11bc836eb9875c55180470b6e68061d773d9e",
+        "totais": {
+          "aptos": 6262063,
+          "brancos": 36501,
+          "comparecimento": 4989573,
+          "nulos": 62683,
+          "sem_biometria": 277373,
+          "taxa_sem_biometria_comparecimento": 0.0555905284881091,
+          "votos_13": 2690449,
+          "votos_22": 2199940,
+          "votos_validos": 4890389
+        }
+      },
+      "PB": {
+        "secoes": 10712,
+        "sha512": "79ec2b52387a8a1ac6f71cc330b54ce97fbefa49dfb925c15daa32e1f4a466cfd65c67eeef7e064d41231504afe5573d0fcd1a906b2856ad04dee0000ac15c7f",
+        "totais": {
+          "aptos": 3248434,
+          "brancos": 25943,
+          "comparecimento": 2743560,
+          "nulos": 58348,
+          "sem_biometria": 199353,
+          "taxa_sem_biometria_comparecimento": 0.07266216157109741,
+          "votos_13": 1794059,
+          "votos_22": 865210,
+          "votos_validos": 2659269
+        }
+      },
+      "PE": {
+        "secoes": 21418,
+        "sha512": "5002c264cf9fff1b27bbbbc75d89b5aec5856b59a2888fef2b8c1577fe041bf60bcd6a4d8943023382579921d7f89926608aa7e550beb8581718cea1873f645a",
+        "totais": {
+          "aptos": 7223227,
+          "brancos": 56758,
+          "comparecimento": 6126467,
+          "nulos": 119642,
+          "sem_biometria": 399764,
+          "taxa_sem_biometria_comparecimento": 0.06525196332568184,
+          "votos_13": 4117513,
+          "votos_22": 1832554,
+          "votos_validos": 5950067
+        }
+      },
+      "PI": {
+        "secoes": 10225,
+        "sha512": "d864c6f671daf94d0c3a8464b74052f1827fe6ac43a7666bc1d4cd37f3a4375ccb51ccc83ef04832487349a40e1d73b72e2ab0934b99d62465422b80c4499b54",
+        "totais": {
+          "aptos": 2704695,
+          "brancos": 16137,
+          "comparecimento": 2239830,
+          "nulos": 43845,
+          "sem_biometria": 201641,
+          "taxa_sem_biometria_comparecimento": 0.09002513583620185,
+          "votos_13": 1653989,
+          "votos_22": 525859,
+          "votos_validos": 2179848
+        }
+      },
+      "PR": {
+        "secoes": 27142,
+        "sha512": "949659949df4605749afdd1842d0f628bb4563d41f73578786702f679ee81276d7a4f5a4e52fe5292e681a75a7662d7925c1a15e76f0118b5870c29dbd20b3f5",
+        "totais": {
+          "aptos": 8613628,
+          "brancos": 82572,
+          "comparecimento": 7059339,
+          "nulos": 118819,
+          "sem_biometria": 493321,
+          "taxa_sem_biometria_comparecimento": 0.06988203853080295,
+          "votos_13": 2566504,
+          "votos_22": 4291444,
+          "votos_validos": 6857948
+        }
+      },
+      "RJ": {
+        "secoes": 37675,
+        "sha512": "dcb3131b618b9c394b50576ead626a85ebb115c9f984f9b464d21a64eb69a735f11123fb189a3f8b906c29f9511557f46565cc1d4adc10a68fa0ebf69a70a205",
+        "totais": {
+          "aptos": 12857526,
+          "brancos": 111682,
+          "comparecimento": 10077449,
+          "nulos": 231341,
+          "sem_biometria": 750301,
+          "taxa_sem_biometria_comparecimento": 0.07445346535616305,
+          "votos_13": 4565393,
+          "votos_22": 5169033,
+          "votos_validos": 9734426
+        }
+      },
+      "RN": {
+        "secoes": 8115,
+        "sha512": "3da1a65ad338f6ef0596de91e2c65f8fd1c0ee916c4ed26f2e1c64d4583603caa344482bfbda4e00142926244a79d7df63c1acb52dea56fc83d67b355feaf3a5",
+        "totais": {
+          "aptos": 2659867,
+          "brancos": 19939,
+          "comparecimento": 2232823,
+          "nulos": 61879,
+          "sem_biometria": 180838,
+          "taxa_sem_biometria_comparecimento": 0.08099074579579305,
+          "votos_13": 1413596,
+          "votos_22": 737409,
+          "votos_validos": 2151005
+        }
+      },
+      "RO": {
+        "secoes": 4698,
+        "sha512": "4e25932384114f73eacfc0555234fd5cc31f2cde025404f9aed97286879e15571925d544ca83b744d2fe21e5711ec20b4bf7281011007d777b9a354c8fd1b577",
+        "totais": {
+          "aptos": 1265926,
+          "brancos": 8361,
+          "comparecimento": 988489,
+          "nulos": 11300,
+          "sem_biometria": 61938,
+          "taxa_sem_biometria_comparecimento": 0.06265927086694946,
+          "votos_13": 294446,
+          "votos_22": 674382,
+          "votos_validos": 968828
+        }
+      },
+      "RR": {
+        "secoes": 1519,
+        "sha512": "3986628e101b7a9fc24ab5377e0ed8b2eb94fa735b5999aa408df37d3be91d1c4d8ab11c8bec03398dcc0005b76782617a5045cb170e0efafdeabd1602d6d4cf",
+        "totais": {
+          "aptos": 401540,
+          "brancos": 2176,
+          "comparecimento": 308597,
+          "nulos": 3241,
+          "sem_biometria": 12646,
+          "taxa_sem_biometria_comparecimento": 0.040979011461550176,
+          "votos_13": 83505,
+          "votos_22": 219675,
+          "votos_validos": 303180
+        }
+      },
+      "RS": {
+        "secoes": 27547,
+        "sha512": "39f0c7e216972216d52a1868c2396d72115453953227aa301cb92692421c171e5a24e8493a57f125ddf2096a7ea6d6b34ce1aa7a042ef26a4c550e3336a27cee",
+        "totais": {
+          "aptos": 8522318,
+          "brancos": 89463,
+          "comparecimento": 6889638,
+          "nulos": 101245,
+          "sem_biometria": 582380,
+          "taxa_sem_biometria_comparecimento": 0.08452984031962202,
+          "votos_13": 2824552,
+          "votos_22": 3874378,
+          "votos_validos": 6698930
+        }
+      },
+      "SC": {
+        "secoes": 17326,
+        "sha512": "01b1e9638654fa6914ad4d8a9001de33cb4fc5386d280ccdea7576d7c993c04e9162075db0a1fed8f571e87ce5349151e6a44bc4d5300b3e828a0123c6b90c8e",
+        "totais": {
+          "aptos": 5734687,
+          "brancos": 48674,
+          "comparecimento": 4762303,
+          "nulos": 75244,
+          "sem_biometria": 357632,
+          "taxa_sem_biometria_comparecimento": 0.07509643968474916,
+          "votos_13": 1418314,
+          "votos_22": 3220071,
+          "votos_validos": 4638385
+        }
+      },
+      "SE": {
+        "secoes": 5923,
+        "sha512": "ea1460385ab222e82ec7560eb3932bb3dc198333296876435d99c2755150ce1a9d703f21ca259279de610f1e31d2dbc8d3a5090c6c3f9e762de8d98f0fd73f0f",
+        "totais": {
+          "aptos": 1740093,
+          "brancos": 13135,
+          "comparecimento": 1466659,
+          "nulos": 31129,
+          "sem_biometria": 102204,
+          "taxa_sem_biometria_comparecimento": 0.06968490971657351,
+          "votos_13": 989041,
+          "votos_22": 433354,
+          "votos_validos": 1422395
+        }
+      },
+      "SP": {
+        "secoes": 103656,
+        "sha512": "3078f38754ced92476fd0e9c6661ecf5237774fc210d5e7eee1b55db9b8ddb321843f591440c2d350679326e1f1b86e60ac723c8ac65a92ca94b74ce674ecffe",
+        "totais": {
+          "aptos": 34123591,
+          "brancos": 389606,
+          "comparecimento": 27364389,
+          "nulos": 716331,
+          "sem_biometria": 1632098,
+          "taxa_sem_biometria_comparecimento": 0.0596431369251475,
+          "votos_13": 12119274,
+          "votos_22": 14139178,
+          "votos_validos": 26258452
+        }
+      },
+      "TO": {
+        "secoes": 4384,
+        "sha512": "e667f9b68bb71065fec219cbf18b4621b0062ced6b09dec227d32f8621c9b6697b55d216bce0920de30eea37c16bc42a3a684d71bdb49051c68d850f1f74b0ef",
+        "totais": {
+          "aptos": 1182041,
+          "brancos": 8059,
+          "comparecimento": 954763,
+          "nulos": 35826,
+          "sem_biometria": 47225,
+          "taxa_sem_biometria_comparecimento": 0.04946253677614235,
+          "votos_13": 442962,
+          "votos_22": 467916,
+          "votos_validos": 910878
+        }
+      },
+      "ZZ": {
+        "secoes": 1308,
+        "sha512": "e024547f7d2c6e21e53c8a4f47823d7c76684976271ef395f7c66fe953caf49aa2c585b104f724cc2c39eb67f682e05a7e479f9558c3e38244036a3f90b429f1",
+        "totais": {
+          "aptos": 916158,
+          "brancos": 4675,
+          "comparecimento": 381443,
+          "nulos": 5117,
+          "sem_biometria": 0,
+          "taxa_sem_biometria_comparecimento": 0.0,
+          "votos_13": 200154,
+          "votos_22": 171497,
+          "votos_validos": 371651
+        }
+      }
+    },
+    "observacao": "Regressão principal exclui ZZ; informações do exterior ficam nos arquivos por UF.",
+    "quantidade_ufs": 28,
+    "ufs_ausentes_ou_invalidas": [],
+    "ufs_incorporadas": [
+      "AC",
+      "AL",
+      "AM",
+      "AP",
+      "BA",
+      "CE",
+      "DF",
+      "ES",
+      "GO",
+      "MA",
+      "MG",
+      "MS",
+      "MT",
+      "PA",
+      "PB",
+      "PE",
+      "PI",
+      "PR",
+      "RJ",
+      "RN",
+      "RO",
+      "RR",
+      "RS",
+      "SC",
+      "SE",
+      "SP",
+      "TO",
+      "ZZ"
+    ]
+  },
+  "escopo": "2º turno presidencial",
+  "gerado_utc": "2026-10-29T12:41:26.450171+00:00",
+  "limitacoes": [
+    "Associação ecológica, não causalidade, prova de fraude, ou voto individual.",
+    "A taxa é a razão QT_ELEI_BIOM_SEM_HABILITACAO / QT_COMPARECIMENTO, agregada UMA vez por seção.",
+    "A participação é votos 13 / (votos 13 + votos 22), não o total de comparecimento.",
+    "Efeitos fixos municipais só comparam seções do MESMO município.",
+    "O modelo ajustado inclui taxa de comparecimento e log(aptos), mas fatores sociais, demográficos e operacionais não observados persistem.",
+    "Erros padrão com clusters municipais não resolvem confundimento.",
+    "Unidade exterior (ZZ) tratada separadamente; relatório nacional exclui ZZ da regressão principal por diferenças de contexto.",
+    "Não é possível atribuir a candidatura escolhida a eleitor identificado sem biometria."
+  ],
+  "modelos": {
+    "municipio_fe": {
+      "coeficientes": [
+        0.022670706590091516
+      ],
+      "correlacao_within_ponderada": 0.009656592641974335,
+      "efeito_estimado_por_10pp_maior_taxa_sem_biometria_em_pp_voto_13": 0.22670706590091516,
+      "erros_padrao_cluster": [
+        0.03933016774990634
+      ],
+      "intervalo_95pp_em_pontos_percentuais": [
+        -0.5441642219972491,
+        0.9975783537990794
+      ],
+      "municipios": 5571,
+      "n": 497897,
+      "observacao": "Estimativa associativa, não efeito causal. Erros padrão agrupados por município.",
+      "r2_within": 9.324978145303263e-05,
+      "status": "EXECUTADO",
+      "variaveis": [
+        "taxa_sem_habilitacao_biometrica"
+      ]
+    },
+    "municipio_fe_mais_controles": {
+      "coeficientes": [
+        -0.009071294011643303,
+        -0.1505200055612174,
+        -0.026685743103161966
+      ],
+      "correlacao_within_ponderada": 0.009656592641974335,
+      "efeito_estimado_por_10pp_maior_taxa_sem_biometria_em_pp_voto_13": -0.09071294011643304,
+      "erros_padrao_cluster": [
+        0.036157920711189895,
+        0.02648374778647323,
+        0.0035649424653347367
+      ],
+      "intervalo_95pp_em_pontos_percentuais": [
+        -0.799408186055755,
+        0.6179823058228889
+      ],
+      "municipios": 5571,
+      "n": 497897,
+      "observacao": "Estimativa associativa, não efeito causal. Erros padrão agrupados por município.",
+      "r2_within": 0.009230027947513798,
+      "status": "EXECUTADO",
+      "variaveis": [
+        "taxa_sem_habilitacao_biometrica",
+        "taxa_comparecimento",
+        "log_aptos"
+      ]
+    },
+    "sensibilidade_100_validos_min": {
+      "coeficientes": [
+        -0.007803331471675883,
+        -0.15099317778559337,
+        -0.02236482883346874
+      ],
+      "correlacao_within_ponderada": 0.008719623878282685,
+      "efeito_estimado_por_10pp_maior_taxa_sem_biometria_em_pp_voto_13": -0.07803331471675884,
+      "erros_padrao_cluster": [
+        0.03643880322587446,
+        0.026814252412766505,
+        0.004166528274450402
+      ],
+      "intervalo_95pp_em_pontos_percentuais": [
+        -0.7922338579438982,
+        0.6361672285103804
+      ],
+      "municipios": 5571,
+      "n": 492559,
+      "observacao": "Estimativa associativa, não efeito causal. Erros padrão agrupados por município.",
+      "r2_within": 0.008038880239048531,
+      "status": "EXECUTADO",
+      "variaveis": [
+        "taxa_sem_habilitacao_biometrica",
+        "taxa_comparecimento",
+        "log_aptos"
+      ]
+    },
+    "sensibilidade_corte_cauda_99percentil": {
+      "coeficientes": [
+        -0.0226402144801802,
+        -0.15292649325491975,
+        -0.02688189270286917
+      ],
+      "correlacao_within_ponderada": 0.005060746510557634,
+      "efeito_estimado_por_10pp_maior_taxa_sem_biometria_em_pp_voto_13": -0.22640214480180199,
+      "erros_padrao_cluster": [
+        0.04452250865045536,
+        0.026227229955680977,
+        0.003627269516248929
+      ],
+      "intervalo_95pp_em_pontos_percentuais": [
+        -1.099043314350727,
+        0.646239024747123
+      ],
+      "municipios": 5570,
+      "n": 492930,
+      "observacao": "Estimativa associativa, não efeito causal. Erros padrão agrupados por município.",
+      "r2_within": 0.0093445663528346,
+      "status": "EXECUTADO",
+      "variaveis": [
+        "taxa_sem_habilitacao_biometrica",
+        "taxa_comparecimento",
+        "log_aptos"
+      ]
+    },
+    "sensibilidade_sem_pesos": {
+      "coeficientes": [
+        -0.0123823941814669,
+        -0.1387113035306833,
+        -0.03451969746607788
+      ],
+      "correlacao_within_ponderada": 0.011976715668829603,
+      "efeito_estimado_por_10pp_maior_taxa_sem_biometria_em_pp_voto_13": -0.123823941814669,
+      "erros_padrao_cluster": [
+        0.032200391751420566,
+        0.02279738000907908,
+        0.0026440954181222655
+      ],
+      "intervalo_95pp_em_pontos_percentuais": [
+        -0.7549516201425122,
+        0.5073037365131741
+      ],
+      "municipios": 5571,
+      "n": 497897,
+      "observacao": "Estimativa associativa, não efeito causal. Erros padrão agrupados por município.",
+      "r2_within": 0.01346081010865452,
+      "status": "EXECUTADO",
+      "variaveis": [
+        "taxa_sem_habilitacao_biometrica",
+        "taxa_comparecimento",
+        "log_aptos"
+      ]
+    }
+  },
+  "por_uf": {
+    "AC": {
+      "comparecimento": 453654,
+      "correlacao_bruta_ponderada": 0.06498587843298612,
+      "identificacoes_sem_biometria": 22654,
+      "modelo_ajustado": {
+        "coeficientes": [
+          0.013312612396566252,
+          -0.013410436764375942,
+          -0.050963966216853944
+        ],
+        "correlacao_within_ponderada": 0.012612816800898586,
+        "efeito_estimado_por_10pp_maior_taxa_sem_biometria_em_pp_voto_13": 0.1331261239656625,
+        "erros_padrao_cluster": [
+          0.08512482478425124,
+          0.08042838711823842,
+          0.023689270285604393
+        ],
+        "intervalo_95pp_em_pontos_percentuais": [
+          -1.5353204418056614,
+          1.8015726897369866
+        ],
+        "municipios": 22,
+        "n": 2270,
+        "observacao": "Estimativa associativa, não efeito causal. Erros padrão agrupados por município.",
+        "r2_within": 0.01026503316114658,
+        "status": "EXECUTADO",
+        "variaveis": [
+          "taxa_sem_habilitacao_biometrica",
+          "taxa_comparecimento",
+          "log_aptos"
+        ]
+      },
+      "secoes": 2270,
+      "taxa_sem_biometria": 0.04993673592649905
+    },
+    "AL": {
+      "comparecimento": 1951632,
+      "correlacao_bruta_ponderada": 0.467770799620674,
+      "identificacoes_sem_biometria": 135874,
+      "modelo_ajustado": {
+        "coeficientes": [
+          0.10437889043930218,
+          -0.20193206991551002,
+          -0.014691070427794991
+        ],
+        "correlacao_within_ponderada": 0.06357066860772026,
+        "efeito_estimado_por_10pp_maior_taxa_sem_biometria_em_pp_voto_13": 1.0437889043930217,
+        "erros_padrao_cluster": [
+          0.028558649785546376,
+          0.04655261882423273,
+          0.011886134781686552
+        ],
+        "intervalo_95pp_em_pontos_percentuais": [
+          0.48403936859631286,
+          1.6035384401897308
+        ],
+        "municipios": 102,
+        "n": 7101,
+        "observacao": "Estimativa associativa, não efeito causal. Erros padrão agrupados por município.",
+        "r2_within": 0.020257037573712392,
+        "status": "EXECUTADO",
+        "variaveis": [
+          "taxa_sem_habilitacao_biometrica",
+          "taxa_comparecimento",
+          "log_aptos"
+        ]
+      },
+      "secoes": 7101,
+      "taxa_sem_biometria": 0.06962070718250161
+    },
+    "AM": {
+      "comparecimento": 2192059,
+      "correlacao_bruta_ponderada": -0.16886725589195128,
+      "identificacoes_sem_biometria": 118955,
+      "modelo_ajustado": {
+        "coeficientes": [
+          -0.046054713775500106,
+          0.1618681696992208,
+          -0.06127213016262629
+        ],
+        "correlacao_within_ponderada": 0.0023372181343913616,
+        "efeito_estimado_por_10pp_maior_taxa_sem_biometria_em_pp_voto_13": -0.46054713775500106,
+        "erros_padrao_cluster": [
+          0.07572183055572594,
+          0.15013754150732633,
+          0.011737124565109438
+        ],
+        "intervalo_95pp_em_pontos_percentuais": [
+          -1.9446950166472297,
+          1.0236007411372274
+        ],
+        "municipios": 62,
+        "n": 8157,
+        "observacao": "Estimativa associativa, não efeito causal. Erros padrão agrupados por município.",
+        "r2_within": 0.023539735820083944,
+        "status": "EXECUTADO",
+        "variaveis": [
+          "taxa_sem_habilitacao_biometrica",
+          "taxa_comparecimento",
+          "log_aptos"
+        ]
+      },
+      "secoes": 8157,
+      "taxa_sem_biometria": 0.05426633133505987
+    },
+    "AP": {
+      "comparecimento": 429975,
+      "correlacao_bruta_ponderada": 0.0901173888649915,
+      "identificacoes_sem_biometria": 19685,
+      "modelo_ajustado": {
+        "municipios": 16,
+        "n": 1914,
+        "status": "AMOSTRA_INSUFICIENTE"
+      },
+      "secoes": 1914,
+      "taxa_sem_biometria": 0.04578173149601721
+    },
+    "BA": {
+      "comparecimento": 9422047,
+      "correlacao_bruta_ponderada": 0.16386452870231982,
+      "identificacoes_sem_biometria": 702255,
+      "modelo_ajustado": {
+        "coeficientes": [
+          0.10134903919273,
+          0.017526894043620442,
+          -0.043614404976325
+        ],
+        "correlacao_within_ponderada": 0.06146610517931428,
+        "efeito_estimado_por_10pp_maior_taxa_sem_biometria_em_pp_voto_13": 1.0134903919273,
+        "erros_padrao_cluster": [
+          0.04676589607755531,
+          0.06172752077541929,
+          0.005891007838787913
+        ],
+        "intervalo_95pp_em_pontos_percentuais": [
+          0.09687882880721588,
+          1.9301019550473841
+        ],
+        "municipios": 417,
+        "n": 35476,
+        "observacao": "Estimativa associativa, não efeito causal. Erros padrão agrupados por município.",
+        "r2_within": 0.015035888385863852,
+        "status": "EXECUTADO",
+        "variaveis": [
+          "taxa_sem_habilitacao_biometrica",
+          "taxa_comparecimento",
+          "log_aptos"
+        ]
+      },
+      "secoes": 35476,
+      "taxa_sem_biometria": 0.07453316673117848
+    },
+    "CE": {
+      "comparecimento": 6024843,
+      "correlacao_bruta_ponderada": 0.34927547181645285,
+      "identificacoes_sem_biometria": 429294,
+      "modelo_ajustado": {
+        "coeficientes": [
+          0.2792592502947071,
+          0.2412102176743144,
+          -0.04362584975938256
+        ],
+        "correlacao_within_ponderada": 0.1467545933074657,
+        "efeito_estimado_por_10pp_maior_taxa_sem_biometria_em_pp_voto_13": 2.792592502947071,
+        "erros_padrao_cluster": [
+          0.040693112356377945,
+          0.04476465303859852,
+          0.005798808484417123
+        ],
+        "intervalo_95pp_em_pontos_percentuais": [
+          1.9950075007620631,
+          3.590177505132079
+        ],
+        "municipios": 184,
+        "n": 23765,
+        "observacao": "Estimativa associativa, não efeito causal. Erros padrão agrupados por município.",
+        "r2_within": 0.04918425121621016,
+        "status": "EXECUTADO",
+        "variaveis": [
+          "taxa_sem_habilitacao_biometrica",
+          "taxa_comparecimento",
+          "log_aptos"
+        ]
+      },
+      "secoes": 23765,
+      "taxa_sem_biometria": 0.0712539729251036
+    },
+    "DF": {
+      "comparecimento": 1868280,
+      "correlacao_bruta_ponderada": 0.005906491360238389,
+      "identificacoes_sem_biometria": 84114,
+      "modelo_ajustado": {
+        "municipios": 1,
+        "n": 6969,
+        "status": "AMOSTRA_INSUFICIENTE"
+      },
+      "secoes": 6969,
+      "taxa_sem_biometria": 0.045022159419358984
+    },
+    "ES": {
+      "comparecimento": 2409214,
+      "correlacao_bruta_ponderada": 0.023677847286463775,
+      "identificacoes_sem_biometria": 151401,
+      "modelo_ajustado": {
+        "coeficientes": [
+          0.11343364158115697,
+          -0.2469893858145425,
+          -0.05425688922355329
+        ],
+        "correlacao_within_ponderada": 0.06356191701104502,
+        "efeito_estimado_por_10pp_maior_taxa_sem_biometria_em_pp_voto_13": 1.1343364158115696,
+        "erros_padrao_cluster": [
+          0.0858951205832114,
+          0.07297764630008206,
+          0.013078487304966408
+        ],
+        "intervalo_95pp_em_pontos_percentuais": [
+          -0.5492079476193739,
+          2.817880779242513
+        ],
+        "municipios": 78,
+        "n": 9844,
+        "observacao": "Estimativa associativa, não efeito causal. Erros padrão agrupados por município.",
+        "r2_within": 0.0290040717513961,
+        "status": "EXECUTADO",
+        "variaveis": [
+          "taxa_sem_habilitacao_biometrica",
+          "taxa_comparecimento",
+          "log_aptos"
+        ]
+      },
+      "secoes": 9844,
+      "taxa_sem_biometria": 0.06284248721782291
+    },
+    "GO": {
+      "comparecimento": 4047280,
+      "correlacao_bruta_ponderada": 0.10222024634319787,
+      "identificacoes_sem_biometria": 268656,
+      "modelo_ajustado": {
+        "coeficientes": [
+          0.16911177058942867,
+          -0.33893755545612964,
+          -0.0024276588495967823
+        ],
+        "correlacao_within_ponderada": 0.07182950559720257,
+        "efeito_estimado_por_10pp_maior_taxa_sem_biometria_em_pp_voto_13": 1.6911177058942868,
+        "erros_padrao_cluster": [
+          0.0304845061800066,
+          0.03919107991273862,
+          0.007269466744385521
+        ],
+        "intervalo_95pp_em_pontos_percentuais": [
+          1.0936213847661573,
+          2.288614027022416
+        ],
+        "municipios": 246,
+        "n": 15686,
+        "observacao": "Estimativa associativa, não efeito causal. Erros padrão agrupados por município.",
+        "r2_within": 0.04299205779410293,
+        "status": "EXECUTADO",
+        "variaveis": [
+          "taxa_sem_habilitacao_biometrica",
+          "taxa_comparecimento",
+          "log_aptos"
+        ]
+      },
+      "secoes": 15686,
+      "taxa_sem_biometria": 0.0663793955446621
+    },
+    "MA": {
+      "comparecimento": 4127771,
+      "correlacao_bruta_ponderada": 0.03245347486728558,
+      "identificacoes_sem_biometria": 259852,
+      "modelo_ajustado": {
+        "coeficientes": [
+          0.15375502374791045,
+          0.01980351738420413,
+          -0.08743366983930834
+        ],
+        "correlacao_within_ponderada": 0.07845209099554412,
+        "efeito_estimado_por_10pp_maior_taxa_sem_biometria_em_pp_voto_13": 1.5375502374791044,
+        "erros_padrao_cluster": [
+          0.03324565220297938,
+          0.043063643391517,
+          0.00776977523045465
+        ],
+        "intervalo_95pp_em_pontos_percentuais": [
+          0.8859354543007086,
+          2.1891650206575
+        ],
+        "municipios": 217,
+        "n": 18093,
+        "observacao": "Estimativa associativa, não efeito causal. Erros padrão agrupados por município.",
+        "r2_within": 0.04827923537384195,
+        "status": "EXECUTADO",
+        "variaveis": [
+          "taxa_sem_habilitacao_biometrica",
+          "taxa_comparecimento",
+          "log_aptos"
+        ]
+      },
+      "secoes": 18093,
+      "taxa_sem_biometria": 0.06295213566837889
+    },
+    "MG": {
+      "comparecimento": 13044203,
+      "correlacao_bruta_ponderada": 0.08767388160830024,
+      "identificacoes_sem_biometria": 887910,
+      "modelo_ajustado": {
+        "coeficientes": [
+          0.1151216912855335,
+          -0.12918024759438365,
+          -0.019384111334699656
+        ],
+        "correlacao_within_ponderada": 0.06423562616895696,
+        "efeito_estimado_por_10pp_maior_taxa_sem_biometria_em_pp_voto_13": 1.151216912855335,
+        "erros_padrao_cluster": [
+          0.027085301270538705,
+          0.027321833291920256,
+          0.006709815734463691
+        ],
+        "intervalo_95pp_em_pontos_percentuais": [
+          0.6203450079527764,
+          1.6820888177578937
+        ],
+        "municipios": 853,
+        "n": 52062,
+        "observacao": "Estimativa associativa, não efeito causal. Erros padrão agrupados por município.",
+        "r2_within": 0.011124729856870564,
+        "status": "EXECUTADO",
+        "variaveis": [
+          "taxa_sem_habilitacao_biometrica",
+          "taxa_comparecimento",
+          "log_aptos"
+        ]
+      },
+      "secoes": 52062,
+      "taxa_sem_biometria": 0.06806931784180298
+    },
+    "MS": {
+      "comparecimento": 1594460,
+      "correlacao_bruta_ponderada": -0.05769610993144741,
+      "identificacoes_sem_biometria": 115545,
+      "modelo_ajustado": {
+        "coeficientes": [
+          -0.35444954798798095,
+          -0.5189020487290541,
+          0.03313508258951428
+        ],
+        "correlacao_within_ponderada": -0.1183096323790326,
+        "efeito_estimado_por_10pp_maior_taxa_sem_biometria_em_pp_voto_13": -3.5444954798798096,
+        "erros_padrao_cluster": [
+          0.09778372615318076,
+          0.11791968263731506,
+          0.029592581508743877
+        ],
+        "intervalo_95pp_em_pontos_percentuais": [
+          -5.461056512482152,
+          -1.6279344472774664
+        ],
+        "municipios": 79,
+        "n": 7106,
+        "observacao": "Estimativa associativa, não efeito causal. Erros padrão agrupados por município.",
+        "r2_within": 0.05959878294861452,
+        "status": "EXECUTADO",
+        "variaveis": [
+          "taxa_sem_habilitacao_biometrica",
+          "taxa_comparecimento",
+          "log_aptos"
+        ]
+      },
+      "secoes": 7106,
+      "taxa_sem_biometria": 0.07246654039612158
+    },
+    "MT": {
+      "comparecimento": 2085334,
+      "correlacao_bruta_ponderada": 0.1394573732842475,
+      "identificacoes_sem_biometria": 137579,
+      "modelo_ajustado": {
+        "coeficientes": [
+          -0.14622572029972533,
+          -0.2233970107154679,
+          -0.033336352943837064
+        ],
+        "correlacao_within_ponderada": -0.04572638286885304,
+        "efeito_estimado_por_10pp_maior_taxa_sem_biometria_em_pp_voto_13": -1.4622572029972534,
+        "erros_padrao_cluster": [
+          0.06407480867091173,
+          0.11214213372261475,
+          0.014687286523457735
+        ],
+        "intervalo_95pp_em_pontos_percentuais": [
+          -2.718123452947123,
+          -0.20639095304738342
+        ],
+        "municipios": 142,
+        "n": 8287,
+        "observacao": "Estimativa associativa, não efeito causal. Erros padrão agrupados por município.",
+        "r2_within": 0.013035634153490098,
+        "status": "EXECUTADO",
+        "variaveis": [
+          "taxa_sem_habilitacao_biometrica",
+          "taxa_comparecimento",
+          "log_aptos"
+        ]
+      },
+      "secoes": 8287,
+      "taxa_sem_biometria": 0.06597456330736468
+    },
+    "PA": {
+      "comparecimento": 4989573,
+      "correlacao_bruta_ponderada": 0.044293602875671016,
+      "identificacoes_sem_biometria": 277373,
+      "modelo_ajustado": {
+        "coeficientes": [
+          0.04115206117727469,
+          0.037523319549440486,
+          -0.058426369523568146
+        ],
+        "correlacao_within_ponderada": 0.023114978525941396,
+        "efeito_estimado_por_10pp_maior_taxa_sem_biometria_em_pp_voto_13": 0.4115206117727469,
+        "erros_padrao_cluster": [
+          0.04585819083885448,
+          0.07517191149533711,
+          0.013124567377567882
+        ],
+        "intervalo_95pp_em_pontos_percentuais": [
+          -0.4872999286688009,
+          1.3103411522142947
+        ],
+        "municipios": 144,
+        "n": 20827,
+        "observacao": "Estimativa associativa, não efeito causal. Erros padrão agrupados por município.",
+        "r2_within": 0.01653579057886901,
+        "status": "EXECUTADO",
+        "variaveis": [
+          "taxa_sem_habilitacao_biometrica",
+          "taxa_comparecimento",
+          "log_aptos"
+        ]
+      },
+      "secoes": 20827,
+      "taxa_sem_biometria": 0.0555905284881091
+    },
+    "PB": {
+      "comparecimento": 2743560,
+      "correlacao_bruta_ponderada": 0.01151452350888957,
+      "identificacoes_sem_biometria": 199353,
+      "modelo_ajustado": {
+        "coeficientes": [
+          0.16487500098697308,
+          0.007381268102394775,
+          -0.028295385586209493
+        ],
+        "correlacao_within_ponderada": 0.09409862374899582,
+        "efeito_estimado_por_10pp_maior_taxa_sem_biometria_em_pp_voto_13": 1.6487500098697307,
+        "erros_padrao_cluster": [
+          0.07251335136716133,
+          0.03734012585476312,
+          0.013959185381280565
+        ],
+        "intervalo_95pp_em_pontos_percentuais": [
+          0.22748832307336875,
+          3.070011696666093
+        ],
+        "municipios": 223,
+        "n": 10712,
+        "observacao": "Estimativa associativa, não efeito causal. Erros padrão agrupados por município.",
+        "r2_within": 0.013578078729962138,
+        "status": "EXECUTADO",
+        "variaveis": [
+          "taxa_sem_habilitacao_biometrica",
+          "taxa_comparecimento",
+          "log_aptos"
+        ]
+      },
+      "secoes": 10712,
+      "taxa_sem_biometria": 0.07266216157109741
+    },
+    "PE": {
+      "comparecimento": 6126467,
+      "correlacao_bruta_ponderada": 0.2906261521835639,
+      "identificacoes_sem_biometria": 399764,
+      "modelo_ajustado": {
+        "coeficientes": [
+          0.1577129412466642,
+          0.04979724206668858,
+          -0.03243161630176259
+        ],
+        "correlacao_within_ponderada": 0.08622562496444575,
+        "efeito_estimado_por_10pp_maior_taxa_sem_biometria_em_pp_voto_13": 1.5771294124666422,
+        "erros_padrao_cluster": [
+          0.04668072614027569,
+          0.11453771926754229,
+          0.00880050624128867
+        ],
+        "intervalo_95pp_em_pontos_percentuais": [
+          0.6621871801172385,
+          2.4920716448160456
+        ],
+        "municipios": 185,
+        "n": 21418,
+        "observacao": "Estimativa associativa, não efeito causal. Erros padrão agrupados por município.",
+        "r2_within": 0.015583629034743564,
+        "status": "EXECUTADO",
+        "variaveis": [
+          "taxa_sem_habilitacao_biometrica",
+          "taxa_comparecimento",
+          "log_aptos"
+        ]
+      },
+      "secoes": 21418,
+      "taxa_sem_biometria": 0.06525196332568184
+    },
+    "PI": {
+      "comparecimento": 2239830,
+      "correlacao_bruta_ponderada": 0.2987917958605528,
+      "identificacoes_sem_biometria": 201641,
+      "modelo_ajustado": {
+        "coeficientes": [
+          0.18294372530189723,
+          0.2694855313906005,
+          -0.030041907591641777
+        ],
+        "correlacao_within_ponderada": 0.10997615293517635,
+        "efeito_estimado_por_10pp_maior_taxa_sem_biometria_em_pp_voto_13": 1.8294372530189724,
+        "erros_padrao_cluster": [
+          0.04010438143245206,
+          0.05669849370931675,
+          0.01009289265976466
+        ],
+        "intervalo_95pp_em_pontos_percentuais": [
+          1.043391376942912,
+          2.6154831290950327
+        ],
+        "municipios": 224,
+        "n": 10225,
+        "observacao": "Estimativa associativa, não efeito causal. Erros padrão agrupados por município.",
+        "r2_within": 0.03767079032500193,
+        "status": "EXECUTADO",
+        "variaveis": [
+          "taxa_sem_habilitacao_biometrica",
+          "taxa_comparecimento",
+          "log_aptos"
+        ]
+      },
+      "secoes": 10225,
+      "taxa_sem_biometria": 0.09002513583620185
+    },
+    "PR": {
+      "comparecimento": 7059339,
+      "correlacao_bruta_ponderada": 0.014557490968215894,
+      "identificacoes_sem_biometria": 493321,
+      "modelo_ajustado": {
+        "coeficientes": [
+          -0.02534386535497988,
+          -0.5429552793772606,
+          -0.030624373444352718
+        ],
+        "correlacao_within_ponderada": 0.004771804505520912,
+        "efeito_estimado_por_10pp_maior_taxa_sem_biometria_em_pp_voto_13": -0.2534386535497988,
+        "erros_padrao_cluster": [
+          0.02932873000150691,
+          0.03298041880869485,
+          0.007755272255740903
+        ],
+        "intervalo_95pp_em_pontos_percentuais": [
+          -0.8282817615793342,
+          0.32140445447973665
+        ],
+        "municipios": 399,
+        "n": 27142,
+        "observacao": "Estimativa associativa, não efeito causal. Erros padrão agrupados por município.",
+        "r2_within": 0.07372978103029502,
+        "status": "EXECUTADO",
+        "variaveis": [
+          "taxa_sem_habilitacao_biometrica",
+          "taxa_comparecimento",
+          "log_aptos"
+        ]
+      },
+      "secoes": 27142,
+      "taxa_sem_biometria": 0.06988203853080295
+    },
+    "RJ": {
+      "comparecimento": 10077449,
+      "correlacao_bruta_ponderada": 0.19388331558655278,
+      "identificacoes_sem_biometria": 750301,
+      "modelo_ajustado": {
+        "coeficientes": [
+          0.14603626563402147,
+          -0.27861619177238917,
+          -0.04034119831577994
+        ],
+        "correlacao_within_ponderada": 0.11738974812864364,
+        "efeito_estimado_por_10pp_maior_taxa_sem_biometria_em_pp_voto_13": 1.4603626563402148,
+        "erros_padrao_cluster": [
+          0.032143190489828936,
+          0.037313507939139214,
+          0.007630665392413227
+        ],
+        "intervalo_95pp_em_pontos_percentuais": [
+          0.8303561227395675,
+          2.090369189940862
+        ],
+        "municipios": 92,
+        "n": 37675,
+        "observacao": "Estimativa associativa, não efeito causal. Erros padrão agrupados por município.",
+        "r2_within": 0.05202224705114466,
+        "status": "EXECUTADO",
+        "variaveis": [
+          "taxa_sem_habilitacao_biometrica",
+          "taxa_comparecimento",
+          "log_aptos"
+        ]
+      },
+      "secoes": 37675,
+      "taxa_sem_biometria": 0.07445346535616305
+    },
+    "RN": {
+      "comparecimento": 2232823,
+      "correlacao_bruta_ponderada": 0.09883009491452713,
+      "identificacoes_sem_biometria": 180838,
+      "modelo_ajustado": {
+        "coeficientes": [
+          0.07729478677290656,
+          0.067159508936037,
+          -0.019066804476162904
+        ],
+        "correlacao_within_ponderada": 0.04005988841544233,
+        "efeito_estimado_por_10pp_maior_taxa_sem_biometria_em_pp_voto_13": 0.7729478677290657,
+        "erros_padrao_cluster": [
+          0.13676923125325283,
+          0.04596732305169054,
+          0.008462182060523167
+        ],
+        "intervalo_95pp_em_pontos_percentuais": [
+          -1.9077290648346894,
+          3.453624800292821
+        ],
+        "municipios": 167,
+        "n": 8115,
+        "observacao": "Estimativa associativa, não efeito causal. Erros padrão agrupados por município.",
+        "r2_within": 0.005855533514992254,
+        "status": "EXECUTADO",
+        "variaveis": [
+          "taxa_sem_habilitacao_biometrica",
+          "taxa_comparecimento",
+          "log_aptos"
+        ]
+      },
+      "secoes": 8115,
+      "taxa_sem_biometria": 0.08099074579579305
+    },
+    "RO": {
+      "comparecimento": 988489,
+      "correlacao_bruta_ponderada": -0.15103899393647008,
+      "identificacoes_sem_biometria": 61938,
+      "modelo_ajustado": {
+        "coeficientes": [
+          -0.05752509971295914,
+          0.17476051663086056,
+          -0.05885084877680862
+        ],
+        "correlacao_within_ponderada": -0.009722943109802339,
+        "efeito_estimado_por_10pp_maior_taxa_sem_biometria_em_pp_voto_13": -0.5752509971295914,
+        "erros_padrao_cluster": [
+          0.057387889251354546,
+          0.10790723509008388,
+          0.013888814191372464
+        ],
+        "intervalo_95pp_em_pontos_percentuais": [
+          -1.7000536264561406,
+          0.5495516321969577
+        ],
+        "municipios": 52,
+        "n": 4698,
+        "observacao": "Estimativa associativa, não efeito causal. Erros padrão agrupados por município.",
+        "r2_within": 0.023257029455607862,
+        "status": "EXECUTADO",
+        "variaveis": [
+          "taxa_sem_habilitacao_biometrica",
+          "taxa_comparecimento",
+          "log_aptos"
+        ]
+      },
+      "secoes": 4698,
+      "taxa_sem_biometria": 0.06265927086694946
+    },
+    "RR": {
+      "comparecimento": 308597,
+      "correlacao_bruta_ponderada": -0.10330943276970754,
+      "identificacoes_sem_biometria": 12646,
+      "modelo_ajustado": {
+        "municipios": 15,
+        "n": 1519,
+        "status": "AMOSTRA_INSUFICIENTE"
+      },
+      "secoes": 1519,
+      "taxa_sem_biometria": 0.040979011461550176
+    },
+    "RS": {
+      "comparecimento": 6889638,
+      "correlacao_bruta_ponderada": -0.1638063044721083,
+      "identificacoes_sem_biometria": 582380,
+      "modelo_ajustado": {
+        "coeficientes": [
+          -0.2433499598570076,
+          -0.5123253239531134,
+          0.006909334148753632
+        ],
+        "correlacao_within_ponderada": -0.09424804145737838,
+        "efeito_estimado_por_10pp_maior_taxa_sem_biometria_em_pp_voto_13": -2.433499598570076,
+        "erros_padrao_cluster": [
+          0.05108668617111764,
+          0.05252529533555048,
+          0.006885371440955893
+        ],
+        "intervalo_95pp_em_pontos_percentuais": [
+          -3.434798647523982,
+          -1.4322005496161705
+        ],
+        "municipios": 497,
+        "n": 27547,
+        "observacao": "Estimativa associativa, não efeito causal. Erros padrão agrupados por município.",
+        "r2_within": 0.06530147990912288,
+        "status": "EXECUTADO",
+        "variaveis": [
+          "taxa_sem_habilitacao_biometrica",
+          "taxa_comparecimento",
+          "log_aptos"
+        ]
+      },
+      "secoes": 27547,
+      "taxa_sem_biometria": 0.08452984031962202
+    },
+    "SC": {
+      "comparecimento": 4762303,
+      "correlacao_bruta_ponderada": -0.08636668698748841,
+      "identificacoes_sem_biometria": 357632,
+      "modelo_ajustado": {
+        "coeficientes": [
+          -0.17104520980415813,
+          -0.43019350576984794,
+          -0.03002820530895659
+        ],
+        "correlacao_within_ponderada": -0.07632965642709785,
+        "efeito_estimado_por_10pp_maior_taxa_sem_biometria_em_pp_voto_13": -1.7104520980415814,
+        "erros_padrao_cluster": [
+          0.05406943281137491,
+          0.04216426838683295,
+          0.0077997792122284715
+        ],
+        "intervalo_95pp_em_pontos_percentuais": [
+          -2.77021298114453,
+          -0.650691214938633
+        ],
+        "municipios": 295,
+        "n": 17326,
+        "observacao": "Estimativa associativa, não efeito causal. Erros padrão agrupados por município.",
+        "r2_within": 0.05994312281819728,
+        "status": "EXECUTADO",
+        "variaveis": [
+          "taxa_sem_habilitacao_biometrica",
+          "taxa_comparecimento",
+          "log_aptos"
+        ]
+      },
+      "secoes": 17326,
+      "taxa_sem_biometria": 0.07509643968474916
+    },
+    "SE": {
+      "comparecimento": 1466659,
+      "correlacao_bruta_ponderada": 0.001674698236295489,
+      "identificacoes_sem_biometria": 102204,
+      "modelo_ajustado": {
+        "coeficientes": [
+          0.021510649641441143,
+          -0.06585986275759241,
+          -0.006994753097948941
+        ],
+        "correlacao_within_ponderada": 0.014029986910807849,
+        "efeito_estimado_por_10pp_maior_taxa_sem_biometria_em_pp_voto_13": 0.21510649641441143,
+        "erros_padrao_cluster": [
+          0.10792249917443401,
+          0.06288051866704192,
+          0.0164746877753992
+        ],
+        "intervalo_95pp_em_pontos_percentuais": [
+          -1.9001744874044952,
+          2.330387480233318
+        ],
+        "municipios": 75,
+        "n": 5923,
+        "observacao": "Estimativa associativa, não efeito causal. Erros padrão agrupados por município.",
+        "r2_within": 0.0015761206768227997,
+        "status": "EXECUTADO",
+        "variaveis": [
+          "taxa_sem_habilitacao_biometrica",
+          "taxa_comparecimento",
+          "log_aptos"
+        ]
+      },
+      "secoes": 5923,
+      "taxa_sem_biometria": 0.06968490971657351
+    },
+    "SP": {
+      "comparecimento": 27364389,
+      "correlacao_bruta_ponderada": -0.12496992964006352,
+      "identificacoes_sem_biometria": 1632098,
+      "modelo_ajustado": {
+        "coeficientes": [
+          -0.3411340766734527,
+          -0.20518597934364122,
+          0.020175178461610228
+        ],
+        "correlacao_within_ponderada": -0.126771307443835,
+        "efeito_estimado_por_10pp_maior_taxa_sem_biometria_em_pp_voto_13": -3.411340766734527,
+        "erros_padrao_cluster": [
+          0.07848638094360769,
+          0.07255194643765855,
+          0.009480609919761001
+        ],
+        "intervalo_95pp_em_pontos_percentuais": [
+          -4.949673833229237,
+          -1.8730077002398162
+        ],
+        "municipios": 645,
+        "n": 103656,
+        "observacao": "Estimativa associativa, não efeito causal. Erros padrão agrupados por município.",
+        "r2_within": 0.030716842007719014,
+        "status": "EXECUTADO",
+        "variaveis": [
+          "taxa_sem_habilitacao_biometrica",
+          "taxa_comparecimento",
+          "log_aptos"
+        ]
+      },
+      "secoes": 103656,
+      "taxa_sem_biometria": 0.0596431369251475
+    },
+    "TO": {
+      "comparecimento": 954763,
+      "correlacao_bruta_ponderada": 0.0901211740973504,
+      "identificacoes_sem_biometria": 47225,
+      "modelo_ajustado": {
+        "coeficientes": [
+          0.07720066419904535,
+          0.09919876890044435,
+          -0.1130057457072107
+        ],
+        "correlacao_within_ponderada": 0.03997504134177323,
+        "efeito_estimado_por_10pp_maior_taxa_sem_biometria_em_pp_voto_13": 0.7720066419904535,
+        "erros_padrao_cluster": [
+          0.06297662179291129,
+          0.11207757944057961,
+          0.017117300691080646
+        ],
+        "intervalo_95pp_em_pontos_percentuais": [
+          -0.46233514515060775,
+          2.006348429131515
+        ],
+        "municipios": 139,
+        "n": 4384,
+        "observacao": "Estimativa associativa, não efeito causal. Erros padrão agrupados por município.",
+        "r2_within": 0.038316652437672405,
+        "status": "EXECUTADO",
+        "variaveis": [
+          "taxa_sem_habilitacao_biometrica",
+          "taxa_comparecimento",
+          "log_aptos"
+        ]
+      },
+      "secoes": 4384,
+      "taxa_sem_biometria": 0.04946253677614235
+    }
+  },
+  "projeto": "FATOVIA AUDITA",
+  "status": "EXECUTADO_COM_RESSALVAS",
+  "total": {
+    "comparecimento": 127854631,
+    "correlacao_bruta_ponderada_pelos_votos_validos": 0.06409184942932808,
+    "identificacoes_sem_habilitacao_biometrica": 8632488,
+    "media_ponderada_participacao_votos_13": 0.5177896365277349,
+    "secoes_validas_para_correlacao": 497897,
+    "taxa_nacional_ponderada_por_comparecimento": 0.06751799236744112
+  },
+  "turno": 2
+}
