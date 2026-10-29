@@ -12,7 +12,7 @@ from collections import Counter,defaultdict
 from datetime import datetime,timezone
 from pathlib import Path
 from tempfile import TemporaryDirectory
-import csv,gzip,json,re
+import csv,gzip,json,re,time
 
 from .tse import UFS,csv_rows
 from .ma_integral import checked_reference
@@ -96,7 +96,15 @@ def inspect_uf(uf,geodir,outdir):
         snap=json.loads(BASELINE.read_text(encoding="utf-8"))["arquivos_por_uf"][uf]
         geo=read_geography(Path(geodir)/(uf+".csv.gz"),uf)
         with TemporaryDirectory(prefix=f"fatovia-temporal-{uf}-") as temp:
-            bufile,metadata=checked_reference(snap["url"],"bu.zip",temp)
+            last=None
+            for attempt in range(3):
+                try:
+                    bufile,metadata=checked_reference(snap["url"],"bu.zip",temp)
+                    break
+                except (OSError, TimeoutError) as exc:
+                    last=exc
+                    if attempt==2:raise
+                    time.sleep(2**attempt+1)
             if metadata["sha512"]!=snap["sha512_calculado"]:
                 raise ValueError("BU difere da referência 28/10")
             times,inspection=read_bweb_times(bufile,uf)
