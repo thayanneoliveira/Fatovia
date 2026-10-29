@@ -1,0 +1,88 @@
+{
+  "data_utc": "2026-10-29T14:24:53.785472+00:00",
+  "erros": [],
+  "examinadas": 6,
+  "limitacoes": [
+    "Eventos de voto extraídos dos logs não identificam eleitor, candidato nem horário da troca.",
+    "Atividade da urna efetivada antes de 17h indica operação anterior ao corte, mas não exclui outra substituição subsequente.",
+    "Ausência de atividade publicada antes de 17h não comprova substituição tardia.",
+    "Encerramento após 17h10 não demonstra diretamente influência da prorrogação.",
+    "Hash de conteúdo declarado no VSC foi comparado; cadeia de confiança da assinatura não foi validada."
+  ],
+  "range_bytes_lidos": 29508416,
+  "range_requisicoes": 15,
+  "secoes": {
+    "23574/121/209": {
+      "encerramento_bweb": "2026-10-25 19:05:12",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "CABO DE SANTO AGOSTINHO",
+      "secao": 209,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2171243",
+      "urna_prevista": "2044043",
+      "zona": 121
+    },
+    "24171/28/146": {
+      "encerramento_bweb": "2026-10-25 17:10:42",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "GAMELEIRA",
+      "secao": 146,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "1672792",
+      "urna_prevista": "1827740",
+      "zona": 28
+    },
+    "24791/90/24": {
+      "encerramento_bweb": "2026-10-25 17:22:25",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "MACAPARANA",
+      "secao": 24,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2045402",
+      "urna_prevista": "2184400",
+      "zona": 90
+    },
+    "24910/10/19": {
+      "encerramento_bweb": "2026-10-25 17:13:55",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "OLINDA",
+      "secao": 19,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2044068",
+      "urna_prevista": "2160596",
+      "zona": 10
+    },
+    "25119/17/78": {
+      "encerramento_bweb": "2026-10-25 17:10:01",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "PAUDALHO",
+      "secao": 78,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2045563",
+      "urna_prevista": "2170070",
+      "zona": 17
+    },
+    "25313/7/182": {
+      "encerramento_bweb": "2026-10-25 17:24:25",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "RECIFE",
+      "secao": 182,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2335969",
+      "urna_prevista": "2370780",
+      "zona": 7
+    }
+  },
+  "selecionadas": 6,
+  "sintese": {
+    "INCONCLUSIVO": 6
+  },
+  "status": "PARCIAL",
+  "uf": "PE"
+}

@@ -1,0 +1,88 @@
+{
+  "data_utc": "2026-10-29T14:24:31.528698+00:00",
+  "erros": [],
+  "examinadas": 6,
+  "limitacoes": [
+    "Eventos de voto extraídos dos logs não identificam eleitor, candidato nem horário da troca.",
+    "Atividade da urna efetivada antes de 17h indica operação anterior ao corte, mas não exclui outra substituição subsequente.",
+    "Ausência de atividade publicada antes de 17h não comprova substituição tardia.",
+    "Encerramento após 17h10 não demonstra diretamente influência da prorrogação.",
+    "Hash de conteúdo declarado no VSC foi comparado; cadeia de confiança da assinatura não foi validada."
+  ],
+  "range_bytes_lidos": 22804742,
+  "range_requisicoes": 11,
+  "secoes": {
+    "7536/26/73": {
+      "encerramento_bweb": "2026-10-25 17:21:26",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "CAROLINA",
+      "secao": 73,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2307161",
+      "urna_prevista": "2288559",
+      "zona": 26
+    },
+    "8486/6/171": {
+      "encerramento_bweb": "2026-10-25 17:21:47",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "SENADOR ALEXANDRE COSTA",
+      "secao": 171,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2258302",
+      "urna_prevista": "2263151",
+      "zona": 6
+    },
+    "8524/107/89": {
+      "encerramento_bweb": "2026-10-25 17:42:33",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "SERRANO DO MARANHÃO",
+      "secao": 89,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2129006",
+      "urna_prevista": "2136092",
+      "zona": 107
+    },
+    "8893/47/368": {
+      "encerramento_bweb": "2026-10-25 17:13:49",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "SÃO JOSÉ DE RIBAMAR",
+      "secao": 368,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "1653638",
+      "urna_prevista": "1675654",
+      "zona": 47
+    },
+    "9210/76/387": {
+      "encerramento_bweb": "2026-10-25 17:22:39",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "SÃO LUÍS",
+      "secao": 387,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "1699839",
+      "urna_prevista": "1812151",
+      "zona": 76
+    },
+    "9377/19/545": {
+      "encerramento_bweb": "2026-10-25 17:15:40",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "TIMON",
+      "secao": 545,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2305703",
+      "urna_prevista": "2310430",
+      "zona": 19
+    }
+  },
+  "selecionadas": 6,
+  "sintese": {
+    "INCONCLUSIVO": 6
+  },
+  "status": "PARCIAL",
+  "uf": "MA"
+}

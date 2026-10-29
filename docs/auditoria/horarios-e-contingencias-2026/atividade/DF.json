@@ -1,0 +1,33 @@
+{
+  "data_utc": "2026-10-29T14:24:15.285052+00:00",
+  "erros": [],
+  "examinadas": 1,
+  "limitacoes": [
+    "Eventos de voto extraídos dos logs não identificam eleitor, candidato nem horário da troca.",
+    "Atividade da urna efetivada antes de 17h indica operação anterior ao corte, mas não exclui outra substituição subsequente.",
+    "Ausência de atividade publicada antes de 17h não comprova substituição tardia.",
+    "Encerramento após 17h10 não demonstra diretamente influência da prorrogação.",
+    "Hash de conteúdo declarado no VSC foi comparado; cadeia de confiança da assinatura não foi validada."
+  ],
+  "range_bytes_lidos": 9635803,
+  "range_requisicoes": 5,
+  "secoes": {
+    "97012/15/388": {
+      "encerramento_bweb": "2026-10-25 17:11:01",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "BRASÍLIA",
+      "secao": 388,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2453704",
+      "urna_prevista": "2028801",
+      "zona": 15
+    }
+  },
+  "selecionadas": 1,
+  "sintese": {
+    "INCONCLUSIVO": 1
+  },
+  "status": "PARCIAL",
+  "uf": "DF"
+}

@@ -1,0 +1,33 @@
+{
+  "data_utc": "2026-10-29T14:25:12.950441+00:00",
+  "erros": [],
+  "examinadas": 1,
+  "limitacoes": [
+    "Eventos de voto extraídos dos logs não identificam eleitor, candidato nem horário da troca.",
+    "Atividade da urna efetivada antes de 17h indica operação anterior ao corte, mas não exclui outra substituição subsequente.",
+    "Ausência de atividade publicada antes de 17h não comprova substituição tardia.",
+    "Encerramento após 17h10 não demonstra diretamente influência da prorrogação.",
+    "Hash de conteúdo declarado no VSC foi comparado; cadeia de confiança da assinatura não foi validada."
+  ],
+  "range_bytes_lidos": 20445422,
+  "range_requisicoes": 10,
+  "secoes": {
+    "85316/142/263": {
+      "encerramento_bweb": "2026-10-25 17:54:33",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "BAGÉ",
+      "secao": 263,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "1681151",
+      "urna_prevista": "1652966",
+      "zona": 142
+    }
+  },
+  "selecionadas": 1,
+  "sintese": {
+    "INCONCLUSIVO": 1
+  },
+  "status": "PARCIAL",
+  "uf": "RS"
+}

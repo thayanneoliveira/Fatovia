@@ -1,0 +1,88 @@
+{
+  "data_utc": "2026-10-29T14:24:36.097749+00:00",
+  "erros": [],
+  "examinadas": 6,
+  "limitacoes": [
+    "Eventos de voto extraídos dos logs não identificam eleitor, candidato nem horário da troca.",
+    "Atividade da urna efetivada antes de 17h indica operação anterior ao corte, mas não exclui outra substituição subsequente.",
+    "Ausência de atividade publicada antes de 17h não comprova substituição tardia.",
+    "Encerramento após 17h10 não demonstra diretamente influência da prorrogação.",
+    "Hash de conteúdo declarado no VSC foi comparado; cadeia de confiança da assinatura não foi validada."
+  ],
+  "range_bytes_lidos": 43834776,
+  "range_requisicoes": 21,
+  "secoes": {
+    "40690/16/264": {
+      "encerramento_bweb": "2026-10-25 18:35:09",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "ARAGUARI",
+      "secao": 264,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2092884",
+      "urna_prevista": "2129190",
+      "zona": 16
+    },
+    "41882/320/185": {
+      "encerramento_bweb": "2026-10-25 23:04:42",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "CHAPADA GAÚCHA",
+      "secao": 185,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2066579",
+      "urna_prevista": "2079428",
+      "zona": 320
+    },
+    "46337/132/65": {
+      "encerramento_bweb": "2026-10-25 17:10:06",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "ITABIRA",
+      "secao": 65,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "1653361",
+      "urna_prevista": "1752183",
+      "zona": 132
+    },
+    "47996/171/90": {
+      "encerramento_bweb": "2026-10-25 17:49:02",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "MARIANA",
+      "secao": 90,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "1674424",
+      "urna_prevista": "1835427",
+      "zona": 171
+    },
+    "48658/317/419": {
+      "encerramento_bweb": "2026-10-25 17:15:07",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "MONTES CLAROS",
+      "secao": 419,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2061321",
+      "urna_prevista": "2120749",
+      "zona": 317
+    },
+    "51918/248/32": {
+      "encerramento_bweb": "2026-10-25 17:12:41",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "SANTA RITA DO SAPUCAÍ",
+      "secao": 32,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2103134",
+      "urna_prevista": "2078626",
+      "zona": 248
+    }
+  },
+  "selecionadas": 6,
+  "sintese": {
+    "INCONCLUSIVO": 6
+  },
+  "status": "PARCIAL",
+  "uf": "MG"
+}

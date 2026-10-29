@@ -1,0 +1,88 @@
+{
+  "data_utc": "2026-10-29T14:24:14.874386+00:00",
+  "erros": [],
+  "examinadas": 6,
+  "limitacoes": [
+    "Eventos de voto extraídos dos logs não identificam eleitor, candidato nem horário da troca.",
+    "Atividade da urna efetivada antes de 17h indica operação anterior ao corte, mas não exclui outra substituição subsequente.",
+    "Ausência de atividade publicada antes de 17h não comprova substituição tardia.",
+    "Encerramento após 17h10 não demonstra diretamente influência da prorrogação.",
+    "Hash de conteúdo declarado no VSC foi comparado; cadeia de confiança da assinatura não foi validada."
+  ],
+  "range_bytes_lidos": 30498403,
+  "range_requisicoes": 15,
+  "secoes": {
+    "13897/114/51": {
+      "encerramento_bweb": "2026-10-25 17:17:18",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "FORTALEZA",
+      "secao": 51,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2452531",
+      "urna_prevista": "2299608",
+      "zona": 114
+    },
+    "14354/72/96": {
+      "encerramento_bweb": "2026-10-25 17:21:58",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "JAGUARETAMA",
+      "secao": 96,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "1818768",
+      "urna_prevista": "1767162",
+      "zona": 72
+    },
+    "14958/57/73": {
+      "encerramento_bweb": "2026-10-25 17:21:20",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "PACATUBA",
+      "secao": 73,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2452269",
+      "urna_prevista": "2395842",
+      "zona": 57
+    },
+    "15857/122/233": {
+      "encerramento_bweb": "2026-10-25 17:33:58",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "MARACANAÚ",
+      "secao": 233,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2285803",
+      "urna_prevista": "2275087",
+      "zona": 122
+    },
+    "15890/30/208": {
+      "encerramento_bweb": "2026-10-25 17:17:42",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "CRUZ",
+      "secao": 208,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2207397",
+      "urna_prevista": "2239889",
+      "zona": 30
+    },
+    "98574/65/153": {
+      "encerramento_bweb": "2026-10-25 17:50:25",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "VARJOTA",
+      "secao": 153,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "1657912",
+      "urna_prevista": "1754756",
+      "zona": 65
+    }
+  },
+  "selecionadas": 6,
+  "sintese": {
+    "INCONCLUSIVO": 6
+  },
+  "status": "PARCIAL",
+  "uf": "CE"
+}

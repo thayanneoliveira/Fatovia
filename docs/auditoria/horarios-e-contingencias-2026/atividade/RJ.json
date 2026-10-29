@@ -1,0 +1,341 @@
+{
+  "data_utc": "2026-10-29T14:25:01.988126+00:00",
+  "erros": [],
+  "examinadas": 29,
+  "limitacoes": [
+    "Eventos de voto extraídos dos logs não identificam eleitor, candidato nem horário da troca.",
+    "Atividade da urna efetivada antes de 17h indica operação anterior ao corte, mas não exclui outra substituição subsequente.",
+    "Ausência de atividade publicada antes de 17h não comprova substituição tardia.",
+    "Encerramento após 17h10 não demonstra diretamente influência da prorrogação.",
+    "Hash de conteúdo declarado no VSC foi comparado; cadeia de confiança da assinatura não foi validada."
+  ],
+  "range_bytes_lidos": 91410136,
+  "range_requisicoes": 44,
+  "secoes": {
+    "58378/104/209": {
+      "encerramento_bweb": "2026-10-25 19:05:06",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "ITABORAÍ",
+      "secao": 209,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2440934",
+      "urna_prevista": "2469657",
+      "zona": 104
+    },
+    "58378/104/268": {
+      "encerramento_bweb": "2026-10-25 19:01:27",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "ITABORAÍ",
+      "secao": 268,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2448548",
+      "urna_prevista": "2459653",
+      "zona": 104
+    },
+    "58637/221/32": {
+      "encerramento_bweb": "2026-10-25 17:11:46",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "NILÓPOLIS",
+      "secao": 32,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "1671527",
+      "urna_prevista": "1782057",
+      "zona": 221
+    },
+    "58653/144/101": {
+      "encerramento_bweb": "2026-10-25 17:50:06",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "NITERÓI",
+      "secao": 101,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2015151",
+      "urna_prevista": "2179297",
+      "zona": 144
+    },
+    "58653/144/20": {
+      "encerramento_bweb": "2026-10-25 17:46:52",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "NITERÓI",
+      "secao": 20,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2235275",
+      "urna_prevista": "2231704",
+      "zona": 144
+    },
+    "58653/144/247": {
+      "encerramento_bweb": "2026-10-25 17:57:04",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "NITERÓI",
+      "secao": 247,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2226853",
+      "urna_prevista": "2219678",
+      "zona": 144
+    },
+    "58653/144/3": {
+      "encerramento_bweb": "2026-10-25 17:46:01",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "NITERÓI",
+      "secao": 3,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2190742",
+      "urna_prevista": "2045947",
+      "zona": 144
+    },
+    "58653/144/39": {
+      "encerramento_bweb": "2026-10-25 17:50:27",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "NITERÓI",
+      "secao": 39,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2238825",
+      "urna_prevista": "2028108",
+      "zona": 144
+    },
+    "58653/199/234": {
+      "encerramento_bweb": "2026-10-25 17:20:13",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "NITERÓI",
+      "secao": 234,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2226737",
+      "urna_prevista": "2228725",
+      "zona": 199
+    },
+    "58653/71/284": {
+      "encerramento_bweb": "2026-10-25 19:01:05",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "NITERÓI",
+      "secao": 284,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2239767",
+      "urna_prevista": "2177926",
+      "zona": 71
+    },
+    "58971/135/318": {
+      "encerramento_bweb": "2026-10-25 19:01:26",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "SÃO GONÇALO",
+      "secao": 318,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2163673",
+      "urna_prevista": "2042684",
+      "zona": 135
+    },
+    "58971/135/322": {
+      "encerramento_bweb": "2026-10-25 19:01:09",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "SÃO GONÇALO",
+      "secao": 322,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2178658",
+      "urna_prevista": "2223558",
+      "zona": 135
+    },
+    "60011/161/25": {
+      "encerramento_bweb": "2026-10-25 17:10:41",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "RIO DE JANEIRO",
+      "secao": 25,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "1673313",
+      "urna_prevista": "1825270",
+      "zona": 161
+    },
+    "60011/169/208": {
+      "encerramento_bweb": "2026-10-25 17:11:58",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "RIO DE JANEIRO",
+      "secao": 208,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "1821691",
+      "urna_prevista": "1825819",
+      "zona": 169
+    },
+    "60011/170/333": {
+      "encerramento_bweb": "2026-10-25 17:10:32",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "RIO DE JANEIRO",
+      "secao": 333,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "1664660",
+      "urna_prevista": "1795200",
+      "zona": 170
+    },
+    "60011/179/331": {
+      "encerramento_bweb": "2026-10-25 19:01:43",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "RIO DE JANEIRO",
+      "secao": 331,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "1665849",
+      "urna_prevista": "1776138",
+      "zona": 179
+    },
+    "60011/182/122": {
+      "encerramento_bweb": "2026-10-25 19:00:48",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "RIO DE JANEIRO",
+      "secao": 122,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "1665026",
+      "urna_prevista": "1822387",
+      "zona": 182
+    },
+    "60011/204/312": {
+      "encerramento_bweb": "2026-10-25 19:00:23",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "RIO DE JANEIRO",
+      "secao": 312,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "1788520",
+      "urna_prevista": "1797148",
+      "zona": 204
+    },
+    "60011/214/325": {
+      "encerramento_bweb": "2026-10-25 19:02:17",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "RIO DE JANEIRO",
+      "secao": 325,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "1760689",
+      "urna_prevista": "1664203",
+      "zona": 214
+    },
+    "60011/234/50": {
+      "encerramento_bweb": "2026-10-25 19:00:41",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "RIO DE JANEIRO",
+      "secao": 50,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2214425",
+      "urna_prevista": "2208851",
+      "zona": 234
+    },
+    "60011/238/177": {
+      "encerramento_bweb": "2026-10-25 19:00:36",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "RIO DE JANEIRO",
+      "secao": 177,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2208765",
+      "urna_prevista": "2156623",
+      "zona": 238
+    },
+    "60011/242/118": {
+      "encerramento_bweb": "2026-10-25 19:01:11",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "RIO DE JANEIRO",
+      "secao": 118,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2180459",
+      "urna_prevista": "2216647",
+      "zona": 242
+    },
+    "60011/245/211": {
+      "encerramento_bweb": "2026-10-25 19:01:28",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "RIO DE JANEIRO",
+      "secao": 211,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2217182",
+      "urna_prevista": "2217415",
+      "zona": 245
+    },
+    "60011/245/93": {
+      "encerramento_bweb": "2026-10-25 19:03:57",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "RIO DE JANEIRO",
+      "secao": 93,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2216817",
+      "urna_prevista": "2216744",
+      "zona": 245
+    },
+    "60011/9/236": {
+      "encerramento_bweb": "2026-10-25 19:00:28",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "RIO DE JANEIRO",
+      "secao": 236,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "1666896",
+      "urna_prevista": "1671776",
+      "zona": 9
+    },
+    "60011/9/262": {
+      "encerramento_bweb": "2026-10-25 19:04:56",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "RIO DE JANEIRO",
+      "secao": 262,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "1658641",
+      "urna_prevista": "1812905",
+      "zona": 9
+    },
+    "60011/9/273": {
+      "encerramento_bweb": "2026-10-25 19:00:01",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "RIO DE JANEIRO",
+      "secao": 273,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "1677975",
+      "urna_prevista": "1781276",
+      "zona": 9
+    },
+    "60011/9/360": {
+      "encerramento_bweb": "2026-10-25 19:00:24",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "RIO DE JANEIRO",
+      "secao": 360,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "1650927",
+      "urna_prevista": "1762620",
+      "zona": 9
+    },
+    "60011/9/449": {
+      "encerramento_bweb": "2026-10-25 19:00:55",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "RIO DE JANEIRO",
+      "secao": 449,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "1667314",
+      "urna_prevista": "1824767",
+      "zona": 9
+    }
+  },
+  "selecionadas": 29,
+  "sintese": {
+    "INCONCLUSIVO": 29
+  },
+  "status": "PARCIAL",
+  "uf": "RJ"
+}

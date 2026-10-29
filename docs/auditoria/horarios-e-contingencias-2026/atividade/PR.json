@@ -1,0 +1,77 @@
+{
+  "data_utc": "2026-10-29T14:25:01.695039+00:00",
+  "erros": [],
+  "examinadas": 5,
+  "limitacoes": [
+    "Eventos de voto extraídos dos logs não identificam eleitor, candidato nem horário da troca.",
+    "Atividade da urna efetivada antes de 17h indica operação anterior ao corte, mas não exclui outra substituição subsequente.",
+    "Ausência de atividade publicada antes de 17h não comprova substituição tardia.",
+    "Encerramento após 17h10 não demonstra diretamente influência da prorrogação.",
+    "Hash de conteúdo declarado no VSC foi comparado; cadeia de confiança da assinatura não foi validada."
+  ],
+  "range_bytes_lidos": 30030147,
+  "range_requisicoes": 15,
+  "secoes": {
+    "74357/50/390": {
+      "encerramento_bweb": "2026-10-25 17:29:25",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "ARAUCÁRIA",
+      "secao": 390,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2142598",
+      "urna_prevista": "2092201",
+      "zona": 50
+    },
+    "74810/9/93": {
+      "encerramento_bweb": "2026-10-25 17:16:02",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "CAMPO LARGO",
+      "secao": 93,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2092750",
+      "urna_prevista": "2124046",
+      "zona": 9
+    },
+    "76635/85/150": {
+      "encerramento_bweb": "2026-10-25 17:18:45",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "LOANDA",
+      "secao": 150,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "1680883",
+      "urna_prevista": "1678080",
+      "zona": 85
+    },
+    "77771/14/51": {
+      "encerramento_bweb": "2026-10-25 19:02:08",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "PONTA GROSSA",
+      "secao": 51,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "2066392",
+      "urna_prevista": "2096608",
+      "zona": 14
+    },
+    "79278/75/362": {
+      "encerramento_bweb": "2026-10-25 17:13:50",
+      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "hashes_conferidos": 4,
+      "municipio": "TOLEDO",
+      "secao": 362,
+      "status": "INCONCLUSIVO",
+      "urna_efetivada": "1678199",
+      "urna_prevista": "1778322",
+      "zona": 75
+    }
+  },
+  "selecionadas": 5,
+  "sintese": {
+    "INCONCLUSIVO": 5
+  },
+  "status": "PARCIAL",
+  "uf": "PR"
+}
