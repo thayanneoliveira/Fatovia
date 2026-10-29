@@ -1,0 +1,49 @@
+name: "FatoVia | Publicar cruzamento urnas e horarios de 27 UFs"
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/finalizar-cruzamento-trocas-horarios-2026.yml"
+
+permissions:
+  actions: read
+  contents: write
+jobs:
+  consolidar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Recuperar verificacoes por UF
+        uses: actions/download-artifact@v4
+        with:
+          pattern: fatovia-trocas-horarios-*
+          run-id: 40890174070
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          merge-multiple: true
+          path: work/horarios
+      - name: Consolidar a associacao temporal e distinguir lacunas exteriores
+        run: python -u -m auditoria.consolidar_trocas_horarios_2026 --input work/horarios --out work/consolidado
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fatovia-cruzamento-horarios-final-2026
+          path: work/consolidado
+          retention-days: 90
+      - name: Publicar evidencias e seções para conferência
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+          mkdir -p docs/auditoria/horarios-e-contingencias-2026/ufs
+          cp work/horarios/*.json docs/auditoria/horarios-e-contingencias-2026/ufs/
+          cp work/horarios/*.csv docs/auditoria/horarios-e-contingencias-2026/ufs/
+          cp work/consolidado/* docs/auditoria/horarios-e-contingencias-2026/
+          git config user.name "fatovia-audita[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/auditoria/horarios-e-contingencias-2026
+          if ! git diff --cached --quiet; then
+            git commit -m "docs(auditoria): urnas e encerramento de 27 UFs com ressalva oficial [skip ci]"
+            git push origin HEAD:main
+          fi
