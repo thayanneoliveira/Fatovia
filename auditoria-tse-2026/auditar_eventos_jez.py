@@ -68,7 +68,7 @@ def summarize(olds,news):
       'added_lines_count':len(added),'removed_lines_count':len(removed),
       'append_only_text':bool(len(oldtexts)==len(newtexts)==1 and len(b)>=len(a) and b[:len(a)]==a),
       'added_by_literal_date':dict(adddates),'removed_by_literal_date':dict(remdates),
-      'example_new_lines':added[:10],'example_interest_lines':candidates[:20],
+      'example_new_lines':added[:10],'example_removed_lines':removed[:10],'example_interest_lines':candidates[:20],
       'archive_errors_24':[x for x in olds if x.get('type')!='text'][:5],
       'archive_errors_25':[x for x in news if x.get('type')!='text'][:5]}
 
