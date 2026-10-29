@@ -1,0 +1,94 @@
+{
+  "ano": 2026,
+  "cobertura": {
+    "amostra_apenas_1t": [],
+    "amostra_apenas_2t": [],
+    "apenas_1t": 0,
+    "apenas_2t": 0,
+    "ceft_1t": 6969,
+    "secao_1t_sem_ceft": 0,
+    "secoes_1t": 6969,
+    "secoes_2t": 6969,
+    "secoes_em_ambos": 6969
+  },
+  "escopo": "Comparação 1º e 2º turno 2026 por seção eleitoral, presidencial",
+  "fontes": {
+    "bweb_1t": {
+      "bytes": 77026962,
+      "sha512": "10916bdfc73018dab34d21dbb1f7fa49d33921a6d8de9e283a2b4b6d8d7ce6c02af4e5cff948f17cab726195b372ee84f2177ab5756dff04e0f2d71c759d4572",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_DF_051020261403.zip"
+    },
+    "bweb_2t": {
+      "sha512": "204e65d5d3eff30f7bbb27f3f21547d0146da31edaf15c27848452a245462144e2bf53ba520a0dfc09493231f2a43218d967cda1b6633af112ef3b1ac1a6c823",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_DF_261020260742.zip"
+    },
+    "ceft_1t": {
+      "bytes": 691280,
+      "sha512": "a38e8e1021c049135164287bfcf9e98841beeedfa7871fd90c0f417556e0df1e3afe48c8ffb2ca15dda35a086de54a1406f94c4807824cecbf00f43af70db1c1",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/correspefet/CEFT_1t_DF_051020261049.zip"
+    },
+    "ceft_2t": {
+      "sha512": "ca1c4763c7be1625b4542e4ceb62a73dec0584a23a717e164c05fcf244f705cbd6161abfcc35150dad21242ccc7dd0f75f3d4d7886c3c3c8f39196fda02428d6",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/correspefet/CEFT_2t_DF_261020261201.zip"
+    }
+  },
+  "gerado_utc": "2026-10-29T13:06:45.884655+00:00",
+  "indicadores": {
+    "aptos_1t": 2258320,
+    "aptos_2t": 2258995,
+    "brancos_1t": 25362,
+    "brancos_2t": 22386,
+    "comparecimento_1t": 1831396,
+    "comparecimento_2t": 1868280,
+    "delta_pp_biometria_sum": -2408.110289037412,
+    "delta_pp_comparecimento": 1.60852969,
+    "delta_pp_comparecimento_sum": 11045.602566040627,
+    "delta_pp_sem_biometria": -0.33283885,
+    "nulos_1t": 33169,
+    "nulos_2t": 41128,
+    "secoes": 6969,
+    "secoes_com_equipamento_comparavel": 6969,
+    "sem_biometria_1t": 88549,
+    "sem_biometria_2t": 84114,
+    "taxa_comparecimento_1t": 0.81095505,
+    "taxa_comparecimento_2t": 0.82704034,
+    "taxa_sem_biometria_1t": 0.04835055,
+    "taxa_sem_biometria_2t": 0.04502216,
+    "urna_diferente": 49
+  },
+  "limitacoes": [
+    "Diferenças entre turnos não são automaticamente irregularidades ou substituições indevidas.",
+    "Dados agregados não identificam votos individuais, eleitores ou relação causal entre urna e resultado.",
+    "Quando uma seção não aparece em um dos turnos, ela não é imputada nem tratada como zero.",
+    "Identificador físico diferente entre turnos não indica, por si, ocorrência de contingência.",
+    "Os totais de habilitação sem biometria são campos agregados e não significam votos irregulares."
+  ],
+  "municipios": [
+    {
+      "aptos_1t": 2258320,
+      "aptos_2t": 2258995,
+      "brancos_1t": 25362,
+      "brancos_2t": 22386,
+      "cod_municipio_tse": 97012,
+      "comparecimento_1t": 1831396,
+      "comparecimento_2t": 1868280,
+      "delta_pp_biometria": -0.33283885,
+      "delta_pp_biometria_sum": -2408.110289037412,
+      "delta_pp_comparecimento": 1.60852969,
+      "delta_pp_comparecimento_sum": 11045.602566040627,
+      "nome_municipio": "BRASÍLIA",
+      "nulos_1t": 33169,
+      "nulos_2t": 41128,
+      "secoes": 6969,
+      "sem_biometria_1t": 88549,
+      "sem_biometria_2t": 84114,
+      "taxa_biometria_1t": 0.04835055,
+      "taxa_biometria_2t": 0.04502216,
+      "taxa_comparecimento_1t": 0.81095505,
+      "taxa_comparecimento_2t": 0.82704034,
+      "urna_diferente": 49
+    }
+  ],
+  "status": "OK",
+  "uf": "DF"
+}
