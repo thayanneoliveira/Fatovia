@@ -1,0 +1,83 @@
+name: "FatoVia | Completar SP e consolidar turnos 2026"
+on:
+  push:
+    paths:
+      - ".github/workflows/comparar-turnos-sp-finalizar-2026.yml"
+  workflow_dispatch:
+permissions:
+  actions: read
+  contents: write
+jobs:
+  sp:
+    name: "Validar SP 1T 2T (CSV muito grande)"
+    runs-on: ubuntu-latest
+    timeout-minutes: 130
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/download-artifact@v4
+        with:
+          name: fatovia-geografia-uf-SP
+          run-id: 40877055121
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: work/geografia2t
+      - name: Ler SP 1T em fluxo sem descompactar CSV no disco
+        run: python -u -m auditoria.comparar_turnos_2026 --uf SP --baseline-2t work/geografia2t --out work/turnos
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fatovia-turnos-sp-corrigido
+          path: work/turnos
+          retention-days: 90
+          if-no-files-found: warn
+
+  consolidar:
+    needs: sp
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Recuperar comparações válidas de 27 UFs do ciclo anterior
+        uses: actions/download-artifact@v4
+        with:
+          pattern: fatovia-turnos-*
+          run-id: 40878916027
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          merge-multiple: true
+          path: work/turnos
+      - name: Recuperar SP corrigido
+        if: needs.sp.result == 'success'
+        uses: actions/download-artifact@v4
+        with:
+          name: fatovia-turnos-sp-corrigido
+          path: work/turnos
+      - name: Consolidar os 28 conjuntos, com sinalização de cobertura
+        run: python -u -m auditoria.consolidar_turnos_2026 --input work/turnos --out work/consolidado
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fatovia-turnos-consolidado-final
+          path: work/consolidado
+          if-no-files-found: warn
+          retention-days: 90
+      - name: Publicar resultados e proveniência
+        if: success()
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+          mkdir -p docs/auditoria/comparacao-turnos-2026/ufs
+          cp work/turnos/*.json docs/auditoria/comparacao-turnos-2026/ufs/
+          cp work/consolidado/* docs/auditoria/comparacao-turnos-2026/
+          git config user.name "fatovia-audita[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/auditoria/comparacao-turnos-2026
+          if ! git diff --cached --quiet; then
+            git commit -m "docs(auditoria): conclusao comparativa dos turnos de 2026 [skip ci]"
+            git push origin HEAD:main
+          fi
