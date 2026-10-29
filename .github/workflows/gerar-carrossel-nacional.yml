@@ -1,0 +1,40 @@
+name: Gerar atualização nacional FatoVia - 7 cards
+
+on:
+  push:
+    branches: [auditoria-tse-2026]
+    paths:
+      - "fatovia-instagram/gerar_carrossel_nacional.py"
+      - ".github/workflows/gerar-carrossel-nacional.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  cards-nacionais:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: auditoria-tse-2026
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Preparar fontes e gerador
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y fonts-lato
+          python -m pip install Pillow
+      - name: Gerar imagens publicáveis
+        run: python fatovia-instagram/gerar_carrossel_nacional.py
+      - name: Armazenar em branch pública
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add fatovia-instagram/cards_nacionais/*.jpg
+          if ! git diff --cached --quiet; then
+            git commit -m "Publicar arte nacional em 7 cards JPEG"
+            git push origin HEAD:auditoria-tse-2026
+          fi
