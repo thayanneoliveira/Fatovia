@@ -88,7 +88,7 @@ def main():
     p.add_argument("--csv",required=True)
     p.add_argument("--out",required=True)
     a=p.parse_args()
-    out=Path(a.out);out.parent.mkdir(parents=True,exist_ok=True)
+    out=Path(a.out);out.mkdir(parents=True,exist_ok=True)
     serials,sections=index_targets(a.csv,a.uf)
     report={"uf":a.uf,"gerado_utc":datetime.now(timezone.utc).isoformat(),
       "status":"INCONCLUSIVO","alvos_urnas_distintas":len(serials),
