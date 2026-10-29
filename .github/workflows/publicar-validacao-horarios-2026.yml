@@ -1,0 +1,46 @@
+name: "FatoVia | Publicar resumo de horarios BWeb e TSE"
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/publicar-validacao-horarios-2026.yml"
+permissions:
+  actions: read
+  contents: write
+jobs:
+  consolidar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: fatovia-horarios-validacao-*
+          run-id: 40894907954
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          merge-multiple: true
+          path: work/horarios
+      - name: Consolidar os 27 cálculos e confrontar metodologia
+        run: python -u -m auditoria.horarios_validacao_consolidar_2026 --input work/horarios --out work/horarios-final
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fatovia-horarios-metodologia-consolidado-2026
+          path: work/horarios-final
+          retention-days: 90
+      - name: Publicar relatório e os 27 arquivos de cálculo
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+          mkdir -p docs/auditoria/validacao-horarios-2026/ufs
+          cp work/horarios/*.json docs/auditoria/validacao-horarios-2026/ufs
+          cp work/horarios-final/* docs/auditoria/validacao-horarios-2026/
+          git config user.name "fatovia-audita[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/auditoria/validacao-horarios-2026
+          if ! git diff --cached --quiet; then
+            git commit -m "docs(auditoria): metodologia dos cortes de encerramento em 27 UFs [skip ci]"
+            git push origin HEAD:main
+          fi
