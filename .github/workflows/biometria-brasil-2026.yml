@@ -1,0 +1,89 @@
+name: "FatoVia | Biometria e voto presidencial 2026 por UF"
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/biometria-brasil-2026.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fatovia-biometria-nacional-2026
+  cancel-in-progress: false
+
+jobs:
+  extrair-uf:
+    name: "Biometria ${{ matrix.uf }}"
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 6
+      matrix:
+        uf: [AC, AL, AM, AP, BA, CE, DF, ES, GO, MA, MG, MS, MT, PA, PB, PE, PI, PR, RJ, RN, RO, RR, RS, SC, SE, SP, TO, ZZ]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Regressão de validação de campos
+        run: |
+          python -m unittest discover -s tests -p 'test_biometria_2026.py' -v
+          python -m compileall -q auditoria
+      - name: Validar SHA512 e extrair uma linha por seção oficial
+        run: python -u -m auditoria.biometria_2026 --uf ${{ matrix.uf }} --out work/biometria
+      - name: Preservar metadados e CSV agregado
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bio-uf-${{ matrix.uf }}
+          path: work/biometria/
+          if-no-files-found: warn
+          retention-days: 90
+
+  analisar:
+    name: "Modelos ecologicos nacionais e municipais"
+    needs: extrair-uf
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar biblioteca matematica
+        run: python -m pip install 'numpy==2.2.6'
+      - name: Baixar dados agregados por seção de cada UF
+        uses: actions/download-artifact@v4
+        with:
+          pattern: bio-uf-*
+          path: work/biometria
+          merge-multiple: true
+        continue-on-error: true
+      - name: Regressões com efeitos fixos por município e intervalos de confiança
+        run: python -u -m auditoria.biometria_modelo_2026 --input work/biometria --out work/biometria-consolidado
+      - name: Preservar sumário mesmo com lacunas
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fatovia-biometria-nacional-estatistica
+          path: work/biometria-consolidado/
+          if-no-files-found: warn
+          retention-days: 90
+      - name: Publicar resultados agregados e proveniência no repositorio
+        if: success()
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+          mkdir -p docs/auditoria/biometria-2026/ufs
+          cp work/biometria/*.json docs/auditoria/biometria-2026/ufs/
+          cp work/biometria-consolidado/biometria-2026-2t-nacional.* docs/auditoria/biometria-2026/
+          git config user.name "fatovia-audita[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/auditoria/biometria-2026
+          if ! git diff --cached --quiet; then
+            git commit -m "docs(auditoria): associação biometria e votos por municipio 2026 [skip ci]"
+            git push origin HEAD:main
+          fi
