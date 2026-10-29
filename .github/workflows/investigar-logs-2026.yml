@@ -1,0 +1,43 @@
+name: "FatoVia | Pericia focal de logs e contingencias 2026"
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/investigar-logs-2026.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: fatovia-logs-selecionados-2026
+  cancel-in-progress: false
+
+jobs:
+  investigar-uf:
+    name: "Logs de ${{ matrix.uf }}"
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        uf: [BA, MA, MG, PA, PB, PE, PI, RJ, RS, SP]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar ASN.1
+        run: python -m pip install 'asn1tools==0.167.0'
+      - name: Validar código
+        run: python -m compileall -q auditoria
+      - name: Reabrir fontes oficiais e reconciliar logs
+        run: python -u -m auditoria.investigar_logs_2026 --uf ${{ matrix.uf }} --out work/pericia-logs/${{ matrix.uf }}.json
+      - name: Guardar evidência mesmo em erro
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fatovia-investigacao-logs-${{ matrix.uf }}
+          path: work/pericia-logs/${{ matrix.uf }}.json
+          if-no-files-found: warn
+          retention-days: 90
