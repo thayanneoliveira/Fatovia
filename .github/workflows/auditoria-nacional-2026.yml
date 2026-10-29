@@ -1,0 +1,54 @@
+name: Auditoria nacional do TSE - 27 UFs e exterior (ZZ)
+
+on:
+  push:
+    branches: [auditoria-tse-2026]
+    paths:
+      - "auditoria-nacional-2026/**"
+      - ".github/workflows/auditoria-nacional-2026.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: auditoria-nacional-2026
+  cancel-in-progress: false
+
+jobs:
+  cobertura-completa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 115
+    steps:
+      - name: Checkout em ramo isolado
+        uses: actions/checkout@v4
+        with:
+          ref: auditoria-tse-2026
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Confrontar hashes e versões GEDAI por UF e exterior
+        continue-on-error: true
+        run: python -u auditoria-nacional-2026/auditar_gedai_nacional.py
+      - name: Cruzar previsões efetivações e BUs por UF e exterior
+        continue-on-error: true
+        run: python -u auditoria-nacional-2026/auditar_cruzamentos_nacional.py
+      - name: Registrar resultados parciais e completos sem mascarar falhas
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add auditoria-nacional-resultados/RESULTADO_NACIONAL_GEDAI.json auditoria-nacional-resultados/RESULTADO_NACIONAL_GEDAI.md 2>/dev/null || true
+          git add auditoria-nacional-resultados/RESULTADO_NACIONAL_CRUZAMENTO.json auditoria-nacional-resultados/RESULTADO_NACIONAL_CRUZAMENTO.md 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -m "Auditoria nacional: dados, verificações e impedimentos por UF"
+            git push origin HEAD:auditoria-tse-2026
+          fi
+      - name: Disponibilizar artefatos para reproducibilidade
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: auditoria-nacional-2026
+          path: auditoria-nacional-resultados/RESULTADO_NACIONAL_*
+          if-no-files-found: warn
