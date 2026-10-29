@@ -1,0 +1,45 @@
+{
+  "dados": {
+    "campos_temporais_encontrados": [
+      "DT_BU_RECEBIDO",
+      "DT_ENCERRAMENTO"
+    ],
+    "contagem_criterios": {
+      "depois_17:00": 15686,
+      "depois_17:02": 4517,
+      "depois_17:05": 685,
+      "depois_17:10": 63,
+      "depois_17:15": 19,
+      "depois_18:00": 2,
+      "depois_19:00": 1
+    },
+    "diferenca_bweb_menos_tse": -142,
+    "horarios_ausentes": 0,
+    "relacao_bweb_sobre_tse": 0.30732,
+    "secoes_bweb": 15686,
+    "secoes_por_hora": {
+      "17": 15684,
+      "18": 1,
+      "19": 1
+    },
+    "tse_secoes_apos_17h10": 205
+  },
+  "fontes": {
+    "bweb": {
+      "bytes": 4248869,
+      "hash_conferido": true,
+      "sha512": "e5b6635dc3a05b7f6c175bdbe8a23e4daa3f4029f79cf3b7c82ac2cc48a43c315b00cac68162dd134f3187ba973bd3ddea5a26cb6f91c44449945bb094f93e0e",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_GO_261020260742.zip"
+    },
+    "estatistica_tse": "https://www.tse.jus.br/comunicacao/noticias/2026/Outubro/eleicoes-2026-mais-de-34-mil-votos-foram-registrados-apos-as-17h-no-2o-turno"
+  },
+  "gerado_utc": "2026-10-29T14:47:13.202231+00:00",
+  "observacoes": [
+    "DT_ENCERRAMENTO do BWeb pode não representar o mesmo marco temporal da pesquisa oficial.",
+    "TSE informa 24.268 seções permanecendo abertas depois de 17h10, considerando critério próprio.",
+    "Nenhum corte alternativo será escolhido para forçar coincidência estatística.",
+    "Ausência de explicação sobre diferença temporal não comprova fraude."
+  ],
+  "status": "CRITERIO_BWEB_DIFERE_TSE",
+  "uf": "GO"
+}
