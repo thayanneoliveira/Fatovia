@@ -1,0 +1,60 @@
+name: "FatoVia | Comprovar atividade da urna antes das 17h"
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/atividade-urna-apos17-2026.yml"
+permissions:
+  actions: read
+  contents: write
+jobs:
+  examinar:
+    name: "Analisar logs ${{ matrix.uf }}"
+    runs-on: ubuntu-latest
+    timeout-minutes: 65
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        uf: [AL, BA, CE, DF, ES, GO, MA, MG, PA, PB, PE, PI, PR, RJ, RN, RS, SE, SP]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install 'asn1tools==0.167.0'
+      - name: Reconstruir eventos pre17 e hash de cada log
+        run: python -u -m auditoria.atividade_urnas_horario_2026 --uf ${{ matrix.uf }} --csv docs/auditoria/horarios-e-contingencias-2026/ufs/${{ matrix.uf }}.csv --out work/urna-atividade
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fatovia-atividade-urna-${{ matrix.uf }}
+          path: work/urna-atividade
+          if-no-files-found: warn
+          retention-days: 90
+
+  publicar:
+    needs: examinar
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: fatovia-atividade-urna-*
+          path: work/resultados
+          merge-multiple: true
+        continue-on-error: true
+      - name: Publicar relatórios de eventos agregados
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+          mkdir -p docs/auditoria/horarios-e-contingencias-2026/atividade
+          cp work/resultados/*.json docs/auditoria/horarios-e-contingencias-2026/atividade/ 2>/dev/null || true
+          git config user.name "fatovia-audita[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/auditoria/horarios-e-contingencias-2026/atividade
+          if ! git diff --cached --quiet; then
+            git commit -m "docs(auditoria): eventos anonimos pre17 nas urnas efetivadas [skip ci]"
+            git push origin HEAD:main
+          fi
