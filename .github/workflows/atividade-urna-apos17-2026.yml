@@ -1,4 +1,4 @@
-name: "FatoVia | Comprovar atividade da urna antes das 17h"
+name: "FatoVia | Evidencia de atividade pre17 em urnas efetivadas"
 on:
   workflow_dispatch:
   push:
