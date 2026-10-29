@@ -1,0 +1,94 @@
+name: "FatoVia | Cadastro nacional urnas municipios 2026"
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/geografia-nacional-2026.yml"
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: fatovia-geografia-nacional-2026
+  cancel-in-progress: false
+
+jobs:
+  extrair-uf:
+    name: "Vincular urnas cidades ${{ matrix.uf }}"
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 6
+      matrix:
+        uf: [AC, AL, AM, AP, BA, CE, DF, ES, GO, MA, MG, MS, MT, PA, PB, PE, PI, PR, RJ, RN, RO, RR, RS, SC, SE, SP, TO, ZZ]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Testar sintaxe do extrator
+        run: python -m compileall -q auditoria
+      - name: Conferir hashes TSE e vincular CEFT com BU por secao
+        run: python -u -m auditoria.geografia_urnas_2026 --uf ${{ matrix.uf }} --out work/geografia
+      - name: Guardar base por seção e evidências
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fatovia-geografia-uf-${{ matrix.uf }}
+          path: work/geografia/
+          if-no-files-found: warn
+          retention-days: 90
+
+  consolidar:
+    name: "Consolidar municipios, secoes e ocorrencias tecnicas"
+    needs: extrair-uf
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Obter bases de urna e cidade por UF
+        uses: actions/download-artifact@v4
+        with:
+          pattern: fatovia-geografia-uf-*
+          path: work/geografia
+          merge-multiple: true
+        continue-on-error: true
+      - name: Obter evidencias da auditoria nacional anterior
+        uses: actions/download-artifact@v4
+        with:
+          pattern: audit-br-uf-*
+          path: work/geografia-historico
+          merge-multiple: true
+          run-id: 40710628106
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true
+      - name: Consolidar localidades e conferir cobertura de todas as UFs
+        run: python -u -m auditoria.consolidar_geografia_2026 --input work/geografia --historico work/geografia-historico --out work/geografia-consolidado
+      - name: Preservar resultados independente da conclusao
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fatovia-cadastro-nacional-urnas-2026
+          path: work/geografia-consolidado/
+          if-no-files-found: warn
+          retention-days: 90
+      - name: Publicar base agregada e vinculacao urna cidade
+        if: success()
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+          mkdir -p docs/auditoria/geografia-2026
+          cp work/geografia-consolidado/* docs/auditoria/geografia-2026/
+          git config user.name "fatovia-audita[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/auditoria/geografia-2026
+          if ! git diff --cached --quiet; then
+            git commit -m "docs(auditoria): cadastro nacional urnas cidades secoes e dados neutros [skip ci]"
+            git push origin HEAD:main
+          fi
