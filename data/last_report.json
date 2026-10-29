@@ -1,6 +1,8 @@
 {
   "already_published": 3,
-  "errors": [],
+  "errors": [
+    "Radar indisponível (ConnectTimeout)"
+  ],
   "found": 0,
   "pending": 0,
   "publication": "DISABLED",
@@ -10,5 +12,5 @@
     19
   ],
   "staged": 0,
-  "timestamp": "2026-10-28T18:40:00.314437-03:00"
+  "timestamp": "2026-10-28T23:28:50.851334-03:00"
 }
