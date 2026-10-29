@@ -100,9 +100,16 @@ def run(uf,targets_path,outdir):
                             raise ValueError(f"Arquivos de seção incompletos: {list(files)}")
                         digests,_=signature_hashes(files["vota.vsc"],compiler)
                         checks=compare_hashes(files,digests)
-                        item["hashes_conferidos"]=sum(x=="HASH_OK" for x in checks.values())
-                        if item["hashes_conferidos"]!=4 or any(x!="HASH_OK" for x in checks.values()):
-                            raise ValueError("Hashes individuais VSC não coincidem")
+                        required={"bu.dat","rdv.dat","imgbu.dat","log.jez"}
+                        checked={name.rsplit("-",1)[-1]
+                            for name,match in checks.items() if match=="HASH_OK"}
+                        invalid={name:match for name,match in checks.items()
+                            if match in ("HASH_DIVERGENTE","HASHES_DECLARADOS_DIVERGENTES","NOME_INVALIDO")}
+                        item["hashes_conferidos"]=len(checked & required)
+                        item["referencias_extras_no_vsc"]=sum(
+                            match=="SEM_ARQUIVO_OU_AMBIGUO" for match in checks.values())
+                        if invalid or not required.issubset(checked):
+                            raise ValueError("Hash dos quatro arquivos obrigatórios não coincide com VSC")
                         stats,nlogs=inspect_log(files["log.jez"],row["urna_efetivada"])
                         item["eventos_log"]=stats
                         item["arquivos_logd"]=nlogs
