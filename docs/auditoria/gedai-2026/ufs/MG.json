@@ -1,0 +1,6942 @@
+{
+  "alvos_secoes": 169,
+  "alvos_urnas_distintas": 338,
+  "dias": {
+    "24": {
+      "fonte": {
+        "bytes": 14213698,
+        "hash_conferido": true,
+        "sha512": "f44713fb19af42eb4a4ea7af08bd4fbfb40ef4a43afe7645b3969facaf3e266dece043378f17c1171d18b26c9cf6857668165142c3cb55a3c5ad1a5ba7572072",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/logsgedai/log_gedai_2t_MG_241020261329.zip"
+      },
+      "formatos": {
+        "arquivos_aninhados_invalidos": 0,
+        "arquivos_comprimidos_aninhados": 682,
+        "arquivos_textuais": 341,
+        "bytes_descompactados_lidos": 75051351,
+        "encodings": {
+          "latin1": 341
+        },
+        "ignorados_profundidade": 0,
+        "ignorados_tamanho": 0,
+        "limite_global_atingido": false,
+        "linhas_processadas": 415114
+      },
+      "refs_urnas": {
+        "1650803": {
+          "datas_amostra": [
+            "17/10/2026",
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 4,
+            "urna": 4
+          },
+          "linhas_com_referencia": 4
+        },
+        "1651432": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1651562": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1651804": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1652094": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1652218": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1652452": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1652681": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1652696": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1652806": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1652879": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1652938": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1652945": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1652988": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1653000": {
+          "datas_amostra": [
+            "19/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1653193": {
+          "datas_amostra": [
+            "19/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1653283": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1653284": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1653361": {
+          "datas_amostra": [
+            "21/10/2026",
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 6,
+            "conting": 2,
+            "urna": 6
+          },
+          "linhas_com_referencia": 6
+        },
+        "1653366": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1653392": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1653479": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1653483": {
+          "datas_amostra": [
+            "16/10/2026",
+            "21/10/2026",
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 7,
+            "conting": 5,
+            "urna": 7
+          },
+          "linhas_com_referencia": 7
+        },
+        "1653514": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1653526": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1653548": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1653577": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1653597": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1653925": {
+          "datas_amostra": [
+            "19/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1653941": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1654035": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1654095": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1654101": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1654259": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1654559": {
+          "datas_amostra": [
+            "18/10/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1654562": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1654712": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1654745": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1654818": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1655013": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1655150": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1655277": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1655487": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1665268": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1673266": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1673903": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1674424": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1675161": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1675255": {
+          "datas_amostra": [
+            "19/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1675584": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1676647": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1682242": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1682246": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1699554": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1751002": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1751593": {
+          "datas_amostra": [
+            "17/10/2026",
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 4,
+            "conting": 2,
+            "urna": 4
+          },
+          "linhas_com_referencia": 4
+        },
+        "1751655": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1751674": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1751800": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1751846": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1752071": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1752183": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1752392": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1753010": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1753569": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 3,
+            "conting": 2,
+            "urna": 3
+          },
+          "linhas_com_referencia": 3
+        },
+        "1754281": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1754328": {
+          "datas_amostra": [
+            "17/10/2026",
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 4,
+            "conting": 2,
+            "urna": 4
+          },
+          "linhas_com_referencia": 4
+        },
+        "1754826": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1754985": {
+          "datas_amostra": [
+            "19/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1755062": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 3,
+            "urna": 3
+          },
+          "linhas_com_referencia": 3
+        },
+        "1755129": {
+          "datas_amostra": [
+            "16/10/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1755207": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1755365": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1755625": {
+          "datas_amostra": [
+            "18/10/2026",
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 4,
+            "conting": 2,
+            "urna": 4
+          },
+          "linhas_com_referencia": 4
+        },
+        "1755683": {
+          "datas_amostra": [
+            "16/10/2026",
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 4,
+            "urna": 4
+          },
+          "linhas_com_referencia": 4
+        },
+        "1755816": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1756302": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1756530": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1756936": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1757152": {
+          "datas_amostra": [
+            "15/10/2026",
+            "22/09/2026",
+            "23/10/2026",
+            "26/09/2026",
+            "30/09/2026"
+          ],
+          "indicadores": {
+            "carga": 11,
+            "conting": 8,
+            "urna": 11
+          },
+          "linhas_com_referencia": 11
+        },
+        "1758155": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1758227": {
+          "datas_amostra": [
+            "21/09/2026",
+            "24/10/2026"
+          ],
+          "indicadores": {
+            "carga": 6,
+            "urna": 6
+          },
+          "linhas_com_referencia": 6
+        },
+        "1758263": {
+          "datas_amostra": [
+            "20/10/2026",
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 4,
+            "conting": 2,
+            "urna": 4
+          },
+          "linhas_com_referencia": 4
+        },
+        "1758390": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1763149": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1770933": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1774052": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1775919": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1776423": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1776492": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1776495": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1777753": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1779172": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1782100": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1783073": {
+          "datas_amostra": [
+            "23/09/2026",
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 5,
+            "conting": 2,
+            "urna": 5
+          },
+          "linhas_com_referencia": 5
+        },
+        "1783286": {
+          "datas_amostra": [
+            "29/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1783604": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1783963": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1786673": {
+          "datas_amostra": [
+            "19/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1791398": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1791423": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1794816": {
+          "datas_amostra": [
+            "17/10/2026",
+            "20/10/2026",
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 6,
+            "urna": 6
+          },
+          "linhas_com_referencia": 6
+        },
+        "1830985": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1832828": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1833710": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1834051": {
+          "datas_amostra": [
+            "21/10/2026",
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 4,
+            "conting": 2,
+            "urna": 4
+          },
+          "linhas_com_referencia": 4
+        },
+        "1834110": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1834384": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1834547": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1834680": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1834726": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1835427": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1836328": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1836499": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1836642": {
+          "datas_amostra": [
+            "03/10/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1837245": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1837592": {
+          "datas_amostra": [
+            "30/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1838040": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1838803": {
+          "datas_amostra": [
+            "19/10/2026",
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 4,
+            "conting": 2,
+            "urna": 4
+          },
+          "linhas_com_referencia": 4
+        },
+        "1840360": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1841051": {
+          "datas_amostra": [
+            "24/09/2026",
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 3,
+            "conting": 2,
+            "urna": 3
+          },
+          "linhas_com_referencia": 3
+        },
+        "1841552": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1842249": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1842616": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1842641": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1842644": {
+          "datas_amostra": [
+            "16/10/2026",
+            "24/10/2026",
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 7,
+            "conting": 5,
+            "urna": 7
+          },
+          "linhas_com_referencia": 7
+        },
+        "1842691": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1847340": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1848001": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2000669": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2010053": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2011666": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2012228": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2020155": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2029770": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2030896": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2031074": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2032489": {
+          "datas_amostra": [
+            "14/10/2026",
+            "19/10/2026",
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 12,
+            "urna": 12
+          },
+          "linhas_com_referencia": 12
+        },
+        "2034700": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2035321": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2037239": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2037329": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2042573": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2049361": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2052230": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2053435": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2054136": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2054238": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2054822": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2054941": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2055230": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2055316": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2055356": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2055560": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2056541": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2056669": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2056946": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2058505": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2060197": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2060329": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2061206": {
+          "datas_amostra": [
+            "19/10/2026",
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 4,
+            "conting": 4,
+            "urna": 4
+          },
+          "linhas_com_referencia": 4
+        },
+        "2061321": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2061864": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2062772": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2062966": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2063422": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2063485": {
+          "datas_amostra": [
+            "20/10/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2063796": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2064196": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2064544": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2065131": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2065897": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2066331": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2066579": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2066590": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2067202": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2069335": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2069986": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2070500": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2070596": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2071227": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2071686": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2075471": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2075679": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2075960": {
+          "datas_amostra": [
+            "24/09/2026",
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 3,
+            "urna": 3
+          },
+          "linhas_com_referencia": 3
+        },
+        "2076304": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2076360": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2076794": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2077443": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2077951": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2078327": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2078626": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2079191": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2079428": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2079513": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2080047": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2080199": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2080467": {
+          "datas_amostra": [
+            "18/10/2026",
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 3,
+            "conting": 3,
+            "urna": 3
+          },
+          "linhas_com_referencia": 3
+        },
+        "2080605": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2083003": {
+          "datas_amostra": [
+            "30/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2085674": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2085772": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2086045": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2086579": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2089716": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2089910": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2090082": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2090752": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2090952": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2090990": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2091118": {
+          "datas_amostra": [
+            "18/10/2026",
+            "20/10/2026"
+          ],
+          "indicadores": {
+            "carga": 4,
+            "conting": 2,
+            "urna": 4
+          },
+          "linhas_com_referencia": 4
+        },
+        "2091271": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2091308": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2092098": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2092296": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2092328": {
+          "datas_amostra": [
+            "21/10/2026",
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 4,
+            "conting": 4,
+            "urna": 4
+          },
+          "linhas_com_referencia": 4
+        },
+        "2092334": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2092467": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2092884": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2095811": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2096172": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2097337": {
+          "datas_amostra": [
+            "19/10/2026",
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 4,
+            "conting": 2,
+            "urna": 4
+          },
+          "linhas_com_referencia": 4
+        },
+        "2097472": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2097572": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2097611": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2098259": {
+          "datas_amostra": [
+            "14/10/2026",
+            "15/10/2026",
+            "19/10/2026",
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 19,
+            "conting": 3,
+            "urna": 19
+          },
+          "linhas_com_referencia": 19
+        },
+        "2099063": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2100125": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2101470": {
+          "datas_amostra": [
+            "18/10/2026",
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 3,
+            "urna": 3
+          },
+          "linhas_com_referencia": 3
+        },
+        "2103134": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2120749": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2120966": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2121048": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2122252": {
+          "datas_amostra": [
+            "19/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2122550": {
+          "datas_amostra": [
+            "19/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2123893": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2124375": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2125123": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2125206": {
+          "datas_amostra": [
+            "23/10/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2129050": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2129190": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2129350": {
+          "datas_amostra": [
+            "21/10/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2129744": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2130058": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2130889": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2131115": {
+          "datas_amostra": [
+            "17/10/2026",
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 4,
+            "conting": 2,
+            "urna": 4
+          },
+          "linhas_com_referencia": 4
+        },
+        "2131228": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2131647": {
+          "datas_amostra": [
+            "21/10/2026",
+            "22/09/2026",
+            "22/10/2026"
+          ],
+          "indicadores": {
+            "carga": 8,
+            "conting": 2,
+            "urna": 8
+          },
+          "linhas_com_referencia": 8
+        },
+        "2131794": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2132362": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2132641": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2132691": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2133999": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2134037": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2134202": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2134392": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2134430": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2134760": {
+          "datas_amostra": [
+            "16/10/2026",
+            "19/09/2026"
+          ],
+          "indicadores": {
+            "carga": 6,
+            "conting": 2,
+            "urna": 6
+          },
+          "linhas_com_referencia": 6
+        },
+        "2134797": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2134946": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2135307": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2135461": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2136884": {
+          "datas_amostra": [
+            "18/10/2026",
+            "20/10/2026"
+          ],
+          "indicadores": {
+            "carga": 8,
+            "conting": 2,
+            "urna": 8
+          },
+          "linhas_com_referencia": 8
+        },
+        "2152062": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2245186": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2258194": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2258505": {
+          "datas_amostra": [
+            "16/10/2026",
+            "21/09/2026",
+            "21/10/2026"
+          ],
+          "indicadores": {
+            "carga": 9,
+            "conting": 2,
+            "urna": 9
+          },
+          "linhas_com_referencia": 9
+        },
+        "2260910": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2262011": {
+          "datas_amostra": [
+            "17/10/2026",
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 4,
+            "conting": 2,
+            "urna": 4
+          },
+          "linhas_com_referencia": 4
+        },
+        "2265159": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2265989": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2266672": {
+          "datas_amostra": [
+            "19/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2267852": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2270065": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2273658": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2274636": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2275937": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2282982": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2291938": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2292316": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 3,
+            "conting": 3,
+            "urna": 3
+          },
+          "linhas_com_referencia": 3
+        },
+        "2292619": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2297649": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2323580": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2324086": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2326867": {
+          "datas_amostra": [
+            "03/10/2026",
+            "24/09/2026",
+            "24/10/2026",
+            "28/09/2026"
+          ],
+          "indicadores": {
+            "carga": 13,
+            "conting": 13,
+            "urna": 13
+          },
+          "linhas_com_referencia": 13
+        },
+        "2331573": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2332437": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2401507": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2401574": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2404922": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2407351": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2407742": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2408347": {
+          "datas_amostra": [
+            "15/10/2026",
+            "19/10/2026",
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 18,
+            "conting": 18,
+            "urna": 18
+          },
+          "linhas_com_referencia": 18
+        },
+        "2413426": {
+          "datas_amostra": [
+            "16/10/2026",
+            "21/09/2026",
+            "21/10/2026"
+          ],
+          "indicadores": {
+            "carga": 9,
+            "conting": 2,
+            "urna": 9
+          },
+          "linhas_com_referencia": 9
+        },
+        "2413581": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2413983": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2415054": {
+          "datas_amostra": [
+            "29/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2415189": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2415638": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2415905": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2416457": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2416621": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2417093": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2418616": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2419341": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2419722": {
+          "datas_amostra": [
+            "29/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2421700": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2422612": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2423126": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2426086": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2445547": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2446806": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2446815": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2449110": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2452595": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2454731": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2468775": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2472058": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2472225": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2473653": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        }
+      },
+      "urnas_com_referencia": 320
+    },
+    "25": {
+      "fonte": {
+        "bytes": 14246931,
+        "hash_conferido": true,
+        "sha512": "0cdf7bd1469f39d3f843fea007c5a266b1487ebc319f3b7502cbc2c29474f33d2cf5741ab1a045052d97b24de246ff4941396afaf7545c0805fd9dfaea81e91b",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/logsgedai/log_gedai_2t_MG_251020261327.zip"
+      },
+      "formatos": {
+        "arquivos_aninhados_invalidos": 0,
+        "arquivos_comprimidos_aninhados": 682,
+        "arquivos_textuais": 341,
+        "bytes_descompactados_lidos": 75323381,
+        "encodings": {
+          "latin1": 341
+        },
+        "ignorados_profundidade": 0,
+        "ignorados_tamanho": 0,
+        "limite_global_atingido": false,
+        "linhas_processadas": 416894
+      },
+      "refs_urnas": {
+        "1650803": {
+          "datas_amostra": [
+            "17/10/2026",
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 4,
+            "urna": 4
+          },
+          "linhas_com_referencia": 4
+        },
+        "1651432": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1651562": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1651804": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1652094": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1652218": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1652452": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1652681": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1652696": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1652806": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1652879": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1652938": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1652945": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1652988": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1653000": {
+          "datas_amostra": [
+            "19/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1653193": {
+          "datas_amostra": [
+            "19/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1653283": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1653284": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1653361": {
+          "datas_amostra": [
+            "21/10/2026",
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 6,
+            "conting": 2,
+            "urna": 6
+          },
+          "linhas_com_referencia": 6
+        },
+        "1653366": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1653392": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1653479": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1653483": {
+          "datas_amostra": [
+            "16/10/2026",
+            "21/10/2026",
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 7,
+            "conting": 5,
+            "urna": 7
+          },
+          "linhas_com_referencia": 7
+        },
+        "1653514": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1653526": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1653548": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1653577": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1653597": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1653925": {
+          "datas_amostra": [
+            "19/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1653941": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1654035": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1654095": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1654101": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1654259": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1654559": {
+          "datas_amostra": [
+            "18/10/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1654562": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1654712": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1654745": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1654818": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1655013": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1655150": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1655277": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1655487": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1665268": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1673266": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1673903": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1674424": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1675161": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1675255": {
+          "datas_amostra": [
+            "19/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1675584": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1676647": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1682242": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1682246": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1699554": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1751002": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1751593": {
+          "datas_amostra": [
+            "17/10/2026",
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 4,
+            "conting": 2,
+            "urna": 4
+          },
+          "linhas_com_referencia": 4
+        },
+        "1751655": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1751674": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1751800": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1751846": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1752071": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1752183": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1752392": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1753010": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1753569": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 3,
+            "conting": 2,
+            "urna": 3
+          },
+          "linhas_com_referencia": 3
+        },
+        "1754281": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1754328": {
+          "datas_amostra": [
+            "17/10/2026",
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 4,
+            "conting": 2,
+            "urna": 4
+          },
+          "linhas_com_referencia": 4
+        },
+        "1754826": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1754985": {
+          "datas_amostra": [
+            "19/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1755062": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 3,
+            "urna": 3
+          },
+          "linhas_com_referencia": 3
+        },
+        "1755129": {
+          "datas_amostra": [
+            "16/10/2026",
+            "24/10/2026"
+          ],
+          "indicadores": {
+            "carga": 6,
+            "conting": 4,
+            "urna": 6
+          },
+          "linhas_com_referencia": 6
+        },
+        "1755207": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1755365": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1755625": {
+          "datas_amostra": [
+            "18/10/2026",
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 4,
+            "conting": 2,
+            "urna": 4
+          },
+          "linhas_com_referencia": 4
+        },
+        "1755683": {
+          "datas_amostra": [
+            "16/10/2026",
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 4,
+            "urna": 4
+          },
+          "linhas_com_referencia": 4
+        },
+        "1755816": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1756302": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1756530": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1756936": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1757152": {
+          "datas_amostra": [
+            "15/10/2026",
+            "22/09/2026",
+            "23/10/2026",
+            "26/09/2026",
+            "30/09/2026"
+          ],
+          "indicadores": {
+            "carga": 11,
+            "conting": 8,
+            "urna": 11
+          },
+          "linhas_com_referencia": 11
+        },
+        "1758155": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1758227": {
+          "datas_amostra": [
+            "21/09/2026",
+            "24/10/2026"
+          ],
+          "indicadores": {
+            "carga": 6,
+            "urna": 6
+          },
+          "linhas_com_referencia": 6
+        },
+        "1758263": {
+          "datas_amostra": [
+            "20/10/2026",
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 4,
+            "conting": 2,
+            "urna": 4
+          },
+          "linhas_com_referencia": 4
+        },
+        "1758390": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1763149": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1770933": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1774052": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1775919": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1776423": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1776492": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1776495": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1777753": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1779172": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1782100": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1783073": {
+          "datas_amostra": [
+            "23/09/2026",
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 5,
+            "conting": 2,
+            "urna": 5
+          },
+          "linhas_com_referencia": 5
+        },
+        "1783286": {
+          "datas_amostra": [
+            "29/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1783604": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1783963": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1786673": {
+          "datas_amostra": [
+            "19/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1791398": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1791423": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1794816": {
+          "datas_amostra": [
+            "17/10/2026",
+            "20/10/2026",
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 6,
+            "urna": 6
+          },
+          "linhas_com_referencia": 6
+        },
+        "1830985": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1832828": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1833710": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1834051": {
+          "datas_amostra": [
+            "21/10/2026",
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 4,
+            "conting": 2,
+            "urna": 4
+          },
+          "linhas_com_referencia": 4
+        },
+        "1834110": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1834384": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1834547": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1834680": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1834726": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1835427": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1836328": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1836499": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1836642": {
+          "datas_amostra": [
+            "03/10/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1837245": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1837592": {
+          "datas_amostra": [
+            "30/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1838040": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1838803": {
+          "datas_amostra": [
+            "19/10/2026",
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 4,
+            "conting": 2,
+            "urna": 4
+          },
+          "linhas_com_referencia": 4
+        },
+        "1840360": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1841051": {
+          "datas_amostra": [
+            "24/09/2026",
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 3,
+            "conting": 2,
+            "urna": 3
+          },
+          "linhas_com_referencia": 3
+        },
+        "1841552": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1842249": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1842616": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1842641": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1842644": {
+          "datas_amostra": [
+            "16/10/2026",
+            "24/10/2026",
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 7,
+            "conting": 5,
+            "urna": 7
+          },
+          "linhas_com_referencia": 7
+        },
+        "1842691": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1847340": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "1848001": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2000669": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2007867": {
+          "datas_amostra": [
+            "24/10/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2010053": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2011666": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2011733": {
+          "datas_amostra": [
+            "24/10/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2012228": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2020155": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2029770": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2030896": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2031074": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2032489": {
+          "datas_amostra": [
+            "14/10/2026",
+            "19/10/2026",
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 12,
+            "urna": 12
+          },
+          "linhas_com_referencia": 12
+        },
+        "2034700": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2035321": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2037239": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2037329": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2042573": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2049361": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2052230": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2053435": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2054136": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2054238": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2054822": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2054941": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2055230": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2055316": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2055356": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2055560": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2056541": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2056669": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2056946": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2058505": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2060197": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2060329": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2061206": {
+          "datas_amostra": [
+            "19/10/2026",
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 4,
+            "conting": 4,
+            "urna": 4
+          },
+          "linhas_com_referencia": 4
+        },
+        "2061321": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2061864": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2062772": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2062966": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2063422": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2063485": {
+          "datas_amostra": [
+            "20/10/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2063796": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2064196": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2064544": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2065131": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2065897": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2066331": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2066579": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2066590": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2067202": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2069335": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2069986": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2070500": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2070596": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2071227": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2071686": {
+          "datas_amostra": [
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2075471": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2075679": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2075960": {
+          "datas_amostra": [
+            "24/09/2026",
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 3,
+            "urna": 3
+          },
+          "linhas_com_referencia": 3
+        },
+        "2076304": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2076360": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2076794": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2077443": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2077951": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2078327": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2078626": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2079191": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2079428": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2079513": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2080047": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2080079": {
+          "datas_amostra": [
+            "24/10/2026"
+          ],
+          "indicadores": {
+            "carga": 4,
+            "conting": 2,
+            "urna": 4
+          },
+          "linhas_com_referencia": 4
+        },
+        "2080199": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2080467": {
+          "datas_amostra": [
+            "18/10/2026",
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 3,
+            "conting": 3,
+            "urna": 3
+          },
+          "linhas_com_referencia": 3
+        },
+        "2080605": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2083003": {
+          "datas_amostra": [
+            "30/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2085674": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2085772": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2086045": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2086579": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2089716": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2089910": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2090082": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2090752": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2090952": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2090990": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2091118": {
+          "datas_amostra": [
+            "18/10/2026",
+            "20/10/2026"
+          ],
+          "indicadores": {
+            "carga": 4,
+            "conting": 2,
+            "urna": 4
+          },
+          "linhas_com_referencia": 4
+        },
+        "2091271": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2091308": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2092098": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2092296": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2092328": {
+          "datas_amostra": [
+            "21/10/2026",
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 4,
+            "conting": 4,
+            "urna": 4
+          },
+          "linhas_com_referencia": 4
+        },
+        "2092334": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2092467": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2092884": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2095811": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2096172": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2096376": {
+          "datas_amostra": [
+            "24/10/2026"
+          ],
+          "indicadores": {
+            "carga": 4,
+            "conting": 2,
+            "urna": 4
+          },
+          "linhas_com_referencia": 4
+        },
+        "2097337": {
+          "datas_amostra": [
+            "19/10/2026",
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 4,
+            "conting": 2,
+            "urna": 4
+          },
+          "linhas_com_referencia": 4
+        },
+        "2097472": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2097572": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2097611": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2098259": {
+          "datas_amostra": [
+            "14/10/2026",
+            "15/10/2026",
+            "19/10/2026",
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 19,
+            "conting": 3,
+            "urna": 19
+          },
+          "linhas_com_referencia": 19
+        },
+        "2099063": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2100125": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2101470": {
+          "datas_amostra": [
+            "18/10/2026",
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 3,
+            "urna": 3
+          },
+          "linhas_com_referencia": 3
+        },
+        "2103134": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2120749": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2120966": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2121048": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2122252": {
+          "datas_amostra": [
+            "19/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2122550": {
+          "datas_amostra": [
+            "19/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2123893": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2124375": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2125123": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2125206": {
+          "datas_amostra": [
+            "23/10/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2129050": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2129190": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2129350": {
+          "datas_amostra": [
+            "21/10/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2129744": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2130058": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2130889": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2131115": {
+          "datas_amostra": [
+            "17/10/2026",
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 4,
+            "conting": 2,
+            "urna": 4
+          },
+          "linhas_com_referencia": 4
+        },
+        "2131228": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2131647": {
+          "datas_amostra": [
+            "21/10/2026",
+            "22/09/2026",
+            "22/10/2026"
+          ],
+          "indicadores": {
+            "carga": 8,
+            "conting": 2,
+            "urna": 8
+          },
+          "linhas_com_referencia": 8
+        },
+        "2131794": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2132362": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2132641": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2132691": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2133999": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2134037": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2134202": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2134392": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2134430": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2134760": {
+          "datas_amostra": [
+            "16/10/2026",
+            "19/09/2026"
+          ],
+          "indicadores": {
+            "carga": 6,
+            "conting": 2,
+            "urna": 6
+          },
+          "linhas_com_referencia": 6
+        },
+        "2134797": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2134946": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2135307": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2135461": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2136884": {
+          "datas_amostra": [
+            "18/10/2026",
+            "20/10/2026"
+          ],
+          "indicadores": {
+            "carga": 8,
+            "conting": 2,
+            "urna": 8
+          },
+          "linhas_com_referencia": 8
+        },
+        "2152062": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2245186": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2258194": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2258505": {
+          "datas_amostra": [
+            "16/10/2026",
+            "21/09/2026",
+            "21/10/2026"
+          ],
+          "indicadores": {
+            "carga": 9,
+            "conting": 2,
+            "urna": 9
+          },
+          "linhas_com_referencia": 9
+        },
+        "2260910": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2262011": {
+          "datas_amostra": [
+            "17/10/2026",
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 4,
+            "conting": 2,
+            "urna": 4
+          },
+          "linhas_com_referencia": 4
+        },
+        "2265159": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2265989": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2266672": {
+          "datas_amostra": [
+            "19/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2267852": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2270065": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2273658": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2274636": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2275937": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2282982": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2291938": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2292316": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 3,
+            "conting": 3,
+            "urna": 3
+          },
+          "linhas_com_referencia": 3
+        },
+        "2292619": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2297649": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2323580": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2324086": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2326867": {
+          "datas_amostra": [
+            "03/10/2026",
+            "24/09/2026",
+            "24/10/2026",
+            "28/09/2026"
+          ],
+          "indicadores": {
+            "carga": 13,
+            "conting": 13,
+            "urna": 13
+          },
+          "linhas_com_referencia": 13
+        },
+        "2331573": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2332437": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2401507": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2401574": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2404922": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2407351": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2407742": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2408347": {
+          "datas_amostra": [
+            "15/10/2026",
+            "19/10/2026",
+            "25/09/2026"
+          ],
+          "indicadores": {
+            "carga": 18,
+            "conting": 18,
+            "urna": 18
+          },
+          "linhas_com_referencia": 18
+        },
+        "2413426": {
+          "datas_amostra": [
+            "16/10/2026",
+            "21/09/2026",
+            "21/10/2026"
+          ],
+          "indicadores": {
+            "carga": 9,
+            "conting": 2,
+            "urna": 9
+          },
+          "linhas_com_referencia": 9
+        },
+        "2413581": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2413983": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2415054": {
+          "datas_amostra": [
+            "29/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2415189": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2415638": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2415905": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2416457": {
+          "datas_amostra": [
+            "27/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2416621": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2417093": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2418616": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2419341": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2419722": {
+          "datas_amostra": [
+            "29/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2421700": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2422612": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2423126": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2426086": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2445547": {
+          "datas_amostra": [
+            "24/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2446806": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2446815": {
+          "datas_amostra": [
+            "21/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2449110": {
+          "datas_amostra": [
+            "22/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2452595": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2454731": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2468775": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2472058": {
+          "datas_amostra": [
+            "20/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2472225": {
+          "datas_amostra": [
+            "26/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        },
+        "2473653": {
+          "datas_amostra": [
+            "23/09/2026"
+          ],
+          "indicadores": {
+            "carga": 2,
+            "conting": 2,
+            "urna": 2
+          },
+          "linhas_com_referencia": 2
+        }
+      },
+      "urnas_com_referencia": 324
+    }
+  },
+  "gerado_utc": "2026-10-29T14:48:42.462900+00:00",
+  "notas": [
+    "GEDAI registra PREPARAÇÃO de urna, não necessariamente a hora de substituição na votação.",
+    "A ausência do número físico de uma urna em logs Gedai não demonstra ausência de preparação.",
+    "Tokens numéricos coincidentes precisam de avaliação semântica e confirmação pelo TSE.",
+    "Nenhuma linha de log bruto é publicada, apenas contagem e referência de equipamentos."
+  ],
+  "status": "EXTRAIDO",
+  "uf": "MG"
+}
