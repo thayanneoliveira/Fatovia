@@ -1,5 +1,5 @@
 {
-  "data_utc": "2026-10-29T14:24:41.314586+00:00",
+  "data_utc": "2026-10-29T14:25:57.433913+00:00",
   "erros": [],
   "examinadas": 5,
   "limitacoes": [
@@ -13,56 +13,85 @@
   "range_requisicoes": 11,
   "secoes": {
     "4278/28/100": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:12:04",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 266,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 26,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "BELÉM",
+      "referencias_extras_no_vsc": 7,
       "secao": 100,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2196385",
       "urna_prevista": "2248116",
       "zona": 28
     },
     "4278/96/280": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:10:02",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 311,
+        "efetiva_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "BELÉM",
+      "referencias_extras_no_vsc": 7,
       "secao": 280,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2147947",
       "urna_prevista": "2146708",
       "zona": 96
     },
     "4413/12/321": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:15:56",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 177,
+        "efetiva_eventos_apos_17h": 1
+      },
       "hashes_conferidos": 4,
       "municipio": "CAMETÁ",
+      "referencias_extras_no_vsc": 7,
       "secao": 321,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2191208",
       "urna_prevista": "2183018",
       "zona": 12
     },
     "5290/36/67": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:16:17",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 0,
+        "efetiva_eventos_apos_17h": 8,
+        "outra_urna_eventos_antes_17h": 284,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "SANTA IZABEL DO PARÁ",
+      "referencias_extras_no_vsc": 7,
       "secao": 67,
-      "status": "INCONCLUSIVO",
+      "status": "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS",
       "urna_efetivada": "1805416",
       "urna_prevista": "1807987",
       "zona": 36
     },
     "5630/8/325": {
+      "arquivos_logd": 3,
       "encerramento_bweb": "2026-10-25 17:12:15",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 179,
+        "efetiva_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "VIGIA",
+      "referencias_extras_no_vsc": 7,
       "secao": 325,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1656304",
       "urna_prevista": "1824691",
       "zona": 8
@@ -70,8 +99,9 @@
   },
   "selecionadas": 5,
   "sintese": {
-    "INCONCLUSIVO": 5
+    "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS": 1,
+    "URNA_EFETIVADA_ATIVA_ANTES_17H": 4
   },
-  "status": "PARCIAL",
+  "status": "CONCLUIDO",
   "uf": "PA"
 }

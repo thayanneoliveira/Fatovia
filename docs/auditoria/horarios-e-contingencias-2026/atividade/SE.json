@@ -1,5 +1,5 @@
 {
-  "data_utc": "2026-10-29T14:25:21.181129+00:00",
+  "data_utc": "2026-10-29T14:26:28.060002+00:00",
   "erros": [],
   "examinadas": 2,
   "limitacoes": [
@@ -13,23 +13,37 @@
   "range_requisicoes": 4,
   "secoes": {
     "31038/3/123": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:10:03",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 268,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 35,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "AQUIDABÃ",
+      "referencias_extras_no_vsc": 7,
       "secao": 123,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2046322",
       "urna_prevista": "2174036",
       "zona": 3
     },
     "31054/1/242": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:01:20",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 64,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 263,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "ARACAJU",
+      "referencias_extras_no_vsc": 7,
       "secao": 242,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1676734",
       "urna_prevista": "1847968",
       "zona": 1
@@ -37,8 +51,8 @@
   },
   "selecionadas": 2,
   "sintese": {
-    "INCONCLUSIVO": 2
+    "URNA_EFETIVADA_ATIVA_ANTES_17H": 2
   },
-  "status": "PARCIAL",
+  "status": "CONCLUIDO",
   "uf": "SE"
 }

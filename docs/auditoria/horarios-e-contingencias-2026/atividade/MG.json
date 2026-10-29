@@ -1,5 +1,5 @@
 {
-  "data_utc": "2026-10-29T14:24:36.097749+00:00",
+  "data_utc": "2026-10-29T14:25:46.324572+00:00",
   "erros": [],
   "examinadas": 6,
   "limitacoes": [
@@ -13,67 +13,105 @@
   "range_requisicoes": 21,
   "secoes": {
     "40690/16/264": {
+      "arquivos_logd": 3,
       "encerramento_bweb": "2026-10-25 18:35:09",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "outra_urna_eventos_antes_17h": 114,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "ARAGUARI",
+      "referencias_extras_no_vsc": 7,
       "secao": 264,
-      "status": "INCONCLUSIVO",
+      "status": "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS",
       "urna_efetivada": "2092884",
       "urna_prevista": "2129190",
       "zona": 16
     },
     "41882/320/185": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 23:04:42",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "outra_urna_eventos_antes_17h": 96,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "CHAPADA GAÚCHA",
+      "referencias_extras_no_vsc": 7,
       "secao": 185,
-      "status": "INCONCLUSIVO",
+      "status": "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS",
       "urna_efetivada": "2066579",
       "urna_prevista": "2079428",
       "zona": 320
     },
     "46337/132/65": {
+      "arquivos_logd": 3,
       "encerramento_bweb": "2026-10-25 17:10:06",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 11,
+        "efetiva_eventos_apos_17h": 3,
+        "outra_urna_eventos_antes_17h": 254,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "ITABIRA",
+      "referencias_extras_no_vsc": 7,
       "secao": 65,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1653361",
       "urna_prevista": "1752183",
       "zona": 132
     },
     "47996/171/90": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:49:02",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 0,
+        "efetiva_eventos_apos_17h": 8,
+        "outra_urna_eventos_antes_17h": 206,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "MARIANA",
+      "referencias_extras_no_vsc": 7,
       "secao": 90,
-      "status": "INCONCLUSIVO",
+      "status": "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS",
       "urna_efetivada": "1674424",
       "urna_prevista": "1835427",
       "zona": 171
     },
     "48658/317/419": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:15:07",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 0,
+        "efetiva_eventos_apos_17h": 5,
+        "outra_urna_eventos_antes_17h": 322,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "MONTES CLAROS",
+      "referencias_extras_no_vsc": 7,
       "secao": 419,
-      "status": "INCONCLUSIVO",
+      "status": "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS",
       "urna_efetivada": "2061321",
       "urna_prevista": "2120749",
       "zona": 317
     },
     "51918/248/32": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:12:41",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 0,
+        "efetiva_eventos_apos_17h": 8,
+        "outra_urna_eventos_antes_17h": 233,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "SANTA RITA DO SAPUCAÍ",
+      "referencias_extras_no_vsc": 7,
       "secao": 32,
-      "status": "INCONCLUSIVO",
+      "status": "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS",
       "urna_efetivada": "2103134",
       "urna_prevista": "2078626",
       "zona": 248
@@ -81,8 +119,9 @@
   },
   "selecionadas": 6,
   "sintese": {
-    "INCONCLUSIVO": 6
+    "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS": 5,
+    "URNA_EFETIVADA_ATIVA_ANTES_17H": 1
   },
-  "status": "PARCIAL",
+  "status": "CONCLUIDO",
   "uf": "MG"
 }

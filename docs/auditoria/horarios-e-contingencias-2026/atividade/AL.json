@@ -1,5 +1,5 @@
 {
-  "data_utc": "2026-10-29T14:24:12.717541+00:00",
+  "data_utc": "2026-10-29T14:25:24.506053+00:00",
   "erros": [],
   "examinadas": 2,
   "limitacoes": [
@@ -13,23 +13,37 @@
   "range_requisicoes": 4,
   "secoes": {
     "28215/50/79": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:00:39",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 5,
+        "efetiva_eventos_apos_17h": 39,
+        "outra_urna_eventos_antes_17h": 242,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "OURO BRANCO",
+      "referencias_extras_no_vsc": 7,
       "secao": 79,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1667961",
       "urna_prevista": "1816310",
       "zona": 50
     },
     "28258/10/85": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:49:01",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 0,
+        "efetiva_eventos_apos_17h": 2,
+        "outra_urna_eventos_antes_17h": 265,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "PALMEIRA DOS ÍNDIOS",
+      "referencias_extras_no_vsc": 7,
       "secao": 85,
-      "status": "INCONCLUSIVO",
+      "status": "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS",
       "urna_efetivada": "1769245",
       "urna_prevista": "1764215",
       "zona": 10
@@ -37,8 +51,9 @@
   },
   "selecionadas": 2,
   "sintese": {
-    "INCONCLUSIVO": 2
+    "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS": 1,
+    "URNA_EFETIVADA_ATIVA_ANTES_17H": 1
   },
-  "status": "PARCIAL",
+  "status": "CONCLUIDO",
   "uf": "AL"
 }

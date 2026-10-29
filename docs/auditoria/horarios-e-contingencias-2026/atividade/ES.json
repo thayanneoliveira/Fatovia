@@ -1,5 +1,5 @@
 {
-  "data_utc": "2026-10-29T14:24:26.040458+00:00",
+  "data_utc": "2026-10-29T14:25:36.327720+00:00",
   "erros": [],
   "examinadas": 2,
   "limitacoes": [
@@ -13,23 +13,35 @@
   "range_requisicoes": 6,
   "secoes": {
     "56251/34/142": {
+      "arquivos_logd": 3,
       "encerramento_bweb": "2026-10-25 19:00:26",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 0,
+        "efetiva_eventos_apos_17h": 2,
+        "outra_urna_eventos_antes_17h": 224,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "CARIACICA",
+      "referencias_extras_no_vsc": 7,
       "secao": 142,
-      "status": "INCONCLUSIVO",
+      "status": "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS",
       "urna_efetivada": "1760781",
       "urna_prevista": "1841180",
       "zona": 34
     },
     "57932/9/112": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:43:21",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "outra_urna_eventos_antes_17h": 304,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "SANTA MARIA DE JETIBÁ",
+      "referencias_extras_no_vsc": 7,
       "secao": 112,
-      "status": "INCONCLUSIVO",
+      "status": "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS",
       "urna_efetivada": "1758779",
       "urna_prevista": "1750820",
       "zona": 9
@@ -37,8 +49,8 @@
   },
   "selecionadas": 2,
   "sintese": {
-    "INCONCLUSIVO": 2
+    "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS": 2
   },
-  "status": "PARCIAL",
+  "status": "CONCLUIDO",
   "uf": "ES"
 }

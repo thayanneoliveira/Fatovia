@@ -1,5 +1,5 @@
 {
-  "data_utc": "2026-10-29T14:25:18.538750+00:00",
+  "data_utc": "2026-10-29T14:26:30.287370+00:00",
   "erros": [],
   "examinadas": 14,
   "limitacoes": [
@@ -13,155 +13,245 @@
   "range_requisicoes": 47,
   "secoes": {
     "62936/344/131": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 18:27:24",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "outra_urna_eventos_antes_17h": 212,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "CAMPO LIMPO PAULISTA",
+      "referencias_extras_no_vsc": 7,
       "secao": 131,
-      "status": "INCONCLUSIVO",
+      "status": "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS",
       "urna_efetivada": "2162051",
       "urna_prevista": "2068503",
       "zona": 344
     },
     "63711/119/92": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 18:59:45",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 67,
+        "efetiva_eventos_apos_17h": 2,
+        "outra_urna_eventos_antes_17h": 216,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "CUBATÃO",
+      "referencias_extras_no_vsc": 7,
       "secao": 92,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2097223",
       "urna_prevista": "2278133",
       "zona": 119
     },
     "64750/310/303": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:10:21",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 0,
+        "efetiva_eventos_apos_17h": 10,
+        "outra_urna_eventos_antes_17h": 270,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "GUARUJÁ",
+      "referencias_extras_no_vsc": 7,
       "secao": 303,
-      "status": "INCONCLUSIVO",
+      "status": "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS",
       "urna_efetivada": "2146123",
       "urna_prevista": "2145779",
       "zona": 310
     },
     "64777/395/48": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:21:46",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 0,
+        "efetiva_eventos_apos_17h": 15,
+        "outra_urna_eventos_antes_17h": 279,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "GUARULHOS",
+      "referencias_extras_no_vsc": 7,
       "secao": 48,
-      "status": "INCONCLUSIVO",
+      "status": "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS",
       "urna_efetivada": "1812142",
       "urna_prevista": "1751867",
       "zona": 395
     },
     "66397/399/48": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:33:35",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "outra_urna_eventos_antes_17h": 201,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "LIMEIRA",
+      "referencias_extras_no_vsc": 7,
       "secao": 48,
-      "status": "INCONCLUSIVO",
+      "status": "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS",
       "urna_efetivada": "2014724",
       "urna_prevista": "2143603",
       "zona": 399
     },
     "71072/1/72": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:49:16",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 283,
+        "efetiva_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "SÃO PAULO",
+      "referencias_extras_no_vsc": 7,
       "secao": 72,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1840023",
       "urna_prevista": "1843381",
       "zona": 1
     },
     "71072/20/273": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:02:16",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 176,
+        "efetiva_eventos_apos_17h": 2,
+        "outra_urna_eventos_antes_17h": 30,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "SÃO PAULO",
+      "referencias_extras_no_vsc": 7,
       "secao": 273,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2320963",
       "urna_prevista": "2024259",
       "zona": 20
     },
     "71072/248/16": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:22:51",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 186,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 109,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "SÃO PAULO",
+      "referencias_extras_no_vsc": 7,
       "secao": 16,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2336321",
       "urna_prevista": "2051512",
       "zona": 248
     },
     "71072/249/62": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:12:04",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 118,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 55,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "SÃO PAULO",
+      "referencias_extras_no_vsc": 7,
       "secao": 62,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2251230",
       "urna_prevista": "2252087",
       "zona": 249
     },
     "71072/255/113": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:50:10",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 0,
+        "efetiva_eventos_apos_17h": 3,
+        "outra_urna_eventos_antes_17h": 288,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "SÃO PAULO",
+      "referencias_extras_no_vsc": 7,
       "secao": 113,
-      "status": "INCONCLUSIVO",
+      "status": "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS",
       "urna_efetivada": "2047245",
       "urna_prevista": "2051520",
       "zona": 255
     },
     "71072/328/947": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:00:28",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 57,
+        "efetiva_eventos_apos_17h": 1,
+        "outra_urna_eventos_antes_17h": 255,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "SÃO PAULO",
+      "referencias_extras_no_vsc": 7,
       "secao": 947,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1825638",
       "urna_prevista": "1820677",
       "zona": 328
     },
     "71072/381/82": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:01:36",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 223,
+        "efetiva_eventos_apos_17h": 1,
+        "outra_urna_eventos_antes_17h": 33,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "SÃO PAULO",
+      "referencias_extras_no_vsc": 7,
       "secao": 82,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1815864",
       "urna_prevista": "1816499",
       "zona": 381
     },
     "71072/408/407": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:01:03",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 301,
+        "efetiva_eventos_apos_17h": 3
+      },
       "hashes_conferidos": 4,
       "municipio": "SÃO PAULO",
+      "referencias_extras_no_vsc": 7,
       "secao": 407,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1823749",
       "urna_prevista": "1821950",
       "zona": 408
     },
     "71455/342/219": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:18:37",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 107,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 162,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "SOROCABA",
+      "referencias_extras_no_vsc": 7,
       "secao": 219,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2144045",
       "urna_prevista": "2147746",
       "zona": 342
@@ -169,8 +259,9 @@
   },
   "selecionadas": 14,
   "sintese": {
-    "INCONCLUSIVO": 14
+    "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS": 5,
+    "URNA_EFETIVADA_ATIVA_ANTES_17H": 9
   },
-  "status": "PARCIAL",
+  "status": "CONCLUIDO",
   "uf": "SP"
 }

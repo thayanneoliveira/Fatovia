@@ -1,5 +1,5 @@
 {
-  "data_utc": "2026-10-29T14:25:01.988126+00:00",
+  "data_utc": "2026-10-29T14:26:13.457496+00:00",
   "erros": [],
   "examinadas": 29,
   "limitacoes": [
@@ -13,320 +13,499 @@
   "range_requisicoes": 44,
   "secoes": {
     "58378/104/209": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:05:06",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 308,
+        "efetiva_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "ITABORAÍ",
+      "referencias_extras_no_vsc": 7,
       "secao": 209,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2440934",
       "urna_prevista": "2469657",
       "zona": 104
     },
     "58378/104/268": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:01:27",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 195,
+        "efetiva_eventos_apos_17h": 2
+      },
       "hashes_conferidos": 4,
       "municipio": "ITABORAÍ",
+      "referencias_extras_no_vsc": 7,
       "secao": 268,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2448548",
       "urna_prevista": "2459653",
       "zona": 104
     },
     "58637/221/32": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:11:46",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 140,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 129,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "NILÓPOLIS",
+      "referencias_extras_no_vsc": 7,
       "secao": 32,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1671527",
       "urna_prevista": "1782057",
       "zona": 221
     },
     "58653/144/101": {
+      "arquivos_logd": 3,
       "encerramento_bweb": "2026-10-25 17:50:06",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 200,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 13,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "NITERÓI",
+      "referencias_extras_no_vsc": 7,
       "secao": 101,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2015151",
       "urna_prevista": "2179297",
       "zona": 144
     },
     "58653/144/20": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:46:52",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 185,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 26,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "NITERÓI",
+      "referencias_extras_no_vsc": 7,
       "secao": 20,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2235275",
       "urna_prevista": "2231704",
       "zona": 144
     },
     "58653/144/247": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:57:04",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 181,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 98,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "NITERÓI",
+      "referencias_extras_no_vsc": 7,
       "secao": 247,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2226853",
       "urna_prevista": "2219678",
       "zona": 144
     },
     "58653/144/3": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:46:01",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 16,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 231,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "NITERÓI",
+      "referencias_extras_no_vsc": 7,
       "secao": 3,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2190742",
       "urna_prevista": "2045947",
       "zona": 144
     },
     "58653/144/39": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:50:27",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 223,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 13,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "NITERÓI",
+      "referencias_extras_no_vsc": 7,
       "secao": 39,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2238825",
       "urna_prevista": "2028108",
       "zona": 144
     },
     "58653/199/234": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:20:13",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 99,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 169,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "NITERÓI",
+      "referencias_extras_no_vsc": 7,
       "secao": 234,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2226737",
       "urna_prevista": "2228725",
       "zona": 199
     },
     "58653/71/284": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:01:05",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 70,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 57,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "NITERÓI",
+      "referencias_extras_no_vsc": 7,
       "secao": 284,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2239767",
       "urna_prevista": "2177926",
       "zona": 71
     },
     "58971/135/318": {
+      "arquivos_logd": 5,
       "encerramento_bweb": "2026-10-25 19:01:26",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 168,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 48,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "SÃO GONÇALO",
+      "referencias_extras_no_vsc": 7,
       "secao": 318,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2163673",
       "urna_prevista": "2042684",
       "zona": 135
     },
     "58971/135/322": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:01:09",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 131,
+        "efetiva_eventos_apos_17h": 1,
+        "outra_urna_eventos_antes_17h": 86,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "SÃO GONÇALO",
+      "referencias_extras_no_vsc": 7,
       "secao": 322,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2178658",
       "urna_prevista": "2223558",
       "zona": 135
     },
     "60011/161/25": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:10:41",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 189,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 128,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "RIO DE JANEIRO",
+      "referencias_extras_no_vsc": 7,
       "secao": 25,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1673313",
       "urna_prevista": "1825270",
       "zona": 161
     },
     "60011/169/208": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:11:58",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 312,
+        "efetiva_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "RIO DE JANEIRO",
+      "referencias_extras_no_vsc": 7,
       "secao": 208,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1821691",
       "urna_prevista": "1825819",
       "zona": 169
     },
     "60011/170/333": {
+      "arquivos_logd": 3,
       "encerramento_bweb": "2026-10-25 17:10:32",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 227,
+        "efetiva_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "RIO DE JANEIRO",
+      "referencias_extras_no_vsc": 7,
       "secao": 333,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1664660",
       "urna_prevista": "1795200",
       "zona": 170
     },
     "60011/179/331": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:01:43",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 353,
+        "efetiva_eventos_apos_17h": 1
+      },
       "hashes_conferidos": 4,
       "municipio": "RIO DE JANEIRO",
+      "referencias_extras_no_vsc": 7,
       "secao": 331,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1665849",
       "urna_prevista": "1776138",
       "zona": 179
     },
     "60011/182/122": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:00:48",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 302,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 45,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "RIO DE JANEIRO",
+      "referencias_extras_no_vsc": 7,
       "secao": 122,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1665026",
       "urna_prevista": "1822387",
       "zona": 182
     },
     "60011/204/312": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:00:23",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 45,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 176,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "RIO DE JANEIRO",
+      "referencias_extras_no_vsc": 7,
       "secao": 312,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1788520",
       "urna_prevista": "1797148",
       "zona": 204
     },
     "60011/214/325": {
+      "arquivos_logd": 3,
       "encerramento_bweb": "2026-10-25 19:02:17",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 78,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 228,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "RIO DE JANEIRO",
+      "referencias_extras_no_vsc": 7,
       "secao": 325,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1760689",
       "urna_prevista": "1664203",
       "zona": 214
     },
     "60011/234/50": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:00:41",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 314,
+        "efetiva_eventos_apos_17h": 2
+      },
       "hashes_conferidos": 4,
       "municipio": "RIO DE JANEIRO",
+      "referencias_extras_no_vsc": 7,
       "secao": 50,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2214425",
       "urna_prevista": "2208851",
       "zona": 234
     },
     "60011/238/177": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:00:36",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 248,
+        "efetiva_eventos_apos_17h": 1,
+        "outra_urna_eventos_antes_17h": 99,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "RIO DE JANEIRO",
+      "referencias_extras_no_vsc": 7,
       "secao": 177,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2208765",
       "urna_prevista": "2156623",
       "zona": 238
     },
     "60011/242/118": {
+      "arquivos_logd": 3,
       "encerramento_bweb": "2026-10-25 19:01:11",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 321,
+        "efetiva_eventos_apos_17h": 9
+      },
       "hashes_conferidos": 4,
       "municipio": "RIO DE JANEIRO",
+      "referencias_extras_no_vsc": 7,
       "secao": 118,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2180459",
       "urna_prevista": "2216647",
       "zona": 242
     },
     "60011/245/211": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:01:28",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 251,
+        "efetiva_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "RIO DE JANEIRO",
+      "referencias_extras_no_vsc": 7,
       "secao": 211,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2217182",
       "urna_prevista": "2217415",
       "zona": 245
     },
     "60011/245/93": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:03:57",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 351,
+        "efetiva_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "RIO DE JANEIRO",
+      "referencias_extras_no_vsc": 7,
       "secao": 93,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2216817",
       "urna_prevista": "2216744",
       "zona": 245
     },
     "60011/9/236": {
+      "arquivos_logd": 4,
       "encerramento_bweb": "2026-10-25 19:00:28",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 333,
+        "efetiva_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "RIO DE JANEIRO",
+      "referencias_extras_no_vsc": 7,
       "secao": 236,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1666896",
       "urna_prevista": "1671776",
       "zona": 9
     },
     "60011/9/262": {
+      "arquivos_logd": 3,
       "encerramento_bweb": "2026-10-25 19:04:56",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 135,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 204,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "RIO DE JANEIRO",
+      "referencias_extras_no_vsc": 7,
       "secao": 262,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1658641",
       "urna_prevista": "1812905",
       "zona": 9
     },
     "60011/9/273": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:00:01",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 348,
+        "efetiva_eventos_apos_17h": 1
+      },
       "hashes_conferidos": 4,
       "municipio": "RIO DE JANEIRO",
+      "referencias_extras_no_vsc": 7,
       "secao": 273,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1677975",
       "urna_prevista": "1781276",
       "zona": 9
     },
     "60011/9/360": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:00:24",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 328,
+        "efetiva_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "RIO DE JANEIRO",
+      "referencias_extras_no_vsc": 7,
       "secao": 360,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1650927",
       "urna_prevista": "1762620",
       "zona": 9
     },
     "60011/9/449": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:00:55",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 354,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 16,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "RIO DE JANEIRO",
+      "referencias_extras_no_vsc": 7,
       "secao": 449,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1667314",
       "urna_prevista": "1824767",
       "zona": 9
@@ -334,8 +513,8 @@
   },
   "selecionadas": 29,
   "sintese": {
-    "INCONCLUSIVO": 29
+    "URNA_EFETIVADA_ATIVA_ANTES_17H": 29
   },
-  "status": "PARCIAL",
+  "status": "CONCLUIDO",
   "uf": "RJ"
 }

@@ -1,5 +1,5 @@
 {
-  "data_utc": "2026-10-29T14:25:01.695039+00:00",
+  "data_utc": "2026-10-29T14:26:11.994141+00:00",
   "erros": [],
   "examinadas": 5,
   "limitacoes": [
@@ -13,56 +13,91 @@
   "range_requisicoes": 15,
   "secoes": {
     "74357/50/390": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:29:25",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 0,
+        "efetiva_eventos_apos_17h": 1,
+        "outra_urna_eventos_antes_17h": 215,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "ARAUCÁRIA",
+      "referencias_extras_no_vsc": 7,
       "secao": 390,
-      "status": "INCONCLUSIVO",
+      "status": "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS",
       "urna_efetivada": "2142598",
       "urna_prevista": "2092201",
       "zona": 50
     },
     "74810/9/93": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:16:02",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 0,
+        "efetiva_eventos_apos_17h": 1,
+        "outra_urna_eventos_antes_17h": 281,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "CAMPO LARGO",
+      "referencias_extras_no_vsc": 7,
       "secao": 93,
-      "status": "INCONCLUSIVO",
+      "status": "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS",
       "urna_efetivada": "2092750",
       "urna_prevista": "2124046",
       "zona": 9
     },
     "76635/85/150": {
+      "arquivos_logd": 3,
       "encerramento_bweb": "2026-10-25 17:18:45",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 203,
+        "efetiva_eventos_apos_17h": 2,
+        "outra_urna_eventos_antes_17h": 24,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "LOANDA",
+      "referencias_extras_no_vsc": 7,
       "secao": 150,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1680883",
       "urna_prevista": "1678080",
       "zona": 85
     },
     "77771/14/51": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:02:08",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 0,
+        "efetiva_eventos_apos_17h": 1,
+        "outra_urna_eventos_antes_17h": 284,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "PONTA GROSSA",
+      "referencias_extras_no_vsc": 7,
       "secao": 51,
-      "status": "INCONCLUSIVO",
+      "status": "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS",
       "urna_efetivada": "2066392",
       "urna_prevista": "2096608",
       "zona": 14
     },
     "79278/75/362": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:13:50",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 197,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 82,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "TOLEDO",
+      "referencias_extras_no_vsc": 7,
       "secao": 362,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1678199",
       "urna_prevista": "1778322",
       "zona": 75
@@ -70,8 +105,9 @@
   },
   "selecionadas": 5,
   "sintese": {
-    "INCONCLUSIVO": 5
+    "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS": 3,
+    "URNA_EFETIVADA_ATIVA_ANTES_17H": 2
   },
-  "status": "PARCIAL",
+  "status": "CONCLUIDO",
   "uf": "PR"
 }

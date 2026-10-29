@@ -1,5 +1,5 @@
 {
-  "data_utc": "2026-10-29T14:24:15.507286+00:00",
+  "data_utc": "2026-10-29T14:25:24.199044+00:00",
   "erros": [],
   "examinadas": 24,
   "limitacoes": [
@@ -13,265 +13,421 @@
   "range_requisicoes": 40,
   "secoes": {
     "34290/127/365": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:12:01",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 65,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 50,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "CANDEIAS",
+      "referencias_extras_no_vsc": 7,
       "secao": 365,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1650233",
       "urna_prevista": "1654578",
       "zona": 127
     },
     "35270/84/16": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:16:11",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 164,
+        "efetiva_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "GLÓRIA",
+      "referencias_extras_no_vsc": 7,
       "secao": 16,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1656197",
       "urna_prevista": "1808895",
       "zona": 84
     },
     "35599/24/195": {
+      "arquivos_logd": 3,
       "encerramento_bweb": "2026-10-25 17:12:35",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 247,
+        "efetiva_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "IBIRATAIA",
+      "referencias_extras_no_vsc": 7,
       "secao": 195,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2239569",
       "urna_prevista": "2043461",
       "zona": 24
     },
     "36854/180/19": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:00:45",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 0,
+        "efetiva_eventos_apos_17h": 9,
+        "outra_urna_eventos_antes_17h": 325,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "LAURO DE FREITAS",
+      "referencias_extras_no_vsc": 7,
       "secao": 19,
-      "status": "INCONCLUSIVO",
+      "status": "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS",
       "urna_efetivada": "1668737",
       "urna_prevista": "1672480",
       "zona": 180
     },
     "36854/180/288": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:01:44",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 0,
+        "efetiva_eventos_apos_17h": 3,
+        "outra_urna_eventos_antes_17h": 327,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "LAURO DE FREITAS",
+      "referencias_extras_no_vsc": 7,
       "secao": 288,
-      "status": "INCONCLUSIVO",
+      "status": "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS",
       "urna_efetivada": "1668918",
       "urna_prevista": "1667370",
       "zona": 180
     },
     "36854/180/332": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:15:46",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 276,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 13,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "LAURO DE FREITAS",
+      "referencias_extras_no_vsc": 7,
       "secao": 332,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1653191",
       "urna_prevista": "1650894",
       "zona": 180
     },
     "36854/180/561": {
+      "arquivos_logd": 3,
       "encerramento_bweb": "2026-10-25 19:00:22",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 351,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 7,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "LAURO DE FREITAS",
+      "referencias_extras_no_vsc": 7,
       "secao": 561,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1676612",
       "urna_prevista": "1657849",
       "zona": 180
     },
     "38059/200/119": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:15:56",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 27,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 228,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "POJUCA",
+      "referencias_extras_no_vsc": 7,
       "secao": 119,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2242976",
       "urna_prevista": "2230731",
       "zona": 200
     },
     "38458/87/193": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 18:58:49",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "outra_urna_eventos_antes_17h": 242,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "RUY BARBOSA",
+      "referencias_extras_no_vsc": 7,
       "secao": 193,
-      "status": "INCONCLUSIVO",
+      "status": "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS",
       "urna_efetivada": "2195558",
       "urna_prevista": "2129342",
       "zona": 87
     },
     "38490/1/1": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:01:26",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 0,
+        "efetiva_eventos_apos_17h": 3,
+        "outra_urna_eventos_antes_17h": 332,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "SALVADOR",
+      "referencias_extras_no_vsc": 7,
       "secao": 1,
-      "status": "INCONCLUSIVO",
+      "status": "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS",
       "urna_efetivada": "2380929",
       "urna_prevista": "2428153",
       "zona": 1
     },
     "38490/10/508": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:00:35",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 100,
+        "efetiva_eventos_apos_17h": 1,
+        "outra_urna_eventos_antes_17h": 251,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "SALVADOR",
+      "referencias_extras_no_vsc": 7,
       "secao": 508,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2428854",
       "urna_prevista": "2391215",
       "zona": 10
     },
     "38490/19/450": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:00:25",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 297,
+        "efetiva_eventos_apos_17h": 1
+      },
       "hashes_conferidos": 4,
       "municipio": "SALVADOR",
+      "referencias_extras_no_vsc": 7,
       "secao": 450,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2387642",
       "urna_prevista": "2429338",
       "zona": 19
     },
     "38490/19/71": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:03:41",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 363,
+        "efetiva_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "SALVADOR",
+      "referencias_extras_no_vsc": 7,
       "secao": 71,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2327816",
       "urna_prevista": "2352441",
       "zona": 19
     },
     "38490/4/181": {
+      "arquivos_logd": 3,
       "encerramento_bweb": "2026-10-25 19:00:14",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 340,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 1,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "SALVADOR",
+      "referencias_extras_no_vsc": 7,
       "secao": 181,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2408446",
       "urna_prevista": "2426848",
       "zona": 4
     },
     "38490/5/422": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:08:20",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 69,
+        "efetiva_eventos_apos_17h": 1,
+        "outra_urna_eventos_antes_17h": 227,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "SALVADOR",
+      "referencias_extras_no_vsc": 7,
       "secao": 422,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2354112",
       "urna_prevista": "2429315",
       "zona": 5
     },
     "38490/5/439": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:02:53",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 245,
+        "efetiva_eventos_apos_17h": 4,
+        "outra_urna_eventos_antes_17h": 105,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "SALVADOR",
+      "referencias_extras_no_vsc": 7,
       "secao": 439,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2427439",
       "urna_prevista": "2352608",
       "zona": 5
     },
     "38490/6/367": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:10:05",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 273,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 54,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "SALVADOR",
+      "referencias_extras_no_vsc": 7,
       "secao": 367,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2429154",
       "urna_prevista": "2250622",
       "zona": 6
     },
     "38490/6/491": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:12:06",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 267,
+        "efetiva_eventos_apos_17h": 2,
+        "outra_urna_eventos_antes_17h": 71,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "SALVADOR",
+      "referencias_extras_no_vsc": 7,
       "secao": 491,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2275211",
       "urna_prevista": "2424079",
       "zona": 6
     },
     "38873/36/199": {
+      "arquivos_logd": 3,
       "encerramento_bweb": "2026-10-25 18:51:54",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 83,
+        "efetiva_eventos_apos_17h": 22,
+        "outra_urna_eventos_antes_17h": 129,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "SÃO MIGUEL DAS MATAS",
+      "referencias_extras_no_vsc": 7,
       "secao": 199,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2212032",
       "urna_prevista": "2072571",
       "zona": 36
     },
     "38946/178/179": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:19:20",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 268,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 12,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "SAUBARA",
+      "referencias_extras_no_vsc": 7,
       "secao": 179,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1658820",
       "urna_prevista": "1656755",
       "zona": 178
     },
     "38946/178/187": {
+      "arquivos_logd": 3,
       "encerramento_bweb": "2026-10-25 17:13:09",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 189,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 117,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "SAUBARA",
+      "referencias_extras_no_vsc": 7,
       "secao": 187,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1652779",
       "urna_prevista": "1665609",
       "zona": 178
     },
     "39098/150/269": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:26:14",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 0,
+        "efetiva_eventos_apos_17h": 13,
+        "outra_urna_eventos_antes_17h": 194,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "SERRINHA",
+      "referencias_extras_no_vsc": 7,
       "secao": 269,
-      "status": "INCONCLUSIVO",
+      "status": "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS",
       "urna_efetivada": "1674375",
       "urna_prevista": "1757122",
       "zona": 150
     },
     "39136/33/100": {
+      "arquivos_logd": 3,
       "encerramento_bweb": "2026-10-25 19:00:45",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 0,
+        "efetiva_eventos_apos_17h": 6,
+        "outra_urna_eventos_antes_17h": 323,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "SIMÕES FILHO",
+      "referencias_extras_no_vsc": 7,
       "secao": 100,
-      "status": "INCONCLUSIVO",
+      "status": "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS",
       "urna_efetivada": "1664439",
       "urna_prevista": "1655209",
       "zona": 33
     },
     "39578/31/20": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:10:10",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 288,
+        "efetiva_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "VALENÇA",
+      "referencias_extras_no_vsc": 7,
       "secao": 20,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1758545",
       "urna_prevista": "1791608",
       "zona": 31
@@ -279,8 +435,9 @@
   },
   "selecionadas": 24,
   "sintese": {
-    "INCONCLUSIVO": 24
+    "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS": 6,
+    "URNA_EFETIVADA_ATIVA_ANTES_17H": 18
   },
-  "status": "PARCIAL",
+  "status": "CONCLUIDO",
   "uf": "BA"
 }

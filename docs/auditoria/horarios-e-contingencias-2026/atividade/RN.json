@@ -1,5 +1,5 @@
 {
-  "data_utc": "2026-10-29T14:25:10.408793+00:00",
+  "data_utc": "2026-10-29T14:26:15.256055+00:00",
   "erros": [],
   "examinadas": 1,
   "limitacoes": [
@@ -13,12 +13,19 @@
   "range_requisicoes": 4,
   "secoes": {
     "17612/3/122": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:00:53",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 0,
+        "efetiva_eventos_apos_17h": 5,
+        "outra_urna_eventos_antes_17h": 340,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "NATAL",
+      "referencias_extras_no_vsc": 7,
       "secao": 122,
-      "status": "INCONCLUSIVO",
+      "status": "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS",
       "urna_efetivada": "1794136",
       "urna_prevista": "1764406",
       "zona": 3
@@ -26,8 +33,8 @@
   },
   "selecionadas": 1,
   "sintese": {
-    "INCONCLUSIVO": 1
+    "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS": 1
   },
-  "status": "PARCIAL",
+  "status": "CONCLUIDO",
   "uf": "RN"
 }

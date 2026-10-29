@@ -1,5 +1,5 @@
 {
-  "data_utc": "2026-10-29T14:24:45.786487+00:00",
+  "data_utc": "2026-10-29T14:25:56.325207+00:00",
   "erros": [],
   "examinadas": 6,
   "limitacoes": [
@@ -13,67 +13,105 @@
   "range_requisicoes": 10,
   "secoes": {
     "20516/64/312": {
+      "arquivos_logd": 3,
       "encerramento_bweb": "2026-10-25 17:15:50",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 217,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 14,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "JOÃO PESSOA",
+      "referencias_extras_no_vsc": 7,
       "secao": 312,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1699559",
       "urna_prevista": "1659302",
       "zona": 64
     },
     "20516/76/183": {
+      "arquivos_logd": 3,
       "encerramento_bweb": "2026-10-25 19:01:24",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 331,
+        "efetiva_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "JOÃO PESSOA",
+      "referencias_extras_no_vsc": 7,
       "secao": 183,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1666922",
       "urna_prevista": "1673004",
       "zona": 76
     },
     "20516/76/20": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:00:33",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 156,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 168,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "JOÃO PESSOA",
+      "referencias_extras_no_vsc": 7,
       "secao": 20,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1672709",
       "urna_prevista": "1794521",
       "zona": 76
     },
     "20516/76/256": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:00:39",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 37,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 267,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "JOÃO PESSOA",
+      "referencias_extras_no_vsc": 7,
       "secao": 256,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1654241",
       "urna_prevista": "1800339",
       "zona": 76
     },
     "20516/76/270": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:00:21",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 286,
+        "efetiva_eventos_apos_17h": 1
+      },
       "hashes_conferidos": 4,
       "municipio": "JOÃO PESSOA",
+      "referencias_extras_no_vsc": 7,
       "secao": 270,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1652814",
       "urna_prevista": "1671248",
       "zona": 76
     },
     "20516/76/305": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 19:00:43",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 171,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 152,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "JOÃO PESSOA",
+      "referencias_extras_no_vsc": 7,
       "secao": 305,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1681234",
       "urna_prevista": "1800499",
       "zona": 76
@@ -81,8 +119,8 @@
   },
   "selecionadas": 6,
   "sintese": {
-    "INCONCLUSIVO": 6
+    "URNA_EFETIVADA_ATIVA_ANTES_17H": 6
   },
-  "status": "PARCIAL",
+  "status": "CONCLUIDO",
   "uf": "PB"
 }

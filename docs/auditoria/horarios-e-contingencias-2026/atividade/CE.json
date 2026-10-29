@@ -1,5 +1,5 @@
 {
-  "data_utc": "2026-10-29T14:24:14.874386+00:00",
+  "data_utc": "2026-10-29T14:25:28.278679+00:00",
   "erros": [],
   "examinadas": 6,
   "limitacoes": [
@@ -13,67 +13,107 @@
   "range_requisicoes": 15,
   "secoes": {
     "13897/114/51": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:17:18",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 0,
+        "efetiva_eventos_apos_17h": 7,
+        "outra_urna_eventos_antes_17h": 315,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "FORTALEZA",
+      "referencias_extras_no_vsc": 7,
       "secao": 51,
-      "status": "INCONCLUSIVO",
+      "status": "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS",
       "urna_efetivada": "2452531",
       "urna_prevista": "2299608",
       "zona": 114
     },
     "14354/72/96": {
+      "arquivos_logd": 3,
       "encerramento_bweb": "2026-10-25 17:21:58",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 0,
+        "efetiva_eventos_apos_17h": 14,
+        "outra_urna_eventos_antes_17h": 74,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "JAGUARETAMA",
+      "referencias_extras_no_vsc": 7,
       "secao": 96,
-      "status": "INCONCLUSIVO",
+      "status": "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS",
       "urna_efetivada": "1818768",
       "urna_prevista": "1767162",
       "zona": 72
     },
     "14958/57/73": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:21:20",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 284,
+        "efetiva_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "PACATUBA",
+      "referencias_extras_no_vsc": 7,
       "secao": 73,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2452269",
       "urna_prevista": "2395842",
       "zona": 57
     },
     "15857/122/233": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:33:58",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 0,
+        "efetiva_eventos_apos_17h": 3,
+        "outra_urna_eventos_antes_17h": 302,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "MARACANAÚ",
+      "referencias_extras_no_vsc": 7,
       "secao": 233,
-      "status": "INCONCLUSIVO",
+      "status": "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS",
       "urna_efetivada": "2285803",
       "urna_prevista": "2275087",
       "zona": 122
     },
     "15890/30/208": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:17:42",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 0,
+        "efetiva_eventos_apos_17h": 3,
+        "outra_urna_eventos_antes_17h": 271,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "CRUZ",
+      "referencias_extras_no_vsc": 7,
       "secao": 208,
-      "status": "INCONCLUSIVO",
+      "status": "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS",
       "urna_efetivada": "2207397",
       "urna_prevista": "2239889",
       "zona": 30
     },
     "98574/65/153": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:50:25",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 0,
+        "efetiva_eventos_apos_17h": 4,
+        "outra_urna_eventos_antes_17h": 273,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "VARJOTA",
+      "referencias_extras_no_vsc": 7,
       "secao": 153,
-      "status": "INCONCLUSIVO",
+      "status": "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS",
       "urna_efetivada": "1657912",
       "urna_prevista": "1754756",
       "zona": 65
@@ -81,8 +121,9 @@
   },
   "selecionadas": 6,
   "sintese": {
-    "INCONCLUSIVO": 6
+    "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS": 5,
+    "URNA_EFETIVADA_ATIVA_ANTES_17H": 1
   },
-  "status": "PARCIAL",
+  "status": "CONCLUIDO",
   "uf": "CE"
 }

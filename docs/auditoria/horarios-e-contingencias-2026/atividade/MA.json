@@ -1,5 +1,5 @@
 {
-  "data_utc": "2026-10-29T14:24:31.528698+00:00",
+  "data_utc": "2026-10-29T14:25:43.999065+00:00",
   "erros": [],
   "examinadas": 6,
   "limitacoes": [
@@ -13,67 +13,105 @@
   "range_requisicoes": 11,
   "secoes": {
     "7536/26/73": {
+      "arquivos_logd": 3,
       "encerramento_bweb": "2026-10-25 17:21:26",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 0,
+        "efetiva_eventos_apos_17h": 8,
+        "outra_urna_eventos_antes_17h": 262,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "CAROLINA",
+      "referencias_extras_no_vsc": 7,
       "secao": 73,
-      "status": "INCONCLUSIVO",
+      "status": "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS",
       "urna_efetivada": "2307161",
       "urna_prevista": "2288559",
       "zona": 26
     },
     "8486/6/171": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:21:47",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 6,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 245,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "SENADOR ALEXANDRE COSTA",
+      "referencias_extras_no_vsc": 7,
       "secao": 171,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2258302",
       "urna_prevista": "2263151",
       "zona": 6
     },
     "8524/107/89": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:42:33",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 0,
+        "efetiva_eventos_apos_17h": 1,
+        "outra_urna_eventos_antes_17h": 74,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "SERRANO DO MARANHÃO",
+      "referencias_extras_no_vsc": 7,
       "secao": 89,
-      "status": "INCONCLUSIVO",
+      "status": "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS",
       "urna_efetivada": "2129006",
       "urna_prevista": "2136092",
       "zona": 107
     },
     "8893/47/368": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:13:49",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 224,
+        "efetiva_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "SÃO JOSÉ DE RIBAMAR",
+      "referencias_extras_no_vsc": 7,
       "secao": 368,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1653638",
       "urna_prevista": "1675654",
       "zona": 47
     },
     "9210/76/387": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:22:39",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 231,
+        "efetiva_eventos_apos_17h": 0,
+        "outra_urna_eventos_antes_17h": 45,
+        "outra_urna_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "SÃO LUÍS",
+      "referencias_extras_no_vsc": 7,
       "secao": 387,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "1699839",
       "urna_prevista": "1812151",
       "zona": 76
     },
     "9377/19/545": {
+      "arquivos_logd": 2,
       "encerramento_bweb": "2026-10-25 17:15:40",
-      "erro": "ValueError: Hashes individuais VSC não coincidem",
+      "eventos_log": {
+        "efetiva_eventos_antes_17h": 274,
+        "efetiva_eventos_apos_17h": 0
+      },
       "hashes_conferidos": 4,
       "municipio": "TIMON",
+      "referencias_extras_no_vsc": 7,
       "secao": 545,
-      "status": "INCONCLUSIVO",
+      "status": "URNA_EFETIVADA_ATIVA_ANTES_17H",
       "urna_efetivada": "2305703",
       "urna_prevista": "2310430",
       "zona": 19
@@ -81,8 +119,9 @@
   },
   "selecionadas": 6,
   "sintese": {
-    "INCONCLUSIVO": 6
+    "SEM_EVENTO_PRE17H_URNA_EFETIVADA_NOS_LOGS_PUBLICOS": 2,
+    "URNA_EFETIVADA_ATIVA_ANTES_17H": 4
   },
-  "status": "PARCIAL",
+  "status": "CONCLUIDO",
   "uf": "MA"
 }
