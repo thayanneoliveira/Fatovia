@@ -55,7 +55,7 @@ def run(indir,outdir):
         n=totals["total"]
         s=totals["trocadas"]
         a=totals[anycount]
-        intersection=totals[swap]
+        intersection=totals.get(swap,0)
         ratios[label]={
             "secoes_trocadas_total":s,
             "secoes_apos_corte":a,
@@ -65,12 +65,13 @@ def run(indir,outdir):
                 (a-intersection)/(n-s) if n>s else None),
             "comparacao_somente_descritiva":True,
         }
-    if len(byuf)!=28:
-        status="INCONCLUSIVO_PENDENCIAS"
+    domestic_done=all(uf in byuf for uf in UF_TSE_1710)
+    if not domestic_done:
+        status="INCONCLUSIVO_PENDENCIAS_NACIONAIS"
     elif any(not item.get("horario_do_bweb_conferido_com_tse",True) for item in byuf.values()):
-        status="CRUZAMENTO_EXECUTADO_VALIDACAO_TSE_PENDENTE"
+        status="BRASIL_CRUZAMENTO_EXECUTADO_VALIDACAO_CRITERIO_TSE_PENDENTE"
     else:
-        status="CRUZAMENTO_TEMPORAL_VALIDADO"
+        status="BRASIL_CRUZAMENTO_TEMPORAL_CONFERIDO"
     report={
         "projeto":"FATOVIA AUDITA","gerado_utc":datetime.now(timezone.utc).isoformat(),
         "status":status,"ufs_processadas":len(byuf),"ufs_pendentes":absent,
@@ -104,13 +105,13 @@ def run(indir,outdir):
     ]
     for uf,x in sorted(byuf.items()):
         md.append(f"| {uf} | {x['total']:,} | {x['trocadas']:,} | "
-             f"{x['depois_17h10']:,} | {x['trocadas_encerradas_depois_17h10']:,} | "
+             f"{x.get('depois_17h10',0):,} | {x.get('trocadas_encerradas_depois_17h10',0):,} | "
              f"{x.get('tse_secoes_encerradas_depois_17h10','n/a')} | "
              f"{'sim' if x.get('horario_do_bweb_conferido_com_tse',True) else 'não'} |")
     md+=["","## Total nacional (incluindo exterior, se disponível)","",
          f"- Seções com números diferentes de urna prevista e efetivada: {totals['trocadas']:,}.",
-         f"- Seções com essa diferença e encerramento após 17h10: {totals['trocadas_encerradas_depois_17h10']:,}.",
-         f"- Seções com essa diferença e encerramento após 19h: {totals['trocadas_encerradas_depois_19h']:,}.",
+         f"- Seções com essa diferença e encerramento após 17h10: {totals.get('trocadas_encerradas_depois_17h10',0):,}.",
+         f"- Seções com essa diferença e encerramento após 19h: {totals.get('trocadas_encerradas_depois_19h',0):,}.",
          "","## Ressalvas e solicitações objetivas",""]
     md.extend("- "+x for x in report["limites"])
     md+=["","Para estabelecer se ocorreu troca DEPOIS das 17h, solicitar a ata, horário do Ocorre JE, identificação das urnas anterior/efetiva e logs originais assinados.",
