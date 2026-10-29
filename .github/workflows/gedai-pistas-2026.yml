@@ -1,0 +1,57 @@
+name: "FatoVia | Gedai segunda camada e vinculo de urnas"
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/gedai-pistas-2026.yml"
+permissions:
+  contents: write
+jobs:
+  pistas:
+    name: "Gedai pistas ${{ matrix.uf }}"
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        uf: [AL, BA, CE, DF, ES, GO, MA, MG, PA, PB, PE, PI, PR, RJ, RN, RS, SE, SP]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Ler Gedai 24 25 e comparar referencia do equipamento
+        run: python -u -m auditoria.gedai_pistas_2026 --uf ${{ matrix.uf }} --csv docs/auditoria/horarios-e-contingencias-2026/ufs/${{ matrix.uf }}.csv --out work/gedai-pistas
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fatovia-gedai-urna-${{ matrix.uf }}
+          path: work/gedai-pistas
+          if-no-files-found: warn
+          retention-days: 90
+  publicar:
+    needs: pistas
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: fatovia-gedai-urna-*
+          merge-multiple: true
+          path: work/pistas
+        continue-on-error: true
+      - name: Publicar evidencias Gedai agregadas
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+          mkdir -p docs/auditoria/gedai-2026/ufs
+          cp work/pistas/*.json docs/auditoria/gedai-2026/ufs/ 2>/dev/null || true
+          git config user.name "fatovia-audita[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/auditoria/gedai-2026
+          if ! git diff --cached --quiet; then
+            git commit -m "docs(auditoria): logs Gedai preparacao e referencias a urnas [skip ci]"
+            git push origin HEAD:main
+          fi
