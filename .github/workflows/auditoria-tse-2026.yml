@@ -34,6 +34,8 @@ jobs:
         run: python auditoria-tse-2026/auditar_eventos_jez.py
       - name: Cruzar correspondencias esperadas efetivadas e BU
         run: python auditoria-tse-2026/auditar_cruzamentos.py
+      - name: Correlacionar 30 alteracoes planejadas com GEDAI
+        run: python auditoria-tse-2026/correlacionar_30.py
       - name: Salvar evidencias de resultado
         if: always()
         uses: actions/upload-artifact@v4
@@ -46,6 +48,8 @@ jobs:
             auditoria-resultados/RESULTADO_EVENTOS.md
             auditoria-resultados/RESULTADO_CRUZAMENTO.json
             auditoria-resultados/RESULTADO_CRUZAMENTO.md
+            auditoria-resultados/RESULTADO_CORRELACOES.json
+            auditoria-resultados/RESULTADO_CORRELACOES.md
           if-no-files-found: warn
       - name: Registrar relatorio no ramo de auditoria
         if: always()
@@ -56,6 +60,7 @@ jobs:
             git add auditoria-resultados/RESULTADO_GEDAI.json auditoria-resultados/RESULTADO_GEDAI.md
             git add auditoria-resultados/RESULTADO_EVENTOS.json auditoria-resultados/RESULTADO_EVENTOS.md 2>/dev/null || true
             git add auditoria-resultados/RESULTADO_CRUZAMENTO.json auditoria-resultados/RESULTADO_CRUZAMENTO.md 2>/dev/null || true
+            git add auditoria-resultados/RESULTADO_CORRELACOES.json auditoria-resultados/RESULTADO_CORRELACOES.md 2>/dev/null || true
             if ! git diff --cached --quiet; then
               git commit -m "Registrar auditoria GEDAI com proveniencia e hashes"
               git push origin HEAD:auditoria-tse-2026
