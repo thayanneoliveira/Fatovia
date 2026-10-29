@@ -1,0 +1,1396 @@
+{
+  "run_utc": "2026-10-29T16:23:54.408716+00:00",
+  "states": {
+    "MG": {
+      "sources": {
+        "24": {
+          "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/correspesp/CESP_2t_MG_241020261231.zip",
+          "bytes": 3350542,
+          "sha512_local": "16d992d2103df59b8cf906f4913d3bee4cd80adfb370720826d8bf5332a658704e4e6d51b1320277aa86c71bc5bbf248e4901d9d2d693b9146083cf4f3cd5a03",
+          "hash_expected": "16d992d2103df59b8cf906f4913d3bee4cd80adfb370720826d8bf5332a658704e4e6d51b1320277aa86c71bc5bbf248e4901d9d2d693b9146083cf4f3cd5a03",
+          "sha512_status": "MATCH",
+          "members": [
+            {
+              "file": "csec_2t_MG_241020261231.csv",
+              "delimiter": ";",
+              "columns": [
+                "DT_GERACAO",
+                "HH_GERACAO",
+                "AA_ELEICAO",
+                "CD_PLEITO",
+                "SG_UF",
+                "CD_MUNICIPIO",
+                "NM_MUNICIPIO",
+                "NR_ZONA",
+                "NR_SECAO",
+                "NR_LOCAL_VOTACAO",
+                "NR_URNA_ESPERADA",
+                "CD_CARGA_URNA_ESPERADA",
+                "CD_FLASHCARD_URNA_ESPERADA",
+                "DT_CARGA_URNA_ESPERADA",
+                "ST_CORRESP_ALTERADA",
+                "NM_MAQUINA_GERACAO_MIDIA",
+                "NR_SRI_TPM_GERACAO_MIDIA",
+                "NR_SRI_INSTAL_GERACAO_MIDIA",
+                "NM_MAQUINA_TRANSM_CORRESP",
+                "NR_SRI_TPM_TRANSM_CORRESP",
+                "NR_SRI_INSTAL_TRANSM_CORRESP"
+              ],
+              "columns_municipio": "CD_MUNICIPIO",
+              "zona": "NR_ZONA",
+              "secao": "NR_SECAO",
+              "urna": "NR_URNA_ESPERADA"
+            },
+            {
+              "file": "ccont_2t_MG_241020261231.csv",
+              "delimiter": ";",
+              "columns": [
+                "DT_GERACAO",
+                "HH_GERACAO",
+                "AA_ELEICAO",
+                "CD_PLEITO",
+                "SG_UF",
+                "CD_MUNICIPIO",
+                "NM_MUNICIPIO",
+                "NR_ZONA",
+                "NR_URNA_ESPERADA",
+                "CD_CARGA_URNA_ESPERADA",
+                "CD_FLASHCARD_URNA_ESPERADA",
+                "DT_CARGA_URNA_ESPERADA",
+                "ST_CORRESP_ALTERADA",
+                "NM_MAQUINA_GERACAO_MIDIA",
+                "NR_SRI_TPM_GERACAO_MIDIA",
+                "NR_SRI_INSTAL_GERACAO_MIDIA",
+                "NM_MAQUINA_TRANSM_CORRESP",
+                "NR_SRI_TPM_TRANSM_CORRESP",
+                "NR_SRI_INSTAL_TRANSM_CORRESP"
+              ],
+              "columns_municipio": "CD_MUNICIPIO",
+              "zona": "NR_ZONA",
+              "secao": null,
+              "urna": "NR_URNA_ESPERADA"
+            }
+          ],
+          "rows": 52061,
+          "sections": 52061,
+          "conflicts": 0
+        },
+        "25": {
+          "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/correspesp/CESP_2t_MG_251020261345.zip",
+          "bytes": 3410696,
+          "sha512_local": "2fbcaddf57f0e79850e7c047ade96f91d6caa1d8400328aefc326c7c167bde7ae1a272fc174886c09d6fbdd0bc12549bd9c77bdf1eba655b60ca732675f3a70f",
+          "hash_expected": "2fbcaddf57f0e79850e7c047ade96f91d6caa1d8400328aefc326c7c167bde7ae1a272fc174886c09d6fbdd0bc12549bd9c77bdf1eba655b60ca732675f3a70f",
+          "sha512_status": "MATCH",
+          "members": [
+            {
+              "file": "csec_2t_MG_251020261345.csv",
+              "delimiter": ";",
+              "columns": [
+                "DT_GERACAO",
+                "HH_GERACAO",
+                "AA_ELEICAO",
+                "CD_PLEITO",
+                "SG_UF",
+                "CD_MUNICIPIO",
+                "NM_MUNICIPIO",
+                "NR_ZONA",
+                "NR_SECAO",
+                "NR_LOCAL_VOTACAO",
+                "NR_URNA_ESPERADA",
+                "CD_CARGA_URNA_ESPERADA",
+                "CD_FLASHCARD_URNA_ESPERADA",
+                "DT_CARGA_URNA_ESPERADA",
+                "ST_CORRESP_ALTERADA",
+                "NM_MAQUINA_GERACAO_MIDIA",
+                "NR_SRI_TPM_GERACAO_MIDIA",
+                "NR_SRI_INSTAL_GERACAO_MIDIA",
+                "NM_MAQUINA_TRANSM_CORRESP",
+                "NR_SRI_TPM_TRANSM_CORRESP",
+                "NR_SRI_INSTAL_TRANSM_CORRESP"
+              ],
+              "columns_municipio": "CD_MUNICIPIO",
+              "zona": "NR_ZONA",
+              "secao": "NR_SECAO",
+              "urna": "NR_URNA_ESPERADA"
+            },
+            {
+              "file": "ccont_2t_MG_251020261345.csv",
+              "delimiter": ";",
+              "columns": [
+                "DT_GERACAO",
+                "HH_GERACAO",
+                "AA_ELEICAO",
+                "CD_PLEITO",
+                "SG_UF",
+                "CD_MUNICIPIO",
+                "NM_MUNICIPIO",
+                "NR_ZONA",
+                "NR_URNA_ESPERADA",
+                "CD_CARGA_URNA_ESPERADA",
+                "CD_FLASHCARD_URNA_ESPERADA",
+                "DT_CARGA_URNA_ESPERADA",
+                "ST_CORRESP_ALTERADA",
+                "NM_MAQUINA_GERACAO_MIDIA",
+                "NR_SRI_TPM_GERACAO_MIDIA",
+                "NR_SRI_INSTAL_GERACAO_MIDIA",
+                "NM_MAQUINA_TRANSM_CORRESP",
+                "NR_SRI_TPM_TRANSM_CORRESP",
+                "NR_SRI_INSTAL_TRANSM_CORRESP"
+              ],
+              "columns_municipio": "CD_MUNICIPIO",
+              "zona": "NR_ZONA",
+              "secao": null,
+              "urna": "NR_URNA_ESPERADA"
+            }
+          ],
+          "rows": 52062,
+          "sections": 52062,
+          "conflicts": 0
+        },
+        "efetivada": {
+          "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/correspefet/CEFT_2t_MG_261020261201.zip",
+          "bytes": 4580359,
+          "sha512_local": "ecd2d73895c6c28dff74c0f20962528d447f74709f175fbc8eca9d84c010af70c0e43913a4169f5f322844c4d2923584d27e1cd5165f8ae4a69388c0420e499a",
+          "hash_expected": "ecd2d73895c6c28dff74c0f20962528d447f74709f175fbc8eca9d84c010af70c0e43913a4169f5f322844c4d2923584d27e1cd5165f8ae4a69388c0420e499a",
+          "sha512_status": "MATCH",
+          "members": [
+            {
+              "file": "ceft_2t_MG_261020261201.csv",
+              "delimiter": ";",
+              "columns": [
+                "DT_GERACAO",
+                "HH_GERACAO",
+                "AA_ELEICAO",
+                "DT_PLEITO",
+                "CD_PLEITO",
+                "SG_UF",
+                "CD_MUNICIPIO",
+                "NM_MUNICIPIO",
+                "NR_ZONA",
+                "NR_SECAO",
+                "NR_LOCAL_VOTACAO",
+                "SQ_CORRESPONDENCIA_ESPERADA",
+                "NR_URNA_ESPERADA",
+                "CD_CARGA_URNA_ESPERADA",
+                "CD_CARGA_1_URNA_ESPERADA",
+                "CD_CARGA_2_URNA_ESPERADA",
+                "CD_FLASHCARD_URNA_ESPERADA",
+                "DT_CARGA_URNA_ESPERADA",
+                "DT_RECBTO_URNA_ESPERADA",
+                "SQ_CORRESPONDENCIA_EFETIVADA",
+                "NR_URNA_EFETIVADA",
+                "CD_CARGA_URNA_EFETIVADA",
+                "CD_CARGA_1_URNA_EFETIVADA",
+                "CD_CARGA_2_URNA_EFETIVADA",
+                "CD_FLASHCARD_URNA_EFETIVADA",
+                "DT_CARGA_URNA_EFETIVADA",
+                "DT_RECBTO_URNA_EFETIVADA",
+                "CD_ORIGEM_VOTO",
+                "DS_ORIGEM_VOTO",
+                "TP_DIVERGENCIA",
+                "NM_MAQUINA_GERACAO_MIDIA",
+                "NR_SRI_TPM_GERACAO_MIDIA",
+                "NR_SRI_INSTAL_GERACAO_MIDIA",
+                "NM_MAQUINA_TRANSM_CORRESP",
+                "NR_SRI_TPM_TRANSM_CORRESP",
+                "NR_SRI_INSTAL_TRANSM_CORRESP"
+              ],
+              "columns_municipio": "CD_MUNICIPIO",
+              "zona": "NR_ZONA",
+              "secao": "NR_SECAO",
+              "urna": "NR_URNA_EFETIVADA"
+            }
+          ],
+          "rows": 52062,
+          "sections": 52062,
+          "conflicts": 0
+        },
+        "bu": {
+          "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_MG_261020260742.zip",
+          "bytes": 14071007,
+          "sha512_local": "b2123700c7a520ccfb0e1be9aa3bab205c9c5f5b64cd537c80a1eaca69a9b96a67c440c88ca2a0f30f63aeed72a1c9dfca0e5ede8358eca1c64698e0c8054bb9",
+          "hash_expected": "b2123700c7a520ccfb0e1be9aa3bab205c9c5f5b64cd537c80a1eaca69a9b96a67c440c88ca2a0f30f63aeed72a1c9dfca0e5ede8358eca1c64698e0c8054bb9",
+          "sha512_status": "MATCH",
+          "members": [
+            {
+              "file": "bweb_2t_MG_261020260742.csv",
+              "delimiter": ";",
+              "columns": [
+                "DT_GERACAO",
+                "HH_GERACAO",
+                "ANO_ELEICAO",
+                "CD_TIPO_ELEICAO",
+                "NM_TIPO_ELEICAO",
+                "CD_PLEITO",
+                "DT_PLEITO",
+                "NR_TURNO",
+                "CD_ELEICAO",
+                "DS_ELEICAO",
+                "SG_UF",
+                "CD_MUNICIPIO",
+                "NM_MUNICIPIO",
+                "NR_ZONA",
+                "NR_SECAO",
+                "NR_LOCAL_VOTACAO",
+                "CD_CARGO_PERGUNTA",
+                "DS_CARGO_PERGUNTA",
+                "NR_PARTIDO",
+                "SG_PARTIDO",
+                "NM_PARTIDO",
+                "DT_BU_RECEBIDO",
+                "QT_APTOS",
+                "QT_COMPARECIMENTO",
+                "QT_ABSTENCOES",
+                "CD_TIPO_URNA",
+                "DS_TIPO_URNA",
+                "CD_TIPO_VOTAVEL",
+                "DS_TIPO_VOTAVEL",
+                "NR_VOTAVEL",
+                "NM_VOTAVEL",
+                "QT_VOTOS",
+                "NR_URNA_EFETIVADA",
+                "CD_CARGA_1_URNA_EFETIVADA",
+                "CD_CARGA_2_URNA_EFETIVADA",
+                "CD_FLASHCARD_URNA_EFETIVADA",
+                "DT_CARGA_URNA_EFETIVADA",
+                "DS_CARGO_PERGUNTA_SECAO",
+                "DS_SECOES_AGREGADAS",
+                "DT_ABERTURA",
+                "DT_ENCERRAMENTO",
+                "QT_ELEI_BIOM_SEM_HABILITACAO",
+                "DT_EMISSAO_BU",
+                "NR_JUNTA_APURADORA",
+                "NR_TURMA_APURADORA"
+              ],
+              "columns_municipio": "CD_MUNICIPIO",
+              "zona": "NR_ZONA",
+              "secao": "NR_SECAO",
+              "urna": "NR_URNA_EFETIVADA"
+            }
+          ],
+          "rows": 203235,
+          "sections": 52062,
+          "conflicts": 0
+        }
+      },
+      "comparisons": {
+        "24_vs_25": {
+          "sections_previous": 52061,
+          "sections_next": 52062,
+          "only_previous": 0,
+          "only_next": 1,
+          "urn_id_different": 15,
+          "examples_different": [
+            {
+              "mun": "40266",
+              "zona": "348",
+              "secao": "69",
+              "urn_old": "2329571",
+              "urn_new": "2255603"
+            },
+            {
+              "mun": "40312",
+              "zona": "8",
+              "secao": "104",
+              "urn_old": "2448957",
+              "urn_new": "2408768"
+            },
+            {
+              "mun": "40690",
+              "zona": "16",
+              "secao": "263",
+              "urn_old": "2061473",
+              "urn_new": "2091501"
+            },
+            {
+              "mun": "41238",
+              "zona": "33",
+              "secao": "276",
+              "urn_old": "2298912",
+              "urn_new": "2420777"
+            },
+            {
+              "mun": "41238",
+              "zona": "33",
+              "secao": "278",
+              "urn_old": "2269483",
+              "urn_new": "2449784"
+            },
+            {
+              "mun": "41238",
+              "zona": "33",
+              "secao": "283",
+              "urn_old": "2322803",
+              "urn_new": "2255518"
+            },
+            {
+              "mun": "41238",
+              "zona": "34",
+              "secao": "202",
+              "urn_old": "2258132",
+              "urn_new": "2269520"
+            },
+            {
+              "mun": "45730",
+              "zona": "125",
+              "secao": "119",
+              "urn_old": "2089070",
+              "urn_new": "2065232"
+            },
+            {
+              "mun": "46639",
+              "zona": "138",
+              "secao": "10",
+              "urn_old": "2401018",
+              "urn_new": "2415197"
+            },
+            {
+              "mun": "47333",
+              "zona": "153",
+              "secao": "300",
+              "urn_old": "2414203",
+              "urn_new": "2300443"
+            },
+            {
+              "mun": "47511",
+              "zona": "157",
+              "secao": "26",
+              "urn_old": "2253172",
+              "urn_new": "2262880"
+            },
+            {
+              "mun": "47554",
+              "zona": "159",
+              "secao": "111",
+              "urn_old": "2135035",
+              "urn_new": "2084950"
+            },
+            {
+              "mun": "48658",
+              "zona": "317",
+              "secao": "243",
+              "urn_old": "2134304",
+              "urn_new": "2068075"
+            },
+            {
+              "mun": "51071",
+              "zona": "235",
+              "secao": "9",
+              "urn_old": "2276118",
+              "urn_new": "2324635"
+            },
+            {
+              "mun": "53414",
+              "zona": "262",
+              "secao": "55",
+              "urn_old": "1750935",
+              "urn_new": "1776113"
+            }
+          ],
+          "examples_only_previous": [],
+          "examples_only_next": [
+            [
+              "40932",
+              "270",
+              "175"
+            ]
+          ]
+        },
+        "25_vs_efetivada": {
+          "sections_previous": 52062,
+          "sections_next": 52062,
+          "only_previous": 0,
+          "only_next": 0,
+          "urn_id_different": 169,
+          "examples_different": [
+            {
+              "mun": "40045",
+              "zona": "151",
+              "secao": "203",
+              "urn_old": "2066331",
+              "urn_new": "2061206"
+            },
+            {
+              "mun": "40096",
+              "zona": "3",
+              "secao": "100",
+              "urn_old": "2275937",
+              "urn_new": "2274636"
+            },
+            {
+              "mun": "40150",
+              "zona": "64",
+              "secao": "6",
+              "urn_old": "1834384",
+              "urn_new": "1776495"
+            },
+            {
+              "mun": "40282",
+              "zona": "63",
+              "secao": "140",
+              "urn_old": "2096376",
+              "urn_new": "2136884"
+            },
+            {
+              "mun": "40282",
+              "zona": "63",
+              "secao": "81",
+              "urn_old": "2079076",
+              "urn_new": "2091118"
+            },
+            {
+              "mun": "40444",
+              "zona": "63",
+              "secao": "181",
+              "urn_old": "2080079",
+              "urn_new": "2092013"
+            },
+            {
+              "mun": "40550",
+              "zona": "14",
+              "secao": "114",
+              "urn_old": "2069986",
+              "urn_new": "2065131"
+            },
+            {
+              "mun": "40690",
+              "zona": "16",
+              "secao": "128",
+              "urn_old": "2091271",
+              "urn_new": "2070596"
+            },
+            {
+              "mun": "40690",
+              "zona": "16",
+              "secao": "257",
+              "urn_old": "2086579",
+              "urn_new": "2054238"
+            },
+            {
+              "mun": "40690",
+              "zona": "16",
+              "secao": "264",
+              "urn_old": "2129190",
+              "urn_new": "2092884"
+            },
+            {
+              "mun": "40690",
+              "zona": "16",
+              "secao": "267",
+              "urn_old": "2085674",
+              "urn_new": "2097337"
+            },
+            {
+              "mun": "40797",
+              "zona": "17",
+              "secao": "10",
+              "urn_old": "2245186",
+              "urn_new": "2053435"
+            },
+            {
+              "mun": "40827",
+              "zona": "12",
+              "secao": "72",
+              "urn_old": "1651432",
+              "urn_new": "1838803"
+            },
+            {
+              "mun": "41238",
+              "zona": "28",
+              "secao": "300",
+              "urn_old": "2449110",
+              "urn_new": "2404922"
+            },
+            {
+              "mun": "41238",
+              "zona": "28",
+              "secao": "315",
+              "urn_old": "2332437",
+              "urn_new": "2426086"
+            },
+            {
+              "mun": "41238",
+              "zona": "30",
+              "secao": "263",
+              "urn_old": "2324086",
+              "urn_new": "2413581"
+            },
+            {
+              "mun": "41238",
+              "zona": "30",
+              "secao": "267",
+              "urn_old": "2331573",
+              "urn_new": "2262011"
+            },
+            {
+              "mun": "41238",
+              "zona": "331",
+              "secao": "1",
+              "urn_old": "2465586",
+              "urn_new": "2441970"
+            },
+            {
+              "mun": "41238",
+              "zona": "331",
+              "secao": "11",
+              "urn_old": "2290961",
+              "urn_new": "2325087"
+            },
+            {
+              "mun": "41238",
+              "zona": "331",
+              "secao": "197",
+              "urn_old": "2282675",
+              "urn_new": "2474562"
+            },
+            {
+              "mun": "41238",
+              "zona": "333",
+              "secao": "77",
+              "urn_old": "2292619",
+              "urn_new": "2415638"
+            },
+            {
+              "mun": "41238",
+              "zona": "334",
+              "secao": "103",
+              "urn_old": "2415905",
+              "urn_new": "2468775"
+            },
+            {
+              "mun": "41238",
+              "zona": "334",
+              "secao": "253",
+              "urn_old": "2401507",
+              "urn_new": "2267852"
+            },
+            {
+              "mun": "41238",
+              "zona": "35",
+              "secao": "96",
+              "urn_old": "2415189",
+              "urn_new": "2422612"
+            },
+            {
+              "mun": "41238",
+              "zona": "38",
+              "secao": "148",
+              "urn_old": "2417093",
+              "urn_new": "2258505"
+            },
+            {
+              "mun": "41238",
+              "zona": "38",
+              "secao": "468",
+              "urn_old": "2413983",
+              "urn_new": "2413426"
+            },
+            {
+              "mun": "41335",
+              "zona": "319",
+              "secao": "24",
+              "urn_old": "2035321",
+              "urn_new": "2416621"
+            },
+            {
+              "mun": "41335",
+              "zona": "319",
+              "secao": "384",
+              "urn_old": "2282982",
+              "urn_new": "2452595"
+            },
+            {
+              "mun": "41530",
+              "zona": "22",
+              "secao": "40",
+              "urn_old": "1653284",
+              "urn_new": "1653941"
+            },
+            {
+              "mun": "41734",
+              "zona": "261",
+              "secao": "4",
+              "urn_old": "1770933",
+              "urn_new": "1652218"
+            },
+            {
+              "mun": "41742",
+              "zona": "148",
+              "secao": "378",
+              "urn_old": "2066590",
+              "urn_new": "2129350"
+            },
+            {
+              "mun": "41750",
+              "zona": "176",
+              "secao": "144",
+              "urn_old": "1841552",
+              "urn_new": "1652452"
+            },
+            {
+              "mun": "41840",
+              "zona": "245",
+              "secao": "92",
+              "urn_old": "1838040",
+              "urn_new": "1653514"
+            },
+            {
+              "mun": "41882",
+              "zona": "320",
+              "secao": "185",
+              "urn_old": "2079428",
+              "urn_new": "2066579"
+            },
+            {
+              "mun": "41939",
+              "zona": "300",
+              "secao": "5",
+              "urn_old": "2075471",
+              "urn_new": "2134037"
+            },
+            {
+              "mun": "41947",
+              "zona": "114",
+              "secao": "208",
+              "urn_old": "1756936",
+              "urn_new": "1654559"
+            },
+            {
+              "mun": "41971",
+              "zona": "206",
+              "secao": "66",
+              "urn_old": "1783073",
+              "urn_new": "1675584"
+            },
+            {
+              "mun": "42021",
+              "zona": "276",
+              "secao": "189",
+              "urn_old": "2100125",
+              "urn_new": "2085772"
+            },
+            {
+              "mun": "42021",
+              "zona": "276",
+              "secao": "191",
+              "urn_old": "2079191",
+              "urn_new": "2092467"
+            },
+            {
+              "mun": "42234",
+              "zona": "64",
+              "secao": "193",
+              "urn_old": "1842641",
+              "urn_new": "1834680"
+            }
+          ],
+          "examples_only_previous": [],
+          "examples_only_next": []
+        },
+        "efetivada_vs_bu": {
+          "sections_previous": 52062,
+          "sections_next": 52062,
+          "only_previous": 0,
+          "only_next": 0,
+          "urn_id_different": 0,
+          "examples_different": [],
+          "examples_only_previous": [],
+          "examples_only_next": []
+        }
+      }
+    },
+    "PE": {
+      "sources": {
+        "24": {
+          "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/correspesp/CESP_2t_PE_241020261231.zip",
+          "bytes": 1482252,
+          "sha512_local": "d9ea6c3b121d786fc9088241a6d16de6afe9675c2baac6a10b117da98aba333a3610dd450c773923a1e3986cf24af200ed9b187f2cfc986225543158a6ec975f",
+          "hash_expected": "d9ea6c3b121d786fc9088241a6d16de6afe9675c2baac6a10b117da98aba333a3610dd450c773923a1e3986cf24af200ed9b187f2cfc986225543158a6ec975f",
+          "sha512_status": "MATCH",
+          "members": [
+            {
+              "file": "csec_2t_PE_241020261231.csv",
+              "delimiter": ";",
+              "columns": [
+                "DT_GERACAO",
+                "HH_GERACAO",
+                "AA_ELEICAO",
+                "CD_PLEITO",
+                "SG_UF",
+                "CD_MUNICIPIO",
+                "NM_MUNICIPIO",
+                "NR_ZONA",
+                "NR_SECAO",
+                "NR_LOCAL_VOTACAO",
+                "NR_URNA_ESPERADA",
+                "CD_CARGA_URNA_ESPERADA",
+                "CD_FLASHCARD_URNA_ESPERADA",
+                "DT_CARGA_URNA_ESPERADA",
+                "ST_CORRESP_ALTERADA",
+                "NM_MAQUINA_GERACAO_MIDIA",
+                "NR_SRI_TPM_GERACAO_MIDIA",
+                "NR_SRI_INSTAL_GERACAO_MIDIA",
+                "NM_MAQUINA_TRANSM_CORRESP",
+                "NR_SRI_TPM_TRANSM_CORRESP",
+                "NR_SRI_INSTAL_TRANSM_CORRESP"
+              ],
+              "columns_municipio": "CD_MUNICIPIO",
+              "zona": "NR_ZONA",
+              "secao": "NR_SECAO",
+              "urna": "NR_URNA_ESPERADA"
+            },
+            {
+              "file": "ccont_2t_PE_241020261231.csv",
+              "delimiter": ";",
+              "columns": [
+                "DT_GERACAO",
+                "HH_GERACAO",
+                "AA_ELEICAO",
+                "CD_PLEITO",
+                "SG_UF",
+                "CD_MUNICIPIO",
+                "NM_MUNICIPIO",
+                "NR_ZONA",
+                "NR_URNA_ESPERADA",
+                "CD_CARGA_URNA_ESPERADA",
+                "CD_FLASHCARD_URNA_ESPERADA",
+                "DT_CARGA_URNA_ESPERADA",
+                "ST_CORRESP_ALTERADA",
+                "NM_MAQUINA_GERACAO_MIDIA",
+                "NR_SRI_TPM_GERACAO_MIDIA",
+                "NR_SRI_INSTAL_GERACAO_MIDIA",
+                "NM_MAQUINA_TRANSM_CORRESP",
+                "NR_SRI_TPM_TRANSM_CORRESP",
+                "NR_SRI_INSTAL_TRANSM_CORRESP"
+              ],
+              "columns_municipio": "CD_MUNICIPIO",
+              "zona": "NR_ZONA",
+              "secao": null,
+              "urna": "NR_URNA_ESPERADA"
+            }
+          ],
+          "rows": 21418,
+          "sections": 21418,
+          "conflicts": 0
+        },
+        "25": {
+          "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/correspesp/CESP_2t_PE_251020261345.zip",
+          "bytes": 1491126,
+          "sha512_local": "60340215c78460161f08a6db1da6701180d53e3b887d23e57d1b74bdb84fd56661dd56516e36d525fe41e4ed5e88a2a079a5f91a7cc94f31af1c846f1c6e7b35",
+          "hash_expected": "60340215c78460161f08a6db1da6701180d53e3b887d23e57d1b74bdb84fd56661dd56516e36d525fe41e4ed5e88a2a079a5f91a7cc94f31af1c846f1c6e7b35",
+          "sha512_status": "MATCH",
+          "members": [
+            {
+              "file": "csec_2t_PE_251020261345.csv",
+              "delimiter": ";",
+              "columns": [
+                "DT_GERACAO",
+                "HH_GERACAO",
+                "AA_ELEICAO",
+                "CD_PLEITO",
+                "SG_UF",
+                "CD_MUNICIPIO",
+                "NM_MUNICIPIO",
+                "NR_ZONA",
+                "NR_SECAO",
+                "NR_LOCAL_VOTACAO",
+                "NR_URNA_ESPERADA",
+                "CD_CARGA_URNA_ESPERADA",
+                "CD_FLASHCARD_URNA_ESPERADA",
+                "DT_CARGA_URNA_ESPERADA",
+                "ST_CORRESP_ALTERADA",
+                "NM_MAQUINA_GERACAO_MIDIA",
+                "NR_SRI_TPM_GERACAO_MIDIA",
+                "NR_SRI_INSTAL_GERACAO_MIDIA",
+                "NM_MAQUINA_TRANSM_CORRESP",
+                "NR_SRI_TPM_TRANSM_CORRESP",
+                "NR_SRI_INSTAL_TRANSM_CORRESP"
+              ],
+              "columns_municipio": "CD_MUNICIPIO",
+              "zona": "NR_ZONA",
+              "secao": "NR_SECAO",
+              "urna": "NR_URNA_ESPERADA"
+            },
+            {
+              "file": "ccont_2t_PE_251020261345.csv",
+              "delimiter": ";",
+              "columns": [
+                "DT_GERACAO",
+                "HH_GERACAO",
+                "AA_ELEICAO",
+                "CD_PLEITO",
+                "SG_UF",
+                "CD_MUNICIPIO",
+                "NM_MUNICIPIO",
+                "NR_ZONA",
+                "NR_URNA_ESPERADA",
+                "CD_CARGA_URNA_ESPERADA",
+                "CD_FLASHCARD_URNA_ESPERADA",
+                "DT_CARGA_URNA_ESPERADA",
+                "ST_CORRESP_ALTERADA",
+                "NM_MAQUINA_GERACAO_MIDIA",
+                "NR_SRI_TPM_GERACAO_MIDIA",
+                "NR_SRI_INSTAL_GERACAO_MIDIA",
+                "NM_MAQUINA_TRANSM_CORRESP",
+                "NR_SRI_TPM_TRANSM_CORRESP",
+                "NR_SRI_INSTAL_TRANSM_CORRESP"
+              ],
+              "columns_municipio": "CD_MUNICIPIO",
+              "zona": "NR_ZONA",
+              "secao": null,
+              "urna": "NR_URNA_ESPERADA"
+            }
+          ],
+          "rows": 21418,
+          "sections": 21418,
+          "conflicts": 0
+        },
+        "efetivada": {
+          "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/correspefet/CEFT_2t_PE_261020261201.zip",
+          "bytes": 2049312,
+          "sha512_local": "100ddb3e372fa29c9eed18a8d0e1d333318d8ba5b8bace823e75a7fb4052d08744c4416b02d3f7937da74bb49f50257fdb730d7fd9d21eb9212815e5d75a51e0",
+          "hash_expected": "100ddb3e372fa29c9eed18a8d0e1d333318d8ba5b8bace823e75a7fb4052d08744c4416b02d3f7937da74bb49f50257fdb730d7fd9d21eb9212815e5d75a51e0",
+          "sha512_status": "MATCH",
+          "members": [
+            {
+              "file": "ceft_2t_PE_261020261201.csv",
+              "delimiter": ";",
+              "columns": [
+                "DT_GERACAO",
+                "HH_GERACAO",
+                "AA_ELEICAO",
+                "DT_PLEITO",
+                "CD_PLEITO",
+                "SG_UF",
+                "CD_MUNICIPIO",
+                "NM_MUNICIPIO",
+                "NR_ZONA",
+                "NR_SECAO",
+                "NR_LOCAL_VOTACAO",
+                "SQ_CORRESPONDENCIA_ESPERADA",
+                "NR_URNA_ESPERADA",
+                "CD_CARGA_URNA_ESPERADA",
+                "CD_CARGA_1_URNA_ESPERADA",
+                "CD_CARGA_2_URNA_ESPERADA",
+                "CD_FLASHCARD_URNA_ESPERADA",
+                "DT_CARGA_URNA_ESPERADA",
+                "DT_RECBTO_URNA_ESPERADA",
+                "SQ_CORRESPONDENCIA_EFETIVADA",
+                "NR_URNA_EFETIVADA",
+                "CD_CARGA_URNA_EFETIVADA",
+                "CD_CARGA_1_URNA_EFETIVADA",
+                "CD_CARGA_2_URNA_EFETIVADA",
+                "CD_FLASHCARD_URNA_EFETIVADA",
+                "DT_CARGA_URNA_EFETIVADA",
+                "DT_RECBTO_URNA_EFETIVADA",
+                "CD_ORIGEM_VOTO",
+                "DS_ORIGEM_VOTO",
+                "TP_DIVERGENCIA",
+                "NM_MAQUINA_GERACAO_MIDIA",
+                "NR_SRI_TPM_GERACAO_MIDIA",
+                "NR_SRI_INSTAL_GERACAO_MIDIA",
+                "NM_MAQUINA_TRANSM_CORRESP",
+                "NR_SRI_TPM_TRANSM_CORRESP",
+                "NR_SRI_INSTAL_TRANSM_CORRESP"
+              ],
+              "columns_municipio": "CD_MUNICIPIO",
+              "zona": "NR_ZONA",
+              "secao": "NR_SECAO",
+              "urna": "NR_URNA_EFETIVADA"
+            }
+          ],
+          "rows": 21418,
+          "sections": 21418,
+          "conflicts": 0
+        },
+        "bu": {
+          "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_PE_261020260742.zip",
+          "bytes": 5761723,
+          "sha512_local": "5002c264cf9fff1b27bbbbc75d89b5aec5856b59a2888fef2b8c1577fe041bf60bcd6a4d8943023382579921d7f89926608aa7e550beb8581718cea1873f645a",
+          "hash_expected": "5002c264cf9fff1b27bbbbc75d89b5aec5856b59a2888fef2b8c1577fe041bf60bcd6a4d8943023382579921d7f89926608aa7e550beb8581718cea1873f645a",
+          "sha512_status": "MATCH",
+          "members": [
+            {
+              "file": "bweb_2t_PE_261020260742.csv",
+              "delimiter": ";",
+              "columns": [
+                "DT_GERACAO",
+                "HH_GERACAO",
+                "ANO_ELEICAO",
+                "CD_TIPO_ELEICAO",
+                "NM_TIPO_ELEICAO",
+                "CD_PLEITO",
+                "DT_PLEITO",
+                "NR_TURNO",
+                "CD_ELEICAO",
+                "DS_ELEICAO",
+                "SG_UF",
+                "CD_MUNICIPIO",
+                "NM_MUNICIPIO",
+                "NR_ZONA",
+                "NR_SECAO",
+                "NR_LOCAL_VOTACAO",
+                "CD_CARGO_PERGUNTA",
+                "DS_CARGO_PERGUNTA",
+                "NR_PARTIDO",
+                "SG_PARTIDO",
+                "NM_PARTIDO",
+                "DT_BU_RECEBIDO",
+                "QT_APTOS",
+                "QT_COMPARECIMENTO",
+                "QT_ABSTENCOES",
+                "CD_TIPO_URNA",
+                "DS_TIPO_URNA",
+                "CD_TIPO_VOTAVEL",
+                "DS_TIPO_VOTAVEL",
+                "NR_VOTAVEL",
+                "NM_VOTAVEL",
+                "QT_VOTOS",
+                "NR_URNA_EFETIVADA",
+                "CD_CARGA_1_URNA_EFETIVADA",
+                "CD_CARGA_2_URNA_EFETIVADA",
+                "CD_FLASHCARD_URNA_EFETIVADA",
+                "DT_CARGA_URNA_EFETIVADA",
+                "DS_CARGO_PERGUNTA_SECAO",
+                "DS_SECOES_AGREGADAS",
+                "DT_ABERTURA",
+                "DT_ENCERRAMENTO",
+                "QT_ELEI_BIOM_SEM_HABILITACAO",
+                "DT_EMISSAO_BU",
+                "NR_JUNTA_APURADORA",
+                "NR_TURMA_APURADORA"
+              ],
+              "columns_municipio": "CD_MUNICIPIO",
+              "zona": "NR_ZONA",
+              "secao": "NR_SECAO",
+              "urna": "NR_URNA_EFETIVADA"
+            }
+          ],
+          "rows": 83243,
+          "sections": 21418,
+          "conflicts": 0
+        }
+      },
+      "comparisons": {
+        "24_vs_25": {
+          "sections_previous": 21418,
+          "sections_next": 21418,
+          "only_previous": 0,
+          "only_next": 0,
+          "urn_id_different": 15,
+          "examples_different": [
+            {
+              "mun": "23094",
+              "zona": "64",
+              "secao": "184",
+              "urn_old": "1819158",
+              "urn_new": "1774396"
+            },
+            {
+              "mun": "23205",
+              "zona": "85",
+              "secao": "102",
+              "urn_old": "2172928",
+              "urn_new": "2160473"
+            },
+            {
+              "mun": "23264",
+              "zona": "89",
+              "secao": "71",
+              "urn_old": "2349385",
+              "urn_new": "2321401"
+            },
+            {
+              "mun": "23272",
+              "zona": "42",
+              "secao": "90",
+              "urn_old": "1774508",
+              "urn_new": "1769537"
+            },
+            {
+              "mun": "23450",
+              "zona": "39",
+              "secao": "51",
+              "urn_old": "1814993",
+              "urn_new": "1821759"
+            },
+            {
+              "mun": "24236",
+              "zona": "25",
+              "secao": "18",
+              "urn_old": "2161251",
+              "urn_new": "2173687"
+            },
+            {
+              "mun": "24775",
+              "zona": "24",
+              "secao": "94",
+              "urn_old": "2195341",
+              "urn_new": "2041752"
+            },
+            {
+              "mun": "25135",
+              "zona": "114",
+              "secao": "230",
+              "urn_old": "2218332",
+              "urn_new": "2173609"
+            },
+            {
+              "mun": "25313",
+              "zona": "149",
+              "secao": "63",
+              "urn_old": "2389731",
+              "urn_new": "2348464"
+            },
+            {
+              "mun": "25313",
+              "zona": "8",
+              "secao": "244",
+              "urn_old": "2370523",
+              "urn_new": "2337587"
+            },
+            {
+              "mun": "25313",
+              "zona": "8",
+              "secao": "246",
+              "urn_old": "2313795",
+              "urn_new": "2374681"
+            },
+            {
+              "mun": "25518",
+              "zona": "81",
+              "secao": "164",
+              "urn_old": "2339852",
+              "urn_new": "2339247"
+            },
+            {
+              "mun": "25836",
+              "zona": "26",
+              "secao": "127",
+              "urn_old": "1775106",
+              "urn_new": "1767268"
+            },
+            {
+              "mun": "25852",
+              "zona": "79",
+              "secao": "158",
+              "urn_old": "2320627",
+              "urn_new": "2312082"
+            },
+            {
+              "mun": "26298",
+              "zona": "138",
+              "secao": "81",
+              "urn_old": "2360779",
+              "urn_new": "2378984"
+            }
+          ],
+          "examples_only_previous": [],
+          "examples_only_next": []
+        },
+        "25_vs_efetivada": {
+          "sections_previous": 21418,
+          "sections_next": 21418,
+          "only_previous": 0,
+          "only_next": 0,
+          "urn_id_different": 99,
+          "examples_different": [
+            {
+              "mun": "23051",
+              "zona": "86",
+              "secao": "15",
+              "urn_old": "1672509",
+              "urn_new": "1651126"
+            },
+            {
+              "mun": "23094",
+              "zona": "64",
+              "secao": "8",
+              "urn_old": "1765629",
+              "urn_new": "1680372"
+            },
+            {
+              "mun": "23124",
+              "zona": "92",
+              "secao": "448",
+              "urn_old": "1674655",
+              "urn_new": "1673601"
+            },
+            {
+              "mun": "23167",
+              "zona": "69",
+              "secao": "90",
+              "urn_old": "2335582",
+              "urn_new": "2357874"
+            },
+            {
+              "mun": "23191",
+              "zona": "116",
+              "secao": "61",
+              "urn_old": "1673466",
+              "urn_new": "1671757"
+            },
+            {
+              "mun": "23280",
+              "zona": "26",
+              "secao": "87",
+              "urn_old": "1770244",
+              "urn_new": "1774797"
+            },
+            {
+              "mun": "23280",
+              "zona": "26",
+              "secao": "99",
+              "urn_old": "1821641",
+              "urn_new": "1673016"
+            },
+            {
+              "mun": "23337",
+              "zona": "45",
+              "secao": "130",
+              "urn_old": "1671264",
+              "urn_new": "1670963"
+            },
+            {
+              "mun": "23337",
+              "zona": "45",
+              "secao": "145",
+              "urn_old": "1810847",
+              "urn_new": "1669378"
+            },
+            {
+              "mun": "23337",
+              "zona": "45",
+              "secao": "34",
+              "urn_old": "1772686",
+              "urn_new": "1669220"
+            },
+            {
+              "mun": "23337",
+              "zona": "45",
+              "secao": "86",
+              "urn_old": "1806915",
+              "urn_new": "1672292"
+            },
+            {
+              "mun": "23370",
+              "zona": "35",
+              "secao": "21",
+              "urn_old": "1774023",
+              "urn_new": "1658800"
+            },
+            {
+              "mun": "23418",
+              "zona": "61",
+              "secao": "39",
+              "urn_old": "1762406",
+              "urn_new": "1658533"
+            },
+            {
+              "mun": "23434",
+              "zona": "33",
+              "secao": "146",
+              "urn_old": "2184145",
+              "urn_new": "2165239"
+            },
+            {
+              "mun": "23515",
+              "zona": "54",
+              "secao": "35",
+              "urn_old": "1822233",
+              "urn_new": "1658513"
+            },
+            {
+              "mun": "23515",
+              "zona": "54",
+              "secao": "84",
+              "urn_old": "1660923",
+              "urn_new": "1672408"
+            },
+            {
+              "mun": "23531",
+              "zona": "23",
+              "secao": "99",
+              "urn_old": "2162331",
+              "urn_new": "2039265"
+            },
+            {
+              "mun": "23574",
+              "zona": "121",
+              "secao": "209",
+              "urn_old": "2044043",
+              "urn_new": "2171243"
+            },
+            {
+              "mun": "23574",
+              "zona": "121",
+              "secao": "217",
+              "urn_old": "2171960",
+              "urn_new": "2173817"
+            },
+            {
+              "mun": "23574",
+              "zona": "15",
+              "secao": "30",
+              "urn_old": "2193866",
+              "urn_new": "2218292"
+            },
+            {
+              "mun": "23574",
+              "zona": "15",
+              "secao": "64",
+              "urn_old": "2185491",
+              "urn_new": "2179448"
+            },
+            {
+              "mun": "23639",
+              "zona": "130",
+              "secao": "82",
+              "urn_old": "1772261",
+              "urn_new": "1673428"
+            },
+            {
+              "mun": "23795",
+              "zona": "20",
+              "secao": "180",
+              "urn_old": "2186392",
+              "urn_new": "2170161"
+            },
+            {
+              "mun": "23795",
+              "zona": "20",
+              "secao": "229",
+              "urn_old": "2173547",
+              "urn_new": "2193744"
+            },
+            {
+              "mun": "23817",
+              "zona": "105",
+              "secao": "196",
+              "urn_old": "1815705",
+              "urn_new": "1666216"
+            },
+            {
+              "mun": "23817",
+              "zona": "105",
+              "secao": "331",
+              "urn_old": "1660000",
+              "urn_new": "1660587"
+            },
+            {
+              "mun": "23817",
+              "zona": "105",
+              "secao": "344",
+              "urn_old": "1816449",
+              "urn_new": "1660445"
+            },
+            {
+              "mun": "23817",
+              "zona": "105",
+              "secao": "376",
+              "urn_old": "1821887",
+              "urn_new": "1676850"
+            },
+            {
+              "mun": "23817",
+              "zona": "106",
+              "secao": "126",
+              "urn_old": "1768796",
+              "urn_new": "1662876"
+            },
+            {
+              "mun": "23817",
+              "zona": "106",
+              "secao": "141",
+              "urn_old": "1813114",
+              "urn_new": "1682277"
+            },
+            {
+              "mun": "23817",
+              "zona": "106",
+              "secao": "2",
+              "urn_old": "1773321",
+              "urn_new": "1673085"
+            },
+            {
+              "mun": "23817",
+              "zona": "106",
+              "secao": "234",
+              "urn_old": "1814685",
+              "urn_new": "1679282"
+            },
+            {
+              "mun": "23817",
+              "zona": "106",
+              "secao": "262",
+              "urn_old": "1664202",
+              "urn_new": "1673793"
+            },
+            {
+              "mun": "23817",
+              "zona": "41",
+              "secao": "42",
+              "urn_old": "1775094",
+              "urn_new": "1660349"
+            },
+            {
+              "mun": "23990",
+              "zona": "86",
+              "secao": "123",
+              "urn_old": "1814893",
+              "urn_new": "1666921"
+            },
+            {
+              "mun": "24031",
+              "zona": "19",
+              "secao": "39",
+              "urn_old": "2192258",
+              "urn_new": "2042917"
+            },
+            {
+              "mun": "24171",
+              "zona": "28",
+              "secao": "146",
+              "urn_old": "1827740",
+              "urn_new": "1672792"
+            },
+            {
+              "mun": "24198",
+              "zona": "56",
+              "secao": "102",
+              "urn_old": "1848058",
+              "urn_new": "1661055"
+            },
+            {
+              "mun": "24198",
+              "zona": "56",
+              "secao": "427",
+              "urn_old": "1774552",
+              "urn_new": "1673454"
+            },
+            {
+              "mun": "24198",
+              "zona": "56",
+              "secao": "91",
+              "urn_old": "1809648",
+              "urn_new": "1672326"
+            }
+          ],
+          "examples_only_previous": [],
+          "examples_only_next": []
+        },
+        "efetivada_vs_bu": {
+          "sections_previous": 21418,
+          "sections_next": 21418,
+          "only_previous": 0,
+          "only_next": 0,
+          "urn_id_different": 0,
+          "examples_different": [],
+          "examples_only_previous": [],
+          "examples_only_next": []
+        }
+      }
+    }
+  },
+  "caveat": "Cruzamentos indicam diferenças a validar, não comprovação de fraude."
+}
