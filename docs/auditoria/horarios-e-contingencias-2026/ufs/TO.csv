@@ -1,0 +1,5 @@
+uf,cod_municipio_tse,municipio,zona,secao,urna_prevista,urna_efetivada,tipo_divergencia,encerramento_original,hora_extraida,encerramento_apos_17h10,encerramento_apos_19h,observacao
+TO,92410,ARAGUAÍNA,1,351,2255526,2255169,C,2026-10-25 17:02:15,17:02:15,0,0,Hora da SUBSTITUIÇÃO não consta no CEFT.
+TO,93130,CONCEIÇÃO DO TOCANTINS,22,62,2250589,2029127,C,2026-10-25 17:01:43,17:01:43,0,0,Hora da SUBSTITUIÇÃO não consta no CEFT.
+TO,95478,PIUM,13,28,2271835,2025217,C,2026-10-25 17:01:09,17:01:09,0,0,Hora da SUBSTITUIÇÃO não consta no CEFT.
+TO,96857,AUGUSTINÓPOLIS,21,106,2153450,2153919,C,2026-10-25 17:06:33,17:06:33,0,0,Hora da SUBSTITUIÇÃO não consta no CEFT.

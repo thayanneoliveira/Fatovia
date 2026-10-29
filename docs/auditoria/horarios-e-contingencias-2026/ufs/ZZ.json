@@ -1,0 +1,308 @@
+{
+  "cobertura": {
+    "amostra_campos_temporais": [
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 21:04:40",
+        "DT_ENCERRAMENTO": "2026-10-25 17:04:09",
+        "secao": [
+          29513,
+          1,
+          81
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 21:04:40",
+        "DT_ENCERRAMENTO": "2026-10-25 17:02:28",
+        "secao": [
+          29513,
+          1,
+          723
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 21:04:45",
+        "DT_ENCERRAMENTO": "2026-10-25 17:02:56",
+        "secao": [
+          29513,
+          1,
+          1137
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 21:04:45",
+        "DT_ENCERRAMENTO": "2026-10-25 17:03:30",
+        "secao": [
+          29513,
+          1,
+          1085
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 21:04:40",
+        "DT_ENCERRAMENTO": "2026-10-25 17:03:22",
+        "secao": [
+          29513,
+          1,
+          780
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 21:04:46",
+        "DT_ENCERRAMENTO": "2026-10-25 17:05:02",
+        "secao": [
+          29513,
+          1,
+          589
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 21:04:41",
+        "DT_ENCERRAMENTO": "2026-10-25 17:02:27",
+        "secao": [
+          29513,
+          1,
+          1175
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 21:04:40",
+        "DT_ENCERRAMENTO": "2026-10-25 17:03:20",
+        "secao": [
+          29513,
+          1,
+          743
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 21:04:44",
+        "DT_ENCERRAMENTO": "2026-10-25 17:02:35",
+        "secao": [
+          29513,
+          1,
+          80
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 21:04:45",
+        "DT_ENCERRAMENTO": "2026-10-25 17:03:42",
+        "secao": [
+          29513,
+          1,
+          1223
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 21:04:45",
+        "DT_ENCERRAMENTO": "2026-10-25 17:02:36",
+        "secao": [
+          29513,
+          1,
+          995
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 21:04:41",
+        "DT_ENCERRAMENTO": "2026-10-25 17:02:43",
+        "secao": [
+          29513,
+          1,
+          819
+        ]
+      }
+    ],
+    "amostra_horarios_nao_interpretados": [
+      {
+        "key": [
+          29173,
+          1,
+          494
+        ],
+        "raw": ""
+      },
+      {
+        "key": [
+          29254,
+          1,
+          1
+        ],
+        "raw": ""
+      },
+      {
+        "key": [
+          29270,
+          1,
+          3
+        ],
+        "raw": ""
+      },
+      {
+        "key": [
+          29297,
+          1,
+          495
+        ],
+        "raw": ""
+      },
+      {
+        "key": [
+          29300,
+          1,
+          6
+        ],
+        "raw": ""
+      },
+      {
+        "key": [
+          29394,
+          1,
+          28
+        ],
+        "raw": ""
+      },
+      {
+        "key": [
+          29580,
+          1,
+          96
+        ],
+        "raw": ""
+      },
+      {
+        "key": [
+          29645,
+          1,
+          380
+        ],
+        "raw": ""
+      },
+      {
+        "key": [
+          29750,
+          1,
+          1703
+        ],
+        "raw": ""
+      },
+      {
+        "key": [
+          29777,
+          1,
+          127
+        ],
+        "raw": ""
+      },
+      {
+        "key": [
+          29858,
+          1,
+          1183
+        ],
+        "raw": ""
+      },
+      {
+        "key": [
+          29912,
+          1,
+          150
+        ],
+        "raw": ""
+      },
+      {
+        "key": [
+          30163,
+          1,
+          647
+        ],
+        "raw": ""
+      },
+      {
+        "key": [
+          30171,
+          1,
+          1340
+        ],
+        "raw": ""
+      },
+      {
+        "key": [
+          30295,
+          1,
+          348
+        ],
+        "raw": ""
+      }
+    ],
+    "campos_temporais_encontrados": [
+      "DT_BU_RECEBIDO",
+      "DT_ENCERRAMENTO"
+    ],
+    "horarios_validos": 1281,
+    "secoes": 1308
+  },
+  "erro": "Parte das seções sem timestamp de encerramento interpretável.",
+  "fontes": {
+    "base_geo": "GitHub Actions 40877055121/ZZ.csv.gz",
+    "bweb_2026_2t_sha512": "e024547f7d2c6e21e53c8a4f47823d7c76684976271ef395f7c66fe953caf49aa2c585b104f724cc2c39eb67f682e05a7e479f9558c3e38244036a3f90b429f1"
+  },
+  "gerado_utc": "2026-10-29T14:19:50.817969+00:00",
+  "ressalvas": [
+    "Encerramento posterior a 17h ou 19h NÃO significa voto após o horário.",
+    "Divergência entre número de urna prevista e efetivada NÃO possui timestamp da troca no CEFT.",
+    "A escala de horários precisa ser confrontada com tabelas do TSE, inclusive ajuste para horário de Brasília.",
+    "Substituição de urna defeituosa durante votação é permitida pela Resolução TSE 23.751/2026, art. 147.",
+    "Sem ata Ocorre JE e registros de contingência, horário exato da troca é desconhecido."
+  ],
+  "secoes_coincidentes": [],
+  "secoes_trocadas": [],
+  "status": "INCONCLUSIVO",
+  "temporal": {
+    "amostra_secoes_coincidentes": [
+      {
+        "cod_municipio_tse": 29955,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:11:36",
+        "hora_extraida": "17:11:36",
+        "municipio": "LISBOA",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 3674,
+        "tipo_divergencia": "C",
+        "uf": "ZZ",
+        "urna_efetivada": "1652911",
+        "urna_prevista": "1670470",
+        "zona": 1
+      },
+      {
+        "cod_municipio_tse": 30864,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:13:11",
+        "hora_extraida": "17:13:11",
+        "municipio": "ZURIQUE",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 329,
+        "tipo_divergencia": "C",
+        "uf": "ZZ",
+        "urna_efetivada": "1846731",
+        "urna_prevista": "1676768",
+        "zona": 1
+      }
+    ],
+    "contagens": {
+      "depois_17h10": 341,
+      "depois_19h": 0,
+      "hora_extraida": 1281,
+      "total": 1308,
+      "trocadas": 13,
+      "trocadas_encerradas_depois_17h10": 2
+    },
+    "tabela_urna_prevista_efetivada_x_encerramento": {
+      "NAO_TROCADA|ATE_17_10": 929,
+      "NAO_TROCADA|DEPOIS_17_10_ATE_19_00": 339,
+      "NAO_TROCADA|SEM_HORA": 27,
+      "TROCADA|ATE_17_10": 11,
+      "TROCADA|DEPOIS_17_10_ATE_19_00": 2
+    }
+  },
+  "uf": "ZZ"
+}

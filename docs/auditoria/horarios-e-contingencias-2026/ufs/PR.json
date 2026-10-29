@@ -1,0 +1,232 @@
+{
+  "cobertura": {
+    "amostra_campos_temporais": [
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 19:43:06",
+        "DT_ENCERRAMENTO": "2026-10-25 17:00:35",
+        "secao": [
+          78875,
+          12,
+          2
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 19:35:23",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:22",
+        "secao": [
+          78875,
+          12,
+          17
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 19:26:16",
+        "DT_ENCERRAMENTO": "2026-10-25 17:00:24",
+        "secao": [
+          78875,
+          12,
+          23
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 19:35:09",
+        "DT_ENCERRAMENTO": "2026-10-25 17:00:29",
+        "secao": [
+          78875,
+          12,
+          28
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:15:18",
+        "DT_ENCERRAMENTO": "2026-10-25 17:00:38",
+        "secao": [
+          78875,
+          12,
+          37
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:09:26",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:19",
+        "secao": [
+          78875,
+          12,
+          50
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 21:10:28",
+        "DT_ENCERRAMENTO": "2026-10-25 17:00:49",
+        "secao": [
+          78875,
+          12,
+          63
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 19:36:31",
+        "DT_ENCERRAMENTO": "2026-10-25 17:00:23",
+        "secao": [
+          78875,
+          12,
+          71
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 19:52:14",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:00",
+        "secao": [
+          78875,
+          12,
+          84
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 19:37:12",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:00",
+        "secao": [
+          78875,
+          12,
+          95
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 19:36:31",
+        "DT_ENCERRAMENTO": "2026-10-25 17:00:29",
+        "secao": [
+          78875,
+          12,
+          121
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 19:51:02",
+        "DT_ENCERRAMENTO": "2026-10-25 17:00:37",
+        "secao": [
+          78875,
+          12,
+          126
+        ]
+      }
+    ],
+    "amostra_horarios_nao_interpretados": [],
+    "campos_temporais_encontrados": [
+      "DT_BU_RECEBIDO",
+      "DT_ENCERRAMENTO"
+    ],
+    "horarios_validos": 27142,
+    "secoes": 27142
+  },
+  "fontes": {
+    "base_geo": "GitHub Actions 40877055121/PR.csv.gz",
+    "bweb_2026_2t_sha512": "949659949df4605749afdd1842d0f628bb4563d41f73578786702f679ee81276d7a4f5a4e52fe5292e681a75a7662d7925c1a15e76f0118b5870c29dbd20b3f5"
+  },
+  "gerado_utc": "2026-10-29T14:19:25.809995+00:00",
+  "ressalvas": [
+    "Encerramento posterior a 17h ou 19h NÃO significa voto após o horário.",
+    "Divergência entre número de urna prevista e efetivada NÃO possui timestamp da troca no CEFT.",
+    "A escala de horários precisa ser confrontada com tabelas do TSE, inclusive ajuste para horário de Brasília.",
+    "Substituição de urna defeituosa durante votação é permitida pela Resolução TSE 23.751/2026, art. 147.",
+    "Sem ata Ocorre JE e registros de contingência, horário exato da troca é desconhecido."
+  ],
+  "secoes_coincidentes": [],
+  "secoes_trocadas": [],
+  "status": "EXECUTADO_REQUER_VALIDACAO_FUSO",
+  "temporal": {
+    "amostra_secoes_coincidentes": [
+      {
+        "cod_municipio_tse": 74357,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:29:25",
+        "hora_extraida": "17:29:25",
+        "municipio": "ARAUCÁRIA",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 390,
+        "tipo_divergencia": "C",
+        "uf": "PR",
+        "urna_efetivada": "2142598",
+        "urna_prevista": "2092201",
+        "zona": 50
+      },
+      {
+        "cod_municipio_tse": 74810,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:16:02",
+        "hora_extraida": "17:16:02",
+        "municipio": "CAMPO LARGO",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 93,
+        "tipo_divergencia": "C",
+        "uf": "PR",
+        "urna_efetivada": "2092750",
+        "urna_prevista": "2124046",
+        "zona": 9
+      },
+      {
+        "cod_municipio_tse": 76635,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:18:45",
+        "hora_extraida": "17:18:45",
+        "municipio": "LOANDA",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 150,
+        "tipo_divergencia": "C",
+        "uf": "PR",
+        "urna_efetivada": "1680883",
+        "urna_prevista": "1678080",
+        "zona": 85
+      },
+      {
+        "cod_municipio_tse": 77771,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:02:08",
+        "hora_extraida": "19:02:08",
+        "municipio": "PONTA GROSSA",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 51,
+        "tipo_divergencia": "C",
+        "uf": "PR",
+        "urna_efetivada": "2066392",
+        "urna_prevista": "2096608",
+        "zona": 14
+      },
+      {
+        "cod_municipio_tse": 79278,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:13:50",
+        "hora_extraida": "17:13:50",
+        "municipio": "TOLEDO",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 362,
+        "tipo_divergencia": "C",
+        "uf": "PR",
+        "urna_efetivada": "1678199",
+        "urna_prevista": "1778322",
+        "zona": 75
+      }
+    ],
+    "contagens": {
+      "depois_17h10": 90,
+      "depois_19h": 1,
+      "hora_extraida": 27142,
+      "total": 27142,
+      "trocadas": 188,
+      "trocadas_encerradas_depois_17h10": 5,
+      "trocadas_encerradas_depois_19h": 1
+    },
+    "tabela_urna_prevista_efetivada_x_encerramento": {
+      "NAO_TROCADA|ATE_17_10": 26869,
+      "NAO_TROCADA|DEPOIS_17_10_ATE_19_00": 85,
+      "TROCADA|ATE_17_10": 183,
+      "TROCADA|DEPOIS_17_10_ATE_19_00": 4,
+      "TROCADA|DEPOIS_19_00": 1
+    }
+  },
+  "uf": "PR"
+}

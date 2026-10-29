@@ -1,0 +1,188 @@
+{
+  "cobertura": {
+    "amostra_campos_temporais": [
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:11:23",
+        "DT_ENCERRAMENTO": "2026-10-25 17:00:37",
+        "secao": [
+          31194,
+          24,
+          1
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:32:38",
+        "DT_ENCERRAMENTO": "2026-10-25 17:02:17",
+        "secao": [
+          31194,
+          24,
+          12
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:11:30",
+        "DT_ENCERRAMENTO": "2026-10-25 17:02:05",
+        "secao": [
+          31194,
+          24,
+          50
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:11:30",
+        "DT_ENCERRAMENTO": "2026-10-25 17:00:46",
+        "secao": [
+          31194,
+          24,
+          51
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:12:09",
+        "DT_ENCERRAMENTO": "2026-10-25 17:03:06",
+        "secao": [
+          31194,
+          24,
+          70
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:12:13",
+        "DT_ENCERRAMENTO": "2026-10-25 17:02:08",
+        "secao": [
+          31194,
+          24,
+          129
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:11:26",
+        "DT_ENCERRAMENTO": "2026-10-25 17:02:25",
+        "secao": [
+          31194,
+          24,
+          5
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:11:28",
+        "DT_ENCERRAMENTO": "2026-10-25 17:03:28",
+        "secao": [
+          31194,
+          24,
+          4
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:11:24",
+        "DT_ENCERRAMENTO": "2026-10-25 17:00:52",
+        "secao": [
+          31194,
+          24,
+          3
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:11:29",
+        "DT_ENCERRAMENTO": "2026-10-25 17:00:38",
+        "secao": [
+          31194,
+          24,
+          49
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:32:38",
+        "DT_ENCERRAMENTO": "2026-10-25 17:12:10",
+        "secao": [
+          31194,
+          24,
+          10
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:12:23",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:55",
+        "secao": [
+          31194,
+          24,
+          138
+        ]
+      }
+    ],
+    "amostra_horarios_nao_interpretados": [],
+    "campos_temporais_encontrados": [
+      "DT_BU_RECEBIDO",
+      "DT_ENCERRAMENTO"
+    ],
+    "horarios_validos": 5923,
+    "secoes": 5923
+  },
+  "fontes": {
+    "base_geo": "GitHub Actions 40877055121/SE.csv.gz",
+    "bweb_2026_2t_sha512": "ea1460385ab222e82ec7560eb3932bb3dc198333296876435d99c2755150ce1a9d703f21ca259279de610f1e31d2dbc8d3a5090c6c3f9e762de8d98f0fd73f0f"
+  },
+  "gerado_utc": "2026-10-29T14:19:41.406311+00:00",
+  "ressalvas": [
+    "Encerramento posterior a 17h ou 19h NÃO significa voto após o horário.",
+    "Divergência entre número de urna prevista e efetivada NÃO possui timestamp da troca no CEFT.",
+    "A escala de horários precisa ser confrontada com tabelas do TSE, inclusive ajuste para horário de Brasília.",
+    "Substituição de urna defeituosa durante votação é permitida pela Resolução TSE 23.751/2026, art. 147.",
+    "Sem ata Ocorre JE e registros de contingência, horário exato da troca é desconhecido."
+  ],
+  "secoes_coincidentes": [],
+  "secoes_trocadas": [],
+  "status": "EXECUTADO_REQUER_VALIDACAO_FUSO",
+  "temporal": {
+    "amostra_secoes_coincidentes": [
+      {
+        "cod_municipio_tse": 31038,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:10:03",
+        "hora_extraida": "17:10:03",
+        "municipio": "AQUIDABÃ",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 123,
+        "tipo_divergencia": "C",
+        "uf": "SE",
+        "urna_efetivada": "2046322",
+        "urna_prevista": "2174036",
+        "zona": 3
+      },
+      {
+        "cod_municipio_tse": 31054,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:01:20",
+        "hora_extraida": "19:01:20",
+        "municipio": "ARACAJU",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 242,
+        "tipo_divergencia": "C",
+        "uf": "SE",
+        "urna_efetivada": "1676734",
+        "urna_prevista": "1847968",
+        "zona": 1
+      }
+    ],
+    "contagens": {
+      "depois_17h10": 100,
+      "depois_19h": 51,
+      "hora_extraida": 5923,
+      "total": 5923,
+      "trocadas": 78,
+      "trocadas_encerradas_depois_17h10": 2,
+      "trocadas_encerradas_depois_19h": 1
+    },
+    "tabela_urna_prevista_efetivada_x_encerramento": {
+      "NAO_TROCADA|ATE_17_10": 5747,
+      "NAO_TROCADA|DEPOIS_17_10_ATE_19_00": 48,
+      "NAO_TROCADA|DEPOIS_19_00": 50,
+      "TROCADA|ATE_17_10": 76,
+      "TROCADA|DEPOIS_17_10_ATE_19_00": 1,
+      "TROCADA|DEPOIS_19_00": 1
+    }
+  },
+  "uf": "SE"
+}

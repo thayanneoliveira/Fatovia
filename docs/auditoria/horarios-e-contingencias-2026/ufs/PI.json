@@ -1,0 +1,171 @@
+{
+  "cobertura": {
+    "amostra_campos_temporais": [
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:49:38",
+        "DT_ENCERRAMENTO": "2026-10-25 17:03:58",
+        "secao": [
+          11096,
+          24,
+          9
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:49:34",
+        "DT_ENCERRAMENTO": "2026-10-25 17:00:53",
+        "secao": [
+          11096,
+          24,
+          12
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:37:35",
+        "DT_ENCERRAMENTO": "2026-10-25 17:02:36",
+        "secao": [
+          11096,
+          24,
+          15
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:36:44",
+        "DT_ENCERRAMENTO": "2026-10-25 17:02:25",
+        "secao": [
+          11096,
+          24,
+          29
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:50:34",
+        "DT_ENCERRAMENTO": "2026-10-25 17:00:46",
+        "secao": [
+          11096,
+          24,
+          45
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:28:30",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:53",
+        "secao": [
+          11096,
+          24,
+          53
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:56:20",
+        "DT_ENCERRAMENTO": "2026-10-25 17:06:42",
+        "secao": [
+          11096,
+          24,
+          73
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:32:17",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:13",
+        "secao": [
+          11096,
+          24,
+          84
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:42:29",
+        "DT_ENCERRAMENTO": "2026-10-25 17:05:51",
+        "secao": [
+          11096,
+          24,
+          92
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:49:43",
+        "DT_ENCERRAMENTO": "2026-10-25 17:02:10",
+        "secao": [
+          11096,
+          24,
+          96
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:52:23",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:11",
+        "secao": [
+          11096,
+          24,
+          120
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:45:31",
+        "DT_ENCERRAMENTO": "2026-10-25 17:03:57",
+        "secao": [
+          11096,
+          24,
+          127
+        ]
+      }
+    ],
+    "amostra_horarios_nao_interpretados": [],
+    "campos_temporais_encontrados": [
+      "DT_BU_RECEBIDO",
+      "DT_ENCERRAMENTO"
+    ],
+    "horarios_validos": 10225,
+    "secoes": 10225
+  },
+  "fontes": {
+    "base_geo": "GitHub Actions 40877055121/PI.csv.gz",
+    "bweb_2026_2t_sha512": "d864c6f671daf94d0c3a8464b74052f1827fe6ac43a7666bc1d4cd37f3a4375ccb51ccc83ef04832487349a40e1d73b72e2ab0934b99d62465422b80c4499b54"
+  },
+  "gerado_utc": "2026-10-29T14:19:21.444857+00:00",
+  "ressalvas": [
+    "Encerramento posterior a 17h ou 19h NÃO significa voto após o horário.",
+    "Divergência entre número de urna prevista e efetivada NÃO possui timestamp da troca no CEFT.",
+    "A escala de horários precisa ser confrontada com tabelas do TSE, inclusive ajuste para horário de Brasília.",
+    "Substituição de urna defeituosa durante votação é permitida pela Resolução TSE 23.751/2026, art. 147.",
+    "Sem ata Ocorre JE e registros de contingência, horário exato da troca é desconhecido."
+  ],
+  "secoes_coincidentes": [],
+  "secoes_trocadas": [],
+  "status": "EXECUTADO_REQUER_VALIDACAO_FUSO",
+  "temporal": {
+    "amostra_secoes_coincidentes": [
+      {
+        "cod_municipio_tse": 12637,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:26:56",
+        "hora_extraida": "17:26:56",
+        "municipio": "FLORESTA DO PIAUÍ",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 125,
+        "tipo_divergencia": "C",
+        "uf": "PI",
+        "urna_efetivada": "2030922",
+        "urna_prevista": "2196550",
+        "zona": 90
+      }
+    ],
+    "contagens": {
+      "depois_17h10": 87,
+      "depois_19h": 7,
+      "hora_extraida": 10225,
+      "total": 10225,
+      "trocadas": 51,
+      "trocadas_encerradas_depois_17h10": 1
+    },
+    "tabela_urna_prevista_efetivada_x_encerramento": {
+      "NAO_TROCADA|ATE_17_10": 10088,
+      "NAO_TROCADA|DEPOIS_17_10_ATE_19_00": 79,
+      "NAO_TROCADA|DEPOIS_19_00": 7,
+      "TROCADA|ATE_17_10": 50,
+      "TROCADA|DEPOIS_17_10_ATE_19_00": 1
+    }
+  },
+  "uf": "PI"
+}

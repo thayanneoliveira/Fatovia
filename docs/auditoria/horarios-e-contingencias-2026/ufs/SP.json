@@ -1,0 +1,368 @@
+{
+  "cobertura": {
+    "amostra_campos_temporais": [
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:55:31",
+        "DT_ENCERRAMENTO": "2026-10-25 17:03:29",
+        "secao": [
+          64270,
+          367,
+          6
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:46:20",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:35",
+        "secao": [
+          64270,
+          367,
+          18
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:49:20",
+        "DT_ENCERRAMENTO": "2026-10-25 17:02:39",
+        "secao": [
+          64270,
+          367,
+          25
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:49:26",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:28",
+        "secao": [
+          64270,
+          367,
+          28
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:18:44",
+        "DT_ENCERRAMENTO": "2026-10-25 17:02:17",
+        "secao": [
+          64270,
+          367,
+          49
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:25:24",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:41",
+        "secao": [
+          64270,
+          367,
+          71
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:22:28",
+        "DT_ENCERRAMENTO": "2026-10-25 17:10:17",
+        "secao": [
+          64270,
+          367,
+          79
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:49:21",
+        "DT_ENCERRAMENTO": "2026-10-25 17:06:36",
+        "secao": [
+          64270,
+          367,
+          84
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:25:26",
+        "DT_ENCERRAMENTO": "2026-10-25 17:02:53",
+        "secao": [
+          64270,
+          367,
+          103
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:43:36",
+        "DT_ENCERRAMENTO": "2026-10-25 17:05:09",
+        "secao": [
+          64270,
+          367,
+          147
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:55:35",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:00",
+        "secao": [
+          64270,
+          367,
+          162
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:49:27",
+        "DT_ENCERRAMENTO": "2026-10-25 17:02:33",
+        "secao": [
+          64270,
+          367,
+          177
+        ]
+      }
+    ],
+    "amostra_horarios_nao_interpretados": [],
+    "campos_temporais_encontrados": [
+      "DT_BU_RECEBIDO",
+      "DT_ENCERRAMENTO"
+    ],
+    "horarios_validos": 103656,
+    "secoes": 103656
+  },
+  "fontes": {
+    "base_geo": "GitHub Actions 40877055121/SP.csv.gz",
+    "bweb_2026_2t_sha512": "3078f38754ced92476fd0e9c6661ecf5237774fc210d5e7eee1b55db9b8ddb321843f591440c2d350679326e1f1b86e60ac723c8ac65a92ca94b74ce674ecffe"
+  },
+  "gerado_utc": "2026-10-29T14:19:41.180500+00:00",
+  "ressalvas": [
+    "Encerramento posterior a 17h ou 19h NÃO significa voto após o horário.",
+    "Divergência entre número de urna prevista e efetivada NÃO possui timestamp da troca no CEFT.",
+    "A escala de horários precisa ser confrontada com tabelas do TSE, inclusive ajuste para horário de Brasília.",
+    "Substituição de urna defeituosa durante votação é permitida pela Resolução TSE 23.751/2026, art. 147.",
+    "Sem ata Ocorre JE e registros de contingência, horário exato da troca é desconhecido."
+  ],
+  "secoes_coincidentes": [],
+  "secoes_trocadas": [],
+  "status": "EXECUTADO_REQUER_VALIDACAO_FUSO",
+  "temporal": {
+    "amostra_secoes_coincidentes": [
+      {
+        "cod_municipio_tse": 62936,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 18:27:24",
+        "hora_extraida": "18:27:24",
+        "municipio": "CAMPO LIMPO PAULISTA",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 131,
+        "tipo_divergencia": "C",
+        "uf": "SP",
+        "urna_efetivada": "2162051",
+        "urna_prevista": "2068503",
+        "zona": 344
+      },
+      {
+        "cod_municipio_tse": 63711,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 18:59:45",
+        "hora_extraida": "18:59:45",
+        "municipio": "CUBATÃO",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 92,
+        "tipo_divergencia": "C",
+        "uf": "SP",
+        "urna_efetivada": "2097223",
+        "urna_prevista": "2278133",
+        "zona": 119
+      },
+      {
+        "cod_municipio_tse": 64750,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:10:21",
+        "hora_extraida": "17:10:21",
+        "municipio": "GUARUJÁ",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 303,
+        "tipo_divergencia": "C",
+        "uf": "SP",
+        "urna_efetivada": "2146123",
+        "urna_prevista": "2145779",
+        "zona": 310
+      },
+      {
+        "cod_municipio_tse": 64777,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:21:46",
+        "hora_extraida": "17:21:46",
+        "municipio": "GUARULHOS",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 48,
+        "tipo_divergencia": "C",
+        "uf": "SP",
+        "urna_efetivada": "1812142",
+        "urna_prevista": "1751867",
+        "zona": 395
+      },
+      {
+        "cod_municipio_tse": 66397,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:33:35",
+        "hora_extraida": "17:33:35",
+        "municipio": "LIMEIRA",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 48,
+        "tipo_divergencia": "C",
+        "uf": "SP",
+        "urna_efetivada": "2014724",
+        "urna_prevista": "2143603",
+        "zona": 399
+      },
+      {
+        "cod_municipio_tse": 71072,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:49:16",
+        "hora_extraida": "17:49:16",
+        "municipio": "SÃO PAULO",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 72,
+        "tipo_divergencia": "C",
+        "uf": "SP",
+        "urna_efetivada": "1840023",
+        "urna_prevista": "1843381",
+        "zona": 1
+      },
+      {
+        "cod_municipio_tse": 71072,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:02:16",
+        "hora_extraida": "19:02:16",
+        "municipio": "SÃO PAULO",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 273,
+        "tipo_divergencia": "C",
+        "uf": "SP",
+        "urna_efetivada": "2320963",
+        "urna_prevista": "2024259",
+        "zona": 20
+      },
+      {
+        "cod_municipio_tse": 71072,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:22:51",
+        "hora_extraida": "17:22:51",
+        "municipio": "SÃO PAULO",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 16,
+        "tipo_divergencia": "C",
+        "uf": "SP",
+        "urna_efetivada": "2336321",
+        "urna_prevista": "2051512",
+        "zona": 248
+      },
+      {
+        "cod_municipio_tse": 71072,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:12:04",
+        "hora_extraida": "17:12:04",
+        "municipio": "SÃO PAULO",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 62,
+        "tipo_divergencia": "C",
+        "uf": "SP",
+        "urna_efetivada": "2251230",
+        "urna_prevista": "2252087",
+        "zona": 249
+      },
+      {
+        "cod_municipio_tse": 71072,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:50:10",
+        "hora_extraida": "17:50:10",
+        "municipio": "SÃO PAULO",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 113,
+        "tipo_divergencia": "C",
+        "uf": "SP",
+        "urna_efetivada": "2047245",
+        "urna_prevista": "2051520",
+        "zona": 255
+      },
+      {
+        "cod_municipio_tse": 71072,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:00:28",
+        "hora_extraida": "19:00:28",
+        "municipio": "SÃO PAULO",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 947,
+        "tipo_divergencia": "C",
+        "uf": "SP",
+        "urna_efetivada": "1825638",
+        "urna_prevista": "1820677",
+        "zona": 328
+      },
+      {
+        "cod_municipio_tse": 71072,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:01:36",
+        "hora_extraida": "19:01:36",
+        "municipio": "SÃO PAULO",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 82,
+        "tipo_divergencia": "C",
+        "uf": "SP",
+        "urna_efetivada": "1815864",
+        "urna_prevista": "1816499",
+        "zona": 381
+      },
+      {
+        "cod_municipio_tse": 71072,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:01:03",
+        "hora_extraida": "19:01:03",
+        "municipio": "SÃO PAULO",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 407,
+        "tipo_divergencia": "C",
+        "uf": "SP",
+        "urna_efetivada": "1823749",
+        "urna_prevista": "1821950",
+        "zona": 408
+      },
+      {
+        "cod_municipio_tse": 71455,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:18:37",
+        "hora_extraida": "17:18:37",
+        "municipio": "SOROCABA",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 219,
+        "tipo_divergencia": "C",
+        "uf": "SP",
+        "urna_efetivada": "2144045",
+        "urna_prevista": "2147746",
+        "zona": 342
+      }
+    ],
+    "contagens": {
+      "depois_17h10": 3371,
+      "depois_19h": 1567,
+      "hora_extraida": 103656,
+      "total": 103656,
+      "trocadas": 394,
+      "trocadas_encerradas_depois_17h10": 14,
+      "trocadas_encerradas_depois_19h": 4
+    },
+    "tabela_urna_prevista_efetivada_x_encerramento": {
+      "NAO_TROCADA|ATE_17_10": 99905,
+      "NAO_TROCADA|DEPOIS_17_10_ATE_19_00": 1794,
+      "NAO_TROCADA|DEPOIS_19_00": 1563,
+      "TROCADA|ATE_17_10": 380,
+      "TROCADA|DEPOIS_17_10_ATE_19_00": 10,
+      "TROCADA|DEPOIS_19_00": 4
+    }
+  },
+  "uf": "SP"
+}

@@ -1,0 +1,533 @@
+{
+  "cobertura": {
+    "amostra_campos_temporais": [
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:42:30",
+        "DT_ENCERRAMENTO": "2026-10-25 17:03:01",
+        "secao": [
+          59030,
+          59,
+          19
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:35:43",
+        "DT_ENCERRAMENTO": "2026-10-25 17:19:43",
+        "secao": [
+          59030,
+          59,
+          37
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:42:33",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:11",
+        "secao": [
+          59030,
+          59,
+          40
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:35:40",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:33",
+        "secao": [
+          59030,
+          59,
+          46
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:35:41",
+        "DT_ENCERRAMENTO": "2026-10-25 17:03:51",
+        "secao": [
+          59030,
+          59,
+          62
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:22:30",
+        "DT_ENCERRAMENTO": "2026-10-25 17:03:00",
+        "secao": [
+          59030,
+          59,
+          74
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:22:30",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:39",
+        "secao": [
+          59030,
+          59,
+          75
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:35:47",
+        "DT_ENCERRAMENTO": "2026-10-25 17:05:30",
+        "secao": [
+          59030,
+          59,
+          99
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:42:36",
+        "DT_ENCERRAMENTO": "2026-10-25 17:07:29",
+        "secao": [
+          59030,
+          59,
+          108
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:35:46",
+        "DT_ENCERRAMENTO": "2026-10-25 17:02:12",
+        "secao": [
+          59030,
+          59,
+          130
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:42:36",
+        "DT_ENCERRAMENTO": "2026-10-25 17:00:28",
+        "secao": [
+          59030,
+          59,
+          149
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:42:39",
+        "DT_ENCERRAMENTO": "2026-10-25 17:00:48",
+        "secao": [
+          59030,
+          59,
+          185
+        ]
+      }
+    ],
+    "amostra_horarios_nao_interpretados": [],
+    "campos_temporais_encontrados": [
+      "DT_BU_RECEBIDO",
+      "DT_ENCERRAMENTO"
+    ],
+    "horarios_validos": 37675,
+    "secoes": 37675
+  },
+  "fontes": {
+    "base_geo": "GitHub Actions 40877055121/RJ.csv.gz",
+    "bweb_2026_2t_sha512": "dcb3131b618b9c394b50576ead626a85ebb115c9f984f9b464d21a64eb69a735f11123fb189a3f8b906c29f9511557f46565cc1d4adc10a68fa0ebf69a70a205"
+  },
+  "gerado_utc": "2026-10-29T14:19:22.646173+00:00",
+  "ressalvas": [
+    "Encerramento posterior a 17h ou 19h NÃO significa voto após o horário.",
+    "Divergência entre número de urna prevista e efetivada NÃO possui timestamp da troca no CEFT.",
+    "A escala de horários precisa ser confrontada com tabelas do TSE, inclusive ajuste para horário de Brasília.",
+    "Substituição de urna defeituosa durante votação é permitida pela Resolução TSE 23.751/2026, art. 147.",
+    "Sem ata Ocorre JE e registros de contingência, horário exato da troca é desconhecido."
+  ],
+  "secoes_coincidentes": [],
+  "secoes_trocadas": [],
+  "status": "EXECUTADO_REQUER_VALIDACAO_FUSO",
+  "temporal": {
+    "amostra_secoes_coincidentes": [
+      {
+        "cod_municipio_tse": 58378,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:05:06",
+        "hora_extraida": "19:05:06",
+        "municipio": "ITABORAÍ",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 209,
+        "tipo_divergencia": "C",
+        "uf": "RJ",
+        "urna_efetivada": "2440934",
+        "urna_prevista": "2469657",
+        "zona": 104
+      },
+      {
+        "cod_municipio_tse": 58378,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:01:27",
+        "hora_extraida": "19:01:27",
+        "municipio": "ITABORAÍ",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 268,
+        "tipo_divergencia": "C",
+        "uf": "RJ",
+        "urna_efetivada": "2448548",
+        "urna_prevista": "2459653",
+        "zona": 104
+      },
+      {
+        "cod_municipio_tse": 58637,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:11:46",
+        "hora_extraida": "17:11:46",
+        "municipio": "NILÓPOLIS",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 32,
+        "tipo_divergencia": "C",
+        "uf": "RJ",
+        "urna_efetivada": "1671527",
+        "urna_prevista": "1782057",
+        "zona": 221
+      },
+      {
+        "cod_municipio_tse": 58653,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:01:05",
+        "hora_extraida": "19:01:05",
+        "municipio": "NITERÓI",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 284,
+        "tipo_divergencia": "C",
+        "uf": "RJ",
+        "urna_efetivada": "2239767",
+        "urna_prevista": "2177926",
+        "zona": 71
+      },
+      {
+        "cod_municipio_tse": 58653,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:46:01",
+        "hora_extraida": "17:46:01",
+        "municipio": "NITERÓI",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 3,
+        "tipo_divergencia": "C",
+        "uf": "RJ",
+        "urna_efetivada": "2190742",
+        "urna_prevista": "2045947",
+        "zona": 144
+      },
+      {
+        "cod_municipio_tse": 58653,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:46:52",
+        "hora_extraida": "17:46:52",
+        "municipio": "NITERÓI",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 20,
+        "tipo_divergencia": "C",
+        "uf": "RJ",
+        "urna_efetivada": "2235275",
+        "urna_prevista": "2231704",
+        "zona": 144
+      },
+      {
+        "cod_municipio_tse": 58653,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:50:27",
+        "hora_extraida": "17:50:27",
+        "municipio": "NITERÓI",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 39,
+        "tipo_divergencia": "C",
+        "uf": "RJ",
+        "urna_efetivada": "2238825",
+        "urna_prevista": "2028108",
+        "zona": 144
+      },
+      {
+        "cod_municipio_tse": 58653,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:50:06",
+        "hora_extraida": "17:50:06",
+        "municipio": "NITERÓI",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 101,
+        "tipo_divergencia": "C",
+        "uf": "RJ",
+        "urna_efetivada": "2015151",
+        "urna_prevista": "2179297",
+        "zona": 144
+      },
+      {
+        "cod_municipio_tse": 58653,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:57:04",
+        "hora_extraida": "17:57:04",
+        "municipio": "NITERÓI",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 247,
+        "tipo_divergencia": "C",
+        "uf": "RJ",
+        "urna_efetivada": "2226853",
+        "urna_prevista": "2219678",
+        "zona": 144
+      },
+      {
+        "cod_municipio_tse": 58653,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:20:13",
+        "hora_extraida": "17:20:13",
+        "municipio": "NITERÓI",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 234,
+        "tipo_divergencia": "C",
+        "uf": "RJ",
+        "urna_efetivada": "2226737",
+        "urna_prevista": "2228725",
+        "zona": 199
+      },
+      {
+        "cod_municipio_tse": 58971,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:01:26",
+        "hora_extraida": "19:01:26",
+        "municipio": "SÃO GONÇALO",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 318,
+        "tipo_divergencia": "C",
+        "uf": "RJ",
+        "urna_efetivada": "2163673",
+        "urna_prevista": "2042684",
+        "zona": 135
+      },
+      {
+        "cod_municipio_tse": 58971,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:01:09",
+        "hora_extraida": "19:01:09",
+        "municipio": "SÃO GONÇALO",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 322,
+        "tipo_divergencia": "C",
+        "uf": "RJ",
+        "urna_efetivada": "2178658",
+        "urna_prevista": "2223558",
+        "zona": 135
+      },
+      {
+        "cod_municipio_tse": 60011,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:00:28",
+        "hora_extraida": "19:00:28",
+        "municipio": "RIO DE JANEIRO",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 236,
+        "tipo_divergencia": "C",
+        "uf": "RJ",
+        "urna_efetivada": "1666896",
+        "urna_prevista": "1671776",
+        "zona": 9
+      },
+      {
+        "cod_municipio_tse": 60011,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:04:56",
+        "hora_extraida": "19:04:56",
+        "municipio": "RIO DE JANEIRO",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 262,
+        "tipo_divergencia": "C",
+        "uf": "RJ",
+        "urna_efetivada": "1658641",
+        "urna_prevista": "1812905",
+        "zona": 9
+      },
+      {
+        "cod_municipio_tse": 60011,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:00:01",
+        "hora_extraida": "19:00:01",
+        "municipio": "RIO DE JANEIRO",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 273,
+        "tipo_divergencia": "C",
+        "uf": "RJ",
+        "urna_efetivada": "1677975",
+        "urna_prevista": "1781276",
+        "zona": 9
+      },
+      {
+        "cod_municipio_tse": 60011,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:00:24",
+        "hora_extraida": "19:00:24",
+        "municipio": "RIO DE JANEIRO",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 360,
+        "tipo_divergencia": "C",
+        "uf": "RJ",
+        "urna_efetivada": "1650927",
+        "urna_prevista": "1762620",
+        "zona": 9
+      },
+      {
+        "cod_municipio_tse": 60011,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:00:55",
+        "hora_extraida": "19:00:55",
+        "municipio": "RIO DE JANEIRO",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 449,
+        "tipo_divergencia": "C",
+        "uf": "RJ",
+        "urna_efetivada": "1667314",
+        "urna_prevista": "1824767",
+        "zona": 9
+      },
+      {
+        "cod_municipio_tse": 60011,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:10:41",
+        "hora_extraida": "17:10:41",
+        "municipio": "RIO DE JANEIRO",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 25,
+        "tipo_divergencia": "C",
+        "uf": "RJ",
+        "urna_efetivada": "1673313",
+        "urna_prevista": "1825270",
+        "zona": 161
+      },
+      {
+        "cod_municipio_tse": 60011,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:11:58",
+        "hora_extraida": "17:11:58",
+        "municipio": "RIO DE JANEIRO",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 208,
+        "tipo_divergencia": "C",
+        "uf": "RJ",
+        "urna_efetivada": "1821691",
+        "urna_prevista": "1825819",
+        "zona": 169
+      },
+      {
+        "cod_municipio_tse": 60011,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:10:32",
+        "hora_extraida": "17:10:32",
+        "municipio": "RIO DE JANEIRO",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 333,
+        "tipo_divergencia": "C",
+        "uf": "RJ",
+        "urna_efetivada": "1664660",
+        "urna_prevista": "1795200",
+        "zona": 170
+      },
+      {
+        "cod_municipio_tse": 60011,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:01:43",
+        "hora_extraida": "19:01:43",
+        "municipio": "RIO DE JANEIRO",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 331,
+        "tipo_divergencia": "C",
+        "uf": "RJ",
+        "urna_efetivada": "1665849",
+        "urna_prevista": "1776138",
+        "zona": 179
+      },
+      {
+        "cod_municipio_tse": 60011,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:00:48",
+        "hora_extraida": "19:00:48",
+        "municipio": "RIO DE JANEIRO",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 122,
+        "tipo_divergencia": "C",
+        "uf": "RJ",
+        "urna_efetivada": "1665026",
+        "urna_prevista": "1822387",
+        "zona": 182
+      },
+      {
+        "cod_municipio_tse": 60011,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:00:23",
+        "hora_extraida": "19:00:23",
+        "municipio": "RIO DE JANEIRO",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 312,
+        "tipo_divergencia": "C",
+        "uf": "RJ",
+        "urna_efetivada": "1788520",
+        "urna_prevista": "1797148",
+        "zona": 204
+      },
+      {
+        "cod_municipio_tse": 60011,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:02:17",
+        "hora_extraida": "19:02:17",
+        "municipio": "RIO DE JANEIRO",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 325,
+        "tipo_divergencia": "C",
+        "uf": "RJ",
+        "urna_efetivada": "1760689",
+        "urna_prevista": "1664203",
+        "zona": 214
+      },
+      {
+        "cod_municipio_tse": 60011,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:00:41",
+        "hora_extraida": "19:00:41",
+        "municipio": "RIO DE JANEIRO",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 50,
+        "tipo_divergencia": "C",
+        "uf": "RJ",
+        "urna_efetivada": "2214425",
+        "urna_prevista": "2208851",
+        "zona": 234
+      }
+    ],
+    "contagens": {
+      "depois_17h10": 4036,
+      "depois_19h": 2799,
+      "hora_extraida": 37675,
+      "total": 37675,
+      "trocadas": 267,
+      "trocadas_encerradas_depois_17h10": 29,
+      "trocadas_encerradas_depois_19h": 19
+    },
+    "tabela_urna_prevista_efetivada_x_encerramento": {
+      "NAO_TROCADA|ATE_17_10": 33401,
+      "NAO_TROCADA|DEPOIS_17_10_ATE_19_00": 1227,
+      "NAO_TROCADA|DEPOIS_19_00": 2780,
+      "TROCADA|ATE_17_10": 238,
+      "TROCADA|DEPOIS_17_10_ATE_19_00": 10,
+      "TROCADA|DEPOIS_19_00": 19
+    }
+  },
+  "uf": "RJ"
+}

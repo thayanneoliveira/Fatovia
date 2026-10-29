@@ -1,0 +1,248 @@
+{
+  "cobertura": {
+    "amostra_campos_temporais": [
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 19:51:02",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:52",
+        "secao": [
+          23817,
+          105,
+          316
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 19:51:13",
+        "DT_ENCERRAMENTO": "2026-10-25 17:00:42",
+        "secao": [
+          23817,
+          105,
+          331
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 19:54:27",
+        "DT_ENCERRAMENTO": "2026-10-25 17:07:05",
+        "secao": [
+          23817,
+          105,
+          332
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:45:25",
+        "DT_ENCERRAMENTO": "2026-10-25 17:04:06",
+        "secao": [
+          23817,
+          105,
+          349
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 19:44:10",
+        "DT_ENCERRAMENTO": "2026-10-25 17:04:34",
+        "secao": [
+          23817,
+          105,
+          367
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 19:54:14",
+        "DT_ENCERRAMENTO": "2026-10-25 17:02:05",
+        "secao": [
+          23817,
+          105,
+          369
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 19:58:12",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:56",
+        "secao": [
+          23817,
+          105,
+          374
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:27:43",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:54",
+        "secao": [
+          23817,
+          106,
+          7
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:53:16",
+        "DT_ENCERRAMENTO": "2026-10-25 17:07:04",
+        "secao": [
+          23817,
+          106,
+          35
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:53:15",
+        "DT_ENCERRAMENTO": "2026-10-25 17:03:56",
+        "secao": [
+          23817,
+          106,
+          36
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 21:00:41",
+        "DT_ENCERRAMENTO": "2026-10-25 17:02:00",
+        "secao": [
+          23817,
+          106,
+          51
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 21:00:43",
+        "DT_ENCERRAMENTO": "2026-10-25 17:02:35",
+        "secao": [
+          23817,
+          106,
+          52
+        ]
+      }
+    ],
+    "amostra_horarios_nao_interpretados": [],
+    "campos_temporais_encontrados": [
+      "DT_BU_RECEBIDO",
+      "DT_ENCERRAMENTO"
+    ],
+    "horarios_validos": 21418,
+    "secoes": 21418
+  },
+  "fontes": {
+    "base_geo": "GitHub Actions 40877055121/PE.csv.gz",
+    "bweb_2026_2t_sha512": "5002c264cf9fff1b27bbbbc75d89b5aec5856b59a2888fef2b8c1577fe041bf60bcd6a4d8943023382579921d7f89926608aa7e550beb8581718cea1873f645a"
+  },
+  "gerado_utc": "2026-10-29T14:19:18.003113+00:00",
+  "ressalvas": [
+    "Encerramento posterior a 17h ou 19h NÃO significa voto após o horário.",
+    "Divergência entre número de urna prevista e efetivada NÃO possui timestamp da troca no CEFT.",
+    "A escala de horários precisa ser confrontada com tabelas do TSE, inclusive ajuste para horário de Brasília.",
+    "Substituição de urna defeituosa durante votação é permitida pela Resolução TSE 23.751/2026, art. 147.",
+    "Sem ata Ocorre JE e registros de contingência, horário exato da troca é desconhecido."
+  ],
+  "secoes_coincidentes": [],
+  "secoes_trocadas": [],
+  "status": "EXECUTADO_REQUER_VALIDACAO_FUSO",
+  "temporal": {
+    "amostra_secoes_coincidentes": [
+      {
+        "cod_municipio_tse": 23574,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:05:12",
+        "hora_extraida": "19:05:12",
+        "municipio": "CABO DE SANTO AGOSTINHO",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 209,
+        "tipo_divergencia": "C",
+        "uf": "PE",
+        "urna_efetivada": "2171243",
+        "urna_prevista": "2044043",
+        "zona": 121
+      },
+      {
+        "cod_municipio_tse": 24171,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:10:42",
+        "hora_extraida": "17:10:42",
+        "municipio": "GAMELEIRA",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 146,
+        "tipo_divergencia": "C",
+        "uf": "PE",
+        "urna_efetivada": "1672792",
+        "urna_prevista": "1827740",
+        "zona": 28
+      },
+      {
+        "cod_municipio_tse": 24791,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:22:25",
+        "hora_extraida": "17:22:25",
+        "municipio": "MACAPARANA",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 24,
+        "tipo_divergencia": "C",
+        "uf": "PE",
+        "urna_efetivada": "2045402",
+        "urna_prevista": "2184400",
+        "zona": 90
+      },
+      {
+        "cod_municipio_tse": 24910,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:13:55",
+        "hora_extraida": "17:13:55",
+        "municipio": "OLINDA",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 19,
+        "tipo_divergencia": "C",
+        "uf": "PE",
+        "urna_efetivada": "2044068",
+        "urna_prevista": "2160596",
+        "zona": 10
+      },
+      {
+        "cod_municipio_tse": 25119,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:10:01",
+        "hora_extraida": "17:10:01",
+        "municipio": "PAUDALHO",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 78,
+        "tipo_divergencia": "C",
+        "uf": "PE",
+        "urna_efetivada": "2045563",
+        "urna_prevista": "2170070",
+        "zona": 17
+      },
+      {
+        "cod_municipio_tse": 25313,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:24:25",
+        "hora_extraida": "17:24:25",
+        "municipio": "RECIFE",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 182,
+        "tipo_divergencia": "C",
+        "uf": "PE",
+        "urna_efetivada": "2335969",
+        "urna_prevista": "2370780",
+        "zona": 7
+      }
+    ],
+    "contagens": {
+      "depois_17h10": 1035,
+      "depois_19h": 657,
+      "hora_extraida": 21418,
+      "total": 21418,
+      "trocadas": 99,
+      "trocadas_encerradas_depois_17h10": 6,
+      "trocadas_encerradas_depois_19h": 1
+    },
+    "tabela_urna_prevista_efetivada_x_encerramento": {
+      "NAO_TROCADA|ATE_17_10": 20290,
+      "NAO_TROCADA|DEPOIS_17_10_ATE_19_00": 373,
+      "NAO_TROCADA|DEPOIS_19_00": 656,
+      "TROCADA|ATE_17_10": 93,
+      "TROCADA|DEPOIS_17_10_ATE_19_00": 5,
+      "TROCADA|DEPOIS_19_00": 1
+    }
+  },
+  "uf": "PE"
+}

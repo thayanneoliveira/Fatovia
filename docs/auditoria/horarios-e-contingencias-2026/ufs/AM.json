@@ -1,0 +1,151 @@
+{
+  "cobertura": {
+    "amostra_campos_temporais": [
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:55:47",
+        "DT_ENCERRAMENTO": "2026-10-25 16:00:27",
+        "secao": [
+          2151,
+          14,
+          3
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:53:17",
+        "DT_ENCERRAMENTO": "2026-10-25 16:01:14",
+        "secao": [
+          2151,
+          14,
+          9
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:55:47",
+        "DT_ENCERRAMENTO": "2026-10-25 16:02:40",
+        "secao": [
+          2151,
+          14,
+          14
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:14:33",
+        "DT_ENCERRAMENTO": "2026-10-25 16:01:02",
+        "secao": [
+          2151,
+          14,
+          20
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:58:43",
+        "DT_ENCERRAMENTO": "2026-10-25 16:04:46",
+        "secao": [
+          2151,
+          14,
+          25
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:21:26",
+        "DT_ENCERRAMENTO": "2026-10-25 16:00:38",
+        "secao": [
+          2151,
+          14,
+          40
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:56:28",
+        "DT_ENCERRAMENTO": "2026-10-25 16:00:37",
+        "secao": [
+          2151,
+          14,
+          48
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:16:15",
+        "DT_ENCERRAMENTO": "2026-10-25 16:01:24",
+        "secao": [
+          2151,
+          14,
+          51
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:11:22",
+        "DT_ENCERRAMENTO": "2026-10-25 16:00:33",
+        "secao": [
+          2151,
+          14,
+          60
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:57:23",
+        "DT_ENCERRAMENTO": "2026-10-25 16:01:50",
+        "secao": [
+          2151,
+          14,
+          70
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:21:11",
+        "DT_ENCERRAMENTO": "2026-10-25 16:01:55",
+        "secao": [
+          2151,
+          14,
+          63
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:56:17",
+        "DT_ENCERRAMENTO": "2026-10-25 16:02:33",
+        "secao": [
+          2151,
+          14,
+          44
+        ]
+      }
+    ],
+    "amostra_horarios_nao_interpretados": [],
+    "campos_temporais_encontrados": [
+      "DT_BU_RECEBIDO",
+      "DT_ENCERRAMENTO"
+    ],
+    "horarios_validos": 8157,
+    "secoes": 8157
+  },
+  "fontes": {
+    "base_geo": "GitHub Actions 40877055121/AM.csv.gz",
+    "bweb_2026_2t_sha512": "c87f558d88f478afaed40d452855e34eb99772fb4214b2c913824fd5adb816d324c6c040ab35d5e17e953e0d752b882c27304bd3c9139a9f96a765e2356c5ce8"
+  },
+  "gerado_utc": "2026-10-29T14:18:42.670051+00:00",
+  "ressalvas": [
+    "Encerramento posterior a 17h ou 19h NÃO significa voto após o horário.",
+    "Divergência entre número de urna prevista e efetivada NÃO possui timestamp da troca no CEFT.",
+    "A escala de horários precisa ser confrontada com tabelas do TSE, inclusive ajuste para horário de Brasília.",
+    "Substituição de urna defeituosa durante votação é permitida pela Resolução TSE 23.751/2026, art. 147.",
+    "Sem ata Ocorre JE e registros de contingência, horário exato da troca é desconhecido."
+  ],
+  "secoes_coincidentes": [],
+  "secoes_trocadas": [],
+  "status": "EXECUTADO_REQUER_VALIDACAO_FUSO",
+  "temporal": {
+    "amostra_secoes_coincidentes": [],
+    "contagens": {
+      "depois_17h10": 0,
+      "depois_19h": 0,
+      "hora_extraida": 8157,
+      "total": 8157,
+      "trocadas": 48
+    },
+    "tabela_urna_prevista_efetivada_x_encerramento": {
+      "NAO_TROCADA|ATE_17_10": 8109,
+      "TROCADA|ATE_17_10": 48
+    }
+  },
+  "uf": "AM"
+}

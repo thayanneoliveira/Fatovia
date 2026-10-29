@@ -1,0 +1,378 @@
+{
+  "escopo": "Associação entre diferença de urna prevista/efetivada e horário de encerramento de seção em 25/10/2026",
+  "fontes": [
+    "BWeb e CEFT oficiais TSE 2º turno com SHA512 conferido",
+    "TSE 27/10/2026: boletim nacional seções após 17h10 (comparação de critério)"
+  ],
+  "gerado_utc": "2026-10-29T14:21:20.098858+00:00",
+  "horarios_tse_nao_reproduzidos_em": {
+    "AC": -33,
+    "AL": -150,
+    "AM": -347,
+    "AP": -33,
+    "BA": -1679,
+    "CE": -247,
+    "DF": -407,
+    "ES": -69,
+    "GO": -142,
+    "MA": -491,
+    "MG": -500,
+    "MS": -97,
+    "MT": -259,
+    "PA": -409,
+    "PB": -174,
+    "PE": -837,
+    "PI": -150,
+    "PR": -153,
+    "RJ": -1677,
+    "RN": -154,
+    "RO": -102,
+    "RR": -43,
+    "RS": -152,
+    "SC": -57,
+    "SE": -87,
+    "SP": -2722,
+    "TO": -66
+  },
+  "limites": [
+    "CEFT informa substituição/desvio de equipamento entre o esperado e o efetivado, não a hora da troca.",
+    "Encerramento depois das 17h não prova utilização da extensão extraordinária.",
+    "O corte do TSE de 17h10 pode utilizar outro critério, fuso ou registro; divergências devem ser explicadas antes de inferências.",
+    "Trocas de urna durante a votação são procedimentos possíveis pela regulamentação em vigor, com registro obrigatório.",
+    "Correlação numérica entre troca e horário tardio não comprova causalidade, regularidade ou fraude."
+  ],
+  "por_uf": {
+    "AC": {
+      "depois_17h10": 0,
+      "depois_19h": 0,
+      "diferenca_bweb_menos_tse": -33,
+      "hora_extraida": 2270,
+      "horario_do_bweb_conferido_com_tse": false,
+      "total": 2270,
+      "trocadas": 5,
+      "tse_secoes_encerradas_depois_17h10": 33
+    },
+    "AL": {
+      "depois_17h10": 91,
+      "depois_19h": 2,
+      "diferenca_bweb_menos_tse": -150,
+      "hora_extraida": 7101,
+      "horario_do_bweb_conferido_com_tse": false,
+      "total": 7101,
+      "trocadas": 61,
+      "trocadas_encerradas_depois_17h10": 2,
+      "trocadas_encerradas_depois_19h": 1,
+      "tse_secoes_encerradas_depois_17h10": 241
+    },
+    "AM": {
+      "depois_17h10": 0,
+      "depois_19h": 0,
+      "diferenca_bweb_menos_tse": -347,
+      "hora_extraida": 8157,
+      "horario_do_bweb_conferido_com_tse": false,
+      "total": 8157,
+      "trocadas": 48,
+      "tse_secoes_encerradas_depois_17h10": 347
+    },
+    "AP": {
+      "depois_17h10": 14,
+      "depois_19h": 0,
+      "diferenca_bweb_menos_tse": -33,
+      "hora_extraida": 1914,
+      "horario_do_bweb_conferido_com_tse": false,
+      "total": 1914,
+      "trocadas": 16,
+      "tse_secoes_encerradas_depois_17h10": 47
+    },
+    "BA": {
+      "depois_17h10": 2108,
+      "depois_19h": 933,
+      "diferenca_bweb_menos_tse": -1679,
+      "hora_extraida": 35476,
+      "horario_do_bweb_conferido_com_tse": false,
+      "total": 35476,
+      "trocadas": 232,
+      "trocadas_encerradas_depois_17h10": 24,
+      "trocadas_encerradas_depois_19h": 11,
+      "tse_secoes_encerradas_depois_17h10": 3787
+    },
+    "CE": {
+      "depois_17h10": 161,
+      "depois_19h": 0,
+      "diferenca_bweb_menos_tse": -247,
+      "hora_extraida": 23765,
+      "horario_do_bweb_conferido_com_tse": false,
+      "total": 23765,
+      "trocadas": 84,
+      "trocadas_encerradas_depois_17h10": 6,
+      "tse_secoes_encerradas_depois_17h10": 408
+    },
+    "DF": {
+      "depois_17h10": 289,
+      "depois_19h": 17,
+      "diferenca_bweb_menos_tse": -407,
+      "hora_extraida": 6969,
+      "horario_do_bweb_conferido_com_tse": false,
+      "total": 6969,
+      "trocadas": 26,
+      "trocadas_encerradas_depois_17h10": 1,
+      "tse_secoes_encerradas_depois_17h10": 696
+    },
+    "ES": {
+      "depois_17h10": 36,
+      "depois_19h": 2,
+      "diferenca_bweb_menos_tse": -69,
+      "hora_extraida": 9844,
+      "horario_do_bweb_conferido_com_tse": false,
+      "total": 9844,
+      "trocadas": 52,
+      "trocadas_encerradas_depois_17h10": 2,
+      "trocadas_encerradas_depois_19h": 2,
+      "tse_secoes_encerradas_depois_17h10": 105
+    },
+    "GO": {
+      "depois_17h10": 63,
+      "depois_19h": 1,
+      "diferenca_bweb_menos_tse": -142,
+      "hora_extraida": 15686,
+      "horario_do_bweb_conferido_com_tse": false,
+      "total": 15686,
+      "trocadas": 88,
+      "trocadas_encerradas_depois_17h10": 1,
+      "tse_secoes_encerradas_depois_17h10": 205
+    },
+    "MA": {
+      "depois_17h10": 374,
+      "depois_19h": 3,
+      "diferenca_bweb_menos_tse": -491,
+      "hora_extraida": 18093,
+      "horario_do_bweb_conferido_com_tse": false,
+      "total": 18093,
+      "trocadas": 147,
+      "trocadas_encerradas_depois_17h10": 6,
+      "tse_secoes_encerradas_depois_17h10": 865
+    },
+    "MG": {
+      "depois_17h10": 240,
+      "depois_19h": 1,
+      "diferenca_bweb_menos_tse": -500,
+      "hora_extraida": 52062,
+      "horario_do_bweb_conferido_com_tse": false,
+      "total": 52062,
+      "trocadas": 169,
+      "trocadas_encerradas_depois_17h10": 6,
+      "trocadas_encerradas_depois_19h": 1,
+      "tse_secoes_encerradas_depois_17h10": 740
+    },
+    "MS": {
+      "depois_17h10": 0,
+      "depois_19h": 0,
+      "diferenca_bweb_menos_tse": -97,
+      "hora_extraida": 7106,
+      "horario_do_bweb_conferido_com_tse": false,
+      "total": 7106,
+      "trocadas": 24,
+      "tse_secoes_encerradas_depois_17h10": 97
+    },
+    "MT": {
+      "depois_17h10": 9,
+      "depois_19h": 0,
+      "diferenca_bweb_menos_tse": -259,
+      "hora_extraida": 8287,
+      "horario_do_bweb_conferido_com_tse": false,
+      "total": 8287,
+      "trocadas": 57,
+      "tse_secoes_encerradas_depois_17h10": 268
+    },
+    "PA": {
+      "depois_17h10": 292,
+      "depois_19h": 8,
+      "diferenca_bweb_menos_tse": -409,
+      "hora_extraida": 20827,
+      "horario_do_bweb_conferido_com_tse": false,
+      "total": 20827,
+      "trocadas": 110,
+      "trocadas_encerradas_depois_17h10": 5,
+      "tse_secoes_encerradas_depois_17h10": 701
+    },
+    "PB": {
+      "depois_17h10": 405,
+      "depois_19h": 272,
+      "diferenca_bweb_menos_tse": -174,
+      "hora_extraida": 10712,
+      "horario_do_bweb_conferido_com_tse": false,
+      "total": 10712,
+      "trocadas": 63,
+      "trocadas_encerradas_depois_17h10": 6,
+      "trocadas_encerradas_depois_19h": 5,
+      "tse_secoes_encerradas_depois_17h10": 579
+    },
+    "PE": {
+      "depois_17h10": 1035,
+      "depois_19h": 657,
+      "diferenca_bweb_menos_tse": -837,
+      "hora_extraida": 21418,
+      "horario_do_bweb_conferido_com_tse": false,
+      "total": 21418,
+      "trocadas": 99,
+      "trocadas_encerradas_depois_17h10": 6,
+      "trocadas_encerradas_depois_19h": 1,
+      "tse_secoes_encerradas_depois_17h10": 1872
+    },
+    "PI": {
+      "depois_17h10": 87,
+      "depois_19h": 7,
+      "diferenca_bweb_menos_tse": -150,
+      "hora_extraida": 10225,
+      "horario_do_bweb_conferido_com_tse": false,
+      "total": 10225,
+      "trocadas": 51,
+      "trocadas_encerradas_depois_17h10": 1,
+      "tse_secoes_encerradas_depois_17h10": 237
+    },
+    "PR": {
+      "depois_17h10": 90,
+      "depois_19h": 1,
+      "diferenca_bweb_menos_tse": -153,
+      "hora_extraida": 27142,
+      "horario_do_bweb_conferido_com_tse": false,
+      "total": 27142,
+      "trocadas": 188,
+      "trocadas_encerradas_depois_17h10": 5,
+      "trocadas_encerradas_depois_19h": 1,
+      "tse_secoes_encerradas_depois_17h10": 243
+    },
+    "RJ": {
+      "depois_17h10": 4036,
+      "depois_19h": 2799,
+      "diferenca_bweb_menos_tse": -1677,
+      "hora_extraida": 37675,
+      "horario_do_bweb_conferido_com_tse": false,
+      "total": 37675,
+      "trocadas": 267,
+      "trocadas_encerradas_depois_17h10": 29,
+      "trocadas_encerradas_depois_19h": 19,
+      "tse_secoes_encerradas_depois_17h10": 5713
+    },
+    "RN": {
+      "depois_17h10": 84,
+      "depois_19h": 3,
+      "diferenca_bweb_menos_tse": -154,
+      "hora_extraida": 8115,
+      "horario_do_bweb_conferido_com_tse": false,
+      "total": 8115,
+      "trocadas": 39,
+      "trocadas_encerradas_depois_17h10": 1,
+      "trocadas_encerradas_depois_19h": 1,
+      "tse_secoes_encerradas_depois_17h10": 238
+    },
+    "RO": {
+      "depois_17h10": 0,
+      "depois_19h": 0,
+      "diferenca_bweb_menos_tse": -102,
+      "hora_extraida": 4698,
+      "horario_do_bweb_conferido_com_tse": false,
+      "total": 4698,
+      "trocadas": 19,
+      "tse_secoes_encerradas_depois_17h10": 102
+    },
+    "RR": {
+      "depois_17h10": 0,
+      "depois_19h": 0,
+      "diferenca_bweb_menos_tse": -43,
+      "hora_extraida": 1519,
+      "horario_do_bweb_conferido_com_tse": false,
+      "total": 1519,
+      "trocadas": 5,
+      "tse_secoes_encerradas_depois_17h10": 43
+    },
+    "RS": {
+      "depois_17h10": 68,
+      "depois_19h": 2,
+      "diferenca_bweb_menos_tse": -152,
+      "hora_extraida": 27547,
+      "horario_do_bweb_conferido_com_tse": false,
+      "total": 27547,
+      "trocadas": 217,
+      "trocadas_encerradas_depois_17h10": 1,
+      "tse_secoes_encerradas_depois_17h10": 220
+    },
+    "SC": {
+      "depois_17h10": 41,
+      "depois_19h": 0,
+      "diferenca_bweb_menos_tse": -57,
+      "hora_extraida": 17326,
+      "horario_do_bweb_conferido_com_tse": false,
+      "total": 17326,
+      "trocadas": 130,
+      "tse_secoes_encerradas_depois_17h10": 98
+    },
+    "SE": {
+      "depois_17h10": 100,
+      "depois_19h": 51,
+      "diferenca_bweb_menos_tse": -87,
+      "hora_extraida": 5923,
+      "horario_do_bweb_conferido_com_tse": false,
+      "total": 5923,
+      "trocadas": 78,
+      "trocadas_encerradas_depois_17h10": 2,
+      "trocadas_encerradas_depois_19h": 1,
+      "tse_secoes_encerradas_depois_17h10": 187
+    },
+    "SP": {
+      "depois_17h10": 3371,
+      "depois_19h": 1567,
+      "diferenca_bweb_menos_tse": -2722,
+      "hora_extraida": 103656,
+      "horario_do_bweb_conferido_com_tse": false,
+      "total": 103656,
+      "trocadas": 394,
+      "trocadas_encerradas_depois_17h10": 14,
+      "trocadas_encerradas_depois_19h": 4,
+      "tse_secoes_encerradas_depois_17h10": 6093
+    },
+    "TO": {
+      "depois_17h10": 37,
+      "depois_19h": 0,
+      "diferenca_bweb_menos_tse": -66,
+      "hora_extraida": 4384,
+      "horario_do_bweb_conferido_com_tse": false,
+      "total": 4384,
+      "trocadas": 4,
+      "tse_secoes_encerradas_depois_17h10": 103
+    }
+  },
+  "projeto": "FATOVIA AUDITA",
+  "proporcoes": {
+    "apos_17h10": {
+      "comparacao_somente_descritiva": true,
+      "proporcao_apos_corte_entre_nao_trocadas": 0.02607506905965785,
+      "proporcao_apos_corte_entre_trocadas": 0.04414515525626637,
+      "secoes_apos_corte": 13031,
+      "secoes_trocadas_e_apos_corte": 118,
+      "secoes_trocadas_total": 2673
+    },
+    "apos_19h": {
+      "comparacao_somente_descritiva": true,
+      "proporcao_apos_corte_entre_nao_trocadas": 0.0126791108670016,
+      "proporcao_apos_corte_entre_trocadas": 0.017583239805462027,
+      "secoes_apos_corte": 6326,
+      "secoes_trocadas_e_apos_corte": 47,
+      "secoes_trocadas_total": 2673
+    }
+  },
+  "status": "BRASIL_CRUZAMENTO_EXECUTADO_VALIDACAO_CRITERIO_TSE_PENDENTE",
+  "totais": {
+    "depois_17h10": 13031,
+    "depois_19h": 6326,
+    "hora_extraida": 497897,
+    "total": 497897,
+    "trocadas": 2673,
+    "trocadas_encerradas_depois_17h10": 118,
+    "trocadas_encerradas_depois_19h": 47
+  },
+  "ufs_pendentes": [
+    "ZZ"
+  ],
+  "ufs_processadas": 27
+}

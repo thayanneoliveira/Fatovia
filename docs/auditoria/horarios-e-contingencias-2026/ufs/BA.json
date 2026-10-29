@@ -1,0 +1,518 @@
+{
+  "cobertura": {
+    "amostra_campos_temporais": [
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:37:33",
+        "DT_ENCERRAMENTO": "2026-10-25 17:03:58",
+        "secao": [
+          33090,
+          111,
+          5
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:37:37",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:08",
+        "secao": [
+          33090,
+          111,
+          11
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:57:31",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:49",
+        "secao": [
+          33090,
+          111,
+          233
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:37:38",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:01",
+        "secao": [
+          33090,
+          111,
+          178
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:37:41",
+        "DT_ENCERRAMENTO": "2026-10-25 17:02:48",
+        "secao": [
+          33090,
+          111,
+          18
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:37:41",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:55",
+        "secao": [
+          33090,
+          111,
+          179
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 19:28:10",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:48",
+        "secao": [
+          33090,
+          111,
+          4
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:38:14",
+        "DT_ENCERRAMENTO": "2026-10-25 17:00:43",
+        "secao": [
+          33090,
+          111,
+          241
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:37:41",
+        "DT_ENCERRAMENTO": "2026-10-25 17:00:34",
+        "secao": [
+          33090,
+          111,
+          185
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:38:14",
+        "DT_ENCERRAMENTO": "2026-10-25 17:00:59",
+        "secao": [
+          33090,
+          111,
+          248
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:37:34",
+        "DT_ENCERRAMENTO": "2026-10-25 17:00:58",
+        "secao": [
+          33090,
+          111,
+          14
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:37:31",
+        "DT_ENCERRAMENTO": "2026-10-25 17:00:46",
+        "secao": [
+          33090,
+          111,
+          3
+        ]
+      }
+    ],
+    "amostra_horarios_nao_interpretados": [],
+    "campos_temporais_encontrados": [
+      "DT_BU_RECEBIDO",
+      "DT_ENCERRAMENTO"
+    ],
+    "horarios_validos": 35476,
+    "secoes": 35476
+  },
+  "fontes": {
+    "base_geo": "GitHub Actions 40877055121/BA.csv.gz",
+    "bweb_2026_2t_sha512": "15db0c47b3b445ccbc1dd15ef77291e1bb5fe1af20a3e444381f7c32057794ed97e0c901cb46ea09cc7172a5d3d25cfe6435910e3f3fbdb8479c0c599f46e5c3"
+  },
+  "gerado_utc": "2026-10-29T14:18:42.475026+00:00",
+  "ressalvas": [
+    "Encerramento posterior a 17h ou 19h NÃO significa voto após o horário.",
+    "Divergência entre número de urna prevista e efetivada NÃO possui timestamp da troca no CEFT.",
+    "A escala de horários precisa ser confrontada com tabelas do TSE, inclusive ajuste para horário de Brasília.",
+    "Substituição de urna defeituosa durante votação é permitida pela Resolução TSE 23.751/2026, art. 147.",
+    "Sem ata Ocorre JE e registros de contingência, horário exato da troca é desconhecido."
+  ],
+  "secoes_coincidentes": [],
+  "secoes_trocadas": [],
+  "status": "EXECUTADO_REQUER_VALIDACAO_FUSO",
+  "temporal": {
+    "amostra_secoes_coincidentes": [
+      {
+        "cod_municipio_tse": 34290,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:12:01",
+        "hora_extraida": "17:12:01",
+        "municipio": "CANDEIAS",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 365,
+        "tipo_divergencia": "C",
+        "uf": "BA",
+        "urna_efetivada": "1650233",
+        "urna_prevista": "1654578",
+        "zona": 127
+      },
+      {
+        "cod_municipio_tse": 35270,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:16:11",
+        "hora_extraida": "17:16:11",
+        "municipio": "GLÓRIA",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 16,
+        "tipo_divergencia": "C",
+        "uf": "BA",
+        "urna_efetivada": "1656197",
+        "urna_prevista": "1808895",
+        "zona": 84
+      },
+      {
+        "cod_municipio_tse": 35599,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:12:35",
+        "hora_extraida": "17:12:35",
+        "municipio": "IBIRATAIA",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 195,
+        "tipo_divergencia": "C",
+        "uf": "BA",
+        "urna_efetivada": "2239569",
+        "urna_prevista": "2043461",
+        "zona": 24
+      },
+      {
+        "cod_municipio_tse": 36854,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:00:45",
+        "hora_extraida": "19:00:45",
+        "municipio": "LAURO DE FREITAS",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 19,
+        "tipo_divergencia": "C",
+        "uf": "BA",
+        "urna_efetivada": "1668737",
+        "urna_prevista": "1672480",
+        "zona": 180
+      },
+      {
+        "cod_municipio_tse": 36854,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:01:44",
+        "hora_extraida": "19:01:44",
+        "municipio": "LAURO DE FREITAS",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 288,
+        "tipo_divergencia": "C",
+        "uf": "BA",
+        "urna_efetivada": "1668918",
+        "urna_prevista": "1667370",
+        "zona": 180
+      },
+      {
+        "cod_municipio_tse": 36854,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:15:46",
+        "hora_extraida": "17:15:46",
+        "municipio": "LAURO DE FREITAS",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 332,
+        "tipo_divergencia": "C",
+        "uf": "BA",
+        "urna_efetivada": "1653191",
+        "urna_prevista": "1650894",
+        "zona": 180
+      },
+      {
+        "cod_municipio_tse": 36854,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:00:22",
+        "hora_extraida": "19:00:22",
+        "municipio": "LAURO DE FREITAS",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 561,
+        "tipo_divergencia": "C",
+        "uf": "BA",
+        "urna_efetivada": "1676612",
+        "urna_prevista": "1657849",
+        "zona": 180
+      },
+      {
+        "cod_municipio_tse": 38059,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:15:56",
+        "hora_extraida": "17:15:56",
+        "municipio": "POJUCA",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 119,
+        "tipo_divergencia": "C",
+        "uf": "BA",
+        "urna_efetivada": "2242976",
+        "urna_prevista": "2230731",
+        "zona": 200
+      },
+      {
+        "cod_municipio_tse": 38458,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 18:58:49",
+        "hora_extraida": "18:58:49",
+        "municipio": "RUY BARBOSA",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 193,
+        "tipo_divergencia": "C",
+        "uf": "BA",
+        "urna_efetivada": "2195558",
+        "urna_prevista": "2129342",
+        "zona": 87
+      },
+      {
+        "cod_municipio_tse": 38490,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:01:26",
+        "hora_extraida": "19:01:26",
+        "municipio": "SALVADOR",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 1,
+        "tipo_divergencia": "C",
+        "uf": "BA",
+        "urna_efetivada": "2380929",
+        "urna_prevista": "2428153",
+        "zona": 1
+      },
+      {
+        "cod_municipio_tse": 38490,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:00:14",
+        "hora_extraida": "19:00:14",
+        "municipio": "SALVADOR",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 181,
+        "tipo_divergencia": "C",
+        "uf": "BA",
+        "urna_efetivada": "2408446",
+        "urna_prevista": "2426848",
+        "zona": 4
+      },
+      {
+        "cod_municipio_tse": 38490,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:08:20",
+        "hora_extraida": "19:08:20",
+        "municipio": "SALVADOR",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 422,
+        "tipo_divergencia": "C",
+        "uf": "BA",
+        "urna_efetivada": "2354112",
+        "urna_prevista": "2429315",
+        "zona": 5
+      },
+      {
+        "cod_municipio_tse": 38490,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:02:53",
+        "hora_extraida": "19:02:53",
+        "municipio": "SALVADOR",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 439,
+        "tipo_divergencia": "C",
+        "uf": "BA",
+        "urna_efetivada": "2427439",
+        "urna_prevista": "2352608",
+        "zona": 5
+      },
+      {
+        "cod_municipio_tse": 38490,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:10:05",
+        "hora_extraida": "17:10:05",
+        "municipio": "SALVADOR",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 367,
+        "tipo_divergencia": "C",
+        "uf": "BA",
+        "urna_efetivada": "2429154",
+        "urna_prevista": "2250622",
+        "zona": 6
+      },
+      {
+        "cod_municipio_tse": 38490,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:12:06",
+        "hora_extraida": "17:12:06",
+        "municipio": "SALVADOR",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 491,
+        "tipo_divergencia": "C",
+        "uf": "BA",
+        "urna_efetivada": "2275211",
+        "urna_prevista": "2424079",
+        "zona": 6
+      },
+      {
+        "cod_municipio_tse": 38490,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:00:35",
+        "hora_extraida": "19:00:35",
+        "municipio": "SALVADOR",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 508,
+        "tipo_divergencia": "C",
+        "uf": "BA",
+        "urna_efetivada": "2428854",
+        "urna_prevista": "2391215",
+        "zona": 10
+      },
+      {
+        "cod_municipio_tse": 38490,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:03:41",
+        "hora_extraida": "19:03:41",
+        "municipio": "SALVADOR",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 71,
+        "tipo_divergencia": "C",
+        "uf": "BA",
+        "urna_efetivada": "2327816",
+        "urna_prevista": "2352441",
+        "zona": 19
+      },
+      {
+        "cod_municipio_tse": 38490,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:00:25",
+        "hora_extraida": "19:00:25",
+        "municipio": "SALVADOR",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 450,
+        "tipo_divergencia": "C",
+        "uf": "BA",
+        "urna_efetivada": "2387642",
+        "urna_prevista": "2429338",
+        "zona": 19
+      },
+      {
+        "cod_municipio_tse": 38873,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 18:51:54",
+        "hora_extraida": "18:51:54",
+        "municipio": "SÃO MIGUEL DAS MATAS",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 199,
+        "tipo_divergencia": "C",
+        "uf": "BA",
+        "urna_efetivada": "2212032",
+        "urna_prevista": "2072571",
+        "zona": 36
+      },
+      {
+        "cod_municipio_tse": 38946,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:19:20",
+        "hora_extraida": "17:19:20",
+        "municipio": "SAUBARA",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 179,
+        "tipo_divergencia": "C",
+        "uf": "BA",
+        "urna_efetivada": "1658820",
+        "urna_prevista": "1656755",
+        "zona": 178
+      },
+      {
+        "cod_municipio_tse": 38946,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:13:09",
+        "hora_extraida": "17:13:09",
+        "municipio": "SAUBARA",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 187,
+        "tipo_divergencia": "C",
+        "uf": "BA",
+        "urna_efetivada": "1652779",
+        "urna_prevista": "1665609",
+        "zona": 178
+      },
+      {
+        "cod_municipio_tse": 39098,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:26:14",
+        "hora_extraida": "17:26:14",
+        "municipio": "SERRINHA",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 269,
+        "tipo_divergencia": "C",
+        "uf": "BA",
+        "urna_efetivada": "1674375",
+        "urna_prevista": "1757122",
+        "zona": 150
+      },
+      {
+        "cod_municipio_tse": 39136,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:00:45",
+        "hora_extraida": "19:00:45",
+        "municipio": "SIMÕES FILHO",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 100,
+        "tipo_divergencia": "C",
+        "uf": "BA",
+        "urna_efetivada": "1664439",
+        "urna_prevista": "1655209",
+        "zona": 33
+      },
+      {
+        "cod_municipio_tse": 39578,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:10:10",
+        "hora_extraida": "17:10:10",
+        "municipio": "VALENÇA",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 20,
+        "tipo_divergencia": "C",
+        "uf": "BA",
+        "urna_efetivada": "1758545",
+        "urna_prevista": "1791608",
+        "zona": 31
+      }
+    ],
+    "contagens": {
+      "depois_17h10": 2108,
+      "depois_19h": 933,
+      "hora_extraida": 35476,
+      "total": 35476,
+      "trocadas": 232,
+      "trocadas_encerradas_depois_17h10": 24,
+      "trocadas_encerradas_depois_19h": 11
+    },
+    "tabela_urna_prevista_efetivada_x_encerramento": {
+      "NAO_TROCADA|ATE_17_10": 33160,
+      "NAO_TROCADA|DEPOIS_17_10_ATE_19_00": 1162,
+      "NAO_TROCADA|DEPOIS_19_00": 922,
+      "TROCADA|ATE_17_10": 208,
+      "TROCADA|DEPOIS_17_10_ATE_19_00": 13,
+      "TROCADA|DEPOIS_19_00": 11
+    }
+  },
+  "uf": "BA"
+}

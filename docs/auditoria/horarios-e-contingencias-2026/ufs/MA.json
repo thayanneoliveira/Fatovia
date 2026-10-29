@@ -1,0 +1,246 @@
+{
+  "cobertura": {
+    "amostra_campos_temporais": [
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:38:35",
+        "DT_ENCERRAMENTO": "2026-10-25 17:03:14",
+        "secao": [
+          7331,
+          56,
+          107
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:58:35",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:09",
+        "secao": [
+          7331,
+          56,
+          137
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 21:02:37",
+        "DT_ENCERRAMENTO": "2026-10-25 17:12:29",
+        "secao": [
+          7331,
+          56,
+          172
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:23:22",
+        "DT_ENCERRAMENTO": "2026-10-25 17:03:01",
+        "secao": [
+          7331,
+          56,
+          177
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:43:37",
+        "DT_ENCERRAMENTO": "2026-10-25 17:09:15",
+        "secao": [
+          7331,
+          56,
+          178
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:41:15",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:39",
+        "secao": [
+          7331,
+          56,
+          181
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:30:45",
+        "DT_ENCERRAMENTO": "2026-10-25 17:04:05",
+        "secao": [
+          7331,
+          56,
+          190
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:38:37",
+        "DT_ENCERRAMENTO": "2026-10-25 17:00:53",
+        "secao": [
+          7331,
+          56,
+          195
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:53:47",
+        "DT_ENCERRAMENTO": "2026-10-25 17:00:37",
+        "secao": [
+          7331,
+          56,
+          198
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:23:24",
+        "DT_ENCERRAMENTO": "2026-10-25 17:05:07",
+        "secao": [
+          7331,
+          56,
+          199
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:12:27",
+        "DT_ENCERRAMENTO": "2026-10-25 17:02:06",
+        "secao": [
+          7331,
+          56,
+          200
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 21:03:50",
+        "DT_ENCERRAMENTO": "2026-10-25 17:06:02",
+        "secao": [
+          7331,
+          56,
+          217
+        ]
+      }
+    ],
+    "amostra_horarios_nao_interpretados": [],
+    "campos_temporais_encontrados": [
+      "DT_BU_RECEBIDO",
+      "DT_ENCERRAMENTO"
+    ],
+    "horarios_validos": 18093,
+    "secoes": 18093
+  },
+  "fontes": {
+    "base_geo": "GitHub Actions 40877055121/MA.csv.gz",
+    "bweb_2026_2t_sha512": "90c1c9d2d1d0635c9e6900ee51dbb81b4a1f2dee113ed3a5145a2dacbe8d2da97bec55c78caa74fb635412cd29c413f2204a05d22ae6e0516ef249811c9d075c"
+  },
+  "gerado_utc": "2026-10-29T14:18:59.888806+00:00",
+  "ressalvas": [
+    "Encerramento posterior a 17h ou 19h NÃO significa voto após o horário.",
+    "Divergência entre número de urna prevista e efetivada NÃO possui timestamp da troca no CEFT.",
+    "A escala de horários precisa ser confrontada com tabelas do TSE, inclusive ajuste para horário de Brasília.",
+    "Substituição de urna defeituosa durante votação é permitida pela Resolução TSE 23.751/2026, art. 147.",
+    "Sem ata Ocorre JE e registros de contingência, horário exato da troca é desconhecido."
+  ],
+  "secoes_coincidentes": [],
+  "secoes_trocadas": [],
+  "status": "EXECUTADO_REQUER_VALIDACAO_FUSO",
+  "temporal": {
+    "amostra_secoes_coincidentes": [
+      {
+        "cod_municipio_tse": 7536,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:21:26",
+        "hora_extraida": "17:21:26",
+        "municipio": "CAROLINA",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 73,
+        "tipo_divergencia": "C",
+        "uf": "MA",
+        "urna_efetivada": "2307161",
+        "urna_prevista": "2288559",
+        "zona": 26
+      },
+      {
+        "cod_municipio_tse": 8486,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:21:47",
+        "hora_extraida": "17:21:47",
+        "municipio": "SENADOR ALEXANDRE COSTA",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 171,
+        "tipo_divergencia": "C",
+        "uf": "MA",
+        "urna_efetivada": "2258302",
+        "urna_prevista": "2263151",
+        "zona": 6
+      },
+      {
+        "cod_municipio_tse": 8524,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:42:33",
+        "hora_extraida": "17:42:33",
+        "municipio": "SERRANO DO MARANHÃO",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 89,
+        "tipo_divergencia": "C",
+        "uf": "MA",
+        "urna_efetivada": "2129006",
+        "urna_prevista": "2136092",
+        "zona": 107
+      },
+      {
+        "cod_municipio_tse": 8893,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:13:49",
+        "hora_extraida": "17:13:49",
+        "municipio": "SÃO JOSÉ DE RIBAMAR",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 368,
+        "tipo_divergencia": "C",
+        "uf": "MA",
+        "urna_efetivada": "1653638",
+        "urna_prevista": "1675654",
+        "zona": 47
+      },
+      {
+        "cod_municipio_tse": 9210,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:22:39",
+        "hora_extraida": "17:22:39",
+        "municipio": "SÃO LUÍS",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 387,
+        "tipo_divergencia": "C",
+        "uf": "MA",
+        "urna_efetivada": "1699839",
+        "urna_prevista": "1812151",
+        "zona": 76
+      },
+      {
+        "cod_municipio_tse": 9377,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:15:40",
+        "hora_extraida": "17:15:40",
+        "municipio": "TIMON",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 545,
+        "tipo_divergencia": "C",
+        "uf": "MA",
+        "urna_efetivada": "2305703",
+        "urna_prevista": "2310430",
+        "zona": 19
+      }
+    ],
+    "contagens": {
+      "depois_17h10": 374,
+      "depois_19h": 3,
+      "hora_extraida": 18093,
+      "total": 18093,
+      "trocadas": 147,
+      "trocadas_encerradas_depois_17h10": 6
+    },
+    "tabela_urna_prevista_efetivada_x_encerramento": {
+      "NAO_TROCADA|ATE_17_10": 17578,
+      "NAO_TROCADA|DEPOIS_17_10_ATE_19_00": 365,
+      "NAO_TROCADA|DEPOIS_19_00": 3,
+      "TROCADA|ATE_17_10": 141,
+      "TROCADA|DEPOIS_17_10_ATE_19_00": 6
+    }
+  },
+  "uf": "MA"
+}

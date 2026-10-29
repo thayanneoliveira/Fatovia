@@ -1,0 +1,171 @@
+{
+  "cobertura": {
+    "amostra_campos_temporais": [
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:11:16",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:30",
+        "secao": [
+          93750,
+          101,
+          2
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:27:16",
+        "DT_ENCERRAMENTO": "2026-10-25 17:00:44",
+        "secao": [
+          93750,
+          101,
+          9
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:08:16",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:04",
+        "secao": [
+          93750,
+          101,
+          59
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:05:17",
+        "DT_ENCERRAMENTO": "2026-10-25 17:00:58",
+        "secao": [
+          93750,
+          101,
+          64
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:40:18",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:30",
+        "secao": [
+          93750,
+          101,
+          65
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:30:49",
+        "DT_ENCERRAMENTO": "2026-10-25 17:00:37",
+        "secao": [
+          93750,
+          101,
+          78
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:11:15",
+        "DT_ENCERRAMENTO": "2026-10-25 17:00:40",
+        "secao": [
+          93750,
+          101,
+          81
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:42:16",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:37",
+        "secao": [
+          93750,
+          101,
+          101
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:37:42",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:57",
+        "secao": [
+          93750,
+          101,
+          107
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:34:36",
+        "DT_ENCERRAMENTO": "2026-10-25 17:02:05",
+        "secao": [
+          93750,
+          101,
+          111
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:42:17",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:39",
+        "secao": [
+          93750,
+          101,
+          120
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:18:16",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:20",
+        "secao": [
+          93750,
+          101,
+          133
+        ]
+      }
+    ],
+    "amostra_horarios_nao_interpretados": [],
+    "campos_temporais_encontrados": [
+      "DT_BU_RECEBIDO",
+      "DT_ENCERRAMENTO"
+    ],
+    "horarios_validos": 15686,
+    "secoes": 15686
+  },
+  "fontes": {
+    "base_geo": "GitHub Actions 40877055121/GO.csv.gz",
+    "bweb_2026_2t_sha512": "e5b6635dc3a05b7f6c175bdbe8a23e4daa3f4029f79cf3b7c82ac2cc48a43c315b00cac68162dd134f3187ba973bd3ddea5a26cb6f91c44449945bb094f93e0e"
+  },
+  "gerado_utc": "2026-10-29T14:18:57.700385+00:00",
+  "ressalvas": [
+    "Encerramento posterior a 17h ou 19h NÃO significa voto após o horário.",
+    "Divergência entre número de urna prevista e efetivada NÃO possui timestamp da troca no CEFT.",
+    "A escala de horários precisa ser confrontada com tabelas do TSE, inclusive ajuste para horário de Brasília.",
+    "Substituição de urna defeituosa durante votação é permitida pela Resolução TSE 23.751/2026, art. 147.",
+    "Sem ata Ocorre JE e registros de contingência, horário exato da troca é desconhecido."
+  ],
+  "secoes_coincidentes": [],
+  "secoes_trocadas": [],
+  "status": "EXECUTADO_REQUER_VALIDACAO_FUSO",
+  "temporal": {
+    "amostra_secoes_coincidentes": [
+      {
+        "cod_municipio_tse": 96253,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:35:54",
+        "hora_extraida": "17:35:54",
+        "municipio": "TRINDADE",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 159,
+        "tipo_divergencia": "C",
+        "uf": "GO",
+        "urna_efetivada": "1665159",
+        "urna_prevista": "1662182",
+        "zona": 49
+      }
+    ],
+    "contagens": {
+      "depois_17h10": 63,
+      "depois_19h": 1,
+      "hora_extraida": 15686,
+      "total": 15686,
+      "trocadas": 88,
+      "trocadas_encerradas_depois_17h10": 1
+    },
+    "tabela_urna_prevista_efetivada_x_encerramento": {
+      "NAO_TROCADA|ATE_17_10": 15536,
+      "NAO_TROCADA|DEPOIS_17_10_ATE_19_00": 61,
+      "NAO_TROCADA|DEPOIS_19_00": 1,
+      "TROCADA|ATE_17_10": 87,
+      "TROCADA|DEPOIS_17_10_ATE_19_00": 1
+    }
+  },
+  "uf": "GO"
+}

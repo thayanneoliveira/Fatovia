@@ -1,0 +1,188 @@
+{
+  "cobertura": {
+    "amostra_campos_temporais": [
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:10:45",
+        "DT_ENCERRAMENTO": "2026-10-25 17:05:16",
+        "secao": [
+          28878,
+          5,
+          27
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:01:15",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:05",
+        "secao": [
+          28878,
+          5,
+          30
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:07:09",
+        "DT_ENCERRAMENTO": "2026-10-25 17:06:04",
+        "secao": [
+          28878,
+          5,
+          41
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 19:41:20",
+        "DT_ENCERRAMENTO": "2026-10-25 17:03:38",
+        "secao": [
+          28878,
+          5,
+          48
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 19:38:17",
+        "DT_ENCERRAMENTO": "2026-10-25 17:02:18",
+        "secao": [
+          28878,
+          5,
+          56
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:10:44",
+        "DT_ENCERRAMENTO": "2026-10-25 17:02:33",
+        "secao": [
+          28878,
+          5,
+          63
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:00:40",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:39",
+        "secao": [
+          28878,
+          5,
+          74
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:06:23",
+        "DT_ENCERRAMENTO": "2026-10-25 17:05:15",
+        "secao": [
+          28878,
+          5,
+          78
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 19:59:28",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:48",
+        "secao": [
+          28878,
+          5,
+          79
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 19:57:34",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:16",
+        "secao": [
+          28878,
+          5,
+          84
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 21:09:31",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:56",
+        "secao": [
+          28878,
+          5,
+          87
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:10:09",
+        "DT_ENCERRAMENTO": "2026-10-25 17:00:47",
+        "secao": [
+          28878,
+          5,
+          53
+        ]
+      }
+    ],
+    "amostra_horarios_nao_interpretados": [],
+    "campos_temporais_encontrados": [
+      "DT_BU_RECEBIDO",
+      "DT_ENCERRAMENTO"
+    ],
+    "horarios_validos": 7101,
+    "secoes": 7101
+  },
+  "fontes": {
+    "base_geo": "GitHub Actions 40877055121/AL.csv.gz",
+    "bweb_2026_2t_sha512": "392ebb110ac066be0bc1113b1cd4f15feadac11deb97c1786a2a9bc824affa5abce5fdfad051a6a3d4bf2b42909ba4b27b87af586dc888c17f8319401b24a848"
+  },
+  "gerado_utc": "2026-10-29T14:18:42.847912+00:00",
+  "ressalvas": [
+    "Encerramento posterior a 17h ou 19h NÃO significa voto após o horário.",
+    "Divergência entre número de urna prevista e efetivada NÃO possui timestamp da troca no CEFT.",
+    "A escala de horários precisa ser confrontada com tabelas do TSE, inclusive ajuste para horário de Brasília.",
+    "Substituição de urna defeituosa durante votação é permitida pela Resolução TSE 23.751/2026, art. 147.",
+    "Sem ata Ocorre JE e registros de contingência, horário exato da troca é desconhecido."
+  ],
+  "secoes_coincidentes": [],
+  "secoes_trocadas": [],
+  "status": "EXECUTADO_REQUER_VALIDACAO_FUSO",
+  "temporal": {
+    "amostra_secoes_coincidentes": [
+      {
+        "cod_municipio_tse": 28215,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 19:00:39",
+        "hora_extraida": "19:00:39",
+        "municipio": "OURO BRANCO",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 79,
+        "tipo_divergencia": "C",
+        "uf": "AL",
+        "urna_efetivada": "1667961",
+        "urna_prevista": "1816310",
+        "zona": 50
+      },
+      {
+        "cod_municipio_tse": 28258,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:49:01",
+        "hora_extraida": "17:49:01",
+        "municipio": "PALMEIRA DOS ÍNDIOS",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 85,
+        "tipo_divergencia": "C",
+        "uf": "AL",
+        "urna_efetivada": "1769245",
+        "urna_prevista": "1764215",
+        "zona": 10
+      }
+    ],
+    "contagens": {
+      "depois_17h10": 91,
+      "depois_19h": 2,
+      "hora_extraida": 7101,
+      "total": 7101,
+      "trocadas": 61,
+      "trocadas_encerradas_depois_17h10": 2,
+      "trocadas_encerradas_depois_19h": 1
+    },
+    "tabela_urna_prevista_efetivada_x_encerramento": {
+      "NAO_TROCADA|ATE_17_10": 6951,
+      "NAO_TROCADA|DEPOIS_17_10_ATE_19_00": 88,
+      "NAO_TROCADA|DEPOIS_19_00": 1,
+      "TROCADA|ATE_17_10": 59,
+      "TROCADA|DEPOIS_17_10_ATE_19_00": 1,
+      "TROCADA|DEPOIS_19_00": 1
+    }
+  },
+  "uf": "AL"
+}

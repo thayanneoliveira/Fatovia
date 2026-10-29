@@ -1,0 +1,6 @@
+uf,cod_municipio_tse,municipio,zona,secao,urna_prevista,urna_efetivada,tipo_divergencia,encerramento_original,hora_extraida,encerramento_apos_17h10,encerramento_apos_19h,observacao
+AC,1007,BUJARI,9,2,2257895,2047711,C,2026-10-25 15:03:35,15:03:35,0,0,Hora da SUBSTITUIÇÃO não consta no CEFT.
+AC,1074,CRUZEIRO DO SUL,4,394,2278553,2276040,C,2026-10-25 15:01:17,15:01:17,0,0,Hora da SUBSTITUIÇÃO não consta no CEFT.
+AC,1120,ACRELÂNDIA,8,72,2046562,2045984,,2026-10-25 15:00:46,15:00:46,0,0,Hora da SUBSTITUIÇÃO não consta no CEFT.
+AC,1457,SENA MADUREIRA,3,84,2046886,2046522,C,2026-10-25 15:01:32,15:01:32,0,0,Hora da SUBSTITUIÇÃO não consta no CEFT.
+AC,1538,SENADOR GUIOMARD,8,82,2045245,2044974,C,2026-10-25 15:01:19,15:01:19,0,0,Hora da SUBSTITUIÇÃO não consta no CEFT.

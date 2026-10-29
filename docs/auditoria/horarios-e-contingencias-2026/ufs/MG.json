@@ -1,0 +1,247 @@
+{
+  "cobertura": {
+    "amostra_campos_temporais": [
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 19:52:09",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:55",
+        "secao": [
+          41238,
+          26,
+          2
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 19:25:10",
+        "DT_ENCERRAMENTO": "2026-10-25 17:00:27",
+        "secao": [
+          41238,
+          26,
+          9
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 19:29:08",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:16",
+        "secao": [
+          41238,
+          26,
+          17
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 19:12:50",
+        "DT_ENCERRAMENTO": "2026-10-25 17:00:35",
+        "secao": [
+          41238,
+          26,
+          18
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 19:47:26",
+        "DT_ENCERRAMENTO": "2026-10-25 17:04:04",
+        "secao": [
+          41238,
+          26,
+          25
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 19:47:19",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:18",
+        "secao": [
+          41238,
+          26,
+          27
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 19:40:26",
+        "DT_ENCERRAMENTO": "2026-10-25 17:00:53",
+        "secao": [
+          41238,
+          26,
+          47
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 19:27:06",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:45",
+        "secao": [
+          41238,
+          26,
+          52
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 20:34:40",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:46",
+        "secao": [
+          41238,
+          26,
+          55
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 19:25:16",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:57",
+        "secao": [
+          41238,
+          26,
+          72
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 19:26:07",
+        "DT_ENCERRAMENTO": "2026-10-25 17:01:38",
+        "secao": [
+          41238,
+          26,
+          74
+        ]
+      },
+      {
+        "DT_BU_RECEBIDO": "2026-10-25 19:54:08",
+        "DT_ENCERRAMENTO": "2026-10-25 17:00:50",
+        "secao": [
+          41238,
+          26,
+          104
+        ]
+      }
+    ],
+    "amostra_horarios_nao_interpretados": [],
+    "campos_temporais_encontrados": [
+      "DT_BU_RECEBIDO",
+      "DT_ENCERRAMENTO"
+    ],
+    "horarios_validos": 52062,
+    "secoes": 52062
+  },
+  "fontes": {
+    "base_geo": "GitHub Actions 40877055121/MG.csv.gz",
+    "bweb_2026_2t_sha512": "b2123700c7a520ccfb0e1be9aa3bab205c9c5f5b64cd537c80a1eaca69a9b96a67c440c88ca2a0f30f63aeed72a1c9dfca0e5ede8358eca1c64698e0c8054bb9"
+  },
+  "gerado_utc": "2026-10-29T14:19:06.328740+00:00",
+  "ressalvas": [
+    "Encerramento posterior a 17h ou 19h NÃO significa voto após o horário.",
+    "Divergência entre número de urna prevista e efetivada NÃO possui timestamp da troca no CEFT.",
+    "A escala de horários precisa ser confrontada com tabelas do TSE, inclusive ajuste para horário de Brasília.",
+    "Substituição de urna defeituosa durante votação é permitida pela Resolução TSE 23.751/2026, art. 147.",
+    "Sem ata Ocorre JE e registros de contingência, horário exato da troca é desconhecido."
+  ],
+  "secoes_coincidentes": [],
+  "secoes_trocadas": [],
+  "status": "EXECUTADO_REQUER_VALIDACAO_FUSO",
+  "temporal": {
+    "amostra_secoes_coincidentes": [
+      {
+        "cod_municipio_tse": 40690,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 18:35:09",
+        "hora_extraida": "18:35:09",
+        "municipio": "ARAGUARI",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 264,
+        "tipo_divergencia": "C",
+        "uf": "MG",
+        "urna_efetivada": "2092884",
+        "urna_prevista": "2129190",
+        "zona": 16
+      },
+      {
+        "cod_municipio_tse": 41882,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 1,
+        "encerramento_original": "2026-10-25 23:04:42",
+        "hora_extraida": "23:04:42",
+        "municipio": "CHAPADA GAÚCHA",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 185,
+        "tipo_divergencia": "C",
+        "uf": "MG",
+        "urna_efetivada": "2066579",
+        "urna_prevista": "2079428",
+        "zona": 320
+      },
+      {
+        "cod_municipio_tse": 46337,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:10:06",
+        "hora_extraida": "17:10:06",
+        "municipio": "ITABIRA",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 65,
+        "tipo_divergencia": "C",
+        "uf": "MG",
+        "urna_efetivada": "1653361",
+        "urna_prevista": "1752183",
+        "zona": 132
+      },
+      {
+        "cod_municipio_tse": 47996,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:49:02",
+        "hora_extraida": "17:49:02",
+        "municipio": "MARIANA",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 90,
+        "tipo_divergencia": "C",
+        "uf": "MG",
+        "urna_efetivada": "1674424",
+        "urna_prevista": "1835427",
+        "zona": 171
+      },
+      {
+        "cod_municipio_tse": 48658,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:15:07",
+        "hora_extraida": "17:15:07",
+        "municipio": "MONTES CLAROS",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 419,
+        "tipo_divergencia": "C",
+        "uf": "MG",
+        "urna_efetivada": "2061321",
+        "urna_prevista": "2120749",
+        "zona": 317
+      },
+      {
+        "cod_municipio_tse": 51918,
+        "encerramento_apos_17h10": 1,
+        "encerramento_apos_19h": 0,
+        "encerramento_original": "2026-10-25 17:12:41",
+        "hora_extraida": "17:12:41",
+        "municipio": "SANTA RITA DO SAPUCAÍ",
+        "observacao": "Hora da SUBSTITUIÇÃO não consta no CEFT.",
+        "secao": 32,
+        "tipo_divergencia": "C",
+        "uf": "MG",
+        "urna_efetivada": "2103134",
+        "urna_prevista": "2078626",
+        "zona": 248
+      }
+    ],
+    "contagens": {
+      "depois_17h10": 240,
+      "depois_19h": 1,
+      "hora_extraida": 52062,
+      "total": 52062,
+      "trocadas": 169,
+      "trocadas_encerradas_depois_17h10": 6,
+      "trocadas_encerradas_depois_19h": 1
+    },
+    "tabela_urna_prevista_efetivada_x_encerramento": {
+      "NAO_TROCADA|ATE_17_10": 51659,
+      "NAO_TROCADA|DEPOIS_17_10_ATE_19_00": 234,
+      "TROCADA|ATE_17_10": 163,
+      "TROCADA|DEPOIS_17_10_ATE_19_00": 5,
+      "TROCADA|DEPOIS_19_00": 1
+    }
+  },
+  "uf": "MG"
+}
