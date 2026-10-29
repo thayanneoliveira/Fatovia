@@ -1,5 +1,5 @@
 {
-  "run_at_utc": "2026-10-29T16:21:41.529845+00:00",
+  "run_at_utc": "2026-10-29T16:23:08.133181+00:00",
   "source": "GEDAI official ZIPs, verified by SHA-512 in RESULTADO_GEDAI.json",
   "ufs": {
     "MG": {
@@ -45,6 +45,7 @@
             "24/10/2026 15:25:43\tINFO\tUsuário Windows: 117211860299\tB2F4BE4823F43336",
             "24/10/2026 15:25:44\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\tE6D7EA74F01D1219"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 15:25:44\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t2C1E844D7EEEE094",
             "24/10/2026 15:25:45\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\tD1165490AED08FAA",
@@ -89,6 +90,7 @@
             "24/10/2026 16:38:55\tINFO\tUsuário Windows: 123743770205\t754B332FE495BE2D",
             "24/10/2026 16:38:55\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t9CA03C6FDBCBD8AC"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 16:38:55\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tAB1ACE9565E71548",
             "24/10/2026 16:38:56\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t1D4F38AC3AC0949A",
@@ -124,6 +126,7 @@
             "24/10/2026 11:30:34\tINFO\tUsuário Windows: 033091060248\tD5A61D7DFE7A13F3",
             "24/10/2026 11:30:34\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t290EEF6789A44D34"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 11:30:34\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t6C6D1BE9EA8BF8E7",
             "24/10/2026 11:30:35\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t11F606784C7803C1",
@@ -160,6 +163,7 @@
             "24/10/2026 15:40:46\tINFO\tUsuário Windows: 014477630272\t9F694B0B2873A832",
             "24/10/2026 15:40:46\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t4ECD0A207FD37F58"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 15:40:46\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tE19C3CFBE94057E3",
             "24/10/2026 15:40:48\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t1AC17EE976ED0A0D",
@@ -206,6 +210,7 @@
             "24/10/2026 14:34:36\tINFO\tUsuário Windows: 058459830299\t42A9093258808694",
             "24/10/2026 14:34:36\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t1A13CDD4EE94CC0A"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 14:34:37\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tFC19D6B2CCA62673",
             "24/10/2026 14:34:38\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t2AEF8A37525BEFB4",
@@ -242,6 +247,7 @@
             "24/10/2026 14:57:42\tINFO\tUsuário Windows: 112649580213\tC74736910A36EB99",
             "24/10/2026 14:57:42\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\tF105A144F6F4A98D"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 14:57:42\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t7ABFFCDF0DDBAA34",
             "24/10/2026 14:57:44\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t9DD5F68121724FD6",
@@ -275,6 +281,7 @@
             "24/10/2026 16:38:49\tINFO\tUsuário Windows: 140592270205\tA7E254B7CF1FBCEA",
             "24/10/2026 16:38:49\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t1A7EEBDCACBE6491"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 16:38:49\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t0B5B2D0ABFA841A4",
             "24/10/2026 16:38:50\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t1E8CA37682CB7453",
@@ -318,6 +325,7 @@
             "24/10/2026 16:13:29\tINFO\tUsuário Windows: 112972150221\t13F11E2E4B127BF5",
             "24/10/2026 16:13:29\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t87D7B5993DD6BB33"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 16:13:29\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t32EE77BE6079E1EC",
             "24/10/2026 16:13:30\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t5A56DC39967C1DF3",
@@ -368,6 +376,7 @@
             "24/10/2026 15:29:48\tINFO\tUsuário Windows: 095036190299\tE2E52128DECDBD8A",
             "24/10/2026 15:29:48\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t8C3C3742BCA73ABC"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 15:29:49\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tA2A25D04EC8960FD",
             "24/10/2026 15:29:50\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\tB643E9EFA5CAA87D",
@@ -406,6 +415,7 @@
             "24/10/2026 14:51:37\tINFO\tUsuário Windows: 100868650272\tD4A71F296C1498FD",
             "24/10/2026 14:51:37\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t357C02E4E68400C4"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 14:51:37\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tA0DC5E2F34E50B17",
             "24/10/2026 14:51:39\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\tDEE1026FBA8E770E",
@@ -440,6 +450,7 @@
             "18/10/2026 11:04:04\tINFO\tUsuário Windows: 107395580248\t518F055511807EB6",
             "18/10/2026 11:04:04\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\tDE2D04AD87613626"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "18/10/2026 11:04:04\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tB8CC7D5BE5D1CEBD",
             "18/10/2026 11:04:05\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t84F691C5DEA2EA02",
@@ -485,6 +496,7 @@
             "24/10/2026 15:06:46\tINFO\tUsuário Windows: 128047180264\t0AAB7CBF030AEE88",
             "24/10/2026 15:06:46\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\tD1A5E4DF3B6C1460"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 15:06:46\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t18CC10483E086AE6",
             "24/10/2026 15:06:47\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t19215A4D2609BE4B",
@@ -528,6 +540,7 @@
             "24/10/2026 15:22:51\tINFO\tUsuário Windows: 200437110191\tB5613C237BCFD434",
             "24/10/2026 15:22:51\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t84AD9AF5F0E19CFF"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 15:22:52\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tF97AC43242C51A46",
             "24/10/2026 15:22:53\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t183F55B4CBCE2D40",
@@ -568,6 +581,7 @@
             "24/10/2026 12:51:33\tINFO\tUsuário Windows: 123269190299\t4D62A269CCD187CB",
             "24/10/2026 12:51:33\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t0188308C16D063FC"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 12:51:33\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t9927B42DA64F7B6F",
             "24/10/2026 12:51:34\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t22BC97C80F6D004F",
@@ -612,6 +626,7 @@
             "24/10/2026 11:56:08\tINFO\tUsuário Windows: 112645240213\t04AA18A865B5A88C",
             "24/10/2026 11:56:08\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t07D5304184568882"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 11:56:08\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t5C7E2315AD9C7EA1",
             "24/10/2026 11:56:09\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t831A09F32E648F3F",
@@ -662,6 +677,7 @@
             "24/10/2026 11:37:15\tINFO\tUsuário Windows: 082457710299\tAA91595ABCAEF2AE",
             "24/10/2026 11:37:15\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t78396117C659C7C0"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 11:37:15\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t8DF451AC8F9BBC32",
             "24/10/2026 11:37:16\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t0DF554BA24CCA2E0",
@@ -713,6 +729,7 @@
             "24/10/2026 11:28:39\tINFO\tUsuário Windows: 051341600230\t8149EE28BE650CB8",
             "24/10/2026 11:28:39\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t88715AABDD655BB5"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 11:28:40\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t6D25B24943B64932",
             "24/10/2026 11:28:41\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t77BF0956BEB7DC1E",
@@ -763,6 +780,7 @@
             "24/10/2026 15:33:47\tINFO\tUsuário Windows: 126714880264\t8E052AEF7EB55CE5",
             "24/10/2026 15:33:47\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t1138FE766D62C193"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 15:33:47\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tBC3FAD3F4EBA685A",
             "24/10/2026 15:33:49\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t84566A66960CBDEA",
@@ -811,6 +829,7 @@
             "24/10/2026 12:00:32\tINFO\tUsuário Windows: 164510360221\tE3D24796DF38B760",
             "24/10/2026 12:00:33\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t6646CAA98B57516F"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 12:00:33\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t0205F16E676B161B",
             "24/10/2026 12:00:35\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t19B6F2FF43132667",
@@ -843,6 +862,7 @@
             "24/10/2026 14:41:40\tINFO\tUsuário Windows: 061244090213\tAEF9CCD32D29D6C5",
             "24/10/2026 14:41:40\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\tF4FDD7804A4776CD"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 14:41:40\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t17F4AA925C1D83B5",
             "24/10/2026 14:41:41\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\tBCDC9AA82A067E3C",
@@ -891,6 +911,7 @@
             "24/10/2026 14:56:17\tINFO\tUsuário Windows: 125393970213\t5D05C081F74E7EEA",
             "24/10/2026 14:56:17\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t885FBD0FBD9D78C1"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 14:56:17\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t0CBB5A0656407F4E",
             "24/10/2026 14:56:18\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\tE019BDFA13D6534B",
@@ -935,6 +956,7 @@
             "24/10/2026 15:36:03\tINFO\tUsuário Windows: 002956020213\t7B552F4BFE705DC0",
             "24/10/2026 15:36:03\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t9D6C2B2F01722597"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 15:36:03\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tC67E88045E37C546",
             "24/10/2026 15:36:04\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\tDAC66967D533B5AC",
@@ -969,6 +991,7 @@
             "25/10/2026 07:58:08\tINFO\tUsuário Windows: 187450740299\t2FEBFAAD46710EC2",
             "25/10/2026 07:58:08\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t1A0829CE93CA6470"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "25/10/2026 07:58:09\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tDE3F89BDAF34D508",
             "25/10/2026 07:58:10\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t82799DFA35C91BDF",
@@ -1014,6 +1037,7 @@
             "16/10/2026 15:32:42\tINFO\tUsuário Windows: 120494580221\t0391B086335AEF5D",
             "16/10/2026 15:32:42\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\tE70569E7ED1A95D9"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "16/10/2026 15:32:42\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tE805FF18DFA6A0E3",
             "16/10/2026 15:32:43\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t68454C252F92C26F",
@@ -1064,6 +1088,7 @@
             "24/10/2026 15:13:16\tINFO\tUsuário Windows: 157717050248\t56D5AA15E5052271",
             "24/10/2026 15:13:16\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\tC83A2843702CD0B4"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 15:13:17\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t8C91D58F1A4CF93B",
             "24/10/2026 15:13:18\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t30E4A1C90E19673E",
@@ -1099,6 +1124,7 @@
             "24/10/2026 13:31:26\tINFO\tUsuário Windows: 090584240248\t553B24F73751B4AD",
             "24/10/2026 13:31:26\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\tF844496B253E36F5"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 13:31:27\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t3674A5B788C69A53",
             "24/10/2026 13:31:28\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t84DCEB6EE5C091BA",
@@ -1136,6 +1162,7 @@
             "25/10/2026 10:08:34\tINFO\tUsuário Windows: 146806620205\t27E5D4A2B76EB768",
             "25/10/2026 10:08:34\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t34B80CDD1A3A012E"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "25/10/2026 10:08:35\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t57F226A3BB749D77",
             "25/10/2026 10:08:36\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t720E7172DB1DD3EA",
@@ -1170,6 +1197,7 @@
             "24/10/2026 08:15:05\tINFO\tUsuário Windows: 128167870248\t177FC197A7F3FB89",
             "24/10/2026 08:15:05\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t1E9D6A951D054576"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 08:15:05\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tFDA038B8127F99CD",
             "24/10/2026 08:15:06\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t66F9E89B31EF4FB4",
@@ -1208,6 +1236,7 @@
             "24/10/2026 14:11:37\tINFO\tUsuário Windows: 131085940281\t9B547F2532E84036",
             "24/10/2026 14:11:37\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t2379270A98BF3321"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 14:11:38\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t58B27F05D9945D77",
             "24/10/2026 14:11:39\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t40896601DB8EA775",
@@ -1248,6 +1277,7 @@
             "25/10/2026 09:22:10\tINFO\tUsuário Windows: 154349180264\t1CA2EFE86B2BA58B",
             "25/10/2026 09:22:10\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\tBB462E522319EFAA"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "25/10/2026 09:22:11\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tE1A2568ED7414FB7",
             "25/10/2026 09:22:12\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t2FFBF2E274BA20D3",
@@ -1281,6 +1311,7 @@
             "24/10/2026 16:39:46\tINFO\tUsuário Windows: 082990640264\t790E12D2E836CD10",
             "24/10/2026 16:39:46\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t835DD0836216AA0B"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 16:39:46\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tD86B3C8887F07FC3",
             "24/10/2026 16:39:47\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t28A558819B83CFFC",
@@ -1323,6 +1354,7 @@
             "14/10/2026 11:46:16\tINFO\tUsuário Windows: 140942290272\tC550025E4A33B030",
             "14/10/2026 11:46:16\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t9D9769940CC59576"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "14/10/2026 11:46:16\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t7846F57A968B7B97",
             "14/10/2026 11:46:17\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\tAAB85CF0CAE11318",
@@ -1363,6 +1395,7 @@
             "24/10/2026 14:23:19\tINFO\tUsuário Windows: 060510070221\t8F235A0981337929",
             "24/10/2026 14:23:20\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t24917E3D9144E70A"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 14:23:20\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t9E5DFCC2F8FD5979",
             "24/10/2026 14:23:21\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t850D618847778162",
@@ -1412,6 +1445,7 @@
             "17/10/2026 12:30:17\tINFO\tUsuário Windows: 045482760248\t1DEA6E9ADBDFC98A",
             "17/10/2026 12:30:17\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t90A76080CF4E650E"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "17/10/2026 12:30:17\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tD5F027A9BBB302C8",
             "17/10/2026 12:30:18\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t1CD16947385A8195",
@@ -1449,6 +1483,7 @@
             "24/10/2026 08:09:56\tINFO\tUsuário Windows: 067738860493\tF9F95E9C4B7F11C5",
             "24/10/2026 08:09:56\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\tB4791F3205CCFC61"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 08:09:56\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t7A1898BFEEEC7CB6",
             "24/10/2026 08:09:57\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t93AB4A5917DECF89",
@@ -1522,6 +1557,7 @@
             "25/10/2026 05:49:15\tINFO\tUsuário Windows: 023632040868\t43377D248C41551D",
             "25/10/2026 05:49:15\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\tD2F78F39881DD556"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "25/10/2026 05:49:15\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t2959B71FD479AD5A",
             "25/10/2026 05:49:16\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t5A5A791FD409A1ED",
@@ -1560,6 +1596,7 @@
             "25/10/2026 05:51:44\tINFO\tUsuário Windows: 031606460868\t87646F06A7F36557",
             "25/10/2026 05:51:44\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t5EC6A36D5C800A84"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "25/10/2026 05:51:44\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t7FCFA70DF71ECF25",
             "25/10/2026 05:51:45\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t850A0003378834C9",
@@ -1602,6 +1639,7 @@
             "25/10/2026 05:55:48\tINFO\tUsuário Windows: 085407930833\t691032FFF1EE5FFD",
             "25/10/2026 05:55:48\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\tD63BA1616698912F"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "25/10/2026 05:55:48\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tAD50316B59FE07D6",
             "25/10/2026 05:55:49\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t9ED169A23FBC9C0C",
@@ -1636,6 +1674,7 @@
             "24/10/2026 13:38:22\tINFO\tUsuário Windows: 074665260809\t23BE67B6F1FA21D8",
             "24/10/2026 13:38:23\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\tACF1C3959F6DE9CD"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 13:38:23\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t8E01AD61F2596703",
             "24/10/2026 13:38:24\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t9969FD71786ED456",
@@ -1686,6 +1725,7 @@
             "25/10/2026 06:06:06\tINFO\tUsuário Windows: 072155350833\t3C4C8E8588A776AF",
             "25/10/2026 06:06:06\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t589F4FAFFAB5E32E"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "25/10/2026 06:06:07\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t868C898633990B39",
             "25/10/2026 06:06:08\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\tFC7F6A7FED597630",
@@ -1731,6 +1771,7 @@
             "24/10/2026 11:39:16\tINFO\tUsuário Windows: 047451830817\tECB360A262F669BF",
             "24/10/2026 11:39:16\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t8B0E797932133960"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 11:39:16\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tDB2970A980F7981E",
             "24/10/2026 11:39:18\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t3D9D9869FCDB90F7",
@@ -1766,6 +1807,7 @@
             "23/10/2026 10:22:38\tINFO\tUsuário Windows: 083582140825\tD52E8DF21D6F0B46",
             "23/10/2026 10:22:38\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t43DF1A967E828ECB"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "23/10/2026 10:22:38\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t43F67E2A8C7DA9D7",
             "23/10/2026 10:22:40\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t2D6D2DA4CE319412",
@@ -1788,6 +1830,10 @@
             "24/10/2026": 2
           },
           "example_new_lines": [],
+          "example_removed_lines": [
+            "24/10/2026 12:30:44\tINFO\tRealizada a exportação do log para D:/Usuarios/083582140825/Downloads/gedai-ue-pe-03221-oficial-ZPE019WKS03-0F4FCD920B05E049BC7E-CAC69BAC-log.jez\t17F50DC2ED7C5775",
+            "24/10/2026 12:39:53\tINFO\tIniciando envio automático do log do GEDAI-UE\t3E78F8E4674B0456"
+          ],
           "example_interest_lines": [],
           "archive_errors_24": [],
           "archive_errors_25": [],
@@ -1817,6 +1863,7 @@
             "25/10/2026 08:59:16\tINFO\tUsuário Windows: 042578440825\t79C3D2363E8639A7",
             "25/10/2026 08:59:17\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t92C7AD1C58727C78"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "25/10/2026 08:59:17\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tBCE4273D760F2AAB",
             "25/10/2026 08:59:19\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t85E72202D61F1355",
@@ -1857,6 +1904,7 @@
             "24/10/2026 14:47:24\tINFO\tUsuário Windows: 038795800892\tA306BAB095B651B1",
             "24/10/2026 14:47:24\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t205160F8CB8B95D9"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 14:47:25\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t995773F759152D36",
             "24/10/2026 14:47:26\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\tF0DA28F2D3A91218",
@@ -1890,6 +1938,7 @@
             "24/10/2026 14:03:27\tINFO\tUsuário Windows: 016822111201\t7B03C2CB8816F87D",
             "24/10/2026 14:03:27\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\tA9A17FA0F13E85A1"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 14:03:28\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tE533557247EB0636",
             "24/10/2026 14:03:29\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\tF7FC24D53DE1EDC9",
@@ -1940,6 +1989,7 @@
             "24/10/2026 13:58:46\tINFO\tUsuário Windows: 087601290809\tA418480ECE115CD0",
             "24/10/2026 13:58:46\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t8A236858B33C1E34"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 13:58:47\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t95BBB6BA064B7197",
             "24/10/2026 13:58:48\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t072638444D00638D",
@@ -1989,6 +2039,7 @@
             "24/10/2026 12:24:56\tINFO\tUsuário Windows: 048196280825\t17A8B249ECEE975B",
             "24/10/2026 12:24:57\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t433C2FE6C9A4F827"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 12:24:57\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tCDE4355E8BAC493A",
             "24/10/2026 12:24:58\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t473E426989F633B5",
@@ -2036,6 +2087,7 @@
             "25/10/2026 08:25:06\tINFO\tUsuário Windows: 042874600825\t7DED5F94A19AD6F9",
             "25/10/2026 08:25:06\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t1EAD17D4ABD49D00"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "25/10/2026 08:25:06\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t254FA1E1747FD1AE",
             "25/10/2026 08:25:08\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t84548E7BC61755A4",
@@ -2070,6 +2122,7 @@
             "24/10/2026 11:56:38\tINFO\tUsuário Windows: 041960810850\t527D6B0A470B9980",
             "24/10/2026 11:56:38\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\tDABE90D79F23050E"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 11:56:39\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tDF88F695682448C0",
             "24/10/2026 11:56:40\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t0762DA4489167165",
@@ -2108,6 +2161,7 @@
             "24/10/2026 13:55:26\tINFO\tUsuário Windows: 065558800442\t48C85A0985D016D7",
             "24/10/2026 13:55:26\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t96A7F34AF288A11A"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 13:55:27\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tA20CD52A132BF5DC",
             "24/10/2026 13:55:28\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t77D22269A8F731BA",
@@ -2142,6 +2196,7 @@
             "24/10/2026 10:09:23\tINFO\tUsuário Windows: 037483400841\t15CE9C8589AD9C1D",
             "24/10/2026 10:09:24\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\tFBB443528825AC5D"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 10:09:24\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t9BB22CC3F2689E84",
             "24/10/2026 10:09:25\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t0769F73BDFB43352",
@@ -2182,6 +2237,7 @@
             "24/10/2026 10:55:34\tINFO\tUsuário Windows: 042287500825\t219C1A0822229EEF",
             "24/10/2026 10:55:35\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t943F88A2138683FF"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 10:55:35\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tAEC6AB9D82522515",
             "24/10/2026 10:55:36\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\tB516B01F45A4A19C",
@@ -2225,6 +2281,7 @@
             "25/10/2026 12:08:09\tINFO\tUsuário Windows: 057436860809\t8B09A1B78E2087E1",
             "25/10/2026 12:08:10\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\tFB934323EDA38FB5"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "25/10/2026 12:08:10\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t9846244B4A545C98",
             "25/10/2026 12:08:11\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t26A498A592ECB1E5",
@@ -2259,6 +2316,7 @@
             "24/10/2026 10:51:12\tINFO\tUsuário Windows: 030731181767\t57987AC5060728FB",
             "24/10/2026 10:51:13\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t8EE051CCBFAEACF5"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 10:51:13\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tBA518B7B98F03BF3",
             "24/10/2026 10:51:15\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t04298E6E24612A3D",
@@ -2298,6 +2356,7 @@
             "25/10/2026 06:06:06\tINFO\tUsuário Windows: 065357700817\tCB1F99CB44E536A8",
             "25/10/2026 06:06:06\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\tE6F306E7175FA51C"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "25/10/2026 06:06:06\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tF1CD86C81BE795CD",
             "25/10/2026 06:06:08\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\tD657C21700E46043",
@@ -2336,6 +2395,7 @@
             "24/10/2026 15:17:20\tINFO\tUsuário Windows: 059173630876\tA2BE0C68536F34DF",
             "24/10/2026 15:17:20\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\tD82D0E73B1A0D767"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 15:17:21\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tF6059BDED7FA251E",
             "24/10/2026 15:17:22\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t672247C1012A3F87",
@@ -2370,6 +2430,7 @@
             "25/10/2026 10:42:05\tINFO\tUsuário Windows: 055228470809\t5E29F8FB5BCACE33",
             "25/10/2026 10:42:06\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\tE86573DE2B75A10D"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "25/10/2026 10:42:06\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t78C3E8A0CD51748A",
             "25/10/2026 10:42:07\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t69DB6848A1CE7CA9",
@@ -2408,6 +2469,7 @@
             "25/10/2026 10:38:20\tINFO\tUsuário Windows: 037108820841\tF59D615DDC831989",
             "25/10/2026 10:38:20\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\tC7F778CF0E2CAAC7"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "25/10/2026 10:38:20\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tABD196045B84F0E4",
             "25/10/2026 10:38:22\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t65A6FB9681C18379",
@@ -2458,6 +2520,7 @@
             "25/10/2026 06:57:49\tINFO\tUsuário Windows: 078458880892\t8AC18C5D79EBE320",
             "25/10/2026 06:57:49\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t21D337093641F584"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "25/10/2026 06:57:49\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tA86B01C5D9015972",
             "25/10/2026 06:57:50\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t9E5B257956510233",
@@ -2492,6 +2555,7 @@
             "25/10/2026 08:06:50\tINFO\tUsuário Windows: 049337820833\tE68473D2B742622A",
             "25/10/2026 08:06:50\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t2A9A2872D6D190CD"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "25/10/2026 08:06:51\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tBB80F2CC1AEC7C8F",
             "25/10/2026 08:06:52\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t6E3FC444EF296D7A",
@@ -2526,6 +2590,7 @@
             "25/10/2026 09:55:28\tINFO\tUsuário Windows: 082942480809\tE62FC0903742A1C7",
             "25/10/2026 09:55:28\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t2C36C1B4B3A2DF6F"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "25/10/2026 09:55:28\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t29B831A9176D7896",
             "25/10/2026 09:55:31\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t6B2F2C0CD299DE2A",
@@ -2560,6 +2625,7 @@
             "24/10/2026 10:43:22\tINFO\tUsuário Windows: 078482530744\t545048A91EBC41E7",
             "24/10/2026 10:43:22\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\tCFAE83BCF74CE932"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 10:43:22\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tD799E9B928D4A6B6",
             "24/10/2026 10:43:24\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\tA516E84174B25930",
@@ -2601,6 +2667,7 @@
             "24/10/2026 15:49:52\tINFO\tUsuário Windows: 069645650850\t420B6993C4D03866",
             "24/10/2026 15:49:52\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t558C054B5D33CDB2"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 15:49:52\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t4BF7EB61555F4DEE",
             "24/10/2026 15:49:54\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\tA136040284AE087C",
@@ -2651,6 +2718,7 @@
             "24/10/2026 15:57:45\tINFO\tUsuário Windows: 021888780876\tA99A59678241D2C4",
             "24/10/2026 15:57:45\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t4DAC5263E55CAA93"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 15:57:45\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tD43ACAE1E304A450",
             "24/10/2026 15:57:47\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\tBC7C3B63357D8B13",
@@ -2700,6 +2768,7 @@
             "24/10/2026 13:48:44\tINFO\tUsuário Windows: 036389180884\t6FE919C15D7022E6",
             "24/10/2026 13:48:44\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t3ED2037904B67951"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 13:48:44\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tDFF5D68BC04336EE",
             "24/10/2026 13:48:46\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t7835DECF6C68DE8C",
@@ -2744,6 +2813,7 @@
             "24/10/2026 14:01:29\tINFO\tUsuário Windows: 045680400809\t97F807C29D58AF2F",
             "24/10/2026 14:01:30\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\tD4A70D1E391990B8"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 14:01:30\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tA42577EF2ED0085A",
             "24/10/2026 14:01:32\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t3B9D34FC02C5B905",
@@ -2788,6 +2858,7 @@
             "12/10/2026 08:20:51\tINFO\tUsuário Windows: 038388191279\t532B14F6F72FA355",
             "12/10/2026 08:20:51\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t3E6A9CA7B6EC5F29"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "12/10/2026 08:20:52\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tE13A0F7A3C1D5009",
             "12/10/2026 08:20:53\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t10B6321689AFCC68",
@@ -2838,6 +2909,7 @@
             "25/10/2026 13:09:28\tINFO\tUsuário Windows: 067424760876\tDC9D7B37AF418C5A",
             "25/10/2026 13:09:28\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t8E21061A44594CED"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "25/10/2026 13:09:28\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t92F3BE0B85B21D77",
             "25/10/2026 13:09:30\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t88FEE6392DD35159",
@@ -2872,6 +2944,7 @@
             "24/10/2026 14:06:41\tINFO\tUsuário Windows: 071340540884\t7A6C07EC0394D3D1",
             "24/10/2026 14:06:41\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t1DDC7BD8E1AB7C7B"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 14:06:42\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t367CF80F074DB5D6",
             "24/10/2026 14:06:44\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t889D9CDE805C759F",
@@ -2909,6 +2982,7 @@
             "24/10/2026 11:37:15\tINFO\tUsuário Windows: 057567540892\t481899D68262476D",
             "24/10/2026 11:37:15\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t3AEC373CF4E6904A"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 11:37:15\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tA3D5D0CD0ED570FC",
             "24/10/2026 11:37:17\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t60B6ABA446BBD201",
@@ -2943,6 +3017,7 @@
             "25/10/2026 05:50:09\tINFO\tUsuário Windows: 058224780850\t61060EDADAE86E4B",
             "25/10/2026 05:50:09\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t4A33569AA20DF195"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "25/10/2026 05:50:09\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\tDE1DAF7FCA16199C",
             "25/10/2026 05:50:11\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\tBB0E1CA810CDFDA2",
@@ -2993,6 +3068,7 @@
             "25/10/2026 05:50:17\tINFO\tUsuário Windows: 051942270850\t4524B44DF8710133",
             "25/10/2026 05:50:17\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t3279B6F146F1B881"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "25/10/2026 05:50:18\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t8C42DB10F39C5393",
             "25/10/2026 05:50:19\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\tAD14613E29ABFB3F",
@@ -3026,6 +3102,7 @@
             "24/10/2026 11:12:55\tINFO\tUsuário Windows: 057298220809\t33EFC38C3B419ED3",
             "24/10/2026 11:12:55\tINFO\tServiço Holocron em execução - Versão 4.20.0.0 - Praia da Barra do Cahy\t80619F55D3DD9260"
           ],
+          "example_removed_lines": [],
           "example_interest_lines": [
             "24/10/2026 11:12:55\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/gedai-ue.vst\t1939C3A399A948B0",
             "24/10/2026 11:12:56\tINFO\tVerificação de Assinatura | Envelope: D:/Aplic/SEVIN/GEDAIUE/Aplic/app.ini.vsc\t8F2101983431227F",
