@@ -1,0 +1,67 @@
+{
+  "baseline_BU_utc": "2026-10-28T09:59:45+00:00",
+  "baseline_pacote_utc": "2026-10-28T16:32:12.855031+00:00",
+  "data_consulta_utc": "2026-10-29T12:19:52.221876+00:00",
+  "referencia": "Snapshots FatoVia de 28/10/2026, NÃO necessariamente a publicação inicial do TSE",
+  "ressalvas": [
+    "Identidade de hash de arquivo não atesta integridade do processo eleitoral inteiro.",
+    "Diferença de hash isolada não implica investigação, fraude ou manipulação.",
+    "Data Last-Modified/ETag fornecidos por CDN não substituem verificação dos bytes.",
+    "Para arquivos brutos superiores ao limite, não existe conclusão de conteúdo inalterado."
+  ],
+  "resultados": {
+    "bruto": {
+      "bytes_anteriores": 1615457320,
+      "hash_anterior": "9bfd7a9e84da7e5eefce68c6799ff1b13e06bb0c2fa004bc73754b2ea9927716c96cffd55d4dafac57b5040851128bd46f7dc466a7529d1d23a70ca7baae91fb",
+      "head": {
+        "content_length": 1615457320,
+        "etag": "\"6049ec28-65ec472452900\"",
+        "http_status": 200,
+        "last_modified": "Mon, 26 Oct 2026 20:48:04 GMT"
+      },
+      "metodo": "Somente HEAD (tamanho, ETag e Last-Modified)",
+      "nota": "Sem comparação criptográfica dos bytes atuais. Tamanho igual NÃO prova mesmo conteúdo.",
+      "status": "INCONCLUSIVO",
+      "tamanho_atual_igual_ao_anterior": true,
+      "tipo": "arquivos_transmitidos_totalizados",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/arqurnatot/bu_imgbu_logjez_rdv_vscmr_2026_2t_MS.zip"
+    },
+    "bu": {
+      "bytes_anteriores": 1863398,
+      "bytes_atuais": 1863398,
+      "hash_anterior": "c16d211246f35c9d1e7dfef39e6f718522987873d5304144744d9ba98783320710060844ca212800204c53d144d7cdea777aead343d817033fb5b49ada518db1",
+      "hash_atual": "c16d211246f35c9d1e7dfef39e6f718522987873d5304144744d9ba98783320710060844ca212800204c53d144d7cdea777aead343d817033fb5b49ada518db1",
+      "hash_confere_manifesto_atual": true,
+      "hash_declarado_tse_atual": "c16d211246f35c9d1e7dfef39e6f718522987873d5304144744d9ba98783320710060844ca212800204c53d144d7cdea777aead343d817033fb5b49ada518db1",
+      "head": {
+        "content_length": 1863398,
+        "etag": "\"1c6ee6-65ebd115acb7c\"",
+        "http_status": 200,
+        "last_modified": "Mon, 26 Oct 2026 11:59:53 GMT"
+      },
+      "status": "INALTERADO",
+      "tipo": "bu",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_2t_MS_261020260742.zip",
+      "zip_valido": true
+    },
+    "ceft": {
+      "bytes_anteriores": 873133,
+      "bytes_atuais": 873133,
+      "hash_anterior": "0fdc5dd253681954107af578c8d2215ff717282c06fd7bbe590560f89cef8ddc2c1fe215539741b8870879bc994df85915bcfb0d09d43ec9c04cad1baca68367",
+      "hash_atual": "0fdc5dd253681954107af578c8d2215ff717282c06fd7bbe590560f89cef8ddc2c1fe215539741b8870879bc994df85915bcfb0d09d43ec9c04cad1baca68367",
+      "hash_confere_manifesto_atual": true,
+      "hash_declarado_tse_atual": "0fdc5dd253681954107af578c8d2215ff717282c06fd7bbe590560f89cef8ddc2c1fe215539741b8870879bc994df85915bcfb0d09d43ec9c04cad1baca68367",
+      "head": {
+        "content_length": 873133,
+        "etag": "\"d52ad-65ebfcfa93000\"",
+        "http_status": 200,
+        "last_modified": "Mon, 26 Oct 2026 15:16:16 GMT"
+      },
+      "status": "INALTERADO",
+      "tipo": "ceft",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/correspefet/CEFT_2t_MS_261020261201.zip",
+      "zip_valido": true
+    }
+  },
+  "uf": "MS"
+}
