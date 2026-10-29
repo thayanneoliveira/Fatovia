@@ -1,0 +1,298 @@
+{
+  "alertas_historicos_georreferenciados_por_nome": 63,
+  "falhas": [],
+  "gerado_utc": "2026-10-29T12:55:07.452210+00:00",
+  "limitacoes": [
+    "Código de município é código TSE; localização não possui coordenadas nem código IBGE.",
+    "Cidade representa município da seção, não endereço preciso da urna.",
+    "Duas entradas CEFT no exterior não possuem seção correspondente no BWeb.",
+    "Alguns identificadores de urna efetivada se repetem em origem especial no exterior.",
+    "Os indicadores são agregados e não identificam votos de pessoas ou a razão de contingências."
+  ],
+  "municipios_distintos_por_uf": 5715,
+  "por_uf": {
+    "AC": {
+      "ceft_sem_bu": 0,
+      "hash_bu": "95f19aad9534d21ea703670030ea1d51b5a89c2b40f3ba5466d60de2765b9067f225fd863000c282fe47fb6457a9f43df5fd536dec7753f3813667c99b3efa3b",
+      "hash_ceft": "70c8410354d30f943c5d8a23508239fa05557737d32792b53938a107208f74ffe029c12be48509db80d9ec4d4397eed384716406356576beff33e0558d18ea44",
+      "municipios": 22,
+      "secoes": 2270,
+      "secoes_ceft": 2270,
+      "status": "OK",
+      "urnas_substituidas": 5
+    },
+    "AL": {
+      "ceft_sem_bu": 0,
+      "hash_bu": "392ebb110ac066be0bc1113b1cd4f15feadac11deb97c1786a2a9bc824affa5abce5fdfad051a6a3d4bf2b42909ba4b27b87af586dc888c17f8319401b24a848",
+      "hash_ceft": "ba0f0399146afeeb807c167d9ef738b51efa75a9ebb38ca591713251119a2112c9b564e48f99180ca909e30c7948053d28d710ac6e50b0ac3d7e27d6522b16cc",
+      "municipios": 102,
+      "secoes": 7101,
+      "secoes_ceft": 7101,
+      "status": "OK",
+      "urnas_substituidas": 61
+    },
+    "AM": {
+      "ceft_sem_bu": 0,
+      "hash_bu": "c87f558d88f478afaed40d452855e34eb99772fb4214b2c913824fd5adb816d324c6c040ab35d5e17e953e0d752b882c27304bd3c9139a9f96a765e2356c5ce8",
+      "hash_ceft": "2b4685c38ea85b4a82909a942c731e4bfe09c0cba826f171879944137c7b14eb759097fd7d2441265e29b18df819a8daaf98a6cb3013af6392fb350951967ef9",
+      "municipios": 62,
+      "secoes": 8157,
+      "secoes_ceft": 8157,
+      "status": "OK",
+      "urnas_substituidas": 48
+    },
+    "AP": {
+      "ceft_sem_bu": 0,
+      "hash_bu": "66f56ba91e90cd715994bba078014e57a9124e5667d5047b84cedeaf67dfbfc86a0c85537d65c49810817a73d0eaab6222fecdbb57d9077cc6a1da18a6d21cd6",
+      "hash_ceft": "dffc8dc41161e1f5c2c52d7ee70e1902c8cbc90dd030885c7efa02756f721ce12e74ee4a2351967c0e9ce209f44265118176d5aea76275a8e0ae9931b954b1b3",
+      "municipios": 16,
+      "secoes": 1914,
+      "secoes_ceft": 1914,
+      "status": "OK",
+      "urnas_substituidas": 16
+    },
+    "BA": {
+      "ceft_sem_bu": 0,
+      "hash_bu": "15db0c47b3b445ccbc1dd15ef77291e1bb5fe1af20a3e444381f7c32057794ed97e0c901cb46ea09cc7172a5d3d25cfe6435910e3f3fbdb8479c0c599f46e5c3",
+      "hash_ceft": "50c774c2cad9d664a3a98b86bbbf2c0c3954b48e04efba7dbe51a432463cf10ad71af682e23f5c5b38b3290fd02430eb2dd47eb5dc99ad72f64111df74ff4ec2",
+      "municipios": 417,
+      "secoes": 35476,
+      "secoes_ceft": 35476,
+      "status": "OK",
+      "urnas_substituidas": 232
+    },
+    "CE": {
+      "ceft_sem_bu": 0,
+      "hash_bu": "4d0abf43322e353074782f533a728513924e7820898b8b3ef1ebbe45771dd61504e031f0efc62071442632669a11e1523890b5b49a196a04cc25884124e76357",
+      "hash_ceft": "b759546e4cd539ec127eb38ed021312e79f8e0891b443ec88231c5f0b1e5e200e23e25e70f5a220bfb3435191906d54743c7a2c94eccef87a4aeaf1cfda26792",
+      "municipios": 184,
+      "secoes": 23765,
+      "secoes_ceft": 23765,
+      "status": "OK",
+      "urnas_substituidas": 84
+    },
+    "DF": {
+      "ceft_sem_bu": 0,
+      "hash_bu": "204e65d5d3eff30f7bbb27f3f21547d0146da31edaf15c27848452a245462144e2bf53ba520a0dfc09493231f2a43218d967cda1b6633af112ef3b1ac1a6c823",
+      "hash_ceft": "ca1c4763c7be1625b4542e4ceb62a73dec0584a23a717e164c05fcf244f705cbd6161abfcc35150dad21242ccc7dd0f75f3d4d7886c3c3c8f39196fda02428d6",
+      "municipios": 1,
+      "secoes": 6969,
+      "secoes_ceft": 6969,
+      "status": "OK",
+      "urnas_substituidas": 26
+    },
+    "ES": {
+      "ceft_sem_bu": 0,
+      "hash_bu": "e8805337ab66ffa5effea88a28ce74cc0fe1e856bcf58c2dad09f71cc04837d2113830aa6e1f4a4a17c14d1092a2cc2a6d88d578f64780e0a99627c0912f8883",
+      "hash_ceft": "b9524b019d58dd4e84a709d9be9f2b2b5ea1195e292b1b06537230a10c022bcd0d24f3f7f363294366a1101320307ba6ad3bbe7e490da324c96ba781a120a5d2",
+      "municipios": 78,
+      "secoes": 9844,
+      "secoes_ceft": 9844,
+      "status": "OK",
+      "urnas_substituidas": 52
+    },
+    "GO": {
+      "ceft_sem_bu": 0,
+      "hash_bu": "e5b6635dc3a05b7f6c175bdbe8a23e4daa3f4029f79cf3b7c82ac2cc48a43c315b00cac68162dd134f3187ba973bd3ddea5a26cb6f91c44449945bb094f93e0e",
+      "hash_ceft": "0079d83ad855eda4d835f8c6c409d90734e2a4cc5e32baa83543a1baa27c763f6d5f272271be134133616abc1dda11ef293a4896147b48f900cd662332e20133",
+      "municipios": 246,
+      "secoes": 15686,
+      "secoes_ceft": 15686,
+      "status": "OK",
+      "urnas_substituidas": 88
+    },
+    "MA": {
+      "ceft_sem_bu": 0,
+      "hash_bu": "90c1c9d2d1d0635c9e6900ee51dbb81b4a1f2dee113ed3a5145a2dacbe8d2da97bec55c78caa74fb635412cd29c413f2204a05d22ae6e0516ef249811c9d075c",
+      "hash_ceft": "305d7f137d4893ff3a10315ce66dc3c5f88b3a450da4ccfe0d889140eff163fa38e742f732b82735e591f91c0a2ffe7d8f2d55e77ac63ca2214b31d55aa190bd",
+      "municipios": 217,
+      "secoes": 18093,
+      "secoes_ceft": 18093,
+      "status": "OK",
+      "urnas_substituidas": 147
+    },
+    "MG": {
+      "ceft_sem_bu": 0,
+      "hash_bu": "b2123700c7a520ccfb0e1be9aa3bab205c9c5f5b64cd537c80a1eaca69a9b96a67c440c88ca2a0f30f63aeed72a1c9dfca0e5ede8358eca1c64698e0c8054bb9",
+      "hash_ceft": "ecd2d73895c6c28dff74c0f20962528d447f74709f175fbc8eca9d84c010af70c0e43913a4169f5f322844c4d2923584d27e1cd5165f8ae4a69388c0420e499a",
+      "municipios": 853,
+      "secoes": 52062,
+      "secoes_ceft": 52062,
+      "status": "OK",
+      "urnas_substituidas": 169
+    },
+    "MS": {
+      "ceft_sem_bu": 0,
+      "hash_bu": "c16d211246f35c9d1e7dfef39e6f718522987873d5304144744d9ba98783320710060844ca212800204c53d144d7cdea777aead343d817033fb5b49ada518db1",
+      "hash_ceft": "0fdc5dd253681954107af578c8d2215ff717282c06fd7bbe590560f89cef8ddc2c1fe215539741b8870879bc994df85915bcfb0d09d43ec9c04cad1baca68367",
+      "municipios": 79,
+      "secoes": 7106,
+      "secoes_ceft": 7106,
+      "status": "OK",
+      "urnas_substituidas": 24
+    },
+    "MT": {
+      "ceft_sem_bu": 0,
+      "hash_bu": "cf0e1bf1c0af0af4326e9db2532d8ae0f3d28287d0c5ba48229e484696ef27d4e848922f73b1b7126847d2841b3bdea5ee36327c12a23d207860549640c5ce72",
+      "hash_ceft": "6ae626ceb43f045756f86585f61670fc9bb163154add1cada58c7db42c58a3ceeda6f95b9a9bfdec0a22b7d2c980322fa3cdcf4df24e5b7a3a7d61e58c0eb1af",
+      "municipios": 142,
+      "secoes": 8287,
+      "secoes_ceft": 8287,
+      "status": "OK",
+      "urnas_substituidas": 57
+    },
+    "PA": {
+      "ceft_sem_bu": 0,
+      "hash_bu": "5908978e998fc61b505c42971b3a29c7ffd858624e64b864e1c8dc8248172373bb59f5be3d27ad1d93703c73d9b11bc836eb9875c55180470b6e68061d773d9e",
+      "hash_ceft": "050a9f185e7def07a73998f8db5dfa08ddd1faa2602bac2c25890d1eb900101bdb3341341ce8d584be36d32696a43f40da16081a45f68cac1f78beaa02f0c28d",
+      "municipios": 144,
+      "secoes": 20827,
+      "secoes_ceft": 20827,
+      "status": "OK",
+      "urnas_substituidas": 110
+    },
+    "PB": {
+      "ceft_sem_bu": 0,
+      "hash_bu": "79ec2b52387a8a1ac6f71cc330b54ce97fbefa49dfb925c15daa32e1f4a466cfd65c67eeef7e064d41231504afe5573d0fcd1a906b2856ad04dee0000ac15c7f",
+      "hash_ceft": "4f9578f5e912bb874b5864ba5054f9c9d4d29fc066df49457dc53cfb421a507d7efa98be71f54e3680f8f67a7e9ac12651eb3164da792307a74584254e4d77a3",
+      "municipios": 223,
+      "secoes": 10712,
+      "secoes_ceft": 10712,
+      "status": "OK",
+      "urnas_substituidas": 63
+    },
+    "PE": {
+      "ceft_sem_bu": 0,
+      "hash_bu": "5002c264cf9fff1b27bbbbc75d89b5aec5856b59a2888fef2b8c1577fe041bf60bcd6a4d8943023382579921d7f89926608aa7e550beb8581718cea1873f645a",
+      "hash_ceft": "100ddb3e372fa29c9eed18a8d0e1d333318d8ba5b8bace823e75a7fb4052d08744c4416b02d3f7937da74bb49f50257fdb730d7fd9d21eb9212815e5d75a51e0",
+      "municipios": 185,
+      "secoes": 21418,
+      "secoes_ceft": 21418,
+      "status": "OK",
+      "urnas_substituidas": 99
+    },
+    "PI": {
+      "ceft_sem_bu": 0,
+      "hash_bu": "d864c6f671daf94d0c3a8464b74052f1827fe6ac43a7666bc1d4cd37f3a4375ccb51ccc83ef04832487349a40e1d73b72e2ab0934b99d62465422b80c4499b54",
+      "hash_ceft": "ee3c9a7fde6e56d96ec7b858104c664c09954abad96fb71675bc4952e823057bec7b1ed82178164271bc8505c1904f2624a44beb267ad5cf2d10bdaaeca7aa61",
+      "municipios": 224,
+      "secoes": 10225,
+      "secoes_ceft": 10225,
+      "status": "OK",
+      "urnas_substituidas": 51
+    },
+    "PR": {
+      "ceft_sem_bu": 0,
+      "hash_bu": "949659949df4605749afdd1842d0f628bb4563d41f73578786702f679ee81276d7a4f5a4e52fe5292e681a75a7662d7925c1a15e76f0118b5870c29dbd20b3f5",
+      "hash_ceft": "7337afec29a3f1562e82855c882d9538fdb58715267a1207980d879963ec62097aa6e6231ec020a7610147f6930d20f541df3d788c84de16b7e690cf52182a4a",
+      "municipios": 399,
+      "secoes": 27142,
+      "secoes_ceft": 27142,
+      "status": "OK",
+      "urnas_substituidas": 188
+    },
+    "RJ": {
+      "ceft_sem_bu": 0,
+      "hash_bu": "dcb3131b618b9c394b50576ead626a85ebb115c9f984f9b464d21a64eb69a735f11123fb189a3f8b906c29f9511557f46565cc1d4adc10a68fa0ebf69a70a205",
+      "hash_ceft": "ee501fe7028a645d794b4a3393224ab286bca751b411ebfc45f5c00a0a41c49397d06903c3897782d22f399e3ee0f707b0a7ad820ac88e960f069fd435cdaba5",
+      "municipios": 92,
+      "secoes": 37675,
+      "secoes_ceft": 37675,
+      "status": "OK",
+      "urnas_substituidas": 267
+    },
+    "RN": {
+      "ceft_sem_bu": 0,
+      "hash_bu": "3da1a65ad338f6ef0596de91e2c65f8fd1c0ee916c4ed26f2e1c64d4583603caa344482bfbda4e00142926244a79d7df63c1acb52dea56fc83d67b355feaf3a5",
+      "hash_ceft": "d0525396f2a676535608ffc715abf030f861b45f4cfb1c4fb933abbea74611dca682f1388bbe3a110c99665306b65c762325175f68a54ce46e61ee0bc1abb5a2",
+      "municipios": 167,
+      "secoes": 8115,
+      "secoes_ceft": 8115,
+      "status": "OK",
+      "urnas_substituidas": 39
+    },
+    "RO": {
+      "ceft_sem_bu": 0,
+      "hash_bu": "4e25932384114f73eacfc0555234fd5cc31f2cde025404f9aed97286879e15571925d544ca83b744d2fe21e5711ec20b4bf7281011007d777b9a354c8fd1b577",
+      "hash_ceft": "111b0071122b68a0a524f06c6b3b88f9298e9be26dffad45b632b84f959c2eeca03fa9fb870257cb2f860bda8546f8f213088cf2bb1a9a818fa2ae7dd4d9d0ff",
+      "municipios": 52,
+      "secoes": 4698,
+      "secoes_ceft": 4698,
+      "status": "OK",
+      "urnas_substituidas": 19
+    },
+    "RR": {
+      "ceft_sem_bu": 0,
+      "hash_bu": "3986628e101b7a9fc24ab5377e0ed8b2eb94fa735b5999aa408df37d3be91d1c4d8ab11c8bec03398dcc0005b76782617a5045cb170e0efafdeabd1602d6d4cf",
+      "hash_ceft": "062442eef7a78cff98eff5a55d11034a1a0cf8f9aee4cd8de8bfcdc5a6e3598021c0bcfddc702eb4efea138cb0ad4646e671964c064bed874ea73f5d410547d4",
+      "municipios": 15,
+      "secoes": 1519,
+      "secoes_ceft": 1519,
+      "status": "OK",
+      "urnas_substituidas": 5
+    },
+    "RS": {
+      "ceft_sem_bu": 0,
+      "hash_bu": "39f0c7e216972216d52a1868c2396d72115453953227aa301cb92692421c171e5a24e8493a57f125ddf2096a7ea6d6b34ce1aa7a042ef26a4c550e3336a27cee",
+      "hash_ceft": "183be0a5dae4cdc3c37fcc0c4a8e6fefecf199a856ae4fd23ad4e80a00210854bc53b838b141a6e7331b6b0ec3e50ef2e6ca3d938d360f9d742d50723392d91d",
+      "municipios": 497,
+      "secoes": 27547,
+      "secoes_ceft": 27547,
+      "status": "OK",
+      "urnas_substituidas": 217
+    },
+    "SC": {
+      "ceft_sem_bu": 0,
+      "hash_bu": "01b1e9638654fa6914ad4d8a9001de33cb4fc5386d280ccdea7576d7c993c04e9162075db0a1fed8f571e87ce5349151e6a44bc4d5300b3e828a0123c6b90c8e",
+      "hash_ceft": "1f4a521362231ed85c05401d199c7fced01ed00ad64ba3f287d6440434570b187e284cc65a6f8f6381c6357a7fd0bf967d90324c095e865e8c5a4db3591a4ade",
+      "municipios": 295,
+      "secoes": 17326,
+      "secoes_ceft": 17326,
+      "status": "OK",
+      "urnas_substituidas": 130
+    },
+    "SE": {
+      "ceft_sem_bu": 0,
+      "hash_bu": "ea1460385ab222e82ec7560eb3932bb3dc198333296876435d99c2755150ce1a9d703f21ca259279de610f1e31d2dbc8d3a5090c6c3f9e762de8d98f0fd73f0f",
+      "hash_ceft": "80f9f3a5c90e779a2f59cd67ca802187acb845243d0eda447a853dc6e0fbc2bf05c7a7bfcebaba3f17b9648450e99a7e54f6905860d17a0ba00edf7d3f379c27",
+      "municipios": 75,
+      "secoes": 5923,
+      "secoes_ceft": 5923,
+      "status": "OK",
+      "urnas_substituidas": 78
+    },
+    "SP": {
+      "ceft_sem_bu": 0,
+      "hash_bu": "3078f38754ced92476fd0e9c6661ecf5237774fc210d5e7eee1b55db9b8ddb321843f591440c2d350679326e1f1b86e60ac723c8ac65a92ca94b74ce674ecffe",
+      "hash_ceft": "1811f543e85b59a2136d5f67af91e011d8f078cf237aa94eeb65c9fa7ee3a5ca35db8c67808e679fdd6455a82c03d48d79756230bc93010eca48a1e8f268ebf4",
+      "municipios": 645,
+      "secoes": 103656,
+      "secoes_ceft": 103656,
+      "status": "OK",
+      "urnas_substituidas": 394
+    },
+    "TO": {
+      "ceft_sem_bu": 0,
+      "hash_bu": "e667f9b68bb71065fec219cbf18b4621b0062ced6b09dec227d32f8621c9b6697b55d216bce0920de30eea37c16bc42a3a684d71bdb49051c68d850f1f74b0ef",
+      "hash_ceft": "4abffe6a23f1a44a0f417ee0892e92078a51ddd1a5233cad7b5828985089fdcf4c4296763ff218628f6812fb3cc54fbfe892c809b4a3dafe36472ce07296644e",
+      "municipios": 139,
+      "secoes": 4384,
+      "secoes_ceft": 4384,
+      "status": "OK",
+      "urnas_substituidas": 4
+    },
+    "ZZ": {
+      "ceft_sem_bu": 2,
+      "hash_bu": "e024547f7d2c6e21e53c8a4f47823d7c76684976271ef395f7c66fe953caf49aa2c585b104f724cc2c39eb67f682e05a7e479f9558c3e38244036a3f90b429f1",
+      "hash_ceft": "bff5414bc0ccf3fc48978a71a394e94ca1e3468cfcb611e3a4de716df4d296bb2056e7d228359e2552f707cc9775bb2e1b51f1092b91565ec1ffe403171ea439",
+      "municipios": 144,
+      "secoes": 1308,
+      "secoes_ceft": 1310,
+      "status": "ALERTAS_DE_COBERTURA",
+      "urnas_substituidas": 13
+    }
+  },
+  "secoes_bu": 499205,
+  "status": "OK",
+  "unidades_geograficas": 28
+}
