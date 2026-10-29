@@ -1,0 +1,37 @@
+name: "FatoVia | Piloto urna trocada versus encerramento 2026"
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/piloto-trocas-horarios-2026.yml"
+permissions:
+  actions: read
+  contents: read
+jobs:
+  piloto:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        uf: [AP, MA, BA]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/download-artifact@v4
+        with:
+          name: fatovia-geografia-uf-${{ matrix.uf }}
+          run-id: 40877055121
+          path: work/base2t
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Testar sobreposicao temporal por secao eleitoral
+        run: python -u -m auditoria.cruzar_trocas_horarios_2026 --uf ${{ matrix.uf }} --geodir work/base2t --out work/horarios
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fatovia-horarios-piloto-${{ matrix.uf }}
+          path: work/horarios
+          if-no-files-found: warn
+          retention-days: 90
