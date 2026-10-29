@@ -1,0 +1,320 @@
+{
+  "scope": "30 mudancas de correspondencia esperada 24->25 MG PE",
+  "states": {
+    "MG": {
+      "changed_planned": 15,
+      "cases": [
+        {
+          "mun": "40266",
+          "zona": "348",
+          "secao": "69",
+          "urn_old": "2329571",
+          "urn_new": "2255603",
+          "workstations_in_zone": 1,
+          "event_matches": [],
+          "new_id_added_lines_match": 0
+        },
+        {
+          "mun": "40312",
+          "zona": "8",
+          "secao": "104",
+          "urn_old": "2448957",
+          "urn_new": "2408768",
+          "workstations_in_zone": 1,
+          "event_matches": [],
+          "new_id_added_lines_match": 0
+        },
+        {
+          "mun": "40690",
+          "zona": "16",
+          "secao": "263",
+          "urn_old": "2061473",
+          "urn_new": "2091501",
+          "workstations_in_zone": 1,
+          "event_matches": [],
+          "new_id_added_lines_match": 0
+        },
+        {
+          "mun": "41238",
+          "zona": "33",
+          "secao": "276",
+          "urn_old": "2298912",
+          "urn_new": "2420777",
+          "workstations_in_zone": 1,
+          "event_matches": [],
+          "new_id_added_lines_match": 0
+        },
+        {
+          "mun": "41238",
+          "zona": "33",
+          "secao": "278",
+          "urn_old": "2269483",
+          "urn_new": "2449784",
+          "workstations_in_zone": 1,
+          "event_matches": [],
+          "new_id_added_lines_match": 0
+        },
+        {
+          "mun": "41238",
+          "zona": "33",
+          "secao": "283",
+          "urn_old": "2322803",
+          "urn_new": "2255518",
+          "workstations_in_zone": 1,
+          "event_matches": [],
+          "new_id_added_lines_match": 0
+        },
+        {
+          "mun": "41238",
+          "zona": "34",
+          "secao": "202",
+          "urn_old": "2258132",
+          "urn_new": "2269520",
+          "workstations_in_zone": 1,
+          "event_matches": [],
+          "new_id_added_lines_match": 0
+        },
+        {
+          "mun": "45730",
+          "zona": "125",
+          "secao": "119",
+          "urn_old": "2089070",
+          "urn_new": "2065232",
+          "workstations_in_zone": 1,
+          "event_matches": [],
+          "new_id_added_lines_match": 0
+        },
+        {
+          "mun": "46639",
+          "zona": "138",
+          "secao": "10",
+          "urn_old": "2401018",
+          "urn_new": "2415197",
+          "workstations_in_zone": 1,
+          "event_matches": [],
+          "new_id_added_lines_match": 0
+        },
+        {
+          "mun": "47333",
+          "zona": "153",
+          "secao": "300",
+          "urn_old": "2414203",
+          "urn_new": "2300443",
+          "workstations_in_zone": 1,
+          "event_matches": [],
+          "new_id_added_lines_match": 0
+        },
+        {
+          "mun": "47511",
+          "zona": "157",
+          "secao": "26",
+          "urn_old": "2253172",
+          "urn_new": "2262880",
+          "workstations_in_zone": 1,
+          "event_matches": [],
+          "new_id_added_lines_match": 0
+        },
+        {
+          "mun": "47554",
+          "zona": "159",
+          "secao": "111",
+          "urn_old": "2135035",
+          "urn_new": "2084950",
+          "workstations_in_zone": 1,
+          "event_matches": [],
+          "new_id_added_lines_match": 0
+        },
+        {
+          "mun": "48658",
+          "zona": "317",
+          "secao": "243",
+          "urn_old": "2134304",
+          "urn_new": "2068075",
+          "workstations_in_zone": 1,
+          "event_matches": [],
+          "new_id_added_lines_match": 0
+        },
+        {
+          "mun": "51071",
+          "zona": "235",
+          "secao": "9",
+          "urn_old": "2276118",
+          "urn_new": "2324635",
+          "workstations_in_zone": 1,
+          "event_matches": [],
+          "new_id_added_lines_match": 0
+        },
+        {
+          "mun": "53414",
+          "zona": "262",
+          "secao": "55",
+          "urn_old": "1750935",
+          "urn_new": "1776113",
+          "workstations_in_zone": 1,
+          "event_matches": [],
+          "new_id_added_lines_match": 0
+        }
+      ],
+      "new_id_in_added_lines_cases": 0,
+      "has_changed_station_in_zone_cases": 15
+    },
+    "PE": {
+      "changed_planned": 15,
+      "cases": [
+        {
+          "mun": "23094",
+          "zona": "64",
+          "secao": "184",
+          "urn_old": "1819158",
+          "urn_new": "1774396",
+          "workstations_in_zone": 1,
+          "event_matches": [],
+          "new_id_added_lines_match": 0
+        },
+        {
+          "mun": "23205",
+          "zona": "85",
+          "secao": "102",
+          "urn_old": "2172928",
+          "urn_new": "2160473",
+          "workstations_in_zone": 1,
+          "event_matches": [],
+          "new_id_added_lines_match": 0
+        },
+        {
+          "mun": "23264",
+          "zona": "89",
+          "secao": "71",
+          "urn_old": "2349385",
+          "urn_new": "2321401",
+          "workstations_in_zone": 1,
+          "event_matches": [],
+          "new_id_added_lines_match": 0
+        },
+        {
+          "mun": "23272",
+          "zona": "42",
+          "secao": "90",
+          "urn_old": "1774508",
+          "urn_new": "1769537",
+          "workstations_in_zone": 1,
+          "event_matches": [],
+          "new_id_added_lines_match": 0
+        },
+        {
+          "mun": "23450",
+          "zona": "39",
+          "secao": "51",
+          "urn_old": "1814993",
+          "urn_new": "1821759",
+          "workstations_in_zone": 1,
+          "event_matches": [],
+          "new_id_added_lines_match": 0
+        },
+        {
+          "mun": "24236",
+          "zona": "25",
+          "secao": "18",
+          "urn_old": "2161251",
+          "urn_new": "2173687",
+          "workstations_in_zone": 2,
+          "event_matches": [],
+          "new_id_added_lines_match": 0
+        },
+        {
+          "mun": "24775",
+          "zona": "24",
+          "secao": "94",
+          "urn_old": "2195341",
+          "urn_new": "2041752",
+          "workstations_in_zone": 2,
+          "event_matches": [],
+          "new_id_added_lines_match": 0
+        },
+        {
+          "mun": "25135",
+          "zona": "114",
+          "secao": "230",
+          "urn_old": "2218332",
+          "urn_new": "2173609",
+          "workstations_in_zone": 1,
+          "event_matches": [],
+          "new_id_added_lines_match": 0
+        },
+        {
+          "mun": "25313",
+          "zona": "149",
+          "secao": "63",
+          "urn_old": "2389731",
+          "urn_new": "2348464",
+          "workstations_in_zone": 1,
+          "event_matches": [],
+          "new_id_added_lines_match": 0
+        },
+        {
+          "mun": "25313",
+          "zona": "8",
+          "secao": "244",
+          "urn_old": "2370523",
+          "urn_new": "2337587",
+          "workstations_in_zone": 1,
+          "event_matches": [],
+          "new_id_added_lines_match": 0
+        },
+        {
+          "mun": "25313",
+          "zona": "8",
+          "secao": "246",
+          "urn_old": "2313795",
+          "urn_new": "2374681",
+          "workstations_in_zone": 1,
+          "event_matches": [],
+          "new_id_added_lines_match": 0
+        },
+        {
+          "mun": "25518",
+          "zona": "81",
+          "secao": "164",
+          "urn_old": "2339852",
+          "urn_new": "2339247",
+          "workstations_in_zone": 2,
+          "event_matches": [],
+          "new_id_added_lines_match": 0
+        },
+        {
+          "mun": "25836",
+          "zona": "26",
+          "secao": "127",
+          "urn_old": "1775106",
+          "urn_new": "1767268",
+          "workstations_in_zone": 1,
+          "event_matches": [],
+          "new_id_added_lines_match": 0
+        },
+        {
+          "mun": "25852",
+          "zona": "79",
+          "secao": "158",
+          "urn_old": "2320627",
+          "urn_new": "2312082",
+          "workstations_in_zone": 1,
+          "event_matches": [],
+          "new_id_added_lines_match": 0
+        },
+        {
+          "mun": "26298",
+          "zona": "138",
+          "secao": "81",
+          "urn_old": "2360779",
+          "urn_new": "2378984",
+          "workstations_in_zone": 2,
+          "event_matches": [],
+          "new_id_added_lines_match": 0
+        }
+      ],
+      "new_id_in_added_lines_cases": 0,
+      "has_changed_station_in_zone_cases": 15
+    }
+  },
+  "disclaimer": "Correspondencia por zona e presenca de ID em log sao correlacoes, nao provas de causalidade ou fraude."
+}
