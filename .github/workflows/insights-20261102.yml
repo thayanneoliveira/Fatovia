@@ -1,0 +1,50 @@
+name: "FatoVia | Gerar 3 carrosseis de 02-11-2026"
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/insights-20261102.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install existing dependencies
+        run: pip install -r requirements.txt
+      - name: Render 21 JPEGs
+        run: python scripts/build_insights_20261102.py
+      - name: Check all output files
+        run: |
+          test "$(find docs/media/insights-2026-11-02 -type f -name '*.jpg' | wc -l)" -eq 21
+          python - <<'PY'
+          from PIL import Image
+          from pathlib import Path
+          for p in Path("docs/media/insights-2026-11-02").rglob("*.jpg"):
+              with Image.open(p) as image:
+                  assert image.size == (1080,1350)
+                  assert image.format == "JPEG"
+          PY
+      - name: Save only public JPEG assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/media/insights-2026-11-02
+          if git diff --cached --quiet; then
+            echo "Already generated"
+            exit 0
+          fi
+          git commit -m "FatoVia: hospedar três carrosséis editoriais [skip ci]"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
