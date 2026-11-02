@@ -1,0 +1,154 @@
+{
+  "as_of": "2026-11-02",
+  "account": "fato.via",
+  "basis": "Source-backed external social discussion and low-sample own account insights; hypotheses not statistically validated.",
+  "posts": [
+    {
+      "slug": "beneficios-pos-eleicao",
+      "title": "Bolsa Família vai acabar?",
+      "angle": "Rumores após a eleição e diferença entre boato, compromisso, orçamento e execução.",
+      "trend_evidence": "Checagem Lupa 29/10/2026 identificou onda de posts sobre cortes; Agência Brasil 01/11/2026 divulgou a fala do presidente.",
+      "sources": [
+        "https://www.agencialupa.org/jornalismo/2026/10/29/fakes-sobre-fim-de-beneficios-sociais-se-espalham-apos-2o-turno-veja-o-que-e-boato/",
+        "https://www.gov.br/mds/pt-br/noticias/bolsa-familia-e-gas-do-povo-mds-alerta-para-circulacao-de-informacoes-falsas",
+        "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/lula-garante-que-programas-sociais-serao-mantidos"
+      ],
+      "cards": [
+        [
+          "Bolsa Família vai acabar?",
+          "A pergunta ganhou força depois da eleição. Vamos separar o boato, as regras em vigor e a promessa para 2027.",
+          "CHECAGEM / PROGRAMAS SOCIAIS"
+        ],
+        [
+          "O que vale hoje?",
+          "O Bolsa Família continua ativo. Desde outubro, o valor mínimo por família passou de R$ 600 para R$ 691, segundo o MDS.",
+          "MDS / 27 OUT 2026"
+        ],
+        [
+          "E o Gás do Povo?",
+          "O programa continua a oferecer recarga gratuita de botijões de 13 kg a famílias contempladas. Há verba em 2026 e previsão para 2027.",
+          "MDS / REGRAS E ORÇAMENTO"
+        ],
+        [
+          "O que Lula prometeu?",
+          "Em 1º de novembro, Lula disse que não pretende extinguir programas sociais no mandato de 2027 a 2030. É um compromisso público.",
+          "AGÊNCIA BRASIL / 01 NOV 2026"
+        ],
+        [
+          "De onde veio o boato?",
+          "A Lupa encontrou vídeos antigos e manchetes adulteradas usados para sugerir cortes. Não havia anúncio oficial de suspensão dos programas.",
+          "LUPA / 29 OUT 2026"
+        ],
+        [
+          "Como cobrar resultados?",
+          "A promessa precisa virar orçamento e execução. Acompanhe o número de famílias atendidas, valores efetivamente pagos e regras publicadas.",
+          "FATOVIA / CRITÉRIOS DE COBRANÇA"
+        ],
+        [
+          "Como conferir?",
+          "Consulte MDS, aplicativo Bolsa Família, Caixa Tem e Disque Social 121. Um print sem data não é prova de mudança nas regras.",
+          "FONTES OFICIAIS NA LEGENDA"
+        ]
+      ],
+      "caption": "BOLSA FAMÍLIA VAI ACABAR? O QUE EXISTE DE FATO? 🔎\n\nDepois do segundo turno, circularam publicações dizendo que programas sociais seriam cortados. Checagens localizaram vídeos fora de contexto e alegações sem anúncio oficial correspondente.\n\nO MDS informou em 27/10 que Bolsa Família e Gás do Povo permaneciam funcionando. O mínimo do Bolsa Família passou para R$ 691 por família em outubro. Em 1º/11, Lula afirmou que pretende manter os programas no próximo mandato.\n\nÉ importante distinguir três coisas: a situação atual, o compromisso político e os recursos que dependerão do Orçamento de 2027. Promessa não é execução comprovada.\n\nFONTES (consulta em 02/11/2026):\nMDS: https://www.gov.br/mds/pt-br/noticias/bolsa-familia-e-gas-do-povo-mds-alerta-para-circulacao-de-informacoes-falsas\nLupa: https://www.agencialupa.org/jornalismo/2026/10/29/fakes-sobre-fim-de-beneficios-sociais-se-espalham-apos-2o-turno-veja-o-que-e-boato/\nAgência Brasil: https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/lula-garante-que-programas-sociais-serao-mantidos\n\nFatoVia | Sem torcida. Com documentos.\n#FatoVia #BolsaFamilia #GasDoPovo #ChecagemDeFatos"
+    },
+    {
+      "slug": "pix-imposto-boato",
+      "title": "Imposto sobre o Pix?",
+      "angle": "Separar meio de pagamento, obrigação de informação financeira e tributação de renda.",
+      "trend_evidence": "Receita mantém alerta atualizado em 28/10/2026; checagens identificaram viralização de rumores sobre Pix em 2026.",
+      "sources": [
+        "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/janeiro/receita-federal-orienta-a-populacao-sobre-fake-news-envolvendo-pix-e-tributacao/",
+        "https://www.gov.br/fazenda/pt-br/assuntos/noticias/2026/abril/receita-federal-esclarece-que-nao-faz-rastreamento-de-transacoes-via-pix",
+        "https://www.gov.br/fazenda/pt-br/acesso-a-informacao/perguntas-frequentes/e-financeira-e-movimentacoes-via-pix-contas-e-cartoes-de-credito/e-financeira-e-movimentacoes-via-pix-contas-e-cartoes-de-credito"
+      ],
+      "cards": [
+        [
+          "Imposto sobre o Pix?",
+          "Uma regra de informação financeira voltou a ser tratada como se criasse imposto sobre transferências. São coisas diferentes.",
+          "ECONOMIA / CHECAGEM"
+        ],
+        [
+          "Pix é um imposto?",
+          "Não. O Pix é um meio de pagamento. A Receita afirma que transferências não geram, por si só, cobrança de tributo.",
+          "RECEITA FEDERAL / 28 OUT 2026"
+        ],
+        [
+          "O que mudou, então?",
+          "A IN 2.278/2025 estende a fintechs certas obrigações de transparência que já alcançavam bancos, segundo a Receita Federal.",
+          "REGRA SOBRE INSTITUIÇÕES"
+        ],
+        [
+          "E os dados enviados?",
+          "A e-Financeira recebe informações financeiras nos termos da norma. Segundo a Receita, não identifica cada Pix nem a modalidade das transações.",
+          "E-FINANCEIRA / DADOS"
+        ],
+        [
+          "Recebi R$ 5 mil. Pago?",
+          "Não há taxa automática por receber esse valor via Pix. Mas uma venda ou serviço pode gerar tributos pelas regras gerais aplicáveis à renda.",
+          "MEIO DE PAGAMENTO NÃO É RENDA"
+        ],
+        [
+          "Onde mora o golpe?",
+          "Cobranças para liberar Pix ou pagar suposto imposto sobre transferência são sinais de fraude. Nunca use links enviados em mensagens suspeitas.",
+          "PROTEJA SEUS DADOS"
+        ],
+        [
+          "A pergunta correta",
+          "A cobrança surgiu por qual atividade, com qual fundamento legal? Confira em canal oficial antes de pagar ou compartilhar.",
+          "FONTES OFICIAIS NA LEGENDA"
+        ]
+      ],
+      "caption": "PIX TAXADO? NÃO CONFUNDA TRÊS COISAS. 💸\n\n1. Pix é um meio de pagamento.\n2. A e-Financeira envolve deveres de informação de instituições financeiras.\n3. Tributos sobre renda ou vendas seguem regras próprias, independentemente da forma de pagamento.\n\nA Receita Federal reiterou que a IN 2.278/2025 não institui imposto sobre Pix e não prevê rastreamento individual das transferências na e-Financeira. Cuidado com mensagens exigindo pagamento para 'liberar' dinheiro.\n\nA ausência de imposto sobre a TRANSFERÊNCIA não isenta, por si só, rendimentos e atividades tributáveis. Esse é o ponto que desaparece nas manchetes.\n\nFONTES (consulta em 02/11/2026):\nReceita, nota atualizada em 28/10: https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/janeiro/receita-federal-orienta-a-populacao-sobre-fake-news-envolvendo-pix-e-tributacao/\nMinistério da Fazenda: https://www.gov.br/fazenda/pt-br/assuntos/noticias/2026/abril/receita-federal-esclarece-que-nao-faz-rastreamento-de-transacoes-via-pix\n\nFatoVia | A manchete é só o começo.\n#FatoVia #Pix #ReceitaFederal #EducacaoFinanceira #Checagem"
+    },
+    {
+      "slug": "feed-sem-perfilamento",
+      "title": "E se você escolhesse o feed?",
+      "angle": "PL 5330/2026, escolha de feed não personalizado e debate de 02/11 sobre plataformas.",
+      "trend_evidence": "Folha 02/11/2026 repercute iniciativas de regulação das redes; PL 5330/2026 e diretriz 33 do CGI.br dão base documental.",
+      "sources": [
+        "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2646307",
+        "https://cgi.br/resolucoes/documento/2026/082/",
+        "https://www1.folha.uol.com.br/poder/2026/11/esquerda-quer-regulacao-das-redes-e-mobilizacao-digital-permanente-apos-eleicao-de-lula.shtml"
+      ],
+      "cards": [
+        [
+          "E se você escolhesse o feed?",
+          "O debate sobre algoritmos voltou após a eleição. Um projeto propõe que você possa ver conteúdos sem perfilamento do seu comportamento.",
+          "PLATAFORMAS / ALGORITMOS"
+        ],
+        [
+          "O que acontece hoje?",
+          "As redes usam sinais de uso para ordenar conteúdo e recomendar perfis. Isso facilita descobertas, mas influencia o que aparece primeiro.",
+          "FUNCIONAMENTO DAS PLATAFORMAS"
+        ],
+        [
+          "O que está proposto?",
+          "O PL 5330/2026 quer garantir uma opção de ordenação que não dependa do perfil comportamental, além de transparência sobre recomendações.",
+          "CÂMARA / PL 5330 DE 2026"
+        ],
+        [
+          "Seria um feed diferente?",
+          "O projeto prevê opção com conteúdos de contas, grupos e comunidades escolhidos pelo usuário. A recomendação personalizada não teria de desaparecer.",
+          "OPÇÃO, NÃO PROIBIÇÃO TOTAL"
+        ],
+        [
+          "Há outra referência?",
+          "O CGI.br defendeu a opção de uso sem perfilamento em suas diretrizes de setembro. Diretriz orienta debate; não cria dever legal por si só.",
+          "CGI.BR / DIRETRIZ 33"
+        ],
+        [
+          "Qual é o dilema?",
+          "Mais controle pode aumentar a autonomia. Como exigir transparência sem inviabilizar descoberta de conteúdo, inovação e moderação eficaz?",
+          "TRADE-OFFS / POLÍTICA PÚBLICA"
+        ],
+        [
+          "Já é obrigatório?",
+          "Não. O PL foi apresentado em setembro de 2026. Acompanhe a tramitação, as mudanças no texto e eventual aprovação.",
+          "FONTE: CÂMARA DOS DEPUTADOS"
+        ]
+      ],
+      "caption": "E SE VOCÊ PUDESSE ESCOLHER O QUE O ALGORITMO MOSTRA? 📱\n\nA regulação das redes voltou ao debate político neste 2 de novembro. Mas existe uma pergunta mais concreta: você deveria ter direito a uma opção de feed sem perfilamento dos seus hábitos?\n\nO PL 5330/2026, apresentado na Câmara, propõe esse direito e regras de transparência sobre recomendações. O CGI.br também publicou diretrizes para ampliar a escolha do usuário.\n\nATENÇÃO: nem as diretrizes do CGI.br nem a simples apresentação de um projeto significam que a regra já está em vigor. Também é diferente da discussão sobre remoção de postagens ou censura.\n\nFONTES (consulta em 02/11/2026):\nCâmara, PL 5330/2026: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2646307\nCGI.br, diretriz 33: https://cgi.br/resolucoes/documento/2026/082/\nFolha, repercussão de 02/11: https://www1.folha.uol.com.br/poder/2026/11/esquerda-quer-regulacao-das-redes-e-mobilizacao-digital-permanente-apos-eleicao-de-lula.shtml\n\nVocê escolheria um feed cronológico ou recomendações personalizadas?\n#FatoVia #Algoritmos #RedesSociais #DireitosDigitais #Transparencia"
+    }
+  ]
+}
