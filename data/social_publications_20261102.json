@@ -1,0 +1,27 @@
+{
+  "checked_on": "2026-11-02",
+  "account": "fato.via",
+  "publication_status": "confirmed by Windsor.ai and fetched media_permalink from same Instagram account",
+  "layout": "brand standard #123E31 with serif headlines; 7 JPEG cards per carousel",
+  "trend_method": "public 2026 reports: Lupa 29 Oct (benefits), Receita update 28 Oct (Pix recurring rumor), Folha 02 Nov and official PL 5330 (algorithms); own insights insufficient for performance ranking",
+  "posts": [
+    {
+      "slug": "beneficios-pos-eleicao",
+      "media_id": "18130792231864514",
+      "permalink": "https://www.instagram.com/p/DfPlOo-jSYY/",
+      "images": "docs/media/radar-social-2026-11-02/beneficios-pos-eleicao"
+    },
+    {
+      "slug": "pix-imposto-boato",
+      "media_id": "18110150126185212",
+      "permalink": "https://www.instagram.com/p/DfPlYmfgoid/",
+      "images": "docs/media/radar-social-2026-11-02/pix-imposto-boato"
+    },
+    {
+      "slug": "feed-sem-perfilamento",
+      "media_id": "18037241561852530",
+      "permalink": "https://www.instagram.com/p/DfPljSSiFvN/",
+      "images": "docs/media/radar-social-2026-11-02/feed-sem-perfilamento"
+    }
+  ]
+}
