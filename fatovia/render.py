@@ -38,37 +38,74 @@ def wrapped(draw, text, font, max_width):
 
 
 def card(path, number, headline, body, hint):
-    picture = Image.new("RGB", (1080, 1350), CREAM)
+    """Formato FatoVia: fundo verde escuro, títulos serifados e microtipografia editorial."""
+    picture = Image.new("RGB", (1080, 1350), "#123E31")
     draw = ImageDraw.Draw(picture)
-    draw.rectangle((0, 0, 1080, 18), fill=GREEN)
-    draw.text((82, 82), "FATO", fill=GREEN, font=getfont(58, True))
-    draw.text((273, 82), "VIA", fill="#4B8063", font=getfont(58, True))
-    draw.line((82, 180, 998, 180), fill="#9EAE9B", width=3)
-    draw.text((82, 225), f"EDITORIAL / {number:02}/07", fill="#587262", font=getfont(25, True))
-    title_lines = wrapped(draw, headline, getfont(58, True), 900)
+    cream, sage, muted = "#F5F1E7", "#B5D39F", "#D0DFC6"
+
+    def serif(size):
+        for path in (
+            "/usr/share/fonts/truetype/ebgaramond/EBGaramond08-Regular.ttf",
+            "/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf",
+        ):
+            try:
+                return ImageFont.truetype(path, size)
+            except OSError:
+                pass
+        return ImageFont.load_default()
+
+    draw.text((72, 56), "FATOVIA", fill=cream, font=getfont(34, True))
+    draw.text((808, 69), "ENTENDA / 2026", fill=muted, font=getfont(22))
+    draw.line((72, 146, 1008, 146), fill="#9FBF99", width=2)
+    draw.text((72, 190), f"FATOVIA / {number:02}/07", fill=muted, font=getfont(25, True))
+    natural = str(headline).lower().capitalize()
+    for acronym in ("IA", "PEC", "SUS", "TSE", "PL", "STF"):
+        natural = natural.replace(" " + acronym.lower() + " ", " " + acronym + " ")
+        natural = natural.replace(" " + acronym.lower() + "?", " " + acronym + "?")
+        natural = natural.replace(" " + acronym.lower() + ".", " " + acronym + ".")
+    title_size = 91
+    while title_size >= 56:
+        title_font = serif(title_size)
+        title_lines = wrapped(draw, natural, title_font, 926)
+        if len(title_lines) <= 5:
+            break
+        title_size -= 5
     if len(title_lines) > 5:
-        raise ValueError("Título ultrapassa limite")
-    y = 326
-    for line in title_lines:
-        draw.text((82, y), line, fill=GREEN, font=getfont(58, True))
-        y += 81
-    y += 65
-    body_font = getfont(33 if len(body) > 420 else 39)
-    step = 52 if len(body) > 420 else 61
-    for line in wrapped(draw, body, body_font, 910):
-        if y + step > 1130:
-            raise ValueError(f"Card {number} excedeu limite de texto")
-        draw.text((82, y), line, fill="#213B31", font=body_font)
-        y += step
-    draw.line((82, 1195, 998, 1195), fill="#B1BDAF", width=2)
-    for index, line in enumerate(wrapped(draw, hint, getfont(22), 900)):
-        if index >= 2:
-            raise ValueError("Nota de rodapé ultrapassa limite")
-        draw.text((82, 1220 + index * 28), line, fill="#607268", font=getfont(22))
+        raise ValueError("Título excedeu a área editorial")
+    y = 272
+    for index, line in enumerate(title_lines):
+        draw.text((72, y), line, fill=cream if index == 0 else sage, font=title_font)
+        y += title_size + 8
+
+    draw.line((72, 805, 212, 805), fill=sage, width=6)
+    body_size, lines = 38, []
+    while body_size >= 24:
+        body_font = getfont(body_size)
+        lines = wrapped(draw, body, body_font, 925)
+        gap = max(38, body_size + 17)
+        height = sum(20 if not line else gap for line in lines)
+        if 847 + height <= 1158:
+            break
+        body_size -= 2
+    if 847 + height > 1158:
+        raise ValueError("Texto excedeu o limite editorial")
+    y = 847
+    for line in lines:
+        if line:
+            draw.text((72, y), line, fill=cream, font=body_font)
+        y += 20 if not line else gap
+
+    cta = "FONTES NA LEGENDA" if number == 7 else "DESLIZE PARA ENTENDER"
+    draw.text((72, 1190), cta, fill=sage, font=getfont(26, True))
+    draw.line((72, 1270, 1008, 1270), fill="#9FBF99", width=2)
+    footer_font = getfont(18)
+    footer = wrapped(draw, hint, footer_font, 780)
+    draw.text((72, 1284), (footer[0] if footer else "")[:110], fill=muted, font=footer_font)
+    draw.text((940, 1284), f"{number:02}/07", fill=cream, font=getfont(18, True))
+
     Path(path).parent.mkdir(parents=True, exist_ok=True)
     picture.save(path, "JPEG", quality=91, optimize=True, subsampling=0)
     return str(path)
-
 
 def cards_for(item):
     summary = item["summary"].strip()
