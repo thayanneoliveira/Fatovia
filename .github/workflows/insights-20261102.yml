@@ -23,7 +23,7 @@ jobs:
       - name: Install existing dependencies
         run: pip install -r requirements.txt
       - name: Render 21 JPEGs
-        run: python scripts/build_insights_20261102.py
+        run: python -m scripts.build_insights_20261102
       - name: Check all output files
         run: |
           test "$(find docs/media/insights-2026-11-02 -type f -name '*.jpg' | wc -l)" -eq 21
