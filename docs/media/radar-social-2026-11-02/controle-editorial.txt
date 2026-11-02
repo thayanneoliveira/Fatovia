@@ -1,0 +1,8 @@
+FATOVIA | Radar social | 2026-11-02
+Três carrosséis originais, 7 cards cada, 1080 x 1350 JPEG.
+Fonte: data/editorial_social_2026_11_02.json.
+Pauta A: boatos sobre Bolsa Família e Gás do Povo, cruzados com MDS, Lupa e Agência Brasil.
+Pauta B: boatos sobre imposto do Pix, cruzados com Receita Federal e Ministério da Fazenda.
+Pauta C: PL 5330/2026 e opção de feed sem perfilamento, cruzados com Câmara e CGI.br.
+Controle de marca: fundo #123E31 e serifas, testados pelo GitHub Actions.
+Nota: arquivo público de hospedagem não equivale a publicação no Instagram.
