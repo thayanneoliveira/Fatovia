@@ -72,21 +72,34 @@ def run(root,out):
     status["summary"]=dict(totals)
     status["ufs_com_ELO_2T"]=[uf for uf,v in sorted(status["uf_results"].items()) if v["elo_2t_disponivel"]]
     if not status["errors"]:
-        if totals["secoes_bu_web_2t"]!=499207:
-            status["errors"].append("seções BU diferentes das 499207 esperadas; revisar versões do universo")
+        if totals["secoes_bu_web_2t"]!=499205:
+            status["errors"].append("seções com registro presidencial BU diferentes de 499205")
+        if totals["secoes_detalhe_2t"]!=499248:
+            status["errors"].append("seções no detalhe de apuração diferentes de 499248")
+        if totals["secoes_2T_somente_detalhe"]!=43 or totals["secoes_2T_somente_bu"]!=0:
+            status["errors"].append("cobertura excepcional ZZ não corresponde a 43 somente detalhe")
+        if totals["BU_e_detalhe_2T_divergentes"]!=0:
+            status["errors"].append("existem divergências quantitativas de BU vs detalhe; requer exame")
         if totals["secoes_bu_web_2t"] != totals["BU_e_detalhe_2T_ambos"]+totals["secoes_2T_somente_bu"]:
             status["errors"].append("denominador BU não reconciliável com interseção e ausências")
         if totals["secoes_detalhe_2t"] != totals["BU_e_detalhe_2T_ambos"]+totals["secoes_2T_somente_detalhe"]:
             status["errors"].append("denominador detalhe não reconciliável com interseção e ausências")
         if totals["BU_e_detalhe_2T_divergentes"]<0:
             status["errors"].append("contagem inválida")
-    status["status"]="COMPLETE_PUBLIC_CONSISTENCY_CHECK" if not status["errors"] else "INCOMPLETE"
+    status["universe_reconciliation"]={
+      "secao_identificador_geral_anteriores":499207,
+      "secoes_com_linhas_presidenciais_no_BU":totals["secoes_bu_web_2t"],
+      "secoes_no_detalhe_da_apuracao":totals["secoes_detalhe_2t"],
+      "secoes_em_ambos":totals["BU_e_detalhe_2T_ambos"],
+      "somentedetalhe_ZZ":totals["secoes_2T_somente_detalhe"],
+      "observacao":"A distinção de 43 ZZ deve ser classificada por campos de instalação/turnout; 2 sem linhas presidenciais não são divergências de voto."}
+    status["status"]="COMPLETE_WITH_DOCUMENTARY_ZZ_COVERAGE_GAP" if not status["errors"] else "INCOMPLETE"
     out.mkdir(parents=True,exist_ok=True)
     (out/"resumo_nacional_coerencia_2026.json").write_text(
         json.dumps(status,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(json.dumps({"status":status["status"],"ufs_validas":len(status["uf_results"]),
         "summary":status["summary"],"errors":status["errors"]},ensure_ascii=False),flush=True)
-    return 0 if status["status"]=="COMPLETE_PUBLIC_CONSISTENCY_CHECK" else 2
+    return 0 if status["status"]=="COMPLETE_WITH_DOCUMENTARY_ZZ_COVERAGE_GAP" else 2
 
 if __name__=="__main__":
     p=argparse.ArgumentParser()
