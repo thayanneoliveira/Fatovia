@@ -37,7 +37,7 @@ def sha512(path):
         for b in iter(lambda:f.read(2*1024*1024),b""): h.update(b)
     return h.hexdigest()
 
-def fetch(url,path,maxsize=1300*1024**3):
+def fetch(url,path,maxsize=1300*1024**2):
     if path.exists() and path.stat().st_size>0:
         return
     ex=None
