@@ -1,0 +1,73 @@
+name: FatoVia auditoria cruzada nacional 2026 - 27 UFs e exterior
+on:
+  push:
+    branches: [auditoria-forense-v2-2026]
+    paths:
+      - ".github/workflows/auditoria-v2-coerencia-nacional.yml"
+  workflow_dispatch:
+jobs:
+  lotes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 65
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - lote: um
+            ufs: "AC AL AM AP BA CE DF"
+          - lote: dois
+            ufs: "ES GO MA MG MS MT PA"
+          - lote: tres
+            ufs: "PB PE PI PR RJ RN RO"
+          - lote: quatro
+            ufs: "RR RS SC SE SP TO ZZ"
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verificar sintaxe e testes da engine de cruzamentos
+        run: |
+          python -m py_compile auditoria-v2/auditar_coerencia_lote.py auditoria-v2/auditar_coerencia_2026.py
+          python -m unittest discover -s auditoria-v2/tests -p 'test_coerencia.py' -v
+      - name: Cruzar fontes nacionais uma vez e processar todas as UFs do lote
+        run: |
+          python auditoria-v2/auditar_coerencia_lote.py --ufs ${{ matrix.ufs }} --data-dir fontes-lote-${{ matrix.lote }} --output-dir saida-lote-${{ matrix.lote }}
+      - name: Preservar manifestos e exceções, inclusive de lotes com erro
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fatovia-coerencia-lote-${{ matrix.lote }}
+          path: saida-lote-${{ matrix.lote }}/
+          retention-days: 30
+          if-no-files-found: warn
+  consolidar:
+    needs: [lotes]
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: fatovia-coerencia-lote-*
+          path: todos-lotes
+          merge-multiple: false
+      - name: Conferir 28 UFs e consistência de universos e versões
+        run: |
+          python auditoria-v2/consolidar_coerencia_nacional.py --input-dir todos-lotes --output-dir resultado-nacional
+      - name: Preservar resumo nacional ou diagnóstico
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fatovia-coerencia-nacional-2026
+          path: resultado-nacional/
+          retention-days: 30
+          if-no-files-found: warn
