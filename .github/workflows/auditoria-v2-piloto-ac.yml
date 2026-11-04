@@ -1,0 +1,66 @@
+name: FatoVia auditoria v2 - piloto real AC
+on:
+  push:
+    branches: [auditoria-forense-v2-2026]
+    paths:
+      - "auditoria-v2/reconciliar_secoes.py"
+      - ".github/workflows/auditoria-v2-piloto-ac.yml"
+  workflow_dispatch:
+jobs:
+  piloto-ac:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Baixar exclusivamente dados publicos de AC e referencias SHA-512
+        shell: bash
+        run: |
+          mkdir -p /tmp/fatovia-ac dados-auditoria-v2
+          python - <<'PY'
+          import pathlib, time, urllib.request
+          base = "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/"
+          resources = {
+             "correspesp": ["CESP_2t_AC_241020261231.zip", "CESP_2t_AC_251020261345.zip"],
+             "correspefet": ["CEFT_2t_AC_261020261201.zip"],
+             "buweb": ["bweb_2t_AC_261020260742.zip"],
+          }
+          dest = pathlib.Path("/tmp/fatovia-ac")
+          for folder, files in resources.items():
+              for name in files:
+                  for suffix in ("", ".sha512"):
+                      url = base + folder + "/" + name + suffix
+                      err = None
+                      for attempt in range(3):
+                          try:
+                              req = urllib.request.Request(url, headers={"User-Agent":"FatoVia-civic-audit/2026"})
+                              with urllib.request.urlopen(req, timeout=120) as r, (dest / (name+suffix)).open("wb") as f:
+                                  while True:
+                                      b = r.read(1024 * 1024)
+                                      if not b:
+                                          break
+                                      f.write(b)
+                              print("OK", name+suffix, flush=True)
+                              err = None
+                              break
+                          except Exception as e:
+                              err = e
+                              time.sleep(attempt+1)
+                      if err:
+                          raise RuntimeError(f"Falha na coleta publica de {name+suffix}: {err}")
+          PY
+      - name: Reconciliar arquivos reais com cobertura obrigatoria
+        run: |
+          python auditoria-v2/reconciliar_secoes.py --input-dir /tmp/fatovia-ac --output-dir dados-auditoria-v2 --ufs AC
+      - name: Disponibilizar manifesto e matriz para revisao
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fatovia-v2-piloto-ac
+          path: dados-auditoria-v2/
+          if-no-files-found: warn
+          retention-days: 30
