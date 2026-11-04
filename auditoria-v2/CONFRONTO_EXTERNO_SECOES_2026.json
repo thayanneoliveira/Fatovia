@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-11-04",
+  "test": "Confronto de cobertura territorial: FatoVia BU web vs DataUrnas-BR RDV report (2T)",
+  "scope": "27 UFs + ZZ",
+  "fatovia": {
+    "reference": "https://github.com/thayanneoliveira/Fatovia/blob/auditoria-tse-2026/auditoria-nacional-resultados/RESULTADO_NACIONAL_CRUZAMENTO.json",
+    "blob_sha": "df3f0fccb5304d6c6b83939b3bae100dd3c44698",
+    "sections": 499207
+  },
+  "third_party": {
+    "reference": "https://github.com/alissonlinneker/DataUrnas-BR/blob/main/data/parquet/2026/t2/rdv_nacional_resumo.json",
+    "blob_sha": "b52581e37f39bdf0567a9f31359daca7ea87ecd0",
+    "sections_reported": 499207,
+    "sections_with_rdv_reported": 499205,
+    "presidential_rdv_bu_divergences_reported": 0,
+    "sections_without_rdv_reported": [
+      "zz/29564/0001/0091",
+      "zz/30686/0001/0443"
+    ]
+  },
+  "result": {
+    "uf_count_compared": 28,
+    "uf_section_count_mismatches": 0,
+    "conclusion": "COBERTURA_COINCIDENTE_NOS_RELATORIOS",
+    "rdv_recount_reproduced": false
+  },
+  "interpretation": "Comparação apenas de metadados agregados de relatórios. Ambos derivam de fontes oficiais do TSE. Não conclui autenticação física, fraude, óbitos nem recontagem independente de RDV."
+}
