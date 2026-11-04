@@ -95,6 +95,8 @@ def compare_uf(uf,bu,detail,elo,perfil):
         changed+=1
     counts["secoes_exclusivas_1T_ou_perfil_sem_BUs_2T"]=changed
     counts["cobertura_2T_pendente_confirmacao"]=counts.get("BU_ou_detalhe_2T_sem_cobertura",0)-changed
+    counts["secoes_2T_somente_bu"]=len(set(bu)-set(detail[2]))
+    counts["secoes_2T_somente_detalhe"]=len(set(detail[2])-set(bu))
     counts["secoes_bu_web_2t"]=len(bu)
     counts["secoes_detalhe_1t"]=len(detail[1])
     counts["secoes_detalhe_2t"]=len(detail[2])
