@@ -3,11 +3,13 @@ on:
   push:
     branches: [auditoria-forense-v2-2026]
     paths:
-      - "auditoria-v2/**"
+      - "auditoria-v2/reconciliar_secoes.py"
+      - "auditoria-v2/tests/test_reconciliar.py"
       - ".github/workflows/auditoria-v2-tests.yml"
   pull_request:
     paths:
-      - "auditoria-v2/**"
+      - "auditoria-v2/reconciliar_secoes.py"
+      - "auditoria-v2/tests/test_reconciliar.py"
       - ".github/workflows/auditoria-v2-tests.yml"
   workflow_dispatch:
 jobs:
