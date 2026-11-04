@@ -13,6 +13,7 @@ SUM_KEYS=[
  "BU_ou_detalhe_2T_sem_cobertura","cobertura_2T_pendente_confirmacao",
  "secoes_exclusivas_1T_ou_perfil_sem_BUs_2T",
  "secoes_bu_web_2t","secoes_detalhe_1t","secoes_detalhe_2t",
+ "secoes_2T_somente_bu","secoes_2T_somente_detalhe",
  "secoes_com_dois_turnos","secoes_comparecimento_distinto_entre_turnos",
  "secoes_aptos_distintos_entre_turnos",
  "perfil_e_detalhe_2T_ambos","perfil_aptos_diferentes_2T",
@@ -73,8 +74,10 @@ def run(root,out):
     if not status["errors"]:
         if totals["secoes_bu_web_2t"]!=499207:
             status["errors"].append("seções BU diferentes das 499207 esperadas; revisar versões do universo")
-        if totals["secoes_bu_web_2t"]!=totals["BU_e_detalhe_2T_ambos"]+totals["cobertura_2T_pendente_confirmacao"]:
-            status["errors"].append("as seções BU não foram completamente reconciliadas")
+        if totals["secoes_bu_web_2t"] != totals["BU_e_detalhe_2T_ambos"]+totals["secoes_2T_somente_bu"]:
+            status["errors"].append("denominador BU não reconciliável com interseção e ausências")
+        if totals["secoes_detalhe_2t"] != totals["BU_e_detalhe_2T_ambos"]+totals["secoes_2T_somente_detalhe"]:
+            status["errors"].append("denominador detalhe não reconciliável com interseção e ausências")
         if totals["BU_e_detalhe_2T_divergentes"]<0:
             status["errors"].append("contagem inválida")
     status["status"]="COMPLETE_PUBLIC_CONSISTENCY_CHECK" if not status["errors"] else "INCOMPLETE"
