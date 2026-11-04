@@ -1,0 +1,29 @@
+name: FatoVia auditoria v2 - revisao do legado nacional
+on:
+  push:
+    branches: [auditoria-forense-v2-2026]
+    paths:
+      - "auditoria-v2/revisar_legado.py"
+      - ".github/workflows/auditoria-v2-revisao-legado.yml"
+  workflow_dispatch:
+jobs:
+  revisar-metadados:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Conferir invariantes e inventarios do relatorio de 29 outubro
+        run: |
+          python auditoria-v2/revisar_legado.py --report auditoria-nacional-resultados/RESULTADO_NACIONAL_CRUZAMENTO.json --out dados-auditoria-v2
+      - name: Publicar manifesto e amostra explicitamente incompleta
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fatovia-v2-revisao-legado
+          path: dados-auditoria-v2/
+          retention-days: 30
+          if-no-files-found: warn
