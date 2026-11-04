@@ -1,0 +1,38 @@
+name: FatoVia - conclusao nacional de coerencia 2026
+on:
+  push:
+    branches: [auditoria-forense-v2-2026]
+    paths:
+      - ".github/workflows/auditoria-v2-consolidacao-final.yml"
+  workflow_dispatch:
+jobs:
+  validar-e-consolidar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    permissions:
+      actions: read
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Recuperar quatro lotes preservados do workflow original
+        uses: actions/download-artifact@v4
+        with:
+          run-id: 41875278223
+          github-token: ${{ github.token }}
+          pattern: fatovia-coerencia-lote-*
+          path: lotes-originais
+          merge-multiple: false
+      - name: Validar 28 unidades e separar 43 excecoes ZZ
+        run: |
+          python auditoria-v2/consolidar_coerencia_nacional.py --input-dir lotes-originais --output-dir resultado-final
+      - name: Publicar manifesto nacional
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fatovia-coerencia-nacional-2026-final
+          path: resultado-final/
+          if-no-files-found: warn
+          retention-days: 30
