@@ -16,7 +16,7 @@ Cruzar informações registradas para a mesma UF/município/zona/seção e cargo
 
 | Código | Hipótese falsificável | Fonte primária | Chave e tipo de confronto | Estado |
 | --- | --- | --- | --- | --- |
-| C01 | BU web 2º turno vs detalhe de apuração 2º turno | TSE (BU web + detalhe votação seção 2026) | UF/mun/zona/seção, presidente, aptos/comparecimento/abstenções; diferenças e ausências | piloto AC iniciado, resultado não homologado |
+| C01 | BU web 2º turno vs detalhe de apuração 2º turno | TSE (BU web + detalhe votação seção 2026) | UF/mun/zona/seção, presidente, aptos/comparecimento/abstenções; diferenças e ausências | **piloto AC concluído: 2.270 seções, 0 divergências** |
 | C02 | Dados ELO vs soma de seção | TSE ELO 2026 e detalhe de apuração | UF/mun/zona/turno, aptos/comparecimento/abstenções | piloto AC iniciado, resultado não homologado |
 | C03 | Perfil de eleitorado pré-eleição × eleitorado de BU | TSE perfil eleitorado seção 2026 + BU | UF/mun/zona/seção; aptos e cobertura biométrica agregada, com cautela por datas | piloto AC iniciado, resultado não homologado |
 | C04 | Primeiro turno × segundo turno | TSE detalhe votação seção 2026 | mesma seção/cargo, aptos e comparecimento; não pressupõe estabilidade | piloto AC iniciado, resultado não homologado |
@@ -30,7 +30,7 @@ Cruzar informações registradas para a mesma UF/município/zona/seção e cargo
 - Validador principal: [auditar_coerencia_2026.py](./auditar_coerencia_2026.py)
 - Testes sintéticos: [tests/test_coerencia.py](./tests/test_coerencia.py)
 - Execução [GitHub Actions C01–C04](https://github.com/thayanneoliveira/Fatovia/actions/runs/41865253168) (verificar estado atual; não pressupor sucesso).
-- Diagnóstico de falso positivo decorrente de comparar dois cargos diferentes no BU: [script corrigido](./obitos_comparecimento_piloto.py), execução [41864536931](https://github.com/thayanneoliveira/Fatovia/actions/runs/41864536931).
+- Diagnóstico de falso positivo decorrente de comparar dois cargos diferentes no BU: [script corrigido](./obitos_comparecimento_piloto.py), execução [41864536931](https://github.com/thayanneoliveira/Fatovia/actions/runs/41864536931) **SUCESSO**, com 2.270 seções idênticas, 453.654 comparecimentos, 160.061 abstenções, zero ausências e zero divergências. A reexecução do BU conferiu SHA-512; o arquivo detalhe teve hash local registrado, sem referência independente de hash.
 - [Resultado C05 em JSON](./CONFRONTO_EXTERNO_SECOES_2026.json), inclui hash de versões dos arquivos de resultado usados.
 - [Minuta de pedido institucional ao TSE](./MINUTA_COMPLEMENTAR_TSE_OBITOS_COMPARECIMENTO_2026.md), não enviada.
 
