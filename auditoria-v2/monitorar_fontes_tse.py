@@ -27,6 +27,7 @@ DATASETS = {
     "GEDAI-2T": "resultados-2026-logs-do-sistema-de-preparacao-das-urnas-eletronicas-gedai-2-turno",
     "CORRESPONDENCIAS-2T": "resultados-2026-correspondencias-esperadas-e-efetivadas-2-turno",
     "BOLETIM": "resultados-2026-boletim-de-urna",
+    "RESULTADOS-2026": "resultados-2026",
 }
 
 def get(url, limit=15*1024*1024):
