@@ -29,7 +29,7 @@ KEYS = {
     "secao": ["NR_SECAO", "SECAO"],
     "urna": ["NR_URNA", "NR_SERIE_URNA", "NR_URNA_EFETIVADA", "NR_URNA_ESPERADA", "NR_EQUIPAMENTO"],
 }
-SHA = re.compile(r"\\b[a-fA-F0-9]{128}\\b")
+SHA = re.compile(r"\b[a-fA-F0-9]{128}\b")
 
 class IncompleteAudit(RuntimeError):
     pass
@@ -91,7 +91,7 @@ def parse_zip(path, source):
                 header = text.readline()
                 if not header:
                     raise IncompleteAudit("CSV vazio: " + m.filename)
-                sep = max((";", ",", "\\t"), key=lambda x: header.count(x))
+                sep = max((";", ",", "\t"), key=lambda x: header.count(x))
                 names = next(csv.reader([header], delimiter=sep))
                 fields = {k: col(names, variants) for k, variants in KEYS.items()}
                 if not all(fields.values()):
@@ -175,7 +175,7 @@ def run(root, out, ufs):
         manifest["matrix_sha512"] = digest(destination)
         manifest["matrix_rows"] = len(diffs)
     (out / "manifesto_validacao.json").write_text(
-        json.dumps(manifest, ensure_ascii=False, sort_keys=True, indent=2) + "\\n", encoding="utf-8"
+        json.dumps(manifest, ensure_ascii=False, sort_keys=True, indent=2) + "\n", encoding="utf-8"
     )
     return 0 if manifest["status"].startswith("COMPLETE") else 2
 
