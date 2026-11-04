@@ -85,10 +85,16 @@ def entries(zip_path, uf, kind):
                 for row in csv.DictReader(txt, fieldnames=fieldnames, delimiter=delim):
                     if canon(row.get("SG_UF")) != uf or canon(row["NR_TURNO"]) != "2":
                         continue
-                    if kind == "detail":
+                    # Os quantitativos variam por cargo (ex.: voto em trânsito);
+                    # não conflitar presidente com governador/senador.
+                    if kind == "bu":
+                        cargo = canon(row.get("CD_CARGO_PERGUNTA"))
+                        descricao = canon(row.get("DS_CARGO_PERGUNTA"))
+                    else:
                         cargo = canon(row.get("CD_CARGO"))
-                        if cargo != "1" and canon(row.get("DS_CARGO")) not in ("PRESIDENTE", "PRESIDENTE DA REPÚBLICA"):
-                            continue
+                        descricao = canon(row.get("DS_CARGO"))
+                    if cargo != "1" and descricao not in ("PRESIDENTE", "PRESIDENTE DA REPÚBLICA"):
+                        continue
                     key = tuple(canon(row.get(k)) for k in KEY)
                     if not all(key):
                         raise ValueError(f"{kind}: chave de seção vazia em {member}")
