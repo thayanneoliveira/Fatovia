@@ -1,0 +1,28 @@
+name: FatoVia - matematica dos dois turnos 2026
+on:
+  push:
+    branches: [auditoria-forense-v2-2026]
+    paths:
+      - ".github/workflows/auditoria-v2-matematica-turnos.yml"
+  workflow_dispatch:
+jobs:
+  conferir-28-unidades:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    permissions: {contents: read}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - name: Validar script
+        run: python -m py_compile auditoria-v2/analise_matematica_turnos_2026.py
+      - name: Consultar 56 arquivos TSE EA20 e testar identidades matematicas
+        run: python auditoria-v2/analise_matematica_turnos_2026.py
+      - name: Preservar todas as contagens, hashes e resultados mesmo com falhas
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fatovia-matematica-2026-28-unidades
+          path: resultado-matematica-eleitoral/
+          retention-days: 60
+          if-no-files-found: warn
