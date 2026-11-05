@@ -1,0 +1,30 @@
+name: FatoVia comparativo TSE - artefatos desde 29 outubro
+on:
+  push:
+    branches: [auditoria-forense-v2-2026]
+    paths:
+      - ".github/workflows/auditoria-v2-monitorar-fontes.yml"
+      - "auditoria-v2/monitorar_fontes_tse.py"
+  workflow_dispatch:
+jobs:
+  comparar-fontes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Comparar 168 SHA512 originais com referencias TSE atuais
+        run: |
+          python auditoria-v2/monitorar_fontes_tse.py
+      - name: Preservar inventario comparativo independentemente do status
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fatovia-comparativo-tse-2026-11-04
+          path: auditoria-v2/monitoramento-artefatos/
+          retention-days: 60
+          if-no-files-found: warn

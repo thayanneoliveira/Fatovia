@@ -1,0 +1,29 @@
+name: FatoVia - catalogo de fontes para auditoria cruzada
+on:
+  push:
+    branches: [auditoria-forense-v2-2026]
+    paths:
+      - "auditoria-v2/inspecionar_catalogos.py"
+      - ".github/workflows/auditoria-v2-inspecionar-fontes.yml"
+  workflow_dispatch:
+jobs:
+  fontes-publicas:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Consultar CKAN oficial para ELO, eleitorado, BU e logs
+        run: python auditoria-v2/inspecionar_catalogos.py
+      - name: Preservar metadados e URLs de fontes
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fatovia-catalogos-publicos-2026
+          path: resultados-catalogos-2026/
+          if-no-files-found: warn
+          retention-days: 30

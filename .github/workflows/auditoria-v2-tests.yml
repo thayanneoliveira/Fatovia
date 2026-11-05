@@ -1,0 +1,28 @@
+name: FatoVia auditoria v2 - testes de integridade do validador
+on:
+  push:
+    branches: [auditoria-forense-v2-2026]
+    paths:
+      - "auditoria-v2/reconciliar_secoes.py"
+      - "auditoria-v2/tests/test_reconciliar.py"
+      - ".github/workflows/auditoria-v2-tests.yml"
+  pull_request:
+    paths:
+      - "auditoria-v2/reconciliar_secoes.py"
+      - "auditoria-v2/tests/test_reconciliar.py"
+      - ".github/workflows/auditoria-v2-tests.yml"
+  workflow_dispatch:
+jobs:
+  testes-sinteticos:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compilar e testar validador
+        run: |
+          python -m py_compile auditoria-v2/reconciliar_secoes.py
+          python -m unittest discover -s auditoria-v2/tests -v

@@ -1,0 +1,35 @@
+name: FatoVia auditoria de comparecimento publico - piloto AC 2026
+on:
+  push:
+    branches: [auditoria-forense-v2-2026]
+    paths:
+      - "auditoria-v2/obitos_comparecimento_piloto.py"
+      - ".github/workflows/auditoria-v2-comparecimento.yml"
+  workflow_dispatch:
+jobs:
+  comparecimento-ac:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validar sintaxe
+        run: |
+          python -m py_compile auditoria-v2/obitos_comparecimento_piloto.py
+      - name: Conferir comparecimento AC com arquivos públicos do TSE
+        run: |
+          python auditoria-v2/obitos_comparecimento_piloto.py --uf AC --out resultados-comparecimento-ac
+      - name: Publicar relatório de diferenças sem dados pessoais
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fatovia-comparecimento-ac-2026
+          path: |
+            resultados-comparecimento-ac/manifesto_comparecimento_publico.json
+            resultados-comparecimento-ac/excecoes_comparecimento_por_secao.csv
+          retention-days: 30
+          if-no-files-found: warn

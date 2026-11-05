@@ -1,0 +1,29 @@
+name: FatoVia conferencia nacional T2 - lote final BU vs apuracao
+on:
+  push:
+    branches: [auditoria-forense-v2-2026]
+    paths:
+      - ".github/workflows/auditoria-v2-ultima-parcela-t2.yml"
+  workflow_dispatch:
+jobs:
+  ultima-parcela:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions: {contents: read}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - name: Compilar scripts
+        run: python -m py_compile auditoria-v2/conferir_bu_detalhe_7ufs.py auditoria-v2/auditar_coerencia_lote.py
+      - name: Conferir os 7 restantes no segundo turno
+        run: |
+          python auditoria-v2/conferir_bu_detalhe_7ufs.py --ufs RR RS SC SE SP TO ZZ --data-dir fontes-ultima-parcela --output-dir resultado-ultima-parcela
+      - name: Guardar os resultados com hashes e cobertura
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fatovia-ultimo-lote-7ufs-2t
+          path: resultado-ultima-parcela/
+          if-no-files-found: warn
+          retention-days: 30
