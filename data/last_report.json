@@ -1,8 +1,6 @@
 {
   "already_published": 3,
-  "errors": [
-    "Radar indisponível (HTTPError)"
-  ],
+  "errors": [],
   "found": 0,
   "pending": 0,
   "publication": "DISABLED",
@@ -12,5 +10,5 @@
     19
   ],
   "staged": 0,
-  "timestamp": "2026-11-10T10:30:14.258193-03:00"
+  "timestamp": "2026-11-10T19:23:11.551970-03:00"
 }
