@@ -1,0 +1,17 @@
+{
+  "evaluation_ready": false,
+  "generated_at": "2026-11-14T17:57:30.761384-03:00",
+  "issues": [],
+  "limitations": "Only recorded pilot posts; no retroactive estimates, no automatic promotion, no optimization from four samples.",
+  "max_total": 4,
+  "next_phase_authorized": false,
+  "pilot_id": "documentary-20261115",
+  "publications": [],
+  "published": 0,
+  "remaining_allowance": 4,
+  "samples_collected": {
+    "24": 0,
+    "72": 0
+  },
+  "status": "awaiting_start"
+}
