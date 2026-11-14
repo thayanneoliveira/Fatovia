@@ -1,7 +1,7 @@
 import unittest
 from datetime import datetime
 from fatovia.engine import from_camara, choose
-from fatovia.evidence import seal, sealed, verify_live
+from fatovia.evidence import seal, sealed, verify_live, read_document
 from fatovia.memory import duplicate
 
 NOW=datetime.fromisoformat("2026-11-14T12:00:00-03:00")
@@ -21,6 +21,15 @@ class GateTests(unittest.TestCase):
         self.assertTrue(verify_live(item,fetch))
         item["summary"]+=" Mudança."
         self.assertFalse(verify_live(item,fetch))
+    def test_detail_status_preferred(self):
+        def fetch(url,params=None):
+            if url.endswith("tramitacoes"):
+                raise AssertionError("unneeded history")
+            return {"dados":{**RECORD,"statusProposicao":STAGE}}
+        detail,stage,method=read_document("https://dadosabertos.camara.leg.br/api/v2/proposicoes/12345",fetch)
+        self.assertEqual(method,"detail_status")
+        self.assertEqual(stage,STAGE)
+        self.assertTrue(verify_live(from_camara(RECORD,STAGE),fetch))
     def test_identifier_mismatch(self):
         item=from_camara(RECORD,STAGE)
         item["source_url"]="https://dadosabertos.camara.leg.br/api/v2/proposicoes/99"

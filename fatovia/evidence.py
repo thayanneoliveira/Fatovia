@@ -54,6 +54,28 @@ def sealed(item, now):
         return False
 
 
+def read_document(root,fetcher,errors=None):
+    # Use the official detail response for identity, text and current status.
+    detail=fetcher(root).get("dados")
+    if not isinstance(detail,dict):
+        raise ValueError("invalid_detail")
+    stage=detail.get("statusProposicao")
+    if isinstance(stage,dict) and stage.get("dataHora") and (stage.get("descricaoTramitacao") or stage.get("despacho") or stage.get("siglaOrgao")):
+        return detail,stage,"detail_status"
+    # Fallback: no unsupported sorting parameter. Select latest timestamp locally.
+    history=fetcher(root+"/tramitacoes",{"ordem":"DESC","itens":100})
+    rows=history.get("dados")
+    if not isinstance(rows,list) or not rows:
+        return detail,None,"missing"
+    rows=[r for r in rows if isinstance(r,dict) and r.get("dataHora")]
+    if not rows:
+        return detail,None,"missing"
+    # A paginated history cannot prove latest record unless the API confirms order.
+    if any(link.get("rel")=="next" for link in history.get("links",[]) if isinstance(link,dict)):
+        return detail,None,"incomplete"
+    return detail,max(rows,key=lambda r:r["dataHora"]),"history"
+
+
 def verify_live(item, fetcher=None):
     # Do not follow arbitrary supplied links or redirects; the source ID is bound above.
     if not source_ok(item):
@@ -69,11 +91,10 @@ def verify_live(item, fetcher=None):
     from .engine import from_camara
     try:
         root=item["source_url"]
-        detail=fetcher(root).get("dados")
-        history=fetcher(root+"/tramitacoes",{"ordem":"DESC","ordenarPor":"dataHora","itens":1}).get("dados")
-        if not isinstance(detail,dict) or not history:
+        detail,stage,_=read_document(root,fetcher)
+        if not stage:
             return False
-        fresh=from_camara(detail,history[0])
+        fresh=from_camara(detail,stage)
         return all(fresh.get(k)==item.get(k) for k in ("id","version","title","summary","stage","stage_date","source_url","public_url"))
     except Exception:
         return False

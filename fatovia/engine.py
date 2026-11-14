@@ -9,7 +9,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 from zoneinfo import ZoneInfo
 from .memory import duplicate
-from .evidence import source_ok
+from .evidence import source_ok, read_document
 
 TZ = ZoneInfo("America/Fortaleza")
 TOPICS = {
@@ -201,7 +201,7 @@ def scan_camara(now, fetcher=None, diagnostics=None):
     records = fetcher(root, {"dataApresentacaoInicio": since, "ordem": "DESC", "ordenarPor": "id", "itens": 100}).get("dados", [])
     if not isinstance(records, list):
         raise ValueError("Invalid source response")
-    counts = {"records":len(records),"topic_matches":0,"history_missing":0,"history_errors":0,"invalid":0,"stale":0,"verified":0}
+    counts = {"records":len(records),"topic_matches":0,"history_missing":0,"history_errors":0,"invalid":0,"stale":0,"verified":0,"detail_status_used":0,"history_http_errors":{}}
     found = []
     for record in records:
         if not isinstance(record, dict) or not record.get("id") or not classify(record.get("ementa", "")):
@@ -211,11 +211,16 @@ def scan_camara(now, fetcher=None, diagnostics=None):
         if counts["topic_matches"] > 25:
             break
         try:
-            history = fetcher(f'{root}/{record["id"]}/tramitacoes', {"ordem": "DESC", "ordenarPor": "dataHora", "itens": 1}).get("dados", [])
-            if not history:
+            detail, stage, method = read_document(f'{root}/{record["id"]}',fetcher,counts["history_http_errors"])
+            if not stage:
                 counts["history_missing"] += 1
                 continue
-            item = from_camara(record, history[0])
+            if str(detail.get("id")) != str(record["id"]):
+                counts["invalid"] += 1
+                continue
+            if method=="detail_status":
+                counts["detail_status_used"] += 1
+            item = from_camara(detail, stage)
             if validate_candidate(item):
                 counts["invalid"] += 1
             elif not fresh_stage(item, now):
@@ -223,8 +228,12 @@ def scan_camara(now, fetcher=None, diagnostics=None):
             else:
                 found.append(item)
                 counts["verified"] += 1
-        except Exception:
+        except Exception as exc:
             counts["history_errors"] += 1
+            response = getattr(exc,"response",None)
+            code = getattr(response,"status_code",None)
+            key = str(code) if isinstance(code,int) else type(exc).__name__
+            counts["history_http_errors"][key] = counts["history_http_errors"].get(key,0)+1
     if diagnostics is not None:
         diagnostics.update(counts)
     return found
