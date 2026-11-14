@@ -1,0 +1,70 @@
+name: "FatoVia | Registrar sinal do Explorar"
+on:
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: "Editoria do assunto observado"
+        type: choice
+        required: true
+        options:
+          - saude
+          - educacao
+          - economia
+          - seguranca
+          - ambiente
+          - tecnologia
+          - infraestrutura
+      permalink:
+        description: "Link de post ou reel PUBLICO do Instagram, sem dados pessoais"
+        required: true
+        type: string
+permissions:
+  contents: write
+concurrency:
+  group: fatovia-state
+  cancel-in-progress: false
+jobs:
+  intake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Registrar observacao sem publicar
+        env:
+          SIGNAL_TOPIC: ${{ inputs.topic }}
+          SIGNAL_LINK: ${{ inputs.permalink }}
+        run: |
+          python3 - <<'PY'
+          import json, os, re, sys
+          from datetime import datetime, timezone, timedelta
+          from pathlib import Path
+          from urllib.parse import urlsplit
+          topic=os.environ["SIGNAL_TOPIC"]
+          if topic not in {"saude","educacao","economia","seguranca","ambiente","tecnologia","infraestrutura"}:
+              sys.exit("Editoria invalida")
+          u=urlsplit(os.environ["SIGNAL_LINK"].strip())
+          if u.scheme!="https" or u.netloc not in {"www.instagram.com","instagram.com"} or not re.fullmatch(r"/(?:p|reel)/[A-Za-z0-9_-]{4,40}/?",u.path):
+              sys.exit("Informe somente o link publico de um post ou reel")
+          canonical="https://www.instagram.com"+u.path.rstrip("/")+"/"
+          p=Path("data/state.json")
+          state=json.loads(p.read_text())
+          now=datetime.now(timezone.utc)
+          signals=[]
+          for s in state.get("explore_signals",[]):
+              try:
+                  observed=datetime.fromisoformat(s["observed_at"])
+                  if now-timedelta(days=7)<=observed<=now and s["url"]!=canonical:
+                      signals.append(s)
+              except (ValueError,KeyError,TypeError):
+                  continue
+          signals.append({"topic":topic,"url":canonical,"observed_at":now.isoformat(),"source":"manual_explore","verified":False})
+          state["explore_signals"]=signals[-100:]
+          p.write_text(json.dumps(state,ensure_ascii=False,sort_keys=True,indent=2)+"\n")
+          print("Sinal registrado. Nao constitui evidencia factual nem publicacao.")
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/state.json
+          git diff --cached --quiet || (git commit -m "FatoVia: sinal editorial do Explorar [skip ci]" && git push origin HEAD:main)
