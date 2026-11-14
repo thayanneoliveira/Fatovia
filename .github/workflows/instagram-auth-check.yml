@@ -1,14 +1,20 @@
 name: "FatoVia | Validar conexao Instagram"
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/instagram-auth-check.yml'
 permissions:
   contents: read
 jobs:
   validate:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 3
     env:
-      IG_TOKEN: ${{ secrets.META_ACCESS_TOKEN || secrets.INSTAGRAM_ACCESS_TOKEN }}
+      IG_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+      PILOT_ENABLED: ${{ vars.IG_PUBLISH_ENABLED }}
       EXPECTED_ID: ${{ vars.META_IG_USER_ID }}
     steps:
       - name: Validar identidade e consultar limite de publicacao (somente GET)
@@ -16,9 +22,13 @@ jobs:
         run: |
           python3 - <<'PY'
           import os, json, sys, urllib.request, urllib.error, urllib.parse, re
+          enabled = os.environ.get("PILOT_ENABLED", "").lower() == "true"
+          print("PILOT_GATE=" + ("ENABLED" if enabled else "DISABLED"))
+          if not enabled:
+              sys.exit("Chave de publicacao desativada; nenhuma publicacao realizada.")
           token = os.environ.get("IG_TOKEN", "").strip()
           if not token:
-              sys.exit("Secret ausente: META_ACCESS_TOKEN ou INSTAGRAM_ACCESS_TOKEN")
+              sys.exit("Secret ausente: META_ACCESS_TOKEN")
           class NoRedirect(urllib.request.HTTPRedirectHandler):
               def redirect_request(self, req, fp, code, msg, headers, newurl):
                   return None
@@ -49,7 +59,7 @@ jobs:
           print("Autenticacao OK: @fato.via")
           print("META_IG_USER_ID=" + ig_id)
           expected = os.environ.get("EXPECTED_ID", "").strip()
-          if expected and expected != ig_id:
+          if expected != ig_id:
               sys.exit("META_IG_USER_ID configurado nao coincide com a conta.")
           result = get(ig_id + "/content_publishing_limit", {"fields": "quota_usage"})
           if not isinstance(result.get("data"), list) or not result["data"]:
