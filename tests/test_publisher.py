@@ -71,17 +71,32 @@ class PublishTests(unittest.TestCase):
         self.state = {"blackout_dates": ["2026-10-25", "2026-10-26"],
                       "metrics": [], "published": [], "pending": [item()]}
 
-    def test_tres_janelas_com_metricas_suficientes(self):
+    def test_experimento_quatro_janelas_nao_muda_com_metricas(self):
         from fatovia.engine import daily_limit, preferred_hours
         metrics = []
         for hour in (9, 14, 19):
             for i in range(15):
                 metrics.append({"hour": hour, "reach": 100, "shares": 5, "saves": 5})
         self.state["metrics"] = metrics
-        self.assertEqual(daily_limit(self.state), 3)
+        self.assertEqual(daily_limit(self.state), 4)
         hours = preferred_hours(self.state)
-        self.assertEqual(len(hours), 3)
+        self.assertEqual(hours, [9, 13, 17, 21])
         self.assertTrue(all(b - a >= 4 for a, b in zip(hours, hours[1:])))
+
+    def test_quatro_janelas_e_limite_diario(self):
+        for i, hour in enumerate((9, 13, 17, 21)):
+            now = datetime.fromisoformat(f"2026-10-27T{hour:02}:12:00-03:00")
+            self.assertIsNotNone(choose_due(self.state, now))
+            self.state["published"].append({"id": f"other:{i}", "version": "1",
+                                            "published_at": now.isoformat()})
+            self.assertIsNone(choose_due(self.state, now))
+        self.assertEqual(len(self.state["published"]), 4)
+        self.assertIsNone(choose_due(self.state, datetime.fromisoformat("2026-10-27T22:12:00-03:00")))
+
+    def test_pausa_minima_entre_posts(self):
+        self.state["published"] = [{"id":"other:1","version":"1",
+                                    "published_at":"2026-10-27T11:15:00-03:00"}]
+        self.assertIsNone(choose_due(self.state, datetime.fromisoformat("2026-10-27T13:12:00-03:00")))
 
     def test_configuracao_meta_sem_host_expresso(self):
         import os

@@ -154,42 +154,17 @@ def choose(items, state, now, maximum=3):
     )[:maximum]
 
 
+# Fixed experimental cadence; no engagement-driven changes without validated review.
+EXPERIMENT_HOURS = (9, 13, 17, 21)
+MIN_PUBLICATION_GAP_HOURS = 3
+
+
 def daily_limit(state):
-    samples = [m for m in state.get("metrics", []) if m.get("reach", 0) >= 20]
-    if len(samples) < 20:
-        return 2
-    rate = sum((x.get("shares", 0) + x.get("saves", 0)) / x["reach"] for x in samples) / len(samples)
-    if rate >= .06 and len(samples) >= 40:
-        return 3
-    if rate < .01:
-        return 1
-    return 2
+    return len(EXPERIMENT_HOURS)
 
 
 def preferred_hours(state):
-    """Seleciona até 3 janelas com espaçamento mínimo de 4h, sem picos artificiais."""
-    by_hour = {}
-    for metric in state.get("metrics", []):
-        hour = metric.get("hour")
-        if metric.get("reach", 0) >= 20 and type(hour) is int and 8 <= hour <= 22:
-            by_hour.setdefault(hour, []).append(
-                (metric.get("shares", 0) + metric.get("saves", 0)) / metric["reach"]
-            )
-    target = 3 if daily_limit(state) >= 3 else 2
-    baseline = [9, 14, 19] if target == 3 else [9, 19]
-    reliable = sorted(
-        ((sum(v) / len(v), hour) for hour, v in by_hour.items() if len(v) >= 5),
-        key=lambda entry: (-entry[0], entry[1])
-    )
-    if len(reliable) < 2:
-        return baseline
-    chosen = []
-    for hour in [h for _, h in reliable] + baseline + list(range(8, 23)):
-        if hour not in chosen and all(abs(hour - other) >= 4 for other in chosen):
-            chosen.append(hour)
-        if len(chosen) == target:
-            break
-    return sorted(chosen)
+    return list(EXPERIMENT_HOURS)
 
 
 def scan_camara(now, fetcher=None):

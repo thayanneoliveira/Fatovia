@@ -44,9 +44,9 @@ Na aba **Variables**, crie:
 O workflow verifica a fila **uma vez por hora entre 08h e 22h**, no fuso America/Fortaleza, sujeito aos atrasos do GitHub Actions.
 
 O algoritmo, atualmente:
-- considera o limite inicial de **até 2 posts por dia**, podendo ajustar com amostra de métricas;
-- usa janelas iniciais de **09h e 19h**;
-- exige pelo menos quatro horas entre posts;
+- considera o limite inicial de **até 4 posts por dia**, durante o experimento com cadência fixa;
+- usa janelas iniciais de **09h, 13h, 17h e 21h**;
+- exige pelo menos três horas reais entre posts, com janelas nominais de quatro horas e um post por janela;
 - exige 7 JPEGs disponíveis, fonte governamental identificável, ementa verificável e documento relativamente recente;
 - não publica sem pauta elegível;
 - não envia nos dias de bloqueio registrados em `data/state.json`;

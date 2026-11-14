@@ -5,6 +5,7 @@ from datetime import datetime, timezone
 import os
 import re
 import requests
+from .engine import daily_limit, preferred_hours
 
 BASE = "https://graph.instagram.com/v25.0/"
 METRICS = ("reach", "saved", "shares", "views")
@@ -87,8 +88,8 @@ def learning_report(state):
               and x["reach"]>=20]
     if len(cohort)<20:
         return {"status":"insufficient_sample","eligible_72h":len(cohort),"min_samples":20,
-                "recommended_daily_limit":2,"recommended_hours":[9,19]}
+                "recommended_daily_limit":daily_limit(state),"recommended_hours":preferred_hours(state)}
     # Descriptive only; do not treat correlation as causal or override editorial safeguards.
     return {"status":"descriptive_only","eligible_72h":len(cohort),
             "mean_useful_interactions_per_reach":round(sum((x["saved"]+x["shares"])/x["reach"] for x in cohort)/len(cohort),4),
-            "recommended_daily_limit":2,"recommended_hours":[9,19]}
+            "recommended_daily_limit":daily_limit(state),"recommended_hours":preferred_hours(state)}

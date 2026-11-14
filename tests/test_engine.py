@@ -50,8 +50,8 @@ class EditorialTests(unittest.TestCase):
         self.assertEqual(choose([item], self.state, NOW), [])
 
     def test_frequencia_conservadora(self):
-        self.assertEqual(daily_limit(self.state), 2)
-        self.assertEqual(preferred_hours(self.state), [9, 19])
+        self.assertEqual(daily_limit(self.state), 4)
+        self.assertEqual(preferred_hours(self.state), [9, 13, 17, 21])
 
     def test_metricas_sem_token(self):
         with patch.dict(os.environ, {"META_ACCESS_TOKEN": ""}):

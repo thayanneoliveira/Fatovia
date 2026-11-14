@@ -48,7 +48,7 @@ def main():
         errors.append(f"Radar indisponível ({type(exc).__name__})")
     # Limite de armazenamento e de produção: não acumular imagens sem controle.
     slots = max(0, 8 - len(state.get("pending", [])))
-    chosen = choose(candidates, state, now, maximum=min(2, slots))
+    chosen = choose(candidates, state, now, maximum=min(4, slots))
     staged = 0
     for item in chosen:
         try:

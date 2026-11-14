@@ -16,7 +16,7 @@ from urllib.parse import quote
 
 import requests
 
-from .engine import TZ, daily_limit, load, now_local, preferred_hours, save, validate_candidate
+from .engine import TZ, MIN_PUBLICATION_GAP_HOURS, daily_limit, load, now_local, preferred_hours, save, validate_candidate
 
 STATE_PATH = Path("data/state.json")
 PAGE_ROOT = "https://thayanneoliveira.github.io/Fatovia"
@@ -104,9 +104,11 @@ def choose_due(state, now):
                 today.append(stamp)
         except (KeyError, ValueError):
             continue
-    if len(today) >= min(3, daily_limit(state)):
+    if len(today) >= min(4, daily_limit(state)):
         return None
-    if today and now - max(today) < timedelta(hours=4):
+    if any(stamp.hour == now.hour for stamp in today):
+        return None
+    if today and now - max(today) < timedelta(hours=MIN_PUBLICATION_GAP_HOURS):
         return None
     already = {(p.get("id"), p.get("version")) for p in state.get("published", [])}
     candidates = [
