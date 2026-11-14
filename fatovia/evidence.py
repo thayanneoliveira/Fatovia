@@ -21,7 +21,7 @@ def source_ok(item):
     ident=m.group(1)
     return (item.get("source_url")==f"https://dadosabertos.camara.leg.br/api/v2/proposicoes/{ident}"
             and item.get("public_url")==f"https://www.camara.leg.br/propostas-legislativas/{ident}"
-            and bool(re.fullmatch(r"[A-Z]{1,12} [0-9]+/[0-9]{4}",str(item.get("title","")))))
+            and bool(re.fullmatch(r"(?:PL|PLP|PEC|PDL) [0-9]+/[0-9]{4}",str(item.get("title","")))))
 
 
 def seal(item, now):

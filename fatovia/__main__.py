@@ -3,7 +3,7 @@ import argparse
 import json
 from pathlib import Path
 
-from .engine import choose, load, now_local, rollup_report, save, scan_camara, from_camara, fresh_stage
+from .engine import choose, load, now_local, rollup_report, save, scan_camara, from_camara, fresh_stage, validate_candidate
 from .evidence import seal, sealed
 from datetime import datetime, timedelta
 from .render import render
@@ -49,7 +49,7 @@ def main():
     old_pending = state.get("pending", [])
     state["pending"] = [p for p in old_pending if
         (p.get("id"),p.get("version")) == (tx.get("id"),tx.get("version"))
-        or (fresh_stage(p,now) and sealed(p,now))]
+        or (not validate_candidate(p) and fresh_stage(p,now) and sealed(p,now))]
     diagnostics["expired_or_unsealed_removed"] = len(old_pending)-len(state["pending"])
     selection_state = dict(state)
     try:

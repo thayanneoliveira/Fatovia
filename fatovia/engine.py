@@ -21,6 +21,7 @@ TOPICS = {
     "tecnologia": ["tecnologia", "dados pessoais", "inteligência artificial", "digital"],
     "infraestrutura": ["transporte", "energia", "habitação", "moradia", "infraestrutura"],
 }
+LEGISLATIVE_TYPES = {"PL", "PLP", "PEC", "PDL"}
 ELECTORAL_APPEALS = ("vote em", "não vote em", "melhor candidato", "pior candidato", "apoie o candidato")
 
 
@@ -78,6 +79,8 @@ def validate_candidate(item):
         issues.append("ID inválido")
     if source.scheme != "https" or source.hostname != "dadosabertos.camara.leg.br" or not source_ok(item):
         issues.append("Fonte não permitida")
+    if str(item.get("title", "")).split(" ",1)[0] not in LEGISLATIVE_TYPES:
+        issues.append("Tipo documental fora do escopo de propostas legislativas")
     if len(str(item.get("summary", "")).strip()) < 65:
         issues.append("Ementa insuficiente")
     if not item.get("stage_date") or not item.get("stage"):
@@ -157,12 +160,17 @@ def choose(items, state, now, maximum=3):
         key=lambda x: (-x["editorial_score"], -x["explore_signal_count"], -x["discovery_source_count"], x["id"]),
     )
     selected = []
+    chosen_topics = {}
     for item in ranked:
         if any(duplicate(item, other) for other in selected):
             continue
         if len(selected) >= maximum:
             break
+        primary = min(item["topics"], key=lambda t:(chosen_topics.get(t,0),counts.get(t,0),t))
+        if chosen_topics.get(primary,0)>=2:
+            continue
         selected.append(item)
+        chosen_topics[primary] = chosen_topics.get(primary,0)+1
     return selected
 
 
@@ -198,13 +206,13 @@ def scan_camara(now, fetcher=None, diagnostics=None):
     root = "https://dadosabertos.camara.leg.br/api/v2/proposicoes"
     # Use a longer discovery window, but never relax the gate for recent tramitation.
     since = (now - timedelta(days=14)).date().isoformat()
-    records = fetcher(root, {"dataApresentacaoInicio": since, "ordem": "DESC", "ordenarPor": "id", "itens": 100}).get("dados", [])
+    records = fetcher(root, {"dataApresentacaoInicio": since, "siglaTipo": "PL,PLP,PEC,PDL", "ordem": "DESC", "ordenarPor": "id", "itens": 100}).get("dados", [])
     if not isinstance(records, list):
         raise ValueError("Invalid source response")
     counts = {"records":len(records),"topic_matches":0,"history_missing":0,"history_errors":0,"invalid":0,"stale":0,"verified":0,"detail_status_used":0,"history_http_errors":{}}
     found = []
     for record in records:
-        if not isinstance(record, dict) or not record.get("id") or not classify(record.get("ementa", "")):
+        if not isinstance(record, dict) or not record.get("id") or record.get("siglaTipo") not in LEGISLATIVE_TYPES or not classify(record.get("ementa", "")):
             continue
         counts["topic_matches"] += 1
         # Bound remote history calls per scan.

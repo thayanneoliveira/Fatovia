@@ -38,6 +38,24 @@ class EditorialTests(unittest.TestCase):
         item["source_url"] = "https://outro-site.example/noticia"
         self.assertTrue(validate_candidate(item))
 
+    def test_tipo_doc_nao_e_projeto(self):
+        item = proposal()
+        item["title"] = "DOC 12/2026"
+        self.assertTrue(validate_candidate(item))
+
+    def test_limite_por_editoria(self):
+        items=[]
+        for i in range(5):
+            obj=proposal()
+            obj["id"]=f"camara:{1000+i}"
+            obj["source_url"]=f"https://dadosabertos.camara.leg.br/api/v2/proposicoes/{1000+i}"
+            obj["public_url"]=f"https://www.camara.leg.br/propostas-legislativas/{1000+i}"
+            obj["summary"]=("Indicadores de saúde " + " ".join(f"termo{i}x{n}" for n in range(12)))
+            obj["summary_hash"]=str(i)
+            obj["version"]=str(i)
+            items.append(obj)
+        self.assertEqual(len(choose(items,self.state,NOW,maximum=4)),2)
+
     def test_duplicacao_pendente(self):
         item = proposal()
         self.assertEqual(len(choose([item], self.state, NOW)), 1)

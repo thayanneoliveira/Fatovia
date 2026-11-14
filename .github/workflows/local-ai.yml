@@ -1,0 +1,57 @@
+name: "FatoVia | Laboratorio IA local"
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/local-ai.yml"
+      - "fatovia/local_draft.py"
+permissions:
+  contents: read
+concurrency:
+  group: fatovia-ai-lab
+  cancel-in-progress: true
+jobs:
+  prototype:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Baixar binario e pesos oficiais com SHA256 fixo
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/llm"
+          cd "$RUNNER_TEMP/llm"
+          curl --fail --location --retry 2 --max-time 240 -o runtime.tar.gz https://github.com/ggml-org/llama.cpp/releases/download/b11583/llama-b11583-bin-ubuntu-x64.tar.gz
+          echo 'a4a681375770db521d15c66bd28339617b833ffc3bcc0a01ff93a883bac80438  runtime.tar.gz' | sha256sum -c -
+          tar -xzf runtime.tar.gz
+          curl --fail --location --retry 2 --max-time 420 -o model.gguf https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF/resolve/main/qwen2.5-1.5b-instruct-q4_k_m.gguf
+          echo '6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e  model.gguf' | sha256sum -c -
+      - name: Executar prototipo isolado sem credenciais Meta
+        shell: bash
+        run: |
+          set -euo pipefail
+          root="$RUNNER_TEMP/llm"
+          server="$(find "$root" -type f -name llama-server -print -quit)"
+          test -n "$server"
+          export LD_LIBRARY_PATH="$(dirname "$server"):${LD_LIBRARY_PATH:-}"
+          "$server" --model "$root/model.gguf" --host 127.0.0.1 --port 8089 --threads 4 --ctx-size 2048 --n-gpu-layers 0 > "$RUNNER_TEMP/llama.log" 2>&1 &
+          pid=$!
+          trap 'kill "$pid" 2>/dev/null || true' EXIT
+          for t in $(seq 1 90); do
+            if curl --silent --fail http://127.0.0.1:8089/health >/dev/null; then break; fi
+            if ! kill -0 "$pid" 2>/dev/null; then tail -n 30 "$RUNNER_TEMP/llama.log"; exit 1; fi
+            sleep 2
+          done
+          curl --silent --fail http://127.0.0.1:8089/health >/dev/null
+          python3 -m fatovia.local_draft
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: avaliacao-ia-ficticia-sem-publicacao
+          path: draft-output/evaluation.json
+          retention-days: 1
+          if-no-files-found: ignore
