@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T17:41:25.362503-03:00",
+  "generated_at": "2026-11-14T17:43:58.172072-03:00",
   "limitations": [
     "No causal attribution",
     "No comparison across unlike units or frequencies",
@@ -82,7 +82,7 @@
         "formato": "json"
       },
       "response_sha256": "d1320de0c1edc893b7aaaba1acd9604f72836672e292aff74140a008de24ca99",
-      "retrieved_at": "2026-11-14T17:41:25.362503-03:00",
+      "retrieved_at": "2026-11-14T17:43:58.172072-03:00",
       "series": "16122",
       "source_url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.16122/dados/ultimos/12",
       "status": "ok",
@@ -255,7 +255,7 @@
         "formato": "json"
       },
       "response_sha256": "726194e6c0d670aac198e4a0423d35950a41fcc818627716adee483613da0823",
-      "retrieved_at": "2026-11-14T17:41:25.362503-03:00",
+      "retrieved_at": "2026-11-14T17:43:58.172072-03:00",
       "series": "432",
       "source_url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados",
       "status": "ok",

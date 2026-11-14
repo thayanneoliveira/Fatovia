@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T17:41:28.395008-03:00",
+  "generated_at": "2026-11-14T17:44:00.718679-03:00",
   "limitations": [
     "No causal attribution",
     "No mixing monthly and quarterly observations",
@@ -110,7 +110,7 @@
       "period_digits": 6,
       "publication_authorized": false,
       "response_sha256": "4b824fc4e19bb0348ebfd888efae7b7af8207a74af80c0fa92deab35e406fc3b",
-      "retrieved_at": "2026-11-14T17:41:28.395008-03:00",
+      "retrieved_at": "2026-11-14T17:44:00.718679-03:00",
       "source_url": "https://apisidra.ibge.gov.br/values/t/1737/n1/all/v/63/p/last%2012",
       "status": "ok",
       "table": "1737",
@@ -190,7 +190,7 @@
       "period_digits": 5,
       "publication_authorized": false,
       "response_sha256": "6382e018e86fc7249a0a7ac67bec91f23a72898871e0ba8d55916d068da9ccda",
-      "retrieved_at": "2026-11-14T17:41:28.395008-03:00",
+      "retrieved_at": "2026-11-14T17:44:00.718679-03:00",
       "source_url": "https://apisidra.ibge.gov.br/values/t/4099/n1/all/v/4099/p/last%208",
       "status": "ok",
       "table": "4099",

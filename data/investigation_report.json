@@ -1,0 +1,228 @@
+{
+  "dossiers": [
+    {
+      "decision": "research_only",
+      "dossier_sha256": "170019d1cc0c200a7525364a7d9c0ad93d1d3d5a83dd5e25c43388eebfcd19fa",
+      "evidence": [
+        {
+          "frequency": "monthly",
+          "limitation": "Índice geral nacional mensal; não representa inflação individual, núcleo ou acumulado anual.",
+          "metric": "IPCA - Variação mensal",
+          "period": "2026-10",
+          "query_params": {},
+          "response_sha256": "4b824fc4e19bb0348ebfd888efae7b7af8207a74af80c0fa92deab35e406fc3b",
+          "source_url": "https://apisidra.ibge.gov.br/values/t/1737/n1/all/v/63/p/last%2012",
+          "unit": "%",
+          "value": "0.14"
+        },
+        {
+          "frequency": "monthly",
+          "limitation": "Medida de núcleo, não IPCA cheio nem inflação particular de cada família.",
+          "metric": "IPCA - núcleo de dupla ponderação",
+          "period": "2026-10",
+          "query_params": {
+            "formato": "json"
+          },
+          "response_sha256": "d1320de0c1edc893b7aaaba1acd9604f72836672e292aff74140a008de24ca99",
+          "source_url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.16122/dados/ultimos/12",
+          "unit": "% mensal",
+          "value": "0.19"
+        }
+      ],
+      "id": "inflacao_medidas",
+      "publication_authorized": false,
+      "question": "Por que IPCA cheio e núcleo de inflação são medidas diferentes?",
+      "unresolved": [
+        "Composição dos índices",
+        "Sem conclusão sobre causas ou inflação individual"
+      ]
+    },
+    {
+      "decision": "research_only",
+      "dossier_sha256": "732a6da9c58af41e400cdb174b81927f9f9775ea64b3177d83eb12181e68a593",
+      "evidence": [
+        {
+          "frequency": "daily",
+          "limitation": "Meta anualizada, não taxa efetiva de empréstimos nem rendimento diário.",
+          "metric": "Meta Selic definida pelo Copom",
+          "period": "2026-11-14",
+          "query_params": {
+            "dataFinal": "14/11/2026",
+            "dataInicial": "16/10/2026",
+            "formato": "json"
+          },
+          "response_sha256": "726194e6c0d670aac198e4a0423d35950a41fcc818627716adee483613da0823",
+          "source_url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados",
+          "unit": "% a.a.",
+          "value": "13.75"
+        }
+      ],
+      "id": "juros_contexto",
+      "publication_authorized": false,
+      "question": "O que a meta Selic mede e o que ela não mede?",
+      "unresolved": [
+        "Taxas de crédito efetivas",
+        "Transmissão monetária",
+        "Sem inferência de impacto individual"
+      ]
+    },
+    {
+      "decision": "research_only",
+      "dossier_sha256": "365530c48b0dc8a27526c375806f3ca79f16541e5725cc27d4be30bbd6f9cb62",
+      "evidence": [
+        {
+          "frequency": "quarterly",
+          "limitation": "PNAD Contínua trimestral, pessoas de 14 anos ou mais; não é número absoluto de pessoas nem taxa mensal.",
+          "metric": "Taxa de desocupação",
+          "period": "2025-Q2",
+          "query_params": {},
+          "response_sha256": "6382e018e86fc7249a0a7ac67bec91f23a72898871e0ba8d55916d068da9ccda",
+          "source_url": "https://apisidra.ibge.gov.br/values/t/4099/n1/all/v/4099/p/last%208",
+          "unit": "%",
+          "value": "5.8"
+        },
+        {
+          "frequency": "quarterly",
+          "limitation": "PNAD Contínua trimestral, pessoas de 14 anos ou mais; não é número absoluto de pessoas nem taxa mensal.",
+          "metric": "Taxa de desocupação",
+          "period": "2026-Q2",
+          "query_params": {},
+          "response_sha256": "6382e018e86fc7249a0a7ac67bec91f23a72898871e0ba8d55916d068da9ccda",
+          "source_url": "https://apisidra.ibge.gov.br/values/t/4099/n1/all/v/4099/p/last%208",
+          "unit": "%",
+          "value": "5.4"
+        },
+        {
+          "formula": "taxa atual - taxa do mesmo trimestre do ano anterior",
+          "metric": "diferença em pontos percentuais",
+          "unit": "p.p.",
+          "value": "-0.4"
+        }
+      ],
+      "id": "desocupacao_periodos",
+      "publication_authorized": false,
+      "question": "Como mudou a taxa de desocupação em relação ao mesmo trimestre anterior?",
+      "unresolved": [
+        "Margens de erro",
+        "Composição da força de trabalho",
+        "Sem atribuição a uma política específica"
+      ]
+    },
+    {
+      "decision": "research_only",
+      "dossier_sha256": "ec6c12c1756a34636d614a1f6f15486fbf4458c5b6941cb28db5734121eeea8e",
+      "evidence": [
+        {
+          "account_code": "DespesasExcetoIntraOrcamentarias",
+          "column": "DOTAÇÃO ATUALIZADA (e)",
+          "period_end": "2026-08-31",
+          "query_params": {
+            "an_exercicio": 2026,
+            "co_esfera": "U",
+            "co_tipo_demonstrativo": "RREO",
+            "id_ente": 1,
+            "no_anexo": "RREO-Anexo 01",
+            "nr_periodo": 4
+          },
+          "response_sha256": "e17522e1900a5584643d045b522974e34db3d98d09a35753d090f1369ea1d033",
+          "scope": "União, despesas exceto intra-orçamentárias",
+          "source_url": "https://apidatalake.tesouro.gov.br/ords/cdwhprd/siconfi/tt/rreo",
+          "stage": "dotacao_atualizada",
+          "unit": "BRL_reported",
+          "value": "4638074636340.88"
+        },
+        {
+          "account_code": "DespesasExcetoIntraOrcamentarias",
+          "column": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+          "period_end": "2026-08-31",
+          "query_params": {
+            "an_exercicio": 2026,
+            "co_esfera": "U",
+            "co_tipo_demonstrativo": "RREO",
+            "id_ente": 1,
+            "no_anexo": "RREO-Anexo 01",
+            "nr_periodo": 4
+          },
+          "response_sha256": "e17522e1900a5584643d045b522974e34db3d98d09a35753d090f1369ea1d033",
+          "scope": "União, despesas exceto intra-orçamentárias",
+          "source_url": "https://apidatalake.tesouro.gov.br/ords/cdwhprd/siconfi/tt/rreo",
+          "stage": "empenhado",
+          "unit": "BRL_reported",
+          "value": "3665034050426.48"
+        },
+        {
+          "account_code": "DespesasExcetoIntraOrcamentarias",
+          "column": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+          "period_end": "2026-08-31",
+          "query_params": {
+            "an_exercicio": 2026,
+            "co_esfera": "U",
+            "co_tipo_demonstrativo": "RREO",
+            "id_ente": 1,
+            "no_anexo": "RREO-Anexo 01",
+            "nr_periodo": 4
+          },
+          "response_sha256": "e17522e1900a5584643d045b522974e34db3d98d09a35753d090f1369ea1d033",
+          "scope": "União, despesas exceto intra-orçamentárias",
+          "source_url": "https://apidatalake.tesouro.gov.br/ords/cdwhprd/siconfi/tt/rreo",
+          "stage": "liquidado",
+          "unit": "BRL_reported",
+          "value": "2928524270047.25"
+        },
+        {
+          "account_code": "DespesasExcetoIntraOrcamentarias",
+          "column": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+          "period_end": "2026-08-31",
+          "query_params": {
+            "an_exercicio": 2026,
+            "co_esfera": "U",
+            "co_tipo_demonstrativo": "RREO",
+            "id_ente": 1,
+            "no_anexo": "RREO-Anexo 01",
+            "nr_periodo": 4
+          },
+          "response_sha256": "e17522e1900a5584643d045b522974e34db3d98d09a35753d090f1369ea1d033",
+          "scope": "União, despesas exceto intra-orçamentárias",
+          "source_url": "https://apidatalake.tesouro.gov.br/ords/cdwhprd/siconfi/tt/rreo",
+          "stage": "pago",
+          "unit": "BRL_reported",
+          "value": "2821965337713.47"
+        },
+        {
+          "account_code": "DespesasExcetoIntraOrcamentarias",
+          "formula": "100 * pago / dotacao_atualizada",
+          "inputs": {
+            "dotacao_atualizada": "4638074636340.88",
+            "pago": "2821965337713.47"
+          },
+          "metric": "pagamentos / dotação atualizada",
+          "period_end": "2026-08-31",
+          "query_params": {
+            "an_exercicio": 2026,
+            "co_esfera": "U",
+            "co_tipo_demonstrativo": "RREO",
+            "id_ente": 1,
+            "no_anexo": "RREO-Anexo 01",
+            "nr_periodo": 4
+          },
+          "response_sha256": "e17522e1900a5584643d045b522974e34db3d98d09a35753d090f1369ea1d033",
+          "scope": "União, despesas exceto intra-orçamentárias",
+          "source_url": "https://apidatalake.tesouro.gov.br/ords/cdwhprd/siconfi/tt/rreo",
+          "unit": "%",
+          "value": "60.84"
+        }
+      ],
+      "id": "execucao_orcamentaria",
+      "publication_authorized": false,
+      "question": "Qual a diferença entre dotação, empenho, liquidação e pagamento na União?",
+      "unresolved": [
+        "Não mede resultados sociais",
+        "Não agrega restos a pagar",
+        "Não permite concluir desempenho de um programa específico"
+      ]
+    }
+  ],
+  "generated_at": "2026-11-14T17:44:01.397512-03:00",
+  "limitations": "Descriptive context; no cross-source causal conclusions. Dossiers require editorial review.",
+  "publication_authorized": false
+}
