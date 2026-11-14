@@ -5,7 +5,216 @@
   ],
   "metric_cohorts": [],
   "metrics": [],
-  "pending": [],
+  "pending": [
+    {
+      "caption": "DOC 1780/2026: o que consta no registro oficial?\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653877\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653877\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653877/b41ba2c4cbc872\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "cards": [
+        "docs/media/camara-2653877/b41ba2c4cbc872/01.jpg",
+        "docs/media/camara-2653877/b41ba2c4cbc872/02.jpg",
+        "docs/media/camara-2653877/b41ba2c4cbc872/03.jpg",
+        "docs/media/camara-2653877/b41ba2c4cbc872/04.jpg",
+        "docs/media/camara-2653877/b41ba2c4cbc872/05.jpg",
+        "docs/media/camara-2653877/b41ba2c4cbc872/06.jpg",
+        "docs/media/camara-2653877/b41ba2c4cbc872/07.jpg"
+      ],
+      "discovery_source_count": 0,
+      "editorial_score": 90,
+      "evidence": {
+        "checked_at": "2026-11-14T17:12:53.337658-03:00",
+        "claims": [
+          {
+            "basis": "identificacao_da_proposicao",
+            "field": "title"
+          },
+          {
+            "basis": "ementa_oficial_atribuida",
+            "field": "summary"
+          },
+          {
+            "basis": "registro_de_tramitacao",
+            "field": "stage"
+          }
+        ],
+        "content_sha256": "97e1165961094060f7923500e30cff31f123dad846afe91037e65321ec0e1711",
+        "kind": "official_document_attribution",
+        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
+        "record_date": "2026-11-13",
+        "schema": 1,
+        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653877"
+      },
+      "explore_signal_count": 0,
+      "id": "camara:2653877",
+      "public_url": "https://www.camara.leg.br/propostas-legislativas/2653877",
+      "source_name": "Câmara dos Deputados",
+      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653877",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-13",
+      "status": "ready",
+      "summary": "Of. n. 776/2026/PS-GSE, que encaminha ao Senado Federal o processado do PL n. 1378/2024, que “altera a Lei nº 14.069, de 1º de outubro de 2020, para transformar o Cadastro Nacional de Pessoas Condenadas por Crime de Estupro e o Cadastro Nacional de Pedófilos e Predadores Sexuais no Cadastro Nacional de Pessoas Condenadas por Pedofilia e por Violência contra a Mulher”, para apreciação.",
+      "summary_hash": "742bcdf8a7a48a",
+      "title": "DOC 1780/2026",
+      "topics": [
+        "seguranca"
+      ],
+      "version": "b41ba2c4cbc872"
+    },
+    {
+      "caption": "DOC 1789/2026: o que consta no registro oficial?\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653890\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653890\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653890/c5440349042ccc\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "cards": [
+        "docs/media/camara-2653890/c5440349042ccc/01.jpg",
+        "docs/media/camara-2653890/c5440349042ccc/02.jpg",
+        "docs/media/camara-2653890/c5440349042ccc/03.jpg",
+        "docs/media/camara-2653890/c5440349042ccc/04.jpg",
+        "docs/media/camara-2653890/c5440349042ccc/05.jpg",
+        "docs/media/camara-2653890/c5440349042ccc/06.jpg",
+        "docs/media/camara-2653890/c5440349042ccc/07.jpg"
+      ],
+      "discovery_source_count": 0,
+      "editorial_score": 90,
+      "evidence": {
+        "checked_at": "2026-11-14T17:12:53.337658-03:00",
+        "claims": [
+          {
+            "basis": "identificacao_da_proposicao",
+            "field": "title"
+          },
+          {
+            "basis": "ementa_oficial_atribuida",
+            "field": "summary"
+          },
+          {
+            "basis": "registro_de_tramitacao",
+            "field": "stage"
+          }
+        ],
+        "content_sha256": "efacd3aa9c2b63c6ef7060f072f466a1571934cb9f2335478d5d6a0a6449abbf",
+        "kind": "official_document_attribution",
+        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
+        "record_date": "2026-11-13",
+        "schema": 1,
+        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653890"
+      },
+      "explore_signal_count": 0,
+      "id": "camara:2653890",
+      "public_url": "https://www.camara.leg.br/propostas-legislativas/2653890",
+      "source_name": "Câmara dos Deputados",
+      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653890",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-13",
+      "status": "ready",
+      "summary": "Of. n. 743/2026/PS-GSE, que encaminha ao Senado Federal o processado do PL n. 5717/2016, que “altera a Lei nº 8.987, de 13 de fevereiro de 1995, para tornar obrigatória a previsão, nos editais de concessão de rodovias, de instalação de câmeras nos trechos a serem concedidos e de disponibilização de acesso às imagens geradas aos órgãos de segurança pública”, para apreciação.",
+      "summary_hash": "b983c28a12c688",
+      "title": "DOC 1789/2026",
+      "topics": [
+        "seguranca"
+      ],
+      "version": "c5440349042ccc"
+    },
+    {
+      "caption": "DOC 1813/2026: o que consta no registro oficial?\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653915\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653915\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653915/a4358e772d80a8\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "cards": [
+        "docs/media/camara-2653915/a4358e772d80a8/01.jpg",
+        "docs/media/camara-2653915/a4358e772d80a8/02.jpg",
+        "docs/media/camara-2653915/a4358e772d80a8/03.jpg",
+        "docs/media/camara-2653915/a4358e772d80a8/04.jpg",
+        "docs/media/camara-2653915/a4358e772d80a8/05.jpg",
+        "docs/media/camara-2653915/a4358e772d80a8/06.jpg",
+        "docs/media/camara-2653915/a4358e772d80a8/07.jpg"
+      ],
+      "discovery_source_count": 0,
+      "editorial_score": 90,
+      "evidence": {
+        "checked_at": "2026-11-14T17:12:53.337658-03:00",
+        "claims": [
+          {
+            "basis": "identificacao_da_proposicao",
+            "field": "title"
+          },
+          {
+            "basis": "ementa_oficial_atribuida",
+            "field": "summary"
+          },
+          {
+            "basis": "registro_de_tramitacao",
+            "field": "stage"
+          }
+        ],
+        "content_sha256": "fc15854d415d59a7ed65e37f14304ddf4c503f93f9049da2391a02ece0d32bc4",
+        "kind": "official_document_attribution",
+        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
+        "record_date": "2026-11-13",
+        "schema": 1,
+        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653915"
+      },
+      "explore_signal_count": 0,
+      "id": "camara:2653915",
+      "public_url": "https://www.camara.leg.br/propostas-legislativas/2653915",
+      "source_name": "Câmara dos Deputados",
+      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653915",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-13",
+      "status": "ready",
+      "summary": "Of. n. 747/2026/PS-GSE, que encaminha ao Senado Federal o processado do PL n. 1833/2019, que “altera a Lei nº 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente), para prever o ingresso compulsório de pais ou responsável autores de violência contra criança ou adolescente em programas de prevenção da violência contra a criança e o adolescente”, para apreciação.",
+      "summary_hash": "a1005275c3ed4c",
+      "title": "DOC 1813/2026",
+      "topics": [
+        "seguranca"
+      ],
+      "version": "a4358e772d80a8"
+    },
+    {
+      "caption": "DOC 1799/2026: o que consta no registro oficial?\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653900\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653900\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653900/d69b6b16230854\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "cards": [
+        "docs/media/camara-2653900/d69b6b16230854/01.jpg",
+        "docs/media/camara-2653900/d69b6b16230854/02.jpg",
+        "docs/media/camara-2653900/d69b6b16230854/03.jpg",
+        "docs/media/camara-2653900/d69b6b16230854/04.jpg",
+        "docs/media/camara-2653900/d69b6b16230854/05.jpg",
+        "docs/media/camara-2653900/d69b6b16230854/06.jpg",
+        "docs/media/camara-2653900/d69b6b16230854/07.jpg"
+      ],
+      "discovery_source_count": 0,
+      "editorial_score": 88,
+      "evidence": {
+        "checked_at": "2026-11-14T17:12:53.337658-03:00",
+        "claims": [
+          {
+            "basis": "identificacao_da_proposicao",
+            "field": "title"
+          },
+          {
+            "basis": "ementa_oficial_atribuida",
+            "field": "summary"
+          },
+          {
+            "basis": "registro_de_tramitacao",
+            "field": "stage"
+          }
+        ],
+        "content_sha256": "7def83167027124ddf0a83632b317e6dc43021a5eb398ae128af9e5ea688867f",
+        "kind": "official_document_attribution",
+        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
+        "record_date": "2026-11-13",
+        "schema": 1,
+        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653900"
+      },
+      "explore_signal_count": 0,
+      "id": "camara:2653900",
+      "public_url": "https://www.camara.leg.br/propostas-legislativas/2653900",
+      "source_name": "Câmara dos Deputados",
+      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653900",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-13",
+      "status": "ready",
+      "summary": "Of. n. 755/2026/PS-GSE, que encaminha ao Senado Federal o processado do PL n. 1299/2022, que “altera a Lei nº 11.340, de 7 de agosto de 2006 (Lei Maria da Penha), para dispor sobre a reparação por danos morais à mulher vítima de violência doméstica e familiar”, para apreciação.",
+      "summary_hash": "f3a0add8e82f20",
+      "title": "DOC 1799/2026",
+      "topics": [
+        "seguranca"
+      ],
+      "version": "d69b6b16230854"
+    }
+  ],
   "published": [
     {
       "id": "historico:boas-vindas",
