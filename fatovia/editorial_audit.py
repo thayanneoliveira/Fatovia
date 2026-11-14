@@ -15,7 +15,7 @@ from .claim_matrix import build, digest
 
 REPORT=Path("data/editorial_audit.json")
 PAGE_ROOT="https://thayanneoliveira.github.io/Fatovia"
-POLICY="documentary-template-v2-claims"
+POLICY="documentary-template-v3-hooks"
 MAX_BYTES=8_000_000
 
 

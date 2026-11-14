@@ -7,7 +7,7 @@ import hashlib
 import json
 from .evidence import source_ok
 
-POLICY="documentary-claims-v1"
+POLICY="documentary-claims-v2-hooks"
 
 def digest(value):
     return hashlib.sha256(json.dumps(value,ensure_ascii=False,sort_keys=True,separators=(",",":")).encode()).hexdigest()
@@ -15,7 +15,7 @@ def digest(value):
 def build(item):
     if not source_ok(item):
         raise ValueError("source_identifier_mismatch")
-    from .render import cards_for
+    from .render import cards_for, editorial_hook
     cards=cards_for(item)
     if len(cards)!=7:
         raise ValueError("unexpected_template")
@@ -34,6 +34,10 @@ def build(item):
         else:
             row["evidence"]=None
         entries.append(row)
+    hook,anchors=editorial_hook(item)
+    for anchor in anchors:
+        add("card_01",hook,"controlled_question_anchor","summary",anchor,"Pergunta controlada, não demonstra efeito ou aprovação.")
+        add("caption",hook,"controlled_question_anchor","summary",anchor,"Pergunta controlada, não demonstra efeito ou aprovação.")
     add("card_01",item["title"],"document_identity","title",item["title"],"Identifica a proposição, não sua aprovação.")
     first=cards[1][1]
     add("card_02",first,"attributed_excerpt","summary",first,"Ementa oficial, não texto integral nem prova de impacto.")

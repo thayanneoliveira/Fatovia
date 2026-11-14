@@ -2,6 +2,7 @@
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
+TEMPLATE_REVISION="documentary-hook-v3"
 GREEN = "#102F28"
 CREAM = "#F5F1E7"
 FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
@@ -58,7 +59,7 @@ def card(path, number, headline, body, hint):
     draw.text((808, 69), "ENTENDA / 2026", fill=muted, font=getfont(22))
     draw.line((72, 146, 1008, 146), fill="#9FBF99", width=2)
     draw.text((72, 190), f"FATOVIA / {number:02}/07", fill=muted, font=getfont(25, True))
-    natural = str(headline).lower().capitalize()
+    natural = str(headline)
     for acronym in ("IA", "PEC", "SUS", "TSE", "PL", "STF"):
         natural = natural.replace(" " + acronym.lower() + " ", " " + acronym + " ")
         natural = natural.replace(" " + acronym.lower() + "?", " " + acronym + "?")
@@ -77,19 +78,21 @@ def card(path, number, headline, body, hint):
         draw.text((72, y), line, fill=cream if index == 0 else sage, font=title_font)
         y += title_size + 8
 
-    draw.line((72, 805, 212, 805), fill=sage, width=6)
+    divider_y = max(565, y + 40)
+    body_y = divider_y + 42
+    draw.line((72, divider_y, 212, divider_y), fill=sage, width=6)
     body_size, lines = 38, []
     while body_size >= 24:
         body_font = getfont(body_size)
         lines = wrapped(draw, body, body_font, 925)
         gap = max(38, body_size + 17)
         height = sum(20 if not line else gap for line in lines)
-        if 847 + height <= 1158:
+        if body_y + height <= 1158:
             break
         body_size -= 2
-    if 847 + height > 1158:
+    if body_y + height > 1158:
         raise ValueError("Texto excedeu o limite editorial")
-    y = 847
+    y = body_y
     for line in lines:
         if line:
             draw.text((72, y), line, fill=cream, font=body_font)
@@ -107,6 +110,25 @@ def card(path, number, headline, body, hint):
     picture.save(path, "JPEG", quality=91, optimize=True, subsampling=0)
     return str(path)
 
+HOOKS=(
+    (("médicos residentes","reajustes periódicos da bolsa"),"O que pode mudar para médicos residentes?"),
+    (("responsabilização disciplinar de atletas","violência contra a mulher"),"Atletas e violência contra a mulher: o que propõe o PL?"),
+    (("fogos de artifício","estampidos"),"O que o projeto propõe sobre fogos com estampido?"),
+    (("serviços médico-veterinários","redução de 60%"),"O que a proposta prevê para tributos de serviços veterinários?"),
+    (("devolução geral progressiva","renda domiciliar per capita"),"Como a proposta relaciona devolução de impostos e renda?"),
+    (("planos privados de assistência à saúde","núcleo familiar"),"Planos de saúde familiares: o que está em discussão?"),
+    (("Imposto Seletivo","financiamento adicional"),"O que o projeto propõe para financiar tratamentos no SUS?"),
+    (("lucros e dividendos","Imposto sobre a Renda"),"O que está em discussão sobre lucros e dividendos?"),
+)
+def editorial_hook(item):
+    import re
+    summary=item["summary"]
+    for terms,title in HOOKS:
+        matches=[re.search(re.escape(t),summary,re.I) for t in terms]
+        if all(matches):
+            return title,[m.group(0) for m in matches]
+    return "O que está previsto nesta proposta?",[]
+
 def cards_for(item):
     summary = item["summary"].strip()
     if len(summary) > 330:
@@ -116,9 +138,9 @@ def cards_for(item):
     else:
         first, second = summary, ""
     return [
-        ("O que chegou à Câmara?", f'{item["title"]}\n\nUma proposição legislativa registrada na fonte oficial.', "Monitoramento documental, não recomendação eleitoral."),
+        (editorial_hook(item)[0], f'{item["title"]}\n\nProposta legislativa registrada na Câmara.', "Monitoramento documental, não recomendação eleitoral."),
         ("O que diz a ementa?", first, "Trecho da ementa oficial, não a íntegra do projeto."),
-        ("E o restante do texto?", second or "A ementa termina no card anterior. Consulte a íntegra no site oficial.", "Não é análise de viabilidade nem resultado comprovado."),
+        ("O restante da ementa" if second else "Ementa não é a íntegra", second or "A ementa resume o tema. Para conhecer condições, exceções e detalhes, consulte o texto integral.", "Não é análise de viabilidade nem resultado comprovado."),
         ("Qual é a tramitação?", f'Registro de {item["stage_date"]}:\n\n{item["stage"][:340]}', "A tramitação pode mudar. Confira na Câmara."),
         ("O que isso NÃO prova?", "A existência de um projeto não comprova aprovação, entrada em vigor, financiamento ou resultados.", "Proposta, lei e implementação são etapas distintas."),
         ("O que acompanhar?", "Qual é o texto final?\n\nQuais órgãos respondem pela execução?\n\nHá custo previsto e indicadores de resultado?", "São perguntas, não afirmações sobre efeitos."),
@@ -136,9 +158,10 @@ def render(item, root="docs/media"):
         for path in paths:
             Path(path).unlink(missing_ok=True)
         raise
+    item["template_revision"] = TEMPLATE_REVISION
     item["cards"] = paths
     item["caption"] = (
-        f'{item["title"]}: o que consta no registro oficial?\n\n'
+        f'{editorial_hook(item)[0]}\n\n{item["title"]}\n\n'
         f'A ementa consta na Câmara e o registro de andamento tem data de {item["stage_date"]}. '
         'Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\n'
         f'Fonte: {item["public_url"]}\n'

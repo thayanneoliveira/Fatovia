@@ -35,6 +35,12 @@ def audit_draft(output,document):
         if not isinstance(value,str):
             result["findings"].append({"field":field,"code":"invalid_payload"})
             continue
+        title=str(document.get("title",""))
+        identifier=re.fullmatch(r"(?:PL|PLP|PEC|PDL) (\d+/\d{4})",title)
+        if identifier and re.search(r"\blei\s*(?:n[º°o.]?\s*)?"+re.escape(identifier.group(1))+r"\b",norm(value)):
+            result["findings"].append({"field":field,"code":"proposal_misidentified_as_law"})
+        if identifier and re.search(r"\b(?:foi alterad[oa]|nova lei|deve contratar|proibicao estabelecida)\b",norm(value)):
+            result["findings"].append({"field":field,"code":"possible_enacted_status_presupposition"})
         for code,pattern in RULES.items():
             if re.search(pattern,norm(value)):
                 result["findings"].append({"field":field,"code":code})

@@ -6,7 +6,7 @@ from pathlib import Path
 from .engine import choose, load, now_local, rollup_report, save, scan_camara, from_camara, fresh_stage, validate_candidate
 from .evidence import seal, sealed
 from datetime import datetime, timedelta
-from .render import render
+from .render import render, TEMPLATE_REVISION
 from .analytics import pull_metrics
 
 STATE = Path("data/state.json")
@@ -51,6 +51,16 @@ def main():
         (p.get("id"),p.get("version")) == (tx.get("id"),tx.get("version"))
         or (not validate_candidate(p) and fresh_stage(p,now) and sealed(p,now))]
     diagnostics["expired_or_unsealed_removed"] = len(old_pending)-len(state["pending"])
+    for item in state["pending"]:
+        if (item.get("id"),item.get("version")) == (tx.get("id"),tx.get("version")):
+            continue
+        if item.get("template_revision") != TEMPLATE_REVISION:
+            try:
+                render(item)
+                seal(item,now)
+            except Exception as exc:
+                item["status"]="review_required"
+                errors.append(f'Falha na migracao {item["id"]}: {type(exc).__name__}')
     selection_state = dict(state)
     try:
         discovery = load("data/discovery_report.json")

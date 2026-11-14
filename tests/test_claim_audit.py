@@ -19,5 +19,8 @@ class ClaimAuditTests(unittest.TestCase):
         self.assertIn("loaded_presupposition",[f["code"] for f in r["findings"]])
     def test_quote(self):
         self.assertEqual(audit_draft({**BASE,"citacao":"Aprovado."},DOC)["decision"],"rejected_by_rules")
+    def test_project_number_mislabeled_as_law(self):
+        r=audit_draft({**BASE,"titulo":"O que muda com a Lei nº 12/2026?"},DOC)
+        self.assertIn("proposal_misidentified_as_law",[f["code"] for f in r["findings"]])
     def test_number_matching_is_not_truth_validation(self):
         self.assertFalse(audit_draft({**BASE,"titulo":"O desconto seria de 60%?"},DOC)["publication_authorized"])
