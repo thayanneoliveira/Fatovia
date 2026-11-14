@@ -111,162 +111,6 @@
       "version": "78147b54c05128"
     },
     {
-      "caption": "PDL 1222/2026: o que consta no registro oficial?\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-12. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653788\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653788\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653788/79198dc79b017c\n#FatoVia #PoliticasPublicas #CongressoNacional",
-      "cards": [
-        "docs/media/camara-2653788/79198dc79b017c/01.jpg",
-        "docs/media/camara-2653788/79198dc79b017c/02.jpg",
-        "docs/media/camara-2653788/79198dc79b017c/03.jpg",
-        "docs/media/camara-2653788/79198dc79b017c/04.jpg",
-        "docs/media/camara-2653788/79198dc79b017c/05.jpg",
-        "docs/media/camara-2653788/79198dc79b017c/06.jpg",
-        "docs/media/camara-2653788/79198dc79b017c/07.jpg"
-      ],
-      "discovery_source_count": 1,
-      "editorial_score": 84,
-      "evidence": {
-        "checked_at": "2026-11-14T17:15:04.282243-03:00",
-        "claims": [
-          {
-            "basis": "identificacao_da_proposicao",
-            "field": "title"
-          },
-          {
-            "basis": "ementa_oficial_atribuida",
-            "field": "summary"
-          },
-          {
-            "basis": "registro_de_tramitacao",
-            "field": "stage"
-          }
-        ],
-        "content_sha256": "1c132654ca63fc8f683938b97844b39aff140eac3a312b3ce05deead3018d5e0",
-        "kind": "official_document_attribution",
-        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
-        "record_date": "2026-11-12",
-        "schema": 1,
-        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653788"
-      },
-      "explore_signal_count": 0,
-      "id": "camara:2653788",
-      "public_url": "https://www.camara.leg.br/propostas-legislativas/2653788",
-      "source_name": "Câmara dos Deputados",
-      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653788",
-      "stage": "Apresentação de Proposição",
-      "stage_date": "2026-11-12",
-      "status": "ready",
-      "summary": "Aprova o ato que renova a permissão outorgada à Fundação de Ensino Superior do Vale do Sapucaí para executar serviço de radiodifusão sonora em frequência modulada, com fins exclusivamente educativos, no Município de Pouso Alegre, Estado de Minas Gerais.",
-      "summary_hash": "027e677598435d",
-      "title": "PDL 1222/2026",
-      "topics": [
-        "educacao"
-      ],
-      "version": "79198dc79b017c"
-    },
-    {
-      "caption": "PDL 1235/2026: o que consta no registro oficial?\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-12. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653801\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653801\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653801/92752c5f86697d\n#FatoVia #PoliticasPublicas #CongressoNacional",
-      "cards": [
-        "docs/media/camara-2653801/92752c5f86697d/01.jpg",
-        "docs/media/camara-2653801/92752c5f86697d/02.jpg",
-        "docs/media/camara-2653801/92752c5f86697d/03.jpg",
-        "docs/media/camara-2653801/92752c5f86697d/04.jpg",
-        "docs/media/camara-2653801/92752c5f86697d/05.jpg",
-        "docs/media/camara-2653801/92752c5f86697d/06.jpg",
-        "docs/media/camara-2653801/92752c5f86697d/07.jpg"
-      ],
-      "discovery_source_count": 1,
-      "editorial_score": 84,
-      "evidence": {
-        "checked_at": "2026-11-14T17:15:04.282243-03:00",
-        "claims": [
-          {
-            "basis": "identificacao_da_proposicao",
-            "field": "title"
-          },
-          {
-            "basis": "ementa_oficial_atribuida",
-            "field": "summary"
-          },
-          {
-            "basis": "registro_de_tramitacao",
-            "field": "stage"
-          }
-        ],
-        "content_sha256": "49582e9a785d6572939a1d017113a2deae331811d8bed0abf1a575a41641c74f",
-        "kind": "official_document_attribution",
-        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
-        "record_date": "2026-11-12",
-        "schema": 1,
-        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653801"
-      },
-      "explore_signal_count": 0,
-      "id": "camara:2653801",
-      "public_url": "https://www.camara.leg.br/propostas-legislativas/2653801",
-      "source_name": "Câmara dos Deputados",
-      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653801",
-      "stage": "Apresentação de Proposição",
-      "stage_date": "2026-11-12",
-      "status": "ready",
-      "summary": "Aprova o ato que renova a permissão outorgada à Fundação de Apoio a Cultura, Ensino, Pesquisa e Extensão de Alfenas para executar serviço de radiodifusão sonora em frequência modulada, com fins exclusivamente educativos, no Município de Alfenas, Estado de Minas Gerais.",
-      "summary_hash": "3b5083d91523c9",
-      "title": "PDL 1235/2026",
-      "topics": [
-        "educacao"
-      ],
-      "version": "92752c5f86697d"
-    },
-    {
-      "caption": "PDL 1179/2026: o que consta no registro oficial?\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-12. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653716\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653716\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653716/2746e09004a3ae\n#FatoVia #PoliticasPublicas #CongressoNacional",
-      "cards": [
-        "docs/media/camara-2653716/2746e09004a3ae/01.jpg",
-        "docs/media/camara-2653716/2746e09004a3ae/02.jpg",
-        "docs/media/camara-2653716/2746e09004a3ae/03.jpg",
-        "docs/media/camara-2653716/2746e09004a3ae/04.jpg",
-        "docs/media/camara-2653716/2746e09004a3ae/05.jpg",
-        "docs/media/camara-2653716/2746e09004a3ae/06.jpg",
-        "docs/media/camara-2653716/2746e09004a3ae/07.jpg"
-      ],
-      "discovery_source_count": 0,
-      "editorial_score": 84,
-      "evidence": {
-        "checked_at": "2026-11-14T17:18:25.840501-03:00",
-        "claims": [
-          {
-            "basis": "identificacao_da_proposicao",
-            "field": "title"
-          },
-          {
-            "basis": "ementa_oficial_atribuida",
-            "field": "summary"
-          },
-          {
-            "basis": "registro_de_tramitacao",
-            "field": "stage"
-          }
-        ],
-        "content_sha256": "3d9eaa3511d6fc1a5b69d1ee64dc2ffd937fb0abdcd68e3bc424d669f06fd550",
-        "kind": "official_document_attribution",
-        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
-        "record_date": "2026-11-12",
-        "schema": 1,
-        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653716"
-      },
-      "explore_signal_count": 0,
-      "id": "camara:2653716",
-      "public_url": "https://www.camara.leg.br/propostas-legislativas/2653716",
-      "source_name": "Câmara dos Deputados",
-      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653716",
-      "stage": "Apresentação de Proposição",
-      "stage_date": "2026-11-12",
-      "status": "ready",
-      "summary": "Aprova o ato que renova a autorização outorgada à Associação Comunitária dos Pequenos Produtores do Sítio Olho D'Água para executar, pelo prazo de dez anos, sem direito de exclusividade, serviço de radiodifusão comunitária no Município de Calçado, Estado de Pernambuco.",
-      "summary_hash": "01ca4c7a7118ff",
-      "title": "PDL 1179/2026",
-      "topics": [
-        "ambiente"
-      ],
-      "version": "2746e09004a3ae"
-    },
-    {
       "caption": "PL 5845/2026: o que consta no registro oficial?\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653813\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653813\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653813/af7aa01437443c\n#FatoVia #PoliticasPublicas #CongressoNacional",
       "cards": [
         "docs/media/camara-2653813/af7aa01437443c/01.jpg",
@@ -421,6 +265,163 @@
         "economia"
       ],
       "version": "a39d386f415e16"
+    },
+    {
+      "caption": "PL 5844/2026: o que consta no registro oficial?\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653811\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653811\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653811/875c9caddb7040\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "cards": [
+        "docs/media/camara-2653811/875c9caddb7040/01.jpg",
+        "docs/media/camara-2653811/875c9caddb7040/02.jpg",
+        "docs/media/camara-2653811/875c9caddb7040/03.jpg",
+        "docs/media/camara-2653811/875c9caddb7040/04.jpg",
+        "docs/media/camara-2653811/875c9caddb7040/05.jpg",
+        "docs/media/camara-2653811/875c9caddb7040/06.jpg",
+        "docs/media/camara-2653811/875c9caddb7040/07.jpg"
+      ],
+      "discovery_source_count": 1,
+      "editorial_score": 79,
+      "evidence": {
+        "checked_at": "2026-11-14T17:43:59.463630-03:00",
+        "claims": [
+          {
+            "basis": "identificacao_da_proposicao",
+            "field": "title"
+          },
+          {
+            "basis": "ementa_oficial_atribuida",
+            "field": "summary"
+          },
+          {
+            "basis": "registro_de_tramitacao",
+            "field": "stage"
+          }
+        ],
+        "content_sha256": "63f5c6e9e9a920bfe310a9cdb76f2d40c3381ca3b392911072cb88f73a3675f0",
+        "kind": "official_document_attribution",
+        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
+        "record_date": "2026-11-13",
+        "schema": 1,
+        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653811"
+      },
+      "explore_signal_count": 0,
+      "id": "camara:2653811",
+      "public_url": "https://www.camara.leg.br/propostas-legislativas/2653811",
+      "source_name": "Câmara dos Deputados",
+      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653811",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-13",
+      "status": "ready",
+      "summary": "Altera a Lei nº 9.656, de 3 de junho de 1998, para estabelecer critérios de equiparação dos contratos de planos privados de assistência à saúde coletivos empresariais utilizados exclusivamente por núcleo familiar aos planos individuais ou familiares, assegurando proteção contra reajustes abusivos e outras práticas contratuais prejudiciais aos consumidores.",
+      "summary_hash": "526758a7715d00",
+      "title": "PL 5844/2026",
+      "topics": [
+        "saude"
+      ],
+      "version": "875c9caddb7040"
+    },
+    {
+      "caption": "PL 5851/2026: o que consta no registro oficial?\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653822\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653822\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653822/b51b94f0828426\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "cards": [
+        "docs/media/camara-2653822/b51b94f0828426/01.jpg",
+        "docs/media/camara-2653822/b51b94f0828426/02.jpg",
+        "docs/media/camara-2653822/b51b94f0828426/03.jpg",
+        "docs/media/camara-2653822/b51b94f0828426/04.jpg",
+        "docs/media/camara-2653822/b51b94f0828426/05.jpg",
+        "docs/media/camara-2653822/b51b94f0828426/06.jpg",
+        "docs/media/camara-2653822/b51b94f0828426/07.jpg"
+      ],
+      "discovery_source_count": 1,
+      "editorial_score": 75,
+      "evidence": {
+        "checked_at": "2026-11-14T17:43:59.463630-03:00",
+        "claims": [
+          {
+            "basis": "identificacao_da_proposicao",
+            "field": "title"
+          },
+          {
+            "basis": "ementa_oficial_atribuida",
+            "field": "summary"
+          },
+          {
+            "basis": "registro_de_tramitacao",
+            "field": "stage"
+          }
+        ],
+        "content_sha256": "d62dbde22a0f85a986df9f3cc59224cbd667f6d78bce8b414171949339a7568b",
+        "kind": "official_document_attribution",
+        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
+        "record_date": "2026-11-13",
+        "schema": 1,
+        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653822"
+      },
+      "explore_signal_count": 0,
+      "id": "camara:2653822",
+      "public_url": "https://www.camara.leg.br/propostas-legislativas/2653822",
+      "source_name": "Câmara dos Deputados",
+      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653822",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-13",
+      "status": "ready",
+      "summary": "Dispõe sobre a destinação de parcela da receita do Imposto Seletivo ao financiamento adicional de tratamentos de saúde no âmbito do Sistema Único de Saúde (SUS).",
+      "summary_hash": "fbfaba03d5e4f7",
+      "title": "PL 5851/2026",
+      "topics": [
+        "saude",
+        "economia"
+      ],
+      "version": "b51b94f0828426"
+    },
+    {
+      "caption": "PL 5854/2026: o que consta no registro oficial?\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653946\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653946\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653946/b98ae1ec690f70\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "cards": [
+        "docs/media/camara-2653946/b98ae1ec690f70/01.jpg",
+        "docs/media/camara-2653946/b98ae1ec690f70/02.jpg",
+        "docs/media/camara-2653946/b98ae1ec690f70/03.jpg",
+        "docs/media/camara-2653946/b98ae1ec690f70/04.jpg",
+        "docs/media/camara-2653946/b98ae1ec690f70/05.jpg",
+        "docs/media/camara-2653946/b98ae1ec690f70/06.jpg",
+        "docs/media/camara-2653946/b98ae1ec690f70/07.jpg"
+      ],
+      "discovery_source_count": 0,
+      "editorial_score": 72,
+      "evidence": {
+        "checked_at": "2026-11-14T17:43:59.463630-03:00",
+        "claims": [
+          {
+            "basis": "identificacao_da_proposicao",
+            "field": "title"
+          },
+          {
+            "basis": "ementa_oficial_atribuida",
+            "field": "summary"
+          },
+          {
+            "basis": "registro_de_tramitacao",
+            "field": "stage"
+          }
+        ],
+        "content_sha256": "ca920e1b3bde82c0ba523f475dc036ecb19f462d47ba7488b9b883c35592103a",
+        "kind": "official_document_attribution",
+        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
+        "record_date": "2026-11-13",
+        "schema": 1,
+        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653946"
+      },
+      "explore_signal_count": 0,
+      "id": "camara:2653946",
+      "public_url": "https://www.camara.leg.br/propostas-legislativas/2653946",
+      "source_name": "Câmara dos Deputados",
+      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653946",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-13",
+      "status": "ready",
+      "summary": "Dispõe sobre a incidência do Imposto sobre a Renda das Pessoas Físicas sobre lucros e dividendos distribuídos por pessoas jurídicas, altera as Leis nº 9.249, de 26 de dezembro de 1995, e nº 9.250, de 26 de dezembro de 1995, e dá outras providências.",
+      "summary_hash": "2a14a675828606",
+      "title": "PL 5854/2026",
+      "topics": [
+        "economia"
+      ],
+      "version": "b98ae1ec690f70"
     }
   ],
   "published": [
