@@ -1,0 +1,151 @@
+{
+  "generated_at": "2026-11-14T17:29:32.927698-03:00",
+  "limitations": "Independent rule-based check of the official source, approved template and bytes; not general factual or semantic review.",
+  "policy": "documentary-template-v1",
+  "reviews": [
+    {
+      "card_sha256": [
+        "f8008b07f0e3724e2540e7884be8d1b08bb9e65b105f9157be50ff7a47e069b4",
+        "7f196c0557a25fc069b0b91e5e8adb8b018aae31ef7b57e8ef5dfd882f9fb865",
+        "d9614c8c302e974c53b754f2ce861ace88d29233ea0930e080373542239ab195",
+        "4dce5161b421578cd8d3dc03220ebaf64d989681733e23f768125f885255a9c9",
+        "c4b582fde9ed590db4b003f16928e34743b20911724ea738f41087e2d86a2835",
+        "554d09d19e11882edb6e5ef86868a4d4905301467860ab8cd73e85c0c889d3ce",
+        "d9e6dc9ab43ffd4e7a2943f9d70452b3782700e2ea6f4204e7b4c0a1f28ef73a"
+      ],
+      "checked_at": "2026-11-14T17:29:32.927698-03:00",
+      "content_sha256": "b9dba7506afe03b4ff21e515de292746b74642574eda58d02bca72e425c0a9fe",
+      "decision": "approved_documentary_only",
+      "id": "camara:2653819",
+      "issues": [],
+      "policy": "documentary-template-v1",
+      "version": "aec4919b2cc642"
+    },
+    {
+      "card_sha256": [
+        "298f1bb70414f1c92ff5fb0e0590e1a64b9c8e4e19227f821e4268702fc443ef",
+        "d7d0c4e96661e2636aa378394b62b93f4db74cc57165c308645a9f83e790f649",
+        "10df9eb48c3e3f630302e9dc0c48008a6de8a52d338d1c27c4dfb0b15b5672fe",
+        "4dce5161b421578cd8d3dc03220ebaf64d989681733e23f768125f885255a9c9",
+        "c4b582fde9ed590db4b003f16928e34743b20911724ea738f41087e2d86a2835",
+        "554d09d19e11882edb6e5ef86868a4d4905301467860ab8cd73e85c0c889d3ce",
+        "3219dfb831edb51ff1479b12dda7064b5af4e37b4b3003e94fe0c09ece99d9dd"
+      ],
+      "checked_at": "2026-11-14T17:29:32.927698-03:00",
+      "content_sha256": "a4a5a16ad05feb75f85adaa68c953a238ca0ccf03ee4be0d452eb837160a34ee",
+      "decision": "approved_documentary_only",
+      "id": "camara:2653948",
+      "issues": [],
+      "policy": "documentary-template-v1",
+      "version": "78147b54c05128"
+    },
+    {
+      "card_sha256": [
+        "d7ef772a261a59da93d6fadb7b955934240e9a19682f2656728adb990a07add1",
+        "09b249a3cac467a702db56e27c09733667812a7970a48299727077d044720b49",
+        "10df9eb48c3e3f630302e9dc0c48008a6de8a52d338d1c27c4dfb0b15b5672fe",
+        "92dcda431450d744f169fad612e24c2bebad035c6f341efff7a96967bc176c73",
+        "c4b582fde9ed590db4b003f16928e34743b20911724ea738f41087e2d86a2835",
+        "554d09d19e11882edb6e5ef86868a4d4905301467860ab8cd73e85c0c889d3ce",
+        "7d51d24ecf35909ebf9262a6bca54d741c3b5cd146a41592ea06a9d9091d8493"
+      ],
+      "checked_at": "2026-11-14T17:29:32.927698-03:00",
+      "content_sha256": "1c132654ca63fc8f683938b97844b39aff140eac3a312b3ce05deead3018d5e0",
+      "decision": "approved_documentary_only",
+      "id": "camara:2653788",
+      "issues": [],
+      "policy": "documentary-template-v1",
+      "version": "79198dc79b017c"
+    },
+    {
+      "card_sha256": [
+        "add9abbd1f406de31e2fd91b3afca366aec6e348a4c611c6dfa5f4bf2b638da9",
+        "acbf03999c97f0047009b8bdfd8e265f4116dbfd4ca2a516dcf2e8a077387050",
+        "10df9eb48c3e3f630302e9dc0c48008a6de8a52d338d1c27c4dfb0b15b5672fe",
+        "92dcda431450d744f169fad612e24c2bebad035c6f341efff7a96967bc176c73",
+        "c4b582fde9ed590db4b003f16928e34743b20911724ea738f41087e2d86a2835",
+        "554d09d19e11882edb6e5ef86868a4d4905301467860ab8cd73e85c0c889d3ce",
+        "0ac4f3e21f744c65e4528a3390ce31b7e76e3739bd223420690c7889091ff1fd"
+      ],
+      "checked_at": "2026-11-14T17:29:32.927698-03:00",
+      "content_sha256": "49582e9a785d6572939a1d017113a2deae331811d8bed0abf1a575a41641c74f",
+      "decision": "approved_documentary_only",
+      "id": "camara:2653801",
+      "issues": [],
+      "policy": "documentary-template-v1",
+      "version": "92752c5f86697d"
+    },
+    {
+      "card_sha256": [
+        "87cb8920266f526cb73c1d8c802a188d5c7157706dae54f43f6f40cb47092326",
+        "f270f6d529e8b7552c35bc5155f9a94691569e64849fca39ab7b1fd6e1ec9195",
+        "10df9eb48c3e3f630302e9dc0c48008a6de8a52d338d1c27c4dfb0b15b5672fe",
+        "92dcda431450d744f169fad612e24c2bebad035c6f341efff7a96967bc176c73",
+        "c4b582fde9ed590db4b003f16928e34743b20911724ea738f41087e2d86a2835",
+        "554d09d19e11882edb6e5ef86868a4d4905301467860ab8cd73e85c0c889d3ce",
+        "30790b86614b6e9f1fa89553adcdabf3dfc1aa40918c5d372f80b9c276c49c23"
+      ],
+      "checked_at": "2026-11-14T17:29:32.927698-03:00",
+      "content_sha256": "3d9eaa3511d6fc1a5b69d1ee64dc2ffd937fb0abdcd68e3bc424d669f06fd550",
+      "decision": "approved_documentary_only",
+      "id": "camara:2653716",
+      "issues": [],
+      "policy": "documentary-template-v1",
+      "version": "2746e09004a3ae"
+    },
+    {
+      "card_sha256": [
+        "6745b8292e5229cf9207c976818d0cf9d5c5454a414fb7d5769a1fe4bf2022a0",
+        "c5a9cade4e37dc69569ea3b425cd342be4c6e5c01602d99a5f83ca1176dbeacd",
+        "10df9eb48c3e3f630302e9dc0c48008a6de8a52d338d1c27c4dfb0b15b5672fe",
+        "4dce5161b421578cd8d3dc03220ebaf64d989681733e23f768125f885255a9c9",
+        "c4b582fde9ed590db4b003f16928e34743b20911724ea738f41087e2d86a2835",
+        "554d09d19e11882edb6e5ef86868a4d4905301467860ab8cd73e85c0c889d3ce",
+        "f8e5276a8dc86a1effd8a3e363048105e01f12d6024e957c1b1258958c3fc660"
+      ],
+      "checked_at": "2026-11-14T17:29:32.927698-03:00",
+      "content_sha256": "688dd5abd930b8bb27bdeac6b39cf66fe2a81a24f831fcab8be1d1acf4a5e334",
+      "decision": "approved_documentary_only",
+      "id": "camara:2653813",
+      "issues": [],
+      "policy": "documentary-template-v1",
+      "version": "af7aa01437443c"
+    },
+    {
+      "card_sha256": [
+        "7c78fffb4ac8d352dffb98f4c6689193ed8ae4958b8ee0917464980f04982434",
+        "6792dc570a9b73e3d407a357263761de68c420307253ede984fd7049fb62de8e",
+        "10df9eb48c3e3f630302e9dc0c48008a6de8a52d338d1c27c4dfb0b15b5672fe",
+        "4dce5161b421578cd8d3dc03220ebaf64d989681733e23f768125f885255a9c9",
+        "c4b582fde9ed590db4b003f16928e34743b20911724ea738f41087e2d86a2835",
+        "554d09d19e11882edb6e5ef86868a4d4905301467860ab8cd73e85c0c889d3ce",
+        "b2b1bdc067c57f24c12b084c7c0610cc990acbc870e978f8cf690d0700b78756"
+      ],
+      "checked_at": "2026-11-14T17:29:32.927698-03:00",
+      "content_sha256": "e6b787514dd65fe74c261fa3566775719259d7939e3d9a68d6bc73acdd16c4f9",
+      "decision": "approved_documentary_only",
+      "id": "camara:2653937",
+      "issues": [],
+      "policy": "documentary-template-v1",
+      "version": "da05fb78307294"
+    },
+    {
+      "card_sha256": [
+        "70aa266a765912b8e1f101477e19db745ea1cecf7ee565fd4005cea9baff30e8",
+        "200f47a2f2dcb77af94d32701bb13a38fb61e816f5a65e2d9137590815e7b48f",
+        "10df9eb48c3e3f630302e9dc0c48008a6de8a52d338d1c27c4dfb0b15b5672fe",
+        "4dce5161b421578cd8d3dc03220ebaf64d989681733e23f768125f885255a9c9",
+        "c4b582fde9ed590db4b003f16928e34743b20911724ea738f41087e2d86a2835",
+        "554d09d19e11882edb6e5ef86868a4d4905301467860ab8cd73e85c0c889d3ce",
+        "325c5ea5bfe042943af469c3e1b77e505c8ffae30e3e2ae0e74442a4871ab396"
+      ],
+      "checked_at": "2026-11-14T17:29:32.927698-03:00",
+      "content_sha256": "6f6d0b853240e90989e00a2b6fdf68b0a314880c0b572ff5e3a201771d12529a",
+      "decision": "approved_documentary_only",
+      "id": "camara:2653940",
+      "issues": [],
+      "policy": "documentary-template-v1",
+      "version": "a39d386f415e16"
+    }
+  ]
+}
