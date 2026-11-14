@@ -1,6 +1,12 @@
 name: "FatoVia | Inteligencia editorial e insights"
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/intelligence.yml'
+      - 'fatovia/pilot_report.py'
+      - 'tests/test_pilot_report.py'
   schedule:
     - cron: "43 0,6,12,18 * * *"
 permissions:
@@ -55,11 +61,13 @@ jobs:
               print("::warning::Insights nao coletados.")
           save("data/learning_report.json",{"collection":result,"learning":learning_report(state)})
           PY
+      - name: Avaliar piloto sem autorizar nova fase
+        run: python -m fatovia.pilot_report
       - name: Persistir apenas registros de pesquisa e metricas
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/discovery_report.json data/learning_report.json data/state.json
+          git add data/discovery_report.json data/learning_report.json data/state.json data/pilot_report.json
           if ! git diff --cached --quiet; then
             git commit -m "FatoVia: atualizar radar e amostras comparaveis [skip ci]"
             git fetch origin main
