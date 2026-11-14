@@ -72,6 +72,8 @@ class PublishTests(unittest.TestCase):
     def setUp(self):
         approval=patch("fatovia.publisher.approved",return_value=True)
         hosted=patch("fatovia.publisher.verify_hosted",return_value=True)
+        pilot=patch("fatovia.publisher.pilot_allowed",return_value=True)
+        pilot.start(); self.addCleanup(pilot.stop)
         approval.start(); hosted.start()
         self.addCleanup(approval.stop); self.addCleanup(hosted.stop)
         self.state = {"blackout_dates": ["2026-10-25", "2026-10-26"],
@@ -146,6 +148,10 @@ class PublishTests(unittest.TestCase):
         with patch("fatovia.publisher.approved", return_value=False):
             result=prepare(self.state,NOW,CFG)
         self.assertEqual(result["action"],"idle")
+
+    def test_piloto_bloqueado_nao_prepara(self):
+        with patch("fatovia.publisher.pilot_allowed",return_value=False):
+            self.assertEqual(prepare(self.state,NOW,CFG)["action"],"idle")
 
     def test_prepara_transacao_sem_post(self):
         with tempfile.TemporaryDirectory() as folder:

@@ -8,6 +8,9 @@ on:
       - ".github/workflows/publish.yml"
       - "fatovia/publisher.py"
       - "tests/test_publisher.py"
+      - "fatovia/pilot.py"
+      - "tests/test_pilot.py"
+      - "data/pilot_policy.json"
   schedule:
     - cron: "12 11-23,0-1 * * *"
 
@@ -36,7 +39,7 @@ jobs:
         run: python -m fatovia.publisher probe
 
   publish:
-    if: ${{ (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && vars.IG_PUBLISH_ENABLED == 'true' }}
+    if: ${{ (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/main' && vars.IG_PUBLISH_ENABLED == 'true' }}
     runs-on: ubuntu-latest
     timeout-minutes: 12
     env:

@@ -17,6 +17,7 @@ from urllib.parse import quote
 import requests
 from .evidence import sealed, verify_live
 from .editorial_audit import approved, verify_hosted
+from .pilot import allowed as pilot_allowed
 
 from .engine import TZ, MIN_PUBLICATION_GAP_HOURS, daily_limit, load, now_local, preferred_hours, save, validate_candidate
 
@@ -129,7 +130,7 @@ def prepare(state, now, cfg):
         return {"action": "missing_credentials", "reason": "Configuração Meta incompleta"}
     if state.get("publishing"):
         return {"action": "reconcile", "reason": "Publicação anterior requer conciliação"}
-    item = choose_due(state, now, approval_check=approved)
+    item = choose_due(state, now, approval_check=lambda p,t: approved(p,t) and pilot_allowed(state,p,t))
     if not item:
         return {"action": "idle", "reason": "Nenhuma pauta verificada e elegível neste horário"}
     state["publishing"] = {
@@ -284,6 +285,8 @@ def deliver(state, now, cfg, client=None, http=None, source_check=verify_live):
     if found:
         finalize(state, item, str(found["id"]), found.get("permalink"), now)
         return {"action": "recovered", "media_id": str(found["id"])}
+    if not pilot_allowed(state,item,now):
+        raise PublicationError("Limite, prazo ou conteúdo do piloto fora da autorização")
     if not approved(item, now) or not verify_hosted(item, now):
         raise PublicationError("Parecer independente ausente, vencido ou bytes publicados divergentes")
     if not source_check(item):

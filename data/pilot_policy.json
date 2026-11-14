@@ -1,0 +1,130 @@
+{
+  "schema": 1,
+  "pilot_id": "documentary-20261115",
+  "status": "prepared",
+  "start_date": "2026-11-15",
+  "end_date": "2026-11-21",
+  "max_total": 4,
+  "max_daily": 2,
+  "allowed_hours": [
+    9,
+    17
+  ],
+  "template_revision": "documentary-hook-v3",
+  "items": [
+    {
+      "id": "camara:2653819",
+      "version": "aec4919b2cc642",
+      "content_sha256": "4aee37391f7554cad404a1b87cac684ff1826e0cd6e87395e5a9823c0edb301e",
+      "card_sha256": [
+        "0084eedae2609ec7634cfe307686baab22f00e8b823c2f7938551230b8f28578",
+        "9076e23a47ecf16d8ccf3a3f2dbae7bd67d200fa8123c0a76d2fd4927562512b",
+        "2afb755f1a9d6024897f9a5b36251423ea927815229ac6a82b56d4c5ca2374e0",
+        "9a064a1c334d73ae9f28699a53bc50ec32ffb3e2536d213d356bb1678a14fcc1",
+        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
+        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
+        "5986102ec7d412b1fc5c73405d66e7d060f78c656113759cca55f738399a8cba"
+      ]
+    },
+    {
+      "id": "camara:2653948",
+      "version": "78147b54c05128",
+      "content_sha256": "0c26732b3bd69663e4ade4e65152217bde105b366b28badb3469ec30169b55a5",
+      "card_sha256": [
+        "b65539d8964d596b5a9895f91609bff166652c2395b3b7a5d0cebe2965cc2d1c",
+        "b23b4331d58926a2400aa6998b653e1f9cd85a33f5a7e4e54862f72db9e872dc",
+        "50fc02cfd1d06be78856d1d7dc75f61c0346bcbdeeeff316b42bc4e81aa7c58f",
+        "9a064a1c334d73ae9f28699a53bc50ec32ffb3e2536d213d356bb1678a14fcc1",
+        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
+        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
+        "8ad9941fb6c45b228ba1e584c83533b4bf5a117092948335eb182c2a68cb5d35"
+      ]
+    },
+    {
+      "id": "camara:2653813",
+      "version": "af7aa01437443c",
+      "content_sha256": "2a6a285619ab375545006339c91c4c2a4ccd88f9e75978f465e084a546eb3e61",
+      "card_sha256": [
+        "e20c22a5a3b316b59ee1241291b71843c47ba15ee9861aa27f893ff7c4761c47",
+        "f707aeed74eb0db643df53d3198296793c503db7d547a44fec96869a833dcc2b",
+        "50fc02cfd1d06be78856d1d7dc75f61c0346bcbdeeeff316b42bc4e81aa7c58f",
+        "9a064a1c334d73ae9f28699a53bc50ec32ffb3e2536d213d356bb1678a14fcc1",
+        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
+        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
+        "c0429285fec564179edc9741576d63f698d6c74636510137ca1f7e50df953c2d"
+      ]
+    },
+    {
+      "id": "camara:2653937",
+      "version": "da05fb78307294",
+      "content_sha256": "914634e7721d226a2d9467360e3f548e8b2d310186f35aca541cc90c293f559b",
+      "card_sha256": [
+        "2e0ac595e92cad95630dcf6bf0a0604e5f5f5376e1324417ef22daa435713883",
+        "ce27fce3b2875ba61265d181e4e99ae1a9097e0c3fa23d3f5cfb3b54d237631c",
+        "50fc02cfd1d06be78856d1d7dc75f61c0346bcbdeeeff316b42bc4e81aa7c58f",
+        "9a064a1c334d73ae9f28699a53bc50ec32ffb3e2536d213d356bb1678a14fcc1",
+        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
+        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
+        "7313d4f3e2c7a5a225f440b8b43c33c4893c1105edc9d90a88f70ff40d4a7e17"
+      ]
+    },
+    {
+      "id": "camara:2653940",
+      "version": "a39d386f415e16",
+      "content_sha256": "b082fd4a9df080df1658e9d29d4d9af5fd86b9f824e7284f294bd45e0e708bb5",
+      "card_sha256": [
+        "daceeb3f6f12c59d790f6c4298b485662d569368f29b19092df0685b68a6cf9a",
+        "92f6a6aaead600572b633accbc06eeea0b1818a7fe88f8577d4928c37d7541b8",
+        "50fc02cfd1d06be78856d1d7dc75f61c0346bcbdeeeff316b42bc4e81aa7c58f",
+        "9a064a1c334d73ae9f28699a53bc50ec32ffb3e2536d213d356bb1678a14fcc1",
+        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
+        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
+        "bf638c143044f2edde2693ae2c864558bc22fc6a3041c4a81d8ab2df6c65bb24"
+      ]
+    },
+    {
+      "id": "camara:2653811",
+      "version": "875c9caddb7040",
+      "content_sha256": "847f2568cdb7d2642387ee1068ee4e0467b45948ac685e2abdc6dcff6e2a3231",
+      "card_sha256": [
+        "bfb58aac75a8cdc1bb13bbe93e43f3e565c54b785a29bdd9cf08f3752cc7641c",
+        "a839e8bea927626dddb79446c2c9ca1f193708715858cdbf46b5c8b36b672d59",
+        "77ba37656adf56b1c880c2cf9e1124e5ff9f3b10435353eae92ca5832a346ce5",
+        "9a064a1c334d73ae9f28699a53bc50ec32ffb3e2536d213d356bb1678a14fcc1",
+        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
+        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
+        "5878baf7bb7827a8240eee8d4d7de8b7725f44492b4ce90fc8985e97c19a6054"
+      ]
+    },
+    {
+      "id": "camara:2653822",
+      "version": "b51b94f0828426",
+      "content_sha256": "a015e0095f972b208e3d8d3d43fc26b5d1b8516ae5c8173e329c3e37e54f4bd6",
+      "card_sha256": [
+        "a7358d3c5e72b3d0b62961a02717118a07b4e15704a610f63a5b3c5bf5d14ac0",
+        "606b1cf2fa2d75fb0a319eeb0d074cf492bbe6b95e2d5ad23480847934423978",
+        "50fc02cfd1d06be78856d1d7dc75f61c0346bcbdeeeff316b42bc4e81aa7c58f",
+        "9a064a1c334d73ae9f28699a53bc50ec32ffb3e2536d213d356bb1678a14fcc1",
+        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
+        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
+        "87598db6ef5675d29ffcdb5a3e0144f5bf930e60531cfcf846a0469ff1910a46"
+      ]
+    },
+    {
+      "id": "camara:2653946",
+      "version": "b98ae1ec690f70",
+      "content_sha256": "a57f41ba1663719a61160b8c00fd2e2e12554d51c07a083b530994099802403e",
+      "card_sha256": [
+        "7ae93e8628a7d9f737ac882025b7577614bfea88bbd5ef1166ab1c865a3b27d9",
+        "189efb5514720da9f8d40c9fd871b449701af9aa3a133b35f2abde4908747db6",
+        "50fc02cfd1d06be78856d1d7dc75f61c0346bcbdeeeff316b42bc4e81aa7c58f",
+        "9a064a1c334d73ae9f28699a53bc50ec32ffb3e2536d213d356bb1678a14fcc1",
+        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
+        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
+        "4e29fb8ce9b34c897fd70f7b425288b435cab57c62d7e4e261bf044345e932b1"
+      ]
+    }
+  ],
+  "preflight_run": 43639559303,
+  "notes": "Exact audited content only; no generative drafts. Explicit IG_PUBLISH_ENABLED required. No automatic transition to full experiment."
+}
