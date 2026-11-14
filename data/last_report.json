@@ -23,32 +23,7 @@
     "topic_matches": 17,
     "verified": 17
   },
-  "selected": [
-    {
-      "discover_sources": 0,
-      "explore": 0,
-      "id": "camara:2653716",
-      "score": 84
-    },
-    {
-      "discover_sources": 0,
-      "explore": 0,
-      "id": "camara:2653813",
-      "score": 83
-    },
-    {
-      "discover_sources": 0,
-      "explore": 0,
-      "id": "camara:2653937",
-      "score": 82
-    },
-    {
-      "discover_sources": 0,
-      "explore": 0,
-      "id": "camara:2653940",
-      "score": 82
-    }
-  ],
-  "staged": 4,
-  "timestamp": "2026-11-14T17:18:25.840501-03:00"
+  "selected": [],
+  "staged": 0,
+  "timestamp": "2026-11-14T17:26:11.250952-03:00"
 }
