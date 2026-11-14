@@ -1,6 +1,6 @@
 # Piloto documental FatoVia
 
-Preparado em 14/11/2026. Não é autorização de publicação.
+Preparado em 14/11/2026. A ativação administrativa foi confirmada em [43639888649](https://github.com/thayanneoliveira/Fatovia/actions/runs/43639888649); o relatório inicial do piloto registra zero publicações. O gate externo continua obrigatório. Este documento não concede autorização adicional.
 
 - Janela proposta: 15 a 21/11/2026 (horário de Brasília).
 - Máximo: quatro carrosséis no total, dois por dia, janelas das 09h e 17h.

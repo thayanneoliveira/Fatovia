@@ -18,7 +18,9 @@ Inspeção da paleta das capas via dados de mídia da conta no Instagram.
 um desvio da identidade do perfil. O renderer principal foi corrigido e existe teste
 de regressão em `tests/test_brand.py`.
 
-## Gate pré-publicação obrigatório
+## Política editorial desejada e gate pré-publicação
+
+**Atualização 14/11/2026:** os requisitos abaixo incluem procedimentos humanos de qualidade e objetivos editoriais, não todos controles automatizados por publicação. O gate implementado verifica conta, fonte, selo, parecer de até 24h, template reconstruído, bytes hospedados, elegibilidade, limites, política do piloto e identificador editorial. Comparação visual histórica e avaliação semântica geral não são garantidas a cada execução; métricas insuficientes não bloqueiam o piloto documental. Consulte [documentação técnica](DOCUMENTACAO_TECNICA.md).
 
 1. Confirmar conta de destino como `fato.via` via dado vivo do Instagram, não só o
    nome armazenado pelo conector.

@@ -1,6 +1,6 @@
 # FatoVia | Conectar a API oficial do Instagram
 
-**Estado atual:** código do publicador instalado, testes locais automatizados no GitHub aprovados, JPEG público verificado. **O envio real está desabilitado por padrão.**
+**Estado em 14/11/2026:** publicação experimental bem-sucedida e gate do piloto confirmado na execução [43639888649](https://github.com/thayanneoliveira/Fatovia/actions/runs/43639888649). Primeira janela do piloto em 15/11, sem posts do piloto registrados na data-base. Para uma nova instalação, mantenha o envio desabilitado até validação. Consulte [PILOT.md](PILOT.md) e [DOCUMENTACAO_TECNICA.md](DOCUMENTACAO_TECNICA.md).
 
 ## Como as peças se conectam
 
@@ -43,9 +43,7 @@ Na aba **Variables**, crie:
 
 O workflow verifica a fila **uma vez por hora entre 08h e 22h**, no fuso America/Fortaleza, sujeito aos atrasos do GitHub Actions.
 
-O algoritmo, atualmente:
-- considera o limite inicial de **até 4 posts por dia**, durante o experimento com cadência fixa;
-- usa janelas iniciais de **09h, 13h, 17h e 21h**;
+O algoritmo-base prevê quatro janelas (09h, 13h, 17h e 21h), mas o gate adicional de `data/pilot_policy.json` restringe a operação atual a **4 posts no total**, até 2/dia às 09h e 17h, de 15 a 21/11/2026. O experimento de 30 dias com quatro posts/dia ainda não está autorizado. Além disso, o publicador:
 - exige pelo menos três horas reais entre posts, com janelas nominais de quatro horas e um post por janela;
 - exige 7 JPEGs disponíveis, fonte governamental identificável, ementa verificável e documento relativamente recente;
 - não publica sem pauta elegível;
@@ -77,13 +75,13 @@ Uma correção manual de `data/state.json` pode ser necessária para destravar f
 
 ## Limitações conhecidas
 
-- Não há token da Meta cadastrado pelo assistente. Segredos exigem uma ação sua na interface do GitHub.
-- A renovação automática do token ainda não foi implementada; credenciais expiradas impedirão novas publicações.
-- O radar ainda utiliza principalmente os dados abertos da Câmara, não investigação ampla de fontes cruzadas.
+- A credencial vigente foi validada, mas segredos e variáveis de novas instalações precisam ser configurados por administrador autorizado.
+- A renovação automática está implementada quando habilitada, com teste de saúde aprovado; a renovação efetiva ainda não foi exercitada. Expiração de acesso a dados ou rotador pode exigir intervenção.
+- O radar publicável utiliza a Câmara; pesquisa BCB, IBGE e Tesouro é separada e ainda não publica.
 - As métricas da conta podem demorar a chegar e são insuficientes para otimização confiável no começo.
 - O workflow não agenda publicação exata ao minuto, pois o GitHub Actions pode atrasar.
 - Não há garantia de postagem automática em dias sem material adequado.
-- O mecanismo ainda não foi testado com uma publicação real pela API oficial; apenas testes com simulações e a hospedagem JPEG foram verificados.
+- Uma publicação experimental real foi confirmada anteriormente ([43631607079](https://github.com/thayanneoliveira/Fatovia/actions/runs/43631607079)); a primeira publicação autônoma sob a nova política do piloto permanece pendente na data-base.
 
 ## Documentação
 
