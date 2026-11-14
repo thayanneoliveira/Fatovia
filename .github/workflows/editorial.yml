@@ -21,6 +21,7 @@ concurrency:
 
 jobs:
   radar:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 12
     steps:
@@ -71,3 +72,9 @@ jobs:
           done
           echo "::error::Nao foi possivel persistir o estado sem sobrescrever trabalho remoto"
           exit 1
+
+  audit:
+    needs: radar
+    uses: ./.github/workflows/editorial-audit.yml
+    permissions:
+      contents: write

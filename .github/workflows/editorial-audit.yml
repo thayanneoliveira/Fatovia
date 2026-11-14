@@ -1,19 +1,8 @@
 name: "FatoVia | Auditoria editorial independente"
 on:
-  workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - ".github/workflows/editorial-audit.yml"
-      - "fatovia/editorial_audit.py"
-      - "tests/test_editorial_audit.py"
-  schedule:
-    - cron: "43 11,15,19,23 * * *"
+  workflow_call:
 permissions:
   contents: write
-concurrency:
-  group: fatovia-state
-  cancel-in-progress: false
 jobs:
   review:
     if: github.ref == 'refs/heads/main'

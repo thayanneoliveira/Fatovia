@@ -5,6 +5,7 @@ import time
 import urllib.request
 from urllib.error import HTTPError
 from pathlib import Path
+from .claim_audit import audit_draft
 
 MODEL="Qwen2.5-1.5B-Instruct-Q4_K_M"
 ENDPOINT="http://127.0.0.1:8089/v1/chat/completions"
@@ -76,12 +77,15 @@ def evaluate(item,kind):
         issues=validate(output,item["summary"])
         if finish=="length":
             issues.append("truncated")
-        result.update(output=output,validation_issues=issues,structural_pass=not issues)
+        result.update(output=output,validation_issues=issues,structural_pass=not issues,
+                      independent_triage=audit_draft(output,item))
     except HTTPError as exc:
         result.update(structural_pass=False,validation_issues=["http_"+str(exc.code)])
     except Exception as exc:
         result.update(structural_pass=False,validation_issues=[type(exc).__name__])
     result["seconds"]=round(time.monotonic()-start,2)
+    triage=result.get("independent_triage",{})
+    print("TRIAGE",kind,triage.get("decision","not_evaluated"),json.dumps(triage.get("findings",[])),flush=True)
     print("BENCHMARK",kind,item.get("id","synthetic"),"PASS",result["structural_pass"],
           "ISSUES",",".join(result["validation_issues"]) or "none","SECONDS",result["seconds"],flush=True)
     return result
