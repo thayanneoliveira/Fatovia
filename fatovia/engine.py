@@ -126,9 +126,31 @@ def choose(items, state, now, maximum=3):
     candidates = [dict(x) for x in items if eligible(x, state, now)]
     for item in candidates:
         item["editorial_score"] = score(item, now, counts)
+    # Explorar e apenas um sinal de descoberta, nunca evidencia factual.
+    # Nao altera o limiar de elegibilidade; desempata pautas documentadas.
+    signals = {}
+    for signal in state.get("explore_signals", []):
+        if signal.get("source") != "manual_explore":
+            continue
+        topic = signal.get("topic")
+        if topic not in TOPICS:
+            continue
+        try:
+            dt = datetime.fromisoformat(signal["observed_at"])
+            if not now - timedelta(days=7) <= dt <= now:
+                continue
+            url = urlparse(signal["url"])
+            if (url.scheme != "https" or url.netloc != "www.instagram.com"
+                    or not re.fullmatch(r"/(?:p|reel)/[A-Za-z0-9_-]{4,40}/?", url.path)):
+                continue
+            signals.setdefault(topic, set()).add(url.path.rstrip("/"))
+        except (KeyError, TypeError, ValueError):
+            continue
+    for item in candidates:
+        item["explore_signal_count"] = min(3, sum(len(signals.get(t, set())) for t in item["topics"]))
     return sorted(
         (x for x in candidates if x["editorial_score"] >= 55),
-        key=lambda x: (-x["editorial_score"], x["id"]),
+        key=lambda x: (-x["editorial_score"], -x["explore_signal_count"], x["id"]),
     )[:maximum]
 
 
