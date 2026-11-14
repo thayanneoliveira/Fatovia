@@ -11,6 +11,17 @@
     17,
     21
   ],
+  "scan_diagnostics": {
+    "expired_or_unsealed_removed": 0,
+    "history_errors": 25,
+    "history_missing": 0,
+    "invalid": 0,
+    "records": 100,
+    "stale": 0,
+    "topic_matches": 26,
+    "verified": 0
+  },
+  "selected": [],
   "staged": 0,
-  "timestamp": "2026-11-14T17:06:55.456676-03:00"
+  "timestamp": "2026-11-14T17:10:12.791603-03:00"
 }
