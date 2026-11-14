@@ -5,7 +5,6 @@ evidence of what a source says, never proof that its contents are true.
 """
 import hashlib
 import json
-from .render import cards_for
 from .evidence import source_ok
 
 POLICY="documentary-claims-v1"
@@ -16,6 +15,7 @@ def digest(value):
 def build(item):
     if not source_ok(item):
         raise ValueError("source_identifier_mismatch")
+    from .render import cards_for
     cards=cards_for(item)
     if len(cards)!=7:
         raise ValueError("unexpected_template")
