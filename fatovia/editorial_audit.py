@@ -11,10 +11,11 @@ from urllib.parse import quote
 from .engine import load, save, now_local, validate_candidate
 from .evidence import sealed, fingerprint, verify_live
 from .render import render
+from .claim_matrix import build, digest
 
 REPORT=Path("data/editorial_audit.json")
 PAGE_ROOT="https://thayanneoliveira.github.io/Fatovia"
-POLICY="documentary-template-v1"
+POLICY="documentary-template-v2-claims"
 MAX_BYTES=8_000_000
 
 
@@ -59,6 +60,7 @@ def review(item,now,source_check=verify_live):
         issues.append("source_unavailable_or_changed")
         return row
     try:
+        matrix=build(item)
         actual=inspect_files(item)
         # Reconstruct the approved deterministic template from the verified document.
         # Never use arbitrary LLM narration in this approval path.
@@ -70,7 +72,8 @@ def review(item,now,source_check=verify_live):
         if actual!=expected:
             issues.append("cards_differ_from_template")
         if not issues:
-            row.update(decision="approved_documentary_only",content_sha256=fingerprint(item),card_sha256=actual)
+            row.update(decision="approved_documentary_only",content_sha256=fingerprint(item),card_sha256=actual,
+                       claim_matrix=matrix,claim_matrix_sha256=digest(matrix))
     except Exception as exc:
         issues.append("render_or_file_check_"+type(exc).__name__)
     return row
@@ -88,7 +91,8 @@ def approved(item,now,report=None):
         checked=datetime.fromisoformat(row["checked_at"])
         return (row["decision"]=="approved_documentary_only" and row.get("policy")==POLICY
                 and not row.get("issues") and now-timedelta(hours=24)<=checked<=now
-                and row["content_sha256"]==fingerprint(item) and row["card_sha256"]==inspect_files(item))
+                and row["content_sha256"]==fingerprint(item) and row["card_sha256"]==inspect_files(item)
+                and row["claim_matrix"]==build(item) and row["claim_matrix_sha256"]==digest(row["claim_matrix"]))
     except (OSError,ValueError,TypeError,KeyError,AttributeError):
         return False
 
