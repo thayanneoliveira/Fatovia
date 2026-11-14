@@ -1,0 +1,145 @@
+name: "FatoVia | Primeiro carrossel pela Meta"
+on:
+  workflow_dispatch:
+    inputs:
+      confirmacao:
+        description: "Digite PUBLICAR para enviar um carrossel real ao @fato.via"
+        required: true
+        type: string
+permissions:
+  contents: write
+concurrency:
+  group: fatovia-state
+  cancel-in-progress: false
+jobs:
+  test:
+    if: inputs.confirmacao == 'PUBLICAR'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+      META_IG_USER_ID: ${{ vars.META_IG_USER_ID }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -r requirements.txt
+      - name: Publicar uma unica vez com checkpoint
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, os, re, subprocess, sys, time
+          from datetime import datetime, timezone
+          from pathlib import Path
+          import requests
+          from fatovia.render import card
+
+          token = os.environ.get("META_ACCESS_TOKEN", "").strip()
+          ig = os.environ.get("META_IG_USER_ID", "").strip()
+          if not token or not re.fullmatch(r"[0-9]{5,30}", ig):
+              sys.exit("Credenciais definitivas ausentes.")
+          base = "https://graph.instagram.com/v25.0/"
+          session = requests.Session()
+          def api(method, path, **kwargs):
+              try:
+                  r = session.request(method, base + path, headers={"Authorization": "Bearer " + token}, timeout=25, allow_redirects=False, **kwargs)
+                  if r.status_code != 200:
+                      print("Meta HTTP", r.status_code)
+                      return None
+                  data = r.json()
+                  return data if isinstance(data, dict) and not data.get("error") else None
+              except Exception:
+                  return None
+          def require(data, key):
+              if not data or not data.get(key):
+                  sys.exit("Resposta Meta inconclusiva; nao repetir POST automaticamente.")
+              return str(data[key])
+          def git(*args):
+              return subprocess.check_output(["git", *args], text=True).strip()
+          def persist(message, *paths):
+              git("add", *map(str, paths))
+              git("commit", "-m", message)
+              git("push", "origin", "HEAD:main")
+          me = api("GET", "me", params={"fields": "user_id,username"})
+          if not me or str(me.get("user_id")) != ig or str(me.get("username", "")).lower() != "fato.via":
+              sys.exit("Conta ou ID divergente; envio bloqueado.")
+          quota = api("GET", ig + "/content_publishing_limit", params={"fields": "quota_usage"})
+          if not quota or not quota.get("data"):
+              sys.exit("Consulta de limite falhou.")
+          checkpoint = Path("data/instagram_api_test.json")
+          marker = "ID editorial: metodologia-fonte/v1"
+          recent = api("GET", ig + "/media", params={"fields": "id,caption,permalink", "limit": 100})
+          if not recent or not isinstance(recent.get("data"), list):
+              sys.exit("Nao foi possivel consultar publicacoes anteriores.")
+          if checkpoint.exists() or any(marker in (x.get("caption") or "") for x in recent["data"]):
+              sys.exit("Teste ja reservado ou publicado. Confira o checkpoint antes de qualquer nova tentativa.")
+          state_path = Path("data/state.json")
+          state = json.loads(state_path.read_text())
+          if state.get("publishing"):
+              sys.exit("Existe transacao editorial em aberto.")
+          cards = [
+              ("Antes de compartilhar, confira a fonte.", "Uma manchete pode ser verdadeira, incompleta ou estar fora de contexto. O primeiro passo é conferir o documento original."),
+              ("Quem publicou?", "Identifique o autor, o órgão responsável e a origem da informação. Uma captura de tela não substitui a fonte."),
+              ("Quando aconteceu?", "Confira a data do fato, da publicação e de eventuais atualizações. Informações antigas podem circular como novas."),
+              ("Promessa não é execução.", "Uma declaração, uma proposta, uma norma e uma política implementada são etapas diferentes. Identifique qual delas está comprovada."),
+              ("Qual é a evidência?", "Procure documentos, dados e metodologia. Compare com outras fontes independentes sempre que possível."),
+              ("O que ainda não sabemos?", "Diferencie o que a evidência confirma daquilo que ainda é hipótese. Uma dúvida não é, por si só, prova."),
+              ("Informação antes de opinião.", "Consulte documentos originais, preserve o contexto e corrija informações quando surgirem evidências melhores.")
+          ]
+          root = Path("docs/media/metodologia-fonte/v1")
+          for i, (title, body) in enumerate(cards, 1):
+              card(root / f"{i:02}.jpg", i, title, body, "FatoVia | Metodo editorial")
+          git("config", "user.name", "github-actions[bot]")
+          git("config", "user.email", "41898282+github-actions[bot]@users.noreply.github.com")
+          checkpoint.write_text(json.dumps({"status": "reserved", "marker": marker}, indent=2) + "\n")
+          persist("FatoVia: reservar teste oficial e imagens [skip ci]", root, checkpoint)
+          sha = git("rev-parse", "HEAD")
+          urls = [f"https://raw.githubusercontent.com/thayanneoliveira/Fatovia/{sha}/{root}/{i:02}.jpg" for i in range(1, 8)]
+          for url in urls:
+              for attempt in range(5):
+                  try:
+                      r = requests.get(url, timeout=20, allow_redirects=False)
+                      if r.status_code == 200 and r.headers.get("Content-Type", "").lower().startswith("image/jpeg") and r.content.startswith(b"\xff\xd8\xff") and len(r.content) <= 8000000:
+                          break
+                  except requests.RequestException:
+                      pass
+                  time.sleep(3)
+              else:
+                  sys.exit("JPEG publico indisponivel; nenhum POST realizado.")
+          caption = ("Antes de compartilhar uma informação, confira a fonte, a data e o contexto. "
+                     "Diferencie promessa, proposta, norma e execução. "
+                     "Reconheça os limites da evidência.\n\n"
+                     "Guia de método editorial do FatoVia. Portais para consulta de documentos públicos: "
+                     "https://www.camara.leg.br/ e https://portaldatransparencia.gov.br/.\n\n"
+                     + marker + "\n#FatoVia #EducaçãoMidiática #Informação")
+          children = []
+          for url in urls:
+              children.append(require(api("POST", ig + "/media", data={"image_url": url, "is_carousel_item": "true"}), "id"))
+          parent = require(api("POST", ig + "/media", data={"media_type": "CAROUSEL", "children": ",".join(children), "caption": caption}), "id")
+          for attempt in range(12):
+              status = api("GET", parent, params={"fields": "status_code"})
+              value = (status or {}).get("status_code")
+              if value == "FINISHED":
+                  break
+              if value != "IN_PROGRESS":
+                  sys.exit("Estado de conteiner inconclusivo; nao repetir.")
+              time.sleep(10)
+          else:
+              sys.exit("Conteiner nao ficou pronto; nao repetir.")
+          mid = require(api("POST", ig + "/media_publish", data={"creation_id": parent}), "id")
+          result = api("GET", mid, params={"fields": "id,permalink"}) or {}
+          permalink = result.get("permalink", "")
+          if not re.fullmatch(r"https://www\.instagram\.com/(?:p|reel)/[A-Za-z0-9_-]+/?", permalink):
+              permalink = ""
+          stamp = datetime.now(timezone.utc).isoformat()
+          checkpoint.write_text(json.dumps({"status": "published", "media_id": mid, "permalink": permalink, "marker": marker}, indent=2) + "\n")
+          state.setdefault("published", []).append({"id": "metodologia-fonte", "version": "v1", "media_id": mid, "permalink": permalink, "published_at": stamp, "title": "Antes de compartilhar, confira a fonte", "topics": ["cidadania"]})
+          state_path.write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n")
+          print("Publicacao confirmada pela Meta.")
+          print("Media ID:", mid)
+          print("Permalink:", permalink or "nao retornado")
+          persist("FatoVia: registrar primeiro carrossel oficial [skip ci]", checkpoint, state_path)
+          PY
