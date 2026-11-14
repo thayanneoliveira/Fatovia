@@ -1,0 +1,60 @@
+{
+  "entity": "União",
+  "error_code": "entity_mismatch",
+  "error_type": "ValueError",
+  "generated_at": "2026-11-14T17:38:54.167728-03:00",
+  "limitations": [
+    "Reported cells, not independent proof of spending or outcomes",
+    "No summation of overlapping totals, accounts, subtotals or intra-budget flows",
+    "Restos a pagar are not automatically included",
+    "A missing cell is not zero",
+    "No cross-period comparison"
+  ],
+  "observed_columns": [
+    "% (b/a)",
+    "% (c/a)",
+    "Até o Bimestre (c)",
+    "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+    "DESPESAS EMPENHADAS NO BIMESTRE",
+    "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+    "DESPESAS LIQUIDADAS NO BIMESTRE",
+    "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+    "DOTAÇÃO ATUALIZADA (e)",
+    "DOTAÇÃO INICIAL (d)",
+    "No Bimestre (b)",
+    "PREVISÃO ATUALIZADA (a)",
+    "PREVISÃO INICIAL",
+    "SALDO (a-c)",
+    "SALDO (g) = (e-f)",
+    "SALDO (i) = (e-h)"
+  ],
+  "observed_fields": [
+    "anexo",
+    "cod_conta",
+    "cod_ibge",
+    "coluna",
+    "conta",
+    "demonstrativo",
+    "esfera",
+    "exercicio",
+    "instituicao",
+    "periodicidade",
+    "periodo",
+    "populacao",
+    "rotulo",
+    "uf",
+    "valor"
+  ],
+  "period_end": "2026-08-31",
+  "publication_authorized": false,
+  "query_params": {
+    "an_exercicio": 2026,
+    "co_esfera": "U",
+    "co_tipo_demonstrativo": "RREO",
+    "id_ente": 1,
+    "no_anexo": "RREO-Anexo 01",
+    "nr_periodo": 4
+  },
+  "source_url": "https://apidatalake.tesouro.gov.br/ords/cdwhprd/siconfi/tt/rreo",
+  "status": "unavailable"
+}

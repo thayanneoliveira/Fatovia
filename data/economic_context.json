@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T17:36:51.743123-03:00",
+  "generated_at": "2026-11-14T17:38:52.467310-03:00",
   "limitations": [
     "No causal attribution",
     "No comparison across unlike units or frequencies",
@@ -78,8 +78,11 @@
         }
       ],
       "publication_authorized": false,
+      "query_params": {
+        "formato": "json"
+      },
       "response_sha256": "d1320de0c1edc893b7aaaba1acd9604f72836672e292aff74140a008de24ca99",
-      "retrieved_at": "2026-11-14T17:36:51.743123-03:00",
+      "retrieved_at": "2026-11-14T17:38:52.467310-03:00",
       "series": "16122",
       "source_url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.16122/dados/ultimos/12",
       "status": "ok",
@@ -88,17 +91,174 @@
     },
     "432": {
       "count": 30,
-      "error_type": "ValueError",
       "frequency": "daily",
       "limitation": "Meta anualizada, não taxa efetiva de empréstimos nem rendimento diário.",
       "max_age_days": 7,
       "metadata": "https://dadosabertos.bcb.gov.br/dataset/432-taxa-de-juros---meta-selic-definida-pelo-copom",
       "name": "Meta Selic definida pelo Copom",
+      "observations": [
+        {
+          "period": "2026-10-16",
+          "source_date": "2026-10-16",
+          "value": "13.75"
+        },
+        {
+          "period": "2026-10-17",
+          "source_date": "2026-10-17",
+          "value": "13.75"
+        },
+        {
+          "period": "2026-10-18",
+          "source_date": "2026-10-18",
+          "value": "13.75"
+        },
+        {
+          "period": "2026-10-19",
+          "source_date": "2026-10-19",
+          "value": "13.75"
+        },
+        {
+          "period": "2026-10-20",
+          "source_date": "2026-10-20",
+          "value": "13.75"
+        },
+        {
+          "period": "2026-10-21",
+          "source_date": "2026-10-21",
+          "value": "13.75"
+        },
+        {
+          "period": "2026-10-22",
+          "source_date": "2026-10-22",
+          "value": "13.75"
+        },
+        {
+          "period": "2026-10-23",
+          "source_date": "2026-10-23",
+          "value": "13.75"
+        },
+        {
+          "period": "2026-10-24",
+          "source_date": "2026-10-24",
+          "value": "13.75"
+        },
+        {
+          "period": "2026-10-25",
+          "source_date": "2026-10-25",
+          "value": "13.75"
+        },
+        {
+          "period": "2026-10-26",
+          "source_date": "2026-10-26",
+          "value": "13.75"
+        },
+        {
+          "period": "2026-10-27",
+          "source_date": "2026-10-27",
+          "value": "13.75"
+        },
+        {
+          "period": "2026-10-28",
+          "source_date": "2026-10-28",
+          "value": "13.75"
+        },
+        {
+          "period": "2026-10-29",
+          "source_date": "2026-10-29",
+          "value": "13.75"
+        },
+        {
+          "period": "2026-10-30",
+          "source_date": "2026-10-30",
+          "value": "13.75"
+        },
+        {
+          "period": "2026-10-31",
+          "source_date": "2026-10-31",
+          "value": "13.75"
+        },
+        {
+          "period": "2026-11-01",
+          "source_date": "2026-11-01",
+          "value": "13.75"
+        },
+        {
+          "period": "2026-11-02",
+          "source_date": "2026-11-02",
+          "value": "13.75"
+        },
+        {
+          "period": "2026-11-03",
+          "source_date": "2026-11-03",
+          "value": "13.75"
+        },
+        {
+          "period": "2026-11-04",
+          "source_date": "2026-11-04",
+          "value": "13.75"
+        },
+        {
+          "period": "2026-11-05",
+          "source_date": "2026-11-05",
+          "value": "13.75"
+        },
+        {
+          "period": "2026-11-06",
+          "source_date": "2026-11-06",
+          "value": "13.75"
+        },
+        {
+          "period": "2026-11-07",
+          "source_date": "2026-11-07",
+          "value": "13.75"
+        },
+        {
+          "period": "2026-11-08",
+          "source_date": "2026-11-08",
+          "value": "13.75"
+        },
+        {
+          "period": "2026-11-09",
+          "source_date": "2026-11-09",
+          "value": "13.75"
+        },
+        {
+          "period": "2026-11-10",
+          "source_date": "2026-11-10",
+          "value": "13.75"
+        },
+        {
+          "period": "2026-11-11",
+          "source_date": "2026-11-11",
+          "value": "13.75"
+        },
+        {
+          "period": "2026-11-12",
+          "source_date": "2026-11-12",
+          "value": "13.75"
+        },
+        {
+          "period": "2026-11-13",
+          "source_date": "2026-11-13",
+          "value": "13.75"
+        },
+        {
+          "period": "2026-11-14",
+          "source_date": "2026-11-14",
+          "value": "13.75"
+        }
+      ],
       "publication_authorized": false,
-      "retrieved_at": "2026-11-14T17:36:51.743123-03:00",
+      "query_params": {
+        "dataFinal": "14/11/2026",
+        "dataInicial": "16/10/2026",
+        "formato": "json"
+      },
+      "response_sha256": "726194e6c0d670aac198e4a0423d35950a41fcc818627716adee483613da0823",
+      "retrieved_at": "2026-11-14T17:38:52.467310-03:00",
       "series": "432",
-      "source_url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados/ultimos/30",
-      "status": "unavailable",
+      "source_url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados",
+      "status": "ok",
       "unit": "% a.a.",
       "use": "economic_context_only"
     }
