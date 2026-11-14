@@ -9,6 +9,7 @@ from unittest.mock import patch
 import requests
 
 from fatovia.engine import from_camara
+from fatovia.evidence import seal
 from fatovia.publisher import (
     PublicationError, choose_due, config, deliver, marker, prepare, public_urls,
     qualified, reconcile, TARGET_USERNAME,
@@ -33,6 +34,7 @@ def item():
     doc["caption"] = ("Documento legislativo registrado na Câmara, sem inferência de aprovação. "
                       "Consulte a fonte original para conferir o conteúdo e a tramitação.\n\n"
                       f'ID editorial: {doc["id"]}/{doc["version"]}')
+    seal(doc,NOW)
     return doc
 
 
@@ -151,7 +153,7 @@ class PublishTests(unittest.TestCase):
             with patch("fatovia.publisher.STATE_PATH", Path(folder) / "state.json"):
                 prepare(self.state, NOW, CFG)
                 with patch("fatovia.publisher.verify_media"):
-                    result = deliver(self.state, NOW, CFG, client=meta)
+                    result = deliver(self.state, NOW, CFG, client=meta, source_check=lambda item: True)
         self.assertEqual(result["action"], "published")
         self.assertEqual(len(meta.create_calls), 8)
         self.assertEqual(meta.create_calls[-1]["media_type"], "CAROUSEL")
@@ -177,7 +179,7 @@ class PublishTests(unittest.TestCase):
                 prepare(self.state, NOW, CFG)
                 with patch("fatovia.publisher.verify_media"):
                     with self.assertRaises(requests.Timeout):
-                        deliver(self.state, NOW, CFG, client=meta)
+                        deliver(self.state, NOW, CFG, client=meta, source_check=lambda item: True)
                 self.assertEqual(self.state["publishing"]["status"], "uncertain")
                 again = prepare(self.state, NOW, CFG)
                 self.assertEqual(again["action"], "reconcile")

@@ -3,7 +3,9 @@ import argparse
 import json
 from pathlib import Path
 
-from .engine import choose, load, now_local, rollup_report, save, scan_camara, from_camara
+from .engine import choose, load, now_local, rollup_report, save, scan_camara, from_camara, fresh_stage
+from .evidence import seal, sealed
+from datetime import datetime, timedelta
 from .render import render
 from .analytics import pull_metrics
 
@@ -41,18 +43,35 @@ def main():
         return
 
     errors = []
+    diagnostics = {}
+    # Do not remove a candidate matching an unresolved publication transaction.
+    tx = state.get("publishing") or {}
+    old_pending = state.get("pending", [])
+    state["pending"] = [p for p in old_pending if
+        (p.get("id"),p.get("version")) == (tx.get("id"),tx.get("version"))
+        or (fresh_stage(p,now) and sealed(p,now))]
+    diagnostics["expired_or_unsealed_removed"] = len(old_pending)-len(state["pending"])
+    selection_state = dict(state)
     try:
-        candidates = scan_camara(now)
+        discovery = load("data/discovery_report.json")
+        observed = datetime.fromisoformat(discovery["generated_at"])
+        if now-timedelta(hours=48)<=observed<=now:
+            selection_state["discovery_topic_groups"] = discovery.get("topic_groups",[])
+    except (OSError, ValueError, KeyError,TypeError):
+        pass
+    try:
+        candidates = scan_camara(now, diagnostics=diagnostics)
     except Exception as exc:
         candidates = []
         errors.append(f"Radar indisponível ({type(exc).__name__})")
     # Limite de armazenamento e de produção: não acumular imagens sem controle.
     slots = max(0, 8 - len(state.get("pending", [])))
-    chosen = choose(candidates, state, now, maximum=min(4, slots))
+    chosen = choose(candidates, selection_state, now, maximum=min(4, slots))
     staged = 0
     for item in chosen:
         try:
             render(item)
+            seal(item, now)
             item["status"] = "ready"
             state.setdefault("pending", []).append(item)
             staged += 1
@@ -60,6 +79,8 @@ def main():
             errors.append(f'Falha no card {item["id"]}: {type(exc).__name__}')
     report = rollup_report(state, now, len(candidates), staged)
     report["errors"] = errors
+    report["scan_diagnostics"] = diagnostics
+    report["selected"] = [{"id":x["id"],"score":x["editorial_score"],"discover_sources":x.get("discovery_source_count",0),"explore":x.get("explore_signal_count",0)} for x in chosen]
     # Apenas imagens prontas, geradas dentro de docs/media. Nenhuma credencial no catálogo público.
     catalog = []
     for item in state.get("pending", [])[:8]:

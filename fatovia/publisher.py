@@ -15,6 +15,7 @@ from pathlib import Path
 from urllib.parse import quote
 
 import requests
+from .evidence import sealed, verify_live
 
 from .engine import TZ, MIN_PUBLICATION_GAP_HOURS, daily_limit, load, now_local, preferred_hours, save, validate_candidate
 
@@ -46,7 +47,7 @@ def config():
 
 
 def qualified(item, now):
-    if item.get("status") != "ready" or validate_candidate(item):
+    if item.get("status") != "ready" or validate_candidate(item) or not sealed(item, now):
         return False
     try:
         published_stage = datetime.fromisoformat(item["stage_date"]).date()
@@ -115,7 +116,7 @@ def choose_due(state, now):
         p for p in state.get("pending", [])
         if qualified(p, now) and (p.get("id"), p.get("version")) not in already
     ]
-    candidates.sort(key=lambda x: (-x.get("editorial_score", 0), x["id"]))
+    candidates.sort(key=lambda x: (-x.get("editorial_score", 0), -x.get("explore_signal_count",0), -x.get("discovery_source_count",0), x["id"]))
     return candidates[0] if candidates else None
 
 
@@ -256,6 +257,7 @@ def finalize(state, item, mid, permalink, now):
             "published_at": now.isoformat(), "title": item.get("title", ""),
             "topics": item.get("topics", []),
             "summary_hash": item.get("summary_hash", ""),
+            "summary": item.get("summary", ""), "evidence_sha256": item.get("evidence", {}).get("content_sha256", ""),
         })
     state["pending"] = [x for x in state.get("pending", [])
                         if not (x.get("id") == item["id"] and x.get("version") == item["version"])]
@@ -263,7 +265,7 @@ def finalize(state, item, mid, permalink, now):
     save(STATE_PATH, state)
 
 
-def deliver(state, now, cfg, client=None, http=None):
+def deliver(state, now, cfg, client=None, http=None, source_check=verify_live):
     if not cfg["enabled"] or not cfg["token"] or not cfg["ig_id"].isdigit():
         raise PublicationError("Envio desabilitado ou sem credenciais")
     item = media_item(state)
@@ -280,6 +282,8 @@ def deliver(state, now, cfg, client=None, http=None):
     if found:
         finalize(state, item, str(found["id"]), found.get("permalink"), now)
         return {"action": "recovered", "media_id": str(found["id"])}
+    if not source_check(item):
+        raise PublicationError("Fonte oficial mudou ou não respondeu; envio bloqueado")
     urls = public_urls(item)
     verify_media(urls, http=http)
     tx["status"] = "uncertain"  # Persistir antes do primeiro POST, sem retry cego.

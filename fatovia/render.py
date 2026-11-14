@@ -139,7 +139,7 @@ def render(item, root="docs/media"):
     item["cards"] = paths
     item["caption"] = (
         f'{item["title"]}: o que consta no registro oficial?\n\n'
-        f'A ementa e o andamento foram consultados na Câmara em {item["stage_date"]}. '
+        f'A ementa consta na Câmara e o registro de andamento tem data de {item["stage_date"]}. '
         'Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\n'
         f'Fonte: {item["public_url"]}\n'
         f'API oficial: {item["source_url"]}\n\n'

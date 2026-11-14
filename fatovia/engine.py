@@ -8,6 +8,8 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from urllib.parse import urlparse
 from zoneinfo import ZoneInfo
+from .memory import duplicate
+from .evidence import source_ok
 
 TZ = ZoneInfo("America/Fortaleza")
 TOPICS = {
@@ -74,7 +76,7 @@ def validate_candidate(item):
     source = urlparse(item.get("source_url", ""))
     if not str(item.get("id", "")).startswith("camara:"):
         issues.append("ID inválido")
-    if source.scheme != "https" or source.hostname != "dadosabertos.camara.leg.br":
+    if source.scheme != "https" or source.hostname != "dadosabertos.camara.leg.br" or not source_ok(item):
         issues.append("Fonte não permitida")
     if len(str(item.get("summary", "")).strip()) < 65:
         issues.append("Ementa insuficiente")
@@ -91,9 +93,7 @@ def eligible(item, state, now):
     if validate_candidate(item):
         return False
     for other in state.get("pending", []) + state.get("published", []):
-        if other.get("id") == item["id"] and other.get("version") == item["version"]:
-            return False
-        if other.get("summary_hash") and other["summary_hash"] == item["summary_hash"]:
+        if duplicate(item, other):
             return False
     for old in state.get("published", []):
         if old.get("id") != item["id"]:
@@ -123,7 +123,7 @@ def choose(items, state, now, maximum=3):
     for old in state.get("published", []) + state.get("pending", []):
         for topic in old.get("topics", []):
             counts[topic] = counts.get(topic, 0) + 1
-    candidates = [dict(x) for x in items if eligible(x, state, now)]
+    candidates = [dict(x) for x in items if eligible(x, state, now) and fresh_stage(x, now)]
     for item in candidates:
         item["editorial_score"] = score(item, now, counts)
     # Explorar e apenas um sinal de descoberta, nunca evidencia factual.
@@ -148,10 +148,22 @@ def choose(items, state, now, maximum=3):
             continue
     for item in candidates:
         item["explore_signal_count"] = min(3, sum(len(signals.get(t, set())) for t in item["topics"]))
-    return sorted(
+    groups = state.get("discovery_topic_groups", [])
+    trend = {g["topic"]: min(3, g.get("source_count", 0)) for g in groups if g.get("topic") in TOPICS}
+    for item in candidates:
+        item["discovery_source_count"] = max((trend.get(t,0) for t in item["topics"]),default=0)
+    ranked = sorted(
         (x for x in candidates if x["editorial_score"] >= 55),
-        key=lambda x: (-x["editorial_score"], -x["explore_signal_count"], x["id"]),
-    )[:maximum]
+        key=lambda x: (-x["editorial_score"], -x["explore_signal_count"], -x["discovery_source_count"], x["id"]),
+    )
+    selected = []
+    for item in ranked:
+        if any(duplicate(item, other) for other in selected):
+            continue
+        if len(selected) >= maximum:
+            break
+        selected.append(item)
+    return selected
 
 
 # Fixed experimental cadence; no engagement-driven changes without validated review.
@@ -167,7 +179,14 @@ def preferred_hours(state):
     return list(EXPERIMENT_HOURS)
 
 
-def scan_camara(now, fetcher=None):
+def fresh_stage(item, now):
+    try:
+        return 0 <= (now.date() - datetime.fromisoformat(item["stage_date"]).date()).days <= 14
+    except (ValueError, KeyError, TypeError):
+        return False
+
+
+def scan_camara(now, fetcher=None, diagnostics=None):
     if fetcher is None:
         import requests
         session = requests.Session()
@@ -177,21 +196,37 @@ def scan_camara(now, fetcher=None):
             response.raise_for_status()
             return response.json()
     root = "https://dadosabertos.camara.leg.br/api/v2/proposicoes"
-    since = (now - timedelta(days=5)).date().isoformat()
-    records = fetcher(root, {"dataApresentacaoInicio": since, "ordem": "DESC", "ordenarPor": "id", "itens": 35}).get("dados", [])
+    # Use a longer discovery window, but never relax the gate for recent tramitation.
+    since = (now - timedelta(days=14)).date().isoformat()
+    records = fetcher(root, {"dataApresentacaoInicio": since, "ordem": "DESC", "ordenarPor": "id", "itens": 100}).get("dados", [])
+    if not isinstance(records, list):
+        raise ValueError("Invalid source response")
+    counts = {"records":len(records),"topic_matches":0,"history_missing":0,"history_errors":0,"invalid":0,"stale":0,"verified":0}
     found = []
     for record in records:
         if not isinstance(record, dict) or not record.get("id") or not classify(record.get("ementa", "")):
             continue
+        counts["topic_matches"] += 1
+        # Bound remote history calls per scan.
+        if counts["topic_matches"] > 25:
+            break
         try:
             history = fetcher(f'{root}/{record["id"]}/tramitacoes', {"ordem": "DESC", "ordenarPor": "dataHora", "itens": 1}).get("dados", [])
-            if history:
-                item = from_camara(record, history[0])
-                if not validate_candidate(item):
-                    found.append(item)
+            if not history:
+                counts["history_missing"] += 1
+                continue
+            item = from_camara(record, history[0])
+            if validate_candidate(item):
+                counts["invalid"] += 1
+            elif not fresh_stage(item, now):
+                counts["stale"] += 1
+            else:
+                found.append(item)
+                counts["verified"] += 1
         except Exception:
-            # Fonte incompleta: não inventar, não publicar.
-            continue
+            counts["history_errors"] += 1
+    if diagnostics is not None:
+        diagnostics.update(counts)
     return found
 
 
