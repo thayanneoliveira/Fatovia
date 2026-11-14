@@ -14,11 +14,13 @@ concurrency:
 jobs:
   prototype:
     runs-on: ubuntu-24.04
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
+      - name: Testar validador local
+        run: python3 -m unittest discover -s tests -p test_local_draft.py -v
       - name: Baixar binario e pesos oficiais com SHA256 fixo
         shell: bash
         run: |
@@ -51,7 +53,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: avaliacao-ia-ficticia-sem-publicacao
+          name: avaliacao-editorial-sem-publicacao
           path: draft-output/evaluation.json
           retention-days: 1
           if-no-files-found: ignore
