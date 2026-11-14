@@ -1,16 +1,1375 @@
 {
-  "entity": "União",
-  "error_code": "entity_mismatch",
-  "error_type": "ValueError",
-  "generated_at": "2026-11-14T17:38:54.167728-03:00",
-  "limitations": [
-    "Reported cells, not independent proof of spending or outcomes",
-    "No summation of overlapping totals, accounts, subtotals or intra-budget flows",
-    "Restos a pagar are not automatically included",
-    "A missing cell is not zero",
-    "No cross-period comparison"
+  "cells": [
+    {
+      "cod_conta": "DespesasExcetoIntraOrcamentarias",
+      "coluna": "DOTAÇÃO INICIAL (d)",
+      "conta": "DESPESAS (EXCETO INTRA-ORÇAMENTÁRIAS) (IX)",
+      "rotulo": "Padrão",
+      "stage": "dotacao_inicial",
+      "unit": "BRL_reported",
+      "valor": "4478716365441.88"
+    },
+    {
+      "cod_conta": "DespesasExcetoIntraOrcamentarias",
+      "coluna": "DOTAÇÃO ATUALIZADA (e)",
+      "conta": "DESPESAS (EXCETO INTRA-ORÇAMENTÁRIAS) (IX)",
+      "rotulo": "Padrão",
+      "stage": "dotacao_atualizada",
+      "unit": "BRL_reported",
+      "valor": "4638074636340.88"
+    },
+    {
+      "cod_conta": "DespesasExcetoIntraOrcamentarias",
+      "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+      "conta": "DESPESAS (EXCETO INTRA-ORÇAMENTÁRIAS) (IX)",
+      "rotulo": "Padrão",
+      "stage": "empenhado",
+      "unit": "BRL_reported",
+      "valor": "3665034050426.48"
+    },
+    {
+      "cod_conta": "DespesasExcetoIntraOrcamentarias",
+      "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+      "conta": "DESPESAS (EXCETO INTRA-ORÇAMENTÁRIAS) (IX)",
+      "rotulo": "Padrão",
+      "stage": "liquidado",
+      "unit": "BRL_reported",
+      "valor": "2928524270047.25"
+    },
+    {
+      "cod_conta": "DespesasExcetoIntraOrcamentarias",
+      "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+      "conta": "DESPESAS (EXCETO INTRA-ORÇAMENTÁRIAS) (IX)",
+      "rotulo": "Padrão",
+      "stage": "pago",
+      "unit": "BRL_reported",
+      "valor": "2821965337713.47"
+    },
+    {
+      "cod_conta": "DespesasCorrentes",
+      "coluna": "DOTAÇÃO INICIAL (d)",
+      "conta": "DESPESAS CORRENTES",
+      "rotulo": "Padrão",
+      "stage": "dotacao_inicial",
+      "unit": "BRL_reported",
+      "valor": "3741422638736.42"
+    },
+    {
+      "cod_conta": "DespesasCorrentes",
+      "coluna": "DOTAÇÃO ATUALIZADA (e)",
+      "conta": "DESPESAS CORRENTES",
+      "rotulo": "Padrão",
+      "stage": "dotacao_atualizada",
+      "unit": "BRL_reported",
+      "valor": "3795955913630.42"
+    },
+    {
+      "cod_conta": "DespesasCorrentes",
+      "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+      "conta": "DESPESAS CORRENTES",
+      "rotulo": "Padrão",
+      "stage": "empenhado",
+      "unit": "BRL_reported",
+      "valor": "3060642544917.9"
+    },
+    {
+      "cod_conta": "DespesasCorrentes",
+      "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+      "conta": "DESPESAS CORRENTES",
+      "rotulo": "Padrão",
+      "stage": "liquidado",
+      "unit": "BRL_reported",
+      "valor": "2432520252714.25"
+    },
+    {
+      "cod_conta": "DespesasCorrentes",
+      "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+      "conta": "DESPESAS CORRENTES",
+      "rotulo": "Padrão",
+      "stage": "pago",
+      "unit": "BRL_reported",
+      "valor": "2329730336233.25"
+    },
+    {
+      "cod_conta": "PessoalEEncargosSociais",
+      "coluna": "DOTAÇÃO INICIAL (d)",
+      "conta": "PESSOAL E ENCARGOS SOCIAIS",
+      "rotulo": "Padrão",
+      "stage": "dotacao_inicial",
+      "unit": "BRL_reported",
+      "valor": "454573636538.75"
+    },
+    {
+      "cod_conta": "PessoalEEncargosSociais",
+      "coluna": "DOTAÇÃO ATUALIZADA (e)",
+      "conta": "PESSOAL E ENCARGOS SOCIAIS",
+      "rotulo": "Padrão",
+      "stage": "dotacao_atualizada",
+      "unit": "BRL_reported",
+      "valor": "452408814518.75"
+    },
+    {
+      "cod_conta": "PessoalEEncargosSociais",
+      "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+      "conta": "PESSOAL E ENCARGOS SOCIAIS",
+      "rotulo": "Padrão",
+      "stage": "empenhado",
+      "unit": "BRL_reported",
+      "valor": "386542776497.83"
+    },
+    {
+      "cod_conta": "PessoalEEncargosSociais",
+      "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+      "conta": "PESSOAL E ENCARGOS SOCIAIS",
+      "rotulo": "Padrão",
+      "stage": "liquidado",
+      "unit": "BRL_reported",
+      "valor": "281181216143.77"
+    },
+    {
+      "cod_conta": "PessoalEEncargosSociais",
+      "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+      "conta": "PESSOAL E ENCARGOS SOCIAIS",
+      "rotulo": "Padrão",
+      "stage": "pago",
+      "unit": "BRL_reported",
+      "valor": "254729171883.16"
+    },
+    {
+      "cod_conta": "JurosEEncargosDaDivida",
+      "coluna": "DOTAÇÃO INICIAL (d)",
+      "conta": "JUROS E ENCARGOS DA DÍVIDA",
+      "rotulo": "Padrão",
+      "stage": "dotacao_inicial",
+      "unit": "BRL_reported",
+      "valor": "643939797050"
+    },
+    {
+      "cod_conta": "JurosEEncargosDaDivida",
+      "coluna": "DOTAÇÃO ATUALIZADA (e)",
+      "conta": "JUROS E ENCARGOS DA DÍVIDA",
+      "rotulo": "Padrão",
+      "stage": "dotacao_atualizada",
+      "unit": "BRL_reported",
+      "valor": "643939797050"
+    },
+    {
+      "cod_conta": "JurosEEncargosDaDivida",
+      "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+      "conta": "JUROS E ENCARGOS DA DÍVIDA",
+      "rotulo": "Padrão",
+      "stage": "empenhado",
+      "unit": "BRL_reported",
+      "valor": "476880705935.33"
+    },
+    {
+      "cod_conta": "JurosEEncargosDaDivida",
+      "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+      "conta": "JUROS E ENCARGOS DA DÍVIDA",
+      "rotulo": "Padrão",
+      "stage": "liquidado",
+      "unit": "BRL_reported",
+      "valor": "415811371479.51"
+    },
+    {
+      "cod_conta": "JurosEEncargosDaDivida",
+      "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+      "conta": "JUROS E ENCARGOS DA DÍVIDA",
+      "rotulo": "Padrão",
+      "stage": "pago",
+      "unit": "BRL_reported",
+      "valor": "415811371479.51"
+    },
+    {
+      "cod_conta": "OutrasDespesasCorrentes",
+      "coluna": "DOTAÇÃO INICIAL (d)",
+      "conta": "OUTRAS DESPESAS CORRENTES",
+      "rotulo": "Padrão",
+      "stage": "dotacao_inicial",
+      "unit": "BRL_reported",
+      "valor": "2642909205147.67"
+    },
+    {
+      "cod_conta": "OutrasDespesasCorrentes",
+      "coluna": "DOTAÇÃO ATUALIZADA (e)",
+      "conta": "OUTRAS DESPESAS CORRENTES",
+      "rotulo": "Padrão",
+      "stage": "dotacao_atualizada",
+      "unit": "BRL_reported",
+      "valor": "2699607302061.67"
+    },
+    {
+      "cod_conta": "OutrasDespesasCorrentes",
+      "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+      "conta": "OUTRAS DESPESAS CORRENTES",
+      "rotulo": "Padrão",
+      "stage": "empenhado",
+      "unit": "BRL_reported",
+      "valor": "2197219062484.74"
+    },
+    {
+      "cod_conta": "OutrasDespesasCorrentes",
+      "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+      "conta": "OUTRAS DESPESAS CORRENTES",
+      "rotulo": "Padrão",
+      "stage": "liquidado",
+      "unit": "BRL_reported",
+      "valor": "1735527665090.97"
+    },
+    {
+      "cod_conta": "OutrasDespesasCorrentes",
+      "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+      "conta": "OUTRAS DESPESAS CORRENTES",
+      "rotulo": "Padrão",
+      "stage": "pago",
+      "unit": "BRL_reported",
+      "valor": "1659189792870.58"
+    },
+    {
+      "cod_conta": "TransferenciasAEstadosDistritoFederalEMunicipios",
+      "coluna": "DOTAÇÃO INICIAL (d)",
+      "conta": "Transferências a Estados, Distrito Federal e Municípios",
+      "rotulo": "Padrão",
+      "stage": "dotacao_inicial",
+      "unit": "BRL_reported",
+      "valor": "844065665719.74"
+    },
+    {
+      "cod_conta": "TransferenciasAEstadosDistritoFederalEMunicipios",
+      "coluna": "DOTAÇÃO ATUALIZADA (e)",
+      "conta": "Transferências a Estados, Distrito Federal e Municípios",
+      "rotulo": "Padrão",
+      "stage": "dotacao_atualizada",
+      "unit": "BRL_reported",
+      "valor": "873762808109.74"
+    },
+    {
+      "cod_conta": "TransferenciasAEstadosDistritoFederalEMunicipios",
+      "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+      "conta": "Transferências a Estados, Distrito Federal e Municípios",
+      "rotulo": "Padrão",
+      "stage": "empenhado",
+      "unit": "BRL_reported",
+      "valor": "791549670463.6"
+    },
+    {
+      "cod_conta": "TransferenciasAEstadosDistritoFederalEMunicipios",
+      "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+      "conta": "Transferências a Estados, Distrito Federal e Municípios",
+      "rotulo": "Padrão",
+      "stage": "liquidado",
+      "unit": "BRL_reported",
+      "valor": "532864850999.11"
+    },
+    {
+      "cod_conta": "TransferenciasAEstadosDistritoFederalEMunicipios",
+      "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+      "conta": "Transferências a Estados, Distrito Federal e Municípios",
+      "rotulo": "Padrão",
+      "stage": "pago",
+      "unit": "BRL_reported",
+      "valor": "531673082300.42"
+    },
+    {
+      "cod_conta": "BeneficiosPrevidenciarios",
+      "coluna": "DOTAÇÃO INICIAL (d)",
+      "conta": "Benefícios Previdenciários",
+      "rotulo": "Padrão",
+      "stage": "dotacao_inicial",
+      "unit": "BRL_reported",
+      "valor": "1127583656825"
+    },
+    {
+      "cod_conta": "BeneficiosPrevidenciarios",
+      "coluna": "DOTAÇÃO ATUALIZADA (e)",
+      "conta": "Benefícios Previdenciários",
+      "rotulo": "Padrão",
+      "stage": "dotacao_atualizada",
+      "unit": "BRL_reported",
+      "valor": "1127583656825"
+    },
+    {
+      "cod_conta": "BeneficiosPrevidenciarios",
+      "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+      "conta": "Benefícios Previdenciários",
+      "rotulo": "Padrão",
+      "stage": "empenhado",
+      "unit": "BRL_reported",
+      "valor": "873257594074.97"
+    },
+    {
+      "cod_conta": "BeneficiosPrevidenciarios",
+      "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+      "conta": "Benefícios Previdenciários",
+      "rotulo": "Padrão",
+      "stage": "liquidado",
+      "unit": "BRL_reported",
+      "valor": "769836099989.05"
+    },
+    {
+      "cod_conta": "BeneficiosPrevidenciarios",
+      "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+      "conta": "Benefícios Previdenciários",
+      "rotulo": "Padrão",
+      "stage": "pago",
+      "unit": "BRL_reported",
+      "valor": "706913166371.87"
+    },
+    {
+      "cod_conta": "DemaisDespesasCorrentes",
+      "coluna": "DOTAÇÃO INICIAL (d)",
+      "conta": "Demais Despesas Correntes",
+      "rotulo": "Padrão",
+      "stage": "dotacao_inicial",
+      "unit": "BRL_reported",
+      "valor": "671259882602.93"
+    },
+    {
+      "cod_conta": "DemaisDespesasCorrentes",
+      "coluna": "DOTAÇÃO ATUALIZADA (e)",
+      "conta": "Demais Despesas Correntes",
+      "rotulo": "Padrão",
+      "stage": "dotacao_atualizada",
+      "unit": "BRL_reported",
+      "valor": "698260837126.93"
+    },
+    {
+      "cod_conta": "DemaisDespesasCorrentes",
+      "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+      "conta": "Demais Despesas Correntes",
+      "rotulo": "Padrão",
+      "stage": "empenhado",
+      "unit": "BRL_reported",
+      "valor": "532411797946.17"
+    },
+    {
+      "cod_conta": "DemaisDespesasCorrentes",
+      "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+      "conta": "Demais Despesas Correntes",
+      "rotulo": "Padrão",
+      "stage": "liquidado",
+      "unit": "BRL_reported",
+      "valor": "432826714102.81"
+    },
+    {
+      "cod_conta": "DemaisDespesasCorrentes",
+      "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+      "conta": "Demais Despesas Correntes",
+      "rotulo": "Padrão",
+      "stage": "pago",
+      "unit": "BRL_reported",
+      "valor": "420603544198.29"
+    },
+    {
+      "cod_conta": "DespesasDeCapital",
+      "coluna": "DOTAÇÃO INICIAL (d)",
+      "conta": "DESPESAS DE CAPITAL",
+      "rotulo": "Padrão",
+      "stage": "dotacao_inicial",
+      "unit": "BRL_reported",
+      "valor": "700743421601.46"
+    },
+    {
+      "cod_conta": "DespesasDeCapital",
+      "coluna": "DOTAÇÃO ATUALIZADA (e)",
+      "conta": "DESPESAS DE CAPITAL",
+      "rotulo": "Padrão",
+      "stage": "dotacao_atualizada",
+      "unit": "BRL_reported",
+      "valor": "806724246371.46"
+    },
+    {
+      "cod_conta": "DespesasDeCapital",
+      "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+      "conta": "DESPESAS DE CAPITAL",
+      "rotulo": "Padrão",
+      "stage": "empenhado",
+      "unit": "BRL_reported",
+      "valor": "604391505508.58"
+    },
+    {
+      "cod_conta": "DespesasDeCapital",
+      "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+      "conta": "DESPESAS DE CAPITAL",
+      "rotulo": "Padrão",
+      "stage": "liquidado",
+      "unit": "BRL_reported",
+      "valor": "496004017333"
+    },
+    {
+      "cod_conta": "DespesasDeCapital",
+      "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+      "conta": "DESPESAS DE CAPITAL",
+      "rotulo": "Padrão",
+      "stage": "pago",
+      "unit": "BRL_reported",
+      "valor": "492235001480.22"
+    },
+    {
+      "cod_conta": "Investimentos",
+      "coluna": "DOTAÇÃO INICIAL (d)",
+      "conta": "INVESTIMENTOS",
+      "rotulo": "Padrão",
+      "stage": "dotacao_inicial",
+      "unit": "BRL_reported",
+      "valor": "80816821463.58"
+    },
+    {
+      "cod_conta": "Investimentos",
+      "coluna": "DOTAÇÃO ATUALIZADA (e)",
+      "conta": "INVESTIMENTOS",
+      "rotulo": "Padrão",
+      "stage": "dotacao_atualizada",
+      "unit": "BRL_reported",
+      "valor": "84124219298.58"
+    },
+    {
+      "cod_conta": "Investimentos",
+      "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+      "conta": "INVESTIMENTOS",
+      "rotulo": "Padrão",
+      "stage": "empenhado",
+      "unit": "BRL_reported",
+      "valor": "52248326621"
+    },
+    {
+      "cod_conta": "Investimentos",
+      "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+      "conta": "INVESTIMENTOS",
+      "rotulo": "Padrão",
+      "stage": "liquidado",
+      "unit": "BRL_reported",
+      "valor": "22219143807.15"
+    },
+    {
+      "cod_conta": "Investimentos",
+      "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+      "conta": "INVESTIMENTOS",
+      "rotulo": "Padrão",
+      "stage": "pago",
+      "unit": "BRL_reported",
+      "valor": "20579207502.57"
+    },
+    {
+      "cod_conta": "InversoesFinanceiras",
+      "coluna": "DOTAÇÃO INICIAL (d)",
+      "conta": "INVERSÕES FINANCEIRAS",
+      "rotulo": "Padrão",
+      "stage": "dotacao_inicial",
+      "unit": "BRL_reported",
+      "valor": "210792152609.31"
+    },
+    {
+      "cod_conta": "InversoesFinanceiras",
+      "coluna": "DOTAÇÃO ATUALIZADA (e)",
+      "conta": "INVERSÕES FINANCEIRAS",
+      "rotulo": "Padrão",
+      "stage": "dotacao_atualizada",
+      "unit": "BRL_reported",
+      "valor": "313465579544.31"
+    },
+    {
+      "cod_conta": "InversoesFinanceiras",
+      "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+      "conta": "INVERSÕES FINANCEIRAS",
+      "rotulo": "Padrão",
+      "stage": "empenhado",
+      "unit": "BRL_reported",
+      "valor": "237286401472.64"
+    },
+    {
+      "cod_conta": "InversoesFinanceiras",
+      "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+      "conta": "INVERSÕES FINANCEIRAS",
+      "rotulo": "Padrão",
+      "stage": "liquidado",
+      "unit": "BRL_reported",
+      "valor": "199540865327.03"
+    },
+    {
+      "cod_conta": "InversoesFinanceiras",
+      "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+      "conta": "INVERSÕES FINANCEIRAS",
+      "rotulo": "Padrão",
+      "stage": "pago",
+      "unit": "BRL_reported",
+      "valor": "197411785778.83"
+    },
+    {
+      "cod_conta": "AmortizacaoDaDivida",
+      "coluna": "DOTAÇÃO INICIAL (d)",
+      "conta": "AMORTIZAÇÃO DA DÍVIDA",
+      "rotulo": "Padrão",
+      "stage": "dotacao_inicial",
+      "unit": "BRL_reported",
+      "valor": "409134447528.57"
+    },
+    {
+      "cod_conta": "AmortizacaoDaDivida",
+      "coluna": "DOTAÇÃO ATUALIZADA (e)",
+      "conta": "AMORTIZAÇÃO DA DÍVIDA",
+      "rotulo": "Padrão",
+      "stage": "dotacao_atualizada",
+      "unit": "BRL_reported",
+      "valor": "409134447528.57"
+    },
+    {
+      "cod_conta": "AmortizacaoDaDivida",
+      "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+      "conta": "AMORTIZAÇÃO DA DÍVIDA",
+      "rotulo": "Padrão",
+      "stage": "empenhado",
+      "unit": "BRL_reported",
+      "valor": "314856777414.94"
+    },
+    {
+      "cod_conta": "AmortizacaoDaDivida",
+      "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+      "conta": "AMORTIZAÇÃO DA DÍVIDA",
+      "rotulo": "Padrão",
+      "stage": "liquidado",
+      "unit": "BRL_reported",
+      "valor": "274244008198.82"
+    },
+    {
+      "cod_conta": "AmortizacaoDaDivida",
+      "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+      "conta": "AMORTIZAÇÃO DA DÍVIDA",
+      "rotulo": "Padrão",
+      "stage": "pago",
+      "unit": "BRL_reported",
+      "valor": "274244008198.82"
+    },
+    {
+      "cod_conta": "ReservaDeContingencia",
+      "coluna": "DOTAÇÃO INICIAL (d)",
+      "conta": "RESERVA DE CONTINGÊNCIA",
+      "rotulo": "Padrão",
+      "stage": "dotacao_inicial",
+      "unit": "BRL_reported",
+      "valor": "36550305104"
+    },
+    {
+      "cod_conta": "ReservaDeContingencia",
+      "coluna": "DOTAÇÃO ATUALIZADA (e)",
+      "conta": "RESERVA DE CONTINGÊNCIA",
+      "rotulo": "Padrão",
+      "stage": "dotacao_atualizada",
+      "unit": "BRL_reported",
+      "valor": "35394476339"
+    },
+    {
+      "cod_conta": "DespesasIntraOrcamentariasTotal",
+      "coluna": "DOTAÇÃO INICIAL (d)",
+      "conta": "DESPESAS (INTRA-ORÇAMENTÁRIAS) (X)",
+      "rotulo": "Padrão",
+      "stage": "dotacao_inicial",
+      "unit": "BRL_reported",
+      "valor": "54231415539.69"
+    },
+    {
+      "cod_conta": "DespesasIntraOrcamentariasTotal",
+      "coluna": "DOTAÇÃO ATUALIZADA (e)",
+      "conta": "DESPESAS (INTRA-ORÇAMENTÁRIAS) (X)",
+      "rotulo": "Padrão",
+      "stage": "dotacao_atualizada",
+      "unit": "BRL_reported",
+      "valor": "54637821575.69"
+    },
+    {
+      "cod_conta": "DespesasIntraOrcamentariasTotal",
+      "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+      "conta": "DESPESAS (INTRA-ORÇAMENTÁRIAS) (X)",
+      "rotulo": "Padrão",
+      "stage": "empenhado",
+      "unit": "BRL_reported",
+      "valor": "49113256547.25"
+    },
+    {
+      "cod_conta": "DespesasIntraOrcamentariasTotal",
+      "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+      "conta": "DESPESAS (INTRA-ORÇAMENTÁRIAS) (X)",
+      "rotulo": "Padrão",
+      "stage": "liquidado",
+      "unit": "BRL_reported",
+      "valor": "38521956878.41"
+    },
+    {
+      "cod_conta": "DespesasIntraOrcamentariasTotal",
+      "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+      "conta": "DESPESAS (INTRA-ORÇAMENTÁRIAS) (X)",
+      "rotulo": "Padrão",
+      "stage": "pago",
+      "unit": "BRL_reported",
+      "valor": "36900088855.65"
+    },
+    {
+      "cod_conta": "SubtotalDasDespesas",
+      "coluna": "DOTAÇÃO INICIAL (d)",
+      "conta": "SUBTOTAL DAS DESPESAS (XI) = (IX + X)",
+      "rotulo": "Padrão",
+      "stage": "dotacao_inicial",
+      "unit": "BRL_reported",
+      "valor": "4532947780981.57"
+    },
+    {
+      "cod_conta": "SubtotalDasDespesas",
+      "coluna": "DOTAÇÃO ATUALIZADA (e)",
+      "conta": "SUBTOTAL DAS DESPESAS (XI) = (IX + X)",
+      "rotulo": "Padrão",
+      "stage": "dotacao_atualizada",
+      "unit": "BRL_reported",
+      "valor": "4692712457916.57"
+    },
+    {
+      "cod_conta": "SubtotalDasDespesas",
+      "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+      "conta": "SUBTOTAL DAS DESPESAS (XI) = (IX + X)",
+      "rotulo": "Padrão",
+      "stage": "empenhado",
+      "unit": "BRL_reported",
+      "valor": "3714147306973.73"
+    },
+    {
+      "cod_conta": "SubtotalDasDespesas",
+      "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+      "conta": "SUBTOTAL DAS DESPESAS (XI) = (IX + X)",
+      "rotulo": "Padrão",
+      "stage": "liquidado",
+      "unit": "BRL_reported",
+      "valor": "2967046226925.66"
+    },
+    {
+      "cod_conta": "SubtotalDasDespesas",
+      "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+      "conta": "SUBTOTAL DAS DESPESAS (XI) = (IX + X)",
+      "rotulo": "Padrão",
+      "stage": "pago",
+      "unit": "BRL_reported",
+      "valor": "2858865426569.12"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDivida",
+      "coluna": "DOTAÇÃO INICIAL (d)",
+      "conta": "AMORTIZAÇÃO DA DÍVIDA / REFINANCIAMENTO (XII)",
+      "rotulo": "Padrão",
+      "stage": "dotacao_inicial",
+      "unit": "BRL_reported",
+      "valor": "1811376968892.43"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDivida",
+      "coluna": "DOTAÇÃO ATUALIZADA (e)",
+      "conta": "AMORTIZAÇÃO DA DÍVIDA / REFINANCIAMENTO (XII)",
+      "rotulo": "Padrão",
+      "stage": "dotacao_atualizada",
+      "unit": "BRL_reported",
+      "valor": "1811376968892.43"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDivida",
+      "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+      "conta": "AMORTIZAÇÃO DA DÍVIDA / REFINANCIAMENTO (XII)",
+      "rotulo": "Padrão",
+      "stage": "empenhado",
+      "unit": "BRL_reported",
+      "valor": "1329868783261.65"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDivida",
+      "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+      "conta": "AMORTIZAÇÃO DA DÍVIDA / REFINANCIAMENTO (XII)",
+      "rotulo": "Padrão",
+      "stage": "liquidado",
+      "unit": "BRL_reported",
+      "valor": "1141059765822.79"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDivida",
+      "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+      "conta": "AMORTIZAÇÃO DA DÍVIDA / REFINANCIAMENTO (XII)",
+      "rotulo": "Padrão",
+      "stage": "pago",
+      "unit": "BRL_reported",
+      "valor": "1141059765822.79"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDividaInterna",
+      "coluna": "DOTAÇÃO INICIAL (d)",
+      "conta": "Amortização da Dívida Interna",
+      "rotulo": "Padrão",
+      "stage": "dotacao_inicial",
+      "unit": "BRL_reported",
+      "valor": "1772933845294"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDividaInterna",
+      "coluna": "DOTAÇÃO ATUALIZADA (e)",
+      "conta": "Amortização da Dívida Interna",
+      "rotulo": "Padrão",
+      "stage": "dotacao_atualizada",
+      "unit": "BRL_reported",
+      "valor": "1772933845294"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDividaInterna",
+      "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+      "conta": "Amortização da Dívida Interna",
+      "rotulo": "Padrão",
+      "stage": "empenhado",
+      "unit": "BRL_reported",
+      "valor": "1315646732466.29"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDividaInterna",
+      "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+      "conta": "Amortização da Dívida Interna",
+      "rotulo": "Padrão",
+      "stage": "liquidado",
+      "unit": "BRL_reported",
+      "valor": "1126837715028.43"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDividaInterna",
+      "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+      "conta": "Amortização da Dívida Interna",
+      "rotulo": "Padrão",
+      "stage": "pago",
+      "unit": "BRL_reported",
+      "valor": "1126837715028.43"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDividaInternaMobiliaria",
+      "coluna": "DOTAÇÃO INICIAL (d)",
+      "conta": "Dívida Mobiliária",
+      "rotulo": "Padrão",
+      "stage": "dotacao_inicial",
+      "unit": "BRL_reported",
+      "valor": "1731186790554"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDividaInternaMobiliaria",
+      "coluna": "DOTAÇÃO ATUALIZADA (e)",
+      "conta": "Dívida Mobiliária",
+      "rotulo": "Padrão",
+      "stage": "dotacao_atualizada",
+      "unit": "BRL_reported",
+      "valor": "1731186790554"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDividaInternaMobiliaria",
+      "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+      "conta": "Dívida Mobiliária",
+      "rotulo": "Padrão",
+      "stage": "empenhado",
+      "unit": "BRL_reported",
+      "valor": "1311245805454.13"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDividaInternaMobiliaria",
+      "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+      "conta": "Dívida Mobiliária",
+      "rotulo": "Padrão",
+      "stage": "liquidado",
+      "unit": "BRL_reported",
+      "valor": "1124133590416.27"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDividaInternaMobiliaria",
+      "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+      "conta": "Dívida Mobiliária",
+      "rotulo": "Padrão",
+      "stage": "pago",
+      "unit": "BRL_reported",
+      "valor": "1124133590416.27"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDividaInternaContratual",
+      "coluna": "DOTAÇÃO INICIAL (d)",
+      "conta": "Dívida Contratual",
+      "rotulo": "Padrão",
+      "stage": "dotacao_inicial",
+      "unit": "BRL_reported",
+      "valor": "41747054740"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDividaInternaContratual",
+      "coluna": "DOTAÇÃO ATUALIZADA (e)",
+      "conta": "Dívida Contratual",
+      "rotulo": "Padrão",
+      "stage": "dotacao_atualizada",
+      "unit": "BRL_reported",
+      "valor": "41747054740"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDividaInternaContratual",
+      "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+      "conta": "Dívida Contratual",
+      "rotulo": "Padrão",
+      "stage": "empenhado",
+      "unit": "BRL_reported",
+      "valor": "4400927012.16"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDividaInternaContratual",
+      "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+      "conta": "Dívida Contratual",
+      "rotulo": "Padrão",
+      "stage": "liquidado",
+      "unit": "BRL_reported",
+      "valor": "2704124612.16"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDividaInternaContratual",
+      "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+      "conta": "Dívida Contratual",
+      "rotulo": "Padrão",
+      "stage": "pago",
+      "unit": "BRL_reported",
+      "valor": "2704124612.16"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDividaExterna",
+      "coluna": "DOTAÇÃO INICIAL (d)",
+      "conta": "Amortização da Dívida Externa",
+      "rotulo": "Padrão",
+      "stage": "dotacao_inicial",
+      "unit": "BRL_reported",
+      "valor": "38443123598.43"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDividaExterna",
+      "coluna": "DOTAÇÃO ATUALIZADA (e)",
+      "conta": "Amortização da Dívida Externa",
+      "rotulo": "Padrão",
+      "stage": "dotacao_atualizada",
+      "unit": "BRL_reported",
+      "valor": "38443123598.43"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDividaExterna",
+      "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+      "conta": "Amortização da Dívida Externa",
+      "rotulo": "Padrão",
+      "stage": "empenhado",
+      "unit": "BRL_reported",
+      "valor": "14222050795.36"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDividaExterna",
+      "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+      "conta": "Amortização da Dívida Externa",
+      "rotulo": "Padrão",
+      "stage": "liquidado",
+      "unit": "BRL_reported",
+      "valor": "14222050794.36"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDividaExterna",
+      "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+      "conta": "Amortização da Dívida Externa",
+      "rotulo": "Padrão",
+      "stage": "pago",
+      "unit": "BRL_reported",
+      "valor": "14222050794.36"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDividaExternaMobiliaria",
+      "coluna": "DOTAÇÃO INICIAL (d)",
+      "conta": "Dívida Mobiliária",
+      "rotulo": "Padrão",
+      "stage": "dotacao_inicial",
+      "unit": "BRL_reported",
+      "valor": "29139732220"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDividaExternaMobiliaria",
+      "coluna": "DOTAÇÃO ATUALIZADA (e)",
+      "conta": "Dívida Mobiliária",
+      "rotulo": "Padrão",
+      "stage": "dotacao_atualizada",
+      "unit": "BRL_reported",
+      "valor": "29139732220"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDividaExternaMobiliaria",
+      "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+      "conta": "Dívida Mobiliária",
+      "rotulo": "Padrão",
+      "stage": "empenhado",
+      "unit": "BRL_reported",
+      "valor": "11234864813.5"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDividaExternaMobiliaria",
+      "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+      "conta": "Dívida Mobiliária",
+      "rotulo": "Padrão",
+      "stage": "liquidado",
+      "unit": "BRL_reported",
+      "valor": "11234864812.5"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDividaExternaMobiliaria",
+      "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+      "conta": "Dívida Mobiliária",
+      "rotulo": "Padrão",
+      "stage": "pago",
+      "unit": "BRL_reported",
+      "valor": "11234864812.5"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDividaExternaContratual",
+      "coluna": "DOTAÇÃO INICIAL (d)",
+      "conta": "Dívida Contratual",
+      "rotulo": "Padrão",
+      "stage": "dotacao_inicial",
+      "unit": "BRL_reported",
+      "valor": "9303391378.43"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDividaExternaContratual",
+      "coluna": "DOTAÇÃO ATUALIZADA (e)",
+      "conta": "Dívida Contratual",
+      "rotulo": "Padrão",
+      "stage": "dotacao_atualizada",
+      "unit": "BRL_reported",
+      "valor": "9303391378.43"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDividaExternaContratual",
+      "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+      "conta": "Dívida Contratual",
+      "rotulo": "Padrão",
+      "stage": "empenhado",
+      "unit": "BRL_reported",
+      "valor": "2987185981.86"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDividaExternaContratual",
+      "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+      "conta": "Dívida Contratual",
+      "rotulo": "Padrão",
+      "stage": "liquidado",
+      "unit": "BRL_reported",
+      "valor": "2987185981.86"
+    },
+    {
+      "cod_conta": "AmortizacaoRefinanciamentoDaDividaExternaContratual",
+      "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+      "conta": "Dívida Contratual",
+      "rotulo": "Padrão",
+      "stage": "pago",
+      "unit": "BRL_reported",
+      "valor": "2987185981.86"
+    },
+    {
+      "cod_conta": "TotalDespesas",
+      "coluna": "DOTAÇÃO INICIAL (d)",
+      "conta": "TOTAL DAS DESPESAS (XIII) = (XI + XII)",
+      "rotulo": "Padrão",
+      "stage": "dotacao_inicial",
+      "unit": "BRL_reported",
+      "valor": "6344324749874"
+    },
+    {
+      "cod_conta": "TotalDespesas",
+      "coluna": "DOTAÇÃO ATUALIZADA (e)",
+      "conta": "TOTAL DAS DESPESAS (XIII) = (XI + XII)",
+      "rotulo": "Padrão",
+      "stage": "dotacao_atualizada",
+      "unit": "BRL_reported",
+      "valor": "6504089426809"
+    },
+    {
+      "cod_conta": "TotalDespesas",
+      "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+      "conta": "TOTAL DAS DESPESAS (XIII) = (XI + XII)",
+      "rotulo": "Padrão",
+      "stage": "empenhado",
+      "unit": "BRL_reported",
+      "valor": "5044016090235.38"
+    },
+    {
+      "cod_conta": "TotalDespesas",
+      "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+      "conta": "TOTAL DAS DESPESAS (XIII) = (XI + XII)",
+      "rotulo": "Padrão",
+      "stage": "liquidado",
+      "unit": "BRL_reported",
+      "valor": "4108105992748.45"
+    },
+    {
+      "cod_conta": "TotalDespesas",
+      "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+      "conta": "TOTAL DAS DESPESAS (XIII) = (XI + XII)",
+      "rotulo": "Padrão",
+      "stage": "pago",
+      "unit": "BRL_reported",
+      "valor": "3999925192391.91"
+    },
+    {
+      "cod_conta": "TotalDespesasComSuperavit",
+      "coluna": "DOTAÇÃO INICIAL (d)",
+      "conta": "TOTAL COM SUPERÁVIT (XV) = (XIII + XIV)",
+      "rotulo": "Padrão",
+      "stage": "dotacao_inicial",
+      "unit": "BRL_reported",
+      "valor": "6344324749874"
+    },
+    {
+      "cod_conta": "TotalDespesasComSuperavit",
+      "coluna": "DOTAÇÃO ATUALIZADA (e)",
+      "conta": "TOTAL COM SUPERÁVIT (XV) = (XIII + XIV)",
+      "rotulo": "Padrão",
+      "stage": "dotacao_atualizada",
+      "unit": "BRL_reported",
+      "valor": "6504089426809"
+    },
+    {
+      "cod_conta": "TotalDespesasComSuperavit",
+      "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+      "conta": "TOTAL COM SUPERÁVIT (XV) = (XIII + XIV)",
+      "rotulo": "Padrão",
+      "stage": "empenhado",
+      "unit": "BRL_reported",
+      "valor": "5044016090235.38"
+    },
+    {
+      "cod_conta": "TotalDespesasComSuperavit",
+      "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+      "conta": "TOTAL COM SUPERÁVIT (XV) = (XIII + XIV)",
+      "rotulo": "Padrão",
+      "stage": "liquidado",
+      "unit": "BRL_reported",
+      "valor": "4108105992748.45"
+    },
+    {
+      "cod_conta": "TotalDespesasComSuperavit",
+      "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+      "conta": "TOTAL COM SUPERÁVIT (XV) = (XIII + XIV)",
+      "rotulo": "Padrão",
+      "stage": "pago",
+      "unit": "BRL_reported",
+      "valor": "3999925192391.91"
+    },
+    {
+      "cod_conta": "DespesasIntraOrcamentarias",
+      "coluna": "DOTAÇÃO INICIAL (d)",
+      "conta": "DESPESAS (INTRA-ORÇAMENTÁRIAS) (X)",
+      "rotulo": "Padrão",
+      "stage": "dotacao_inicial",
+      "unit": "BRL_reported",
+      "valor": "54231415539.69"
+    },
+    {
+      "cod_conta": "DespesasIntraOrcamentarias",
+      "coluna": "DOTAÇÃO ATUALIZADA (e)",
+      "conta": "DESPESAS (INTRA-ORÇAMENTÁRIAS) (X)",
+      "rotulo": "Padrão",
+      "stage": "dotacao_atualizada",
+      "unit": "BRL_reported",
+      "valor": "54637821575.69"
+    },
+    {
+      "cod_conta": "DespesasIntraOrcamentarias",
+      "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+      "conta": "DESPESAS (INTRA-ORÇAMENTÁRIAS) (X)",
+      "rotulo": "Padrão",
+      "stage": "empenhado",
+      "unit": "BRL_reported",
+      "valor": "49113256547.25"
+    },
+    {
+      "cod_conta": "DespesasIntraOrcamentarias",
+      "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+      "conta": "DESPESAS (INTRA-ORÇAMENTÁRIAS) (X)",
+      "rotulo": "Padrão",
+      "stage": "liquidado",
+      "unit": "BRL_reported",
+      "valor": "38521956878.41"
+    },
+    {
+      "cod_conta": "DespesasIntraOrcamentarias",
+      "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+      "conta": "DESPESAS (INTRA-ORÇAMENTÁRIAS) (X)",
+      "rotulo": "Padrão",
+      "stage": "pago",
+      "unit": "BRL_reported",
+      "valor": "36900088855.65"
+    },
+    {
+      "cod_conta": "DespesasCorrentesIntra",
+      "coluna": "DOTAÇÃO INICIAL (d)",
+      "conta": "DESPESAS CORRENTES",
+      "rotulo": "Padrão",
+      "stage": "dotacao_inicial",
+      "unit": "BRL_reported",
+      "valor": "36315738605.58"
+    },
+    {
+      "cod_conta": "DespesasCorrentesIntra",
+      "coluna": "DOTAÇÃO ATUALIZADA (e)",
+      "conta": "DESPESAS CORRENTES",
+      "rotulo": "Padrão",
+      "stage": "dotacao_atualizada",
+      "unit": "BRL_reported",
+      "valor": "36719428017.58"
+    },
+    {
+      "cod_conta": "DespesasCorrentesIntra",
+      "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+      "conta": "DESPESAS CORRENTES",
+      "rotulo": "Padrão",
+      "stage": "empenhado",
+      "unit": "BRL_reported",
+      "valor": "31210303596.87"
+    },
+    {
+      "cod_conta": "DespesasCorrentesIntra",
+      "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+      "conta": "DESPESAS CORRENTES",
+      "rotulo": "Padrão",
+      "stage": "liquidado",
+      "unit": "BRL_reported",
+      "valor": "20665214061.07"
+    },
+    {
+      "cod_conta": "DespesasCorrentesIntra",
+      "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+      "conta": "DESPESAS CORRENTES",
+      "rotulo": "Padrão",
+      "stage": "pago",
+      "unit": "BRL_reported",
+      "valor": "19043346444.3"
+    },
+    {
+      "cod_conta": "PessoalEEncargosSociaisIntra",
+      "coluna": "DOTAÇÃO INICIAL (d)",
+      "conta": "PESSOAL E ENCARGOS SOCIAIS",
+      "rotulo": "Padrão",
+      "stage": "dotacao_inicial",
+      "unit": "BRL_reported",
+      "valor": "34971921382.25"
+    },
+    {
+      "cod_conta": "PessoalEEncargosSociaisIntra",
+      "coluna": "DOTAÇÃO ATUALIZADA (e)",
+      "conta": "PESSOAL E ENCARGOS SOCIAIS",
+      "rotulo": "Padrão",
+      "stage": "dotacao_atualizada",
+      "unit": "BRL_reported",
+      "valor": "35356387158.25"
+    },
+    {
+      "cod_conta": "PessoalEEncargosSociaisIntra",
+      "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+      "conta": "PESSOAL E ENCARGOS SOCIAIS",
+      "rotulo": "Padrão",
+      "stage": "empenhado",
+      "unit": "BRL_reported",
+      "valor": "30148803560.97"
+    },
+    {
+      "cod_conta": "PessoalEEncargosSociaisIntra",
+      "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+      "conta": "PESSOAL E ENCARGOS SOCIAIS",
+      "rotulo": "Padrão",
+      "stage": "liquidado",
+      "unit": "BRL_reported",
+      "valor": "19814703223.78"
+    },
+    {
+      "cod_conta": "PessoalEEncargosSociaisIntra",
+      "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+      "conta": "PESSOAL E ENCARGOS SOCIAIS",
+      "rotulo": "Padrão",
+      "stage": "pago",
+      "unit": "BRL_reported",
+      "valor": "18223508957.87"
+    },
+    {
+      "cod_conta": "OutrasDespesasCorrentesIntra",
+      "coluna": "DOTAÇÃO INICIAL (d)",
+      "conta": "OUTRAS DESPESAS CORRENTES",
+      "rotulo": "Padrão",
+      "stage": "dotacao_inicial",
+      "unit": "BRL_reported",
+      "valor": "1343817223.33"
+    },
+    {
+      "cod_conta": "OutrasDespesasCorrentesIntra",
+      "coluna": "DOTAÇÃO ATUALIZADA (e)",
+      "conta": "OUTRAS DESPESAS CORRENTES",
+      "rotulo": "Padrão",
+      "stage": "dotacao_atualizada",
+      "unit": "BRL_reported",
+      "valor": "1363040859.33"
+    },
+    {
+      "cod_conta": "OutrasDespesasCorrentesIntra",
+      "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+      "conta": "OUTRAS DESPESAS CORRENTES",
+      "rotulo": "Padrão",
+      "stage": "empenhado",
+      "unit": "BRL_reported",
+      "valor": "1061500035.9"
+    },
+    {
+      "cod_conta": "OutrasDespesasCorrentesIntra",
+      "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+      "conta": "OUTRAS DESPESAS CORRENTES",
+      "rotulo": "Padrão",
+      "stage": "liquidado",
+      "unit": "BRL_reported",
+      "valor": "850510837.29"
+    },
+    {
+      "cod_conta": "OutrasDespesasCorrentesIntra",
+      "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+      "conta": "OUTRAS DESPESAS CORRENTES",
+      "rotulo": "Padrão",
+      "stage": "pago",
+      "unit": "BRL_reported",
+      "valor": "819837486.43"
+    },
+    {
+      "cod_conta": "DespesasDeCapitalIntra",
+      "coluna": "DOTAÇÃO INICIAL (d)",
+      "conta": "DESPESAS DE CAPITAL",
+      "rotulo": "Padrão",
+      "stage": "dotacao_inicial",
+      "unit": "BRL_reported",
+      "valor": "17915676934.11"
+    },
+    {
+      "cod_conta": "DespesasDeCapitalIntra",
+      "coluna": "DOTAÇÃO ATUALIZADA (e)",
+      "conta": "DESPESAS DE CAPITAL",
+      "rotulo": "Padrão",
+      "stage": "dotacao_atualizada",
+      "unit": "BRL_reported",
+      "valor": "17918393558.11"
+    },
+    {
+      "cod_conta": "DespesasDeCapitalIntra",
+      "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+      "conta": "DESPESAS DE CAPITAL",
+      "rotulo": "Padrão",
+      "stage": "empenhado",
+      "unit": "BRL_reported",
+      "valor": "17902952950.38"
+    },
+    {
+      "cod_conta": "DespesasDeCapitalIntra",
+      "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+      "conta": "DESPESAS DE CAPITAL",
+      "rotulo": "Padrão",
+      "stage": "liquidado",
+      "unit": "BRL_reported",
+      "valor": "17856742817.34"
+    },
+    {
+      "cod_conta": "DespesasDeCapitalIntra",
+      "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+      "conta": "DESPESAS DE CAPITAL",
+      "rotulo": "Padrão",
+      "stage": "pago",
+      "unit": "BRL_reported",
+      "valor": "17856742411.35"
+    },
+    {
+      "cod_conta": "InvestimentosIntra",
+      "coluna": "DOTAÇÃO INICIAL (d)",
+      "conta": "INVESTIMENTOS",
+      "rotulo": "Padrão",
+      "stage": "dotacao_inicial",
+      "unit": "BRL_reported",
+      "valor": "4140403.42"
+    },
+    {
+      "cod_conta": "InvestimentosIntra",
+      "coluna": "DOTAÇÃO ATUALIZADA (e)",
+      "conta": "INVESTIMENTOS",
+      "rotulo": "Padrão",
+      "stage": "dotacao_atualizada",
+      "unit": "BRL_reported",
+      "valor": "6857027.42"
+    },
+    {
+      "cod_conta": "InvestimentosIntra",
+      "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+      "conta": "INVESTIMENTOS",
+      "rotulo": "Padrão",
+      "stage": "empenhado",
+      "unit": "BRL_reported",
+      "valor": "4058363.29"
+    },
+    {
+      "cod_conta": "InvestimentosIntra",
+      "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+      "conta": "INVESTIMENTOS",
+      "rotulo": "Padrão",
+      "stage": "liquidado",
+      "unit": "BRL_reported",
+      "valor": "805356.11"
+    },
+    {
+      "cod_conta": "InvestimentosIntra",
+      "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+      "conta": "INVESTIMENTOS",
+      "rotulo": "Padrão",
+      "stage": "pago",
+      "unit": "BRL_reported",
+      "valor": "804950.12"
+    },
+    {
+      "cod_conta": "InversoesFinanceirasIntra",
+      "coluna": "DOTAÇÃO INICIAL (d)",
+      "conta": "INVERSÕES FINANCEIRAS",
+      "rotulo": "Padrão",
+      "stage": "dotacao_inicial",
+      "unit": "BRL_reported",
+      "valor": "17911536530.69"
+    },
+    {
+      "cod_conta": "InversoesFinanceirasIntra",
+      "coluna": "DOTAÇÃO ATUALIZADA (e)",
+      "conta": "INVERSÕES FINANCEIRAS",
+      "rotulo": "Padrão",
+      "stage": "dotacao_atualizada",
+      "unit": "BRL_reported",
+      "valor": "17911536530.69"
+    },
+    {
+      "cod_conta": "InversoesFinanceirasIntra",
+      "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+      "conta": "INVERSÕES FINANCEIRAS",
+      "rotulo": "Padrão",
+      "stage": "empenhado",
+      "unit": "BRL_reported",
+      "valor": "17898894587.09"
+    },
+    {
+      "cod_conta": "InversoesFinanceirasIntra",
+      "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+      "conta": "INVERSÕES FINANCEIRAS",
+      "rotulo": "Padrão",
+      "stage": "liquidado",
+      "unit": "BRL_reported",
+      "valor": "17855937461.23"
+    },
+    {
+      "cod_conta": "InversoesFinanceirasIntra",
+      "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+      "conta": "INVERSÕES FINANCEIRAS",
+      "rotulo": "Padrão",
+      "stage": "pago",
+      "unit": "BRL_reported",
+      "valor": "17855937461.23"
+    }
   ],
-  "observed_columns": [
+  "columns": [
     "% (b/a)",
     "% (c/a)",
     "Até o Bimestre (c)",
@@ -28,22 +1387,14 @@
     "SALDO (g) = (e-f)",
     "SALDO (i) = (e-h)"
   ],
-  "observed_fields": [
-    "anexo",
-    "cod_conta",
-    "cod_ibge",
-    "coluna",
-    "conta",
-    "demonstrativo",
-    "esfera",
-    "exercicio",
-    "instituicao",
-    "periodicidade",
-    "periodo",
-    "populacao",
-    "rotulo",
-    "uf",
-    "valor"
+  "entity": "União",
+  "generated_at": "2026-11-14T17:41:26.989890-03:00",
+  "limitations": [
+    "Reported cells, not independent proof of spending or outcomes",
+    "No summation of overlapping totals, accounts, subtotals or intra-budget flows",
+    "Restos a pagar are not automatically included",
+    "A missing cell is not zero",
+    "No cross-period comparison"
   ],
   "period_end": "2026-08-31",
   "publication_authorized": false,
@@ -55,6 +1406,15 @@
     "no_anexo": "RREO-Anexo 01",
     "nr_periodo": 4
   },
+  "response_sha256": "e17522e1900a5584643d045b522974e34db3d98d09a35753d090f1369ea1d033",
+  "row_count": 834,
   "source_url": "https://apidatalake.tesouro.gov.br/ords/cdwhprd/siconfi/tt/rreo",
-  "status": "unavailable"
+  "stages": [
+    "dotacao_atualizada",
+    "dotacao_inicial",
+    "empenhado",
+    "liquidado",
+    "pago"
+  ],
+  "status": "ok"
 }
