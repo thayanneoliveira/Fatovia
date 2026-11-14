@@ -1,22 +1,78 @@
 {
-  "generated_at": "2026-11-14T17:46:39.732696-03:00",
+  "generated_at": "2026-11-14T17:49:14.187161-03:00",
   "limitations": "Independent rule-based check of the official source, approved template and bytes; not general factual or semantic review.",
-  "policy": "documentary-template-v2-claims",
+  "policy": "documentary-template-v3-hooks",
   "reviews": [
     {
       "card_sha256": [
-        "f8008b07f0e3724e2540e7884be8d1b08bb9e65b105f9157be50ff7a47e069b4",
-        "7f196c0557a25fc069b0b91e5e8adb8b018aae31ef7b57e8ef5dfd882f9fb865",
-        "d9614c8c302e974c53b754f2ce861ace88d29233ea0930e080373542239ab195",
-        "4dce5161b421578cd8d3dc03220ebaf64d989681733e23f768125f885255a9c9",
-        "c4b582fde9ed590db4b003f16928e34743b20911724ea738f41087e2d86a2835",
-        "554d09d19e11882edb6e5ef86868a4d4905301467860ab8cd73e85c0c889d3ce",
-        "d9e6dc9ab43ffd4e7a2943f9d70452b3782700e2ea6f4204e7b4c0a1f28ef73a"
+        "0084eedae2609ec7634cfe307686baab22f00e8b823c2f7938551230b8f28578",
+        "9076e23a47ecf16d8ccf3a3f2dbae7bd67d200fa8123c0a76d2fd4927562512b",
+        "2afb755f1a9d6024897f9a5b36251423ea927815229ac6a82b56d4c5ca2374e0",
+        "9a064a1c334d73ae9f28699a53bc50ec32ffb3e2536d213d356bb1678a14fcc1",
+        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
+        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
+        "5986102ec7d412b1fc5c73405d66e7d060f78c656113759cca55f738399a8cba"
       ],
-      "checked_at": "2026-11-14T17:46:39.732696-03:00",
+      "checked_at": "2026-11-14T17:49:14.187161-03:00",
       "claim_matrix": {
         "document_id": "camara:2653819",
         "entries": [
+          {
+            "evidence": {
+              "end": 218,
+              "excerpt": "médicos residentes",
+              "field": "summary",
+              "field_sha256": "48e796d9b3751b61ed605ce08137b73925418229cace7b9e3ffb55d3b9907be2",
+              "start": 200,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819"
+            },
+            "limitation": "Pergunta controlada, não demonstra efeito ou aprovação.",
+            "location": "card_01",
+            "text": "O que pode mudar para médicos residentes?",
+            "type": "controlled_question_anchor"
+          },
+          {
+            "evidence": {
+              "end": 218,
+              "excerpt": "médicos residentes",
+              "field": "summary",
+              "field_sha256": "48e796d9b3751b61ed605ce08137b73925418229cace7b9e3ffb55d3b9907be2",
+              "start": 200,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819"
+            },
+            "limitation": "Pergunta controlada, não demonstra efeito ou aprovação.",
+            "location": "caption",
+            "text": "O que pode mudar para médicos residentes?",
+            "type": "controlled_question_anchor"
+          },
+          {
+            "evidence": {
+              "end": 258,
+              "excerpt": "reajustes periódicos da bolsa",
+              "field": "summary",
+              "field_sha256": "48e796d9b3751b61ed605ce08137b73925418229cace7b9e3ffb55d3b9907be2",
+              "start": 229,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819"
+            },
+            "limitation": "Pergunta controlada, não demonstra efeito ou aprovação.",
+            "location": "card_01",
+            "text": "O que pode mudar para médicos residentes?",
+            "type": "controlled_question_anchor"
+          },
+          {
+            "evidence": {
+              "end": 258,
+              "excerpt": "reajustes periódicos da bolsa",
+              "field": "summary",
+              "field_sha256": "48e796d9b3751b61ed605ce08137b73925418229cace7b9e3ffb55d3b9907be2",
+              "start": 229,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819"
+            },
+            "limitation": "Pergunta controlada, não demonstra efeito ou aprovação.",
+            "location": "caption",
+            "text": "O que pode mudar para médicos residentes?",
+            "type": "controlled_question_anchor"
+          },
           {
             "evidence": {
               "end": 12,
@@ -145,7 +201,7 @@
           }
         ],
         "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
-        "policy": "documentary-claims-v1",
+        "policy": "documentary-claims-v2-hooks",
         "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819",
         "unverified_dimensions": [
           "legal_effect",
@@ -156,28 +212,84 @@
         ],
         "version": "aec4919b2cc642"
       },
-      "claim_matrix_sha256": "a2f9173c349bb0c07b8184d3de29aa04c3d0d0f244df3fe6e459ddaa7d0d309d",
-      "content_sha256": "b9dba7506afe03b4ff21e515de292746b74642574eda58d02bca72e425c0a9fe",
+      "claim_matrix_sha256": "dc19ae0b107e5d4c4bb2554052eaee7bf931222de969a76f0362f0c0dca573dc",
+      "content_sha256": "4aee37391f7554cad404a1b87cac684ff1826e0cd6e87395e5a9823c0edb301e",
       "decision": "approved_documentary_only",
       "id": "camara:2653819",
       "issues": [],
-      "policy": "documentary-template-v2-claims",
+      "policy": "documentary-template-v3-hooks",
       "version": "aec4919b2cc642"
     },
     {
       "card_sha256": [
-        "298f1bb70414f1c92ff5fb0e0590e1a64b9c8e4e19227f821e4268702fc443ef",
-        "d7d0c4e96661e2636aa378394b62b93f4db74cc57165c308645a9f83e790f649",
-        "10df9eb48c3e3f630302e9dc0c48008a6de8a52d338d1c27c4dfb0b15b5672fe",
-        "4dce5161b421578cd8d3dc03220ebaf64d989681733e23f768125f885255a9c9",
-        "c4b582fde9ed590db4b003f16928e34743b20911724ea738f41087e2d86a2835",
-        "554d09d19e11882edb6e5ef86868a4d4905301467860ab8cd73e85c0c889d3ce",
-        "3219dfb831edb51ff1479b12dda7064b5af4e37b4b3003e94fe0c09ece99d9dd"
+        "b65539d8964d596b5a9895f91609bff166652c2395b3b7a5d0cebe2965cc2d1c",
+        "b23b4331d58926a2400aa6998b653e1f9cd85a33f5a7e4e54862f72db9e872dc",
+        "50fc02cfd1d06be78856d1d7dc75f61c0346bcbdeeeff316b42bc4e81aa7c58f",
+        "9a064a1c334d73ae9f28699a53bc50ec32ffb3e2536d213d356bb1678a14fcc1",
+        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
+        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
+        "8ad9941fb6c45b228ba1e584c83533b4bf5a117092948335eb182c2a68cb5d35"
       ],
-      "checked_at": "2026-11-14T17:46:39.732696-03:00",
+      "checked_at": "2026-11-14T17:49:14.187161-03:00",
       "claim_matrix": {
         "document_id": "camara:2653948",
         "entries": [
+          {
+            "evidence": {
+              "end": 139,
+              "excerpt": "responsabilização disciplinar de atletas",
+              "field": "summary",
+              "field_sha256": "3e870b3937862052275537577e200fffdcc88069d37c71ad6b0b5c0fa33c83a0",
+              "start": 99,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653948"
+            },
+            "limitation": "Pergunta controlada, não demonstra efeito ou aprovação.",
+            "location": "card_01",
+            "text": "Atletas e violência contra a mulher: o que propõe o PL?",
+            "type": "controlled_question_anchor"
+          },
+          {
+            "evidence": {
+              "end": 139,
+              "excerpt": "responsabilização disciplinar de atletas",
+              "field": "summary",
+              "field_sha256": "3e870b3937862052275537577e200fffdcc88069d37c71ad6b0b5c0fa33c83a0",
+              "start": 99,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653948"
+            },
+            "limitation": "Pergunta controlada, não demonstra efeito ou aprovação.",
+            "location": "caption",
+            "text": "Atletas e violência contra a mulher: o que propõe o PL?",
+            "type": "controlled_question_anchor"
+          },
+          {
+            "evidence": {
+              "end": 181,
+              "excerpt": "violência contra a mulher",
+              "field": "summary",
+              "field_sha256": "3e870b3937862052275537577e200fffdcc88069d37c71ad6b0b5c0fa33c83a0",
+              "start": 156,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653948"
+            },
+            "limitation": "Pergunta controlada, não demonstra efeito ou aprovação.",
+            "location": "card_01",
+            "text": "Atletas e violência contra a mulher: o que propõe o PL?",
+            "type": "controlled_question_anchor"
+          },
+          {
+            "evidence": {
+              "end": 181,
+              "excerpt": "violência contra a mulher",
+              "field": "summary",
+              "field_sha256": "3e870b3937862052275537577e200fffdcc88069d37c71ad6b0b5c0fa33c83a0",
+              "start": 156,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653948"
+            },
+            "limitation": "Pergunta controlada, não demonstra efeito ou aprovação.",
+            "location": "caption",
+            "text": "Atletas e violência contra a mulher: o que propõe o PL?",
+            "type": "controlled_question_anchor"
+          },
           {
             "evidence": {
               "end": 12,
@@ -210,7 +322,7 @@
             "evidence": null,
             "limitation": "Não acrescenta fatos externos.",
             "location": "card_03",
-            "text": "A ementa termina no card anterior. Consulte a íntegra no site oficial.",
+            "text": "A ementa resume o tema. Para conhecer condições, exceções e detalhes, consulte o texto integral.",
             "type": "template_explanation"
           },
           {
@@ -299,7 +411,7 @@
           }
         ],
         "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
-        "policy": "documentary-claims-v1",
+        "policy": "documentary-claims-v2-hooks",
         "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653948",
         "unverified_dimensions": [
           "legal_effect",
@@ -310,28 +422,84 @@
         ],
         "version": "78147b54c05128"
       },
-      "claim_matrix_sha256": "e8d83bf602f32f9c0ba164ffb7861036e26e87d1362af3c207524f9ea43f72b9",
-      "content_sha256": "a4a5a16ad05feb75f85adaa68c953a238ca0ccf03ee4be0d452eb837160a34ee",
+      "claim_matrix_sha256": "7ccd2447aca4f621155da34caf8061088569f3ea8d7d02846d7bce396a8fa6cb",
+      "content_sha256": "0c26732b3bd69663e4ade4e65152217bde105b366b28badb3469ec30169b55a5",
       "decision": "approved_documentary_only",
       "id": "camara:2653948",
       "issues": [],
-      "policy": "documentary-template-v2-claims",
+      "policy": "documentary-template-v3-hooks",
       "version": "78147b54c05128"
     },
     {
       "card_sha256": [
-        "6745b8292e5229cf9207c976818d0cf9d5c5454a414fb7d5769a1fe4bf2022a0",
-        "c5a9cade4e37dc69569ea3b425cd342be4c6e5c01602d99a5f83ca1176dbeacd",
-        "10df9eb48c3e3f630302e9dc0c48008a6de8a52d338d1c27c4dfb0b15b5672fe",
-        "4dce5161b421578cd8d3dc03220ebaf64d989681733e23f768125f885255a9c9",
-        "c4b582fde9ed590db4b003f16928e34743b20911724ea738f41087e2d86a2835",
-        "554d09d19e11882edb6e5ef86868a4d4905301467860ab8cd73e85c0c889d3ce",
-        "f8e5276a8dc86a1effd8a3e363048105e01f12d6024e957c1b1258958c3fc660"
+        "e20c22a5a3b316b59ee1241291b71843c47ba15ee9861aa27f893ff7c4761c47",
+        "f707aeed74eb0db643df53d3198296793c503db7d547a44fec96869a833dcc2b",
+        "50fc02cfd1d06be78856d1d7dc75f61c0346bcbdeeeff316b42bc4e81aa7c58f",
+        "9a064a1c334d73ae9f28699a53bc50ec32ffb3e2536d213d356bb1678a14fcc1",
+        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
+        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
+        "c0429285fec564179edc9741576d63f698d6c74636510137ca1f7e50df953c2d"
       ],
-      "checked_at": "2026-11-14T17:46:39.732696-03:00",
+      "checked_at": "2026-11-14T17:49:14.187161-03:00",
       "claim_matrix": {
         "document_id": "camara:2653813",
         "entries": [
+          {
+            "evidence": {
+              "end": 159,
+              "excerpt": "fogos de artifício",
+              "field": "summary",
+              "field_sha256": "423860d3e5387ec1fe1ca28ca78eabdb01a9c5d8cc9e9b9caedc5a1b3a639b6d",
+              "start": 141,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653813"
+            },
+            "limitation": "Pergunta controlada, não demonstra efeito ou aprovação.",
+            "location": "card_01",
+            "text": "O que o projeto propõe sobre fogos com estampido?",
+            "type": "controlled_question_anchor"
+          },
+          {
+            "evidence": {
+              "end": 159,
+              "excerpt": "fogos de artifício",
+              "field": "summary",
+              "field_sha256": "423860d3e5387ec1fe1ca28ca78eabdb01a9c5d8cc9e9b9caedc5a1b3a639b6d",
+              "start": 141,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653813"
+            },
+            "limitation": "Pergunta controlada, não demonstra efeito ou aprovação.",
+            "location": "caption",
+            "text": "O que o projeto propõe sobre fogos com estampido?",
+            "type": "controlled_question_anchor"
+          },
+          {
+            "evidence": {
+              "end": 208,
+              "excerpt": "estampidos",
+              "field": "summary",
+              "field_sha256": "423860d3e5387ec1fe1ca28ca78eabdb01a9c5d8cc9e9b9caedc5a1b3a639b6d",
+              "start": 198,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653813"
+            },
+            "limitation": "Pergunta controlada, não demonstra efeito ou aprovação.",
+            "location": "card_01",
+            "text": "O que o projeto propõe sobre fogos com estampido?",
+            "type": "controlled_question_anchor"
+          },
+          {
+            "evidence": {
+              "end": 208,
+              "excerpt": "estampidos",
+              "field": "summary",
+              "field_sha256": "423860d3e5387ec1fe1ca28ca78eabdb01a9c5d8cc9e9b9caedc5a1b3a639b6d",
+              "start": 198,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653813"
+            },
+            "limitation": "Pergunta controlada, não demonstra efeito ou aprovação.",
+            "location": "caption",
+            "text": "O que o projeto propõe sobre fogos com estampido?",
+            "type": "controlled_question_anchor"
+          },
           {
             "evidence": {
               "end": 12,
@@ -364,7 +532,7 @@
             "evidence": null,
             "limitation": "Não acrescenta fatos externos.",
             "location": "card_03",
-            "text": "A ementa termina no card anterior. Consulte a íntegra no site oficial.",
+            "text": "A ementa resume o tema. Para conhecer condições, exceções e detalhes, consulte o texto integral.",
             "type": "template_explanation"
           },
           {
@@ -453,7 +621,7 @@
           }
         ],
         "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
-        "policy": "documentary-claims-v1",
+        "policy": "documentary-claims-v2-hooks",
         "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653813",
         "unverified_dimensions": [
           "legal_effect",
@@ -464,28 +632,84 @@
         ],
         "version": "af7aa01437443c"
       },
-      "claim_matrix_sha256": "eadef8a92cf96e769ebf623eca7fcb8dd7d9eff6589ea57334c0c694fdeeeb74",
-      "content_sha256": "688dd5abd930b8bb27bdeac6b39cf66fe2a81a24f831fcab8be1d1acf4a5e334",
+      "claim_matrix_sha256": "b88977e7ae8cf014b4d61f9d810a35e9d31694cfa2e0e7da51e5f22ad6556e1f",
+      "content_sha256": "2a6a285619ab375545006339c91c4c2a4ccd88f9e75978f465e084a546eb3e61",
       "decision": "approved_documentary_only",
       "id": "camara:2653813",
       "issues": [],
-      "policy": "documentary-template-v2-claims",
+      "policy": "documentary-template-v3-hooks",
       "version": "af7aa01437443c"
     },
     {
       "card_sha256": [
-        "7c78fffb4ac8d352dffb98f4c6689193ed8ae4958b8ee0917464980f04982434",
-        "6792dc570a9b73e3d407a357263761de68c420307253ede984fd7049fb62de8e",
-        "10df9eb48c3e3f630302e9dc0c48008a6de8a52d338d1c27c4dfb0b15b5672fe",
-        "4dce5161b421578cd8d3dc03220ebaf64d989681733e23f768125f885255a9c9",
-        "c4b582fde9ed590db4b003f16928e34743b20911724ea738f41087e2d86a2835",
-        "554d09d19e11882edb6e5ef86868a4d4905301467860ab8cd73e85c0c889d3ce",
-        "b2b1bdc067c57f24c12b084c7c0610cc990acbc870e978f8cf690d0700b78756"
+        "2e0ac595e92cad95630dcf6bf0a0604e5f5f5376e1324417ef22daa435713883",
+        "ce27fce3b2875ba61265d181e4e99ae1a9097e0c3fa23d3f5cfb3b54d237631c",
+        "50fc02cfd1d06be78856d1d7dc75f61c0346bcbdeeeff316b42bc4e81aa7c58f",
+        "9a064a1c334d73ae9f28699a53bc50ec32ffb3e2536d213d356bb1678a14fcc1",
+        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
+        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
+        "7313d4f3e2c7a5a225f440b8b43c33c4893c1105edc9d90a88f70ff40d4a7e17"
       ],
-      "checked_at": "2026-11-14T17:46:39.732696-03:00",
+      "checked_at": "2026-11-14T17:49:14.187161-03:00",
       "claim_matrix": {
         "document_id": "camara:2653937",
         "entries": [
+          {
+            "evidence": {
+              "end": 104,
+              "excerpt": "serviços médico-veterinários",
+              "field": "summary",
+              "field_sha256": "fa4b54a0c7c7abc2cd3a0f8b1dcb904f9a79ee83c4d93717e28f14858d79b232",
+              "start": 76,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653937"
+            },
+            "limitation": "Pergunta controlada, não demonstra efeito ou aprovação.",
+            "location": "card_01",
+            "text": "O que a proposta prevê para tributos de serviços veterinários?",
+            "type": "controlled_question_anchor"
+          },
+          {
+            "evidence": {
+              "end": 104,
+              "excerpt": "serviços médico-veterinários",
+              "field": "summary",
+              "field_sha256": "fa4b54a0c7c7abc2cd3a0f8b1dcb904f9a79ee83c4d93717e28f14858d79b232",
+              "start": 76,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653937"
+            },
+            "limitation": "Pergunta controlada, não demonstra efeito ou aprovação.",
+            "location": "caption",
+            "text": "O que a proposta prevê para tributos de serviços veterinários?",
+            "type": "controlled_question_anchor"
+          },
+          {
+            "evidence": {
+              "end": 122,
+              "excerpt": "redução de 60%",
+              "field": "summary",
+              "field_sha256": "fa4b54a0c7c7abc2cd3a0f8b1dcb904f9a79ee83c4d93717e28f14858d79b232",
+              "start": 108,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653937"
+            },
+            "limitation": "Pergunta controlada, não demonstra efeito ou aprovação.",
+            "location": "card_01",
+            "text": "O que a proposta prevê para tributos de serviços veterinários?",
+            "type": "controlled_question_anchor"
+          },
+          {
+            "evidence": {
+              "end": 122,
+              "excerpt": "redução de 60%",
+              "field": "summary",
+              "field_sha256": "fa4b54a0c7c7abc2cd3a0f8b1dcb904f9a79ee83c4d93717e28f14858d79b232",
+              "start": 108,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653937"
+            },
+            "limitation": "Pergunta controlada, não demonstra efeito ou aprovação.",
+            "location": "caption",
+            "text": "O que a proposta prevê para tributos de serviços veterinários?",
+            "type": "controlled_question_anchor"
+          },
           {
             "evidence": {
               "end": 12,
@@ -518,7 +742,7 @@
             "evidence": null,
             "limitation": "Não acrescenta fatos externos.",
             "location": "card_03",
-            "text": "A ementa termina no card anterior. Consulte a íntegra no site oficial.",
+            "text": "A ementa resume o tema. Para conhecer condições, exceções e detalhes, consulte o texto integral.",
             "type": "template_explanation"
           },
           {
@@ -607,7 +831,7 @@
           }
         ],
         "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
-        "policy": "documentary-claims-v1",
+        "policy": "documentary-claims-v2-hooks",
         "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653937",
         "unverified_dimensions": [
           "legal_effect",
@@ -618,28 +842,84 @@
         ],
         "version": "da05fb78307294"
       },
-      "claim_matrix_sha256": "38cca549b2e6756df25b355a4d86dcc81d294b3807a96360ce9e73c60404093c",
-      "content_sha256": "e6b787514dd65fe74c261fa3566775719259d7939e3d9a68d6bc73acdd16c4f9",
+      "claim_matrix_sha256": "7a4722c0eba52f24a8df536b7411f4a93fd36920f1854880a9038008e702436b",
+      "content_sha256": "914634e7721d226a2d9467360e3f548e8b2d310186f35aca541cc90c293f559b",
       "decision": "approved_documentary_only",
       "id": "camara:2653937",
       "issues": [],
-      "policy": "documentary-template-v2-claims",
+      "policy": "documentary-template-v3-hooks",
       "version": "da05fb78307294"
     },
     {
       "card_sha256": [
-        "70aa266a765912b8e1f101477e19db745ea1cecf7ee565fd4005cea9baff30e8",
-        "200f47a2f2dcb77af94d32701bb13a38fb61e816f5a65e2d9137590815e7b48f",
-        "10df9eb48c3e3f630302e9dc0c48008a6de8a52d338d1c27c4dfb0b15b5672fe",
-        "4dce5161b421578cd8d3dc03220ebaf64d989681733e23f768125f885255a9c9",
-        "c4b582fde9ed590db4b003f16928e34743b20911724ea738f41087e2d86a2835",
-        "554d09d19e11882edb6e5ef86868a4d4905301467860ab8cd73e85c0c889d3ce",
-        "325c5ea5bfe042943af469c3e1b77e505c8ffae30e3e2ae0e74442a4871ab396"
+        "daceeb3f6f12c59d790f6c4298b485662d569368f29b19092df0685b68a6cf9a",
+        "92f6a6aaead600572b633accbc06eeea0b1818a7fe88f8577d4928c37d7541b8",
+        "50fc02cfd1d06be78856d1d7dc75f61c0346bcbdeeeff316b42bc4e81aa7c58f",
+        "9a064a1c334d73ae9f28699a53bc50ec32ffb3e2536d213d356bb1678a14fcc1",
+        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
+        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
+        "bf638c143044f2edde2693ae2c864558bc22fc6a3041c4a81d8ab2df6c65bb24"
       ],
-      "checked_at": "2026-11-14T17:46:39.732696-03:00",
+      "checked_at": "2026-11-14T17:49:14.187161-03:00",
       "claim_matrix": {
         "document_id": "camara:2653940",
         "entries": [
+          {
+            "evidence": {
+              "end": 102,
+              "excerpt": "devolução geral progressiva",
+              "field": "summary",
+              "field_sha256": "483f0a10762559aa3ab84b2a53d3a9baa7cef7739f6ef7e3b74c330985e7837b",
+              "start": 75,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653940"
+            },
+            "limitation": "Pergunta controlada, não demonstra efeito ou aprovação.",
+            "location": "card_01",
+            "text": "Como a proposta relaciona devolução de impostos e renda?",
+            "type": "controlled_question_anchor"
+          },
+          {
+            "evidence": {
+              "end": 102,
+              "excerpt": "devolução geral progressiva",
+              "field": "summary",
+              "field_sha256": "483f0a10762559aa3ab84b2a53d3a9baa7cef7739f6ef7e3b74c330985e7837b",
+              "start": 75,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653940"
+            },
+            "limitation": "Pergunta controlada, não demonstra efeito ou aprovação.",
+            "location": "caption",
+            "text": "Como a proposta relaciona devolução de impostos e renda?",
+            "type": "controlled_question_anchor"
+          },
+          {
+            "evidence": {
+              "end": 156,
+              "excerpt": "renda domiciliar per capita",
+              "field": "summary",
+              "field_sha256": "483f0a10762559aa3ab84b2a53d3a9baa7cef7739f6ef7e3b74c330985e7837b",
+              "start": 129,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653940"
+            },
+            "limitation": "Pergunta controlada, não demonstra efeito ou aprovação.",
+            "location": "card_01",
+            "text": "Como a proposta relaciona devolução de impostos e renda?",
+            "type": "controlled_question_anchor"
+          },
+          {
+            "evidence": {
+              "end": 156,
+              "excerpt": "renda domiciliar per capita",
+              "field": "summary",
+              "field_sha256": "483f0a10762559aa3ab84b2a53d3a9baa7cef7739f6ef7e3b74c330985e7837b",
+              "start": 129,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653940"
+            },
+            "limitation": "Pergunta controlada, não demonstra efeito ou aprovação.",
+            "location": "caption",
+            "text": "Como a proposta relaciona devolução de impostos e renda?",
+            "type": "controlled_question_anchor"
+          },
           {
             "evidence": {
               "end": 12,
@@ -672,7 +952,7 @@
             "evidence": null,
             "limitation": "Não acrescenta fatos externos.",
             "location": "card_03",
-            "text": "A ementa termina no card anterior. Consulte a íntegra no site oficial.",
+            "text": "A ementa resume o tema. Para conhecer condições, exceções e detalhes, consulte o texto integral.",
             "type": "template_explanation"
           },
           {
@@ -761,7 +1041,7 @@
           }
         ],
         "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
-        "policy": "documentary-claims-v1",
+        "policy": "documentary-claims-v2-hooks",
         "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653940",
         "unverified_dimensions": [
           "legal_effect",
@@ -772,28 +1052,84 @@
         ],
         "version": "a39d386f415e16"
       },
-      "claim_matrix_sha256": "7c5f760fe98ac55f4c018c4816714ee9059a289ea7c2c686f18ada0cd80810a6",
-      "content_sha256": "6f6d0b853240e90989e00a2b6fdf68b0a314880c0b572ff5e3a201771d12529a",
+      "claim_matrix_sha256": "f1a4bf8f749f83814eea57b4f6da2918e292fd5bf5dd3598bb5c263ace4e499c",
+      "content_sha256": "b082fd4a9df080df1658e9d29d4d9af5fd86b9f824e7284f294bd45e0e708bb5",
       "decision": "approved_documentary_only",
       "id": "camara:2653940",
       "issues": [],
-      "policy": "documentary-template-v2-claims",
+      "policy": "documentary-template-v3-hooks",
       "version": "a39d386f415e16"
     },
     {
       "card_sha256": [
-        "ff362039393ea1c8780aac9e71df2a4e48fbd8902a4a4095242f5e63d7ffc9e0",
-        "a51c7176f1b2da5d0c36e0fa0dcd726033f496bab75c9833f287250f7e30a9be",
-        "19f051f19e3654c397ceaa54c3f43e7096ce4f2c6bdf6b3fb79f6e495bee3028",
-        "4dce5161b421578cd8d3dc03220ebaf64d989681733e23f768125f885255a9c9",
-        "c4b582fde9ed590db4b003f16928e34743b20911724ea738f41087e2d86a2835",
-        "554d09d19e11882edb6e5ef86868a4d4905301467860ab8cd73e85c0c889d3ce",
-        "d01886e24f2c33e6fadee8f62ebe11bf8641439f0c02982e59fefb23a3a8a6ba"
+        "bfb58aac75a8cdc1bb13bbe93e43f3e565c54b785a29bdd9cf08f3752cc7641c",
+        "a839e8bea927626dddb79446c2c9ca1f193708715858cdbf46b5c8b36b672d59",
+        "77ba37656adf56b1c880c2cf9e1124e5ff9f3b10435353eae92ca5832a346ce5",
+        "9a064a1c334d73ae9f28699a53bc50ec32ffb3e2536d213d356bb1678a14fcc1",
+        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
+        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
+        "5878baf7bb7827a8240eee8d4d7de8b7725f44492b4ce90fc8985e97c19a6054"
       ],
-      "checked_at": "2026-11-14T17:46:39.732696-03:00",
+      "checked_at": "2026-11-14T17:49:14.187161-03:00",
       "claim_matrix": {
         "document_id": "camara:2653811",
         "entries": [
+          {
+            "evidence": {
+              "end": 143,
+              "excerpt": "planos privados de assistência à saúde",
+              "field": "summary",
+              "field_sha256": "1e298a9e0ebdbc45a1d67f4527ae298791cb508068d80ad043ab6d12adb16694",
+              "start": 105,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653811"
+            },
+            "limitation": "Pergunta controlada, não demonstra efeito ou aprovação.",
+            "location": "card_01",
+            "text": "Planos de saúde familiares: o que está em discussão?",
+            "type": "controlled_question_anchor"
+          },
+          {
+            "evidence": {
+              "end": 143,
+              "excerpt": "planos privados de assistência à saúde",
+              "field": "summary",
+              "field_sha256": "1e298a9e0ebdbc45a1d67f4527ae298791cb508068d80ad043ab6d12adb16694",
+              "start": 105,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653811"
+            },
+            "limitation": "Pergunta controlada, não demonstra efeito ou aprovação.",
+            "location": "caption",
+            "text": "Planos de saúde familiares: o que está em discussão?",
+            "type": "controlled_question_anchor"
+          },
+          {
+            "evidence": {
+              "end": 212,
+              "excerpt": "núcleo familiar",
+              "field": "summary",
+              "field_sha256": "1e298a9e0ebdbc45a1d67f4527ae298791cb508068d80ad043ab6d12adb16694",
+              "start": 197,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653811"
+            },
+            "limitation": "Pergunta controlada, não demonstra efeito ou aprovação.",
+            "location": "card_01",
+            "text": "Planos de saúde familiares: o que está em discussão?",
+            "type": "controlled_question_anchor"
+          },
+          {
+            "evidence": {
+              "end": 212,
+              "excerpt": "núcleo familiar",
+              "field": "summary",
+              "field_sha256": "1e298a9e0ebdbc45a1d67f4527ae298791cb508068d80ad043ab6d12adb16694",
+              "start": 197,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653811"
+            },
+            "limitation": "Pergunta controlada, não demonstra efeito ou aprovação.",
+            "location": "caption",
+            "text": "Planos de saúde familiares: o que está em discussão?",
+            "type": "controlled_question_anchor"
+          },
           {
             "evidence": {
               "end": 12,
@@ -922,7 +1258,7 @@
           }
         ],
         "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
-        "policy": "documentary-claims-v1",
+        "policy": "documentary-claims-v2-hooks",
         "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653811",
         "unverified_dimensions": [
           "legal_effect",
@@ -933,28 +1269,84 @@
         ],
         "version": "875c9caddb7040"
       },
-      "claim_matrix_sha256": "0ae673b668d56cea03c7f35dda1742ac50413c9fbeb6e624b77ae3db9fdcfc47",
-      "content_sha256": "63f5c6e9e9a920bfe310a9cdb76f2d40c3381ca3b392911072cb88f73a3675f0",
+      "claim_matrix_sha256": "d6edcf27b2b245baf8c681b7bf9ced6428a0d0d7356fadcc52fab98e2efc2a29",
+      "content_sha256": "847f2568cdb7d2642387ee1068ee4e0467b45948ac685e2abdc6dcff6e2a3231",
       "decision": "approved_documentary_only",
       "id": "camara:2653811",
       "issues": [],
-      "policy": "documentary-template-v2-claims",
+      "policy": "documentary-template-v3-hooks",
       "version": "875c9caddb7040"
     },
     {
       "card_sha256": [
-        "4c9025108432c586831a2a356d2153eee2a5fb44cc3d2c0e7b76e156e7e7faf3",
-        "68259c47a5d4ac5bd80aa8cf5304ad9a81861ad993ec8ff86d173c9a311fdfb2",
-        "10df9eb48c3e3f630302e9dc0c48008a6de8a52d338d1c27c4dfb0b15b5672fe",
-        "4dce5161b421578cd8d3dc03220ebaf64d989681733e23f768125f885255a9c9",
-        "c4b582fde9ed590db4b003f16928e34743b20911724ea738f41087e2d86a2835",
-        "554d09d19e11882edb6e5ef86868a4d4905301467860ab8cd73e85c0c889d3ce",
-        "e9d5b4ee3bd4b66d8241f3178e9c6acf8faf6c2c741232161e9f468b2395234d"
+        "a7358d3c5e72b3d0b62961a02717118a07b4e15704a610f63a5b3c5bf5d14ac0",
+        "606b1cf2fa2d75fb0a319eeb0d074cf492bbe6b95e2d5ad23480847934423978",
+        "50fc02cfd1d06be78856d1d7dc75f61c0346bcbdeeeff316b42bc4e81aa7c58f",
+        "9a064a1c334d73ae9f28699a53bc50ec32ffb3e2536d213d356bb1678a14fcc1",
+        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
+        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
+        "87598db6ef5675d29ffcdb5a3e0144f5bf930e60531cfcf846a0469ff1910a46"
       ],
-      "checked_at": "2026-11-14T17:46:39.732696-03:00",
+      "checked_at": "2026-11-14T17:49:14.187161-03:00",
       "claim_matrix": {
         "document_id": "camara:2653822",
         "entries": [
+          {
+            "evidence": {
+              "end": 67,
+              "excerpt": "Imposto Seletivo",
+              "field": "summary",
+              "field_sha256": "37a1624c779fb9c0d96cd09733a5d9a53bc5be45f8a856f586e5e6458ca1c07b",
+              "start": 51,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653822"
+            },
+            "limitation": "Pergunta controlada, não demonstra efeito ou aprovação.",
+            "location": "card_01",
+            "text": "O que o projeto propõe para financiar tratamentos no SUS?",
+            "type": "controlled_question_anchor"
+          },
+          {
+            "evidence": {
+              "end": 67,
+              "excerpt": "Imposto Seletivo",
+              "field": "summary",
+              "field_sha256": "37a1624c779fb9c0d96cd09733a5d9a53bc5be45f8a856f586e5e6458ca1c07b",
+              "start": 51,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653822"
+            },
+            "limitation": "Pergunta controlada, não demonstra efeito ou aprovação.",
+            "location": "caption",
+            "text": "O que o projeto propõe para financiar tratamentos no SUS?",
+            "type": "controlled_question_anchor"
+          },
+          {
+            "evidence": {
+              "end": 94,
+              "excerpt": "financiamento adicional",
+              "field": "summary",
+              "field_sha256": "37a1624c779fb9c0d96cd09733a5d9a53bc5be45f8a856f586e5e6458ca1c07b",
+              "start": 71,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653822"
+            },
+            "limitation": "Pergunta controlada, não demonstra efeito ou aprovação.",
+            "location": "card_01",
+            "text": "O que o projeto propõe para financiar tratamentos no SUS?",
+            "type": "controlled_question_anchor"
+          },
+          {
+            "evidence": {
+              "end": 94,
+              "excerpt": "financiamento adicional",
+              "field": "summary",
+              "field_sha256": "37a1624c779fb9c0d96cd09733a5d9a53bc5be45f8a856f586e5e6458ca1c07b",
+              "start": 71,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653822"
+            },
+            "limitation": "Pergunta controlada, não demonstra efeito ou aprovação.",
+            "location": "caption",
+            "text": "O que o projeto propõe para financiar tratamentos no SUS?",
+            "type": "controlled_question_anchor"
+          },
           {
             "evidence": {
               "end": 12,
@@ -987,7 +1379,7 @@
             "evidence": null,
             "limitation": "Não acrescenta fatos externos.",
             "location": "card_03",
-            "text": "A ementa termina no card anterior. Consulte a íntegra no site oficial.",
+            "text": "A ementa resume o tema. Para conhecer condições, exceções e detalhes, consulte o texto integral.",
             "type": "template_explanation"
           },
           {
@@ -1076,7 +1468,7 @@
           }
         ],
         "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
-        "policy": "documentary-claims-v1",
+        "policy": "documentary-claims-v2-hooks",
         "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653822",
         "unverified_dimensions": [
           "legal_effect",
@@ -1087,28 +1479,84 @@
         ],
         "version": "b51b94f0828426"
       },
-      "claim_matrix_sha256": "c1f311c8ba6a7a5b4949b8d84bbdf13286d4166f19f928063ebbc6450c6928d9",
-      "content_sha256": "d62dbde22a0f85a986df9f3cc59224cbd667f6d78bce8b414171949339a7568b",
+      "claim_matrix_sha256": "0b9a0f8071b43d8bb615edf63d414be240d57a1a61586ac2e1fba2f96c0554bc",
+      "content_sha256": "a015e0095f972b208e3d8d3d43fc26b5d1b8516ae5c8173e329c3e37e54f4bd6",
       "decision": "approved_documentary_only",
       "id": "camara:2653822",
       "issues": [],
-      "policy": "documentary-template-v2-claims",
+      "policy": "documentary-template-v3-hooks",
       "version": "b51b94f0828426"
     },
     {
       "card_sha256": [
-        "b24d9feeb9ada09c3e6715c27e5104b7dd29a02da1ab58952e23b40cb44a62d7",
-        "8502e369b7e202728c5117c7fa67c72131efc7b332fcb0b34662b555250a3cb3",
-        "10df9eb48c3e3f630302e9dc0c48008a6de8a52d338d1c27c4dfb0b15b5672fe",
-        "4dce5161b421578cd8d3dc03220ebaf64d989681733e23f768125f885255a9c9",
-        "c4b582fde9ed590db4b003f16928e34743b20911724ea738f41087e2d86a2835",
-        "554d09d19e11882edb6e5ef86868a4d4905301467860ab8cd73e85c0c889d3ce",
-        "72dbcc7c7be0f3d34f523e758e615f1e343392f2a6386646244fb7cceb80d999"
+        "7ae93e8628a7d9f737ac882025b7577614bfea88bbd5ef1166ab1c865a3b27d9",
+        "189efb5514720da9f8d40c9fd871b449701af9aa3a133b35f2abde4908747db6",
+        "50fc02cfd1d06be78856d1d7dc75f61c0346bcbdeeeff316b42bc4e81aa7c58f",
+        "9a064a1c334d73ae9f28699a53bc50ec32ffb3e2536d213d356bb1678a14fcc1",
+        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
+        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
+        "4e29fb8ce9b34c897fd70f7b425288b435cab57c62d7e4e261bf044345e932b1"
       ],
-      "checked_at": "2026-11-14T17:46:39.732696-03:00",
+      "checked_at": "2026-11-14T17:49:14.187161-03:00",
       "claim_matrix": {
         "document_id": "camara:2653946",
         "entries": [
+          {
+            "evidence": {
+              "end": 96,
+              "excerpt": "lucros e dividendos",
+              "field": "summary",
+              "field_sha256": "5087c18e04526a8904e78ed410103e45f91ba7578392fc8043be9f81769edbc6",
+              "start": 77,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653946"
+            },
+            "limitation": "Pergunta controlada, não demonstra efeito ou aprovação.",
+            "location": "card_01",
+            "text": "O que está em discussão sobre lucros e dividendos?",
+            "type": "controlled_question_anchor"
+          },
+          {
+            "evidence": {
+              "end": 96,
+              "excerpt": "lucros e dividendos",
+              "field": "summary",
+              "field_sha256": "5087c18e04526a8904e78ed410103e45f91ba7578392fc8043be9f81769edbc6",
+              "start": 77,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653946"
+            },
+            "limitation": "Pergunta controlada, não demonstra efeito ou aprovação.",
+            "location": "caption",
+            "text": "O que está em discussão sobre lucros e dividendos?",
+            "type": "controlled_question_anchor"
+          },
+          {
+            "evidence": {
+              "end": 50,
+              "excerpt": "Imposto sobre a Renda",
+              "field": "summary",
+              "field_sha256": "5087c18e04526a8904e78ed410103e45f91ba7578392fc8043be9f81769edbc6",
+              "start": 29,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653946"
+            },
+            "limitation": "Pergunta controlada, não demonstra efeito ou aprovação.",
+            "location": "card_01",
+            "text": "O que está em discussão sobre lucros e dividendos?",
+            "type": "controlled_question_anchor"
+          },
+          {
+            "evidence": {
+              "end": 50,
+              "excerpt": "Imposto sobre a Renda",
+              "field": "summary",
+              "field_sha256": "5087c18e04526a8904e78ed410103e45f91ba7578392fc8043be9f81769edbc6",
+              "start": 29,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653946"
+            },
+            "limitation": "Pergunta controlada, não demonstra efeito ou aprovação.",
+            "location": "caption",
+            "text": "O que está em discussão sobre lucros e dividendos?",
+            "type": "controlled_question_anchor"
+          },
           {
             "evidence": {
               "end": 12,
@@ -1141,7 +1589,7 @@
             "evidence": null,
             "limitation": "Não acrescenta fatos externos.",
             "location": "card_03",
-            "text": "A ementa termina no card anterior. Consulte a íntegra no site oficial.",
+            "text": "A ementa resume o tema. Para conhecer condições, exceções e detalhes, consulte o texto integral.",
             "type": "template_explanation"
           },
           {
@@ -1230,7 +1678,7 @@
           }
         ],
         "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
-        "policy": "documentary-claims-v1",
+        "policy": "documentary-claims-v2-hooks",
         "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653946",
         "unverified_dimensions": [
           "legal_effect",
@@ -1241,12 +1689,12 @@
         ],
         "version": "b98ae1ec690f70"
       },
-      "claim_matrix_sha256": "e43008292739922ebb1fb08bba7c21a2a2d58205241bd6fa6012b798622a517a",
-      "content_sha256": "ca920e1b3bde82c0ba523f475dc036ecb19f462d47ba7488b9b883c35592103a",
+      "claim_matrix_sha256": "7a2dc6d0e9ceb64b6183ed4dbf406263e2be46a5fcca01006424e927c991720c",
+      "content_sha256": "a57f41ba1663719a61160b8c00fd2e2e12554d51c07a083b530994099802403e",
       "decision": "approved_documentary_only",
       "id": "camara:2653946",
       "issues": [],
-      "policy": "documentary-template-v2-claims",
+      "policy": "documentary-template-v3-hooks",
       "version": "b98ae1ec690f70"
     }
   ]
