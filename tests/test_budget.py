@@ -4,7 +4,7 @@ from datetime import date,datetime
 from fatovia.budget import latest_due,parse,collect,stage_for
 
 NOW=datetime.fromisoformat("2026-11-14T17:00:00-03:00")
-ROW={"exercicio":2026,"periodo":4,"cod_ibge":1,"ente":"União","esfera":"U","anexo":"RREO-Anexo 01",
+ROW={"exercicio":2026,"periodo":4,"cod_ibge":1,"instituicao":"União","esfera":"U","anexo":"RREO-Anexo 01",
      "rotulo":"Despesas Orçamentárias","cod_conta":"example","conta":"Despesas correntes","coluna":"DESPESAS PAGAS ATÉ O BIMESTRE (j)","valor":123.45}
 def payload(rows,more=False):
     return json.dumps({"items":rows,"hasMore":more}).encode()

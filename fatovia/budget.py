@@ -55,7 +55,7 @@ def parse(raw,year,period):
             raise ValueError("invalid_row")
         if str(row.get("exercicio"))!=str(year) or str(row.get("periodo"))!=str(period):
             raise ValueError("period_mismatch")
-        if str(row.get("cod_ibge"))!="1" or norm(row.get("ente",""))!="uniao" or row.get("esfera")!="U":
+        if str(row.get("cod_ibge"))!="1" or norm(row.get("instituicao","")) not in {"uniao","governo federal"} or row.get("esfera")!="U":
             raise ValueError("entity_mismatch")
         if norm(row.get("anexo"))!=norm(ANEXO):
             raise ValueError("annex_mismatch")
@@ -109,6 +109,7 @@ def collect(now,getter=get):
                 rows=json.loads(raw).get("items",[])
                 if isinstance(rows,list) and rows and isinstance(rows[0],dict):
                     report["observed_fields"]=sorted(rows[0].keys())
+                    report["observed_entities"]=[dict(zip(("cod_ibge","instituicao","esfera"),v)) for v in sorted({tuple(str(r.get(k,""))[:120] for k in ("cod_ibge","instituicao","esfera")) for r in rows if isinstance(r,dict)})][:10]
                     report["observed_columns"]=sorted({r.get("coluna") for r in rows if isinstance(r,dict) and isinstance(r.get("coluna"),str)})[:40]
             except Exception:
                 pass
