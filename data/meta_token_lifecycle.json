@@ -1,7 +1,7 @@
 {
-  "schema_version": 1,
-  "token_expires_at": 1799854640,
   "data_access_expires_at": 1802446639,
+  "schema_version": 1,
+  "secret_updated_at": "2026-11-14T19:14:11Z",
   "source": "meta_access_token_debugger_2026-11-14",
-  "secret_updated_at": null
+  "token_expires_at": 1799854640
 }
