@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-11-14T17:11:31.917439-03:00",
+  "note": "Topic co-occurrence is not corroboration of an individual claim or proof of virality.",
+  "publication_authorized": false,
+  "signals": [
+    {
+      "id": "7f78f5beb64b418d4ae5",
+      "published_at": "2026-11-14T14:48:00-03:00",
+      "source": "agencia_brasil",
+      "status": "discovery_only",
+      "title": "Governo abre consulta pública sobre enfrentamento ao calor extremo",
+      "topics": [
+        "saude"
+      ],
+      "url": "https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2026-11/governo-abre-consulta-publica-sobre-enfrentamento-ao-calor-extremo"
+    },
+    {
+      "id": "7592ce891be652b1a9a2",
+      "published_at": "2026-11-14T11:20:00-03:00",
+      "source": "agencia_brasil",
+      "status": "discovery_only",
+      "title": "Apoio social, cultura e educação levaram jovem a abandonar crime",
+      "topics": [
+        "educacao"
+      ],
+      "url": "https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2026-11/revolta-e-abandono-fizeram-jovem-entrar-no-mundo-do-crime"
+    }
+  ],
+  "sources": {
+    "agencia_brasil": {
+      "eligible_signals": 2,
+      "status": "ok"
+    },
+    "ibge": {
+      "error_type": "ConnectTimeout",
+      "status": "unavailable"
+    },
+    "senado": {
+      "eligible_signals": 0,
+      "status": "ok"
+    }
+  },
+  "topic_groups": [
+    {
+      "document_count": 1,
+      "explore_links": 0,
+      "source_count": 1,
+      "sources": [
+        "agencia_brasil"
+      ],
+      "status": "research_required",
+      "topic": "educacao"
+    },
+    {
+      "document_count": 1,
+      "explore_links": 0,
+      "source_count": 1,
+      "sources": [
+        "agencia_brasil"
+      ],
+      "status": "research_required",
+      "topic": "saude"
+    }
+  ]
+}
