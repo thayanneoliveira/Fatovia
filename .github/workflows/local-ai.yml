@@ -52,6 +52,18 @@ jobs:
           done
           curl --silent --fail http://127.0.0.1:8089/health >/dev/null
           python3 -m fatovia.local_draft
+      - name: Registrar resumo textual dos rascunhos publicos para avaliacao
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path("draft-output/evaluation.json")
+          if p.is_file():
+              report=json.loads(p.read_text())
+              for row in report.get("results",[]):
+                  print("DRAFT_REVIEW",json.dumps({"fixture":row.get("fixture"),"id":row.get("source",{}).get("id"),"output":row.get("output"),"issues":row.get("validation_issues")},ensure_ascii=False))
+          PY
       - uses: actions/upload-artifact@v4
         if: always()
         with:
