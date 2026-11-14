@@ -1,0 +1,59 @@
+name: "FatoVia | Validar conexao Instagram"
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    env:
+      IG_TOKEN: ${{ secrets.META_ACCESS_TOKEN || secrets.INSTAGRAM_ACCESS_TOKEN }}
+      EXPECTED_ID: ${{ vars.META_IG_USER_ID }}
+    steps:
+      - name: Validar identidade e consultar limite de publicacao (somente GET)
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import os, json, sys, urllib.request, urllib.error, urllib.parse, re
+          token = os.environ.get("IG_TOKEN", "").strip()
+          if not token:
+              sys.exit("Secret ausente: META_ACCESS_TOKEN ou INSTAGRAM_ACCESS_TOKEN")
+          class NoRedirect(urllib.request.HTTPRedirectHandler):
+              def redirect_request(self, req, fp, code, msg, headers, newurl):
+                  return None
+          opener = urllib.request.build_opener(NoRedirect)
+          def get(path, params):
+              url = "https://graph.instagram.com/v25.0/" + path + "?" + urllib.parse.urlencode(params)
+              req = urllib.request.Request(url, headers={"Authorization": "Bearer " + token})
+              try:
+                  with opener.open(req, timeout=25) as resp:
+                      return json.load(resp)
+              except urllib.error.HTTPError as exc:
+                  try:
+                      err = json.load(exc).get("error", {})
+                      code = err.get("code")
+                      sub = err.get("error_subcode")
+                      print("HTTP", exc.code, "Meta code", code if isinstance(code, int) else "-", "subcode", sub if isinstance(sub, int) else "-")
+                  except Exception:
+                      print("HTTP", exc.code)
+                  sys.exit("Consulta Meta falhou; nenhuma publicacao realizada.")
+              except Exception:
+                  sys.exit("Falha de conexao ou resposta invalida; nenhum dado sensivel exibido.")
+          me = get("me", {"fields": "user_id,username"})
+          if str(me.get("username", "")).lower() != "fato.via":
+              sys.exit("Conta diferente de @fato.via; operacao bloqueada.")
+          ig_id = str(me.get("user_id", ""))
+          if not re.fullmatch(r"[0-9]{5,30}", ig_id):
+              sys.exit("ID Instagram nao retornado no formato esperado.")
+          print("Autenticacao OK: @fato.via")
+          print("META_IG_USER_ID=" + ig_id)
+          expected = os.environ.get("EXPECTED_ID", "").strip()
+          if expected and expected != ig_id:
+              sys.exit("META_IG_USER_ID configurado nao coincide com a conta.")
+          result = get(ig_id + "/content_publishing_limit", {"fields": "quota_usage"})
+          if not isinstance(result.get("data"), list) or not result["data"]:
+              sys.exit("Consulta de limite sem dados conclusivos.")
+          print("Consulta de limite de publicacao OK.")
+          print("Nenhuma publicacao realizada.")
+          PY
