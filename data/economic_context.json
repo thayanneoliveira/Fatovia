@@ -1,0 +1,106 @@
+{
+  "generated_at": "2026-11-14T17:36:51.743123-03:00",
+  "limitations": [
+    "No causal attribution",
+    "No comparison across unlike units or frequencies",
+    "Observation dates are not necessarily release dates",
+    "Revisions may occur"
+  ],
+  "publication_authorized": false,
+  "series": {
+    "16122": {
+      "count": 12,
+      "frequency": "monthly",
+      "limitation": "Medida de núcleo, não IPCA cheio nem inflação particular de cada família.",
+      "max_age_days": 75,
+      "metadata": "https://dadosabertos.bcb.gov.br/dataset/16122-indice-nacional-de-precos-ao-consumidor---amplo-ipca---nucleo-de-dupla-ponderacao",
+      "name": "IPCA - núcleo de dupla ponderação",
+      "observations": [
+        {
+          "period": "2025-11",
+          "source_date": "2025-11-01",
+          "value": "0.19"
+        },
+        {
+          "period": "2025-12",
+          "source_date": "2025-12-01",
+          "value": "0.40"
+        },
+        {
+          "period": "2026-01",
+          "source_date": "2026-01-01",
+          "value": "0.46"
+        },
+        {
+          "period": "2026-02",
+          "source_date": "2026-02-01",
+          "value": "0.58"
+        },
+        {
+          "period": "2026-03",
+          "source_date": "2026-03-01",
+          "value": "0.46"
+        },
+        {
+          "period": "2026-04",
+          "source_date": "2026-04-01",
+          "value": "0.51"
+        },
+        {
+          "period": "2026-05",
+          "source_date": "2026-05-01",
+          "value": "0.38"
+        },
+        {
+          "period": "2026-06",
+          "source_date": "2026-06-01",
+          "value": "0.15"
+        },
+        {
+          "period": "2026-07",
+          "source_date": "2026-07-01",
+          "value": "0.17"
+        },
+        {
+          "period": "2026-08",
+          "source_date": "2026-08-01",
+          "value": "0.14"
+        },
+        {
+          "period": "2026-09",
+          "source_date": "2026-09-01",
+          "value": "0.37"
+        },
+        {
+          "period": "2026-10",
+          "source_date": "2026-10-01",
+          "value": "0.19"
+        }
+      ],
+      "publication_authorized": false,
+      "response_sha256": "d1320de0c1edc893b7aaaba1acd9604f72836672e292aff74140a008de24ca99",
+      "retrieved_at": "2026-11-14T17:36:51.743123-03:00",
+      "series": "16122",
+      "source_url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.16122/dados/ultimos/12",
+      "status": "ok",
+      "unit": "% mensal",
+      "use": "economic_context_only"
+    },
+    "432": {
+      "count": 30,
+      "error_type": "ValueError",
+      "frequency": "daily",
+      "limitation": "Meta anualizada, não taxa efetiva de empréstimos nem rendimento diário.",
+      "max_age_days": 7,
+      "metadata": "https://dadosabertos.bcb.gov.br/dataset/432-taxa-de-juros---meta-selic-definida-pelo-copom",
+      "name": "Meta Selic definida pelo Copom",
+      "publication_authorized": false,
+      "retrieved_at": "2026-11-14T17:36:51.743123-03:00",
+      "series": "432",
+      "source_url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados/ultimos/30",
+      "status": "unavailable",
+      "unit": "% a.a.",
+      "use": "economic_context_only"
+    }
+  }
+}
