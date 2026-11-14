@@ -47,14 +47,20 @@ def collect(now,getter=get):
     result={}
     for code,spec in SERIES.items():
         url=f"https://api.bcb.gov.br/dados/serie/bcdata.sgs.{code}/dados/ultimos/{spec['count']}"
-        entry={"series":code,**spec,"source_url":url,"retrieved_at":now.isoformat(),
+        params={"formato":"json"}
+        if code=="432":
+            url="https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados"
+            params.update(dataInicial=(now-timedelta(days=29)).strftime("%d/%m/%Y"),dataFinal=now.strftime("%d/%m/%Y"))
+        entry={"series":code,**spec,"source_url":url,"retrieved_at":now.isoformat(),"query_params":params,
                "use":"economic_context_only","publication_authorized":False}
         try:
-            raw=getter(url,{"formato":"json"})
+            raw=getter(url,params)
             observations,status=parse(raw,code,now)
             entry.update(status=status,observations=observations,response_sha256=sha256(raw).hexdigest())
         except Exception as exc:
             entry.update(status="unavailable",error_type=type(exc).__name__)
+            if isinstance(exc,ValueError) and re.fullmatch(r"(?:invalid_[a-z_]+|future_observation|duplicate_period|nonfinite|source_http_\d+|source_too_large)",str(exc)):
+                entry["error_code"]=str(exc)
         result[code]=entry
     return {"generated_at":now.isoformat(),"series":result,"publication_authorized":False,
             "limitations":["No causal attribution","No comparison across unlike units or frequencies",
