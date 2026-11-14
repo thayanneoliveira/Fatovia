@@ -1,0 +1,44 @@
+name: "FatoVia | Auditoria editorial independente"
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/editorial-audit.yml"
+      - "fatovia/editorial_audit.py"
+      - "tests/test_editorial_audit.py"
+  schedule:
+    - cron: "43 11,15,19,23 * * *"
+permissions:
+  contents: write
+concurrency:
+  group: fatovia-state
+  cancel-in-progress: false
+jobs:
+  review:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -r requirements.txt
+      - name: Testar controles sem credenciais Meta
+        run: python -m unittest discover -s tests -v
+      - name: Auditar fila documental sem publicar
+        run: python -m fatovia.editorial_audit
+      - name: Persistir apenas parecer de auditoria
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/editorial_audit.json
+          if ! git diff --cached --quiet; then
+            git commit -m "FatoVia: parecer documental independente [skip ci]"
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi

@@ -70,6 +70,10 @@ class FakeMeta:
 
 class PublishTests(unittest.TestCase):
     def setUp(self):
+        approval=patch("fatovia.publisher.approved",return_value=True)
+        hosted=patch("fatovia.publisher.verify_hosted",return_value=True)
+        approval.start(); hosted.start()
+        self.addCleanup(approval.stop); self.addCleanup(hosted.stop)
         self.state = {"blackout_dates": ["2026-10-25", "2026-10-26"],
                       "metrics": [], "published": [], "pending": [item()]}
 
@@ -137,6 +141,11 @@ class PublishTests(unittest.TestCase):
             with patch("fatovia.publisher.STATE_PATH", Path(folder) / "state.json"):
                 result = prepare(self.state, NOW, {**CFG, "token": ""})
                 self.assertEqual(result["action"], "missing_credentials")
+
+    def test_sem_parecer_independente_nao_prepara(self):
+        with patch("fatovia.publisher.approved", return_value=False):
+            result=prepare(self.state,NOW,CFG)
+        self.assertEqual(result["action"],"idle")
 
     def test_prepara_transacao_sem_post(self):
         with tempfile.TemporaryDirectory() as folder:
