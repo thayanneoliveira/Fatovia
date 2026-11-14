@@ -7,7 +7,7 @@
   "metrics": [],
   "pending": [
     {
-      "caption": "PL 5849/2026: o que consta no registro oficial?\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653819\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653819/aec4919b2cc642\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "caption": "O que pode mudar para médicos residentes?\n\nPL 5849/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653819\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653819/aec4919b2cc642\n#FatoVia #PoliticasPublicas #CongressoNacional",
       "cards": [
         "docs/media/camara-2653819/aec4919b2cc642/01.jpg",
         "docs/media/camara-2653819/aec4919b2cc642/02.jpg",
@@ -20,7 +20,7 @@
       "discovery_source_count": 1,
       "editorial_score": 86,
       "evidence": {
-        "checked_at": "2026-11-14T17:15:04.282243-03:00",
+        "checked_at": "2026-11-14T17:48:52.256959-03:00",
         "claims": [
           {
             "basis": "identificacao_da_proposicao",
@@ -35,7 +35,7 @@
             "field": "stage"
           }
         ],
-        "content_sha256": "b9dba7506afe03b4ff21e515de292746b74642574eda58d02bca72e425c0a9fe",
+        "content_sha256": "4aee37391f7554cad404a1b87cac684ff1826e0cd6e87395e5a9823c0edb301e",
         "kind": "official_document_attribution",
         "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
         "record_date": "2026-11-13",
@@ -52,6 +52,7 @@
       "status": "ready",
       "summary": "Altera a Lei n° 6.392, de 7 de julho de 1981, para incentivar a contratação de seguros contra acidentes pessoais e de responsabilidade civil, pela instituição de saúde formadora, em benefício de seus médicos residentes, bem como reajustes periódicos da bolsa concedida a esses profissionais, observadas a recomposição e a preservação de seu poder aquisitivo, segundo índices elaborados pelos órgãos técnicos competentes.",
       "summary_hash": "34a1fc1eec0c6a",
+      "template_revision": "documentary-hook-v3",
       "title": "PL 5849/2026",
       "topics": [
         "saude"
@@ -59,7 +60,7 @@
       "version": "aec4919b2cc642"
     },
     {
-      "caption": "PL 5856/2026: o que consta no registro oficial?\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653948\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653948\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653948/78147b54c05128\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "caption": "Atletas e violência contra a mulher: o que propõe o PL?\n\nPL 5856/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653948\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653948\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653948/78147b54c05128\n#FatoVia #PoliticasPublicas #CongressoNacional",
       "cards": [
         "docs/media/camara-2653948/78147b54c05128/01.jpg",
         "docs/media/camara-2653948/78147b54c05128/02.jpg",
@@ -72,7 +73,7 @@
       "discovery_source_count": 0,
       "editorial_score": 86,
       "evidence": {
-        "checked_at": "2026-11-14T17:15:04.282243-03:00",
+        "checked_at": "2026-11-14T17:48:52.256959-03:00",
         "claims": [
           {
             "basis": "identificacao_da_proposicao",
@@ -87,7 +88,7 @@
             "field": "stage"
           }
         ],
-        "content_sha256": "a4a5a16ad05feb75f85adaa68c953a238ca0ccf03ee4be0d452eb837160a34ee",
+        "content_sha256": "0c26732b3bd69663e4ade4e65152217bde105b366b28badb3469ec30169b55a5",
         "kind": "official_document_attribution",
         "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
         "record_date": "2026-11-13",
@@ -104,6 +105,7 @@
       "status": "ready",
       "summary": "Altera a Lei nº 14.597, de 14 de junho de 2023 (Lei Geral do Esporte), para estabelecer medidas de responsabilização disciplinar de atletas pela prática de violência contra a mulher.",
       "summary_hash": "7a5e8ee82d4ebc",
+      "template_revision": "documentary-hook-v3",
       "title": "PL 5856/2026",
       "topics": [
         "seguranca"
@@ -111,7 +113,7 @@
       "version": "78147b54c05128"
     },
     {
-      "caption": "PL 5845/2026: o que consta no registro oficial?\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653813\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653813\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653813/af7aa01437443c\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "caption": "O que o projeto propõe sobre fogos com estampido?\n\nPL 5845/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653813\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653813\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653813/af7aa01437443c\n#FatoVia #PoliticasPublicas #CongressoNacional",
       "cards": [
         "docs/media/camara-2653813/af7aa01437443c/01.jpg",
         "docs/media/camara-2653813/af7aa01437443c/02.jpg",
@@ -124,7 +126,7 @@
       "discovery_source_count": 0,
       "editorial_score": 83,
       "evidence": {
-        "checked_at": "2026-11-14T17:18:25.840501-03:00",
+        "checked_at": "2026-11-14T17:48:52.256959-03:00",
         "claims": [
           {
             "basis": "identificacao_da_proposicao",
@@ -139,7 +141,7 @@
             "field": "stage"
           }
         ],
-        "content_sha256": "688dd5abd930b8bb27bdeac6b39cf66fe2a81a24f831fcab8be1d1acf4a5e334",
+        "content_sha256": "2a6a285619ab375545006339c91c4c2a4ccd88f9e75978f465e084a546eb3e61",
         "kind": "official_document_attribution",
         "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
         "record_date": "2026-11-13",
@@ -156,6 +158,7 @@
       "status": "ready",
       "summary": "Dispõe sobre a proibição da fabricação, importação, comercialização, distribuição, armazenamento, transporte e utilização de rojões e demais fogos de artifício e artefatos pirotécnicos que produzam estampidos ou efeitos sonoros de explosão em todo o território nacional, e dá outras providências.",
       "summary_hash": "af862f3b4be729",
+      "template_revision": "documentary-hook-v3",
       "title": "PL 5845/2026",
       "topics": [
         "infraestrutura"
@@ -163,7 +166,7 @@
       "version": "af7aa01437443c"
     },
     {
-      "caption": "PLP 303/2026: o que consta no registro oficial?\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653937\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653937\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653937/da05fb78307294\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "caption": "O que a proposta prevê para tributos de serviços veterinários?\n\nPLP 303/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653937\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653937\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653937/da05fb78307294\n#FatoVia #PoliticasPublicas #CongressoNacional",
       "cards": [
         "docs/media/camara-2653937/da05fb78307294/01.jpg",
         "docs/media/camara-2653937/da05fb78307294/02.jpg",
@@ -176,7 +179,7 @@
       "discovery_source_count": 0,
       "editorial_score": 82,
       "evidence": {
-        "checked_at": "2026-11-14T17:18:25.840501-03:00",
+        "checked_at": "2026-11-14T17:48:52.256959-03:00",
         "claims": [
           {
             "basis": "identificacao_da_proposicao",
@@ -191,7 +194,7 @@
             "field": "stage"
           }
         ],
-        "content_sha256": "e6b787514dd65fe74c261fa3566775719259d7939e3d9a68d6bc73acdd16c4f9",
+        "content_sha256": "914634e7721d226a2d9467360e3f548e8b2d310186f35aca541cc90c293f559b",
         "kind": "official_document_attribution",
         "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
         "record_date": "2026-11-13",
@@ -208,6 +211,7 @@
       "status": "ready",
       "summary": "Altera a Lei Complementar nº 214, de 16 de janeiro de 2025, para incluir os serviços médico-veterinários na redução de 60% (sessenta por cento) das alíquotas do Imposto sobre Bens e Serviços (IBS) e da Contribuição Social sobre Bens e Serviços (CBS).",
       "summary_hash": "e8513367cf056d",
+      "template_revision": "documentary-hook-v3",
       "title": "PLP 303/2026",
       "topics": [
         "economia"
@@ -215,7 +219,7 @@
       "version": "da05fb78307294"
     },
     {
-      "caption": "PLP 304/2026: o que consta no registro oficial?\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653940\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653940\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653940/a39d386f415e16\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "caption": "Como a proposta relaciona devolução de impostos e renda?\n\nPLP 304/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653940\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653940\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653940/a39d386f415e16\n#FatoVia #PoliticasPublicas #CongressoNacional",
       "cards": [
         "docs/media/camara-2653940/a39d386f415e16/01.jpg",
         "docs/media/camara-2653940/a39d386f415e16/02.jpg",
@@ -228,7 +232,7 @@
       "discovery_source_count": 0,
       "editorial_score": 82,
       "evidence": {
-        "checked_at": "2026-11-14T17:18:25.840501-03:00",
+        "checked_at": "2026-11-14T17:48:52.256959-03:00",
         "claims": [
           {
             "basis": "identificacao_da_proposicao",
@@ -243,7 +247,7 @@
             "field": "stage"
           }
         ],
-        "content_sha256": "6f6d0b853240e90989e00a2b6fdf68b0a314880c0b572ff5e3a201771d12529a",
+        "content_sha256": "b082fd4a9df080df1658e9d29d4d9af5fd86b9f824e7284f294bd45e0e708bb5",
         "kind": "official_document_attribution",
         "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
         "record_date": "2026-11-13",
@@ -260,6 +264,7 @@
       "status": "ready",
       "summary": "Altera a Lei Complementar nº 214, de 16 de janeiro de 2025, para instituir devolução geral progressiva da CBS e do IBS segundo a renda domiciliar per capita e ampliar os mecanismos de identificação das famílias beneficiárias e dá outras providências.",
       "summary_hash": "315039b3e83da5",
+      "template_revision": "documentary-hook-v3",
       "title": "PLP 304/2026",
       "topics": [
         "economia"
@@ -267,7 +272,7 @@
       "version": "a39d386f415e16"
     },
     {
-      "caption": "PL 5844/2026: o que consta no registro oficial?\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653811\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653811\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653811/875c9caddb7040\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "caption": "Planos de saúde familiares: o que está em discussão?\n\nPL 5844/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653811\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653811\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653811/875c9caddb7040\n#FatoVia #PoliticasPublicas #CongressoNacional",
       "cards": [
         "docs/media/camara-2653811/875c9caddb7040/01.jpg",
         "docs/media/camara-2653811/875c9caddb7040/02.jpg",
@@ -280,7 +285,7 @@
       "discovery_source_count": 1,
       "editorial_score": 79,
       "evidence": {
-        "checked_at": "2026-11-14T17:43:59.463630-03:00",
+        "checked_at": "2026-11-14T17:48:52.256959-03:00",
         "claims": [
           {
             "basis": "identificacao_da_proposicao",
@@ -295,7 +300,7 @@
             "field": "stage"
           }
         ],
-        "content_sha256": "63f5c6e9e9a920bfe310a9cdb76f2d40c3381ca3b392911072cb88f73a3675f0",
+        "content_sha256": "847f2568cdb7d2642387ee1068ee4e0467b45948ac685e2abdc6dcff6e2a3231",
         "kind": "official_document_attribution",
         "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
         "record_date": "2026-11-13",
@@ -312,6 +317,7 @@
       "status": "ready",
       "summary": "Altera a Lei nº 9.656, de 3 de junho de 1998, para estabelecer critérios de equiparação dos contratos de planos privados de assistência à saúde coletivos empresariais utilizados exclusivamente por núcleo familiar aos planos individuais ou familiares, assegurando proteção contra reajustes abusivos e outras práticas contratuais prejudiciais aos consumidores.",
       "summary_hash": "526758a7715d00",
+      "template_revision": "documentary-hook-v3",
       "title": "PL 5844/2026",
       "topics": [
         "saude"
@@ -319,7 +325,7 @@
       "version": "875c9caddb7040"
     },
     {
-      "caption": "PL 5851/2026: o que consta no registro oficial?\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653822\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653822\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653822/b51b94f0828426\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "caption": "O que o projeto propõe para financiar tratamentos no SUS?\n\nPL 5851/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653822\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653822\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653822/b51b94f0828426\n#FatoVia #PoliticasPublicas #CongressoNacional",
       "cards": [
         "docs/media/camara-2653822/b51b94f0828426/01.jpg",
         "docs/media/camara-2653822/b51b94f0828426/02.jpg",
@@ -332,7 +338,7 @@
       "discovery_source_count": 1,
       "editorial_score": 75,
       "evidence": {
-        "checked_at": "2026-11-14T17:43:59.463630-03:00",
+        "checked_at": "2026-11-14T17:48:52.256959-03:00",
         "claims": [
           {
             "basis": "identificacao_da_proposicao",
@@ -347,7 +353,7 @@
             "field": "stage"
           }
         ],
-        "content_sha256": "d62dbde22a0f85a986df9f3cc59224cbd667f6d78bce8b414171949339a7568b",
+        "content_sha256": "a015e0095f972b208e3d8d3d43fc26b5d1b8516ae5c8173e329c3e37e54f4bd6",
         "kind": "official_document_attribution",
         "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
         "record_date": "2026-11-13",
@@ -364,6 +370,7 @@
       "status": "ready",
       "summary": "Dispõe sobre a destinação de parcela da receita do Imposto Seletivo ao financiamento adicional de tratamentos de saúde no âmbito do Sistema Único de Saúde (SUS).",
       "summary_hash": "fbfaba03d5e4f7",
+      "template_revision": "documentary-hook-v3",
       "title": "PL 5851/2026",
       "topics": [
         "saude",
@@ -372,7 +379,7 @@
       "version": "b51b94f0828426"
     },
     {
-      "caption": "PL 5854/2026: o que consta no registro oficial?\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653946\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653946\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653946/b98ae1ec690f70\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "caption": "O que está em discussão sobre lucros e dividendos?\n\nPL 5854/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653946\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653946\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653946/b98ae1ec690f70\n#FatoVia #PoliticasPublicas #CongressoNacional",
       "cards": [
         "docs/media/camara-2653946/b98ae1ec690f70/01.jpg",
         "docs/media/camara-2653946/b98ae1ec690f70/02.jpg",
@@ -385,7 +392,7 @@
       "discovery_source_count": 0,
       "editorial_score": 72,
       "evidence": {
-        "checked_at": "2026-11-14T17:43:59.463630-03:00",
+        "checked_at": "2026-11-14T17:48:52.256959-03:00",
         "claims": [
           {
             "basis": "identificacao_da_proposicao",
@@ -400,7 +407,7 @@
             "field": "stage"
           }
         ],
-        "content_sha256": "ca920e1b3bde82c0ba523f475dc036ecb19f462d47ba7488b9b883c35592103a",
+        "content_sha256": "a57f41ba1663719a61160b8c00fd2e2e12554d51c07a083b530994099802403e",
         "kind": "official_document_attribution",
         "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
         "record_date": "2026-11-13",
@@ -417,6 +424,7 @@
       "status": "ready",
       "summary": "Dispõe sobre a incidência do Imposto sobre a Renda das Pessoas Físicas sobre lucros e dividendos distribuídos por pessoas jurídicas, altera as Leis nº 9.249, de 26 de dezembro de 1995, e nº 9.250, de 26 de dezembro de 1995, e dá outras providências.",
       "summary_hash": "2a14a675828606",
+      "template_revision": "documentary-hook-v3",
       "title": "PL 5854/2026",
       "topics": [
         "economia"
