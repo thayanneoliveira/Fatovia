@@ -1,0 +1,68 @@
+name: "FatoVia | Inteligencia editorial e insights"
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "43 0,6,12,18 * * *"
+permissions:
+  contents: write
+concurrency:
+  group: fatovia-state
+  cancel-in-progress: false
+jobs:
+  collect:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -r requirements.txt
+      - name: Testar modulos
+        run: python -m unittest discover -s tests -v
+      - name: Coletar sinais publicos sem credenciais Meta
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from fatovia.engine import load, save, now_local
+          from fatovia.discovery import run
+          state=load(Path("data/state.json"))
+          report=run(state,now_local())
+          save("data/discovery_report.json",report)
+          print("Fontes:", report["sources"])
+          print("Sinais:",len(report["signals"]), "Editorias:",len(report["topic_groups"]))
+          if not any(x["status"]=="ok" for x in report["sources"].values()):
+              print("::warning::Nenhuma fonte respondeu corretamente.")
+          PY
+      - name: Coletar insights agregados em janelas comparaveis (somente GET)
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          META_IG_USER_ID: ${{ vars.META_IG_USER_ID }}
+        run: |
+          python - <<'PY'
+          from fatovia.engine import load,save,now_local
+          from fatovia.cohorts import collect,learning_report
+          state=load("data/state.json")
+          try:
+              result=collect(state,now_local())
+              print(result)
+              save("data/state.json",state)
+          except Exception as exc:
+              result={"status":"unavailable","error_type":type(exc).__name__}
+              print("::warning::Insights nao coletados.")
+          save("data/learning_report.json",{"collection":result,"learning":learning_report(state)})
+          PY
+      - name: Persistir apenas registros de pesquisa e metricas
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/discovery_report.json data/learning_report.json data/state.json
+          if ! git diff --cached --quiet; then
+            git commit -m "FatoVia: atualizar radar e amostras comparaveis [skip ci]"
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
