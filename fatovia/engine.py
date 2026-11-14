@@ -81,6 +81,8 @@ def validate_candidate(item):
         issues.append("Fonte não permitida")
     if str(item.get("title", "")).split(" ",1)[0] not in LEGISLATIVE_TYPES:
         issues.append("Tipo documental fora do escopo de propostas legislativas")
+    if str(item.get("title","")).startswith("PDL ") and re.search(r"\b(?:radiodifusão|radiodifusao)\b",str(item.get("summary","")),re.I) and re.search(r"\b(?:renova|outorga|autoriza|permissão|permissao)\w*\b",str(item.get("summary","")),re.I):
+        issues.append("Renovação individual de radiodifusão fora da pauta nacional prioritária")
     if len(str(item.get("summary", "")).strip()) < 65:
         issues.append("Ementa insuficiente")
     if not item.get("stage_date") or not item.get("stage"):

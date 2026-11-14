@@ -38,6 +38,12 @@ class EditorialTests(unittest.TestCase):
         item["source_url"] = "https://outro-site.example/noticia"
         self.assertTrue(validate_candidate(item))
 
+    def test_licenca_radio_fora_da_pauta_nacional(self):
+        item=proposal()
+        item["title"]="PDL 12/2026"
+        item["summary"]="Aprova ato que renova a permissão para executar serviço de radiodifusão educativa municipal."
+        self.assertTrue(validate_candidate(item))
+
     def test_tipo_doc_nao_e_projeto(self):
         item = proposal()
         item["title"] = "DOC 12/2026"

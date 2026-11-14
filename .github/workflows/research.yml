@@ -11,6 +11,8 @@ on:
       - "tests/test_budget.py"
       - "fatovia/ibge.py"
       - "tests/test_ibge.py"
+      - "fatovia/investigation.py"
+      - "tests/test_investigation.py"
   schedule:
     - cron: "25 13 * * *"
 permissions:
@@ -40,11 +42,14 @@ jobs:
         run: python -m fatovia.budget
       - name: Coletar SIDRA sem credenciais Meta
         run: python -m fatovia.ibge
+      - run: python -m unittest discover -s tests -p test_investigation.py -v
+      - name: Construir dossies de pesquisa
+        run: python -m fatovia.investigation
       - name: Persistir apenas contexto economico e orcamentario
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/economic_context.json data/budget_context.json data/ibge_context.json
+          git add data/economic_context.json data/budget_context.json data/ibge_context.json data/investigation_report.json
           if ! git diff --cached --quiet; then
             git commit -m "FatoVia: registrar contexto economico [skip ci]"
             git fetch origin main

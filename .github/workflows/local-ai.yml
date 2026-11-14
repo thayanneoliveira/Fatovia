@@ -6,6 +6,8 @@ on:
     paths:
       - ".github/workflows/local-ai.yml"
       - "fatovia/local_draft.py"
+      - "fatovia/claim_matrix.py"
+      - "fatovia/claim_audit.py"
 permissions:
   contents: read
 concurrency:
@@ -55,5 +57,5 @@ jobs:
         with:
           name: avaliacao-editorial-sem-publicacao
           path: draft-output/evaluation.json
-          retention-days: 1
+          retention-days: 7
           if-no-files-found: ignore
