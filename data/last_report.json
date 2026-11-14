@@ -2,7 +2,7 @@
   "already_published": 4,
   "errors": [],
   "found": 17,
-  "pending": 4,
+  "pending": 8,
   "publication": "DISABLED",
   "recommended_daily_limit": 4,
   "recommended_hours": [
@@ -13,7 +13,7 @@
   ],
   "scan_diagnostics": {
     "detail_status_used": 17,
-    "expired_or_unsealed_removed": 4,
+    "expired_or_unsealed_removed": 0,
     "history_errors": 0,
     "history_http_errors": {},
     "history_missing": 0,
@@ -25,30 +25,30 @@
   },
   "selected": [
     {
-      "discover_sources": 1,
+      "discover_sources": 0,
       "explore": 0,
-      "id": "camara:2653819",
-      "score": 86
+      "id": "camara:2653716",
+      "score": 84
     },
     {
       "discover_sources": 0,
       "explore": 0,
-      "id": "camara:2653948",
-      "score": 86
+      "id": "camara:2653813",
+      "score": 83
     },
     {
-      "discover_sources": 1,
+      "discover_sources": 0,
       "explore": 0,
-      "id": "camara:2653788",
-      "score": 84
+      "id": "camara:2653937",
+      "score": 82
     },
     {
-      "discover_sources": 1,
+      "discover_sources": 0,
       "explore": 0,
-      "id": "camara:2653801",
-      "score": 84
+      "id": "camara:2653940",
+      "score": 82
     }
   ],
   "staged": 4,
-  "timestamp": "2026-11-14T17:15:04.282243-03:00"
+  "timestamp": "2026-11-14T17:18:25.840501-03:00"
 }

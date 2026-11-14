@@ -213,6 +213,214 @@
         "educacao"
       ],
       "version": "92752c5f86697d"
+    },
+    {
+      "caption": "PDL 1179/2026: o que consta no registro oficial?\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-12. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653716\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653716\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653716/2746e09004a3ae\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "cards": [
+        "docs/media/camara-2653716/2746e09004a3ae/01.jpg",
+        "docs/media/camara-2653716/2746e09004a3ae/02.jpg",
+        "docs/media/camara-2653716/2746e09004a3ae/03.jpg",
+        "docs/media/camara-2653716/2746e09004a3ae/04.jpg",
+        "docs/media/camara-2653716/2746e09004a3ae/05.jpg",
+        "docs/media/camara-2653716/2746e09004a3ae/06.jpg",
+        "docs/media/camara-2653716/2746e09004a3ae/07.jpg"
+      ],
+      "discovery_source_count": 0,
+      "editorial_score": 84,
+      "evidence": {
+        "checked_at": "2026-11-14T17:18:25.840501-03:00",
+        "claims": [
+          {
+            "basis": "identificacao_da_proposicao",
+            "field": "title"
+          },
+          {
+            "basis": "ementa_oficial_atribuida",
+            "field": "summary"
+          },
+          {
+            "basis": "registro_de_tramitacao",
+            "field": "stage"
+          }
+        ],
+        "content_sha256": "3d9eaa3511d6fc1a5b69d1ee64dc2ffd937fb0abdcd68e3bc424d669f06fd550",
+        "kind": "official_document_attribution",
+        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
+        "record_date": "2026-11-12",
+        "schema": 1,
+        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653716"
+      },
+      "explore_signal_count": 0,
+      "id": "camara:2653716",
+      "public_url": "https://www.camara.leg.br/propostas-legislativas/2653716",
+      "source_name": "Câmara dos Deputados",
+      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653716",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-12",
+      "status": "ready",
+      "summary": "Aprova o ato que renova a autorização outorgada à Associação Comunitária dos Pequenos Produtores do Sítio Olho D'Água para executar, pelo prazo de dez anos, sem direito de exclusividade, serviço de radiodifusão comunitária no Município de Calçado, Estado de Pernambuco.",
+      "summary_hash": "01ca4c7a7118ff",
+      "title": "PDL 1179/2026",
+      "topics": [
+        "ambiente"
+      ],
+      "version": "2746e09004a3ae"
+    },
+    {
+      "caption": "PL 5845/2026: o que consta no registro oficial?\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653813\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653813\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653813/af7aa01437443c\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "cards": [
+        "docs/media/camara-2653813/af7aa01437443c/01.jpg",
+        "docs/media/camara-2653813/af7aa01437443c/02.jpg",
+        "docs/media/camara-2653813/af7aa01437443c/03.jpg",
+        "docs/media/camara-2653813/af7aa01437443c/04.jpg",
+        "docs/media/camara-2653813/af7aa01437443c/05.jpg",
+        "docs/media/camara-2653813/af7aa01437443c/06.jpg",
+        "docs/media/camara-2653813/af7aa01437443c/07.jpg"
+      ],
+      "discovery_source_count": 0,
+      "editorial_score": 83,
+      "evidence": {
+        "checked_at": "2026-11-14T17:18:25.840501-03:00",
+        "claims": [
+          {
+            "basis": "identificacao_da_proposicao",
+            "field": "title"
+          },
+          {
+            "basis": "ementa_oficial_atribuida",
+            "field": "summary"
+          },
+          {
+            "basis": "registro_de_tramitacao",
+            "field": "stage"
+          }
+        ],
+        "content_sha256": "688dd5abd930b8bb27bdeac6b39cf66fe2a81a24f831fcab8be1d1acf4a5e334",
+        "kind": "official_document_attribution",
+        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
+        "record_date": "2026-11-13",
+        "schema": 1,
+        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653813"
+      },
+      "explore_signal_count": 0,
+      "id": "camara:2653813",
+      "public_url": "https://www.camara.leg.br/propostas-legislativas/2653813",
+      "source_name": "Câmara dos Deputados",
+      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653813",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-13",
+      "status": "ready",
+      "summary": "Dispõe sobre a proibição da fabricação, importação, comercialização, distribuição, armazenamento, transporte e utilização de rojões e demais fogos de artifício e artefatos pirotécnicos que produzam estampidos ou efeitos sonoros de explosão em todo o território nacional, e dá outras providências.",
+      "summary_hash": "af862f3b4be729",
+      "title": "PL 5845/2026",
+      "topics": [
+        "infraestrutura"
+      ],
+      "version": "af7aa01437443c"
+    },
+    {
+      "caption": "PLP 303/2026: o que consta no registro oficial?\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653937\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653937\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653937/da05fb78307294\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "cards": [
+        "docs/media/camara-2653937/da05fb78307294/01.jpg",
+        "docs/media/camara-2653937/da05fb78307294/02.jpg",
+        "docs/media/camara-2653937/da05fb78307294/03.jpg",
+        "docs/media/camara-2653937/da05fb78307294/04.jpg",
+        "docs/media/camara-2653937/da05fb78307294/05.jpg",
+        "docs/media/camara-2653937/da05fb78307294/06.jpg",
+        "docs/media/camara-2653937/da05fb78307294/07.jpg"
+      ],
+      "discovery_source_count": 0,
+      "editorial_score": 82,
+      "evidence": {
+        "checked_at": "2026-11-14T17:18:25.840501-03:00",
+        "claims": [
+          {
+            "basis": "identificacao_da_proposicao",
+            "field": "title"
+          },
+          {
+            "basis": "ementa_oficial_atribuida",
+            "field": "summary"
+          },
+          {
+            "basis": "registro_de_tramitacao",
+            "field": "stage"
+          }
+        ],
+        "content_sha256": "e6b787514dd65fe74c261fa3566775719259d7939e3d9a68d6bc73acdd16c4f9",
+        "kind": "official_document_attribution",
+        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
+        "record_date": "2026-11-13",
+        "schema": 1,
+        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653937"
+      },
+      "explore_signal_count": 0,
+      "id": "camara:2653937",
+      "public_url": "https://www.camara.leg.br/propostas-legislativas/2653937",
+      "source_name": "Câmara dos Deputados",
+      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653937",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-13",
+      "status": "ready",
+      "summary": "Altera a Lei Complementar nº 214, de 16 de janeiro de 2025, para incluir os serviços médico-veterinários na redução de 60% (sessenta por cento) das alíquotas do Imposto sobre Bens e Serviços (IBS) e da Contribuição Social sobre Bens e Serviços (CBS).",
+      "summary_hash": "e8513367cf056d",
+      "title": "PLP 303/2026",
+      "topics": [
+        "economia"
+      ],
+      "version": "da05fb78307294"
+    },
+    {
+      "caption": "PLP 304/2026: o que consta no registro oficial?\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653940\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653940\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653940/a39d386f415e16\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "cards": [
+        "docs/media/camara-2653940/a39d386f415e16/01.jpg",
+        "docs/media/camara-2653940/a39d386f415e16/02.jpg",
+        "docs/media/camara-2653940/a39d386f415e16/03.jpg",
+        "docs/media/camara-2653940/a39d386f415e16/04.jpg",
+        "docs/media/camara-2653940/a39d386f415e16/05.jpg",
+        "docs/media/camara-2653940/a39d386f415e16/06.jpg",
+        "docs/media/camara-2653940/a39d386f415e16/07.jpg"
+      ],
+      "discovery_source_count": 0,
+      "editorial_score": 82,
+      "evidence": {
+        "checked_at": "2026-11-14T17:18:25.840501-03:00",
+        "claims": [
+          {
+            "basis": "identificacao_da_proposicao",
+            "field": "title"
+          },
+          {
+            "basis": "ementa_oficial_atribuida",
+            "field": "summary"
+          },
+          {
+            "basis": "registro_de_tramitacao",
+            "field": "stage"
+          }
+        ],
+        "content_sha256": "6f6d0b853240e90989e00a2b6fdf68b0a314880c0b572ff5e3a201771d12529a",
+        "kind": "official_document_attribution",
+        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
+        "record_date": "2026-11-13",
+        "schema": 1,
+        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653940"
+      },
+      "explore_signal_count": 0,
+      "id": "camara:2653940",
+      "public_url": "https://www.camara.leg.br/propostas-legislativas/2653940",
+      "source_name": "Câmara dos Deputados",
+      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653940",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-13",
+      "status": "ready",
+      "summary": "Altera a Lei Complementar nº 214, de 16 de janeiro de 2025, para instituir devolução geral progressiva da CBS e do IBS segundo a renda domiciliar per capita e ampliar os mecanismos de identificação das famílias beneficiárias e dá outras providências.",
+      "summary_hash": "315039b3e83da5",
+      "title": "PLP 304/2026",
+      "topics": [
+        "economia"
+      ],
+      "version": "a39d386f415e16"
     }
   ],
   "published": [
