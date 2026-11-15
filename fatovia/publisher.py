@@ -17,7 +17,7 @@ from urllib.parse import quote
 import requests
 from .evidence import sealed, verify_live
 from .editorial_audit import approved, verify_hosted
-from .pilot import allowed as pilot_allowed
+from .pilot import allowed as pilot_allowed, window_slot
 
 from .engine import TZ, MIN_PUBLICATION_GAP_HOURS, daily_limit, load, now_local, preferred_hours, save, validate_candidate
 
@@ -91,14 +91,17 @@ def marker(item):
     return f'ID editorial: {item["id"]}/{item["version"]}'
 
 
-def choose_due(state, now, approval_check=None):
+def choose_due(state, now, approval_check=None, pilot_window=False):
     if now.date().isoformat() in state.get("blackout_dates", []):
         return None
-    if not (8 <= now.hour <= 22) or now.hour not in preferred_hours(state):
-        return None
-    # Não publicar se a execução agendada atrasar excessivamente.
-    if now.minute > 45:
-        return None
+    if pilot_window:
+        if window_slot(now) is None:
+            return None
+    else:
+        if not (8 <= now.hour <= 22) or now.hour not in preferred_hours(state):
+            return None
+        if now.minute > 45:
+            return None
     today = []
     for p in state.get("published", []):
         try:
@@ -109,7 +112,7 @@ def choose_due(state, now, approval_check=None):
             continue
     if len(today) >= min(4, daily_limit(state)):
         return None
-    if any(stamp.hour == now.hour for stamp in today):
+    if any((window_slot(stamp) == window_slot(now)) if pilot_window else (stamp.hour == now.hour) for stamp in today):
         return None
     if today and now - max(today) < timedelta(hours=MIN_PUBLICATION_GAP_HOURS):
         return None
@@ -130,7 +133,7 @@ def prepare(state, now, cfg):
         return {"action": "missing_credentials", "reason": "Configuração Meta incompleta"}
     if state.get("publishing"):
         return {"action": "reconcile", "reason": "Publicação anterior requer conciliação"}
-    item = choose_due(state, now, approval_check=lambda p,t: approved(p,t) and pilot_allowed(state,p,t))
+    item = choose_due(state, now, approval_check=lambda p,t: approved(p,t) and pilot_allowed(state,p,t), pilot_window=True)
     if not item:
         return {"action": "idle", "reason": "Nenhuma pauta verificada e elegível neste horário"}
     state["publishing"] = {
@@ -346,6 +349,7 @@ def main():
                 "transaction_open": bool(state.get("publishing")),
                 "allowed_hours": preferred_hours(state),
                 "limit": daily_limit(state),
+                "pilot_recovery_windows_brt": ["09:00–11:00 (exclusive)", "17:00–19:00 (exclusive)"],
             }
         elif cmd == "probe":
             verify_media([PAGE_ROOT + "/media/healthcheck.jpg"])

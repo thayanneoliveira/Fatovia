@@ -101,6 +101,14 @@ class PublishTests(unittest.TestCase):
         self.assertEqual(len(self.state["published"]), 4)
         self.assertIsNone(choose_due(self.state, datetime.fromisoformat("2026-10-27T22:12:00-03:00")))
 
+    def test_pilot_late_slot_and_no_double_post(self):
+        later=NOW.replace(hour=10,minute=24)
+        self.assertIsNotNone(choose_due(self.state,later,pilot_window=True))
+        self.state["published"]=[{"id":"other:1","version":"v","published_at":NOW.isoformat()}]
+        self.assertIsNone(choose_due(self.state,later,pilot_window=True))
+        self.assertIsNotNone(choose_due(self.state,NOW.replace(hour=17),pilot_window=True))
+        self.assertIsNone(choose_due(self.state,NOW.replace(hour=11),pilot_window=True))
+
     def test_pausa_minima_entre_posts(self):
         self.state["published"] = [{"id":"other:1","version":"1",
                                     "published_at":"2026-10-27T11:15:00-03:00"}]
