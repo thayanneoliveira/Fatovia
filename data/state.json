@@ -478,20 +478,6 @@
         "cidadania"
       ],
       "version": "v1"
-    },
-    {
-      "evidence_sha256": "4aee37391f7554cad404a1b87cac684ff1826e0cd6e87395e5a9823c0edb301e",
-      "id": "camara:2653819",
-      "media_id": "18675166858016301",
-      "permalink": "https://www.instagram.com/p/Dfw5nSXEc3J/",
-      "published_at": "2026-11-15T10:34:29.666668-03:00",
-      "summary": "Altera a Lei n° 6.392, de 7 de julho de 1981, para incentivar a contratação de seguros contra acidentes pessoais e de responsabilidade civil, pela instituição de saúde formadora, em benefício de seus médicos residentes, bem como reajustes periódicos da bolsa concedida a esses profissionais, observadas a recomposição e a preservação de seu poder aquisitivo, segundo índices elaborados pelos órgãos técnicos competentes.",
-      "summary_hash": "34a1fc1eec0c6a",
-      "title": "PL 5849/2026",
-      "topics": [
-        "saude"
-      ],
-      "version": "aec4919b2cc642"
     }
   ],
   "publishing": null,
@@ -500,8 +486,26 @@
     "id": "camara:2653819",
     "old_media_id": "18675166858016301",
     "old_permalink": "https://www.instagram.com/p/Dfw5nSXEc3J/",
-    "status": "awaiting_deletion",
+    "status": "deletion_verified",
     "version": "aec4919b2cc642"
   },
-  "schema_version": 1
+  "schema_version": 1,
+  "withdrawn_publications": [
+    {
+      "evidence_sha256": "4aee37391f7554cad404a1b87cac684ff1826e0cd6e87395e5a9823c0edb301e",
+      "id": "camara:2653819",
+      "media_id": "18675166858016301",
+      "permalink": "https://www.instagram.com/p/Dfw5nSXEc3J/",
+      "published_at": "2026-11-15T10:34:29.666668-03:00",
+      "reason": "owner_requested_replacement",
+      "summary": "Altera a Lei n° 6.392, de 7 de julho de 1981, para incentivar a contratação de seguros contra acidentes pessoais e de responsabilidade civil, pela instituição de saúde formadora, em benefício de seus médicos residentes, bem como reajustes periódicos da bolsa concedida a esses profissionais, observadas a recomposição e a preservação de seu poder aquisitivo, segundo índices elaborados pelos órgãos técnicos competentes.",
+      "summary_hash": "34a1fc1eec0c6a",
+      "title": "PL 5849/2026",
+      "topics": [
+        "saude"
+      ],
+      "version": "aec4919b2cc642",
+      "withdrawn_verified_at": "2026-11-15T10:50:09.645451-03:00"
+    }
+  ]
 }
