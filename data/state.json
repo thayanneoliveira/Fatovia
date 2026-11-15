@@ -7,59 +7,6 @@
   "metrics": [],
   "pending": [
     {
-      "caption": "Violência contra a mulher: o que pode mudar no esporte?\n\nAlterar a Lei Geral do Esporte para estabelecer medidas de responsabilização disciplinar de atletas pela prática de violência contra a mulher.\n\nSe o projeto avançar, atletas poderão estar sujeitos às medidas disciplinares previstas no texto que vier a ser aprovado.\n\nPL 5856/2026 | Registro de 2026-11-13. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2653948\nID editorial: camara:2653948/78147b54c05128/didactic-v4\n#FatoVia #PoliticasPublicas",
-      "cards": [
-        "docs/media/camara-2653948/78147b54c05128/didactic-v4/01.jpg",
-        "docs/media/camara-2653948/78147b54c05128/didactic-v4/02.jpg",
-        "docs/media/camara-2653948/78147b54c05128/didactic-v4/03.jpg",
-        "docs/media/camara-2653948/78147b54c05128/didactic-v4/04.jpg",
-        "docs/media/camara-2653948/78147b54c05128/didactic-v4/05.jpg",
-        "docs/media/camara-2653948/78147b54c05128/didactic-v4/06.jpg",
-        "docs/media/camara-2653948/78147b54c05128/didactic-v4/07.jpg"
-      ],
-      "discovery_source_count": 0,
-      "editorial_score": 86,
-      "evidence": {
-        "checked_at": "2026-11-15T10:48:12.090754-03:00",
-        "claims": [
-          {
-            "basis": "identificacao_da_proposicao",
-            "field": "title"
-          },
-          {
-            "basis": "ementa_oficial_atribuida",
-            "field": "summary"
-          },
-          {
-            "basis": "registro_de_tramitacao",
-            "field": "stage"
-          }
-        ],
-        "content_sha256": "97a3baa2c865523f13cbe3508115146de356cfc57b0b9c984bc6be4ca47d5362",
-        "kind": "official_document_attribution",
-        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
-        "record_date": "2026-11-13",
-        "schema": 1,
-        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653948"
-      },
-      "explore_signal_count": 0,
-      "id": "camara:2653948",
-      "public_url": "https://www.camara.leg.br/propostas-legislativas/2653948",
-      "source_name": "Câmara dos Deputados",
-      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653948",
-      "stage": "Apresentação de Proposição",
-      "stage_date": "2026-11-13",
-      "status": "ready",
-      "summary": "Altera a Lei nº 14.597, de 14 de junho de 2023 (Lei Geral do Esporte), para estabelecer medidas de responsabilização disciplinar de atletas pela prática de violência contra a mulher.",
-      "summary_hash": "7a5e8ee82d4ebc",
-      "template_revision": "didactic-v4",
-      "title": "PL 5856/2026",
-      "topics": [
-        "seguranca"
-      ],
-      "version": "78147b54c05128"
-    },
-    {
       "caption": "Fogos barulhentos: podem deixar de ser vendidos e usados?\n\nO projeto inclui fabricação, importação, comércio, distribuição, armazenamento, transporte e utilização dos artefatos ruidosos.\n\nSe a medida for aprovada e aplicada, pode diminuir a exposição ao estrondo em festas. A ementa não mede esse efeito.\n\nPL 5845/2026 | Registro de 2026-11-13. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2653813\nID editorial: camara:2653813/af7aa01437443c/didactic-v4\n#FatoVia #PoliticasPublicas",
       "cards": [
         "docs/media/camara-2653813/af7aa01437443c/didactic-v4/01.jpg",
@@ -492,14 +439,23 @@
         "saude"
       ],
       "version": "aec4919b2cc642"
+    },
+    {
+      "evidence_sha256": "97a3baa2c865523f13cbe3508115146de356cfc57b0b9c984bc6be4ca47d5362",
+      "id": "camara:2653948",
+      "media_id": "17901241947394968",
+      "permalink": "https://www.instagram.com/p/DfxyoEGIO7b/",
+      "published_at": "2026-11-15T18:52:34.384138-03:00",
+      "summary": "Altera a Lei nº 14.597, de 14 de junho de 2023 (Lei Geral do Esporte), para estabelecer medidas de responsabilização disciplinar de atletas pela prática de violência contra a mulher.",
+      "summary_hash": "7a5e8ee82d4ebc",
+      "title": "PL 5856/2026",
+      "topics": [
+        "seguranca"
+      ],
+      "version": "78147b54c05128"
     }
   ],
-  "publishing": {
-    "id": "camara:2653948",
-    "started_at": "2026-11-15T18:52:32.749079-03:00",
-    "status": "checkpointed",
-    "version": "78147b54c05128"
-  },
+  "publishing": null,
   "replacement_request": {
     "authorization": "owner_requested_replacement_after_manual_deletion_2026-11-15",
     "id": "camara:2653819",
