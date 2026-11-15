@@ -1,6 +1,6 @@
 {
   "evaluation_ready": false,
-  "generated_at": "2026-11-14T17:57:30.761384-03:00",
+  "generated_at": "2026-11-15T04:09:02.071333-03:00",
   "issues": [],
   "limitations": "Only recorded pilot posts; no retroactive estimates, no automatic promotion, no optimization from four samples.",
   "max_total": 4,
@@ -13,5 +13,5 @@
     "24": 0,
     "72": 0
   },
-  "status": "awaiting_start"
+  "status": "pilot_in_progress"
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T17:57:19.026818-03:00",
+  "generated_at": "2026-11-15T04:08:51.838201-03:00",
   "note": "Topic co-occurrence is not corroboration of an individual claim or proof of virality.",
   "publication_authorized": false,
   "signals": [
@@ -13,22 +13,11 @@
         "saude"
       ],
       "url": "https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2026-11/governo-abre-consulta-publica-sobre-enfrentamento-ao-calor-extremo"
-    },
-    {
-      "id": "7592ce891be652b1a9a2",
-      "published_at": "2026-11-14T11:20:00-03:00",
-      "source": "agencia_brasil",
-      "status": "discovery_only",
-      "title": "Apoio social, cultura e educação levaram jovem a abandonar crime",
-      "topics": [
-        "educacao"
-      ],
-      "url": "https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2026-11/revolta-e-abandono-fizeram-jovem-entrar-no-mundo-do-crime"
     }
   ],
   "sources": {
     "agencia_brasil": {
-      "eligible_signals": 2,
+      "eligible_signals": 1,
       "status": "ok"
     },
     "ibge": {
@@ -41,16 +30,6 @@
     }
   },
   "topic_groups": [
-    {
-      "document_count": 1,
-      "explore_links": 0,
-      "source_count": 1,
-      "sources": [
-        "agencia_brasil"
-      ],
-      "status": "research_required",
-      "topic": "educacao"
-    },
     {
       "document_count": 1,
       "explore_links": 0,
