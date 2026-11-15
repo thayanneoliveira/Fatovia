@@ -33,6 +33,9 @@ SENSITIVE_SUBJECT = re.compile(
 
 class PublicationError(Exception):
     """Falha segura: não se deve repetir um POST automaticamente."""
+    def __init__(self, message, code="publication_guard"):
+        super().__init__(message)
+        self.code = code
 
 
 def config():
@@ -169,32 +172,49 @@ class MetaClient:
             headers={"Authorization": f'Bearer {self.cfg["token"]}', "Accept": "application/json"},
             params=params,
             data=data,
-            timeout=25,
+            timeout=25, allow_redirects=False,
         )
         response.raise_for_status()
+        if response.status_code != 200:
+            raise PublicationError("Resposta HTTP inesperada da Meta", "meta_http_unexpected")
         payload = response.json()
         if not isinstance(payload, dict) or payload.get("error"):
             raise PublicationError("Resposta inesperada da Meta")
         return payload
 
     def account(self):
-        profile = self.request("GET", self.cfg["ig_id"], params={"fields": "id,username"})
-        if str(profile.get("id")) != self.cfg["ig_id"] or str(profile.get("username", "")).casefold() != TARGET_USERNAME:
-            raise PublicationError("Conta Meta diferente de @fato.via")
+        # Instagram Login returns an app-scoped id distinct from the professional user_id.
+        # Never fall back to username alone or interchange these identifiers.
+        instagram_login = self.cfg["base"].startswith("https://graph.instagram.com/")
+        if instagram_login:
+            profile = self.request("GET", "me", params={"fields": "user_id,username"})
+            identity = profile.get("user_id")
+        else:
+            profile = self.request("GET", self.cfg["ig_id"], params={"fields": "id,username"})
+            identity = profile.get("id")
+        if str(identity) != self.cfg["ig_id"] or str(profile.get("username", "")).casefold() != TARGET_USERNAME:
+            raise PublicationError("Identidade Meta incompatível com a conta autorizada", "meta_identity_mismatch")
         return profile
 
     def recent(self):
-        return self.request(
+        result = self.request(
             "GET", f'{self.cfg["ig_id"]}/media',
             params={"fields": "id,caption,permalink", "limit": 100},
-        ).get("data", [])
+        )
+        rows = result.get("data")
+        if not isinstance(rows, list) or any(not isinstance(m, dict) for m in rows):
+            raise PublicationError("Histórico Meta indisponível", "meta_history_invalid")
+        # Fail closed if the available history cannot establish absence.
+        if result.get("paging", {}).get("next"):
+            raise PublicationError("Histórico Meta paginado, ausência não demonstrada", "meta_history_incomplete")
+        return rows
 
     def existing(self, item):
         key = marker(item)
-        for media in self.recent():
-            if key in media.get("caption", "") and media.get("id"):
-                return media
-        return None
+        matches = [m for m in self.recent() if key in (m.get("caption") or "").splitlines() and m.get("id")]
+        if len(matches) > 1:
+            raise PublicationError("Marcador editorial duplicado na Meta", "meta_duplicate_marker")
+        return matches[0] if matches else None
 
     def create(self, data):
         payload = self.request("POST", f'{self.cfg["ig_id"]}/media', data=data)
@@ -362,7 +382,19 @@ def main():
             result = reconcile(state, now, cfg)
         print(json.dumps(result, ensure_ascii=False))
     except (PublicationError, requests.RequestException) as exc:
-        print(json.dumps({"action": "blocked", "reason": type(exc).__name__}, ensure_ascii=False))
+        result = {"action": "blocked", "reason": type(exc).__name__}
+        if isinstance(exc, PublicationError):
+            result["code"] = exc.code
+        if isinstance(exc, requests.HTTPError) and exc.response is not None:
+            result["http_status"] = exc.response.status_code
+            try:
+                api_error = exc.response.json().get("error", {})
+                for field in ("code", "error_subcode"):
+                    if type(api_error.get(field)) is int:
+                        result["meta_"+field] = api_error[field]
+            except (ValueError, TypeError, AttributeError):
+                pass
+        print(json.dumps(result, ensure_ascii=False))
         raise SystemExit(1) from None
 
 

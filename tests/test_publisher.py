@@ -12,7 +12,7 @@ from fatovia.engine import from_camara
 from fatovia.evidence import seal
 from fatovia.publisher import (
     PublicationError, choose_due, config, deliver, marker, prepare, public_urls,
-    qualified, reconcile, TARGET_USERNAME,
+    qualified, reconcile, TARGET_USERNAME, MetaClient,
 )
 
 NOW = datetime.fromisoformat("2026-10-27T09:12:00-03:00")
@@ -46,7 +46,7 @@ class FakeMeta:
         self.published = []
 
     def account(self):
-        return {"id": CFG["ig_id"], "username": TARGET_USERNAME}
+        return {"id": "999999999999", "user_id": CFG["ig_id"], "username": TARGET_USERNAME}
 
     def existing(self, source):
         return self.existing_media
@@ -214,6 +214,38 @@ class PublishTests(unittest.TestCase):
         })
         self.assertIsNone(choose_due(self.state, NOW))
 
+
+
+class MetaIdentityRegressionTests(unittest.TestCase):
+    def test_instagram_login_uses_professional_user_id_not_app_scoped_id(self):
+        client=MetaClient(CFG)
+        payload={"id":"999999999999","user_id":CFG["ig_id"],"username":TARGET_USERNAME}
+        with patch.object(client,"request",return_value=payload) as call:
+            self.assertEqual(client.account(),payload)
+            call.assert_called_once_with("GET","me",params={"fields":"user_id,username"})
+
+    def test_username_alone_or_app_id_alone_is_not_authorization(self):
+        client=MetaClient(CFG)
+        for payload in ({"id":CFG["ig_id"],"username":TARGET_USERNAME},
+                        {"user_id":"99999999","username":TARGET_USERNAME},
+                        {"user_id":CFG["ig_id"],"username":"other_account"}):
+            with patch.object(client,"request",return_value=payload):
+                with self.assertRaises(PublicationError) as ctx:
+                    client.account()
+                self.assertEqual(ctx.exception.code,"meta_identity_mismatch")
+
+    def test_history_missing_or_paginated_does_not_mean_absence(self):
+        client=MetaClient(CFG)
+        for payload in ({}, {"data":[],"paging":{"next":"https://example.invalid"}}):
+            with patch.object(client,"request",return_value=payload):
+                with self.assertRaises(PublicationError):
+                    client.existing(item())
+    def test_duplicate_exact_marker_is_blocked(self):
+        client=MetaClient(CFG)
+        doc=item()
+        with patch.object(client,"request",return_value={"data":[{"id":"1","caption":marker(doc)},{"id":"2","caption":marker(doc)}]}):
+            with self.assertRaises(PublicationError):
+                client.existing(doc)
 
 if __name__ == "__main__":
     unittest.main()
