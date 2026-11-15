@@ -1,14 +1,33 @@
 {
   "evaluation_ready": false,
-  "generated_at": "2026-11-15T04:09:02.071333-03:00",
+  "generated_at": "2026-11-15T16:05:52.194259-03:00",
   "issues": [],
   "limitations": "Only recorded pilot posts; no retroactive estimates, no automatic promotion, no optimization from four samples.",
   "max_total": 4,
   "next_phase_authorized": false,
   "pilot_id": "documentary-20261115",
-  "publications": [],
-  "published": 0,
-  "remaining_allowance": 4,
+  "publications": [
+    {
+      "age_hours": 4.34,
+      "document_id": "camara:2653819",
+      "media_id": "18213163885365403",
+      "permalink": "https://www.instagram.com/p/DfxBuz7FJKv/",
+      "published_at": "2026-11-15T11:45:30.486412-03:00",
+      "samples": {
+        "24": {
+          "status": "not_due"
+        },
+        "72": {
+          "status": "not_due"
+        }
+      },
+      "topics": [
+        "saude"
+      ]
+    }
+  ],
+  "published": 1,
+  "remaining_allowance": 3,
   "samples_collected": {
     "24": 0,
     "72": 0

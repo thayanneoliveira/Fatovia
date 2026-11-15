@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-15T04:08:51.838201-03:00",
+  "generated_at": "2026-11-15T16:05:41.213821-03:00",
   "note": "Topic co-occurrence is not corroboration of an individual claim or proof of virality.",
   "publication_authorized": false,
   "signals": [
     {
-      "id": "7f78f5beb64b418d4ae5",
-      "published_at": "2026-11-14T14:48:00-03:00",
+      "id": "7a18108b9d6cd2cccda5",
+      "published_at": "2026-11-15T13:48:00-03:00",
       "source": "agencia_brasil",
       "status": "discovery_only",
-      "title": "Governo abre consulta pública sobre enfrentamento ao calor extremo",
+      "title": "Zezé Motta participa de tributo a Milton Nascimento nesta segunda",
       "topics": [
-        "saude"
+        "economia"
       ],
-      "url": "https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2026-11/governo-abre-consulta-publica-sobre-enfrentamento-ao-calor-extremo"
+      "url": "https://agenciabrasil.ebc.com.br/cultura/noticia/2026-11/zeze-motta-participa-de-tributo-milton-nascimento-nesta-segunda"
     }
   ],
   "sources": {
@@ -38,7 +38,7 @@
         "agencia_brasil"
       ],
       "status": "research_required",
-      "topic": "saude"
+      "topic": "economia"
     }
   ]
 }
