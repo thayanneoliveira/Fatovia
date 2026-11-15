@@ -1,0 +1,83 @@
+name: "FatoVia | Diagnostico incidente piloto somente GET"
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/pilot-incident-diagnostic.yml"
+permissions:
+  contents: read
+jobs:
+  diagnose:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 203a3d1e9fc1af175cea7ccfe0c5dc486c33e08c
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -r requirements.txt
+      - name: Reproduzir verificacoes da falha sem gravar no Instagram
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          META_IG_USER_ID: ${{ vars.META_IG_USER_ID }}
+          META_API_HOST: ${{ vars.META_API_HOST }}
+          IG_PUBLISH_ENABLED: ${{ vars.IG_PUBLISH_ENABLED }}
+        run: |
+          python - <<'PY'
+          import json
+          import requests
+          from datetime import datetime
+          from fatovia.publisher import config,media_item,qualified,public_urls,verify_media,marker
+          from fatovia.engine import load,now_local
+          from fatovia.pilot import allowed
+          from fatovia.editorial_audit import approved,verify_hosted
+          from fatovia.evidence import verify_live
+          state=load("data/state.json")
+          item=media_item(state)
+          cfg=config()
+          before=datetime.fromisoformat("2026-11-15T10:27:37-03:00")
+          has_token=bool(cfg["token"] and cfg["ig_id"].isdigit())
+          print("LOCAL_CHECKS",json.dumps({"enabled":cfg["enabled"],"credentials_present":has_token,
+            "checkpoint":state["publishing"]["status"],"qualified_at_incident":qualified(item,before),
+            "policy_at_incident":allowed(state,item,before),"audit_at_incident":approved(item,before)}))
+          if not has_token:
+              raise SystemExit("Canonical credentials absent")
+          def get(path,params):
+              try:
+                  r=requests.get(cfg["base"]+"/"+path,params=params,headers={"Authorization":"Bearer "+cfg["token"]},timeout=15,allow_redirects=False)
+                  body=r.json()
+                  err=body.get("error",{}) if isinstance(body,dict) else {}
+                  return r.status_code,body,{"http":r.status_code,"api_code":err.get("code") if type(err.get("code")) is int else None,"api_subcode":err.get("error_subcode") if type(err.get("error_subcode")) is int else None}
+              except Exception as exc:
+                  return 0,{},{"exception":type(exc).__name__}
+          ig=cfg["ig_id"]
+          for label,path,fields in [("publisher_original",ig,"id,username"),("validated_login","me","user_id,username")]:
+              status,body,info=get(path,{"fields":fields})
+              if not isinstance(body,dict):
+                  body={}
+              info.update({"username_matches":str(body.get("username","")).casefold()=="fato.via",
+                "id_present":bool(body.get("id")),"id_matches":str(body.get("id",""))==ig,
+                "user_id_present":bool(body.get("user_id")),"user_id_matches":str(body.get("user_id",""))==ig})
+              print("IDENTITY_CHECK",label,json.dumps(info))
+          status,body,info=get(ig+"/media",{"fields":"id,caption,permalink","limit":100})
+          rows=body.get("data") if isinstance(body,dict) else None
+          info.update({"valid_media_list":isinstance(rows,list),"marker_found":None if not isinstance(rows,list) else any(marker(item) in (x.get("caption") or "") for x in rows if isinstance(x,dict)),
+                       "next_page_present":bool(body.get("paging",{}).get("next")) if isinstance(body,dict) else False})
+          print("RECONCILIATION_GET",json.dumps(info))
+          status,body,info=get(ig+"/content_publishing_limit",{"fields":"quota_usage"})
+          info["quota_response_valid"]=bool(isinstance(body,dict) and isinstance(body.get("data"),list) and body["data"])
+          print("QUOTA_GET",json.dumps(info))
+          print("LIVE_SOURCE",verify_live(item))
+          print("HOSTED_HASH_AT_INCIDENT_POLICY",verify_hosted(item,before))
+          try:
+              verify_media(public_urls(item))
+              print("MEDIA_HEAD_RANGE",True)
+          except Exception as exc:
+              print("MEDIA_HEAD_RANGE",False,type(exc).__name__)
+          print("END_DIAGNOSTIC_NO_POST")
+          PY
