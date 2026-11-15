@@ -34,6 +34,21 @@ def build(item):
         else:
             row["evidence"]=None
         entries.append(row)
+    from .didactic import reviewed,REVISION
+    row=reviewed(item)
+    if row:
+        for i,c in enumerate(row["cards"],1):
+            for anchor in row["anchors"]:
+                add(f"card_{i:02}",c["headline"]+" | "+c["body"],"reviewed_"+c["kind"],"summary",anchor,
+                    "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.")
+        add("card_06",item["stage"],"procedural_record","stage",item["stage"],"Registro de tramitação.")
+        add("card_06",item["stage_date"],"record_date","stage_date",item["stage_date"],"Não comprova vigência.")
+        add("card_07",item["title"],"source_reference","title",item["title"],"Fonte para leitura integral.")
+        add("caption",row["cards"][1]["body"],"reviewed_proposal","summary",row["anchors"][0],"Paráfrase revisada.")
+        add("caption",row["cards"][3]["body"],"reviewed_conditional","summary",row["anchors"][-1],"Impacto potencial.")
+        return {"policy":REVISION,"document_id":item["id"],"version":item["version"],"source_url":source,
+                "entries":entries,"unverified_dimensions":["legal_effect","implementation","budget","causality","social_impact"],
+                "limitation":"Revisão editorial de narrativa controlada; não verifica impacto real ou texto integral."}
     hook,anchors=editorial_hook(item)
     for anchor in anchors:
         add("card_01",hook,"controlled_question_anchor","summary",anchor,"Pergunta controlada, não demonstra efeito ou aprovação.")

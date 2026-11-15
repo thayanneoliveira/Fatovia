@@ -15,7 +15,7 @@ from .claim_matrix import build, digest
 
 REPORT=Path("data/editorial_audit.json")
 PAGE_ROOT="https://thayanneoliveira.github.io/Fatovia"
-POLICY="documentary-template-v3-hooks"
+POLICY="documentary-template-v4-didactic"
 MAX_BYTES=8_000_000
 
 
@@ -28,7 +28,9 @@ def paths_for(item):
     version=item["version"]
     if not re.fullmatch(r"camara-[0-9]+",ident) or not re.fullmatch(r"[0-9a-f]{14}",version):
         raise ValueError("invalid_path_identity")
-    return [f"docs/media/{ident}/{version}/{i:02}.jpg" for i in range(1,8)]
+    from .didactic import REVISION
+    suffix="/"+REVISION if item.get("template_revision")==REVISION else ""
+    return [f"docs/media/{ident}/{version}{suffix}/{i:02}.jpg" for i in range(1,8)]
 
 
 def inspect_files(item):

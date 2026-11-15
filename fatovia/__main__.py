@@ -54,7 +54,8 @@ def main():
     for item in state["pending"]:
         if (item.get("id"),item.get("version")) == (tx.get("id"),tx.get("version")):
             continue
-        if item.get("template_revision") != TEMPLATE_REVISION:
+        from .didactic import reviewed
+        if item.get("template_revision") != TEMPLATE_REVISION and reviewed(item):
             try:
                 render(item)
                 seal(item,now)

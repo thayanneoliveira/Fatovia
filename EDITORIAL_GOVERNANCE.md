@@ -58,3 +58,7 @@ Posteriormente, foram consultados insights da conta e comparadas as capas antiga
 constatando-se divergência visual. Os três posts já publicados não podem ter suas
 imagens substituídas no próprio carrossel por meio da integração disponível.
 Novas versões foram renderizadas, mas não foram republicadas nem os originais apagados.
+
+## Critério didático obrigatório do piloto v4
+
+Cada narrativa revisada precisa apresentar tema, proposta, mecanismo, consequência potencial (não certeza), perguntas específicas, situação documental e fonte. O gate de revisão exige ID, versão, ementa e tramitação exatas; limita o comprimento e separa alegação documental de explicação geral. Conteúdo sem revisão didática não entra na lista autorizada. Validação automatizada de estrutura e bytes não é avaliação semântica geral: as oito narrativas são curadas nesta revisão.

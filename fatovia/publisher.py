@@ -91,7 +91,8 @@ def public_urls(item):
 
 
 def marker(item):
-    return f'ID editorial: {item["id"]}/{item["version"]}'
+    base=f'ID editorial: {item["id"]}/{item["version"]}'
+    return base+"/didactic-v4" if item.get("template_revision")=="didactic-v4" else base
 
 
 def choose_due(state, now, approval_check=None, pilot_window=False):
@@ -125,6 +126,9 @@ def choose_due(state, now, approval_check=None, pilot_window=False):
         if qualified(p, now) and (p.get("id"), p.get("version")) not in already
         and (approval_check is None or approval_check(p, now))
     ]
+    request=state.get("replacement_request") or {}
+    if request.get("status") in ("awaiting_deletion","deletion_verified"):
+        candidates=[p for p in candidates if (p.get("id"),p.get("version"))!=(request.get("id"),request.get("version")) or (request.get("status")=="deletion_verified" and window_slot(now)==9)]
     candidates.sort(key=lambda x: (-x.get("editorial_score", 0), -x.get("explore_signal_count",0), -x.get("discovery_source_count",0), x["id"]))
     return candidates[0] if candidates else None
 
@@ -136,6 +140,24 @@ def prepare(state, now, cfg):
         return {"action": "missing_credentials", "reason": "Configuração Meta incompleta"}
     if state.get("publishing"):
         return {"action": "reconcile", "reason": "Publicação anterior requer conciliação"}
+    request=state.get("replacement_request") or {}
+    replacement_key=(request.get("id"),request.get("version"))
+    # Explicit owner-authorized one-time replacement; only after full Meta history confirms old media absent.
+    if request.get("status")=="awaiting_deletion" and window_slot(now)==9:
+        replacement=next((p for p in state.get("pending",[]) if (p["id"],p["version"])==replacement_key),None)
+        if replacement and approved(replacement,now) and replacement.get("template_revision")=="didactic-v4":
+            client=MetaClient(cfg)
+            client.account()
+            history=client.recent()
+            old_marker=f'ID editorial: {request["id"]}/{request["version"]}'
+            if not any(str(m.get("id"))==str(request["old_media_id"]) or old_marker in (m.get("caption") or "").splitlines() for m in history):
+                old=[p for p in state.get("published",[]) if str(p.get("media_id"))==str(request["old_media_id"]) and (p.get("id"),p.get("version"))==replacement_key]
+                if len(old)!=1:
+                    raise PublicationError("Registro original de substituição divergente","replacement_record_invalid")
+                state["published"]=[p for p in state["published"] if p is not old[0]]
+                state.setdefault("withdrawn_publications",[]).append({**old[0],"withdrawn_verified_at":now.isoformat(),"reason":"owner_requested_replacement"})
+                request["status"]="deletion_verified"
+                save(STATE_PATH,state)
     item = choose_due(state, now, approval_check=lambda p,t: approved(p,t) and pilot_allowed(state,p,t), pilot_window=True)
     if not item:
         return {"action": "idle", "reason": "Nenhuma pauta verificada e elegível neste horário"}
@@ -288,6 +310,9 @@ def finalize(state, item, mid, permalink, now):
     state["pending"] = [x for x in state.get("pending", [])
                         if not (x.get("id") == item["id"] and x.get("version") == item["version"])]
     state["publishing"] = None
+    request=state.get("replacement_request") or {}
+    if (item.get("id"),item.get("version"))==(request.get("id"),request.get("version")) and request.get("status")=="deletion_verified":
+        request.update(status="replaced",new_media_id=mid)
     save(STATE_PATH, state)
 
 
@@ -304,6 +329,13 @@ def deliver(state, now, cfg, client=None, http=None, source_check=verify_live):
         raise PublicationError("O conteúdo deixou de atender à verificação editorial")
     client = client or MetaClient(cfg)
     client.account()
+    request=state.get("replacement_request") or {}
+    if (item.get("id"),item.get("version"))==(request.get("id"),request.get("version")):
+        if request.get("status")!="deletion_verified":
+            raise PublicationError("Exclusão não verificada","replacement_not_verified")
+        old_marker=f'ID editorial: {request["id"]}/{request["version"]}'
+        if any(str(m.get("id"))==str(request["old_media_id"]) or old_marker in (m.get("caption") or "").splitlines() for m in client.recent()):
+            raise PublicationError("Publicação antiga ainda visível","replacement_old_visible")
     found = client.existing(item)
     if found:
         finalize(state, item, str(found["id"]), found.get("permalink"), now)

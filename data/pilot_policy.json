@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "pilot_id": "documentary-20261115",
-  "status": "prepared",
+  "status": "paused",
   "start_date": "2026-11-15",
   "end_date": "2026-11-21",
   "max_total": 4,
@@ -126,5 +126,5 @@
     }
   ],
   "preflight_run": 43639559303,
-  "notes": "Exact audited content only; no generative drafts. Explicit IG_PUBLISH_ENABLED required. No automatic transition to full experiment."
+  "notes": "Editorial migration in progress; no old template publication. Re-authorization requires current audit and hosted JPEG hashes for exact didactic reviews."
 }

@@ -2,7 +2,9 @@
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
-TEMPLATE_REVISION="documentary-hook-v3"
+from .didactic import reviewed, REVISION
+TEMPLATE_REVISION=REVISION
+LEGACY_REVISION="documentary-hook-v3"
 GREEN = "#102F28"
 CREAM = "#F5F1E7"
 FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
@@ -130,6 +132,15 @@ def editorial_hook(item):
     return "O que está previsto nesta proposta?",[]
 
 def cards_for(item):
+    row=reviewed(item)
+    if row:
+        labels=("O tema","O que propõe","Como entender","Impacto possível","Perguntas em aberto")
+        cards=[(c["headline"],c["body"],labels[i]+" | "+item["title"]) for i,c in enumerate(row["cards"])]
+        cards.extend([
+            ("Já está valendo?",f'Registro de {item["stage_date"]}: {item["stage"]}. A existência do projeto não comprova vigência.',"Situação documental na data indicada."),
+            ("Confira a fonte",f'{item["title"]}\\n\\nCâmara dos Deputados | ID {item["id"].split(":")[1]}\\n\\nTexto integral e tramitação no link da legenda.',"FatoVia | Informação antes de opinião.")
+        ])
+        return cards
     summary = item["summary"].strip()
     if len(summary) > 330:
         cutoff = summary[:330].rfind(" ")
@@ -149,7 +160,10 @@ def cards_for(item):
 
 
 def render(item, root="docs/media"):
+    row=reviewed(item)
     destination = Path(root) / item["id"].replace(":", "-") / item["version"]
+    if row:
+        destination=destination/REVISION
     paths = []
     try:
         for number, (headline, body, hint) in enumerate(cards_for(item), 1):
@@ -158,7 +172,7 @@ def render(item, root="docs/media"):
         for path in paths:
             Path(path).unlink(missing_ok=True)
         raise
-    item["template_revision"] = TEMPLATE_REVISION
+    item["template_revision"] = REVISION if row else LEGACY_REVISION
     item["cards"] = paths
     item["caption"] = (
         f'{editorial_hook(item)[0]}\n\n{item["title"]}\n\n'
@@ -170,4 +184,9 @@ def render(item, root="docs/media"):
         f'ID editorial: {item["id"]}/{item["version"]}\n'
         '#FatoVia #PoliticasPublicas #CongressoNacional'
     )
+    if row:
+        item["caption"] = (row["cards"][0]["headline"]+"\\n\\n"+row["cards"][1]["body"]+"\\n\\n"+row["cards"][3]["body"]
+            +"\\n\\n"+f'{item["title"]} | Registro de {item["stage_date"]}. Proposta, não benefício comprovado.'
+            +"\\n\\nFonte oficial: "+item["public_url"]+"\\n"
+            +f'ID editorial: {item["id"]}/{item["version"]}/{REVISION}\\n#FatoVia #PoliticasPublicas')
     return item

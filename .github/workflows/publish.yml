@@ -16,6 +16,7 @@ on:
     - cron: "12 12,20 * * *"
     - cron: "40 13 * * *" # 10h40 BRT: contingencia da manha
     - cron: "27 21 * * *" # 18h27 BRT: contingencia da tarde
+    - cron: "20 14-16 * * *" # Recuperacao exclusiva do tema original em 15/11 (guard no Python)
   workflow_run:
     workflows: ["FatoVia | Preflight documental sem publicacao"]
     types: [completed]
@@ -95,7 +96,7 @@ jobs:
         if: steps.prep.outputs.action == 'reconcile'
         run: python -m fatovia.publisher reconcile
       - name: Persistir resultado, inclusive erro ambiguo
-        if: ${{ always() && (steps.prep.outputs.action == 'prepared' || steps.prep.outputs.action == 'reconcile') }}
+        if: ${{ always() && steps.prep.outcome == 'success' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
