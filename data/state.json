@@ -377,6 +377,59 @@
         "economia"
       ],
       "version": "b98ae1ec690f70"
+    },
+    {
+      "caption": "O que está previsto nesta proposta?\n\nPL 5855/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653947\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653947/a9ab7e30775280\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "cards": [
+        "docs/media/camara-2653947/a9ab7e30775280/01.jpg",
+        "docs/media/camara-2653947/a9ab7e30775280/02.jpg",
+        "docs/media/camara-2653947/a9ab7e30775280/03.jpg",
+        "docs/media/camara-2653947/a9ab7e30775280/04.jpg",
+        "docs/media/camara-2653947/a9ab7e30775280/05.jpg",
+        "docs/media/camara-2653947/a9ab7e30775280/06.jpg",
+        "docs/media/camara-2653947/a9ab7e30775280/07.jpg"
+      ],
+      "discovery_source_count": 1,
+      "editorial_score": 57,
+      "evidence": {
+        "checked_at": "2026-11-15T18:50:50.099313-03:00",
+        "claims": [
+          {
+            "basis": "identificacao_da_proposicao",
+            "field": "title"
+          },
+          {
+            "basis": "ementa_oficial_atribuida",
+            "field": "summary"
+          },
+          {
+            "basis": "registro_de_tramitacao",
+            "field": "stage"
+          }
+        ],
+        "content_sha256": "012218c4a2685b3ca44aa1ecf4c7486703f2fee43b175cabbb0f571a768fdd80",
+        "kind": "official_document_attribution",
+        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
+        "record_date": "2026-11-13",
+        "schema": 1,
+        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
+      },
+      "explore_signal_count": 0,
+      "id": "camara:2653947",
+      "public_url": "https://www.camara.leg.br/propostas-legislativas/2653947",
+      "source_name": "Câmara dos Deputados",
+      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-13",
+      "status": "ready",
+      "summary": "Altera a Lei nº 9.249, de 26 de dezembro de 1995, para elevar a alíquota do Imposto de Renda Retido na Fonte incidente sobre os juros sobre o capital próprio.",
+      "summary_hash": "c621d796fce35c",
+      "template_revision": "documentary-hook-v3",
+      "title": "PL 5855/2026",
+      "topics": [
+        "economia"
+      ],
+      "version": "a9ab7e30775280"
     }
   ],
   "published": [
