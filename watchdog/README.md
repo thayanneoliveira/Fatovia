@@ -17,3 +17,6 @@ Check gate, policy and state at a pinned branch SHA, recent workflow runs, date/
 
 ### Deployment from repository root (mobile-friendly)
 A matching root `wrangler.jsonc` is provided, pointing only at `watchdog/src/index.mjs`. When Cloudflare root directory is blank or `/`, use `npx wrangler deploy` with no custom build command. If using root directory `watchdog`, the nested config still works. Both configurations must keep equivalent triggers, no public routes and observe-only default. Do not merge Cloudflare-generated auto-configuration blindly. Check the deployment log for the expected Worker and verify cron before adding runtime secrets.
+
+## Diagnostic revision v2
+The initial real cron invocation emitted `supervision_failed`, without a usable cause. Version `watchdog-diagnostic-v2` emits a controlled stage and reason, never raw API response or exception. In observation mode, every cron can test authenticated GETs even outside publication windows; successful snapshots emit `github_read: ok`. Active mode still skips outside candidate hours and requires explicit activation. A 20-run page is rejected if it may omit runs from the last day. Local tests use mocked transport, not a live token. The real deployment log is required before activation. Publication gap aligned with the existing Python executor (3 hours); its other guards remain authoritative.
