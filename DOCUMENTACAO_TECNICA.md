@@ -89,7 +89,7 @@ Horários BRT (UTC-3); agendamento nominal, não SLA. Workflows de geração pod
 | [editorial-audit.yml](.github/workflows/editorial-audit.yml) | Chamado após radar; revisão documental |
 | [pages.yml](.github/workflows/pages.yml) | Deploy após radar bem-sucedido ou mudança aplicável |
 | [preflight.yml](.github/workflows/preflight.yml) | Após Pages ou disparo previsto; sem POST |
-| [publish.yml](.github/workflows/publish.yml) | 09h12/17h12, contingência 10h27/18h27 e conclusão de preflight confiável; janelas [09h,11h), [17h,19h) |
+| [publish.yml](.github/workflows/publish.yml) | 09h12/17h12, contingência 10h40/18h27 e conclusão de preflight confiável; janelas [09h,11h), [17h,19h) |
 | [intelligence.yml](.github/workflows/intelligence.yml) | 03h43, 09h43, 15h43, 21h43; descoberta, insights, piloto |
 | [research.yml](.github/workflows/research.yml) | 10h25; BCB, RREO, IBGE e dossiês |
 | [meta-credentials.yml](.github/workflows/meta-credentials.yml) | 10h37; saúde e renovação dentro do limiar de 15 dias, se habilitada |

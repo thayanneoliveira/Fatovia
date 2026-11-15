@@ -14,7 +14,8 @@ on:
   # Separate primary and fallback schedules, plus a trusted preflight completion.
   schedule:
     - cron: "12 12,20 * * *"
-    - cron: "27 13,21 * * *"
+    - cron: "40 13 * * *" # 10h40 BRT: contingencia da manha
+    - cron: "27 21 * * *" # 18h27 BRT: contingencia da tarde
   workflow_run:
     workflows: ["FatoVia | Preflight documental sem publicacao"]
     types: [completed]
