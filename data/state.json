@@ -7,59 +7,6 @@
   "metrics": [],
   "pending": [
     {
-      "caption": "Bolsa e seguro: o que pode mudar para médicos residentes?\n\nIncentivar seguros contra acidentes pessoais e responsabilidade civil e prever reajustes periódicos da bolsa.\n\nSe contratados e conforme a cobertura, os seguros podem oferecer proteção financeira diante dos riscos previstos na apólice.\n\nPL 5849/2026 | Registro de 2026-11-13. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2653819\nID editorial: camara:2653819/aec4919b2cc642/didactic-v4\n#FatoVia #PoliticasPublicas",
-      "cards": [
-        "docs/media/camara-2653819/aec4919b2cc642/didactic-v4/01.jpg",
-        "docs/media/camara-2653819/aec4919b2cc642/didactic-v4/02.jpg",
-        "docs/media/camara-2653819/aec4919b2cc642/didactic-v4/03.jpg",
-        "docs/media/camara-2653819/aec4919b2cc642/didactic-v4/04.jpg",
-        "docs/media/camara-2653819/aec4919b2cc642/didactic-v4/05.jpg",
-        "docs/media/camara-2653819/aec4919b2cc642/didactic-v4/06.jpg",
-        "docs/media/camara-2653819/aec4919b2cc642/didactic-v4/07.jpg"
-      ],
-      "discovery_source_count": 1,
-      "editorial_score": 86,
-      "evidence": {
-        "checked_at": "2026-11-15T10:48:12.090754-03:00",
-        "claims": [
-          {
-            "basis": "identificacao_da_proposicao",
-            "field": "title"
-          },
-          {
-            "basis": "ementa_oficial_atribuida",
-            "field": "summary"
-          },
-          {
-            "basis": "registro_de_tramitacao",
-            "field": "stage"
-          }
-        ],
-        "content_sha256": "751452fb37bc6377118422802bf8e9aab9284bca469ef69b31656e1a83e8594d",
-        "kind": "official_document_attribution",
-        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
-        "record_date": "2026-11-13",
-        "schema": 1,
-        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819"
-      },
-      "explore_signal_count": 0,
-      "id": "camara:2653819",
-      "public_url": "https://www.camara.leg.br/propostas-legislativas/2653819",
-      "source_name": "Câmara dos Deputados",
-      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819",
-      "stage": "Apresentação de Proposição",
-      "stage_date": "2026-11-13",
-      "status": "ready",
-      "summary": "Altera a Lei n° 6.392, de 7 de julho de 1981, para incentivar a contratação de seguros contra acidentes pessoais e de responsabilidade civil, pela instituição de saúde formadora, em benefício de seus médicos residentes, bem como reajustes periódicos da bolsa concedida a esses profissionais, observadas a recomposição e a preservação de seu poder aquisitivo, segundo índices elaborados pelos órgãos técnicos competentes.",
-      "summary_hash": "34a1fc1eec0c6a",
-      "template_revision": "didactic-v4",
-      "title": "PL 5849/2026",
-      "topics": [
-        "saude"
-      ],
-      "version": "aec4919b2cc642"
-    },
-    {
       "caption": "Violência contra a mulher: o que pode mudar no esporte?\n\nAlterar a Lei Geral do Esporte para estabelecer medidas de responsabilização disciplinar de atletas pela prática de violência contra a mulher.\n\nSe o projeto avançar, atletas poderão estar sujeitos às medidas disciplinares previstas no texto que vier a ser aprovado.\n\nPL 5856/2026 | Registro de 2026-11-13. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2653948\nID editorial: camara:2653948/78147b54c05128/didactic-v4\n#FatoVia #PoliticasPublicas",
       "cards": [
         "docs/media/camara-2653948/78147b54c05128/didactic-v4/01.jpg",
@@ -478,20 +425,30 @@
         "cidadania"
       ],
       "version": "v1"
+    },
+    {
+      "evidence_sha256": "751452fb37bc6377118422802bf8e9aab9284bca469ef69b31656e1a83e8594d",
+      "id": "camara:2653819",
+      "media_id": "18213163885365403",
+      "permalink": "https://www.instagram.com/p/DfxBuz7FJKv/",
+      "published_at": "2026-11-15T11:45:30.486412-03:00",
+      "summary": "Altera a Lei n° 6.392, de 7 de julho de 1981, para incentivar a contratação de seguros contra acidentes pessoais e de responsabilidade civil, pela instituição de saúde formadora, em benefício de seus médicos residentes, bem como reajustes periódicos da bolsa concedida a esses profissionais, observadas a recomposição e a preservação de seu poder aquisitivo, segundo índices elaborados pelos órgãos técnicos competentes.",
+      "summary_hash": "34a1fc1eec0c6a",
+      "title": "PL 5849/2026",
+      "topics": [
+        "saude"
+      ],
+      "version": "aec4919b2cc642"
     }
   ],
-  "publishing": {
-    "id": "camara:2653819",
-    "started_at": "2026-11-15T11:45:28.902575-03:00",
-    "status": "checkpointed",
-    "version": "aec4919b2cc642"
-  },
+  "publishing": null,
   "replacement_request": {
     "authorization": "owner_requested_replacement_after_manual_deletion_2026-11-15",
     "id": "camara:2653819",
+    "new_media_id": "18213163885365403",
     "old_media_id": "18675166858016301",
     "old_permalink": "https://www.instagram.com/p/Dfw5nSXEc3J/",
-    "status": "deletion_verified",
+    "status": "replaced",
     "version": "aec4919b2cc642"
   },
   "schema_version": 1,
