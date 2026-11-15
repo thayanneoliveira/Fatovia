@@ -129,7 +129,7 @@ def choose_due(state, now, approval_check=None, pilot_window=False):
     request=state.get("replacement_request") or {}
     if request.get("status") in ("awaiting_deletion","deletion_verified"):
         candidates=[p for p in candidates if (p.get("id"),p.get("version"))!=(request.get("id"),request.get("version")) or (request.get("status")=="deletion_verified" and window_slot(now)==9)]
-    candidates.sort(key=lambda x: (-x.get("editorial_score", 0), -x.get("explore_signal_count",0), -x.get("discovery_source_count",0), x["id"]))
+    candidates.sort(key=lambda x: (0 if request.get("status")=="deletion_verified" and (x.get("id"),x.get("version"))==(request.get("id"),request.get("version")) else 1, -x.get("editorial_score", 0), -x.get("explore_signal_count",0), -x.get("discovery_source_count",0), x["id"]))
     return candidates[0] if candidates else None
 
 

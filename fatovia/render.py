@@ -138,7 +138,7 @@ def cards_for(item):
         cards=[(c["headline"],c["body"],labels[i]+" | "+item["title"]) for i,c in enumerate(row["cards"])]
         cards.extend([
             ("Já está valendo?",f'Registro de {item["stage_date"]}: {item["stage"]}. A existência do projeto não comprova vigência.',"Situação documental na data indicada."),
-            ("Confira a fonte",f'{item["title"]}\\n\\nCâmara dos Deputados | ID {item["id"].split(":")[1]}\\n\\nTexto integral e tramitação no link da legenda.',"FatoVia | Informação antes de opinião.")
+            ("Confira a fonte",f'{item["title"]}\n\nCâmara dos Deputados | ID {item["id"].split(":")[1]}\n\nTexto integral e tramitação no link da legenda.',"FatoVia | Informação antes de opinião.")
         ])
         return cards
     summary = item["summary"].strip()
@@ -185,8 +185,8 @@ def render(item, root="docs/media"):
         '#FatoVia #PoliticasPublicas #CongressoNacional'
     )
     if row:
-        item["caption"] = (row["cards"][0]["headline"]+"\\n\\n"+row["cards"][1]["body"]+"\\n\\n"+row["cards"][3]["body"]
-            +"\\n\\n"+f'{item["title"]} | Registro de {item["stage_date"]}. Proposta, não benefício comprovado.'
-            +"\\n\\nFonte oficial: "+item["public_url"]+"\\n"
-            +f'ID editorial: {item["id"]}/{item["version"]}/{REVISION}\\n#FatoVia #PoliticasPublicas')
+        item["caption"] = (row["cards"][0]["headline"]+"\n\n"+row["cards"][1]["body"]+"\n\n"+row["cards"][3]["body"]
+            +"\n\n"+f'{item["title"]} | Registro de {item["stage_date"]}. Proposta, não benefício comprovado.'
+            +"\n\nFonte oficial: "+item["public_url"]+"\n"
+            +f'ID editorial: {item["id"]}/{item["version"]}/{REVISION}\n#FatoVia #PoliticasPublicas')
     return item

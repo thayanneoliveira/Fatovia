@@ -29,8 +29,10 @@ def allowed(state,item,now,policy=None):
         slot=window_slot(now)
         if slot not in p["allowed_hours"]:
             return False
-        if now.astimezone(TZ).hour>=11 and slot==9 and item.get("id")!="camara:2653819":
-            return False
+        if now.astimezone(TZ).hour>=11 and slot==9:
+            r=state.get("replacement_request") or {}
+            if item.get("id")!="camara:2653819" or r.get("status")!="deletion_verified" or (r.get("id"),r.get("version"))!=(item.get("id"),item.get("version")):
+                return False
         if item.get("template_revision")!=p["template_revision"]:
             return False
         allowed_rows=[r for r in p["items"] if (r["id"],r["version"])==(item["id"],item["version"])]
