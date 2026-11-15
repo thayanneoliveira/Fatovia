@@ -494,7 +494,12 @@
       "version": "aec4919b2cc642"
     }
   ],
-  "publishing": null,
+  "publishing": {
+    "id": "camara:2653948",
+    "started_at": "2026-11-15T18:52:32.749079-03:00",
+    "status": "checkpointed",
+    "version": "78147b54c05128"
+  },
   "replacement_request": {
     "authorization": "owner_requested_replacement_after_manual_deletion_2026-11-15",
     "id": "camara:2653819",
