@@ -14,3 +14,6 @@ Check gate, policy and state at a pinned branch SHA, recent workflow runs, date/
 
 ## Tests
 `node --test watchdog/test.mjs` from repository root. The test cases check decision logic only, not deployed runtime or live API. 
+
+### Deployment from repository root (mobile-friendly)
+A matching root `wrangler.jsonc` is provided, pointing only at `watchdog/src/index.mjs`. When Cloudflare root directory is blank or `/`, use `npx wrangler deploy` with no custom build command. If using root directory `watchdog`, the nested config still works. Both configurations must keep equivalent triggers, no public routes and observe-only default. Do not merge Cloudflare-generated auto-configuration blindly. Check the deployment log for the expected Worker and verify cron before adding runtime secrets.
