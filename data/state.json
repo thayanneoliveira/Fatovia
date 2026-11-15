@@ -7,59 +7,6 @@
   "metrics": [],
   "pending": [
     {
-      "caption": "O que pode mudar para médicos residentes?\n\nPL 5849/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653819\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653819/aec4919b2cc642\n#FatoVia #PoliticasPublicas #CongressoNacional",
-      "cards": [
-        "docs/media/camara-2653819/aec4919b2cc642/01.jpg",
-        "docs/media/camara-2653819/aec4919b2cc642/02.jpg",
-        "docs/media/camara-2653819/aec4919b2cc642/03.jpg",
-        "docs/media/camara-2653819/aec4919b2cc642/04.jpg",
-        "docs/media/camara-2653819/aec4919b2cc642/05.jpg",
-        "docs/media/camara-2653819/aec4919b2cc642/06.jpg",
-        "docs/media/camara-2653819/aec4919b2cc642/07.jpg"
-      ],
-      "discovery_source_count": 1,
-      "editorial_score": 86,
-      "evidence": {
-        "checked_at": "2026-11-14T17:48:52.256959-03:00",
-        "claims": [
-          {
-            "basis": "identificacao_da_proposicao",
-            "field": "title"
-          },
-          {
-            "basis": "ementa_oficial_atribuida",
-            "field": "summary"
-          },
-          {
-            "basis": "registro_de_tramitacao",
-            "field": "stage"
-          }
-        ],
-        "content_sha256": "4aee37391f7554cad404a1b87cac684ff1826e0cd6e87395e5a9823c0edb301e",
-        "kind": "official_document_attribution",
-        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
-        "record_date": "2026-11-13",
-        "schema": 1,
-        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819"
-      },
-      "explore_signal_count": 0,
-      "id": "camara:2653819",
-      "public_url": "https://www.camara.leg.br/propostas-legislativas/2653819",
-      "source_name": "Câmara dos Deputados",
-      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819",
-      "stage": "Apresentação de Proposição",
-      "stage_date": "2026-11-13",
-      "status": "ready",
-      "summary": "Altera a Lei n° 6.392, de 7 de julho de 1981, para incentivar a contratação de seguros contra acidentes pessoais e de responsabilidade civil, pela instituição de saúde formadora, em benefício de seus médicos residentes, bem como reajustes periódicos da bolsa concedida a esses profissionais, observadas a recomposição e a preservação de seu poder aquisitivo, segundo índices elaborados pelos órgãos técnicos competentes.",
-      "summary_hash": "34a1fc1eec0c6a",
-      "template_revision": "documentary-hook-v3",
-      "title": "PL 5849/2026",
-      "topics": [
-        "saude"
-      ],
-      "version": "aec4919b2cc642"
-    },
-    {
       "caption": "Atletas e violência contra a mulher: o que propõe o PL?\n\nPL 5856/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653948\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653948\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653948/78147b54c05128\n#FatoVia #PoliticasPublicas #CongressoNacional",
       "cards": [
         "docs/media/camara-2653948/78147b54c05128/01.jpg",
@@ -478,13 +425,22 @@
         "cidadania"
       ],
       "version": "v1"
+    },
+    {
+      "evidence_sha256": "4aee37391f7554cad404a1b87cac684ff1826e0cd6e87395e5a9823c0edb301e",
+      "id": "camara:2653819",
+      "media_id": "18675166858016301",
+      "permalink": "https://www.instagram.com/p/Dfw5nSXEc3J/",
+      "published_at": "2026-11-15T10:34:29.666668-03:00",
+      "summary": "Altera a Lei n° 6.392, de 7 de julho de 1981, para incentivar a contratação de seguros contra acidentes pessoais e de responsabilidade civil, pela instituição de saúde formadora, em benefício de seus médicos residentes, bem como reajustes periódicos da bolsa concedida a esses profissionais, observadas a recomposição e a preservação de seu poder aquisitivo, segundo índices elaborados pelos órgãos técnicos competentes.",
+      "summary_hash": "34a1fc1eec0c6a",
+      "title": "PL 5849/2026",
+      "topics": [
+        "saude"
+      ],
+      "version": "aec4919b2cc642"
     }
   ],
-  "publishing": {
-    "id": "camara:2653819",
-    "started_at": "2026-11-15T10:34:28.286738-03:00",
-    "status": "checkpointed",
-    "version": "aec4919b2cc642"
-  },
+  "publishing": null,
   "schema_version": 1
 }
