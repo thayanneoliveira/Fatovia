@@ -480,6 +480,11 @@
       "version": "v1"
     }
   ],
-  "publishing": null,
+  "publishing": {
+    "id": "camara:2653819",
+    "started_at": "2026-11-15T10:34:28.286738-03:00",
+    "status": "checkpointed",
+    "version": "aec4919b2cc642"
+  },
   "schema_version": 1
 }
