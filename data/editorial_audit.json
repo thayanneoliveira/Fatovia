@@ -1,393 +1,8 @@
 {
-  "generated_at": "2026-11-15T10:48:40.032589-03:00",
+  "generated_at": "2026-11-15T18:51:09.528934-03:00",
   "limitations": "Independent rule-based check of the official source, approved template and bytes; not general factual or semantic review.",
   "policy": "documentary-template-v4-didactic",
   "reviews": [
-    {
-      "card_sha256": [
-        "b73c9fb9f7cb2c60025fd236e2babdb1925e73e6626c679e40030d848d158c25",
-        "7580654b3b0c5a4453dbf306c96aae802502be1f94c5cb06a3b9344536cbf664",
-        "4759b8b2bba57c279dd65c04e0dd0415fef9627c4a3eb300d78444dd38ea91c8",
-        "4225e4ef71a0851d713e3f83131e43428e4eaf33cd4f746bf281dd2cf02bd087",
-        "f6f71bcdff2a6ceb953a8aa5510e4b6b7f062277c51c12887e3a194e90480dde",
-        "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
-        "d7432f58c0243983f28176cd7ccb08060c76a8482590f5f10ea05057eb7a24fe"
-      ],
-      "checked_at": "2026-11-15T10:48:40.032589-03:00",
-      "claim_matrix": {
-        "document_id": "camara:2653819",
-        "entries": [
-          {
-            "evidence": {
-              "end": 218,
-              "excerpt": "médicos residentes",
-              "field": "summary",
-              "field_sha256": "48e796d9b3751b61ed605ce08137b73925418229cace7b9e3ffb55d3b9907be2",
-              "start": 200,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_01",
-            "text": "Bolsa e seguro: o que pode mudar para médicos residentes? | Uma proposta trata de reajustes da bolsa e incentivo à contratação de seguros.",
-            "type": "reviewed_question"
-          },
-          {
-            "evidence": {
-              "end": 140,
-              "excerpt": "seguros contra acidentes pessoais e de responsabilidade civil",
-              "field": "summary",
-              "field_sha256": "48e796d9b3751b61ed605ce08137b73925418229cace7b9e3ffb55d3b9907be2",
-              "start": 79,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_01",
-            "text": "Bolsa e seguro: o que pode mudar para médicos residentes? | Uma proposta trata de reajustes da bolsa e incentivo à contratação de seguros.",
-            "type": "reviewed_question"
-          },
-          {
-            "evidence": {
-              "end": 258,
-              "excerpt": "reajustes periódicos da bolsa",
-              "field": "summary",
-              "field_sha256": "48e796d9b3751b61ed605ce08137b73925418229cace7b9e3ffb55d3b9907be2",
-              "start": 229,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_01",
-            "text": "Bolsa e seguro: o que pode mudar para médicos residentes? | Uma proposta trata de reajustes da bolsa e incentivo à contratação de seguros.",
-            "type": "reviewed_question"
-          },
-          {
-            "evidence": {
-              "end": 357,
-              "excerpt": "poder aquisitivo",
-              "field": "summary",
-              "field_sha256": "48e796d9b3751b61ed605ce08137b73925418229cace7b9e3ffb55d3b9907be2",
-              "start": 341,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_01",
-            "text": "Bolsa e seguro: o que pode mudar para médicos residentes? | Uma proposta trata de reajustes da bolsa e incentivo à contratação de seguros.",
-            "type": "reviewed_question"
-          },
-          {
-            "evidence": {
-              "end": 218,
-              "excerpt": "médicos residentes",
-              "field": "summary",
-              "field_sha256": "48e796d9b3751b61ed605ce08137b73925418229cace7b9e3ffb55d3b9907be2",
-              "start": 200,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_02",
-            "text": "Duas mudanças propostas | Incentivar seguros contra acidentes pessoais e responsabilidade civil e prever reajustes periódicos da bolsa.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 140,
-              "excerpt": "seguros contra acidentes pessoais e de responsabilidade civil",
-              "field": "summary",
-              "field_sha256": "48e796d9b3751b61ed605ce08137b73925418229cace7b9e3ffb55d3b9907be2",
-              "start": 79,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_02",
-            "text": "Duas mudanças propostas | Incentivar seguros contra acidentes pessoais e responsabilidade civil e prever reajustes periódicos da bolsa.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 258,
-              "excerpt": "reajustes periódicos da bolsa",
-              "field": "summary",
-              "field_sha256": "48e796d9b3751b61ed605ce08137b73925418229cace7b9e3ffb55d3b9907be2",
-              "start": 229,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_02",
-            "text": "Duas mudanças propostas | Incentivar seguros contra acidentes pessoais e responsabilidade civil e prever reajustes periódicos da bolsa.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 357,
-              "excerpt": "poder aquisitivo",
-              "field": "summary",
-              "field_sha256": "48e796d9b3751b61ed605ce08137b73925418229cace7b9e3ffb55d3b9907be2",
-              "start": 341,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_02",
-            "text": "Duas mudanças propostas | Incentivar seguros contra acidentes pessoais e responsabilidade civil e prever reajustes periódicos da bolsa.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 218,
-              "excerpt": "médicos residentes",
-              "field": "summary",
-              "field_sha256": "48e796d9b3751b61ed605ce08137b73925418229cace7b9e3ffb55d3b9907be2",
-              "start": 200,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_03",
-            "text": "Por que o reajuste importa? | Se os preços sobem e a bolsa permanece igual, o poder de compra diminui. Reajustes podem ajudar a preservar esse poder.",
-            "type": "reviewed_mechanism"
-          },
-          {
-            "evidence": {
-              "end": 140,
-              "excerpt": "seguros contra acidentes pessoais e de responsabilidade civil",
-              "field": "summary",
-              "field_sha256": "48e796d9b3751b61ed605ce08137b73925418229cace7b9e3ffb55d3b9907be2",
-              "start": 79,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_03",
-            "text": "Por que o reajuste importa? | Se os preços sobem e a bolsa permanece igual, o poder de compra diminui. Reajustes podem ajudar a preservar esse poder.",
-            "type": "reviewed_mechanism"
-          },
-          {
-            "evidence": {
-              "end": 258,
-              "excerpt": "reajustes periódicos da bolsa",
-              "field": "summary",
-              "field_sha256": "48e796d9b3751b61ed605ce08137b73925418229cace7b9e3ffb55d3b9907be2",
-              "start": 229,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_03",
-            "text": "Por que o reajuste importa? | Se os preços sobem e a bolsa permanece igual, o poder de compra diminui. Reajustes podem ajudar a preservar esse poder.",
-            "type": "reviewed_mechanism"
-          },
-          {
-            "evidence": {
-              "end": 357,
-              "excerpt": "poder aquisitivo",
-              "field": "summary",
-              "field_sha256": "48e796d9b3751b61ed605ce08137b73925418229cace7b9e3ffb55d3b9907be2",
-              "start": 341,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_03",
-            "text": "Por que o reajuste importa? | Se os preços sobem e a bolsa permanece igual, o poder de compra diminui. Reajustes podem ajudar a preservar esse poder.",
-            "type": "reviewed_mechanism"
-          },
-          {
-            "evidence": {
-              "end": 218,
-              "excerpt": "médicos residentes",
-              "field": "summary",
-              "field_sha256": "48e796d9b3751b61ed605ce08137b73925418229cace7b9e3ffb55d3b9907be2",
-              "start": 200,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_04",
-            "text": "E na rotina do residente? | Se contratados e conforme a cobertura, os seguros podem oferecer proteção financeira diante dos riscos previstos na apólice.",
-            "type": "reviewed_conditional"
-          },
-          {
-            "evidence": {
-              "end": 140,
-              "excerpt": "seguros contra acidentes pessoais e de responsabilidade civil",
-              "field": "summary",
-              "field_sha256": "48e796d9b3751b61ed605ce08137b73925418229cace7b9e3ffb55d3b9907be2",
-              "start": 79,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_04",
-            "text": "E na rotina do residente? | Se contratados e conforme a cobertura, os seguros podem oferecer proteção financeira diante dos riscos previstos na apólice.",
-            "type": "reviewed_conditional"
-          },
-          {
-            "evidence": {
-              "end": 258,
-              "excerpt": "reajustes periódicos da bolsa",
-              "field": "summary",
-              "field_sha256": "48e796d9b3751b61ed605ce08137b73925418229cace7b9e3ffb55d3b9907be2",
-              "start": 229,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_04",
-            "text": "E na rotina do residente? | Se contratados e conforme a cobertura, os seguros podem oferecer proteção financeira diante dos riscos previstos na apólice.",
-            "type": "reviewed_conditional"
-          },
-          {
-            "evidence": {
-              "end": 357,
-              "excerpt": "poder aquisitivo",
-              "field": "summary",
-              "field_sha256": "48e796d9b3751b61ed605ce08137b73925418229cace7b9e3ffb55d3b9907be2",
-              "start": 341,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_04",
-            "text": "E na rotina do residente? | Se contratados e conforme a cobertura, os seguros podem oferecer proteção financeira diante dos riscos previstos na apólice.",
-            "type": "reviewed_conditional"
-          },
-          {
-            "evidence": {
-              "end": 218,
-              "excerpt": "médicos residentes",
-              "field": "summary",
-              "field_sha256": "48e796d9b3751b61ed605ce08137b73925418229cace7b9e3ffb55d3b9907be2",
-              "start": 200,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_05",
-            "text": "Quem precisa acompanhar? | Residentes e instituições formadoras. Qual será o índice? Quais coberturas e custos? O resumo oficial não detalha essas condições.",
-            "type": "reviewed_questions"
-          },
-          {
-            "evidence": {
-              "end": 140,
-              "excerpt": "seguros contra acidentes pessoais e de responsabilidade civil",
-              "field": "summary",
-              "field_sha256": "48e796d9b3751b61ed605ce08137b73925418229cace7b9e3ffb55d3b9907be2",
-              "start": 79,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_05",
-            "text": "Quem precisa acompanhar? | Residentes e instituições formadoras. Qual será o índice? Quais coberturas e custos? O resumo oficial não detalha essas condições.",
-            "type": "reviewed_questions"
-          },
-          {
-            "evidence": {
-              "end": 258,
-              "excerpt": "reajustes periódicos da bolsa",
-              "field": "summary",
-              "field_sha256": "48e796d9b3751b61ed605ce08137b73925418229cace7b9e3ffb55d3b9907be2",
-              "start": 229,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_05",
-            "text": "Quem precisa acompanhar? | Residentes e instituições formadoras. Qual será o índice? Quais coberturas e custos? O resumo oficial não detalha essas condições.",
-            "type": "reviewed_questions"
-          },
-          {
-            "evidence": {
-              "end": 357,
-              "excerpt": "poder aquisitivo",
-              "field": "summary",
-              "field_sha256": "48e796d9b3751b61ed605ce08137b73925418229cace7b9e3ffb55d3b9907be2",
-              "start": 341,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_05",
-            "text": "Quem precisa acompanhar? | Residentes e instituições formadoras. Qual será o índice? Quais coberturas e custos? O resumo oficial não detalha essas condições.",
-            "type": "reviewed_questions"
-          },
-          {
-            "evidence": {
-              "end": 26,
-              "excerpt": "Apresentação de Proposição",
-              "field": "stage",
-              "field_sha256": "7ad4f3a2409e2196a7e3ccc89d81061c388c76f096e8a3e5181944076982a9b7",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819"
-            },
-            "limitation": "Registro de tramitação.",
-            "location": "card_06",
-            "text": "Apresentação de Proposição",
-            "type": "procedural_record"
-          },
-          {
-            "evidence": {
-              "end": 10,
-              "excerpt": "2026-11-13",
-              "field": "stage_date",
-              "field_sha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819"
-            },
-            "limitation": "Não comprova vigência.",
-            "location": "card_06",
-            "text": "2026-11-13",
-            "type": "record_date"
-          },
-          {
-            "evidence": {
-              "end": 12,
-              "excerpt": "PL 5849/2026",
-              "field": "title",
-              "field_sha256": "9a0d012e0baf3e9cd4b1b25d1916b89aa28a5f39fb366c303faa1c4cbd49ef2d",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819"
-            },
-            "limitation": "Fonte para leitura integral.",
-            "location": "card_07",
-            "text": "PL 5849/2026",
-            "type": "source_reference"
-          },
-          {
-            "evidence": {
-              "end": 218,
-              "excerpt": "médicos residentes",
-              "field": "summary",
-              "field_sha256": "48e796d9b3751b61ed605ce08137b73925418229cace7b9e3ffb55d3b9907be2",
-              "start": 200,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819"
-            },
-            "limitation": "Paráfrase revisada.",
-            "location": "caption",
-            "text": "Incentivar seguros contra acidentes pessoais e responsabilidade civil e prever reajustes periódicos da bolsa.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 357,
-              "excerpt": "poder aquisitivo",
-              "field": "summary",
-              "field_sha256": "48e796d9b3751b61ed605ce08137b73925418229cace7b9e3ffb55d3b9907be2",
-              "start": 341,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819"
-            },
-            "limitation": "Impacto potencial.",
-            "location": "caption",
-            "text": "Se contratados e conforme a cobertura, os seguros podem oferecer proteção financeira diante dos riscos previstos na apólice.",
-            "type": "reviewed_conditional"
-          }
-        ],
-        "limitation": "Revisão editorial de narrativa controlada; não verifica impacto real ou texto integral.",
-        "policy": "didactic-v4",
-        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653819",
-        "unverified_dimensions": [
-          "legal_effect",
-          "implementation",
-          "budget",
-          "causality",
-          "social_impact"
-        ],
-        "version": "aec4919b2cc642"
-      },
-      "claim_matrix_sha256": "124b7d0fa09fc23c526fe49cadd20582f81c10353a37b404351f107ec79699ac",
-      "content_sha256": "751452fb37bc6377118422802bf8e9aab9284bca469ef69b31656e1a83e8594d",
-      "decision": "approved_documentary_only",
-      "id": "camara:2653819",
-      "issues": [],
-      "policy": "documentary-template-v4-didactic",
-      "version": "aec4919b2cc642"
-    },
     {
       "card_sha256": [
         "5d44704733ee84f25a6b111404273cbeabeb59fcd8a3135e346fee1ee962bcc6",
@@ -398,7 +13,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "ebe8ccaaf1d4e17c0b5ee43d968e1b1558c4953e4e823894f07d4aab00874381"
       ],
-      "checked_at": "2026-11-15T10:48:40.032589-03:00",
+      "checked_at": "2026-11-15T18:51:09.528934-03:00",
       "claim_matrix": {
         "document_id": "camara:2653948",
         "entries": [
@@ -713,7 +328,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "46f0df7f93d106f57bbcf75536d09a37bdf8a3477b6982c84dfce39318fa7e89"
       ],
-      "checked_at": "2026-11-15T10:48:40.032589-03:00",
+      "checked_at": "2026-11-15T18:51:09.528934-03:00",
       "claim_matrix": {
         "document_id": "camara:2653813",
         "entries": [
@@ -1028,7 +643,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "e4306938744dbe8e712ec1f00726cc4bc44bc91c51739a90d86bfa888be48b9a"
       ],
-      "checked_at": "2026-11-15T10:48:40.032589-03:00",
+      "checked_at": "2026-11-15T18:51:09.528934-03:00",
       "claim_matrix": {
         "document_id": "camara:2653937",
         "entries": [
@@ -1413,7 +1028,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "1616c5634919cd668cc05ce614676b2272ce9fed9ad61da04205736700734d27"
       ],
-      "checked_at": "2026-11-15T10:48:40.032589-03:00",
+      "checked_at": "2026-11-15T18:51:09.528934-03:00",
       "claim_matrix": {
         "document_id": "camara:2653940",
         "entries": [
@@ -1728,7 +1343,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "83196e0ab5fa0e83d32c6b93209ea73ebaea6a4b097abb5df7044eaf178fe8ed"
       ],
-      "checked_at": "2026-11-15T10:48:40.032589-03:00",
+      "checked_at": "2026-11-15T18:51:09.528934-03:00",
       "claim_matrix": {
         "document_id": "camara:2653811",
         "entries": [
@@ -2043,7 +1658,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "c58a7bdb96425264bdd418c5f08fdd9b687d6ae64773a869f93b59b4a148b687"
       ],
-      "checked_at": "2026-11-15T10:48:40.032589-03:00",
+      "checked_at": "2026-11-15T18:51:09.528934-03:00",
       "claim_matrix": {
         "document_id": "camara:2653822",
         "entries": [
@@ -2358,7 +1973,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "df65942b5a15a4912308263b5d77f767513c48cd8155b6f2ed4318c0c20eaf74"
       ],
-      "checked_at": "2026-11-15T10:48:40.032589-03:00",
+      "checked_at": "2026-11-15T18:51:09.528934-03:00",
       "claim_matrix": {
         "document_id": "camara:2653946",
         "entries": [
@@ -2592,6 +2207,160 @@
       "issues": [],
       "policy": "documentary-template-v4-didactic",
       "version": "b98ae1ec690f70"
+    },
+    {
+      "card_sha256": [
+        "93664dd3ad1bc935eb01967d701dd314652b9f85325015b9e3ce8229a01b0524",
+        "970f59e4a472c13aae1514b4aa19f192269c6f054db4911fdb3de86d2f3882f1",
+        "50fc02cfd1d06be78856d1d7dc75f61c0346bcbdeeeff316b42bc4e81aa7c58f",
+        "9a064a1c334d73ae9f28699a53bc50ec32ffb3e2536d213d356bb1678a14fcc1",
+        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
+        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
+        "5ffd6f5a09d23145869bea218d77cad95d9bc3fc618919b107ab8aae9f70f615"
+      ],
+      "checked_at": "2026-11-15T18:51:09.528934-03:00",
+      "claim_matrix": {
+        "document_id": "camara:2653947",
+        "entries": [
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5855/2026",
+              "field": "title",
+              "field_sha256": "e6a5ec7e04166382d82f569f7c11afffca5e6dc96f630561573638dd35069352",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
+            },
+            "limitation": "Identifica a proposição, não sua aprovação.",
+            "location": "card_01",
+            "text": "PL 5855/2026",
+            "type": "document_identity"
+          },
+          {
+            "evidence": {
+              "end": 158,
+              "excerpt": "Altera a Lei nº 9.249, de 26 de dezembro de 1995, para elevar a alíquota do Imposto de Renda Retido na Fonte incidente sobre os juros sobre o capital próprio.",
+              "field": "summary",
+              "field_sha256": "943ac2ff63618ede42eae3084abc580f2420192174f7f535c8e232c14f994cb0",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
+            },
+            "limitation": "Ementa oficial, não texto integral nem prova de impacto.",
+            "location": "card_02",
+            "text": "Altera a Lei nº 9.249, de 26 de dezembro de 1995, para elevar a alíquota do Imposto de Renda Retido na Fonte incidente sobre os juros sobre o capital próprio.",
+            "type": "attributed_excerpt"
+          },
+          {
+            "evidence": null,
+            "limitation": "Não acrescenta fatos externos.",
+            "location": "card_03",
+            "text": "A ementa resume o tema. Para conhecer condições, exceções e detalhes, consulte o texto integral.",
+            "type": "template_explanation"
+          },
+          {
+            "evidence": {
+              "end": 26,
+              "excerpt": "Apresentação de Proposição",
+              "field": "stage",
+              "field_sha256": "7ad4f3a2409e2196a7e3ccc89d81061c388c76f096e8a3e5181944076982a9b7",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
+            },
+            "limitation": "Registro de tramitação na data de referência.",
+            "location": "card_04",
+            "text": "Apresentação de Proposição",
+            "type": "procedural_record"
+          },
+          {
+            "evidence": {
+              "end": 10,
+              "excerpt": "2026-11-13",
+              "field": "stage_date",
+              "field_sha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
+            },
+            "limitation": "Data do andamento, não da vigência.",
+            "location": "card_04",
+            "text": "2026-11-13",
+            "type": "record_date"
+          },
+          {
+            "evidence": null,
+            "limitation": "Não atribui impacto, vigência ou financiamento.",
+            "location": "card_05",
+            "text": "A existência de um projeto não comprova aprovação, entrada em vigor, financiamento ou resultados.",
+            "type": "scope_limitation"
+          },
+          {
+            "evidence": null,
+            "limitation": "Questões para acompanhamento, não afirmações comprovadas.",
+            "location": "card_06",
+            "text": "Qual é o texto final?\n\nQuais órgãos respondem pela execução?\n\nHá custo previsto e indicadores de resultado?",
+            "type": "open_questions"
+          },
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5855/2026",
+              "field": "title",
+              "field_sha256": "e6a5ec7e04166382d82f569f7c11afffca5e6dc96f630561573638dd35069352",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
+            },
+            "limitation": "Referência documental.",
+            "location": "card_07",
+            "text": "PL 5855/2026",
+            "type": "source_reference"
+          },
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5855/2026",
+              "field": "title",
+              "field_sha256": "e6a5ec7e04166382d82f569f7c11afffca5e6dc96f630561573638dd35069352",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
+            },
+            "limitation": "Identifica a proposição.",
+            "location": "caption",
+            "text": "PL 5855/2026",
+            "type": "document_identity"
+          },
+          {
+            "evidence": {
+              "end": 10,
+              "excerpt": "2026-11-13",
+              "field": "stage_date",
+              "field_sha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
+            },
+            "limitation": "Data registrada na fonte.",
+            "location": "caption",
+            "text": "2026-11-13",
+            "type": "record_date"
+          }
+        ],
+        "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
+        "policy": "documentary-claims-v2-hooks",
+        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947",
+        "unverified_dimensions": [
+          "legal_effect",
+          "implementation",
+          "budget",
+          "causality",
+          "social_impact"
+        ],
+        "version": "a9ab7e30775280"
+      },
+      "claim_matrix_sha256": "856c9c62bd33fd88fb5d047cd531ee1dc32da417e772a7983a6d93bb5039ab0f",
+      "content_sha256": "012218c4a2685b3ca44aa1ecf4c7486703f2fee43b175cabbb0f571a768fdd80",
+      "decision": "approved_documentary_only",
+      "id": "camara:2653947",
+      "issues": [],
+      "policy": "documentary-template-v4-didactic",
+      "version": "a9ab7e30775280"
     }
   ]
 }
