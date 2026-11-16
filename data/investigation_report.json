@@ -39,19 +39,19 @@
     },
     {
       "decision": "research_only",
-      "dossier_sha256": "e1bd7e1d3b6a31a06d6d52172fe4a5fce39e784e55e5f50dec9564bd46f0f5c1",
+      "dossier_sha256": "0ae3e53f84556fa6bb7a73dc7dbce3b68e18bb2d91cb828a8df73f2dd25bf49b",
       "evidence": [
         {
           "frequency": "daily",
           "limitation": "Meta anualizada, não taxa efetiva de empréstimos nem rendimento diário.",
           "metric": "Meta Selic definida pelo Copom",
-          "period": "2026-11-15",
+          "period": "2026-11-16",
           "query_params": {
-            "dataFinal": "15/11/2026",
-            "dataInicial": "17/10/2026",
+            "dataFinal": "16/11/2026",
+            "dataInicial": "18/10/2026",
             "formato": "json"
           },
-          "response_sha256": "f6efe8fe82b28096b7381623fcfddd034be7109c37e472af1cd5f3ec764cdc02",
+          "response_sha256": "9cc467039b085b7f1b92011f4e2b62c99bed3a53efc131c82ec1d21512928edc",
           "source_url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados",
           "unit": "% a.a.",
           "value": "13.75"
@@ -222,7 +222,7 @@
       ]
     }
   ],
-  "generated_at": "2026-11-15T16:24:50.738480-03:00",
+  "generated_at": "2026-11-16T19:56:29.856858-03:00",
   "limitations": "Descriptive context; no cross-source causal conclusions. Dossiers require editorial review.",
   "publication_authorized": false
 }
