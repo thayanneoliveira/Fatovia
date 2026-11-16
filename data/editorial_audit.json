@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T23:46:03.314879-03:00",
+  "generated_at": "2026-11-16T10:41:49.041893-03:00",
   "limitations": "Independent rule-based check of the official source, approved template and bytes; not general factual or semantic review.",
   "policy": "documentary-template-v4-didactic",
   "reviews": [
@@ -13,7 +13,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "46f0df7f93d106f57bbcf75536d09a37bdf8a3477b6982c84dfce39318fa7e89"
       ],
-      "checked_at": "2026-11-15T23:46:03.314879-03:00",
+      "checked_at": "2026-11-16T10:41:49.041893-03:00",
       "claim_matrix": {
         "document_id": "camara:2653813",
         "entries": [
@@ -328,7 +328,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "e4306938744dbe8e712ec1f00726cc4bc44bc91c51739a90d86bfa888be48b9a"
       ],
-      "checked_at": "2026-11-15T23:46:03.314879-03:00",
+      "checked_at": "2026-11-16T10:41:49.041893-03:00",
       "claim_matrix": {
         "document_id": "camara:2653937",
         "entries": [
@@ -713,7 +713,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "1616c5634919cd668cc05ce614676b2272ce9fed9ad61da04205736700734d27"
       ],
-      "checked_at": "2026-11-15T23:46:03.314879-03:00",
+      "checked_at": "2026-11-16T10:41:49.041893-03:00",
       "claim_matrix": {
         "document_id": "camara:2653940",
         "entries": [
@@ -1028,7 +1028,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "83196e0ab5fa0e83d32c6b93209ea73ebaea6a4b097abb5df7044eaf178fe8ed"
       ],
-      "checked_at": "2026-11-15T23:46:03.314879-03:00",
+      "checked_at": "2026-11-16T10:41:49.041893-03:00",
       "claim_matrix": {
         "document_id": "camara:2653811",
         "entries": [
@@ -1343,7 +1343,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "c58a7bdb96425264bdd418c5f08fdd9b687d6ae64773a869f93b59b4a148b687"
       ],
-      "checked_at": "2026-11-15T23:46:03.314879-03:00",
+      "checked_at": "2026-11-16T10:41:49.041893-03:00",
       "claim_matrix": {
         "document_id": "camara:2653822",
         "entries": [
@@ -1658,7 +1658,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "df65942b5a15a4912308263b5d77f767513c48cd8155b6f2ed4318c0c20eaf74"
       ],
-      "checked_at": "2026-11-15T23:46:03.314879-03:00",
+      "checked_at": "2026-11-16T10:41:49.041893-03:00",
       "claim_matrix": {
         "document_id": "camara:2653946",
         "entries": [
@@ -1903,7 +1903,7 @@
         "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
         "5ffd6f5a09d23145869bea218d77cad95d9bc3fc618919b107ab8aae9f70f615"
       ],
-      "checked_at": "2026-11-15T23:46:03.314879-03:00",
+      "checked_at": "2026-11-16T10:41:49.041893-03:00",
       "claim_matrix": {
         "document_id": "camara:2653947",
         "entries": [
@@ -2057,7 +2057,7 @@
         "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
         "63eb90182d488de051710965000b2c13a8da84209eceb3d6bd41714dbfbe61b3"
       ],
-      "checked_at": "2026-11-15T23:46:03.314879-03:00",
+      "checked_at": "2026-11-16T10:41:49.041893-03:00",
       "claim_matrix": {
         "document_id": "camara:2653944",
         "entries": [
