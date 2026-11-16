@@ -1,5 +1,5 @@
 {
-  "already_published": 5,
+  "already_published": 6,
   "errors": [],
   "found": 11,
   "pending": 8,
@@ -27,10 +27,10 @@
     {
       "discover_sources": 1,
       "explore": 0,
-      "id": "camara:2653947",
-      "score": 57
+      "id": "camara:2653944",
+      "score": 56
     }
   ],
   "staged": 1,
-  "timestamp": "2026-11-15T18:50:50.099313-03:00"
+  "timestamp": "2026-11-15T23:45:39.287309-03:00"
 }

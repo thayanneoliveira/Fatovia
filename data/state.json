@@ -377,6 +377,59 @@
         "economia"
       ],
       "version": "a9ab7e30775280"
+    },
+    {
+      "caption": "O que está previsto nesta proposta?\n\nPL 5852/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653944\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653944/2d94a3cc4eebf7\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "cards": [
+        "docs/media/camara-2653944/2d94a3cc4eebf7/01.jpg",
+        "docs/media/camara-2653944/2d94a3cc4eebf7/02.jpg",
+        "docs/media/camara-2653944/2d94a3cc4eebf7/03.jpg",
+        "docs/media/camara-2653944/2d94a3cc4eebf7/04.jpg",
+        "docs/media/camara-2653944/2d94a3cc4eebf7/05.jpg",
+        "docs/media/camara-2653944/2d94a3cc4eebf7/06.jpg",
+        "docs/media/camara-2653944/2d94a3cc4eebf7/07.jpg"
+      ],
+      "discovery_source_count": 1,
+      "editorial_score": 56,
+      "evidence": {
+        "checked_at": "2026-11-15T23:45:39.287309-03:00",
+        "claims": [
+          {
+            "basis": "identificacao_da_proposicao",
+            "field": "title"
+          },
+          {
+            "basis": "ementa_oficial_atribuida",
+            "field": "summary"
+          },
+          {
+            "basis": "registro_de_tramitacao",
+            "field": "stage"
+          }
+        ],
+        "content_sha256": "5cad6126c0beba2a060f8ba558095dc06f046705c9941e506e709e013683aff0",
+        "kind": "official_document_attribution",
+        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
+        "record_date": "2026-11-13",
+        "schema": 1,
+        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
+      },
+      "explore_signal_count": 0,
+      "id": "camara:2653944",
+      "public_url": "https://www.camara.leg.br/propostas-legislativas/2653944",
+      "source_name": "Câmara dos Deputados",
+      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-13",
+      "status": "ready",
+      "summary": "Institui o Imposto sobre Grandes Fortunas, previsto no art. 153, inciso VII, da Constituição Federal.",
+      "summary_hash": "cf3bbc34af91f6",
+      "template_revision": "documentary-hook-v3",
+      "title": "PL 5852/2026",
+      "topics": [
+        "economia"
+      ],
+      "version": "2d94a3cc4eebf7"
     }
   ],
   "published": [
