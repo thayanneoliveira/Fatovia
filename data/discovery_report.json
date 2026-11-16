@@ -1,27 +1,15 @@
 {
-  "generated_at": "2026-11-16T04:14:00.714488-03:00",
+  "generated_at": "2026-11-16T19:29:19.689601-03:00",
   "note": "Topic co-occurrence is not corroboration of an individual claim or proof of virality.",
   "publication_authorized": false,
-  "signals": [
-    {
-      "id": "d6630d38932c64380d71",
-      "published_at": "2026-11-15T15:26:00-03:00",
-      "source": "agencia_brasil",
-      "status": "discovery_only",
-      "title": "Bullying: após morte, família e especialistas pedem rigor de escolas",
-      "topics": [
-        "educacao"
-      ],
-      "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-11/bullying-apos-morte-familia-e-especialistas-pedem-rigor-de-escolas"
-    }
-  ],
+  "signals": [],
   "sources": {
     "agencia_brasil": {
-      "eligible_signals": 1,
+      "eligible_signals": 0,
       "status": "ok"
     },
     "ibge": {
-      "error_type": "ConnectTimeout",
+      "error_type": "ValueError",
       "status": "unavailable"
     },
     "senado": {
@@ -29,16 +17,5 @@
       "status": "ok"
     }
   },
-  "topic_groups": [
-    {
-      "document_count": 1,
-      "explore_links": 0,
-      "source_count": 1,
-      "sources": [
-        "agencia_brasil"
-      ],
-      "status": "research_required",
-      "topic": "educacao"
-    }
-  ]
+  "topic_groups": []
 }

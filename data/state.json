@@ -3,7 +3,23 @@
     "2026-10-25",
     "2026-10-26"
   ],
-  "metric_cohorts": [],
+  "metric_cohorts": [
+    {
+      "age_hours": 24.6,
+      "media_id": "17901241947394968",
+      "media_type": "CAROUSEL_ALBUM",
+      "observed_at": "2026-11-16T19:29:21.915799-03:00",
+      "published_at": "2026-11-15T21:53:33+00:00",
+      "reach": 2,
+      "saved": 0,
+      "shares": 0,
+      "target_hours": 24,
+      "topics": [
+        "seguranca"
+      ],
+      "views": 8
+    }
+  ],
   "metrics": [],
   "pending": [
     {

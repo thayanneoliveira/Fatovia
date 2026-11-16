@@ -1,6 +1,6 @@
 {
   "evaluation_ready": false,
-  "generated_at": "2026-11-16T04:14:11.084911-03:00",
+  "generated_at": "2026-11-16T19:29:23.453709-03:00",
   "issues": [],
   "limitations": "Only recorded pilot posts; no retroactive estimates, no automatic promotion, no optimization from four samples.",
   "max_total": 4,
@@ -8,14 +8,14 @@
   "pilot_id": "documentary-20261115",
   "publications": [
     {
-      "age_hours": 16.48,
+      "age_hours": 31.73,
       "document_id": "camara:2653819",
       "media_id": "18213163885365403",
       "permalink": "https://www.instagram.com/p/DfxBuz7FJKv/",
       "published_at": "2026-11-15T11:45:30.486412-03:00",
       "samples": {
         "24": {
-          "status": "not_due"
+          "status": "window_missed"
         },
         "72": {
           "status": "not_due"
@@ -26,11 +26,34 @@
       ]
     },
     {
-      "age_hours": 9.36,
+      "age_hours": 24.61,
       "document_id": "camara:2653948",
       "media_id": "17901241947394968",
       "permalink": "https://www.instagram.com/p/DfxyoEGIO7b/",
       "published_at": "2026-11-15T18:52:34.384138-03:00",
+      "samples": {
+        "24": {
+          "age_hours": 24.6,
+          "reach": 2,
+          "saved": 0,
+          "shares": 0,
+          "status": "collected",
+          "views": 8
+        },
+        "72": {
+          "status": "not_due"
+        }
+      },
+      "topics": [
+        "seguranca"
+      ]
+    },
+    {
+      "age_hours": 8.77,
+      "document_id": "camara:2653813",
+      "media_id": "18077986049477583",
+      "permalink": "https://www.instagram.com/p/DfzfarSmlTb/",
+      "published_at": "2026-11-16T10:43:11.267743-03:00",
       "samples": {
         "24": {
           "status": "not_due"
@@ -40,15 +63,33 @@
         }
       },
       "topics": [
-        "seguranca"
+        "infraestrutura"
+      ]
+    },
+    {
+      "age_hours": 0.54,
+      "document_id": "camara:2653937",
+      "media_id": "18149060461583391",
+      "permalink": "https://www.instagram.com/p/Df0X6Z2CfXE/",
+      "published_at": "2026-11-16T18:56:54.560076-03:00",
+      "samples": {
+        "24": {
+          "status": "not_due"
+        },
+        "72": {
+          "status": "not_due"
+        }
+      },
+      "topics": [
+        "economia"
       ]
     }
   ],
-  "published": 2,
-  "remaining_allowance": 2,
+  "published": 4,
+  "remaining_allowance": 0,
   "samples_collected": {
-    "24": 0,
+    "24": 1,
     "72": 0
   },
-  "status": "pilot_in_progress"
+  "status": "publication_window_closed"
 }
