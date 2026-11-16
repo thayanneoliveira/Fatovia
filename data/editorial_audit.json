@@ -1,323 +1,8 @@
 {
-  "generated_at": "2026-11-15T18:51:09.528934-03:00",
+  "generated_at": "2026-11-15T23:46:03.314879-03:00",
   "limitations": "Independent rule-based check of the official source, approved template and bytes; not general factual or semantic review.",
   "policy": "documentary-template-v4-didactic",
   "reviews": [
-    {
-      "card_sha256": [
-        "5d44704733ee84f25a6b111404273cbeabeb59fcd8a3135e346fee1ee962bcc6",
-        "612d3841805490feb81c42f92f3b0b97b87a51917d868f98b2edbce8348296c2",
-        "c5959963d5ae9708c8ac1afe1e24ea3787e06adc5b2ba5eee178a92298e9360c",
-        "389cba29c3047c75279e40d43b93c56cdc81ee4e9f5a29436c44578ae942940c",
-        "fff5074735e9f2615b472a74884fe767a21d1e1e827bddb00e53e17caf61d25b",
-        "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
-        "ebe8ccaaf1d4e17c0b5ee43d968e1b1558c4953e4e823894f07d4aab00874381"
-      ],
-      "checked_at": "2026-11-15T18:51:09.528934-03:00",
-      "claim_matrix": {
-        "document_id": "camara:2653948",
-        "entries": [
-          {
-            "evidence": {
-              "end": 68,
-              "excerpt": "Lei Geral do Esporte",
-              "field": "summary",
-              "field_sha256": "3e870b3937862052275537577e200fffdcc88069d37c71ad6b0b5c0fa33c83a0",
-              "start": 48,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653948"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_01",
-            "text": "Violência contra a mulher: o que pode mudar no esporte? | Uma proposta prevê medidas disciplinares para atletas pela prática de violência contra a mulher.",
-            "type": "reviewed_question"
-          },
-          {
-            "evidence": {
-              "end": 139,
-              "excerpt": "responsabilização disciplinar de atletas",
-              "field": "summary",
-              "field_sha256": "3e870b3937862052275537577e200fffdcc88069d37c71ad6b0b5c0fa33c83a0",
-              "start": 99,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653948"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_01",
-            "text": "Violência contra a mulher: o que pode mudar no esporte? | Uma proposta prevê medidas disciplinares para atletas pela prática de violência contra a mulher.",
-            "type": "reviewed_question"
-          },
-          {
-            "evidence": {
-              "end": 181,
-              "excerpt": "violência contra a mulher",
-              "field": "summary",
-              "field_sha256": "3e870b3937862052275537577e200fffdcc88069d37c71ad6b0b5c0fa33c83a0",
-              "start": 156,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653948"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_01",
-            "text": "Violência contra a mulher: o que pode mudar no esporte? | Uma proposta prevê medidas disciplinares para atletas pela prática de violência contra a mulher.",
-            "type": "reviewed_question"
-          },
-          {
-            "evidence": {
-              "end": 68,
-              "excerpt": "Lei Geral do Esporte",
-              "field": "summary",
-              "field_sha256": "3e870b3937862052275537577e200fffdcc88069d37c71ad6b0b5c0fa33c83a0",
-              "start": 48,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653948"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_02",
-            "text": "O que está sendo proposto? | Alterar a Lei Geral do Esporte para estabelecer medidas de responsabilização disciplinar de atletas pela prática de violência contra a mulher.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 139,
-              "excerpt": "responsabilização disciplinar de atletas",
-              "field": "summary",
-              "field_sha256": "3e870b3937862052275537577e200fffdcc88069d37c71ad6b0b5c0fa33c83a0",
-              "start": 99,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653948"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_02",
-            "text": "O que está sendo proposto? | Alterar a Lei Geral do Esporte para estabelecer medidas de responsabilização disciplinar de atletas pela prática de violência contra a mulher.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 181,
-              "excerpt": "violência contra a mulher",
-              "field": "summary",
-              "field_sha256": "3e870b3937862052275537577e200fffdcc88069d37c71ad6b0b5c0fa33c83a0",
-              "start": 156,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653948"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_02",
-            "text": "O que está sendo proposto? | Alterar a Lei Geral do Esporte para estabelecer medidas de responsabilização disciplinar de atletas pela prática de violência contra a mulher.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 68,
-              "excerpt": "Lei Geral do Esporte",
-              "field": "summary",
-              "field_sha256": "3e870b3937862052275537577e200fffdcc88069d37c71ad6b0b5c0fa33c83a0",
-              "start": 48,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653948"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_03",
-            "text": "Por que isso importa? | Responsabilização disciplinar diz respeito a consequências no âmbito do esporte. Ela não é o mesmo que uma condenação criminal.",
-            "type": "reviewed_mechanism"
-          },
-          {
-            "evidence": {
-              "end": 139,
-              "excerpt": "responsabilização disciplinar de atletas",
-              "field": "summary",
-              "field_sha256": "3e870b3937862052275537577e200fffdcc88069d37c71ad6b0b5c0fa33c83a0",
-              "start": 99,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653948"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_03",
-            "text": "Por que isso importa? | Responsabilização disciplinar diz respeito a consequências no âmbito do esporte. Ela não é o mesmo que uma condenação criminal.",
-            "type": "reviewed_mechanism"
-          },
-          {
-            "evidence": {
-              "end": 181,
-              "excerpt": "violência contra a mulher",
-              "field": "summary",
-              "field_sha256": "3e870b3937862052275537577e200fffdcc88069d37c71ad6b0b5c0fa33c83a0",
-              "start": 156,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653948"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_03",
-            "text": "Por que isso importa? | Responsabilização disciplinar diz respeito a consequências no âmbito do esporte. Ela não é o mesmo que uma condenação criminal.",
-            "type": "reviewed_mechanism"
-          },
-          {
-            "evidence": {
-              "end": 68,
-              "excerpt": "Lei Geral do Esporte",
-              "field": "summary",
-              "field_sha256": "3e870b3937862052275537577e200fffdcc88069d37c71ad6b0b5c0fa33c83a0",
-              "start": 48,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653948"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_04",
-            "text": "Na prática, o que pode mudar? | Se o projeto avançar, atletas poderão estar sujeitos às medidas disciplinares previstas no texto que vier a ser aprovado.",
-            "type": "reviewed_conditional"
-          },
-          {
-            "evidence": {
-              "end": 139,
-              "excerpt": "responsabilização disciplinar de atletas",
-              "field": "summary",
-              "field_sha256": "3e870b3937862052275537577e200fffdcc88069d37c71ad6b0b5c0fa33c83a0",
-              "start": 99,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653948"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_04",
-            "text": "Na prática, o que pode mudar? | Se o projeto avançar, atletas poderão estar sujeitos às medidas disciplinares previstas no texto que vier a ser aprovado.",
-            "type": "reviewed_conditional"
-          },
-          {
-            "evidence": {
-              "end": 181,
-              "excerpt": "violência contra a mulher",
-              "field": "summary",
-              "field_sha256": "3e870b3937862052275537577e200fffdcc88069d37c71ad6b0b5c0fa33c83a0",
-              "start": 156,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653948"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_04",
-            "text": "Na prática, o que pode mudar? | Se o projeto avançar, atletas poderão estar sujeitos às medidas disciplinares previstas no texto que vier a ser aprovado.",
-            "type": "reviewed_conditional"
-          },
-          {
-            "evidence": {
-              "end": 68,
-              "excerpt": "Lei Geral do Esporte",
-              "field": "summary",
-              "field_sha256": "3e870b3937862052275537577e200fffdcc88069d37c71ad6b0b5c0fa33c83a0",
-              "start": 48,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653948"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_05",
-            "text": "O que precisa ficar claro? | Quais medidas seriam aplicadas? Quem apuraria os casos? Com quais garantias de defesa? A ementa não responde a essas perguntas.",
-            "type": "reviewed_questions"
-          },
-          {
-            "evidence": {
-              "end": 139,
-              "excerpt": "responsabilização disciplinar de atletas",
-              "field": "summary",
-              "field_sha256": "3e870b3937862052275537577e200fffdcc88069d37c71ad6b0b5c0fa33c83a0",
-              "start": 99,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653948"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_05",
-            "text": "O que precisa ficar claro? | Quais medidas seriam aplicadas? Quem apuraria os casos? Com quais garantias de defesa? A ementa não responde a essas perguntas.",
-            "type": "reviewed_questions"
-          },
-          {
-            "evidence": {
-              "end": 181,
-              "excerpt": "violência contra a mulher",
-              "field": "summary",
-              "field_sha256": "3e870b3937862052275537577e200fffdcc88069d37c71ad6b0b5c0fa33c83a0",
-              "start": 156,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653948"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_05",
-            "text": "O que precisa ficar claro? | Quais medidas seriam aplicadas? Quem apuraria os casos? Com quais garantias de defesa? A ementa não responde a essas perguntas.",
-            "type": "reviewed_questions"
-          },
-          {
-            "evidence": {
-              "end": 26,
-              "excerpt": "Apresentação de Proposição",
-              "field": "stage",
-              "field_sha256": "7ad4f3a2409e2196a7e3ccc89d81061c388c76f096e8a3e5181944076982a9b7",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653948"
-            },
-            "limitation": "Registro de tramitação.",
-            "location": "card_06",
-            "text": "Apresentação de Proposição",
-            "type": "procedural_record"
-          },
-          {
-            "evidence": {
-              "end": 10,
-              "excerpt": "2026-11-13",
-              "field": "stage_date",
-              "field_sha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653948"
-            },
-            "limitation": "Não comprova vigência.",
-            "location": "card_06",
-            "text": "2026-11-13",
-            "type": "record_date"
-          },
-          {
-            "evidence": {
-              "end": 12,
-              "excerpt": "PL 5856/2026",
-              "field": "title",
-              "field_sha256": "31fcf7cde0cc6b80ba4effb0ce3df04f9b6881ebac7b0345c5993d89b9c05a78",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653948"
-            },
-            "limitation": "Fonte para leitura integral.",
-            "location": "card_07",
-            "text": "PL 5856/2026",
-            "type": "source_reference"
-          },
-          {
-            "evidence": {
-              "end": 68,
-              "excerpt": "Lei Geral do Esporte",
-              "field": "summary",
-              "field_sha256": "3e870b3937862052275537577e200fffdcc88069d37c71ad6b0b5c0fa33c83a0",
-              "start": 48,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653948"
-            },
-            "limitation": "Paráfrase revisada.",
-            "location": "caption",
-            "text": "Alterar a Lei Geral do Esporte para estabelecer medidas de responsabilização disciplinar de atletas pela prática de violência contra a mulher.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 181,
-              "excerpt": "violência contra a mulher",
-              "field": "summary",
-              "field_sha256": "3e870b3937862052275537577e200fffdcc88069d37c71ad6b0b5c0fa33c83a0",
-              "start": 156,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653948"
-            },
-            "limitation": "Impacto potencial.",
-            "location": "caption",
-            "text": "Se o projeto avançar, atletas poderão estar sujeitos às medidas disciplinares previstas no texto que vier a ser aprovado.",
-            "type": "reviewed_conditional"
-          }
-        ],
-        "limitation": "Revisão editorial de narrativa controlada; não verifica impacto real ou texto integral.",
-        "policy": "didactic-v4",
-        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653948",
-        "unverified_dimensions": [
-          "legal_effect",
-          "implementation",
-          "budget",
-          "causality",
-          "social_impact"
-        ],
-        "version": "78147b54c05128"
-      },
-      "claim_matrix_sha256": "01a4cd49ab3f64c78688ce86f3f20aa7777f107634dc7a4b791e7c3aa6a2e8fe",
-      "content_sha256": "97a3baa2c865523f13cbe3508115146de356cfc57b0b9c984bc6be4ca47d5362",
-      "decision": "approved_documentary_only",
-      "id": "camara:2653948",
-      "issues": [],
-      "policy": "documentary-template-v4-didactic",
-      "version": "78147b54c05128"
-    },
     {
       "card_sha256": [
         "694b2c08aba90643d31cadf24c71e2639e705121804f34edf93a7adde697942e",
@@ -328,7 +13,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "46f0df7f93d106f57bbcf75536d09a37bdf8a3477b6982c84dfce39318fa7e89"
       ],
-      "checked_at": "2026-11-15T18:51:09.528934-03:00",
+      "checked_at": "2026-11-15T23:46:03.314879-03:00",
       "claim_matrix": {
         "document_id": "camara:2653813",
         "entries": [
@@ -643,7 +328,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "e4306938744dbe8e712ec1f00726cc4bc44bc91c51739a90d86bfa888be48b9a"
       ],
-      "checked_at": "2026-11-15T18:51:09.528934-03:00",
+      "checked_at": "2026-11-15T23:46:03.314879-03:00",
       "claim_matrix": {
         "document_id": "camara:2653937",
         "entries": [
@@ -1028,7 +713,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "1616c5634919cd668cc05ce614676b2272ce9fed9ad61da04205736700734d27"
       ],
-      "checked_at": "2026-11-15T18:51:09.528934-03:00",
+      "checked_at": "2026-11-15T23:46:03.314879-03:00",
       "claim_matrix": {
         "document_id": "camara:2653940",
         "entries": [
@@ -1343,7 +1028,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "83196e0ab5fa0e83d32c6b93209ea73ebaea6a4b097abb5df7044eaf178fe8ed"
       ],
-      "checked_at": "2026-11-15T18:51:09.528934-03:00",
+      "checked_at": "2026-11-15T23:46:03.314879-03:00",
       "claim_matrix": {
         "document_id": "camara:2653811",
         "entries": [
@@ -1658,7 +1343,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "c58a7bdb96425264bdd418c5f08fdd9b687d6ae64773a869f93b59b4a148b687"
       ],
-      "checked_at": "2026-11-15T18:51:09.528934-03:00",
+      "checked_at": "2026-11-15T23:46:03.314879-03:00",
       "claim_matrix": {
         "document_id": "camara:2653822",
         "entries": [
@@ -1973,7 +1658,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "df65942b5a15a4912308263b5d77f767513c48cd8155b6f2ed4318c0c20eaf74"
       ],
-      "checked_at": "2026-11-15T18:51:09.528934-03:00",
+      "checked_at": "2026-11-15T23:46:03.314879-03:00",
       "claim_matrix": {
         "document_id": "camara:2653946",
         "entries": [
@@ -2218,7 +1903,7 @@
         "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
         "5ffd6f5a09d23145869bea218d77cad95d9bc3fc618919b107ab8aae9f70f615"
       ],
-      "checked_at": "2026-11-15T18:51:09.528934-03:00",
+      "checked_at": "2026-11-15T23:46:03.314879-03:00",
       "claim_matrix": {
         "document_id": "camara:2653947",
         "entries": [
@@ -2361,6 +2046,160 @@
       "issues": [],
       "policy": "documentary-template-v4-didactic",
       "version": "a9ab7e30775280"
+    },
+    {
+      "card_sha256": [
+        "06a12b1b071dcb063ec0a285fbbbcf4a63b7f84089311fe6a09ef266733bdc7c",
+        "760e22f7e59f5f096b79c4709ebf34bb903cb637b255b1317906ba60ad1967c4",
+        "50fc02cfd1d06be78856d1d7dc75f61c0346bcbdeeeff316b42bc4e81aa7c58f",
+        "9a064a1c334d73ae9f28699a53bc50ec32ffb3e2536d213d356bb1678a14fcc1",
+        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
+        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
+        "63eb90182d488de051710965000b2c13a8da84209eceb3d6bd41714dbfbe61b3"
+      ],
+      "checked_at": "2026-11-15T23:46:03.314879-03:00",
+      "claim_matrix": {
+        "document_id": "camara:2653944",
+        "entries": [
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5852/2026",
+              "field": "title",
+              "field_sha256": "b349fe263fed63cd2673549e20a4eca7ac89d9a8cae409e214dfb946ced7c6ed",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
+            },
+            "limitation": "Identifica a proposição, não sua aprovação.",
+            "location": "card_01",
+            "text": "PL 5852/2026",
+            "type": "document_identity"
+          },
+          {
+            "evidence": {
+              "end": 101,
+              "excerpt": "Institui o Imposto sobre Grandes Fortunas, previsto no art. 153, inciso VII, da Constituição Federal.",
+              "field": "summary",
+              "field_sha256": "ff819c0ae6a2feba3316b0995619cfadc5d2b0675d208c724b104cb6edcd99ba",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
+            },
+            "limitation": "Ementa oficial, não texto integral nem prova de impacto.",
+            "location": "card_02",
+            "text": "Institui o Imposto sobre Grandes Fortunas, previsto no art. 153, inciso VII, da Constituição Federal.",
+            "type": "attributed_excerpt"
+          },
+          {
+            "evidence": null,
+            "limitation": "Não acrescenta fatos externos.",
+            "location": "card_03",
+            "text": "A ementa resume o tema. Para conhecer condições, exceções e detalhes, consulte o texto integral.",
+            "type": "template_explanation"
+          },
+          {
+            "evidence": {
+              "end": 26,
+              "excerpt": "Apresentação de Proposição",
+              "field": "stage",
+              "field_sha256": "7ad4f3a2409e2196a7e3ccc89d81061c388c76f096e8a3e5181944076982a9b7",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
+            },
+            "limitation": "Registro de tramitação na data de referência.",
+            "location": "card_04",
+            "text": "Apresentação de Proposição",
+            "type": "procedural_record"
+          },
+          {
+            "evidence": {
+              "end": 10,
+              "excerpt": "2026-11-13",
+              "field": "stage_date",
+              "field_sha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
+            },
+            "limitation": "Data do andamento, não da vigência.",
+            "location": "card_04",
+            "text": "2026-11-13",
+            "type": "record_date"
+          },
+          {
+            "evidence": null,
+            "limitation": "Não atribui impacto, vigência ou financiamento.",
+            "location": "card_05",
+            "text": "A existência de um projeto não comprova aprovação, entrada em vigor, financiamento ou resultados.",
+            "type": "scope_limitation"
+          },
+          {
+            "evidence": null,
+            "limitation": "Questões para acompanhamento, não afirmações comprovadas.",
+            "location": "card_06",
+            "text": "Qual é o texto final?\n\nQuais órgãos respondem pela execução?\n\nHá custo previsto e indicadores de resultado?",
+            "type": "open_questions"
+          },
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5852/2026",
+              "field": "title",
+              "field_sha256": "b349fe263fed63cd2673549e20a4eca7ac89d9a8cae409e214dfb946ced7c6ed",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
+            },
+            "limitation": "Referência documental.",
+            "location": "card_07",
+            "text": "PL 5852/2026",
+            "type": "source_reference"
+          },
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5852/2026",
+              "field": "title",
+              "field_sha256": "b349fe263fed63cd2673549e20a4eca7ac89d9a8cae409e214dfb946ced7c6ed",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
+            },
+            "limitation": "Identifica a proposição.",
+            "location": "caption",
+            "text": "PL 5852/2026",
+            "type": "document_identity"
+          },
+          {
+            "evidence": {
+              "end": 10,
+              "excerpt": "2026-11-13",
+              "field": "stage_date",
+              "field_sha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
+            },
+            "limitation": "Data registrada na fonte.",
+            "location": "caption",
+            "text": "2026-11-13",
+            "type": "record_date"
+          }
+        ],
+        "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
+        "policy": "documentary-claims-v2-hooks",
+        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944",
+        "unverified_dimensions": [
+          "legal_effect",
+          "implementation",
+          "budget",
+          "causality",
+          "social_impact"
+        ],
+        "version": "2d94a3cc4eebf7"
+      },
+      "claim_matrix_sha256": "662e5c7a636cba2852d0dcde7b9f3325ce13c35a8bb0961f29dd900b3c4e05a9",
+      "content_sha256": "5cad6126c0beba2a060f8ba558095dc06f046705c9941e506e709e013683aff0",
+      "decision": "approved_documentary_only",
+      "id": "camara:2653944",
+      "issues": [],
+      "policy": "documentary-template-v4-didactic",
+      "version": "2d94a3cc4eebf7"
     }
   ]
 }
