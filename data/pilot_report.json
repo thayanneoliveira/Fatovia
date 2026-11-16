@@ -1,6 +1,6 @@
 {
   "evaluation_ready": false,
-  "generated_at": "2026-11-15T16:05:52.194259-03:00",
+  "generated_at": "2026-11-16T04:14:11.084911-03:00",
   "issues": [],
   "limitations": "Only recorded pilot posts; no retroactive estimates, no automatic promotion, no optimization from four samples.",
   "max_total": 4,
@@ -8,7 +8,7 @@
   "pilot_id": "documentary-20261115",
   "publications": [
     {
-      "age_hours": 4.34,
+      "age_hours": 16.48,
       "document_id": "camara:2653819",
       "media_id": "18213163885365403",
       "permalink": "https://www.instagram.com/p/DfxBuz7FJKv/",
@@ -24,10 +24,28 @@
       "topics": [
         "saude"
       ]
+    },
+    {
+      "age_hours": 9.36,
+      "document_id": "camara:2653948",
+      "media_id": "17901241947394968",
+      "permalink": "https://www.instagram.com/p/DfxyoEGIO7b/",
+      "published_at": "2026-11-15T18:52:34.384138-03:00",
+      "samples": {
+        "24": {
+          "status": "not_due"
+        },
+        "72": {
+          "status": "not_due"
+        }
+      },
+      "topics": [
+        "seguranca"
+      ]
     }
   ],
-  "published": 1,
-  "remaining_allowance": 3,
+  "published": 2,
+  "remaining_allowance": 2,
   "samples_collected": {
     "24": 0,
     "72": 0
