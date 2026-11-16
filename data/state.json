@@ -7,59 +7,6 @@
   "metrics": [],
   "pending": [
     {
-      "caption": "Consulta veterinária mais barata? Entenda a proposta tributária\n\nIncluir serviços médico-veterinários na redução de 60% das alíquotas do IBS e da CBS.\n\nSe aprovada, a medida pode alterar o custo tributário do serviço. O preço final também depende de outros custos e decisões do prestador.\n\nPLP 303/2026 | Registro de 2026-11-13. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2653937\nID editorial: camara:2653937/da05fb78307294/didactic-v4\n#FatoVia #PoliticasPublicas",
-      "cards": [
-        "docs/media/camara-2653937/da05fb78307294/didactic-v4/01.jpg",
-        "docs/media/camara-2653937/da05fb78307294/didactic-v4/02.jpg",
-        "docs/media/camara-2653937/da05fb78307294/didactic-v4/03.jpg",
-        "docs/media/camara-2653937/da05fb78307294/didactic-v4/04.jpg",
-        "docs/media/camara-2653937/da05fb78307294/didactic-v4/05.jpg",
-        "docs/media/camara-2653937/da05fb78307294/didactic-v4/06.jpg",
-        "docs/media/camara-2653937/da05fb78307294/didactic-v4/07.jpg"
-      ],
-      "discovery_source_count": 0,
-      "editorial_score": 82,
-      "evidence": {
-        "checked_at": "2026-11-15T10:48:12.090754-03:00",
-        "claims": [
-          {
-            "basis": "identificacao_da_proposicao",
-            "field": "title"
-          },
-          {
-            "basis": "ementa_oficial_atribuida",
-            "field": "summary"
-          },
-          {
-            "basis": "registro_de_tramitacao",
-            "field": "stage"
-          }
-        ],
-        "content_sha256": "b51eba4388da0825e6348e10ef592f8ff969f865b643fbb66e32e01cc34ffc31",
-        "kind": "official_document_attribution",
-        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
-        "record_date": "2026-11-13",
-        "schema": 1,
-        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653937"
-      },
-      "explore_signal_count": 0,
-      "id": "camara:2653937",
-      "public_url": "https://www.camara.leg.br/propostas-legislativas/2653937",
-      "source_name": "Câmara dos Deputados",
-      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653937",
-      "stage": "Apresentação de Proposição",
-      "stage_date": "2026-11-13",
-      "status": "ready",
-      "summary": "Altera a Lei Complementar nº 214, de 16 de janeiro de 2025, para incluir os serviços médico-veterinários na redução de 60% (sessenta por cento) das alíquotas do Imposto sobre Bens e Serviços (IBS) e da Contribuição Social sobre Bens e Serviços (CBS).",
-      "summary_hash": "e8513367cf056d",
-      "template_revision": "didactic-v4",
-      "title": "PLP 303/2026",
-      "topics": [
-        "economia"
-      ],
-      "version": "da05fb78307294"
-    },
-    {
       "caption": "Devolução de impostos: o que pode mudar para sua família?\n\nInstituir devolução geral progressiva de CBS e IBS segundo a renda domiciliar por pessoa e ampliar a identificação das famílias beneficiárias.\n\nSe aprovada nos termos previstos, a devolução poderá variar conforme a renda considerada e os critérios definidos para identificar beneficiários.\n\nPLP 304/2026 | Registro de 2026-11-13. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2653940\nID editorial: camara:2653940/a39d386f415e16/didactic-v4\n#FatoVia #PoliticasPublicas",
       "cards": [
         "docs/media/camara-2653940/a39d386f415e16/didactic-v4/01.jpg",
@@ -467,14 +414,23 @@
         "infraestrutura"
       ],
       "version": "af7aa01437443c"
+    },
+    {
+      "evidence_sha256": "b51eba4388da0825e6348e10ef592f8ff969f865b643fbb66e32e01cc34ffc31",
+      "id": "camara:2653937",
+      "media_id": "18149060461583391",
+      "permalink": "https://www.instagram.com/p/Df0X6Z2CfXE/",
+      "published_at": "2026-11-16T18:56:54.560076-03:00",
+      "summary": "Altera a Lei Complementar nº 214, de 16 de janeiro de 2025, para incluir os serviços médico-veterinários na redução de 60% (sessenta por cento) das alíquotas do Imposto sobre Bens e Serviços (IBS) e da Contribuição Social sobre Bens e Serviços (CBS).",
+      "summary_hash": "e8513367cf056d",
+      "title": "PLP 303/2026",
+      "topics": [
+        "economia"
+      ],
+      "version": "da05fb78307294"
     }
   ],
-  "publishing": {
-    "id": "camara:2653937",
-    "started_at": "2026-11-16T18:56:52.739387-03:00",
-    "status": "checkpointed",
-    "version": "da05fb78307294"
-  },
+  "publishing": null,
   "replacement_request": {
     "authorization": "owner_requested_replacement_after_manual_deletion_2026-11-15",
     "id": "camara:2653819",
