@@ -7,59 +7,6 @@
   "metrics": [],
   "pending": [
     {
-      "caption": "Fogos barulhentos: podem deixar de ser vendidos e usados?\n\nO projeto inclui fabricação, importação, comércio, distribuição, armazenamento, transporte e utilização dos artefatos ruidosos.\n\nSe a medida for aprovada e aplicada, pode diminuir a exposição ao estrondo em festas. A ementa não mede esse efeito.\n\nPL 5845/2026 | Registro de 2026-11-13. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2653813\nID editorial: camara:2653813/af7aa01437443c/didactic-v4\n#FatoVia #PoliticasPublicas",
-      "cards": [
-        "docs/media/camara-2653813/af7aa01437443c/didactic-v4/01.jpg",
-        "docs/media/camara-2653813/af7aa01437443c/didactic-v4/02.jpg",
-        "docs/media/camara-2653813/af7aa01437443c/didactic-v4/03.jpg",
-        "docs/media/camara-2653813/af7aa01437443c/didactic-v4/04.jpg",
-        "docs/media/camara-2653813/af7aa01437443c/didactic-v4/05.jpg",
-        "docs/media/camara-2653813/af7aa01437443c/didactic-v4/06.jpg",
-        "docs/media/camara-2653813/af7aa01437443c/didactic-v4/07.jpg"
-      ],
-      "discovery_source_count": 0,
-      "editorial_score": 83,
-      "evidence": {
-        "checked_at": "2026-11-15T10:48:12.090754-03:00",
-        "claims": [
-          {
-            "basis": "identificacao_da_proposicao",
-            "field": "title"
-          },
-          {
-            "basis": "ementa_oficial_atribuida",
-            "field": "summary"
-          },
-          {
-            "basis": "registro_de_tramitacao",
-            "field": "stage"
-          }
-        ],
-        "content_sha256": "77e5c013e702708ac3cfcc077701db011f908ab6a2be4119ae789c337c95ec80",
-        "kind": "official_document_attribution",
-        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
-        "record_date": "2026-11-13",
-        "schema": 1,
-        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653813"
-      },
-      "explore_signal_count": 0,
-      "id": "camara:2653813",
-      "public_url": "https://www.camara.leg.br/propostas-legislativas/2653813",
-      "source_name": "Câmara dos Deputados",
-      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653813",
-      "stage": "Apresentação de Proposição",
-      "stage_date": "2026-11-13",
-      "status": "ready",
-      "summary": "Dispõe sobre a proibição da fabricação, importação, comercialização, distribuição, armazenamento, transporte e utilização de rojões e demais fogos de artifício e artefatos pirotécnicos que produzam estampidos ou efeitos sonoros de explosão em todo o território nacional, e dá outras providências.",
-      "summary_hash": "af862f3b4be729",
-      "template_revision": "didactic-v4",
-      "title": "PL 5845/2026",
-      "topics": [
-        "infraestrutura"
-      ],
-      "version": "af7aa01437443c"
-    },
-    {
       "caption": "Consulta veterinária mais barata? Entenda a proposta tributária\n\nIncluir serviços médico-veterinários na redução de 60% das alíquotas do IBS e da CBS.\n\nSe aprovada, a medida pode alterar o custo tributário do serviço. O preço final também depende de outros custos e decisões do prestador.\n\nPLP 303/2026 | Registro de 2026-11-13. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2653937\nID editorial: camara:2653937/da05fb78307294/didactic-v4\n#FatoVia #PoliticasPublicas",
       "cards": [
         "docs/media/camara-2653937/da05fb78307294/didactic-v4/01.jpg",
@@ -506,14 +453,23 @@
         "seguranca"
       ],
       "version": "78147b54c05128"
+    },
+    {
+      "evidence_sha256": "77e5c013e702708ac3cfcc077701db011f908ab6a2be4119ae789c337c95ec80",
+      "id": "camara:2653813",
+      "media_id": "18077986049477583",
+      "permalink": "https://www.instagram.com/p/DfzfarSmlTb/",
+      "published_at": "2026-11-16T10:43:11.267743-03:00",
+      "summary": "Dispõe sobre a proibição da fabricação, importação, comercialização, distribuição, armazenamento, transporte e utilização de rojões e demais fogos de artifício e artefatos pirotécnicos que produzam estampidos ou efeitos sonoros de explosão em todo o território nacional, e dá outras providências.",
+      "summary_hash": "af862f3b4be729",
+      "title": "PL 5845/2026",
+      "topics": [
+        "infraestrutura"
+      ],
+      "version": "af7aa01437443c"
     }
   ],
-  "publishing": {
-    "id": "camara:2653813",
-    "started_at": "2026-11-16T10:43:09.376930-03:00",
-    "status": "checkpointed",
-    "version": "af7aa01437443c"
-  },
+  "publishing": null,
   "replacement_request": {
     "authorization": "owner_requested_replacement_after_manual_deletion_2026-11-15",
     "id": "camara:2653819",
