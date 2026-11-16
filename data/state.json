@@ -508,7 +508,12 @@
       "version": "78147b54c05128"
     }
   ],
-  "publishing": null,
+  "publishing": {
+    "id": "camara:2653813",
+    "started_at": "2026-11-16T10:43:09.376930-03:00",
+    "status": "checkpointed",
+    "version": "af7aa01437443c"
+  },
   "replacement_request": {
     "authorization": "owner_requested_replacement_after_manual_deletion_2026-11-15",
     "id": "camara:2653819",
