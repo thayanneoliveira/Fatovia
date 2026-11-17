@@ -1,0 +1,47 @@
+name: Voice Lab - Prosody transfer
+on:
+  push:
+    branches: ['lab/voice-kokoro']
+    paths: ['.github/workflows/voice-prosody.yml', 'voice_prosody.py']
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  compare:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      OMP_NUM_THREADS: '2'
+      OPENBLAS_NUM_THREADS: '2'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/download-artifact@v4
+        with:
+          name: fatovia-santa-naturalness
+          path: inputs/santa
+          run-id: 44171724098
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v4
+        with:
+          name: fatovia-chatterbox-compare
+          path: inputs/chatterbox
+          run-id: 44173098565
+          github-token: ${{ github.token }}
+      - name: Install acoustic analysis runtime
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg libsndfile1
+          python -m pip install numpy==1.26.4 scipy==1.13.1 soundfile==0.13.1 librosa==0.11.0 pyworld==0.3.5
+      - name: Generate and validate comparative samples
+        run: python voice_prosody.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fatovia-prosody-comparison
+          path: prosody_samples/
+          retention-days: 3
+          if-no-files-found: warn
