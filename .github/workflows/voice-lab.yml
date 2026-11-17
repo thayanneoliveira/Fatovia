@@ -1,4 +1,4 @@
-name: Voice Lab V2 - Santa
+name: Voice Lab - Creche
 on:
   push:
     branches: ['lab/voice-kokoro']
@@ -26,11 +26,11 @@ jobs:
           python -m pip install --index-url https://download.pytorch.org/whl/cpu torch==2.6.0
           python -m pip install kokoro==0.9.4 soundfile numpy
       - name: Generate and validate Santa profiles
-        run: python voice_engine.py
+        run: python voice_engine.py --input creche_roteiro.json --profile documental
       - name: Save samples
         uses: actions/upload-artifact@v4
         with:
-          name: fatovia-santa-v2
+          name: fatovia-creche-voz
           path: samples/
           retention-days: 3
           if-no-files-found: error
