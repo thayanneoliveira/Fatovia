@@ -48,5 +48,17 @@
     ],
     "missing": "null; never impute",
     "learning": "Compare cohorts by format, duration and topic; treat small samples as hypotheses; preserve evidence and neutrality gates; do not auto-promote."
+  },
+  "storytelling_refinement_20261117": {
+    "source": "owner feedback on inflation v1 and creche benchmark",
+    "rules": [
+      "Open with a question that the general public can recognize in daily life.",
+      "Introduce the recurring human character and concrete conflict before economic or political jargon.",
+      "Use a natural hypothetical narration before illustrative amounts; clarify dramatization in post description, not a spoken disclaimer, without implying a real documented case.",
+      "Use official data after the viewer understands the mechanism; identify source and period in the frame.",
+      "Create one transferable insight worth sharing organically; test actual shares per reach rather than claim virality.",
+      "End with practical questions that empower the audience, without partisan attribution."
+    ],
+    "publication_gate": "Keep independent fact checking, fictional-vs-observed distinction, source mapping and the no-publish lab restriction."
   }
 }
