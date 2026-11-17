@@ -76,6 +76,11 @@ def review(item,now,source_check=verify_live):
         if not issues:
             row.update(decision="approved_documentary_only",content_sha256=fingerprint(item),card_sha256=actual,
                        claim_matrix=matrix,claim_matrix_sha256=digest(matrix))
+            from .brand import approved_logo
+            logo=approved_logo()
+            if logo is not None:
+                brand_policy=load("data/multiformat_experiment.json")
+                row.update(logo_sha256=brand_policy["approved_logo"]["sha256"],closing_media_sha256=actual[-1])
     except Exception as exc:
         issues.append("render_or_file_check_"+type(exc).__name__)
     return row
