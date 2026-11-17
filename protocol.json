@@ -1,0 +1,52 @@
+{
+  "version": "5.0-lab",
+  "status": "experimental_no_publish",
+  "principle": "Simplificar a explicação, nunca a realidade.",
+  "stages": [
+    "hook",
+    "identification",
+    "mechanism",
+    "impact",
+    "responsibility",
+    "solutions",
+    "action",
+    "reflection"
+  ],
+  "rubric": {
+    "hook": "Pergunta concreta, honesta, sem sensacionalismo.",
+    "identification": "Situação familiar, história ou metáfora concreta.",
+    "zero_knowledge": "Explicar mecanismo antes de introduzir jargão; nenhuma familiaridade presumida.",
+    "retention": "Cada pergunta é respondida; a resposta revela uma nova pergunta pertinente, sem suspense enganoso.",
+    "practical_learning": "Explicar impacto, competência, alternativas, limites e caminho verificável de atuação.",
+    "civic_question": "Encerrar com pergunta aberta e ação cívica específica, sem induzir posição partidária."
+  },
+  "requirements": [
+    "Uma pergunta central por episódio.",
+    "Distinguir fatos, exemplos fictícios, hipóteses e juízos.",
+    "Mapear alegações factuais a fontes e trechos, com data e escopo.",
+    "Não atribuir corrupção ou causalidade sem evidência.",
+    "Explicar custos e contrapartidas; preservar incerteza.",
+    "Indicar responsável competente, o que verificar e onde.",
+    "Não otimizar indignação, preferências eleitorais ou segmentação política.",
+    "Não impor duração fixa; cortar redundância, não contexto."
+  ],
+  "metrics": {
+    "human": [
+      "hook",
+      "identification",
+      "zero_knowledge",
+      "retention",
+      "practical_learning",
+      "civic_question"
+    ],
+    "observed": [
+      "average_watch_time",
+      "retention_curve_if_available",
+      "shares_per_reach",
+      "saves_per_reach",
+      "non_follower_reach_if_available"
+    ],
+    "missing": "null; never impute",
+    "learning": "Compare cohorts by format, duration and topic; treat small samples as hypotheses; preserve evidence and neutrality gates; do not auto-promote."
+  }
+}
