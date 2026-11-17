@@ -1,0 +1,19 @@
+name: FatoVia | Multiformat migration tests
+on:
+  push:
+    branches: ['feature/multiformat-publication']
+    paths: ['.github/workflows/multiformat-tests.yml','fatovia/multiformat.py','fatovia/publisher.py','tests/test_multiformat.py','data/multiformat_experiment.json']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - run: python -m unittest discover -s tests -v
