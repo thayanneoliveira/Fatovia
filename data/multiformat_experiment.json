@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "experiment_id": "multiformato-20261118",
+  "start_date": "2026-11-18",
+  "timezone": "America/Sao_Paulo",
+  "status": "authorized_not_deployed",
+  "daily_caps": {
+    "carousel": 4,
+    "reel": 1
+  },
+  "max_spend_brl": 0,
+  "proposed_slots": [
+    {
+      "hour": 8,
+      "type": "carousel",
+      "candidate": "camara:2653940"
+    },
+    {
+      "hour": 11,
+      "type": "carousel",
+      "candidate": "camara:2653811"
+    },
+    {
+      "hour": 14,
+      "type": "reel",
+      "candidate": "creche-v5"
+    },
+    {
+      "hour": 17,
+      "type": "carousel",
+      "candidate": "camara:2653822"
+    },
+    {
+      "hour": 20,
+      "type": "carousel",
+      "candidate": "camara:2653946"
+    }
+  ],
+  "constraints": {
+    "no_minimum_count": true,
+    "approved_logo_required_on_closing": true,
+    "voice": "Santa-R-1.0",
+    "visual_reference": "V5",
+    "editorial_reference": "V5",
+    "source_revalidation": true,
+    "independent_review": true,
+    "exact_media_hash_binding": true,
+    "duplicate_prevention": true,
+    "reconcile_uncertain_posts": true,
+    "no_paid_services": true
+  },
+  "deployment_blockers": [
+    "Current documentary publisher implements only carousels and original bounded pilot (4 total, 2 daily); new quota and mixed-format scheduler require tested migration.",
+    "Approved logo exact asset and final Reel frame not verified.",
+    "V5 full episode direction was manual; new autonomous renderer and video hosting/publisher path not validated."
+  ],
+  "notes": "Operational intent only; this file does not authorize bypass of existing publisher gates. Do not treat suggested slots as confirmed publishing times."
+}
