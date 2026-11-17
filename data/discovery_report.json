@@ -1,27 +1,38 @@
 {
-  "generated_at": "2026-11-17T05:27:47.027130-03:00",
+  "generated_at": "2026-11-17T18:18:14.912530-03:00",
   "note": "Topic co-occurrence is not corroboration of an individual claim or proof of virality.",
   "publication_authorized": false,
   "signals": [
     {
-      "id": "4b470f5e59536d3dcb62",
-      "published_at": "2026-11-16T20:45:00-03:00",
+      "id": "6ad630f97cd28124b6e9",
+      "published_at": "2026-11-17T17:12:00-03:00",
       "source": "agencia_brasil",
       "status": "discovery_only",
-      "title": "Brasil assina na COP31 pacto global por IA sustentável e empregos",
+      "title": "Clima afeta produção e eleva preço do tomate em diversas capitais",
       "topics": [
-        "saude"
+        "ambiente"
       ],
-      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/brasil-assina-na-cop-31-pacto-global-por-ia-sustentavel-e-empregos"
+      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/clima-afeta-producao-e-eleva-preco-do-tomate-em-diversas-capitais"
+    },
+    {
+      "id": "adb8f22fa91452ca69e7",
+      "published_at": "2026-11-17T15:56:00-03:00",
+      "source": "agencia_brasil",
+      "status": "discovery_only",
+      "title": "Durigan prevê impacto inicial da reforma tributária sobre inflação",
+      "topics": [
+        "economia"
+      ],
+      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/durigan-preve-impacto-inicial-da-reforma-tributaria-sobre-inflacao"
     }
   ],
   "sources": {
     "agencia_brasil": {
-      "eligible_signals": 1,
+      "eligible_signals": 2,
       "status": "ok"
     },
     "ibge": {
-      "error_type": "ReadTimeout",
+      "error_type": "ValueError",
       "status": "unavailable"
     },
     "senado": {
@@ -38,7 +49,17 @@
         "agencia_brasil"
       ],
       "status": "research_required",
-      "topic": "saude"
+      "topic": "ambiente"
+    },
+    {
+      "document_count": 1,
+      "explore_links": 0,
+      "source_count": 1,
+      "sources": [
+        "agencia_brasil"
+      ],
+      "status": "research_required",
+      "topic": "economia"
     }
   ]
 }

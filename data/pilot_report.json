@@ -1,6 +1,6 @@
 {
   "evaluation_ready": false,
-  "generated_at": "2026-11-17T05:28:03.813597-03:00",
+  "generated_at": "2026-11-17T18:18:18.524230-03:00",
   "issues": [],
   "limitations": "Only recorded pilot posts; no retroactive estimates, no automatic promotion, no optimization from four samples.",
   "max_total": 4,
@@ -8,7 +8,7 @@
   "pilot_id": "documentary-20261115",
   "publications": [
     {
-      "age_hours": 41.71,
+      "age_hours": 54.55,
       "document_id": "camara:2653819",
       "media_id": "18213163885365403",
       "permalink": "https://www.instagram.com/p/DfxBuz7FJKv/",
@@ -26,7 +26,7 @@
       ]
     },
     {
-      "age_hours": 34.59,
+      "age_hours": 47.43,
       "document_id": "camara:2653948",
       "media_id": "17901241947394968",
       "permalink": "https://www.instagram.com/p/DfxyoEGIO7b/",
@@ -49,14 +49,14 @@
       ]
     },
     {
-      "age_hours": 18.75,
+      "age_hours": 31.59,
       "document_id": "camara:2653813",
       "media_id": "18077986049477583",
       "permalink": "https://www.instagram.com/p/DfzfarSmlTb/",
       "published_at": "2026-11-16T10:43:11.267743-03:00",
       "samples": {
         "24": {
-          "status": "not_due"
+          "status": "window_missed"
         },
         "72": {
           "status": "not_due"
@@ -67,7 +67,7 @@
       ]
     },
     {
-      "age_hours": 10.52,
+      "age_hours": 23.36,
       "document_id": "camara:2653937",
       "media_id": "18149060461583391",
       "permalink": "https://www.instagram.com/p/Df0X6Z2CfXE/",
