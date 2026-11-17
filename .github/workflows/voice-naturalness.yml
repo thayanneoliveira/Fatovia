@@ -1,0 +1,35 @@
+name: Voice Lab - Santa Naturalness
+on:
+  push:
+    branches: ['lab/voice-kokoro']
+    paths: ['.github/workflows/voice-naturalness.yml', 'voice_naturalness.py']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  compare:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      OMP_NUM_THREADS: '2'
+      MKL_NUM_THREADS: '2'
+      HF_HUB_DISABLE_TELEMETRY: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install CPU voice engine
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y espeak-ng ffmpeg libsndfile1
+          python -m pip install --index-url https://download.pytorch.org/whl/cpu torch==2.6.0
+          python -m pip install kokoro==0.9.4 soundfile numpy
+      - name: Generate comparison
+        run: python voice_naturalness.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fatovia-santa-naturalness
+          path: naturalness/
+          retention-days: 3
+          if-no-files-found: error
