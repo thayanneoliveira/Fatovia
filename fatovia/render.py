@@ -108,6 +108,11 @@ def card(path, number, headline, body, hint):
     draw.text((72, 1284), (footer[0] if footer else "")[:110], fill=muted, font=footer_font)
     draw.text((940, 1284), f"{number:02}/07", fill=cream, font=getfont(18, True))
 
+    if number==7:
+        from .brand import approved_logo,carousel_header
+        logo=approved_logo()
+        if logo is not None:
+            carousel_header(picture,logo)
     Path(path).parent.mkdir(parents=True, exist_ok=True)
     picture.save(path, "JPEG", quality=91, optimize=True, subsampling=0)
     return str(path)
