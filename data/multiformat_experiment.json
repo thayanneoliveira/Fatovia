@@ -76,9 +76,9 @@
       "reel:creche-v5"
     ],
     "instruction": "Nao publicar o episodio da creche em 18/11, inclusive como contingencia. Arquivar como referencia V5. Priorizar o novo tema. Sem Reel se nao passar todos os controles; nao substituir por tema da creche.",
-    "status": "brief_ready_not_rendered",
+    "status": "revision_required_previous_video_rejected",
     "brief": {
-      "hook": "Se a inflação caiu, por que o seu carrinho de supermercado não ficou mais barato?",
+      "hook": "Por que seu dinheiro parece valer cada vez menos?",
       "mechanism": "Uma desaceleracao positiva dos precos nao e uma queda do nivel de precos. IPCA e media ponderada de uma cesta; a experiencia individual pode divergir.",
       "official_data": {
         "reference_month": "2026-10",
@@ -94,19 +94,23 @@
         "https://www.ibge.gov.br/indicadores/pnad"
       ],
       "visual_beats": [
-        "Uma pessoa recebe a noticia da desaceleracao e chega ao caixa com a mesma cesta.",
-        "Etiquetas ilustrativas R$100, R$110 apos 10%, R$111,10 apos 1% adicional; identificar simulacao e periodos iguais.",
-        "Comparacao animada de velocidade por meio de escada ascendente com inclinacao menor; separar nivel de precos e taxa.",
-        "Dados oficiais do IPCA mensal de setembro e outubro 2026; mostrar acumulado em 12 meses separadamente.",
-        "Composicao da cesta e pesos distintos, sem confundir cesta individual e indice nacional.",
-        "Encerramento homologado com logo oficial e pergunta sobre preco, renda e periodo."
+        "Maria compra alimentos com R$100; depois precisa deixar um produto no caixa.",
+        "Notícia da inflação menor, expectativa e novo total de R$111,10.",
+        "Carro desacelera sem voltar.",
+        "IPCA mensal setembro 0,82% e outubro 0,14%, fonte IBGE.",
+        "Mesma nota e carrinho reduzido; poder de compra.",
+        "Duas perguntas e encerramento homologado."
       ],
       "guardrails": [
         "Revalidar dados IBGE antes da publicacao.",
         "Nao dizer que todos os precos subiram nem atribuir causalidade ou responsabilidade politica sem evidencia.",
         "Nao apresentar simulacao numerica como dado real.",
-        "Santa R, V5, legendas progressivas e fechamento aprovado; custo adicional zero."
-      ]
+        "Santa R, V5, legendas progressivas e fechamento aprovado; custo adicional zero.",
+        "Não publicar a primeira versão sobre Ana; revisão audiovisual Maria precisa de nova validação."
+      ],
+      "narrative": "Maria: identificação antes do conceito, surpresa no caixa, metáfora do carro, dados IBGE, poder de compra e perguntas de fiscalização.",
+      "script_revision": "maria-v2",
+      "disclosure": "Dramatização com valores ilustrativos informada na descrição da publicação; no vídeo, contexto hipotético natural e dados oficiais com período e fonte."
     }
   }
 }
