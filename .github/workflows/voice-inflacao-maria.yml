@@ -1,0 +1,40 @@
+name: Voice Lab - Maria Santa R
+on:
+  push:
+    branches: ['lab/voice-kokoro']
+    paths: ['.github/workflows/voice-inflacao-maria.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  santa-r:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      OMP_NUM_THREADS: '2'
+      MKL_NUM_THREADS: '2'
+      OPENBLAS_NUM_THREADS: '2'
+      HF_HUB_DISABLE_TELEMETRY: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install voice and acoustic engines
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y espeak-ng ffmpeg libsndfile1
+          python -m pip install --index-url https://download.pytorch.org/whl/cpu torch==2.6.0
+          python -m pip install kokoro==0.9.4 numpy==1.26.4 soundfile==0.13.1 pyworld==0.3.5
+      - name: Generate benchmark and complete episode
+        run: python voice_santa_r.py --input inflacao_maria_roteiro.json --out inflacao_maria_audio
+      - name: Upload diagnostics and samples
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fatovia-inflacao-maria-santa-r
+          path: |
+            inflacao_maria_audio/
+            inflacao_maria_roteiro.json
+          retention-days: 3
+          if-no-files-found: warn
