@@ -1,0 +1,42 @@
+name: Voice Lab - Speech audit and alignment
+on:
+  push:
+    branches: ['lab/voice-kokoro']
+    paths: ['.github/workflows/speech-audit-lab.yml', 'speech_audit.py', 'test_speech_audit.py', 'pronunciation_prepare.py', 'pronunciation_dictionary.json']
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  speech-audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      OMP_NUM_THREADS: '4'
+      HF_HUB_DISABLE_TELEMETRY: '1'
+      HF_HUB_DISABLE_XET: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test independent audit and pronunciation rules
+        run: python -m unittest -v test_speech_audit
+      - uses: actions/download-artifact@v4
+        with:
+          name: fatovia-santa-r
+          path: inputs/santa-r
+          run-id: 44176463021
+          github-token: ${{ github.token }}
+      - name: Install offline speech recognition runtime
+        run: python -m pip install faster-whisper==1.2.1
+      - name: Audit approved complete episode without script prompting
+        run: |
+          python speech_audit.py --audio inputs/santa-r/R_episodio.mp3 --script creche_roteiro.json --manifest inputs/santa-r/R_episodio.json --out speech_audit_results --model small
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fatovia-speech-audit
+          path: speech_audit_results/
+          if-no-files-found: warn
+          retention-days: 3
