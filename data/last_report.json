@@ -1,7 +1,7 @@
 {
   "already_published": 8,
   "errors": [],
-  "found": 17,
+  "found": 22,
   "pending": 8,
   "publication": "DISABLED",
   "recommended_daily_limit": 4,
@@ -12,31 +12,18 @@
     21
   ],
   "scan_diagnostics": {
-    "detail_status_used": 23,
+    "detail_status_used": 25,
     "expired_or_unsealed_removed": 0,
     "history_errors": 0,
     "history_http_errors": {},
     "history_missing": 0,
-    "invalid": 6,
+    "invalid": 3,
     "records": 100,
     "stale": 0,
-    "topic_matches": 23,
-    "verified": 17
+    "topic_matches": 26,
+    "verified": 22
   },
-  "selected": [
-    {
-      "discover_sources": 0,
-      "explore": 0,
-      "id": "camara:2654174",
-      "score": 89
-    },
-    {
-      "discover_sources": 0,
-      "explore": 0,
-      "id": "camara:2654163",
-      "score": 88
-    }
-  ],
-  "staged": 2,
-  "timestamp": "2026-11-16T21:49:55.604648-03:00"
+  "selected": [],
+  "staged": 0,
+  "timestamp": "2026-11-17T11:27:44.430271-03:00"
 }
