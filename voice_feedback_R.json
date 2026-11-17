@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-17",
+  "experiment_run": 44175089698,
+  "preferred": "R",
+  "scores": {
+    "pronunciation": 5,
+    "intonation": 5,
+    "endings": 5,
+    "fluency": 5,
+    "pauses": 5,
+    "expressiveness": 5
+  },
+  "sample_size": 1,
+  "scope": "approved listening sample only",
+  "notes": "Nenhuma",
+  "decision": "Use Santa contextual -> C mastering -> WORLD unmodified resynthesis -> loudness mastering as candidate. Validate complete episode and another text before production. No Chatterbox dependency."
+}
