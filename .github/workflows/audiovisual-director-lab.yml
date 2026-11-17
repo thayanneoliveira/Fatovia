@@ -1,0 +1,40 @@
+name: Audiovisual Lab - Director V1
+on:
+  push:
+    branches: ['lab/voice-kokoro']
+    paths: ['.github/workflows/audiovisual-director-lab.yml', 'audiovisual_director.py', 'test_audiovisual_director.py']
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  director:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test director regression
+        run: python -m unittest -v test_audiovisual_director
+      - uses: actions/download-artifact@v4
+        with:
+          name: fatovia-santa-r
+          path: inputs/santa-r
+          run-id: 44176463021
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v4
+        with:
+          name: fatovia-speech-audit
+          path: inputs/audit
+          run-id: 44180656897
+          github-token: ${{ github.token }}
+      - name: Generate scene plan from real approved narration
+        run: python audiovisual_director.py --script creche_roteiro.json --manifest inputs/santa-r/R_episodio.json --audit inputs/audit/speech_audit.json --out director_results/scene_plan.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fatovia-director-v1
+          path: director_results/
+          if-no-files-found: error
+          retention-days: 3
