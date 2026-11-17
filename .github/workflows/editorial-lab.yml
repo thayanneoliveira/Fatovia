@@ -1,0 +1,21 @@
+name: Editorial V5 - regression lab
+on:
+  push:
+    branches: ['lab/editorial-v5']
+    paths: ['.github/workflows/editorial-lab.yml', 'editorial_engine.py', 'test_editorial_engine.py', 'protocol.json', 'benchmark_creche.json']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  editorial:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run structural regression tests
+        run: python -m unittest -v
+      - name: Smoke-test writer instructions
+        run: python editorial_engine.py --topic "Fila de atendimento"
