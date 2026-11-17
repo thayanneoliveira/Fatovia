@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "scope": "Explicit pronunciation substitutions. Captions stay unchanged. No guessed proper-name phonetics.",
+  "entries": [
+    {
+      "written": "FatoVia",
+      "spoken": "Fato Via",
+      "status": "approved_in_episode"
+    },
+    {
+      "written": "IBGE",
+      "spoken": "i bê gê é",
+      "status": "pending_listening"
+    },
+    {
+      "written": "IPCA",
+      "spoken": "i pê cê a",
+      "status": "pending_listening"
+    }
+  ]
+}
