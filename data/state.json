@@ -340,6 +340,112 @@
         "economia"
       ],
       "version": "2d94a3cc4eebf7"
+    },
+    {
+      "caption": "O que está previsto nesta proposta?\n\nPLP 305/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-16. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2654174\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2654174/abe5fda5fc0602\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "cards": [
+        "docs/media/camara-2654174/abe5fda5fc0602/01.jpg",
+        "docs/media/camara-2654174/abe5fda5fc0602/02.jpg",
+        "docs/media/camara-2654174/abe5fda5fc0602/03.jpg",
+        "docs/media/camara-2654174/abe5fda5fc0602/04.jpg",
+        "docs/media/camara-2654174/abe5fda5fc0602/05.jpg",
+        "docs/media/camara-2654174/abe5fda5fc0602/06.jpg",
+        "docs/media/camara-2654174/abe5fda5fc0602/07.jpg"
+      ],
+      "discovery_source_count": 0,
+      "editorial_score": 89,
+      "evidence": {
+        "checked_at": "2026-11-16T21:49:55.604648-03:00",
+        "claims": [
+          {
+            "basis": "identificacao_da_proposicao",
+            "field": "title"
+          },
+          {
+            "basis": "ementa_oficial_atribuida",
+            "field": "summary"
+          },
+          {
+            "basis": "registro_de_tramitacao",
+            "field": "stage"
+          }
+        ],
+        "content_sha256": "7d0e18bec0dd3dda27eb099cef998fa8f7ea5524f5fc75457ff51ed328f8fe6f",
+        "kind": "official_document_attribution",
+        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
+        "record_date": "2026-11-16",
+        "schema": 1,
+        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
+      },
+      "explore_signal_count": 0,
+      "id": "camara:2654174",
+      "public_url": "https://www.camara.leg.br/propostas-legislativas/2654174",
+      "source_name": "Câmara dos Deputados",
+      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174",
+      "stage": "Notificação de Despacho",
+      "stage_date": "2026-11-16",
+      "status": "ready",
+      "summary": "Estabelece a obrigatoriedade de rastreabilidade integral, transparência ativa e vedação à movimentação de recursos públicos em espécie no âmbito das transferências decorrentes de emendas parlamentares e instrumentos congêneres, dispõe sobre mecanismos de controle financeiro digital, altera a Lei n° 4.320, de 17 de março de 1964, e a Lei Complementar n° 101, de 4 de maio de 2000, e dá outras providências.",
+      "summary_hash": "65f5575716cc06",
+      "template_revision": "documentary-hook-v3",
+      "title": "PLP 305/2026",
+      "topics": [
+        "tecnologia"
+      ],
+      "version": "abe5fda5fc0602"
+    },
+    {
+      "caption": "O que está previsto nesta proposta?\n\nPL 5861/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-16. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2654163\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654163\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2654163/6438c89bd557e4\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "cards": [
+        "docs/media/camara-2654163/6438c89bd557e4/01.jpg",
+        "docs/media/camara-2654163/6438c89bd557e4/02.jpg",
+        "docs/media/camara-2654163/6438c89bd557e4/03.jpg",
+        "docs/media/camara-2654163/6438c89bd557e4/04.jpg",
+        "docs/media/camara-2654163/6438c89bd557e4/05.jpg",
+        "docs/media/camara-2654163/6438c89bd557e4/06.jpg",
+        "docs/media/camara-2654163/6438c89bd557e4/07.jpg"
+      ],
+      "discovery_source_count": 0,
+      "editorial_score": 88,
+      "evidence": {
+        "checked_at": "2026-11-16T21:49:55.604648-03:00",
+        "claims": [
+          {
+            "basis": "identificacao_da_proposicao",
+            "field": "title"
+          },
+          {
+            "basis": "ementa_oficial_atribuida",
+            "field": "summary"
+          },
+          {
+            "basis": "registro_de_tramitacao",
+            "field": "stage"
+          }
+        ],
+        "content_sha256": "3bcb5f095a386ebc7a83efe2a194a52c836b0ba95482ee15b13d757277a02e38",
+        "kind": "official_document_attribution",
+        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
+        "record_date": "2026-11-16",
+        "schema": 1,
+        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654163"
+      },
+      "explore_signal_count": 0,
+      "id": "camara:2654163",
+      "public_url": "https://www.camara.leg.br/propostas-legislativas/2654163",
+      "source_name": "Câmara dos Deputados",
+      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654163",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-16",
+      "status": "ready",
+      "summary": "Institui a Lei Suzane Von Richthofen, que proíbe e criminaliza a obtenção de vantagem econômica, direta ou indireta, por pessoa condenada pela prática de infração penal, mediante exploração comercial, promoção ou monetização do próprio delito, estabelece mecanismos de perda de valores, reparação das vítimas e responsabilização de terceiros que atuem para fraudar a proibição, e dá outras providências.",
+      "summary_hash": "cf98c653346da1",
+      "template_revision": "documentary-hook-v3",
+      "title": "PL 5861/2026",
+      "topics": [
+        "seguranca"
+      ],
+      "version": "6438c89bd557e4"
     }
   ],
   "published": [
