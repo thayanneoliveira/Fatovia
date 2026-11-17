@@ -50,14 +50,20 @@
     "no_paid_services": true
   },
   "deployment_blockers": [
-    "Original approved logo not available; no brand attestations or media approved for new publisher.",
-    "V5 episode still needs exact logo, compression below 95 MB, technical and source review, public MP4 hosting and verified Meta Reel delivery.",
-    "Reel generation remains manually directed; reusable full autonomous rendering not validated."
+    "Reel: exact high-resolution approved endcard, final MP4 transfer, public hosting, independent source/audio/visual review and real Meta delivery still pending.",
+    "Autonomous V5 rendering of unrelated topics not validated."
   ],
   "notes": "Operational intent only; this file does not authorize bypass of existing publisher gates. Do not treat suggested slots as confirmed publishing times.",
   "approved_logo": {
     "path": "assets/fatovia-approved.png",
-    "sha256": null
+    "sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
+    "source": "owner-confirmed @fato.via avatar; transparent exterior mask only",
+    "source_sha256": "89b88cb9182576dc3336964295baaf322985d9bc43be61cc2425b8f3e082ca56",
+    "size": [
+      240,
+      240
+    ],
+    "confirmed_date": "2026-11-17"
   },
   "approved_items": []
 }
