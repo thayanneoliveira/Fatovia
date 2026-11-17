@@ -1,8 +1,8 @@
-name: Voice Lab - Kokoro PT-BR
+name: Voice Lab V2 - Santa
 on:
   push:
     branches: ['lab/voice-kokoro']
-    paths: ['.github/workflows/voice-lab.yml']
+    paths: ['.github/workflows/voice-lab.yml', 'voice_engine.py']
   workflow_dispatch:
 permissions:
   contents: read
@@ -15,6 +15,7 @@ jobs:
       MKL_NUM_THREADS: '2'
       HF_HUB_DISABLE_TELEMETRY: '1'
     steps:
+      - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -24,51 +25,12 @@ jobs:
           sudo apt-get install -y espeak-ng ffmpeg libsndfile1
           python -m pip install --index-url https://download.pytorch.org/whl/cpu torch==2.6.0
           python -m pip install kokoro==0.9.4 soundfile numpy
-      - name: Generate and validate voice samples
-        shell: bash
-        run: |
-          mkdir -p samples
-          python - <<'PY'
-          from kokoro import KPipeline
-          import numpy as np
-          import soundfile as sf
-          import json, time, subprocess
-          from pathlib import Path
-          p=KPipeline(lang_code='p', device='cpu', repo_id='hexgrad/Kokoro-82M')
-          phrases=['A inflação caiu. Então, por que tudo continua tão caro?', 'Porque a inflação mede a velocidade com que os preços sobem.', 'Se essa velocidade diminui, os preços ainda podem subir. Só que mais devagar.']
-          report=[]
-          for voice in ['pf_dora','pm_alex','pm_santa']:
-              t0=time.monotonic()
-              parts=[]; timeline=[]; cursor=0; sr=24000
-              for i, phrase in enumerate(phrases):
-                  chunks=[]
-                  for r in p(phrase,voice=voice,speed=0.98):
-                      a=r.audio
-                      if a is not None:
-                          if hasattr(a,'detach'): a=a.detach().cpu().numpy()
-                          chunks.append(np.asarray(a,dtype=np.float32).reshape(-1))
-                  a=np.concatenate(chunks)
-                  assert a.size and np.isfinite(a).all() and np.max(np.abs(a))>1e-5
-                  timeline.append({'text':phrase,'start':cursor/sr,'end':(cursor+len(a))/sr})
-                  parts.append(a); cursor+=len(a)
-                  if i<len(phrases)-1:
-                      gap=np.zeros(round(sr*0.18),dtype=np.float32)
-                      parts.append(gap); cursor+=len(gap)
-              a=np.concatenate(parts)
-              a*=min(1.,0.85/np.max(np.abs(a)))
-              path=Path('samples')/voice
-              sf.write(path.with_suffix('.wav'),a,sr,subtype='PCM_16')
-              subprocess.run(['ffmpeg','-v','error','-y','-i',str(path.with_suffix('.wav')),'-af','loudnorm=I=-16:TP=-1.5:LRA=7','-c:a','libmp3lame','-b:a','128k',str(path.with_suffix('.mp3'))],check=True)
-              subprocess.run(['ffmpeg','-v','error','-i',str(path.with_suffix('.mp3')),'-f','null','-'],check=True)
-              path.with_suffix('.json').write_text(json.dumps(timeline,ensure_ascii=False,indent=2))
-              report.append({'voice':voice,'duration_s':len(a)/sr,'cpu_seconds':round(time.monotonic()-t0,2)})
-          Path('samples/report.json').write_text(json.dumps(report,indent=2))
-          print(json.dumps(report,indent=2))
-          PY
+      - name: Generate and validate Santa profiles
+        run: python voice_engine.py
       - name: Save samples
         uses: actions/upload-artifact@v4
         with:
-          name: fatovia-kokoro-ptbr
+          name: fatovia-santa-v2
           path: samples/
           retention-days: 3
           if-no-files-found: error
