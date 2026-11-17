@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-17",
+  "preferred": "C",
+  "scores": {
+    "pronunciation": 4,
+    "intonation": 5,
+    "endings": 5,
+    "fluency": 3,
+    "pauses": 5,
+    "expressiveness": 5
+  },
+  "feedback": "A voz kodoro ficaria otima com a mesma entonação B da nova voz.",
+  "reference_ambiguity": "B da nova voz não identifica inequivocamente D ou E; testar ambas.",
+  "approved": false,
+  "decision": "Retain Santa C; experiment with rhythm and pitch contours from both synthetic Chatterbox references."
+}
