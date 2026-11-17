@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-17",
+  "experiment": "santa-naturalness",
+  "preferred": "C",
+  "naturalness": 3,
+  "scale": 5,
+  "approved": false,
+  "feedback": {
+    "pronunciation": true,
+    "phrase_endings": true,
+    "before_pauses": true,
+    "verbatim": "A pronuncia, e um pouco da intonação em algumas palavras, sobretudo nos finais de frase ou antes de pausas."
+  },
+  "decision": "Keep C as baseline; compare a different architecture. No production promotion without listening evaluation.",
+  "threshold_provisional": 4
+}
