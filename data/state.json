@@ -38,6 +38,7 @@
   "metrics": [],
   "pending": [
     {
+      "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
       "caption": "Devolução de impostos: o que pode mudar para sua família?\n\nInstituir devolução geral progressiva de CBS e IBS segundo a renda domiciliar por pessoa e ampliar a identificação das famílias beneficiárias.\n\nSe aprovada nos termos previstos, a devolução poderá variar conforme a renda considerada e os critérios definidos para identificar beneficiários.\n\nPLP 304/2026 | Registro de 2026-11-13. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2653940\nID editorial: camara:2653940/a39d386f415e16/didactic-v4\n#FatoVia #PoliticasPublicas",
       "cards": [
         "docs/media/camara-2653940/a39d386f415e16/didactic-v4/01.jpg",
@@ -51,7 +52,7 @@
       "discovery_source_count": 0,
       "editorial_score": 82,
       "evidence": {
-        "checked_at": "2026-11-15T10:48:12.090754-03:00",
+        "checked_at": "2026-11-17T20:51:37.755293-03:00",
         "claims": [
           {
             "basis": "identificacao_da_proposicao",
@@ -91,6 +92,7 @@
       "version": "a39d386f415e16"
     },
     {
+      "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
       "caption": "Plano empresarial usado só pela família: o que pode mudar?\n\nPlanos coletivos empresariais utilizados exclusivamente por um núcleo familiar, com critérios de equiparação aos individuais ou familiares.\n\nSe aprovada, a equiparação poderá mudar as proteções contratuais aplicáveis a essas famílias. Não significa redução automática da mensalidade.\n\nPL 5844/2026 | Registro de 2026-11-13. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2653811\nID editorial: camara:2653811/875c9caddb7040/didactic-v4\n#FatoVia #PoliticasPublicas",
       "cards": [
         "docs/media/camara-2653811/875c9caddb7040/didactic-v4/01.jpg",
@@ -104,7 +106,7 @@
       "discovery_source_count": 1,
       "editorial_score": 79,
       "evidence": {
-        "checked_at": "2026-11-15T10:48:12.090754-03:00",
+        "checked_at": "2026-11-17T20:51:37.755293-03:00",
         "claims": [
           {
             "basis": "identificacao_da_proposicao",
@@ -144,6 +146,7 @@
       "version": "875c9caddb7040"
     },
     {
+      "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
       "caption": "Mais recursos para tratamentos no SUS?\n\nDestinar uma parcela da receita do Imposto Seletivo ao financiamento adicional de tratamentos no Sistema Único de Saúde.\n\nSe aprovado e executado, o financiamento adicional pode ampliar recursos para tratamentos. A ementa não garante redução de filas nem atendimento específico.\n\nPL 5851/2026 | Registro de 2026-11-13. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2653822\nID editorial: camara:2653822/b51b94f0828426/didactic-v4\n#FatoVia #PoliticasPublicas",
       "cards": [
         "docs/media/camara-2653822/b51b94f0828426/didactic-v4/01.jpg",
@@ -157,7 +160,7 @@
       "discovery_source_count": 1,
       "editorial_score": 75,
       "evidence": {
-        "checked_at": "2026-11-15T10:48:12.090754-03:00",
+        "checked_at": "2026-11-17T20:51:37.755293-03:00",
         "claims": [
           {
             "basis": "identificacao_da_proposicao",
@@ -198,6 +201,7 @@
       "version": "b51b94f0828426"
     },
     {
+      "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
       "caption": "Imposto sobre lucros e dividendos: quem pode ser afetado?\n\nIncidência do Imposto de Renda das Pessoas Físicas sobre lucros e dividendos distribuídos por pessoas jurídicas.\n\nSe houver mudança na tributação, quem recebe essas distribuições pode ter alteração no valor líquido recebido, conforme as regras aprovadas.\n\nPL 5854/2026 | Registro de 2026-11-13. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2653946\nID editorial: camara:2653946/b98ae1ec690f70/didactic-v4\n#FatoVia #PoliticasPublicas",
       "cards": [
         "docs/media/camara-2653946/b98ae1ec690f70/didactic-v4/01.jpg",
@@ -211,7 +215,7 @@
       "discovery_source_count": 0,
       "editorial_score": 72,
       "evidence": {
-        "checked_at": "2026-11-15T10:48:12.090754-03:00",
+        "checked_at": "2026-11-17T20:51:37.755293-03:00",
         "claims": [
           {
             "basis": "identificacao_da_proposicao",
