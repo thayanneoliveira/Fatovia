@@ -1,0 +1,23 @@
+{
+  "profile": "Santa-R-1.0",
+  "status": "homologated_voice_profile",
+  "date": "2026-11-17",
+  "scope": "approved voice profile for FatoVia; not blanket approval of future narrations",
+  "sample_review": {
+    "run": 44175089698,
+    "score": 30,
+    "max": 30,
+    "reviewers": 1
+  },
+  "episode_review": {
+    "run": 44176463021,
+    "artifact": 14369558238,
+    "artifact_sha256": "9cdda6d069ae7ea4c157d6d7255e0d3e0604966cd73a5d63b34a757ff78509c4",
+    "decision": "approved",
+    "notes": "Nenhuma",
+    "reviewers": 1
+  },
+  "engine_commit": "56628b50874573d3ff594caf73162d6db0b14c7d",
+  "production_deployed": false,
+  "change_policy": "New voice settings require comparative listening; each future episode requires independent audio QA. No automatic publication."
+}
