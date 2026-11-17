@@ -7,7 +7,8 @@ from pathlib import Path
 from urllib.parse import quote
 from .engine import TZ
 from .evidence import fingerprint
-from .editorial_audit import inspect_files
+from .editorial_audit import inspect_files, approved
+from .brand import approved_logo
 
 POLICY=Path("data/multiformat_experiment.json")
 SLOTS={8:"carousel",11:"carousel",14:"reel",17:"carousel",20:"carousel"}
@@ -74,15 +75,19 @@ def allowed(state,item,now,policy=None):
         if any((x["id"],x["version"])==(item["id"],item["version"]) for x in state.get("published",[])):return False
         logo=p["approved_logo"]
         if not valid_hash(logo["sha256"]) or not safe_file(logo["path"],"assets") or sha_file(logo["path"])!=logo["sha256"]:return False
+        if approved_logo() is None:return False
+        if fmt=="carousel":
+            # Independent auditor reconstructs actual final card with approved logo, checks live evidence,
+            # then binds both the source-content seal and exact rendered bytes.
+            if item.get("template_revision")!="didactic-v4" or not approved(item,now):return False
+            report=json.loads(Path("data/editorial_audit.json").read_text(encoding="utf-8"))
+            reviews=[r for r in report["reviews"] if (r["id"],r["version"])==(item["id"],item["version"])]
+            return len(reviews)==1 and reviews[0].get("logo_sha256")==logo["sha256"] and reviews[0].get("closing_media_sha256")==inspect_files(item)[-1]
         rows=[r for r in p["approved_items"] if (r["id"],r["version"],r["format"])==(item["id"],item["version"],fmt)]
         if len(rows)!=1:return False
         r=rows[0]
         checked=datetime.fromisoformat(r["checked_at"])
         if not now-timedelta(hours=24)<=checked<=now or r["logo_sha256"]!=logo["sha256"] or r["closing_review"]!="approved":return False
-        if fmt=="carousel":
-            hashes=inspect_files(item)
-            return (item.get("template_revision")=="didactic-v4" and r["content_sha256"]==fingerprint(item)
-                    and r["card_sha256"]==hashes and r["closing_media_sha256"]==hashes[-1])
         if not reel_qualified(item) or not item.get("source_urls") or not valid_hash(item.get("script_sha256")):return False
         path=video_path(item)
         return (r["content_sha256"]==reel_fingerprint(item) and r["editorial_review"]=="approved"
