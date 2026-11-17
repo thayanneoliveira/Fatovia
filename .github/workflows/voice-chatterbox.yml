@@ -1,0 +1,39 @@
+name: Voice Lab - Chatterbox CPU
+on:
+  push:
+    branches: ['lab/voice-kokoro']
+    paths: ['.github/workflows/voice-chatterbox.yml', 'voice_chatterbox.py']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  compare:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    env:
+      OMP_NUM_THREADS: '4'
+      MKL_NUM_THREADS: '4'
+      HF_HUB_DISABLE_TELEMETRY: '1'
+      HF_HUB_DISABLE_XET: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install CPU runtime
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg libsndfile1
+          python -m pip install --index-url https://download.pytorch.org/whl/cpu torch==2.6.0 torchaudio==2.6.0
+          python -m pip install chatterbox-tts==0.1.7 soundfile
+          python -m pip check
+      - name: Generate comparison samples
+        run: python voice_chatterbox.py
+      - name: Save diagnostics and samples
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fatovia-chatterbox-compare
+          path: chatterbox_samples/
+          if-no-files-found: warn
+          retention-days: 3
