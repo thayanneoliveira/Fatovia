@@ -18,6 +18,7 @@ import requests
 from .evidence import sealed, verify_live
 from .editorial_audit import approved, verify_hosted
 from .pilot import allowed as pilot_allowed, window_slot
+from . import multiformat as mf
 
 from .engine import TZ, MIN_PUBLICATION_GAP_HOURS, daily_limit, load, now_local, preferred_hours, save, validate_candidate
 
@@ -140,6 +141,16 @@ def prepare(state, now, cfg):
         return {"action": "missing_credentials", "reason": "Configuração Meta incompleta"}
     if state.get("publishing"):
         return {"action": "reconcile", "reason": "Publicação anterior requer conciliação"}
+    if mf.mode(now):
+        if (state.get("replacement_request") or {}).get("status") in ("awaiting_deletion","deletion_verified"):
+            return {"action":"idle","reason":"Substituicao anterior requer conciliacao"}
+        candidates=[p for p in state.get("pending",[])+state.get("reel_pending",[]) if mf.allowed(state,p,now) and (mf.reel_qualified(p) if mf.kind(p)=="reel" else qualified(p,now) and approved(p,now))]
+        candidates.sort(key=lambda p:(-p.get("editorial_score",0),p["id"]))
+        if not candidates:return {"action":"idle","reason":"Nenhuma midia multiformato com marca, evidencia, revisao e cota validadas"}
+        item=candidates[0]
+        state["publishing"]={"id":item["id"],"version":item["version"],"format":mf.kind(item),"started_at":now.isoformat(),"status":"checkpointed"}
+        save(STATE_PATH,state)
+        return {"action":"prepared","id":item["id"],"version":item["version"],"format":mf.kind(item)}
     request=state.get("replacement_request") or {}
     replacement_key=(request.get("id"),request.get("version"))
     # Explicit owner-authorized one-time replacement; only after full Meta history confirms old media absent.
@@ -175,7 +186,7 @@ def media_item(state):
     tx = state.get("publishing")
     if not tx:
         raise PublicationError("Nenhuma transação em aberto")
-    matching = [x for x in state.get("pending", []) if
+    matching = [x for x in state.get("pending", []) + state.get("reel_pending", []) if
                 x.get("id") == tx.get("id") and x.get("version") == tx.get("version")]
     if len(matching) != 1:
         raise PublicationError("Registro editorial ausente ou ambíguo")
@@ -302,13 +313,15 @@ def finalize(state, item, mid, permalink, now):
         state.setdefault("published", []).append({
             "id": item["id"], "version": item["version"], "media_id": mid,
             "permalink": permalink or "",
-            "published_at": now.isoformat(), "title": item.get("title", ""),
+            "published_at": now.isoformat(), "format": mf.kind(item), "title": item.get("title", ""),
             "topics": item.get("topics", []),
             "summary_hash": item.get("summary_hash", ""),
             "summary": item.get("summary", ""), "evidence_sha256": item.get("evidence", {}).get("content_sha256", ""),
         })
     state["pending"] = [x for x in state.get("pending", [])
                         if not (x.get("id") == item["id"] and x.get("version") == item["version"])]
+    if mf.kind(item)=="reel":
+        state["reel_pending"]=[x for x in state.get("reel_pending",[]) if (x.get("id"),x.get("version"))!=(item["id"],item["version"])]
     state["publishing"] = None
     request=state.get("replacement_request") or {}
     if (item.get("id"),item.get("version"))==(request.get("id"),request.get("version")) and request.get("status")=="deletion_verified":
@@ -325,7 +338,8 @@ def deliver(state, now, cfg, client=None, http=None, source_check=verify_live):
         raise PublicationError("Transação não permite novo POST; apenas conciliação")
     if now.date().isoformat() in state.get("blackout_dates", []):
         raise PublicationError("Bloqueio editorial da data")
-    if not qualified(item, now):
+    is_reel=mf.kind(item)=="reel"
+    if not (mf.reel_qualified(item) if is_reel else qualified(item,now)):
         raise PublicationError("O conteúdo deixou de atender à verificação editorial")
     client = client or MetaClient(cfg)
     client.account()
@@ -340,22 +354,32 @@ def deliver(state, now, cfg, client=None, http=None, source_check=verify_live):
     if found:
         finalize(state, item, str(found["id"]), found.get("permalink"), now)
         return {"action": "recovered", "media_id": str(found["id"])}
-    if not pilot_allowed(state,item,now):
+    if mf.mode(now):
+        if not mf.allowed(state,item,now):
+            raise PublicationError("Cota, marca ou aprovacoes multiformato invalidas","multiformat_gate")
+    elif is_reel or not pilot_allowed(state,item,now):
         raise PublicationError("Limite, prazo ou conteúdo do piloto fora da autorização")
-    if not approved(item, now) or not verify_hosted(item, now):
-        raise PublicationError("Parecer independente ausente, vencido ou bytes publicados divergentes")
-    if not source_check(item):
-        raise PublicationError("Fonte oficial mudou ou não respondeu; envio bloqueado")
-    urls = public_urls(item)
-    verify_media(urls, http=http)
+    if is_reel:
+        if not mf.verify_reel_hosted(item,now,state,http=http):
+            raise PublicationError("MP4 publico nao corresponde ao arquivo aprovado","reel_hosting")
+    else:
+        if not approved(item, now) or not verify_hosted(item, now):
+            raise PublicationError("Parecer independente ausente, vencido ou bytes publicados divergentes")
+        if not source_check(item):
+            raise PublicationError("Fonte oficial mudou ou não respondeu; envio bloqueado")
+        urls = public_urls(item)
+        verify_media(urls, http=http)
     tx["status"] = "uncertain"  # Persistir antes do primeiro POST, sem retry cego.
     save(STATE_PATH, state)
     try:
-        children = [client.create({"image_url": url, "is_carousel_item": "true"}) for url in urls]
-        parent = client.create({
-            "media_type": "CAROUSEL", "children": ",".join(children),
-            "caption": item["caption"],
-        })
+        if is_reel:
+            parent=client.create({"media_type":"REELS","video_url":mf.reel_url(item),"caption":item["caption"],"share_to_feed":"true"})
+        else:
+            children = [client.create({"image_url": url, "is_carousel_item": "true"}) for url in urls]
+            parent = client.create({
+                "media_type": "CAROUSEL", "children": ",".join(children),
+                "caption": item["caption"],
+            })
         client.ready(parent)
         mid = client.publish(parent)
         try:
@@ -400,7 +424,9 @@ def main():
                 "pending": len(state.get("pending", [])),
                 "transaction_open": bool(state.get("publishing")),
                 "allowed_hours": preferred_hours(state),
-                "limit": daily_limit(state),
+                "limit": 5 if mf.mode(now) else daily_limit(state),
+                "format_caps": mf.CAPS if mf.mode(now) else {"carousel":2,"reel":0},
+                "multiformat_slots": mf.SLOTS if mf.mode(now) else None,
                 "pilot_recovery_windows_brt": ["09:00–11:00 (exclusive)", "17:00–19:00 (exclusive)"],
             }
         elif cmd == "probe":
