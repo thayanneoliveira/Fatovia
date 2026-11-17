@@ -7,6 +7,9 @@ on:
     paths:
       - ".github/workflows/publish.yml"
       - "fatovia/publisher.py"
+      - "fatovia/multiformat.py"
+      - "tests/test_multiformat.py"
+      - "data/multiformat_experiment.json"
       - "tests/test_publisher.py"
       - "fatovia/pilot.py"
       - "tests/test_pilot.py"
@@ -14,6 +17,8 @@ on:
   # Separate primary and fallback schedules, plus a trusted preflight completion.
   schedule:
     - cron: "12 12,20 * * *"
+    - cron: "12 11,14,17,23 * * *" # 08,11,14,20 BRT; migration date enforced in Python
+    - cron: "40 11,14,17,20,23 * * *" # fallback within each slot; shared ledger guard
     - cron: "40 13 * * *" # 10h40 BRT: contingencia da manha
     - cron: "27 21 * * *" # 18h27 BRT: contingencia da tarde
     - cron: "20 14-16 * * *" # Recuperacao exclusiva do tema original em 15/11 (guard no Python)
@@ -89,7 +94,7 @@ jobs:
           git fetch origin main
           git rebase origin/main
           git push origin HEAD:main
-      - name: Entregar carrossel na conta validada
+      - name: Entregar midia na conta validada
         if: steps.prep.outputs.action == 'prepared'
         run: python -m fatovia.publisher deliver
       - name: Conciliar transacao anterior sem novo POST

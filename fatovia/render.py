@@ -108,6 +108,11 @@ def card(path, number, headline, body, hint):
     draw.text((72, 1284), (footer[0] if footer else "")[:110], fill=muted, font=footer_font)
     draw.text((940, 1284), f"{number:02}/07", fill=cream, font=getfont(18, True))
 
+    if number==7:
+        from .brand import approved_logo,carousel_header
+        logo=approved_logo()
+        if logo is not None:
+            carousel_header(picture,logo)
     Path(path).parent.mkdir(parents=True, exist_ok=True)
     picture.save(path, "JPEG", quality=91, optimize=True, subsampling=0)
     return str(path)
@@ -173,6 +178,12 @@ def render(item, root="docs/media"):
             Path(path).unlink(missing_ok=True)
         raise
     item["template_revision"] = REVISION if row else LEGACY_REVISION
+    from .brand import approved_logo
+    if approved_logo() is not None:
+        import json
+        item["brand_sha256"]=json.loads(Path("data/multiformat_experiment.json").read_text(encoding="utf-8"))["approved_logo"]["sha256"]
+    else:
+        item.pop("brand_sha256",None)
     item["cards"] = paths
     item["caption"] = (
         f'{editorial_hook(item)[0]}\n\n{item["title"]}\n\n'

@@ -51,11 +51,13 @@ def main():
         (p.get("id"),p.get("version")) == (tx.get("id"),tx.get("version"))
         or (not validate_candidate(p) and fresh_stage(p,now) and sealed(p,now))]
     diagnostics["expired_or_unsealed_removed"] = len(old_pending)-len(state["pending"])
+    from .brand import approved_logo
+    logo_sha=load("data/multiformat_experiment.json")["approved_logo"]["sha256"] if approved_logo() is not None else None
     for item in state["pending"]:
         if (item.get("id"),item.get("version")) == (tx.get("id"),tx.get("version")):
             continue
         from .didactic import reviewed
-        if item.get("template_revision") != TEMPLATE_REVISION and reviewed(item):
+        if (item.get("template_revision") != TEMPLATE_REVISION or (logo_sha and item.get("brand_sha256")!=logo_sha)) and reviewed(item):
             try:
                 render(item)
                 seal(item,now)

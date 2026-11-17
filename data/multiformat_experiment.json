@@ -3,7 +3,7 @@
   "experiment_id": "multiformato-20261118",
   "start_date": "2026-11-18",
   "timezone": "America/Sao_Paulo",
-  "status": "authorized_not_deployed",
+  "status": "prepared_guarded",
   "daily_caps": {
     "carousel": 4,
     "reel": 1
@@ -50,9 +50,14 @@
     "no_paid_services": true
   },
   "deployment_blockers": [
-    "Current documentary publisher implements only carousels and original bounded pilot (4 total, 2 daily); new quota and mixed-format scheduler require tested migration.",
-    "Approved logo exact asset and final Reel frame not verified.",
-    "V5 full episode direction was manual; new autonomous renderer and video hosting/publisher path not validated."
+    "Original approved logo not available; no brand attestations or media approved for new publisher.",
+    "V5 episode still needs exact logo, compression below 95 MB, technical and source review, public MP4 hosting and verified Meta Reel delivery.",
+    "Reel generation remains manually directed; reusable full autonomous rendering not validated."
   ],
-  "notes": "Operational intent only; this file does not authorize bypass of existing publisher gates. Do not treat suggested slots as confirmed publishing times."
+  "notes": "Operational intent only; this file does not authorize bypass of existing publisher gates. Do not treat suggested slots as confirmed publishing times.",
+  "approved_logo": {
+    "path": "assets/fatovia-approved.png",
+    "sha256": null
+  },
+  "approved_items": []
 }
