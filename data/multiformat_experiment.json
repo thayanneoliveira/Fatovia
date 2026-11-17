@@ -23,7 +23,9 @@
     {
       "hour": 14,
       "type": "reel",
-      "candidate": "creche-v5"
+      "candidate": "reel:inflacao-precos-20261118",
+      "title": "Se a inflação caiu, por que tudo continua caro?",
+      "date": "2026-11-18"
     },
     {
       "hour": 17,
@@ -65,5 +67,46 @@
     ],
     "confirmed_date": "2026-11-17"
   },
-  "approved_items": []
+  "approved_items": [],
+  "reel_editorial_override": {
+    "date": "2026-11-18",
+    "candidate": "reel:inflacao-precos-20261118",
+    "excluded_candidates": [
+      "creche-v5",
+      "reel:creche-v5"
+    ],
+    "instruction": "Nao publicar o episodio da creche em 18/11, inclusive como contingencia. Arquivar como referencia V5. Priorizar o novo tema. Sem Reel se nao passar todos os controles; nao substituir por tema da creche.",
+    "status": "brief_ready_not_rendered",
+    "brief": {
+      "hook": "Se a inflação caiu, por que o seu carrinho de supermercado não ficou mais barato?",
+      "mechanism": "Uma desaceleracao positiva dos precos nao e uma queda do nivel de precos. IPCA e media ponderada de uma cesta; a experiencia individual pode divergir.",
+      "official_data": {
+        "reference_month": "2026-10",
+        "monthly_ipca_pct": 0.14,
+        "previous_month": "2026-09",
+        "previous_month_pct": 0.82,
+        "rolling_12_month_pct": 4.63,
+        "access_date": "2026-11-17",
+        "source": "https://www.ibge.gov.br/indicadores/pnad"
+      },
+      "sources": [
+        "https://www.ibge.gov.br/explica/inflacao.php",
+        "https://www.ibge.gov.br/indicadores/pnad"
+      ],
+      "visual_beats": [
+        "Uma pessoa recebe a noticia da desaceleracao e chega ao caixa com a mesma cesta.",
+        "Etiquetas ilustrativas R$100, R$110 apos 10%, R$111,10 apos 1% adicional; identificar simulacao e periodos iguais.",
+        "Comparacao animada de velocidade por meio de escada ascendente com inclinacao menor; separar nivel de precos e taxa.",
+        "Dados oficiais do IPCA mensal de setembro e outubro 2026; mostrar acumulado em 12 meses separadamente.",
+        "Composicao da cesta e pesos distintos, sem confundir cesta individual e indice nacional.",
+        "Encerramento homologado com logo oficial e pergunta sobre preco, renda e periodo."
+      ],
+      "guardrails": [
+        "Revalidar dados IBGE antes da publicacao.",
+        "Nao dizer que todos os precos subiram nem atribuir causalidade ou responsabilidade politica sem evidencia.",
+        "Nao apresentar simulacao numerica como dado real.",
+        "Santa R, V5, legendas progressivas e fechamento aprovado; custo adicional zero."
+      ]
+    }
+  }
 }
