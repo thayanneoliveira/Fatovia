@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T19:47:54.806726-03:00",
+  "generated_at": "2026-11-17T20:52:06.909613-03:00",
   "limitations": "Independent rule-based check of the official source, approved template and bytes; not general factual or semantic review.",
   "policy": "documentary-template-v4-didactic",
   "reviews": [
@@ -11,9 +11,9 @@
         "e27224fc28f0969d82e775b02f70a269ca5dc168d1bbc80bbbe9ed04cf12cb69",
         "1381dac800f260e2bb2208f661f8ac0753f31658b28332633470f3d7875a03b7",
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
-        "1616c5634919cd668cc05ce614676b2272ce9fed9ad61da04205736700734d27"
+        "0b9da6d007fb992caa0d422f23052ecd8760b842121c574787c6f68ee0c776fd"
       ],
-      "checked_at": "2026-11-17T19:47:54.806726-03:00",
+      "checked_at": "2026-11-17T20:52:06.909613-03:00",
       "claim_matrix": {
         "document_id": "camara:2653940",
         "entries": [
@@ -311,10 +311,12 @@
         "version": "a39d386f415e16"
       },
       "claim_matrix_sha256": "08d03a9a95090481b8503e81697fccd48020f84e8a510fdb8bc050e160db0395",
+      "closing_media_sha256": "0b9da6d007fb992caa0d422f23052ecd8760b842121c574787c6f68ee0c776fd",
       "content_sha256": "99fc1c4510410ec44c3c4549988deaeed43e3fbb814223ff320dd6f55b5877a8",
       "decision": "approved_documentary_only",
       "id": "camara:2653940",
       "issues": [],
+      "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
       "policy": "documentary-template-v4-didactic",
       "version": "a39d386f415e16"
     },
@@ -326,9 +328,9 @@
         "3f1091e121116e5e50922244cf3366d71d4f5b1226ce29a924879ac7e733034c",
         "88f7b2853fd469300a7f1b676daf32bafe47bc4b9c4dcd000f33c76d208dbd60",
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
-        "83196e0ab5fa0e83d32c6b93209ea73ebaea6a4b097abb5df7044eaf178fe8ed"
+        "b4cd592de5070b1d1adb3fd79bb1d047cbf3a2038e7e510e7083f11ddc52f5e0"
       ],
-      "checked_at": "2026-11-17T19:47:54.806726-03:00",
+      "checked_at": "2026-11-17T20:52:06.909613-03:00",
       "claim_matrix": {
         "document_id": "camara:2653811",
         "entries": [
@@ -626,10 +628,12 @@
         "version": "875c9caddb7040"
       },
       "claim_matrix_sha256": "275892ee06d50d219b450b93c59fe66654d8465015562161d98c3a8cee6cb5fd",
+      "closing_media_sha256": "b4cd592de5070b1d1adb3fd79bb1d047cbf3a2038e7e510e7083f11ddc52f5e0",
       "content_sha256": "e9a6eeab9f6b4a47ac30b465392adc2f0eb1ef0665bc47ba9754f2a2d0bbf676",
       "decision": "approved_documentary_only",
       "id": "camara:2653811",
       "issues": [],
+      "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
       "policy": "documentary-template-v4-didactic",
       "version": "875c9caddb7040"
     },
@@ -641,9 +645,9 @@
         "cf0a07869c6193668fd22db92da001b6da2d96d3ae21d9d5e442070d3cecb5ad",
         "eecd7791359fe368df8183ce33b9155fae9e1688b10f1749bd6c5af97a9f1535",
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
-        "c58a7bdb96425264bdd418c5f08fdd9b687d6ae64773a869f93b59b4a148b687"
+        "0cdece1d67c3aefb0f93f17749b0451524df43d4da52a58101a2d605e9ef829b"
       ],
-      "checked_at": "2026-11-17T19:47:54.806726-03:00",
+      "checked_at": "2026-11-17T20:52:06.909613-03:00",
       "claim_matrix": {
         "document_id": "camara:2653822",
         "entries": [
@@ -941,10 +945,12 @@
         "version": "b51b94f0828426"
       },
       "claim_matrix_sha256": "041bbdf0ff8a1e2178f994ca35354013ea5f83d81e398b9d63c2cf507c5d45ae",
+      "closing_media_sha256": "0cdece1d67c3aefb0f93f17749b0451524df43d4da52a58101a2d605e9ef829b",
       "content_sha256": "274d1da2ed88b2c4a6f9dd15c169deb52738ea3775be6cd426183cb24234a778",
       "decision": "approved_documentary_only",
       "id": "camara:2653822",
       "issues": [],
+      "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
       "policy": "documentary-template-v4-didactic",
       "version": "b51b94f0828426"
     },
@@ -956,9 +962,9 @@
         "1320e46b269ea8d09383d6d0c661ac209b3888b43a9cd80faf98ddb5c1f165f8",
         "c7fd77c54da805bc50320987e2dc88edc441bc2d9b5e512383640b839d833173",
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
-        "df65942b5a15a4912308263b5d77f767513c48cd8155b6f2ed4318c0c20eaf74"
+        "66b93415b28454753c634256d101cb53acbe79983b4d2db32dc150c29a34fa64"
       ],
-      "checked_at": "2026-11-17T19:47:54.806726-03:00",
+      "checked_at": "2026-11-17T20:52:06.909613-03:00",
       "claim_matrix": {
         "document_id": "camara:2653946",
         "entries": [
@@ -1186,484 +1192,47 @@
         "version": "b98ae1ec690f70"
       },
       "claim_matrix_sha256": "3ba246ebf881f80d14f69ca95e6ecee4a7dd63ae5be3d9226a8e5c418a69e69d",
+      "closing_media_sha256": "66b93415b28454753c634256d101cb53acbe79983b4d2db32dc150c29a34fa64",
       "content_sha256": "b46b222bee628f1e9d4c38c1c502c016468a501daf13f39aefee7315a32f2df7",
       "decision": "approved_documentary_only",
       "id": "camara:2653946",
       "issues": [],
+      "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
       "policy": "documentary-template-v4-didactic",
       "version": "b98ae1ec690f70"
     },
     {
-      "card_sha256": [
-        "93664dd3ad1bc935eb01967d701dd314652b9f85325015b9e3ce8229a01b0524",
-        "970f59e4a472c13aae1514b4aa19f192269c6f054db4911fdb3de86d2f3882f1",
-        "50fc02cfd1d06be78856d1d7dc75f61c0346bcbdeeeff316b42bc4e81aa7c58f",
-        "9a064a1c334d73ae9f28699a53bc50ec32ffb3e2536d213d356bb1678a14fcc1",
-        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
-        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
-        "5ffd6f5a09d23145869bea218d77cad95d9bc3fc618919b107ab8aae9f70f615"
-      ],
-      "checked_at": "2026-11-17T19:47:54.806726-03:00",
-      "claim_matrix": {
-        "document_id": "camara:2653947",
-        "entries": [
-          {
-            "evidence": {
-              "end": 12,
-              "excerpt": "PL 5855/2026",
-              "field": "title",
-              "field_sha256": "e6a5ec7e04166382d82f569f7c11afffca5e6dc96f630561573638dd35069352",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
-            },
-            "limitation": "Identifica a proposição, não sua aprovação.",
-            "location": "card_01",
-            "text": "PL 5855/2026",
-            "type": "document_identity"
-          },
-          {
-            "evidence": {
-              "end": 158,
-              "excerpt": "Altera a Lei nº 9.249, de 26 de dezembro de 1995, para elevar a alíquota do Imposto de Renda Retido na Fonte incidente sobre os juros sobre o capital próprio.",
-              "field": "summary",
-              "field_sha256": "943ac2ff63618ede42eae3084abc580f2420192174f7f535c8e232c14f994cb0",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
-            },
-            "limitation": "Ementa oficial, não texto integral nem prova de impacto.",
-            "location": "card_02",
-            "text": "Altera a Lei nº 9.249, de 26 de dezembro de 1995, para elevar a alíquota do Imposto de Renda Retido na Fonte incidente sobre os juros sobre o capital próprio.",
-            "type": "attributed_excerpt"
-          },
-          {
-            "evidence": null,
-            "limitation": "Não acrescenta fatos externos.",
-            "location": "card_03",
-            "text": "A ementa resume o tema. Para conhecer condições, exceções e detalhes, consulte o texto integral.",
-            "type": "template_explanation"
-          },
-          {
-            "evidence": {
-              "end": 26,
-              "excerpt": "Apresentação de Proposição",
-              "field": "stage",
-              "field_sha256": "7ad4f3a2409e2196a7e3ccc89d81061c388c76f096e8a3e5181944076982a9b7",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
-            },
-            "limitation": "Registro de tramitação na data de referência.",
-            "location": "card_04",
-            "text": "Apresentação de Proposição",
-            "type": "procedural_record"
-          },
-          {
-            "evidence": {
-              "end": 10,
-              "excerpt": "2026-11-13",
-              "field": "stage_date",
-              "field_sha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
-            },
-            "limitation": "Data do andamento, não da vigência.",
-            "location": "card_04",
-            "text": "2026-11-13",
-            "type": "record_date"
-          },
-          {
-            "evidence": null,
-            "limitation": "Não atribui impacto, vigência ou financiamento.",
-            "location": "card_05",
-            "text": "A existência de um projeto não comprova aprovação, entrada em vigor, financiamento ou resultados.",
-            "type": "scope_limitation"
-          },
-          {
-            "evidence": null,
-            "limitation": "Questões para acompanhamento, não afirmações comprovadas.",
-            "location": "card_06",
-            "text": "Qual é o texto final?\n\nQuais órgãos respondem pela execução?\n\nHá custo previsto e indicadores de resultado?",
-            "type": "open_questions"
-          },
-          {
-            "evidence": {
-              "end": 12,
-              "excerpt": "PL 5855/2026",
-              "field": "title",
-              "field_sha256": "e6a5ec7e04166382d82f569f7c11afffca5e6dc96f630561573638dd35069352",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
-            },
-            "limitation": "Referência documental.",
-            "location": "card_07",
-            "text": "PL 5855/2026",
-            "type": "source_reference"
-          },
-          {
-            "evidence": {
-              "end": 12,
-              "excerpt": "PL 5855/2026",
-              "field": "title",
-              "field_sha256": "e6a5ec7e04166382d82f569f7c11afffca5e6dc96f630561573638dd35069352",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
-            },
-            "limitation": "Identifica a proposição.",
-            "location": "caption",
-            "text": "PL 5855/2026",
-            "type": "document_identity"
-          },
-          {
-            "evidence": {
-              "end": 10,
-              "excerpt": "2026-11-13",
-              "field": "stage_date",
-              "field_sha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
-            },
-            "limitation": "Data registrada na fonte.",
-            "location": "caption",
-            "text": "2026-11-13",
-            "type": "record_date"
-          }
-        ],
-        "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
-        "policy": "documentary-claims-v2-hooks",
-        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947",
-        "unverified_dimensions": [
-          "legal_effect",
-          "implementation",
-          "budget",
-          "causality",
-          "social_impact"
-        ],
-        "version": "a9ab7e30775280"
-      },
-      "claim_matrix_sha256": "856c9c62bd33fd88fb5d047cd531ee1dc32da417e772a7983a6d93bb5039ab0f",
-      "content_sha256": "012218c4a2685b3ca44aa1ecf4c7486703f2fee43b175cabbb0f571a768fdd80",
-      "decision": "approved_documentary_only",
+      "checked_at": "2026-11-17T20:52:06.909613-03:00",
+      "decision": "rejected",
       "id": "camara:2653947",
-      "issues": [],
+      "issues": [
+        "cards_differ_from_template"
+      ],
       "policy": "documentary-template-v4-didactic",
       "version": "a9ab7e30775280"
     },
     {
-      "card_sha256": [
-        "06a12b1b071dcb063ec0a285fbbbcf4a63b7f84089311fe6a09ef266733bdc7c",
-        "760e22f7e59f5f096b79c4709ebf34bb903cb637b255b1317906ba60ad1967c4",
-        "50fc02cfd1d06be78856d1d7dc75f61c0346bcbdeeeff316b42bc4e81aa7c58f",
-        "9a064a1c334d73ae9f28699a53bc50ec32ffb3e2536d213d356bb1678a14fcc1",
-        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
-        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
-        "63eb90182d488de051710965000b2c13a8da84209eceb3d6bd41714dbfbe61b3"
-      ],
-      "checked_at": "2026-11-17T19:47:54.806726-03:00",
-      "claim_matrix": {
-        "document_id": "camara:2653944",
-        "entries": [
-          {
-            "evidence": {
-              "end": 12,
-              "excerpt": "PL 5852/2026",
-              "field": "title",
-              "field_sha256": "b349fe263fed63cd2673549e20a4eca7ac89d9a8cae409e214dfb946ced7c6ed",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
-            },
-            "limitation": "Identifica a proposição, não sua aprovação.",
-            "location": "card_01",
-            "text": "PL 5852/2026",
-            "type": "document_identity"
-          },
-          {
-            "evidence": {
-              "end": 101,
-              "excerpt": "Institui o Imposto sobre Grandes Fortunas, previsto no art. 153, inciso VII, da Constituição Federal.",
-              "field": "summary",
-              "field_sha256": "ff819c0ae6a2feba3316b0995619cfadc5d2b0675d208c724b104cb6edcd99ba",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
-            },
-            "limitation": "Ementa oficial, não texto integral nem prova de impacto.",
-            "location": "card_02",
-            "text": "Institui o Imposto sobre Grandes Fortunas, previsto no art. 153, inciso VII, da Constituição Federal.",
-            "type": "attributed_excerpt"
-          },
-          {
-            "evidence": null,
-            "limitation": "Não acrescenta fatos externos.",
-            "location": "card_03",
-            "text": "A ementa resume o tema. Para conhecer condições, exceções e detalhes, consulte o texto integral.",
-            "type": "template_explanation"
-          },
-          {
-            "evidence": {
-              "end": 26,
-              "excerpt": "Apresentação de Proposição",
-              "field": "stage",
-              "field_sha256": "7ad4f3a2409e2196a7e3ccc89d81061c388c76f096e8a3e5181944076982a9b7",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
-            },
-            "limitation": "Registro de tramitação na data de referência.",
-            "location": "card_04",
-            "text": "Apresentação de Proposição",
-            "type": "procedural_record"
-          },
-          {
-            "evidence": {
-              "end": 10,
-              "excerpt": "2026-11-13",
-              "field": "stage_date",
-              "field_sha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
-            },
-            "limitation": "Data do andamento, não da vigência.",
-            "location": "card_04",
-            "text": "2026-11-13",
-            "type": "record_date"
-          },
-          {
-            "evidence": null,
-            "limitation": "Não atribui impacto, vigência ou financiamento.",
-            "location": "card_05",
-            "text": "A existência de um projeto não comprova aprovação, entrada em vigor, financiamento ou resultados.",
-            "type": "scope_limitation"
-          },
-          {
-            "evidence": null,
-            "limitation": "Questões para acompanhamento, não afirmações comprovadas.",
-            "location": "card_06",
-            "text": "Qual é o texto final?\n\nQuais órgãos respondem pela execução?\n\nHá custo previsto e indicadores de resultado?",
-            "type": "open_questions"
-          },
-          {
-            "evidence": {
-              "end": 12,
-              "excerpt": "PL 5852/2026",
-              "field": "title",
-              "field_sha256": "b349fe263fed63cd2673549e20a4eca7ac89d9a8cae409e214dfb946ced7c6ed",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
-            },
-            "limitation": "Referência documental.",
-            "location": "card_07",
-            "text": "PL 5852/2026",
-            "type": "source_reference"
-          },
-          {
-            "evidence": {
-              "end": 12,
-              "excerpt": "PL 5852/2026",
-              "field": "title",
-              "field_sha256": "b349fe263fed63cd2673549e20a4eca7ac89d9a8cae409e214dfb946ced7c6ed",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
-            },
-            "limitation": "Identifica a proposição.",
-            "location": "caption",
-            "text": "PL 5852/2026",
-            "type": "document_identity"
-          },
-          {
-            "evidence": {
-              "end": 10,
-              "excerpt": "2026-11-13",
-              "field": "stage_date",
-              "field_sha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
-            },
-            "limitation": "Data registrada na fonte.",
-            "location": "caption",
-            "text": "2026-11-13",
-            "type": "record_date"
-          }
-        ],
-        "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
-        "policy": "documentary-claims-v2-hooks",
-        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944",
-        "unverified_dimensions": [
-          "legal_effect",
-          "implementation",
-          "budget",
-          "causality",
-          "social_impact"
-        ],
-        "version": "2d94a3cc4eebf7"
-      },
-      "claim_matrix_sha256": "662e5c7a636cba2852d0dcde7b9f3325ce13c35a8bb0961f29dd900b3c4e05a9",
-      "content_sha256": "5cad6126c0beba2a060f8ba558095dc06f046705c9941e506e709e013683aff0",
-      "decision": "approved_documentary_only",
+      "checked_at": "2026-11-17T20:52:06.909613-03:00",
+      "decision": "rejected",
       "id": "camara:2653944",
-      "issues": [],
+      "issues": [
+        "cards_differ_from_template"
+      ],
       "policy": "documentary-template-v4-didactic",
       "version": "2d94a3cc4eebf7"
     },
     {
-      "card_sha256": [
-        "dd989f9379ffd09667521f6e6ea54490a54bd285df686eecba1409235441c50e",
-        "69e8d217a502866a72569c64954ad80e8c8db61dd52e51572b2dfde1acad7413",
-        "4d3ac39f5f4560f807f4471497c6ea12564c9797f960b4cbcfbc460ef332de7b",
-        "d5c4b9e31040998ba3aa9199b7fa89d83b055361ca4b586731ea74b3a428d52e",
-        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
-        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
-        "fd8657a41118ae1985e57a477c39491bf17e37674fc2ce6107a5068927149d4b"
-      ],
-      "checked_at": "2026-11-17T19:47:54.806726-03:00",
-      "claim_matrix": {
-        "document_id": "camara:2654174",
-        "entries": [
-          {
-            "evidence": {
-              "end": 12,
-              "excerpt": "PLP 305/2026",
-              "field": "title",
-              "field_sha256": "68154f1fc3ae989ead091cd09228a1fed3eee650db4912f41bc8bd082105c310",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
-            },
-            "limitation": "Identifica a proposição, não sua aprovação.",
-            "location": "card_01",
-            "text": "PLP 305/2026",
-            "type": "document_identity"
-          },
-          {
-            "evidence": {
-              "end": 324,
-              "excerpt": "Estabelece a obrigatoriedade de rastreabilidade integral, transparência ativa e vedação à movimentação de recursos públicos em espécie no âmbito das transferências decorrentes de emendas parlamentares e instrumentos congêneres, dispõe sobre mecanismos de controle financeiro digital, altera a Lei n° 4.320, de 17 de março de",
-              "field": "summary",
-              "field_sha256": "7fb3e7c4d08b882fd0d0aaa72d6d482ea74136118ead0da0f50e0a46b7b9bb53",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
-            },
-            "limitation": "Ementa oficial, não texto integral nem prova de impacto.",
-            "location": "card_02",
-            "text": "Estabelece a obrigatoriedade de rastreabilidade integral, transparência ativa e vedação à movimentação de recursos públicos em espécie no âmbito das transferências decorrentes de emendas parlamentares e instrumentos congêneres, dispõe sobre mecanismos de controle financeiro digital, altera a Lei n° 4.320, de 17 de março de",
-            "type": "attributed_excerpt"
-          },
-          {
-            "evidence": {
-              "end": 407,
-              "excerpt": "1964, e a Lei Complementar n° 101, de 4 de maio de 2000, e dá outras providências.",
-              "field": "summary",
-              "field_sha256": "7fb3e7c4d08b882fd0d0aaa72d6d482ea74136118ead0da0f50e0a46b7b9bb53",
-              "start": 325,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
-            },
-            "limitation": "Continuação da ementa oficial.",
-            "location": "card_03",
-            "text": "1964, e a Lei Complementar n° 101, de 4 de maio de 2000, e dá outras providências.",
-            "type": "attributed_excerpt"
-          },
-          {
-            "evidence": {
-              "end": 23,
-              "excerpt": "Notificação de Despacho",
-              "field": "stage",
-              "field_sha256": "0b920a1ee361e92e5292c0fd466a2ca7df5e2dd97e989e45e51fcde9161a03d1",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
-            },
-            "limitation": "Registro de tramitação na data de referência.",
-            "location": "card_04",
-            "text": "Notificação de Despacho",
-            "type": "procedural_record"
-          },
-          {
-            "evidence": {
-              "end": 10,
-              "excerpt": "2026-11-16",
-              "field": "stage_date",
-              "field_sha256": "faffe734ef290597a139fa056e87a8ad295127cb0e390e1ea35540b79e420978",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
-            },
-            "limitation": "Data do andamento, não da vigência.",
-            "location": "card_04",
-            "text": "2026-11-16",
-            "type": "record_date"
-          },
-          {
-            "evidence": null,
-            "limitation": "Não atribui impacto, vigência ou financiamento.",
-            "location": "card_05",
-            "text": "A existência de um projeto não comprova aprovação, entrada em vigor, financiamento ou resultados.",
-            "type": "scope_limitation"
-          },
-          {
-            "evidence": null,
-            "limitation": "Questões para acompanhamento, não afirmações comprovadas.",
-            "location": "card_06",
-            "text": "Qual é o texto final?\n\nQuais órgãos respondem pela execução?\n\nHá custo previsto e indicadores de resultado?",
-            "type": "open_questions"
-          },
-          {
-            "evidence": {
-              "end": 12,
-              "excerpt": "PLP 305/2026",
-              "field": "title",
-              "field_sha256": "68154f1fc3ae989ead091cd09228a1fed3eee650db4912f41bc8bd082105c310",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
-            },
-            "limitation": "Referência documental.",
-            "location": "card_07",
-            "text": "PLP 305/2026",
-            "type": "source_reference"
-          },
-          {
-            "evidence": {
-              "end": 12,
-              "excerpt": "PLP 305/2026",
-              "field": "title",
-              "field_sha256": "68154f1fc3ae989ead091cd09228a1fed3eee650db4912f41bc8bd082105c310",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
-            },
-            "limitation": "Identifica a proposição.",
-            "location": "caption",
-            "text": "PLP 305/2026",
-            "type": "document_identity"
-          },
-          {
-            "evidence": {
-              "end": 10,
-              "excerpt": "2026-11-16",
-              "field": "stage_date",
-              "field_sha256": "faffe734ef290597a139fa056e87a8ad295127cb0e390e1ea35540b79e420978",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
-            },
-            "limitation": "Data registrada na fonte.",
-            "location": "caption",
-            "text": "2026-11-16",
-            "type": "record_date"
-          }
-        ],
-        "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
-        "policy": "documentary-claims-v2-hooks",
-        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174",
-        "unverified_dimensions": [
-          "legal_effect",
-          "implementation",
-          "budget",
-          "causality",
-          "social_impact"
-        ],
-        "version": "abe5fda5fc0602"
-      },
-      "claim_matrix_sha256": "a4cc8723f0a22a0777d57f5c0f27025cdf7686e2a48c8025f65807ac6b5c3e31",
-      "content_sha256": "7d0e18bec0dd3dda27eb099cef998fa8f7ea5524f5fc75457ff51ed328f8fe6f",
-      "decision": "approved_documentary_only",
+      "checked_at": "2026-11-17T20:52:06.909613-03:00",
+      "decision": "rejected",
       "id": "camara:2654174",
-      "issues": [],
+      "issues": [
+        "cards_differ_from_template"
+      ],
       "policy": "documentary-template-v4-didactic",
       "version": "abe5fda5fc0602"
     },
     {
-      "checked_at": "2026-11-17T19:47:54.806726-03:00",
+      "checked_at": "2026-11-17T20:52:06.909613-03:00",
       "decision": "rejected",
       "id": "camara:2654163",
       "issues": [
