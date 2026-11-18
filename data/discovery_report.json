@@ -1,34 +1,11 @@
 {
-  "generated_at": "2026-11-17T18:18:14.912530-03:00",
+  "generated_at": "2026-11-18T04:54:55.813315-03:00",
   "note": "Topic co-occurrence is not corroboration of an individual claim or proof of virality.",
   "publication_authorized": false,
-  "signals": [
-    {
-      "id": "6ad630f97cd28124b6e9",
-      "published_at": "2026-11-17T17:12:00-03:00",
-      "source": "agencia_brasil",
-      "status": "discovery_only",
-      "title": "Clima afeta produção e eleva preço do tomate em diversas capitais",
-      "topics": [
-        "ambiente"
-      ],
-      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/clima-afeta-producao-e-eleva-preco-do-tomate-em-diversas-capitais"
-    },
-    {
-      "id": "adb8f22fa91452ca69e7",
-      "published_at": "2026-11-17T15:56:00-03:00",
-      "source": "agencia_brasil",
-      "status": "discovery_only",
-      "title": "Durigan prevê impacto inicial da reforma tributária sobre inflação",
-      "topics": [
-        "economia"
-      ],
-      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/durigan-preve-impacto-inicial-da-reforma-tributaria-sobre-inflacao"
-    }
-  ],
+  "signals": [],
   "sources": {
     "agencia_brasil": {
-      "eligible_signals": 2,
+      "eligible_signals": 0,
       "status": "ok"
     },
     "ibge": {
@@ -40,26 +17,5 @@
       "status": "ok"
     }
   },
-  "topic_groups": [
-    {
-      "document_count": 1,
-      "explore_links": 0,
-      "source_count": 1,
-      "sources": [
-        "agencia_brasil"
-      ],
-      "status": "research_required",
-      "topic": "ambiente"
-    },
-    {
-      "document_count": 1,
-      "explore_links": 0,
-      "source_count": 1,
-      "sources": [
-        "agencia_brasil"
-      ],
-      "status": "research_required",
-      "topic": "economia"
-    }
-  ]
+  "topic_groups": []
 }
