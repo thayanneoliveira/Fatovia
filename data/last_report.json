@@ -1,7 +1,7 @@
 {
   "already_published": 8,
   "errors": [],
-  "found": 25,
+  "found": 24,
   "pending": 8,
   "publication": "DISABLED",
   "recommended_daily_limit": 4,
@@ -17,13 +17,13 @@
     "history_errors": 0,
     "history_http_errors": {},
     "history_missing": 0,
-    "invalid": 0,
+    "invalid": 1,
     "records": 100,
     "stale": 0,
     "topic_matches": 26,
-    "verified": 25
+    "verified": 24
   },
   "selected": [],
   "staged": 0,
-  "timestamp": "2026-11-17T20:51:37.755293-03:00"
+  "timestamp": "2026-11-18T11:01:59.417250-03:00"
 }
