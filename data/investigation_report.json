@@ -39,19 +39,19 @@
     },
     {
       "decision": "research_only",
-      "dossier_sha256": "740c7b8ade1b6bb10e47e82b82dc744986a5b7b4684bceef5c28a756bb357fdf",
+      "dossier_sha256": "e609ac8f9ef1e4e94fdd01bf358265976a631d84f31c3e37fc2b61201bc1ff05",
       "evidence": [
         {
           "frequency": "daily",
           "limitation": "Meta anualizada, não taxa efetiva de empréstimos nem rendimento diário.",
           "metric": "Meta Selic definida pelo Copom",
-          "period": "2026-11-17",
+          "period": "2026-11-18",
           "query_params": {
-            "dataFinal": "17/11/2026",
-            "dataInicial": "19/10/2026",
+            "dataFinal": "18/11/2026",
+            "dataInicial": "20/10/2026",
             "formato": "json"
           },
-          "response_sha256": "bd08e332492b48e16066aa73a9660ad11d0f57beea14c23f64412a617a4fd89a",
+          "response_sha256": "e30627b479b6a696adcdacba9fac3f7de3624bf30c05daf1a52a0b5e8cafa333",
           "source_url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados",
           "unit": "% a.a.",
           "value": "13.75"
@@ -68,29 +68,29 @@
     },
     {
       "decision": "research_only",
-      "dossier_sha256": "365530c48b0dc8a27526c375806f3ca79f16541e5725cc27d4be30bbd6f9cb62",
+      "dossier_sha256": "7224c992afb295e505ceb4cc734d1445166c288f09ecd5e7ff2590b4ec9dfac5",
       "evidence": [
         {
           "frequency": "quarterly",
           "limitation": "PNAD Contínua trimestral, pessoas de 14 anos ou mais; não é número absoluto de pessoas nem taxa mensal.",
           "metric": "Taxa de desocupação",
-          "period": "2025-Q2",
+          "period": "2025-Q3",
           "query_params": {},
-          "response_sha256": "6382e018e86fc7249a0a7ac67bec91f23a72898871e0ba8d55916d068da9ccda",
+          "response_sha256": "43beddbc2cf12d803824b32c8b1022b2410c86fce6e02e3a791ff95cdde2710d",
           "source_url": "https://apisidra.ibge.gov.br/values/t/4099/n1/all/v/4099/p/last%208",
           "unit": "%",
-          "value": "5.8"
+          "value": "5.6"
         },
         {
           "frequency": "quarterly",
           "limitation": "PNAD Contínua trimestral, pessoas de 14 anos ou mais; não é número absoluto de pessoas nem taxa mensal.",
           "metric": "Taxa de desocupação",
-          "period": "2026-Q2",
+          "period": "2026-Q3",
           "query_params": {},
-          "response_sha256": "6382e018e86fc7249a0a7ac67bec91f23a72898871e0ba8d55916d068da9ccda",
+          "response_sha256": "43beddbc2cf12d803824b32c8b1022b2410c86fce6e02e3a791ff95cdde2710d",
           "source_url": "https://apisidra.ibge.gov.br/values/t/4099/n1/all/v/4099/p/last%208",
           "unit": "%",
-          "value": "5.4"
+          "value": "5.2"
         },
         {
           "formula": "taxa atual - taxa do mesmo trimestre do ano anterior",
@@ -222,7 +222,7 @@
       ]
     }
   ],
-  "generated_at": "2026-11-17T18:50:20.101315-03:00",
+  "generated_at": "2026-11-18T18:28:52.746565-03:00",
   "limitations": "Descriptive context; no cross-source causal conclusions. Dossiers require editorial review.",
   "publication_authorized": false
 }

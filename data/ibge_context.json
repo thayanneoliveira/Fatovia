@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T18:50:18.758321-03:00",
+  "generated_at": "2026-11-18T18:28:51.141547-03:00",
   "limitations": [
     "No causal attribution",
     "No mixing monthly and quarterly observations",
@@ -110,7 +110,7 @@
       "period_digits": 6,
       "publication_authorized": false,
       "response_sha256": "4b824fc4e19bb0348ebfd888efae7b7af8207a74af80c0fa92deab35e406fc3b",
-      "retrieved_at": "2026-11-17T18:50:18.758321-03:00",
+      "retrieved_at": "2026-11-18T18:28:51.141547-03:00",
       "source_url": "https://apisidra.ibge.gov.br/values/t/1737/n1/all/v/63/p/last%2012",
       "status": "ok",
       "table": "1737",
@@ -130,13 +130,6 @@
       "metadata_url": "https://sidra.ibge.gov.br/tabela/4099",
       "missing_periods": [],
       "observations": [
-        {
-          "age_months": 26,
-          "period": "2024-Q3",
-          "period_label": "3º trimestre 2024",
-          "source_period": "202403",
-          "value": "6.4"
-        },
         {
           "age_months": 23,
           "period": "2024-Q4",
@@ -185,12 +178,19 @@
           "period_label": "2º trimestre 2026",
           "source_period": "202602",
           "value": "5.4"
+        },
+        {
+          "age_months": 2,
+          "period": "2026-Q3",
+          "period_label": "3º trimestre 2026",
+          "source_period": "202603",
+          "value": "5.2"
         }
       ],
       "period_digits": 5,
       "publication_authorized": false,
-      "response_sha256": "6382e018e86fc7249a0a7ac67bec91f23a72898871e0ba8d55916d068da9ccda",
-      "retrieved_at": "2026-11-17T18:50:18.758321-03:00",
+      "response_sha256": "43beddbc2cf12d803824b32c8b1022b2410c86fce6e02e3a791ff95cdde2710d",
+      "retrieved_at": "2026-11-18T18:28:51.141547-03:00",
       "source_url": "https://apisidra.ibge.gov.br/values/t/4099/n1/all/v/4099/p/last%208",
       "status": "ok",
       "table": "4099",
