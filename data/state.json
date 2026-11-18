@@ -39,60 +39,6 @@
   "pending": [
     {
       "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-      "caption": "Devolução de impostos: o que pode mudar para sua família?\n\nInstituir devolução geral progressiva de CBS e IBS segundo a renda domiciliar por pessoa e ampliar a identificação das famílias beneficiárias.\n\nSe aprovada nos termos previstos, a devolução poderá variar conforme a renda considerada e os critérios definidos para identificar beneficiários.\n\nPLP 304/2026 | Registro de 2026-11-13. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2653940\nID editorial: camara:2653940/a39d386f415e16/didactic-v4\n#FatoVia #PoliticasPublicas",
-      "cards": [
-        "docs/media/camara-2653940/a39d386f415e16/didactic-v4/01.jpg",
-        "docs/media/camara-2653940/a39d386f415e16/didactic-v4/02.jpg",
-        "docs/media/camara-2653940/a39d386f415e16/didactic-v4/03.jpg",
-        "docs/media/camara-2653940/a39d386f415e16/didactic-v4/04.jpg",
-        "docs/media/camara-2653940/a39d386f415e16/didactic-v4/05.jpg",
-        "docs/media/camara-2653940/a39d386f415e16/didactic-v4/06.jpg",
-        "docs/media/camara-2653940/a39d386f415e16/didactic-v4/07.jpg"
-      ],
-      "discovery_source_count": 0,
-      "editorial_score": 82,
-      "evidence": {
-        "checked_at": "2026-11-17T20:51:37.755293-03:00",
-        "claims": [
-          {
-            "basis": "identificacao_da_proposicao",
-            "field": "title"
-          },
-          {
-            "basis": "ementa_oficial_atribuida",
-            "field": "summary"
-          },
-          {
-            "basis": "registro_de_tramitacao",
-            "field": "stage"
-          }
-        ],
-        "content_sha256": "99fc1c4510410ec44c3c4549988deaeed43e3fbb814223ff320dd6f55b5877a8",
-        "kind": "official_document_attribution",
-        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
-        "record_date": "2026-11-13",
-        "schema": 1,
-        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653940"
-      },
-      "explore_signal_count": 0,
-      "id": "camara:2653940",
-      "public_url": "https://www.camara.leg.br/propostas-legislativas/2653940",
-      "source_name": "Câmara dos Deputados",
-      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653940",
-      "stage": "Apresentação de Proposição",
-      "stage_date": "2026-11-13",
-      "status": "ready",
-      "summary": "Altera a Lei Complementar nº 214, de 16 de janeiro de 2025, para instituir devolução geral progressiva da CBS e do IBS segundo a renda domiciliar per capita e ampliar os mecanismos de identificação das famílias beneficiárias e dá outras providências.",
-      "summary_hash": "315039b3e83da5",
-      "template_revision": "didactic-v4",
-      "title": "PLP 304/2026",
-      "topics": [
-        "economia"
-      ],
-      "version": "a39d386f415e16"
-    },
-    {
-      "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
       "caption": "Plano empresarial usado só pela família: o que pode mudar?\n\nPlanos coletivos empresariais utilizados exclusivamente por um núcleo familiar, com critérios de equiparação aos individuais ou familiares.\n\nSe aprovada, a equiparação poderá mudar as proteções contratuais aplicáveis a essas famílias. Não significa redução automática da mensalidade.\n\nPL 5844/2026 | Registro de 2026-11-13. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2653811\nID editorial: camara:2653811/875c9caddb7040/didactic-v4\n#FatoVia #PoliticasPublicas",
       "cards": [
         "docs/media/camara-2653811/875c9caddb7040/didactic-v4/01.jpg",
@@ -569,15 +515,24 @@
         "economia"
       ],
       "version": "da05fb78307294"
+    },
+    {
+      "evidence_sha256": "99fc1c4510410ec44c3c4549988deaeed43e3fbb814223ff320dd6f55b5877a8",
+      "format": "carousel",
+      "id": "camara:2653940",
+      "media_id": "17908023129353266",
+      "permalink": "https://www.instagram.com/p/Df4rXyrkceF/",
+      "published_at": "2026-11-18T11:03:51.513007-03:00",
+      "summary": "Altera a Lei Complementar nº 214, de 16 de janeiro de 2025, para instituir devolução geral progressiva da CBS e do IBS segundo a renda domiciliar per capita e ampliar os mecanismos de identificação das famílias beneficiárias e dá outras providências.",
+      "summary_hash": "315039b3e83da5",
+      "title": "PLP 304/2026",
+      "topics": [
+        "economia"
+      ],
+      "version": "a39d386f415e16"
     }
   ],
-  "publishing": {
-    "format": "carousel",
-    "id": "camara:2653940",
-    "started_at": "2026-11-18T11:03:49.851701-03:00",
-    "status": "checkpointed",
-    "version": "a39d386f415e16"
-  },
+  "publishing": null,
   "replacement_request": {
     "authorization": "owner_requested_replacement_after_manual_deletion_2026-11-15",
     "id": "camara:2653819",
