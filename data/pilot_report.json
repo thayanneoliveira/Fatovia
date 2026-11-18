@@ -1,14 +1,16 @@
 {
   "evaluation_ready": false,
-  "generated_at": "2026-11-18T04:54:58.414831-03:00",
-  "issues": [],
+  "generated_at": "2026-11-18T12:18:46.332673-03:00",
+  "issues": [
+    "pilot_total_exceeded"
+  ],
   "limitations": "Only recorded pilot posts; no retroactive estimates, no automatic promotion, no optimization from four samples.",
   "max_total": 4,
   "next_phase_authorized": false,
   "pilot_id": "documentary-20261115",
   "publications": [
     {
-      "age_hours": 65.16,
+      "age_hours": 72.55,
       "document_id": "camara:2653819",
       "media_id": "18213163885365403",
       "permalink": "https://www.instagram.com/p/DfxBuz7FJKv/",
@@ -18,7 +20,12 @@
           "status": "window_missed"
         },
         "72": {
-          "status": "not_due"
+          "age_hours": 72.54,
+          "reach": 2,
+          "saved": 0,
+          "shares": 0,
+          "status": "collected",
+          "views": 2
         }
       },
       "topics": [
@@ -26,7 +33,7 @@
       ]
     },
     {
-      "age_hours": 58.04,
+      "age_hours": 65.44,
       "document_id": "camara:2653948",
       "media_id": "17901241947394968",
       "permalink": "https://www.instagram.com/p/DfxyoEGIO7b/",
@@ -49,7 +56,7 @@
       ]
     },
     {
-      "age_hours": 42.2,
+      "age_hours": 49.59,
       "document_id": "camara:2653813",
       "media_id": "18077986049477583",
       "permalink": "https://www.instagram.com/p/DfzfarSmlTb/",
@@ -67,7 +74,7 @@
       ]
     },
     {
-      "age_hours": 33.97,
+      "age_hours": 41.36,
       "document_id": "camara:2653937",
       "media_id": "18149060461583391",
       "permalink": "https://www.instagram.com/p/Df0X6Z2CfXE/",
@@ -83,13 +90,31 @@
       "topics": [
         "economia"
       ]
+    },
+    {
+      "age_hours": 1.25,
+      "document_id": "camara:2653940",
+      "media_id": "17908023129353266",
+      "permalink": "https://www.instagram.com/p/Df4rXyrkceF/",
+      "published_at": "2026-11-18T11:03:51.513007-03:00",
+      "samples": {
+        "24": {
+          "status": "not_due"
+        },
+        "72": {
+          "status": "not_due"
+        }
+      },
+      "topics": [
+        "economia"
+      ]
     }
   ],
-  "published": 4,
+  "published": 5,
   "remaining_allowance": 0,
   "samples_collected": {
     "24": 1,
-    "72": 0
+    "72": 1
   },
-  "status": "publication_window_closed"
+  "status": "review_required"
 }
