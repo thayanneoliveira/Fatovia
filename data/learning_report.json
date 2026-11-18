@@ -2,9 +2,9 @@
   "collection": {
     "attempted": 1,
     "note": "No retroactive reconstruction of missing age windows; incomplete samples excluded.",
-    "recent_media": 20,
+    "recent_media": 21,
     "samples_24h": 1,
-    "samples_72h": 2
+    "samples_72h": 3
   },
   "learning": {
     "eligible_72h": 0,
