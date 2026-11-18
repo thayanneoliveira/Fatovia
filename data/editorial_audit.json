@@ -1,642 +1,8 @@
 {
-  "generated_at": "2026-11-18T11:02:24.530974-03:00",
+  "generated_at": "2026-11-18T20:25:03.544197-03:00",
   "limitations": "Independent rule-based check of the official source, approved template and bytes; not general factual or semantic review.",
   "policy": "documentary-template-v4-didactic",
   "reviews": [
-    {
-      "card_sha256": [
-        "612fb4ab7f5253bb6d7c8d184d74ba03f9197c0af157bda2cf85f74b303e8975",
-        "e90d9cb93f9210a273b9e20a86febf53e8640b414f0941814efbe2e23bdddcb8",
-        "46bf71736c30112ebdc9573558cde02ed98578c2c4cef9df6102b8fb852638a6",
-        "e27224fc28f0969d82e775b02f70a269ca5dc168d1bbc80bbbe9ed04cf12cb69",
-        "1381dac800f260e2bb2208f661f8ac0753f31658b28332633470f3d7875a03b7",
-        "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
-        "0b9da6d007fb992caa0d422f23052ecd8760b842121c574787c6f68ee0c776fd"
-      ],
-      "checked_at": "2026-11-18T11:02:24.530974-03:00",
-      "claim_matrix": {
-        "document_id": "camara:2653940",
-        "entries": [
-          {
-            "evidence": {
-              "end": 102,
-              "excerpt": "devolução geral progressiva",
-              "field": "summary",
-              "field_sha256": "483f0a10762559aa3ab84b2a53d3a9baa7cef7739f6ef7e3b74c330985e7837b",
-              "start": 75,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653940"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_01",
-            "text": "Devolução de impostos: o que pode mudar para sua família? | Projeto relaciona a devolução de IBS e CBS à renda por pessoa da casa.",
-            "type": "reviewed_question"
-          },
-          {
-            "evidence": {
-              "end": 156,
-              "excerpt": "renda domiciliar per capita",
-              "field": "summary",
-              "field_sha256": "483f0a10762559aa3ab84b2a53d3a9baa7cef7739f6ef7e3b74c330985e7837b",
-              "start": 129,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653940"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_01",
-            "text": "Devolução de impostos: o que pode mudar para sua família? | Projeto relaciona a devolução de IBS e CBS à renda por pessoa da casa.",
-            "type": "reviewed_question"
-          },
-          {
-            "evidence": {
-              "end": 224,
-              "excerpt": "identificação das famílias beneficiárias",
-              "field": "summary",
-              "field_sha256": "483f0a10762559aa3ab84b2a53d3a9baa7cef7739f6ef7e3b74c330985e7837b",
-              "start": 184,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653940"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_01",
-            "text": "Devolução de impostos: o que pode mudar para sua família? | Projeto relaciona a devolução de IBS e CBS à renda por pessoa da casa.",
-            "type": "reviewed_question"
-          },
-          {
-            "evidence": {
-              "end": 102,
-              "excerpt": "devolução geral progressiva",
-              "field": "summary",
-              "field_sha256": "483f0a10762559aa3ab84b2a53d3a9baa7cef7739f6ef7e3b74c330985e7837b",
-              "start": 75,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653940"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_02",
-            "text": "Qual é a proposta? | Instituir devolução geral progressiva de CBS e IBS segundo a renda domiciliar por pessoa e ampliar a identificação das famílias beneficiárias.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 156,
-              "excerpt": "renda domiciliar per capita",
-              "field": "summary",
-              "field_sha256": "483f0a10762559aa3ab84b2a53d3a9baa7cef7739f6ef7e3b74c330985e7837b",
-              "start": 129,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653940"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_02",
-            "text": "Qual é a proposta? | Instituir devolução geral progressiva de CBS e IBS segundo a renda domiciliar por pessoa e ampliar a identificação das famílias beneficiárias.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 224,
-              "excerpt": "identificação das famílias beneficiárias",
-              "field": "summary",
-              "field_sha256": "483f0a10762559aa3ab84b2a53d3a9baa7cef7739f6ef7e3b74c330985e7837b",
-              "start": 184,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653940"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_02",
-            "text": "Qual é a proposta? | Instituir devolução geral progressiva de CBS e IBS segundo a renda domiciliar por pessoa e ampliar a identificação das famílias beneficiárias.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 102,
-              "excerpt": "devolução geral progressiva",
-              "field": "summary",
-              "field_sha256": "483f0a10762559aa3ab84b2a53d3a9baa7cef7739f6ef7e3b74c330985e7837b",
-              "start": 75,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653940"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_03",
-            "text": "Como entender a renda por pessoa? | Em um exemplo fictício, uma casa com renda total de R$ 4 mil e quatro moradores tem renda média de R$ 1 mil por pessoa.",
-            "type": "reviewed_mechanism"
-          },
-          {
-            "evidence": {
-              "end": 156,
-              "excerpt": "renda domiciliar per capita",
-              "field": "summary",
-              "field_sha256": "483f0a10762559aa3ab84b2a53d3a9baa7cef7739f6ef7e3b74c330985e7837b",
-              "start": 129,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653940"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_03",
-            "text": "Como entender a renda por pessoa? | Em um exemplo fictício, uma casa com renda total de R$ 4 mil e quatro moradores tem renda média de R$ 1 mil por pessoa.",
-            "type": "reviewed_mechanism"
-          },
-          {
-            "evidence": {
-              "end": 224,
-              "excerpt": "identificação das famílias beneficiárias",
-              "field": "summary",
-              "field_sha256": "483f0a10762559aa3ab84b2a53d3a9baa7cef7739f6ef7e3b74c330985e7837b",
-              "start": 184,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653940"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_03",
-            "text": "Como entender a renda por pessoa? | Em um exemplo fictício, uma casa com renda total de R$ 4 mil e quatro moradores tem renda média de R$ 1 mil por pessoa.",
-            "type": "reviewed_mechanism"
-          },
-          {
-            "evidence": {
-              "end": 102,
-              "excerpt": "devolução geral progressiva",
-              "field": "summary",
-              "field_sha256": "483f0a10762559aa3ab84b2a53d3a9baa7cef7739f6ef7e3b74c330985e7837b",
-              "start": 75,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653940"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_04",
-            "text": "O que isso significa na prática? | Se aprovada nos termos previstos, a devolução poderá variar conforme a renda considerada e os critérios definidos para identificar beneficiários.",
-            "type": "reviewed_conditional"
-          },
-          {
-            "evidence": {
-              "end": 156,
-              "excerpt": "renda domiciliar per capita",
-              "field": "summary",
-              "field_sha256": "483f0a10762559aa3ab84b2a53d3a9baa7cef7739f6ef7e3b74c330985e7837b",
-              "start": 129,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653940"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_04",
-            "text": "O que isso significa na prática? | Se aprovada nos termos previstos, a devolução poderá variar conforme a renda considerada e os critérios definidos para identificar beneficiários.",
-            "type": "reviewed_conditional"
-          },
-          {
-            "evidence": {
-              "end": 224,
-              "excerpt": "identificação das famílias beneficiárias",
-              "field": "summary",
-              "field_sha256": "483f0a10762559aa3ab84b2a53d3a9baa7cef7739f6ef7e3b74c330985e7837b",
-              "start": 184,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653940"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_04",
-            "text": "O que isso significa na prática? | Se aprovada nos termos previstos, a devolução poderá variar conforme a renda considerada e os critérios definidos para identificar beneficiários.",
-            "type": "reviewed_conditional"
-          },
-          {
-            "evidence": {
-              "end": 102,
-              "excerpt": "devolução geral progressiva",
-              "field": "summary",
-              "field_sha256": "483f0a10762559aa3ab84b2a53d3a9baa7cef7739f6ef7e3b74c330985e7837b",
-              "start": 75,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653940"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_05",
-            "text": "Quem receberia e quanto? | Faixas, valores, cadastro e forma de pagamento precisam ser conhecidos no texto integral. Não há benefício individual garantido pela ementa.",
-            "type": "reviewed_questions"
-          },
-          {
-            "evidence": {
-              "end": 156,
-              "excerpt": "renda domiciliar per capita",
-              "field": "summary",
-              "field_sha256": "483f0a10762559aa3ab84b2a53d3a9baa7cef7739f6ef7e3b74c330985e7837b",
-              "start": 129,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653940"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_05",
-            "text": "Quem receberia e quanto? | Faixas, valores, cadastro e forma de pagamento precisam ser conhecidos no texto integral. Não há benefício individual garantido pela ementa.",
-            "type": "reviewed_questions"
-          },
-          {
-            "evidence": {
-              "end": 224,
-              "excerpt": "identificação das famílias beneficiárias",
-              "field": "summary",
-              "field_sha256": "483f0a10762559aa3ab84b2a53d3a9baa7cef7739f6ef7e3b74c330985e7837b",
-              "start": 184,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653940"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_05",
-            "text": "Quem receberia e quanto? | Faixas, valores, cadastro e forma de pagamento precisam ser conhecidos no texto integral. Não há benefício individual garantido pela ementa.",
-            "type": "reviewed_questions"
-          },
-          {
-            "evidence": {
-              "end": 26,
-              "excerpt": "Apresentação de Proposição",
-              "field": "stage",
-              "field_sha256": "7ad4f3a2409e2196a7e3ccc89d81061c388c76f096e8a3e5181944076982a9b7",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653940"
-            },
-            "limitation": "Registro de tramitação.",
-            "location": "card_06",
-            "text": "Apresentação de Proposição",
-            "type": "procedural_record"
-          },
-          {
-            "evidence": {
-              "end": 10,
-              "excerpt": "2026-11-13",
-              "field": "stage_date",
-              "field_sha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653940"
-            },
-            "limitation": "Não comprova vigência.",
-            "location": "card_06",
-            "text": "2026-11-13",
-            "type": "record_date"
-          },
-          {
-            "evidence": {
-              "end": 12,
-              "excerpt": "PLP 304/2026",
-              "field": "title",
-              "field_sha256": "fe219e5d06ca61021e5fa8ef9f52c2e6384384de7905260dc93993a384a04f82",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653940"
-            },
-            "limitation": "Fonte para leitura integral.",
-            "location": "card_07",
-            "text": "PLP 304/2026",
-            "type": "source_reference"
-          },
-          {
-            "evidence": {
-              "end": 102,
-              "excerpt": "devolução geral progressiva",
-              "field": "summary",
-              "field_sha256": "483f0a10762559aa3ab84b2a53d3a9baa7cef7739f6ef7e3b74c330985e7837b",
-              "start": 75,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653940"
-            },
-            "limitation": "Paráfrase revisada.",
-            "location": "caption",
-            "text": "Instituir devolução geral progressiva de CBS e IBS segundo a renda domiciliar por pessoa e ampliar a identificação das famílias beneficiárias.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 224,
-              "excerpt": "identificação das famílias beneficiárias",
-              "field": "summary",
-              "field_sha256": "483f0a10762559aa3ab84b2a53d3a9baa7cef7739f6ef7e3b74c330985e7837b",
-              "start": 184,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653940"
-            },
-            "limitation": "Impacto potencial.",
-            "location": "caption",
-            "text": "Se aprovada nos termos previstos, a devolução poderá variar conforme a renda considerada e os critérios definidos para identificar beneficiários.",
-            "type": "reviewed_conditional"
-          }
-        ],
-        "limitation": "Revisão editorial de narrativa controlada; não verifica impacto real ou texto integral.",
-        "policy": "didactic-v4",
-        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653940",
-        "unverified_dimensions": [
-          "legal_effect",
-          "implementation",
-          "budget",
-          "causality",
-          "social_impact"
-        ],
-        "version": "a39d386f415e16"
-      },
-      "claim_matrix_sha256": "08d03a9a95090481b8503e81697fccd48020f84e8a510fdb8bc050e160db0395",
-      "closing_media_sha256": "0b9da6d007fb992caa0d422f23052ecd8760b842121c574787c6f68ee0c776fd",
-      "content_sha256": "99fc1c4510410ec44c3c4549988deaeed43e3fbb814223ff320dd6f55b5877a8",
-      "decision": "approved_documentary_only",
-      "id": "camara:2653940",
-      "issues": [],
-      "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-      "policy": "documentary-template-v4-didactic",
-      "version": "a39d386f415e16"
-    },
-    {
-      "card_sha256": [
-        "9eeb2f37e830915ecefca5e258083e9b6d74f7a60976a4e0381fa0e284240308",
-        "1c2e5a4cb6a82723b8f1f253ac2bfc41c1bf437dc95c09dd42a1142d5a7bc1d7",
-        "337326e34615f504074192f0eb0011ce278f117d97d93eb3c88c1171add4c50b",
-        "3f1091e121116e5e50922244cf3366d71d4f5b1226ce29a924879ac7e733034c",
-        "88f7b2853fd469300a7f1b676daf32bafe47bc4b9c4dcd000f33c76d208dbd60",
-        "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
-        "b4cd592de5070b1d1adb3fd79bb1d047cbf3a2038e7e510e7083f11ddc52f5e0"
-      ],
-      "checked_at": "2026-11-18T11:02:24.530974-03:00",
-      "claim_matrix": {
-        "document_id": "camara:2653811",
-        "entries": [
-          {
-            "evidence": {
-              "end": 212,
-              "excerpt": "coletivos empresariais utilizados exclusivamente por núcleo familiar",
-              "field": "summary",
-              "field_sha256": "1e298a9e0ebdbc45a1d67f4527ae298791cb508068d80ad043ab6d12adb16694",
-              "start": 144,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653811"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_01",
-            "text": "Plano empresarial usado só pela família: o que pode mudar? | Projeto discute proteção contratual para esses planos de saúde.",
-            "type": "reviewed_question"
-          },
-          {
-            "evidence": {
-              "end": 87,
-              "excerpt": "equiparação",
-              "field": "summary",
-              "field_sha256": "1e298a9e0ebdbc45a1d67f4527ae298791cb508068d80ad043ab6d12adb16694",
-              "start": 76,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653811"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_01",
-            "text": "Plano empresarial usado só pela família: o que pode mudar? | Projeto discute proteção contratual para esses planos de saúde.",
-            "type": "reviewed_question"
-          },
-          {
-            "evidence": {
-              "end": 297,
-              "excerpt": "reajustes abusivos",
-              "field": "summary",
-              "field_sha256": "1e298a9e0ebdbc45a1d67f4527ae298791cb508068d80ad043ab6d12adb16694",
-              "start": 279,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653811"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_01",
-            "text": "Plano empresarial usado só pela família: o que pode mudar? | Projeto discute proteção contratual para esses planos de saúde.",
-            "type": "reviewed_question"
-          },
-          {
-            "evidence": {
-              "end": 212,
-              "excerpt": "coletivos empresariais utilizados exclusivamente por núcleo familiar",
-              "field": "summary",
-              "field_sha256": "1e298a9e0ebdbc45a1d67f4527ae298791cb508068d80ad043ab6d12adb16694",
-              "start": 144,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653811"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_02",
-            "text": "Que contratos entram na proposta? | Planos coletivos empresariais utilizados exclusivamente por um núcleo familiar, com critérios de equiparação aos individuais ou familiares.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 87,
-              "excerpt": "equiparação",
-              "field": "summary",
-              "field_sha256": "1e298a9e0ebdbc45a1d67f4527ae298791cb508068d80ad043ab6d12adb16694",
-              "start": 76,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653811"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_02",
-            "text": "Que contratos entram na proposta? | Planos coletivos empresariais utilizados exclusivamente por um núcleo familiar, com critérios de equiparação aos individuais ou familiares.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 297,
-              "excerpt": "reajustes abusivos",
-              "field": "summary",
-              "field_sha256": "1e298a9e0ebdbc45a1d67f4527ae298791cb508068d80ad043ab6d12adb16694",
-              "start": 279,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653811"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_02",
-            "text": "Que contratos entram na proposta? | Planos coletivos empresariais utilizados exclusivamente por um núcleo familiar, com critérios de equiparação aos individuais ou familiares.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 212,
-              "excerpt": "coletivos empresariais utilizados exclusivamente por núcleo familiar",
-              "field": "summary",
-              "field_sha256": "1e298a9e0ebdbc45a1d67f4527ae298791cb508068d80ad043ab6d12adb16694",
-              "start": 144,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653811"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_03",
-            "text": "Por que o tipo de contrato importa? | O enquadramento do contrato é relevante para as regras aplicáveis. A proposta busca proteção contra reajustes abusivos e práticas prejudiciais.",
-            "type": "reviewed_mechanism"
-          },
-          {
-            "evidence": {
-              "end": 87,
-              "excerpt": "equiparação",
-              "field": "summary",
-              "field_sha256": "1e298a9e0ebdbc45a1d67f4527ae298791cb508068d80ad043ab6d12adb16694",
-              "start": 76,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653811"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_03",
-            "text": "Por que o tipo de contrato importa? | O enquadramento do contrato é relevante para as regras aplicáveis. A proposta busca proteção contra reajustes abusivos e práticas prejudiciais.",
-            "type": "reviewed_mechanism"
-          },
-          {
-            "evidence": {
-              "end": 297,
-              "excerpt": "reajustes abusivos",
-              "field": "summary",
-              "field_sha256": "1e298a9e0ebdbc45a1d67f4527ae298791cb508068d80ad043ab6d12adb16694",
-              "start": 279,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653811"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_03",
-            "text": "Por que o tipo de contrato importa? | O enquadramento do contrato é relevante para as regras aplicáveis. A proposta busca proteção contra reajustes abusivos e práticas prejudiciais.",
-            "type": "reviewed_mechanism"
-          },
-          {
-            "evidence": {
-              "end": 212,
-              "excerpt": "coletivos empresariais utilizados exclusivamente por núcleo familiar",
-              "field": "summary",
-              "field_sha256": "1e298a9e0ebdbc45a1d67f4527ae298791cb508068d80ad043ab6d12adb16694",
-              "start": 144,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653811"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_04",
-            "text": "E para quem paga o plano? | Se aprovada, a equiparação poderá mudar as proteções contratuais aplicáveis a essas famílias. Não significa redução automática da mensalidade.",
-            "type": "reviewed_conditional"
-          },
-          {
-            "evidence": {
-              "end": 87,
-              "excerpt": "equiparação",
-              "field": "summary",
-              "field_sha256": "1e298a9e0ebdbc45a1d67f4527ae298791cb508068d80ad043ab6d12adb16694",
-              "start": 76,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653811"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_04",
-            "text": "E para quem paga o plano? | Se aprovada, a equiparação poderá mudar as proteções contratuais aplicáveis a essas famílias. Não significa redução automática da mensalidade.",
-            "type": "reviewed_conditional"
-          },
-          {
-            "evidence": {
-              "end": 297,
-              "excerpt": "reajustes abusivos",
-              "field": "summary",
-              "field_sha256": "1e298a9e0ebdbc45a1d67f4527ae298791cb508068d80ad043ab6d12adb16694",
-              "start": 279,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653811"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_04",
-            "text": "E para quem paga o plano? | Se aprovada, a equiparação poderá mudar as proteções contratuais aplicáveis a essas famílias. Não significa redução automática da mensalidade.",
-            "type": "reviewed_conditional"
-          },
-          {
-            "evidence": {
-              "end": 212,
-              "excerpt": "coletivos empresariais utilizados exclusivamente por núcleo familiar",
-              "field": "summary",
-              "field_sha256": "1e298a9e0ebdbc45a1d67f4527ae298791cb508068d80ad043ab6d12adb16694",
-              "start": 144,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653811"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_05",
-            "text": "O que falta saber? | Quais contratos serão abrangidos? Quais regras de reajuste valerão? Como ficariam os contratos existentes? Confira o texto integral.",
-            "type": "reviewed_questions"
-          },
-          {
-            "evidence": {
-              "end": 87,
-              "excerpt": "equiparação",
-              "field": "summary",
-              "field_sha256": "1e298a9e0ebdbc45a1d67f4527ae298791cb508068d80ad043ab6d12adb16694",
-              "start": 76,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653811"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_05",
-            "text": "O que falta saber? | Quais contratos serão abrangidos? Quais regras de reajuste valerão? Como ficariam os contratos existentes? Confira o texto integral.",
-            "type": "reviewed_questions"
-          },
-          {
-            "evidence": {
-              "end": 297,
-              "excerpt": "reajustes abusivos",
-              "field": "summary",
-              "field_sha256": "1e298a9e0ebdbc45a1d67f4527ae298791cb508068d80ad043ab6d12adb16694",
-              "start": 279,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653811"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_05",
-            "text": "O que falta saber? | Quais contratos serão abrangidos? Quais regras de reajuste valerão? Como ficariam os contratos existentes? Confira o texto integral.",
-            "type": "reviewed_questions"
-          },
-          {
-            "evidence": {
-              "end": 26,
-              "excerpt": "Apresentação de Proposição",
-              "field": "stage",
-              "field_sha256": "7ad4f3a2409e2196a7e3ccc89d81061c388c76f096e8a3e5181944076982a9b7",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653811"
-            },
-            "limitation": "Registro de tramitação.",
-            "location": "card_06",
-            "text": "Apresentação de Proposição",
-            "type": "procedural_record"
-          },
-          {
-            "evidence": {
-              "end": 10,
-              "excerpt": "2026-11-13",
-              "field": "stage_date",
-              "field_sha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653811"
-            },
-            "limitation": "Não comprova vigência.",
-            "location": "card_06",
-            "text": "2026-11-13",
-            "type": "record_date"
-          },
-          {
-            "evidence": {
-              "end": 12,
-              "excerpt": "PL 5844/2026",
-              "field": "title",
-              "field_sha256": "758a81ca15ebc19d50a8a36af51d9d79eb00f113b15c9d6429d221f503771ef2",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653811"
-            },
-            "limitation": "Fonte para leitura integral.",
-            "location": "card_07",
-            "text": "PL 5844/2026",
-            "type": "source_reference"
-          },
-          {
-            "evidence": {
-              "end": 212,
-              "excerpt": "coletivos empresariais utilizados exclusivamente por núcleo familiar",
-              "field": "summary",
-              "field_sha256": "1e298a9e0ebdbc45a1d67f4527ae298791cb508068d80ad043ab6d12adb16694",
-              "start": 144,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653811"
-            },
-            "limitation": "Paráfrase revisada.",
-            "location": "caption",
-            "text": "Planos coletivos empresariais utilizados exclusivamente por um núcleo familiar, com critérios de equiparação aos individuais ou familiares.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 297,
-              "excerpt": "reajustes abusivos",
-              "field": "summary",
-              "field_sha256": "1e298a9e0ebdbc45a1d67f4527ae298791cb508068d80ad043ab6d12adb16694",
-              "start": 279,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653811"
-            },
-            "limitation": "Impacto potencial.",
-            "location": "caption",
-            "text": "Se aprovada, a equiparação poderá mudar as proteções contratuais aplicáveis a essas famílias. Não significa redução automática da mensalidade.",
-            "type": "reviewed_conditional"
-          }
-        ],
-        "limitation": "Revisão editorial de narrativa controlada; não verifica impacto real ou texto integral.",
-        "policy": "didactic-v4",
-        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653811",
-        "unverified_dimensions": [
-          "legal_effect",
-          "implementation",
-          "budget",
-          "causality",
-          "social_impact"
-        ],
-        "version": "875c9caddb7040"
-      },
-      "claim_matrix_sha256": "275892ee06d50d219b450b93c59fe66654d8465015562161d98c3a8cee6cb5fd",
-      "closing_media_sha256": "b4cd592de5070b1d1adb3fd79bb1d047cbf3a2038e7e510e7083f11ddc52f5e0",
-      "content_sha256": "e9a6eeab9f6b4a47ac30b465392adc2f0eb1ef0665bc47ba9754f2a2d0bbf676",
-      "decision": "approved_documentary_only",
-      "id": "camara:2653811",
-      "issues": [],
-      "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-      "policy": "documentary-template-v4-didactic",
-      "version": "875c9caddb7040"
-    },
     {
       "card_sha256": [
         "a9cc55c524e88731580701e9049b34bd9b7dcb8b4ec5382d563eadce910e3a44",
@@ -647,7 +13,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "0cdece1d67c3aefb0f93f17749b0451524df43d4da52a58101a2d605e9ef829b"
       ],
-      "checked_at": "2026-11-18T11:02:24.530974-03:00",
+      "checked_at": "2026-11-18T20:25:03.544197-03:00",
       "claim_matrix": {
         "document_id": "camara:2653822",
         "entries": [
@@ -964,7 +330,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "66b93415b28454753c634256d101cb53acbe79983b4d2db32dc150c29a34fa64"
       ],
-      "checked_at": "2026-11-18T11:02:24.530974-03:00",
+      "checked_at": "2026-11-18T20:25:03.544197-03:00",
       "claim_matrix": {
         "document_id": "camara:2653946",
         "entries": [
@@ -1202,7 +568,7 @@
       "version": "b98ae1ec690f70"
     },
     {
-      "checked_at": "2026-11-18T11:02:24.530974-03:00",
+      "checked_at": "2026-11-18T20:25:03.544197-03:00",
       "decision": "rejected",
       "id": "camara:2653947",
       "issues": [
@@ -1212,7 +578,7 @@
       "version": "a9ab7e30775280"
     },
     {
-      "checked_at": "2026-11-18T11:02:24.530974-03:00",
+      "checked_at": "2026-11-18T20:25:03.544197-03:00",
       "decision": "rejected",
       "id": "camara:2653944",
       "issues": [
@@ -1222,7 +588,7 @@
       "version": "2d94a3cc4eebf7"
     },
     {
-      "checked_at": "2026-11-18T11:02:24.530974-03:00",
+      "checked_at": "2026-11-18T20:25:03.544197-03:00",
       "decision": "rejected",
       "id": "camara:2654174",
       "issues": [
@@ -1232,7 +598,7 @@
       "version": "abe5fda5fc0602"
     },
     {
-      "checked_at": "2026-11-18T11:02:24.530974-03:00",
+      "checked_at": "2026-11-18T20:25:03.544197-03:00",
       "decision": "rejected",
       "id": "camara:2654163",
       "issues": [
@@ -1240,6 +606,318 @@
       ],
       "policy": "documentary-template-v4-didactic",
       "version": "6438c89bd557e4"
+    },
+    {
+      "card_sha256": [
+        "5358c79775409e058ea24030dd8c8bb2134b1095a00ac39f5947c29e63fdf742",
+        "bd879faa3f00e286b5d4be6058fb129e510b7e1cbf4a4af1a388abedb8002c67",
+        "50fc02cfd1d06be78856d1d7dc75f61c0346bcbdeeeff316b42bc4e81aa7c58f",
+        "3b0e29aa6e6a3994339c130169525e59301d98c2ec3b8b1b80885e359c132d6c",
+        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
+        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
+        "e0455d8181fb89762fed472aca57923e25d716cca1d0ebe697eb9f7d334ef621"
+      ],
+      "checked_at": "2026-11-18T20:25:03.544197-03:00",
+      "claim_matrix": {
+        "document_id": "camara:2654371",
+        "entries": [
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5874/2026",
+              "field": "title",
+              "field_sha256": "b8e64d7eb641bf5760878737814806b60cf3204dab6c034ad820d2aea5a31df0",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
+            },
+            "limitation": "Identifica a proposição, não sua aprovação.",
+            "location": "card_01",
+            "text": "PL 5874/2026",
+            "type": "document_identity"
+          },
+          {
+            "evidence": {
+              "end": 286,
+              "excerpt": "Institui o cruzamento obrigatório e periódico de dados do Censo Escolar com as folhas de pagamento dos entes federados e com os pagamentos efetuados com recursos do Fundeb, e dispõe sobre a exclusão de estudantes do Censo Escolar, para coibir fraudes e o desvio de recursos da educação.",
+              "field": "summary",
+              "field_sha256": "65f4f1c98a4bcc90b35a2ede89436f8c521613fb0dc66d3da1368c665e4fb1f3",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
+            },
+            "limitation": "Ementa oficial, não texto integral nem prova de impacto.",
+            "location": "card_02",
+            "text": "Institui o cruzamento obrigatório e periódico de dados do Censo Escolar com as folhas de pagamento dos entes federados e com os pagamentos efetuados com recursos do Fundeb, e dispõe sobre a exclusão de estudantes do Censo Escolar, para coibir fraudes e o desvio de recursos da educação.",
+            "type": "attributed_excerpt"
+          },
+          {
+            "evidence": null,
+            "limitation": "Não acrescenta fatos externos.",
+            "location": "card_03",
+            "text": "A ementa resume o tema. Para conhecer condições, exceções e detalhes, consulte o texto integral.",
+            "type": "template_explanation"
+          },
+          {
+            "evidence": {
+              "end": 26,
+              "excerpt": "Apresentação de Proposição",
+              "field": "stage",
+              "field_sha256": "7ad4f3a2409e2196a7e3ccc89d81061c388c76f096e8a3e5181944076982a9b7",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
+            },
+            "limitation": "Registro de tramitação na data de referência.",
+            "location": "card_04",
+            "text": "Apresentação de Proposição",
+            "type": "procedural_record"
+          },
+          {
+            "evidence": {
+              "end": 10,
+              "excerpt": "2026-11-17",
+              "field": "stage_date",
+              "field_sha256": "3af512824d0e341bce2cd7739940bb37ce7ca505725ec00377769cb83bdf1fc3",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
+            },
+            "limitation": "Data do andamento, não da vigência.",
+            "location": "card_04",
+            "text": "2026-11-17",
+            "type": "record_date"
+          },
+          {
+            "evidence": null,
+            "limitation": "Não atribui impacto, vigência ou financiamento.",
+            "location": "card_05",
+            "text": "A existência de um projeto não comprova aprovação, entrada em vigor, financiamento ou resultados.",
+            "type": "scope_limitation"
+          },
+          {
+            "evidence": null,
+            "limitation": "Questões para acompanhamento, não afirmações comprovadas.",
+            "location": "card_06",
+            "text": "Qual é o texto final?\n\nQuais órgãos respondem pela execução?\n\nHá custo previsto e indicadores de resultado?",
+            "type": "open_questions"
+          },
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5874/2026",
+              "field": "title",
+              "field_sha256": "b8e64d7eb641bf5760878737814806b60cf3204dab6c034ad820d2aea5a31df0",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
+            },
+            "limitation": "Referência documental.",
+            "location": "card_07",
+            "text": "PL 5874/2026",
+            "type": "source_reference"
+          },
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5874/2026",
+              "field": "title",
+              "field_sha256": "b8e64d7eb641bf5760878737814806b60cf3204dab6c034ad820d2aea5a31df0",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
+            },
+            "limitation": "Identifica a proposição.",
+            "location": "caption",
+            "text": "PL 5874/2026",
+            "type": "document_identity"
+          },
+          {
+            "evidence": {
+              "end": 10,
+              "excerpt": "2026-11-17",
+              "field": "stage_date",
+              "field_sha256": "3af512824d0e341bce2cd7739940bb37ce7ca505725ec00377769cb83bdf1fc3",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
+            },
+            "limitation": "Data registrada na fonte.",
+            "location": "caption",
+            "text": "2026-11-17",
+            "type": "record_date"
+          }
+        ],
+        "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
+        "policy": "documentary-claims-v2-hooks",
+        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371",
+        "unverified_dimensions": [
+          "legal_effect",
+          "implementation",
+          "budget",
+          "causality",
+          "social_impact"
+        ],
+        "version": "146301a4f8f3d0"
+      },
+      "claim_matrix_sha256": "9bbdd39e07070ad45e405fb7727dc6ad2b6332568f41f564f05d807b8eb9db58",
+      "closing_media_sha256": "e0455d8181fb89762fed472aca57923e25d716cca1d0ebe697eb9f7d334ef621",
+      "content_sha256": "26df7b0946da4518a2b75c0263f15b0708c22073a280d9a79cd2035a3ae4e20f",
+      "decision": "approved_documentary_only",
+      "id": "camara:2654371",
+      "issues": [],
+      "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
+      "policy": "documentary-template-v4-didactic",
+      "version": "146301a4f8f3d0"
+    },
+    {
+      "card_sha256": [
+        "6f2f34311970533727b19e5b732e8a86e608f1397073ade38f678150c5d0afef",
+        "f7ae2c61d5fc405dada17af7b367af8fe4f2b59ec9c06e52fe47137d8e1fa0f5",
+        "50fc02cfd1d06be78856d1d7dc75f61c0346bcbdeeeff316b42bc4e81aa7c58f",
+        "d8b322f61240c9738f7936a9e58ae3429ab32796d516ac1494dcc0bbc9d25ff4",
+        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
+        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
+        "cc70ab72c2e5cf70c6edbb68d57ddcc264fe9ca53b6d160c1af039d44912276d"
+      ],
+      "checked_at": "2026-11-18T20:25:03.544197-03:00",
+      "claim_matrix": {
+        "document_id": "camara:2655462",
+        "entries": [
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5903/2026",
+              "field": "title",
+              "field_sha256": "d13e7aa1cd382f9ec26ded2b1504474c74293e0ae2c70d11b97cc8bfbad51e3e",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462"
+            },
+            "limitation": "Identifica a proposição, não sua aprovação.",
+            "location": "card_01",
+            "text": "PL 5903/2026",
+            "type": "document_identity"
+          },
+          {
+            "evidence": {
+              "end": 120,
+              "excerpt": "Institui a Política Nacional de Educação Especial Inclusiva, e altera o art. 3º da Lei nº 13.146, de 6 de julho de 2015.",
+              "field": "summary",
+              "field_sha256": "7b2c06e541395712cb51d0fa47e1f906273d0c06d8b30499affd50f0be30e27f",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462"
+            },
+            "limitation": "Ementa oficial, não texto integral nem prova de impacto.",
+            "location": "card_02",
+            "text": "Institui a Política Nacional de Educação Especial Inclusiva, e altera o art. 3º da Lei nº 13.146, de 6 de julho de 2015.",
+            "type": "attributed_excerpt"
+          },
+          {
+            "evidence": null,
+            "limitation": "Não acrescenta fatos externos.",
+            "location": "card_03",
+            "text": "A ementa resume o tema. Para conhecer condições, exceções e detalhes, consulte o texto integral.",
+            "type": "template_explanation"
+          },
+          {
+            "evidence": {
+              "end": 26,
+              "excerpt": "Apresentação de Proposição",
+              "field": "stage",
+              "field_sha256": "7ad4f3a2409e2196a7e3ccc89d81061c388c76f096e8a3e5181944076982a9b7",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462"
+            },
+            "limitation": "Registro de tramitação na data de referência.",
+            "location": "card_04",
+            "text": "Apresentação de Proposição",
+            "type": "procedural_record"
+          },
+          {
+            "evidence": {
+              "end": 10,
+              "excerpt": "2026-11-18",
+              "field": "stage_date",
+              "field_sha256": "0f45d26b9bca5bab9215ee29cc079e2776099e08de9df505123e52128fe91375",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462"
+            },
+            "limitation": "Data do andamento, não da vigência.",
+            "location": "card_04",
+            "text": "2026-11-18",
+            "type": "record_date"
+          },
+          {
+            "evidence": null,
+            "limitation": "Não atribui impacto, vigência ou financiamento.",
+            "location": "card_05",
+            "text": "A existência de um projeto não comprova aprovação, entrada em vigor, financiamento ou resultados.",
+            "type": "scope_limitation"
+          },
+          {
+            "evidence": null,
+            "limitation": "Questões para acompanhamento, não afirmações comprovadas.",
+            "location": "card_06",
+            "text": "Qual é o texto final?\n\nQuais órgãos respondem pela execução?\n\nHá custo previsto e indicadores de resultado?",
+            "type": "open_questions"
+          },
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5903/2026",
+              "field": "title",
+              "field_sha256": "d13e7aa1cd382f9ec26ded2b1504474c74293e0ae2c70d11b97cc8bfbad51e3e",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462"
+            },
+            "limitation": "Referência documental.",
+            "location": "card_07",
+            "text": "PL 5903/2026",
+            "type": "source_reference"
+          },
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5903/2026",
+              "field": "title",
+              "field_sha256": "d13e7aa1cd382f9ec26ded2b1504474c74293e0ae2c70d11b97cc8bfbad51e3e",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462"
+            },
+            "limitation": "Identifica a proposição.",
+            "location": "caption",
+            "text": "PL 5903/2026",
+            "type": "document_identity"
+          },
+          {
+            "evidence": {
+              "end": 10,
+              "excerpt": "2026-11-18",
+              "field": "stage_date",
+              "field_sha256": "0f45d26b9bca5bab9215ee29cc079e2776099e08de9df505123e52128fe91375",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462"
+            },
+            "limitation": "Data registrada na fonte.",
+            "location": "caption",
+            "text": "2026-11-18",
+            "type": "record_date"
+          }
+        ],
+        "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
+        "policy": "documentary-claims-v2-hooks",
+        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462",
+        "unverified_dimensions": [
+          "legal_effect",
+          "implementation",
+          "budget",
+          "causality",
+          "social_impact"
+        ],
+        "version": "b2c418b5ca1c25"
+      },
+      "claim_matrix_sha256": "f02bc538fbdffbbe6e9129f993440a54de1008dd929041f7cb2423ec9d2d7468",
+      "closing_media_sha256": "cc70ab72c2e5cf70c6edbb68d57ddcc264fe9ca53b6d160c1af039d44912276d",
+      "content_sha256": "785039ed06b92bd4acf2b794bf43494338e5e042eab7a797a6128d546df4f54d",
+      "decision": "approved_documentary_only",
+      "id": "camara:2655462",
+      "issues": [],
+      "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
+      "policy": "documentary-template-v4-didactic",
+      "version": "b2c418b5ca1c25"
     }
   ]
 }
