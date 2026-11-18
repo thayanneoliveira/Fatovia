@@ -8,7 +8,7 @@ on:
       - 'fatovia/pilot_report.py'
       - 'tests/test_pilot_report.py'
   schedule:
-    - cron: "43 0,6,12,18 * * *"
+    - cron: "13 */2 * * *"
 permissions:
   contents: write
 concurrency:
