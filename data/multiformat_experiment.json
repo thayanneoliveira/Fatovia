@@ -53,10 +53,10 @@
     "reel_cover_editorial": "Escolher miniatura de cada Reel pelo conflito humano, legibilidade em tamanho pequeno, curiosidade honesta e coerencia com o roteiro; validar recorte e arquivo. Nao usar logo de encerramento como capa padrao."
   },
   "deployment_blockers": [
-    "Reel: exact high-resolution approved endcard, final MP4 transfer, public hosting, independent source/audio/visual review and real Meta delivery still pending.",
-    "Autonomous V5 rendering of unrelated topics not validated."
+    "Transferencia do MP4 aprovado e da capa para hospedagem publica gratuita, checagem dos hashes e verificacao da fonte oficial IPCA, revisao independente remanescente e entrega real Meta ainda pendentes.",
+    "Geracao autonoma de Reels V5 em temas novos ainda nao homologada."
   ],
-  "notes": "Operational intent only; this file does not authorize bypass of existing publisher gates. Do not treat suggested slots as confirmed publishing times.",
+  "notes": "Aprovacao editorial do titular registrada em hash exato, nao substitui auditoria independente nem autorizacao operacional. Preservar cota 4+1, transacao, conciliacao, custo zero e janela prevista, sem fallback da creche.",
   "approved_logo": {
     "path": "assets/fatovia-approved.png",
     "sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
@@ -77,7 +77,7 @@
       "reel:creche-v5"
     ],
     "instruction": "Nao publicar o episodio da creche em 18/11, inclusive como contingencia. Arquivar como referencia V5. Priorizar o novo tema. Sem Reel se nao passar todos os controles; nao substituir por tema da creche.",
-    "status": "revision_required_previous_video_rejected",
+    "status": "owner_approved_pending_operational_preflight",
     "brief": {
       "hook": "Por que seu dinheiro parece valer cada vez menos?",
       "mechanism": "Uma desaceleracao positiva dos precos nao e uma queda do nivel de precos. IPCA e media ponderada de uma cesta; a experiencia individual pode divergir.",
@@ -107,13 +107,13 @@
         "Nao dizer que todos os precos subiram nem atribuir causalidade ou responsabilidade politica sem evidencia.",
         "Nao apresentar simulacao numerica como dado real.",
         "Santa R, V5, legendas progressivas e fechamento aprovado; custo adicional zero.",
-        "Não publicar a primeira versão sobre Ana; revisão audiovisual Maria precisa de nova validação."
+        "Somente a versao Maria v2 aprovada com SHA256 exato; jamais publicar Ana ou Creche como substituicao. Revalidar o IPCA mensal de setembro e outubro de 2026 em fonte oficial antes de liberar a midia."
       ],
       "narrative": "Maria: identificação antes do conceito, surpresa no caixa, metáfora do carro, dados IBGE, poder de compra e perguntas de fiscalização.",
       "script_revision": "maria-v2",
       "disclosure": "Dramatização com valores ilustrativos informada na descrição da publicação; no vídeo, contexto hipotético natural e dados oficiais com período e fonte.",
       "cover": {
-        "status": "selected_preview_not_hosted",
+        "status": "selected_approved_pending_hosting",
         "source": "Maria v2; opening scene 0, progress 0.80, render argument t=1.8 (not final video timestamp)",
         "visual": "Maria surpresa diante da mesma cesta; nota de R$100 e total R$111,10",
         "hook": "Por que seu dinheiro parece valer cada vez menos?",
@@ -124,6 +124,27 @@
         ],
         "notes": "Valores ilustrativos da dramatizacao. Selecionar imagem de abertura equivalente na midia final e verificar recortes do feed; nao usar encerramento como capa. Hospedagem e suporte a cover_url/thumb_offset ainda precisam de validacao."
       }
+    },
+    "owner_approval": {
+      "date": "2026-11-18",
+      "decision": "approved_for_publication",
+      "revision": "maria-v2",
+      "filename": "FatoVia_Maria_Reel_Revisado.mp4",
+      "sha256": "f367280115d72645b712c55883c1e71838e6e6973dd7e4e1887dee46182b9170",
+      "bytes": 18725124,
+      "duration_seconds": 109.585,
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "fps": 24,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "audio_sample_rate": 48000,
+      "decode_check": "passed",
+      "cover_sha256": "4e266466a5e91977e15e565f4ad1bef09981dbbfc99de6f6b49d7c49c6c3608c",
+      "voice": "Santa-R-1.0",
+      "publication_candidate_only": true
     }
   }
 }
