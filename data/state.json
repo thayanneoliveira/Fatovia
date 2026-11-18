@@ -387,6 +387,114 @@
         "seguranca"
       ],
       "version": "6438c89bd557e4"
+    },
+    {
+      "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
+      "caption": "O que está previsto nesta proposta?\n\nPL 5874/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-17. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2654371\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2654371/146301a4f8f3d0\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "cards": [
+        "docs/media/camara-2654371/146301a4f8f3d0/01.jpg",
+        "docs/media/camara-2654371/146301a4f8f3d0/02.jpg",
+        "docs/media/camara-2654371/146301a4f8f3d0/03.jpg",
+        "docs/media/camara-2654371/146301a4f8f3d0/04.jpg",
+        "docs/media/camara-2654371/146301a4f8f3d0/05.jpg",
+        "docs/media/camara-2654371/146301a4f8f3d0/06.jpg",
+        "docs/media/camara-2654371/146301a4f8f3d0/07.jpg"
+      ],
+      "discovery_source_count": 0,
+      "editorial_score": 88,
+      "evidence": {
+        "checked_at": "2026-11-18T20:24:14.128228-03:00",
+        "claims": [
+          {
+            "basis": "identificacao_da_proposicao",
+            "field": "title"
+          },
+          {
+            "basis": "ementa_oficial_atribuida",
+            "field": "summary"
+          },
+          {
+            "basis": "registro_de_tramitacao",
+            "field": "stage"
+          }
+        ],
+        "content_sha256": "26df7b0946da4518a2b75c0263f15b0708c22073a280d9a79cd2035a3ae4e20f",
+        "kind": "official_document_attribution",
+        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
+        "record_date": "2026-11-17",
+        "schema": 1,
+        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
+      },
+      "explore_signal_count": 0,
+      "id": "camara:2654371",
+      "public_url": "https://www.camara.leg.br/propostas-legislativas/2654371",
+      "source_name": "Câmara dos Deputados",
+      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-17",
+      "status": "ready",
+      "summary": "Institui o cruzamento obrigatório e periódico de dados do Censo Escolar com as folhas de pagamento dos entes federados e com os pagamentos efetuados com recursos do Fundeb, e dispõe sobre a exclusão de estudantes do Censo Escolar, para coibir fraudes e o desvio de recursos da educação.",
+      "summary_hash": "a7275e4d46308c",
+      "template_revision": "documentary-hook-v3",
+      "title": "PL 5874/2026",
+      "topics": [
+        "educacao"
+      ],
+      "version": "146301a4f8f3d0"
+    },
+    {
+      "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
+      "caption": "O que está previsto nesta proposta?\n\nPL 5903/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-18. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2655462\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2655462/b2c418b5ca1c25\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "cards": [
+        "docs/media/camara-2655462/b2c418b5ca1c25/01.jpg",
+        "docs/media/camara-2655462/b2c418b5ca1c25/02.jpg",
+        "docs/media/camara-2655462/b2c418b5ca1c25/03.jpg",
+        "docs/media/camara-2655462/b2c418b5ca1c25/04.jpg",
+        "docs/media/camara-2655462/b2c418b5ca1c25/05.jpg",
+        "docs/media/camara-2655462/b2c418b5ca1c25/06.jpg",
+        "docs/media/camara-2655462/b2c418b5ca1c25/07.jpg"
+      ],
+      "discovery_source_count": 0,
+      "editorial_score": 87,
+      "evidence": {
+        "checked_at": "2026-11-18T20:24:14.128228-03:00",
+        "claims": [
+          {
+            "basis": "identificacao_da_proposicao",
+            "field": "title"
+          },
+          {
+            "basis": "ementa_oficial_atribuida",
+            "field": "summary"
+          },
+          {
+            "basis": "registro_de_tramitacao",
+            "field": "stage"
+          }
+        ],
+        "content_sha256": "785039ed06b92bd4acf2b794bf43494338e5e042eab7a797a6128d546df4f54d",
+        "kind": "official_document_attribution",
+        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
+        "record_date": "2026-11-18",
+        "schema": 1,
+        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462"
+      },
+      "explore_signal_count": 0,
+      "id": "camara:2655462",
+      "public_url": "https://www.camara.leg.br/propostas-legislativas/2655462",
+      "source_name": "Câmara dos Deputados",
+      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-18",
+      "status": "ready",
+      "summary": "Institui a Política Nacional de Educação Especial Inclusiva, e altera o art. 3º da Lei nº 13.146, de 6 de julho de 2015.",
+      "summary_hash": "29a703770dcd75",
+      "template_revision": "documentary-hook-v3",
+      "title": "PL 5903/2026",
+      "topics": [
+        "educacao"
+      ],
+      "version": "b2c418b5ca1c25"
     }
   ],
   "published": [
