@@ -69,61 +69,6 @@
   "pending": [
     {
       "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-      "caption": "Mais recursos para tratamentos no SUS?\n\nDestinar uma parcela da receita do Imposto Seletivo ao financiamento adicional de tratamentos no Sistema Único de Saúde.\n\nSe aprovado e executado, o financiamento adicional pode ampliar recursos para tratamentos. A ementa não garante redução de filas nem atendimento específico.\n\nPL 5851/2026 | Registro de 2026-11-13. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2653822\nID editorial: camara:2653822/b51b94f0828426/didactic-v4\n#FatoVia #PoliticasPublicas",
-      "cards": [
-        "docs/media/camara-2653822/b51b94f0828426/didactic-v4/01.jpg",
-        "docs/media/camara-2653822/b51b94f0828426/didactic-v4/02.jpg",
-        "docs/media/camara-2653822/b51b94f0828426/didactic-v4/03.jpg",
-        "docs/media/camara-2653822/b51b94f0828426/didactic-v4/04.jpg",
-        "docs/media/camara-2653822/b51b94f0828426/didactic-v4/05.jpg",
-        "docs/media/camara-2653822/b51b94f0828426/didactic-v4/06.jpg",
-        "docs/media/camara-2653822/b51b94f0828426/didactic-v4/07.jpg"
-      ],
-      "discovery_source_count": 1,
-      "editorial_score": 75,
-      "evidence": {
-        "checked_at": "2026-11-17T20:51:37.755293-03:00",
-        "claims": [
-          {
-            "basis": "identificacao_da_proposicao",
-            "field": "title"
-          },
-          {
-            "basis": "ementa_oficial_atribuida",
-            "field": "summary"
-          },
-          {
-            "basis": "registro_de_tramitacao",
-            "field": "stage"
-          }
-        ],
-        "content_sha256": "274d1da2ed88b2c4a6f9dd15c169deb52738ea3775be6cd426183cb24234a778",
-        "kind": "official_document_attribution",
-        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
-        "record_date": "2026-11-13",
-        "schema": 1,
-        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653822"
-      },
-      "explore_signal_count": 0,
-      "id": "camara:2653822",
-      "public_url": "https://www.camara.leg.br/propostas-legislativas/2653822",
-      "source_name": "Câmara dos Deputados",
-      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653822",
-      "stage": "Apresentação de Proposição",
-      "stage_date": "2026-11-13",
-      "status": "ready",
-      "summary": "Dispõe sobre a destinação de parcela da receita do Imposto Seletivo ao financiamento adicional de tratamentos de saúde no âmbito do Sistema Único de Saúde (SUS).",
-      "summary_hash": "fbfaba03d5e4f7",
-      "template_revision": "didactic-v4",
-      "title": "PL 5851/2026",
-      "topics": [
-        "saude",
-        "economia"
-      ],
-      "version": "b51b94f0828426"
-    },
-    {
-      "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
       "caption": "Imposto sobre lucros e dividendos: quem pode ser afetado?\n\nIncidência do Imposto de Renda das Pessoas Físicas sobre lucros e dividendos distribuídos por pessoas jurídicas.\n\nSe houver mudança na tributação, quem recebe essas distribuições pode ter alteração no valor líquido recebido, conforme as regras aprovadas.\n\nPL 5854/2026 | Registro de 2026-11-13. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2653946\nID editorial: camara:2653946/b98ae1ec690f70/didactic-v4\n#FatoVia #PoliticasPublicas",
       "cards": [
         "docs/media/camara-2653946/b98ae1ec690f70/didactic-v4/01.jpg",
@@ -629,15 +574,25 @@
         "saude"
       ],
       "version": "875c9caddb7040"
+    },
+    {
+      "evidence_sha256": "274d1da2ed88b2c4a6f9dd15c169deb52738ea3775be6cd426183cb24234a778",
+      "format": "carousel",
+      "id": "camara:2653822",
+      "media_id": "18111958382223422",
+      "permalink": "https://www.instagram.com/p/Df5rwjrmUcO/",
+      "published_at": "2026-11-18T20:26:26.708788-03:00",
+      "summary": "Dispõe sobre a destinação de parcela da receita do Imposto Seletivo ao financiamento adicional de tratamentos de saúde no âmbito do Sistema Único de Saúde (SUS).",
+      "summary_hash": "fbfaba03d5e4f7",
+      "title": "PL 5851/2026",
+      "topics": [
+        "saude",
+        "economia"
+      ],
+      "version": "b51b94f0828426"
     }
   ],
-  "publishing": {
-    "format": "carousel",
-    "id": "camara:2653822",
-    "started_at": "2026-11-18T20:26:24.821781-03:00",
-    "status": "checkpointed",
-    "version": "b51b94f0828426"
-  },
+  "publishing": null,
   "replacement_request": {
     "authorization": "owner_requested_replacement_after_manual_deletion_2026-11-15",
     "id": "camara:2653819",
