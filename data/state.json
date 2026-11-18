@@ -54,60 +54,6 @@
   "pending": [
     {
       "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-      "caption": "Plano empresarial usado só pela família: o que pode mudar?\n\nPlanos coletivos empresariais utilizados exclusivamente por um núcleo familiar, com critérios de equiparação aos individuais ou familiares.\n\nSe aprovada, a equiparação poderá mudar as proteções contratuais aplicáveis a essas famílias. Não significa redução automática da mensalidade.\n\nPL 5844/2026 | Registro de 2026-11-13. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2653811\nID editorial: camara:2653811/875c9caddb7040/didactic-v4\n#FatoVia #PoliticasPublicas",
-      "cards": [
-        "docs/media/camara-2653811/875c9caddb7040/didactic-v4/01.jpg",
-        "docs/media/camara-2653811/875c9caddb7040/didactic-v4/02.jpg",
-        "docs/media/camara-2653811/875c9caddb7040/didactic-v4/03.jpg",
-        "docs/media/camara-2653811/875c9caddb7040/didactic-v4/04.jpg",
-        "docs/media/camara-2653811/875c9caddb7040/didactic-v4/05.jpg",
-        "docs/media/camara-2653811/875c9caddb7040/didactic-v4/06.jpg",
-        "docs/media/camara-2653811/875c9caddb7040/didactic-v4/07.jpg"
-      ],
-      "discovery_source_count": 1,
-      "editorial_score": 79,
-      "evidence": {
-        "checked_at": "2026-11-17T20:51:37.755293-03:00",
-        "claims": [
-          {
-            "basis": "identificacao_da_proposicao",
-            "field": "title"
-          },
-          {
-            "basis": "ementa_oficial_atribuida",
-            "field": "summary"
-          },
-          {
-            "basis": "registro_de_tramitacao",
-            "field": "stage"
-          }
-        ],
-        "content_sha256": "e9a6eeab9f6b4a47ac30b465392adc2f0eb1ef0665bc47ba9754f2a2d0bbf676",
-        "kind": "official_document_attribution",
-        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
-        "record_date": "2026-11-13",
-        "schema": 1,
-        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653811"
-      },
-      "explore_signal_count": 0,
-      "id": "camara:2653811",
-      "public_url": "https://www.camara.leg.br/propostas-legislativas/2653811",
-      "source_name": "Câmara dos Deputados",
-      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653811",
-      "stage": "Apresentação de Proposição",
-      "stage_date": "2026-11-13",
-      "status": "ready",
-      "summary": "Altera a Lei nº 9.656, de 3 de junho de 1998, para estabelecer critérios de equiparação dos contratos de planos privados de assistência à saúde coletivos empresariais utilizados exclusivamente por núcleo familiar aos planos individuais ou familiares, assegurando proteção contra reajustes abusivos e outras práticas contratuais prejudiciais aos consumidores.",
-      "summary_hash": "526758a7715d00",
-      "template_revision": "didactic-v4",
-      "title": "PL 5844/2026",
-      "topics": [
-        "saude"
-      ],
-      "version": "875c9caddb7040"
-    },
-    {
-      "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
       "caption": "Mais recursos para tratamentos no SUS?\n\nDestinar uma parcela da receita do Imposto Seletivo ao financiamento adicional de tratamentos no Sistema Único de Saúde.\n\nSe aprovado e executado, o financiamento adicional pode ampliar recursos para tratamentos. A ementa não garante redução de filas nem atendimento específico.\n\nPL 5851/2026 | Registro de 2026-11-13. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2653822\nID editorial: camara:2653822/b51b94f0828426/didactic-v4\n#FatoVia #PoliticasPublicas",
       "cards": [
         "docs/media/camara-2653822/b51b94f0828426/didactic-v4/01.jpg",
@@ -545,15 +491,24 @@
         "economia"
       ],
       "version": "a39d386f415e16"
+    },
+    {
+      "evidence_sha256": "e9a6eeab9f6b4a47ac30b465392adc2f0eb1ef0665bc47ba9754f2a2d0bbf676",
+      "format": "carousel",
+      "id": "camara:2653811",
+      "media_id": "18151573990488064",
+      "permalink": "https://www.instagram.com/p/Df5XI8aGRJR/",
+      "published_at": "2026-11-18T17:26:16.778480-03:00",
+      "summary": "Altera a Lei nº 9.656, de 3 de junho de 1998, para estabelecer critérios de equiparação dos contratos de planos privados de assistência à saúde coletivos empresariais utilizados exclusivamente por núcleo familiar aos planos individuais ou familiares, assegurando proteção contra reajustes abusivos e outras práticas contratuais prejudiciais aos consumidores.",
+      "summary_hash": "526758a7715d00",
+      "title": "PL 5844/2026",
+      "topics": [
+        "saude"
+      ],
+      "version": "875c9caddb7040"
     }
   ],
-  "publishing": {
-    "format": "carousel",
-    "id": "camara:2653811",
-    "started_at": "2026-11-18T17:26:14.844677-03:00",
-    "status": "checkpointed",
-    "version": "875c9caddb7040"
-  },
+  "publishing": null,
   "replacement_request": {
     "authorization": "owner_requested_replacement_after_manual_deletion_2026-11-15",
     "id": "camara:2653819",
