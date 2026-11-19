@@ -1,257 +1,10 @@
 {
-  "generated_at": "2026-11-19T11:28:13.813086-03:00",
+  "generated_at": "2026-11-19T20:36:31.097944-03:00",
   "limitations": "Independent rule-based check of the official source, approved template and bytes; not general factual or semantic review.",
   "policy": "documentary-template-v4-didactic",
   "reviews": [
     {
-      "card_sha256": [
-        "7955f1972ae9670de9757e13454ceb834a129d74404391b56889202ed2ad40e9",
-        "d5994534c34b8cb4a1b20af78f7bb8d72df9db8a519e0d69cc75048ea623f3fe",
-        "c044d4dc9e509b7331f34885d5e6c96d8bbc77fe1f0455dc52c4b316e1259f75",
-        "1320e46b269ea8d09383d6d0c661ac209b3888b43a9cd80faf98ddb5c1f165f8",
-        "c7fd77c54da805bc50320987e2dc88edc441bc2d9b5e512383640b839d833173",
-        "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
-        "66b93415b28454753c634256d101cb53acbe79983b4d2db32dc150c29a34fa64"
-      ],
-      "checked_at": "2026-11-19T11:28:13.813086-03:00",
-      "claim_matrix": {
-        "document_id": "camara:2653946",
-        "entries": [
-          {
-            "evidence": {
-              "end": 70,
-              "excerpt": "Imposto sobre a Renda das Pessoas Físicas",
-              "field": "summary",
-              "field_sha256": "5087c18e04526a8904e78ed410103e45f91ba7578392fc8043be9f81769edbc6",
-              "start": 29,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653946"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_01",
-            "text": "Imposto sobre lucros e dividendos: quem pode ser afetado? | Projeto trata da incidência de Imposto de Renda da Pessoa Física sobre valores distribuídos por empresas.",
-            "type": "reviewed_question"
-          },
-          {
-            "evidence": {
-              "end": 131,
-              "excerpt": "lucros e dividendos distribuídos por pessoas jurídicas",
-              "field": "summary",
-              "field_sha256": "5087c18e04526a8904e78ed410103e45f91ba7578392fc8043be9f81769edbc6",
-              "start": 77,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653946"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_01",
-            "text": "Imposto sobre lucros e dividendos: quem pode ser afetado? | Projeto trata da incidência de Imposto de Renda da Pessoa Física sobre valores distribuídos por empresas.",
-            "type": "reviewed_question"
-          },
-          {
-            "evidence": {
-              "end": 70,
-              "excerpt": "Imposto sobre a Renda das Pessoas Físicas",
-              "field": "summary",
-              "field_sha256": "5087c18e04526a8904e78ed410103e45f91ba7578392fc8043be9f81769edbc6",
-              "start": 29,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653946"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_02",
-            "text": "O que está em discussão? | Incidência do Imposto de Renda das Pessoas Físicas sobre lucros e dividendos distribuídos por pessoas jurídicas.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 131,
-              "excerpt": "lucros e dividendos distribuídos por pessoas jurídicas",
-              "field": "summary",
-              "field_sha256": "5087c18e04526a8904e78ed410103e45f91ba7578392fc8043be9f81769edbc6",
-              "start": 77,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653946"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_02",
-            "text": "O que está em discussão? | Incidência do Imposto de Renda das Pessoas Físicas sobre lucros e dividendos distribuídos por pessoas jurídicas.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 70,
-              "excerpt": "Imposto sobre a Renda das Pessoas Físicas",
-              "field": "summary",
-              "field_sha256": "5087c18e04526a8904e78ed410103e45f91ba7578392fc8043be9f81769edbc6",
-              "start": 29,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653946"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_03",
-            "text": "O que são dividendos? | São distribuições de resultados de uma empresa a seus sócios ou acionistas. O tributo discutido incide sobre valores recebidos pela pessoa física.",
-            "type": "reviewed_mechanism"
-          },
-          {
-            "evidence": {
-              "end": 131,
-              "excerpt": "lucros e dividendos distribuídos por pessoas jurídicas",
-              "field": "summary",
-              "field_sha256": "5087c18e04526a8904e78ed410103e45f91ba7578392fc8043be9f81769edbc6",
-              "start": 77,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653946"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_03",
-            "text": "O que são dividendos? | São distribuições de resultados de uma empresa a seus sócios ou acionistas. O tributo discutido incide sobre valores recebidos pela pessoa física.",
-            "type": "reviewed_mechanism"
-          },
-          {
-            "evidence": {
-              "end": 70,
-              "excerpt": "Imposto sobre a Renda das Pessoas Físicas",
-              "field": "summary",
-              "field_sha256": "5087c18e04526a8904e78ed410103e45f91ba7578392fc8043be9f81769edbc6",
-              "start": 29,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653946"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_04",
-            "text": "E na prática? | Se houver mudança na tributação, quem recebe essas distribuições pode ter alteração no valor líquido recebido, conforme as regras aprovadas.",
-            "type": "reviewed_conditional"
-          },
-          {
-            "evidence": {
-              "end": 131,
-              "excerpt": "lucros e dividendos distribuídos por pessoas jurídicas",
-              "field": "summary",
-              "field_sha256": "5087c18e04526a8904e78ed410103e45f91ba7578392fc8043be9f81769edbc6",
-              "start": 77,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653946"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_04",
-            "text": "E na prática? | Se houver mudança na tributação, quem recebe essas distribuições pode ter alteração no valor líquido recebido, conforme as regras aprovadas.",
-            "type": "reviewed_conditional"
-          },
-          {
-            "evidence": {
-              "end": 70,
-              "excerpt": "Imposto sobre a Renda das Pessoas Físicas",
-              "field": "summary",
-              "field_sha256": "5087c18e04526a8904e78ed410103e45f91ba7578392fc8043be9f81769edbc6",
-              "start": 29,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653946"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_05",
-            "text": "Ainda não sabemos por essa ementa | Quais seriam alíquotas, limites, exceções e datas de vigência? Não é possível calcular o impacto individual só com o resumo oficial.",
-            "type": "reviewed_questions"
-          },
-          {
-            "evidence": {
-              "end": 131,
-              "excerpt": "lucros e dividendos distribuídos por pessoas jurídicas",
-              "field": "summary",
-              "field_sha256": "5087c18e04526a8904e78ed410103e45f91ba7578392fc8043be9f81769edbc6",
-              "start": 77,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653946"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_05",
-            "text": "Ainda não sabemos por essa ementa | Quais seriam alíquotas, limites, exceções e datas de vigência? Não é possível calcular o impacto individual só com o resumo oficial.",
-            "type": "reviewed_questions"
-          },
-          {
-            "evidence": {
-              "end": 26,
-              "excerpt": "Apresentação de Proposição",
-              "field": "stage",
-              "field_sha256": "7ad4f3a2409e2196a7e3ccc89d81061c388c76f096e8a3e5181944076982a9b7",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653946"
-            },
-            "limitation": "Registro de tramitação.",
-            "location": "card_06",
-            "text": "Apresentação de Proposição",
-            "type": "procedural_record"
-          },
-          {
-            "evidence": {
-              "end": 10,
-              "excerpt": "2026-11-13",
-              "field": "stage_date",
-              "field_sha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653946"
-            },
-            "limitation": "Não comprova vigência.",
-            "location": "card_06",
-            "text": "2026-11-13",
-            "type": "record_date"
-          },
-          {
-            "evidence": {
-              "end": 12,
-              "excerpt": "PL 5854/2026",
-              "field": "title",
-              "field_sha256": "81f44fe0ef4fb74e0766fb66853da19da076994d133585b2a455c7fd9b37009f",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653946"
-            },
-            "limitation": "Fonte para leitura integral.",
-            "location": "card_07",
-            "text": "PL 5854/2026",
-            "type": "source_reference"
-          },
-          {
-            "evidence": {
-              "end": 70,
-              "excerpt": "Imposto sobre a Renda das Pessoas Físicas",
-              "field": "summary",
-              "field_sha256": "5087c18e04526a8904e78ed410103e45f91ba7578392fc8043be9f81769edbc6",
-              "start": 29,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653946"
-            },
-            "limitation": "Paráfrase revisada.",
-            "location": "caption",
-            "text": "Incidência do Imposto de Renda das Pessoas Físicas sobre lucros e dividendos distribuídos por pessoas jurídicas.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 131,
-              "excerpt": "lucros e dividendos distribuídos por pessoas jurídicas",
-              "field": "summary",
-              "field_sha256": "5087c18e04526a8904e78ed410103e45f91ba7578392fc8043be9f81769edbc6",
-              "start": 77,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653946"
-            },
-            "limitation": "Impacto potencial.",
-            "location": "caption",
-            "text": "Se houver mudança na tributação, quem recebe essas distribuições pode ter alteração no valor líquido recebido, conforme as regras aprovadas.",
-            "type": "reviewed_conditional"
-          }
-        ],
-        "limitation": "Revisão editorial de narrativa controlada; não verifica impacto real ou texto integral.",
-        "policy": "didactic-v4",
-        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653946",
-        "unverified_dimensions": [
-          "legal_effect",
-          "implementation",
-          "budget",
-          "causality",
-          "social_impact"
-        ],
-        "version": "b98ae1ec690f70"
-      },
-      "claim_matrix_sha256": "3ba246ebf881f80d14f69ca95e6ecee4a7dd63ae5be3d9226a8e5c418a69e69d",
-      "closing_media_sha256": "66b93415b28454753c634256d101cb53acbe79983b4d2db32dc150c29a34fa64",
-      "content_sha256": "b46b222bee628f1e9d4c38c1c502c016468a501daf13f39aefee7315a32f2df7",
-      "decision": "approved_documentary_only",
-      "id": "camara:2653946",
-      "issues": [],
-      "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-      "policy": "documentary-template-v4-didactic",
-      "version": "b98ae1ec690f70"
-    },
-    {
-      "checked_at": "2026-11-19T11:28:13.813086-03:00",
+      "checked_at": "2026-11-19T20:36:31.097944-03:00",
       "decision": "rejected",
       "id": "camara:2653947",
       "issues": [
@@ -261,7 +14,7 @@
       "version": "a9ab7e30775280"
     },
     {
-      "checked_at": "2026-11-19T11:28:13.813086-03:00",
+      "checked_at": "2026-11-19T20:36:31.097944-03:00",
       "decision": "rejected",
       "id": "camara:2653944",
       "issues": [
@@ -271,7 +24,7 @@
       "version": "2d94a3cc4eebf7"
     },
     {
-      "checked_at": "2026-11-19T11:28:13.813086-03:00",
+      "checked_at": "2026-11-19T20:36:31.097944-03:00",
       "decision": "rejected",
       "id": "camara:2654174",
       "issues": [
@@ -281,7 +34,7 @@
       "version": "abe5fda5fc0602"
     },
     {
-      "checked_at": "2026-11-19T11:28:13.813086-03:00",
+      "checked_at": "2026-11-19T20:36:31.097944-03:00",
       "decision": "rejected",
       "id": "camara:2654163",
       "issues": [
@@ -300,7 +53,7 @@
         "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
         "e0455d8181fb89762fed472aca57923e25d716cca1d0ebe697eb9f7d334ef621"
       ],
-      "checked_at": "2026-11-19T11:28:13.813086-03:00",
+      "checked_at": "2026-11-19T20:36:31.097944-03:00",
       "claim_matrix": {
         "document_id": "camara:2654371",
         "entries": [
@@ -456,7 +209,7 @@
         "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
         "cc70ab72c2e5cf70c6edbb68d57ddcc264fe9ca53b6d160c1af039d44912276d"
       ],
-      "checked_at": "2026-11-19T11:28:13.813086-03:00",
+      "checked_at": "2026-11-19T20:36:31.097944-03:00",
       "claim_matrix": {
         "document_id": "camara:2655462",
         "entries": [
@@ -612,7 +365,7 @@
         "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
         "4739f26c76646637802f8bf6eb83fd8a4e1b68d3c380f4bde7ebbbf1d9a491be"
       ],
-      "checked_at": "2026-11-19T11:28:13.813086-03:00",
+      "checked_at": "2026-11-19T20:36:31.097944-03:00",
       "claim_matrix": {
         "document_id": "camara:2655411",
         "entries": [
@@ -764,6 +517,169 @@
       "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
       "policy": "documentary-template-v4-didactic",
       "version": "9928715e313319"
+    },
+    {
+      "card_sha256": [
+        "a0cdd74cc2a33cd99c2fdc04e31c7585a997ac377c9010be3db8ee211bde7de5",
+        "162a88a3296049ffb43f519fdf6a73e2f55d57b84e4e1c38f836ddb221eda909",
+        "29d5f250778aee076f7868cbb106fb0852d079d0c734f9f468ac7ae3598611f4",
+        "dbfb76ed177e4d8a0d49c5c98a50baf16b338171ce743d85ea19dc6c6b34edad",
+        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
+        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
+        "0c227b3a07bda15be749d86e3345f7509653f7ce7eef9deb3535093611c005ac"
+      ],
+      "checked_at": "2026-11-19T20:36:31.097944-03:00",
+      "claim_matrix": {
+        "document_id": "camara:2655695",
+        "entries": [
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5756/2026",
+              "field": "title",
+              "field_sha256": "cc9729ba9091fe2012cf6d3be5de5ec9cbee5089429aec0cde6ce385b4fa1180",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
+            },
+            "limitation": "Identifica a proposição, não sua aprovação.",
+            "location": "card_01",
+            "text": "PL 5756/2026",
+            "type": "document_identity"
+          },
+          {
+            "evidence": {
+              "end": 324,
+              "excerpt": "Altera a Lei nº 14.172, de 10 de junho de 2021, para ampliar o prazo para aplicação e eventual restituição dos recursos entregues pela União aos Estados e ao Distrito Federal voltados para a garantia do acesso à internet, com fins educacionais, aos estabelecimentos de ensino, aos alunos e aos professores da rede pública de",
+              "field": "summary",
+              "field_sha256": "d324ffe2e06d822e6b1783cf2a78c2698d4e4824cfdd5247178f119f78508c7c",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
+            },
+            "limitation": "Ementa oficial, não texto integral nem prova de impacto.",
+            "location": "card_02",
+            "text": "Altera a Lei nº 14.172, de 10 de junho de 2021, para ampliar o prazo para aplicação e eventual restituição dos recursos entregues pela União aos Estados e ao Distrito Federal voltados para a garantia do acesso à internet, com fins educacionais, aos estabelecimentos de ensino, aos alunos e aos professores da rede pública de",
+            "type": "attributed_excerpt"
+          },
+          {
+            "evidence": {
+              "end": 439,
+              "excerpt": "ensino dos Estados, do Distrito Federal e dos Municípios, em virtude da calamidade pública decorrente da covid-19.",
+              "field": "summary",
+              "field_sha256": "d324ffe2e06d822e6b1783cf2a78c2698d4e4824cfdd5247178f119f78508c7c",
+              "start": 325,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
+            },
+            "limitation": "Continuação da ementa oficial.",
+            "location": "card_03",
+            "text": "ensino dos Estados, do Distrito Federal e dos Municípios, em virtude da calamidade pública decorrente da covid-19.",
+            "type": "attributed_excerpt"
+          },
+          {
+            "evidence": {
+              "end": 26,
+              "excerpt": "Apresentação de Proposição",
+              "field": "stage",
+              "field_sha256": "7ad4f3a2409e2196a7e3ccc89d81061c388c76f096e8a3e5181944076982a9b7",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
+            },
+            "limitation": "Registro de tramitação na data de referência.",
+            "location": "card_04",
+            "text": "Apresentação de Proposição",
+            "type": "procedural_record"
+          },
+          {
+            "evidence": {
+              "end": 10,
+              "excerpt": "2026-11-19",
+              "field": "stage_date",
+              "field_sha256": "010cc5180132fb0adc25f5f348f229084383e04439f2c21bb9b55505c19a04f8",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
+            },
+            "limitation": "Data do andamento, não da vigência.",
+            "location": "card_04",
+            "text": "2026-11-19",
+            "type": "record_date"
+          },
+          {
+            "evidence": null,
+            "limitation": "Não atribui impacto, vigência ou financiamento.",
+            "location": "card_05",
+            "text": "A existência de um projeto não comprova aprovação, entrada em vigor, financiamento ou resultados.",
+            "type": "scope_limitation"
+          },
+          {
+            "evidence": null,
+            "limitation": "Questões para acompanhamento, não afirmações comprovadas.",
+            "location": "card_06",
+            "text": "Qual é o texto final?\n\nQuais órgãos respondem pela execução?\n\nHá custo previsto e indicadores de resultado?",
+            "type": "open_questions"
+          },
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5756/2026",
+              "field": "title",
+              "field_sha256": "cc9729ba9091fe2012cf6d3be5de5ec9cbee5089429aec0cde6ce385b4fa1180",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
+            },
+            "limitation": "Referência documental.",
+            "location": "card_07",
+            "text": "PL 5756/2026",
+            "type": "source_reference"
+          },
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5756/2026",
+              "field": "title",
+              "field_sha256": "cc9729ba9091fe2012cf6d3be5de5ec9cbee5089429aec0cde6ce385b4fa1180",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
+            },
+            "limitation": "Identifica a proposição.",
+            "location": "caption",
+            "text": "PL 5756/2026",
+            "type": "document_identity"
+          },
+          {
+            "evidence": {
+              "end": 10,
+              "excerpt": "2026-11-19",
+              "field": "stage_date",
+              "field_sha256": "010cc5180132fb0adc25f5f348f229084383e04439f2c21bb9b55505c19a04f8",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
+            },
+            "limitation": "Data registrada na fonte.",
+            "location": "caption",
+            "text": "2026-11-19",
+            "type": "record_date"
+          }
+        ],
+        "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
+        "policy": "documentary-claims-v2-hooks",
+        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695",
+        "unverified_dimensions": [
+          "legal_effect",
+          "implementation",
+          "budget",
+          "causality",
+          "social_impact"
+        ],
+        "version": "a39168135eade1"
+      },
+      "claim_matrix_sha256": "2b192b6272b1f07f9d4313139dccd49683ab61d3574a077b655467c236d44707",
+      "closing_media_sha256": "0c227b3a07bda15be749d86e3345f7509653f7ce7eef9deb3535093611c005ac",
+      "content_sha256": "fa0ecb7d165f79251a7451677d0ef0f558030deb9209673497c3b14dd6764774",
+      "decision": "approved_documentary_only",
+      "id": "camara:2655695",
+      "issues": [],
+      "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
+      "policy": "documentary-template-v4-didactic",
+      "version": "a39168135eade1"
     }
   ]
 }
