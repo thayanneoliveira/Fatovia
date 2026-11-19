@@ -68,60 +68,6 @@
   "metrics": [],
   "pending": [
     {
-      "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-      "caption": "Imposto sobre lucros e dividendos: quem pode ser afetado?\n\nIncidência do Imposto de Renda das Pessoas Físicas sobre lucros e dividendos distribuídos por pessoas jurídicas.\n\nSe houver mudança na tributação, quem recebe essas distribuições pode ter alteração no valor líquido recebido, conforme as regras aprovadas.\n\nPL 5854/2026 | Registro de 2026-11-13. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2653946\nID editorial: camara:2653946/b98ae1ec690f70/didactic-v4\n#FatoVia #PoliticasPublicas",
-      "cards": [
-        "docs/media/camara-2653946/b98ae1ec690f70/didactic-v4/01.jpg",
-        "docs/media/camara-2653946/b98ae1ec690f70/didactic-v4/02.jpg",
-        "docs/media/camara-2653946/b98ae1ec690f70/didactic-v4/03.jpg",
-        "docs/media/camara-2653946/b98ae1ec690f70/didactic-v4/04.jpg",
-        "docs/media/camara-2653946/b98ae1ec690f70/didactic-v4/05.jpg",
-        "docs/media/camara-2653946/b98ae1ec690f70/didactic-v4/06.jpg",
-        "docs/media/camara-2653946/b98ae1ec690f70/didactic-v4/07.jpg"
-      ],
-      "discovery_source_count": 0,
-      "editorial_score": 72,
-      "evidence": {
-        "checked_at": "2026-11-17T20:51:37.755293-03:00",
-        "claims": [
-          {
-            "basis": "identificacao_da_proposicao",
-            "field": "title"
-          },
-          {
-            "basis": "ementa_oficial_atribuida",
-            "field": "summary"
-          },
-          {
-            "basis": "registro_de_tramitacao",
-            "field": "stage"
-          }
-        ],
-        "content_sha256": "b46b222bee628f1e9d4c38c1c502c016468a501daf13f39aefee7315a32f2df7",
-        "kind": "official_document_attribution",
-        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
-        "record_date": "2026-11-13",
-        "schema": 1,
-        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653946"
-      },
-      "explore_signal_count": 0,
-      "id": "camara:2653946",
-      "public_url": "https://www.camara.leg.br/propostas-legislativas/2653946",
-      "source_name": "Câmara dos Deputados",
-      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653946",
-      "stage": "Apresentação de Proposição",
-      "stage_date": "2026-11-13",
-      "status": "ready",
-      "summary": "Dispõe sobre a incidência do Imposto sobre a Renda das Pessoas Físicas sobre lucros e dividendos distribuídos por pessoas jurídicas, altera as Leis nº 9.249, de 26 de dezembro de 1995, e nº 9.250, de 26 de dezembro de 1995, e dá outras providências.",
-      "summary_hash": "2a14a675828606",
-      "template_revision": "didactic-v4",
-      "title": "PL 5854/2026",
-      "topics": [
-        "economia"
-      ],
-      "version": "b98ae1ec690f70"
-    },
-    {
       "caption": "O que está previsto nesta proposta?\n\nPL 5855/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653947\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653947/a9ab7e30775280\n#FatoVia #PoliticasPublicas #CongressoNacional",
       "cards": [
         "docs/media/camara-2653947/a9ab7e30775280/01.jpg",
@@ -645,15 +591,24 @@
         "economia"
       ],
       "version": "b51b94f0828426"
+    },
+    {
+      "evidence_sha256": "b46b222bee628f1e9d4c38c1c502c016468a501daf13f39aefee7315a32f2df7",
+      "format": "carousel",
+      "id": "camara:2653946",
+      "media_id": "18185273779443646",
+      "permalink": "https://www.instagram.com/p/Df7TG8mEXio/",
+      "published_at": "2026-11-19T11:29:38.954024-03:00",
+      "summary": "Dispõe sobre a incidência do Imposto sobre a Renda das Pessoas Físicas sobre lucros e dividendos distribuídos por pessoas jurídicas, altera as Leis nº 9.249, de 26 de dezembro de 1995, e nº 9.250, de 26 de dezembro de 1995, e dá outras providências.",
+      "summary_hash": "2a14a675828606",
+      "title": "PL 5854/2026",
+      "topics": [
+        "economia"
+      ],
+      "version": "b98ae1ec690f70"
     }
   ],
-  "publishing": {
-    "format": "carousel",
-    "id": "camara:2653946",
-    "started_at": "2026-11-19T11:29:36.723705-03:00",
-    "status": "checkpointed",
-    "version": "b98ae1ec690f70"
-  },
+  "publishing": null,
   "replacement_request": {
     "authorization": "owner_requested_replacement_after_manual_deletion_2026-11-15",
     "id": "camara:2653819",
