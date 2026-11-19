@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-19",
+  "observed_at": "2026-11-19T08:49:01-03:00",
+  "decision": "hold_new_publication_pending_pilot_review",
+  "publication_initiated": false,
+  "additional_spend_brl": 0,
+  "policy_blob": "a62de7ad1c8974f78a01d40fa45f4c6eceba6319",
+  "state_blob": "3be23a6778643cdb5fb2df0ce2df10c90acc2fc0",
+  "pilot": {
+    "published": 7,
+    "max_total": 4,
+    "previous_day": 3,
+    "max_daily": 2,
+    "remaining": 0,
+    "next_phase_authorized": false,
+    "issues": [
+      "pilot_daily_limit_exceeded",
+      "pilot_total_exceeded"
+    ],
+    "cause_observed": "multiformat date-based branch bypasses pilot_allowed after 2026-11-18; pilot report still counts those items"
+  },
+  "previous_day_media": [
+    "17908023129353266",
+    "18151573990488064",
+    "18111958382223422"
+  ],
+  "today_recorded": 0,
+  "checkpoint": null,
+  "queue": [
+    {
+      "id": "camara:2653946",
+      "status": "hold_pilot_and_fresh_source_review"
+    },
+    {
+      "id": "camara:2654371",
+      "status": "hold_template_revision"
+    },
+    {
+      "id": "camara:2655462",
+      "status": "hold_template_revision"
+    },
+    {
+      "id": "reel:inflacao-precos-20261118",
+      "status": "hold_missing_hosted_file_independent_reviews_cover_delivery"
+    }
+  ],
+  "other_rejected": [
+    "camara:2653947",
+    "camara:2653944",
+    "camara:2654174",
+    "camara:2654163"
+  ],
+  "source_revalidation": "direct Camara API unavailable in web tool; SIDRA 403; no fresh approval",
+  "account": "Windsor labels account nempediu; current Meta username not independently confirmed; native publisher validates exact username and ID before delivery",
+  "learning": {
+    "samples_24h": 1,
+    "samples_72h": 3,
+    "eligible_72h": 0,
+    "min_samples": 20,
+    "decision": "no timing optimization"
+  },
+  "last_publisher_run": {
+    "id": 44456681641,
+    "tests": "success",
+    "delivery": "skipped"
+  },
+  "recommendation": "Existing watchdog/operator should investigate pilot versus migration gate, test integrated quota and fail-closed behavior before resuming; no new watchdog or production gate changes in this supervision. Native Reel delivery lacks cover_url/thumb_offset; add tested support before delivery.",
+  "limits": "No independent rehash of current media bytes; no live Meta history reconciliation; prior ledger only."
+}
