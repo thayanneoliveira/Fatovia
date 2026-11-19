@@ -1,325 +1,8 @@
 {
-  "generated_at": "2026-11-18T20:25:03.544197-03:00",
+  "generated_at": "2026-11-19T11:28:13.813086-03:00",
   "limitations": "Independent rule-based check of the official source, approved template and bytes; not general factual or semantic review.",
   "policy": "documentary-template-v4-didactic",
   "reviews": [
-    {
-      "card_sha256": [
-        "a9cc55c524e88731580701e9049b34bd9b7dcb8b4ec5382d563eadce910e3a44",
-        "078d64cbcbc1085b1e6c5dddc6b1aba3792b8376d00e09408cc528435ccca258",
-        "a1449cad1f906208d7f58052a60dbc7d376b07629a3fc721363877831ee3c444",
-        "cf0a07869c6193668fd22db92da001b6da2d96d3ae21d9d5e442070d3cecb5ad",
-        "eecd7791359fe368df8183ce33b9155fae9e1688b10f1749bd6c5af97a9f1535",
-        "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
-        "0cdece1d67c3aefb0f93f17749b0451524df43d4da52a58101a2d605e9ef829b"
-      ],
-      "checked_at": "2026-11-18T20:25:03.544197-03:00",
-      "claim_matrix": {
-        "document_id": "camara:2653822",
-        "entries": [
-          {
-            "evidence": {
-              "end": 67,
-              "excerpt": "parcela da receita do Imposto Seletivo",
-              "field": "summary",
-              "field_sha256": "37a1624c779fb9c0d96cd09733a5d9a53bc5be45f8a856f586e5e6458ca1c07b",
-              "start": 29,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653822"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_01",
-            "text": "Mais recursos para tratamentos no SUS? | Projeto propõe destinar parte da receita do Imposto Seletivo à saúde.",
-            "type": "reviewed_question"
-          },
-          {
-            "evidence": {
-              "end": 118,
-              "excerpt": "financiamento adicional de tratamentos de saúde",
-              "field": "summary",
-              "field_sha256": "37a1624c779fb9c0d96cd09733a5d9a53bc5be45f8a856f586e5e6458ca1c07b",
-              "start": 71,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653822"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_01",
-            "text": "Mais recursos para tratamentos no SUS? | Projeto propõe destinar parte da receita do Imposto Seletivo à saúde.",
-            "type": "reviewed_question"
-          },
-          {
-            "evidence": {
-              "end": 160,
-              "excerpt": "Sistema Único de Saúde (SUS)",
-              "field": "summary",
-              "field_sha256": "37a1624c779fb9c0d96cd09733a5d9a53bc5be45f8a856f586e5e6458ca1c07b",
-              "start": 132,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653822"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_01",
-            "text": "Mais recursos para tratamentos no SUS? | Projeto propõe destinar parte da receita do Imposto Seletivo à saúde.",
-            "type": "reviewed_question"
-          },
-          {
-            "evidence": {
-              "end": 67,
-              "excerpt": "parcela da receita do Imposto Seletivo",
-              "field": "summary",
-              "field_sha256": "37a1624c779fb9c0d96cd09733a5d9a53bc5be45f8a856f586e5e6458ca1c07b",
-              "start": 29,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653822"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_02",
-            "text": "O que o projeto prevê? | Destinar uma parcela da receita do Imposto Seletivo ao financiamento adicional de tratamentos no Sistema Único de Saúde.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 118,
-              "excerpt": "financiamento adicional de tratamentos de saúde",
-              "field": "summary",
-              "field_sha256": "37a1624c779fb9c0d96cd09733a5d9a53bc5be45f8a856f586e5e6458ca1c07b",
-              "start": 71,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653822"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_02",
-            "text": "O que o projeto prevê? | Destinar uma parcela da receita do Imposto Seletivo ao financiamento adicional de tratamentos no Sistema Único de Saúde.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 160,
-              "excerpt": "Sistema Único de Saúde (SUS)",
-              "field": "summary",
-              "field_sha256": "37a1624c779fb9c0d96cd09733a5d9a53bc5be45f8a856f586e5e6458ca1c07b",
-              "start": 132,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653822"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_02",
-            "text": "O que o projeto prevê? | Destinar uma parcela da receita do Imposto Seletivo ao financiamento adicional de tratamentos no Sistema Único de Saúde.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 67,
-              "excerpt": "parcela da receita do Imposto Seletivo",
-              "field": "summary",
-              "field_sha256": "37a1624c779fb9c0d96cd09733a5d9a53bc5be45f8a856f586e5e6458ca1c07b",
-              "start": 29,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653822"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_03",
-            "text": "De receita a atendimento | Destinar receita a uma finalidade é uma etapa do financiamento. Para virar atendimento, ainda são necessários recursos disponíveis e execução.",
-            "type": "reviewed_mechanism"
-          },
-          {
-            "evidence": {
-              "end": 118,
-              "excerpt": "financiamento adicional de tratamentos de saúde",
-              "field": "summary",
-              "field_sha256": "37a1624c779fb9c0d96cd09733a5d9a53bc5be45f8a856f586e5e6458ca1c07b",
-              "start": 71,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653822"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_03",
-            "text": "De receita a atendimento | Destinar receita a uma finalidade é uma etapa do financiamento. Para virar atendimento, ainda são necessários recursos disponíveis e execução.",
-            "type": "reviewed_mechanism"
-          },
-          {
-            "evidence": {
-              "end": 160,
-              "excerpt": "Sistema Único de Saúde (SUS)",
-              "field": "summary",
-              "field_sha256": "37a1624c779fb9c0d96cd09733a5d9a53bc5be45f8a856f586e5e6458ca1c07b",
-              "start": 132,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653822"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_03",
-            "text": "De receita a atendimento | Destinar receita a uma finalidade é uma etapa do financiamento. Para virar atendimento, ainda são necessários recursos disponíveis e execução.",
-            "type": "reviewed_mechanism"
-          },
-          {
-            "evidence": {
-              "end": 67,
-              "excerpt": "parcela da receita do Imposto Seletivo",
-              "field": "summary",
-              "field_sha256": "37a1624c779fb9c0d96cd09733a5d9a53bc5be45f8a856f586e5e6458ca1c07b",
-              "start": 29,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653822"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_04",
-            "text": "E para quem usa o SUS? | Se aprovado e executado, o financiamento adicional pode ampliar recursos para tratamentos. A ementa não garante redução de filas nem atendimento específico.",
-            "type": "reviewed_conditional"
-          },
-          {
-            "evidence": {
-              "end": 118,
-              "excerpt": "financiamento adicional de tratamentos de saúde",
-              "field": "summary",
-              "field_sha256": "37a1624c779fb9c0d96cd09733a5d9a53bc5be45f8a856f586e5e6458ca1c07b",
-              "start": 71,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653822"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_04",
-            "text": "E para quem usa o SUS? | Se aprovado e executado, o financiamento adicional pode ampliar recursos para tratamentos. A ementa não garante redução de filas nem atendimento específico.",
-            "type": "reviewed_conditional"
-          },
-          {
-            "evidence": {
-              "end": 160,
-              "excerpt": "Sistema Único de Saúde (SUS)",
-              "field": "summary",
-              "field_sha256": "37a1624c779fb9c0d96cd09733a5d9a53bc5be45f8a856f586e5e6458ca1c07b",
-              "start": 132,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653822"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_04",
-            "text": "E para quem usa o SUS? | Se aprovado e executado, o financiamento adicional pode ampliar recursos para tratamentos. A ementa não garante redução de filas nem atendimento específico.",
-            "type": "reviewed_conditional"
-          },
-          {
-            "evidence": {
-              "end": 67,
-              "excerpt": "parcela da receita do Imposto Seletivo",
-              "field": "summary",
-              "field_sha256": "37a1624c779fb9c0d96cd09733a5d9a53bc5be45f8a856f586e5e6458ca1c07b",
-              "start": 29,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653822"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_05",
-            "text": "O que acompanhar? | Qual parcela da receita seria destinada? Quais tratamentos? Como os recursos seriam distribuídos e monitorados? A ementa não informa esses detalhes.",
-            "type": "reviewed_questions"
-          },
-          {
-            "evidence": {
-              "end": 118,
-              "excerpt": "financiamento adicional de tratamentos de saúde",
-              "field": "summary",
-              "field_sha256": "37a1624c779fb9c0d96cd09733a5d9a53bc5be45f8a856f586e5e6458ca1c07b",
-              "start": 71,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653822"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_05",
-            "text": "O que acompanhar? | Qual parcela da receita seria destinada? Quais tratamentos? Como os recursos seriam distribuídos e monitorados? A ementa não informa esses detalhes.",
-            "type": "reviewed_questions"
-          },
-          {
-            "evidence": {
-              "end": 160,
-              "excerpt": "Sistema Único de Saúde (SUS)",
-              "field": "summary",
-              "field_sha256": "37a1624c779fb9c0d96cd09733a5d9a53bc5be45f8a856f586e5e6458ca1c07b",
-              "start": 132,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653822"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_05",
-            "text": "O que acompanhar? | Qual parcela da receita seria destinada? Quais tratamentos? Como os recursos seriam distribuídos e monitorados? A ementa não informa esses detalhes.",
-            "type": "reviewed_questions"
-          },
-          {
-            "evidence": {
-              "end": 26,
-              "excerpt": "Apresentação de Proposição",
-              "field": "stage",
-              "field_sha256": "7ad4f3a2409e2196a7e3ccc89d81061c388c76f096e8a3e5181944076982a9b7",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653822"
-            },
-            "limitation": "Registro de tramitação.",
-            "location": "card_06",
-            "text": "Apresentação de Proposição",
-            "type": "procedural_record"
-          },
-          {
-            "evidence": {
-              "end": 10,
-              "excerpt": "2026-11-13",
-              "field": "stage_date",
-              "field_sha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653822"
-            },
-            "limitation": "Não comprova vigência.",
-            "location": "card_06",
-            "text": "2026-11-13",
-            "type": "record_date"
-          },
-          {
-            "evidence": {
-              "end": 12,
-              "excerpt": "PL 5851/2026",
-              "field": "title",
-              "field_sha256": "fcdde387fb05ce872bfe4354ac6b28700a8820fbacdcaaa8cc3d808e0e7c1957",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653822"
-            },
-            "limitation": "Fonte para leitura integral.",
-            "location": "card_07",
-            "text": "PL 5851/2026",
-            "type": "source_reference"
-          },
-          {
-            "evidence": {
-              "end": 67,
-              "excerpt": "parcela da receita do Imposto Seletivo",
-              "field": "summary",
-              "field_sha256": "37a1624c779fb9c0d96cd09733a5d9a53bc5be45f8a856f586e5e6458ca1c07b",
-              "start": 29,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653822"
-            },
-            "limitation": "Paráfrase revisada.",
-            "location": "caption",
-            "text": "Destinar uma parcela da receita do Imposto Seletivo ao financiamento adicional de tratamentos no Sistema Único de Saúde.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 160,
-              "excerpt": "Sistema Único de Saúde (SUS)",
-              "field": "summary",
-              "field_sha256": "37a1624c779fb9c0d96cd09733a5d9a53bc5be45f8a856f586e5e6458ca1c07b",
-              "start": 132,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653822"
-            },
-            "limitation": "Impacto potencial.",
-            "location": "caption",
-            "text": "Se aprovado e executado, o financiamento adicional pode ampliar recursos para tratamentos. A ementa não garante redução de filas nem atendimento específico.",
-            "type": "reviewed_conditional"
-          }
-        ],
-        "limitation": "Revisão editorial de narrativa controlada; não verifica impacto real ou texto integral.",
-        "policy": "didactic-v4",
-        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653822",
-        "unverified_dimensions": [
-          "legal_effect",
-          "implementation",
-          "budget",
-          "causality",
-          "social_impact"
-        ],
-        "version": "b51b94f0828426"
-      },
-      "claim_matrix_sha256": "041bbdf0ff8a1e2178f994ca35354013ea5f83d81e398b9d63c2cf507c5d45ae",
-      "closing_media_sha256": "0cdece1d67c3aefb0f93f17749b0451524df43d4da52a58101a2d605e9ef829b",
-      "content_sha256": "274d1da2ed88b2c4a6f9dd15c169deb52738ea3775be6cd426183cb24234a778",
-      "decision": "approved_documentary_only",
-      "id": "camara:2653822",
-      "issues": [],
-      "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-      "policy": "documentary-template-v4-didactic",
-      "version": "b51b94f0828426"
-    },
     {
       "card_sha256": [
         "7955f1972ae9670de9757e13454ceb834a129d74404391b56889202ed2ad40e9",
@@ -330,7 +13,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "66b93415b28454753c634256d101cb53acbe79983b4d2db32dc150c29a34fa64"
       ],
-      "checked_at": "2026-11-18T20:25:03.544197-03:00",
+      "checked_at": "2026-11-19T11:28:13.813086-03:00",
       "claim_matrix": {
         "document_id": "camara:2653946",
         "entries": [
@@ -568,7 +251,7 @@
       "version": "b98ae1ec690f70"
     },
     {
-      "checked_at": "2026-11-18T20:25:03.544197-03:00",
+      "checked_at": "2026-11-19T11:28:13.813086-03:00",
       "decision": "rejected",
       "id": "camara:2653947",
       "issues": [
@@ -578,7 +261,7 @@
       "version": "a9ab7e30775280"
     },
     {
-      "checked_at": "2026-11-18T20:25:03.544197-03:00",
+      "checked_at": "2026-11-19T11:28:13.813086-03:00",
       "decision": "rejected",
       "id": "camara:2653944",
       "issues": [
@@ -588,7 +271,7 @@
       "version": "2d94a3cc4eebf7"
     },
     {
-      "checked_at": "2026-11-18T20:25:03.544197-03:00",
+      "checked_at": "2026-11-19T11:28:13.813086-03:00",
       "decision": "rejected",
       "id": "camara:2654174",
       "issues": [
@@ -598,7 +281,7 @@
       "version": "abe5fda5fc0602"
     },
     {
-      "checked_at": "2026-11-18T20:25:03.544197-03:00",
+      "checked_at": "2026-11-19T11:28:13.813086-03:00",
       "decision": "rejected",
       "id": "camara:2654163",
       "issues": [
@@ -617,7 +300,7 @@
         "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
         "e0455d8181fb89762fed472aca57923e25d716cca1d0ebe697eb9f7d334ef621"
       ],
-      "checked_at": "2026-11-18T20:25:03.544197-03:00",
+      "checked_at": "2026-11-19T11:28:13.813086-03:00",
       "claim_matrix": {
         "document_id": "camara:2654371",
         "entries": [
@@ -773,7 +456,7 @@
         "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
         "cc70ab72c2e5cf70c6edbb68d57ddcc264fe9ca53b6d160c1af039d44912276d"
       ],
-      "checked_at": "2026-11-18T20:25:03.544197-03:00",
+      "checked_at": "2026-11-19T11:28:13.813086-03:00",
       "claim_matrix": {
         "document_id": "camara:2655462",
         "entries": [
@@ -918,6 +601,169 @@
       "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
       "policy": "documentary-template-v4-didactic",
       "version": "b2c418b5ca1c25"
+    },
+    {
+      "card_sha256": [
+        "27ffbee83c200a807c09dc49a49a833cda1a726895df693c7280e67e88eec7f9",
+        "4fc491e5f518c1726db5f5b89cf8b3f973787feda573d11b1d838e4409ab547f",
+        "41a66000ab3112f73be8ba6433c25b716bfc2db2979f649e1fc37bee324f7c84",
+        "d8b322f61240c9738f7936a9e58ae3429ab32796d516ac1494dcc0bbc9d25ff4",
+        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
+        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
+        "4739f26c76646637802f8bf6eb83fd8a4e1b68d3c380f4bde7ebbbf1d9a491be"
+      ],
+      "checked_at": "2026-11-19T11:28:13.813086-03:00",
+      "claim_matrix": {
+        "document_id": "camara:2655411",
+        "entries": [
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5897/2026",
+              "field": "title",
+              "field_sha256": "8908fb819cc9edfb9c708510e7ad4763df62d07964635c572a5692f35f4c97d3",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
+            },
+            "limitation": "Identifica a proposição, não sua aprovação.",
+            "location": "card_01",
+            "text": "PL 5897/2026",
+            "type": "document_identity"
+          },
+          {
+            "evidence": {
+              "end": 324,
+              "excerpt": "Institui o Programa Remédio na Mão, destinado a facilitar a localização e o acesso gratuito a medicamentos e insumos de saúde disponibilizados pelo Sistema Único de Saúde e pelo Programa Farmácia Popular do Brasil, mediante identificação digital das unidades dispensadoras, consulta atualizada de disponibilidade, orientação",
+              "field": "summary",
+              "field_sha256": "ff2a84d3e41bc1135903b5bde1b146b4f2697d70eb897b8c301e37a1d32413e9",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
+            },
+            "limitation": "Ementa oficial, não texto integral nem prova de impacto.",
+            "location": "card_02",
+            "text": "Institui o Programa Remédio na Mão, destinado a facilitar a localização e o acesso gratuito a medicamentos e insumos de saúde disponibilizados pelo Sistema Único de Saúde e pelo Programa Farmácia Popular do Brasil, mediante identificação digital das unidades dispensadoras, consulta atualizada de disponibilidade, orientação",
+            "type": "attributed_excerpt"
+          },
+          {
+            "evidence": {
+              "end": 439,
+              "excerpt": "sobre requisitos de retirada, indicação de alternativas de atendimento e garantia de acessibilidade informacional.",
+              "field": "summary",
+              "field_sha256": "ff2a84d3e41bc1135903b5bde1b146b4f2697d70eb897b8c301e37a1d32413e9",
+              "start": 325,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
+            },
+            "limitation": "Continuação da ementa oficial.",
+            "location": "card_03",
+            "text": "sobre requisitos de retirada, indicação de alternativas de atendimento e garantia de acessibilidade informacional.",
+            "type": "attributed_excerpt"
+          },
+          {
+            "evidence": {
+              "end": 26,
+              "excerpt": "Apresentação de Proposição",
+              "field": "stage",
+              "field_sha256": "7ad4f3a2409e2196a7e3ccc89d81061c388c76f096e8a3e5181944076982a9b7",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
+            },
+            "limitation": "Registro de tramitação na data de referência.",
+            "location": "card_04",
+            "text": "Apresentação de Proposição",
+            "type": "procedural_record"
+          },
+          {
+            "evidence": {
+              "end": 10,
+              "excerpt": "2026-11-18",
+              "field": "stage_date",
+              "field_sha256": "0f45d26b9bca5bab9215ee29cc079e2776099e08de9df505123e52128fe91375",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
+            },
+            "limitation": "Data do andamento, não da vigência.",
+            "location": "card_04",
+            "text": "2026-11-18",
+            "type": "record_date"
+          },
+          {
+            "evidence": null,
+            "limitation": "Não atribui impacto, vigência ou financiamento.",
+            "location": "card_05",
+            "text": "A existência de um projeto não comprova aprovação, entrada em vigor, financiamento ou resultados.",
+            "type": "scope_limitation"
+          },
+          {
+            "evidence": null,
+            "limitation": "Questões para acompanhamento, não afirmações comprovadas.",
+            "location": "card_06",
+            "text": "Qual é o texto final?\n\nQuais órgãos respondem pela execução?\n\nHá custo previsto e indicadores de resultado?",
+            "type": "open_questions"
+          },
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5897/2026",
+              "field": "title",
+              "field_sha256": "8908fb819cc9edfb9c708510e7ad4763df62d07964635c572a5692f35f4c97d3",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
+            },
+            "limitation": "Referência documental.",
+            "location": "card_07",
+            "text": "PL 5897/2026",
+            "type": "source_reference"
+          },
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5897/2026",
+              "field": "title",
+              "field_sha256": "8908fb819cc9edfb9c708510e7ad4763df62d07964635c572a5692f35f4c97d3",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
+            },
+            "limitation": "Identifica a proposição.",
+            "location": "caption",
+            "text": "PL 5897/2026",
+            "type": "document_identity"
+          },
+          {
+            "evidence": {
+              "end": 10,
+              "excerpt": "2026-11-18",
+              "field": "stage_date",
+              "field_sha256": "0f45d26b9bca5bab9215ee29cc079e2776099e08de9df505123e52128fe91375",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
+            },
+            "limitation": "Data registrada na fonte.",
+            "location": "caption",
+            "text": "2026-11-18",
+            "type": "record_date"
+          }
+        ],
+        "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
+        "policy": "documentary-claims-v2-hooks",
+        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411",
+        "unverified_dimensions": [
+          "legal_effect",
+          "implementation",
+          "budget",
+          "causality",
+          "social_impact"
+        ],
+        "version": "9928715e313319"
+      },
+      "claim_matrix_sha256": "34e22c47936f249f98431b31de53cd0833dcef5e3460408d7165c83dab53cf58",
+      "closing_media_sha256": "4739f26c76646637802f8bf6eb83fd8a4e1b68d3c380f4bde7ebbbf1d9a491be",
+      "content_sha256": "a9edfab4280d0510c4fc2fbb12034766ca6254e7a06fd1d2369e51fc478456a8",
+      "decision": "approved_documentary_only",
+      "id": "camara:2655411",
+      "issues": [],
+      "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
+      "policy": "documentary-template-v4-didactic",
+      "version": "9928715e313319"
     }
   ]
 }
