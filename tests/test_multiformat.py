@@ -20,6 +20,18 @@ class FakeMeta:
 class MixedTests(unittest.TestCase):
     def test_migration(self):
         self.assertTrue(mf.mode(NOW));self.assertFalse(mf.mode(NOW.replace(day=17)))
+    def test_transition_requires_review(self):
+        report={"evaluation_ready":True,"issues":[],"pilot_id":"p","publications":[{"media_id":"123"}]}
+        approval={"authorized":True,"pilot_id":"p","reviewed_media_ids":["123"],"review_reference":"review-1"}
+        with patch("fatovia.pilot_report.build",return_value=report),patch.object(Path,"read_text",return_value="{}"):
+            self.assertFalse(mf.transition_authorized({},NOW,{}))
+            self.assertTrue(mf.transition_authorized({},NOW,{"pilot_transition":approval}))
+            self.assertFalse(mf.transition_authorized({},NOW,{"pilot_transition":{**approval,"reviewed_media_ids":[]}}))
+            report["issues"]=["pilot_total_exceeded"]
+            self.assertFalse(mf.transition_authorized({},NOW,{"pilot_transition":approval}))
+            report["issues"]=[]
+            report["evaluation_ready"]=False
+            self.assertFalse(mf.transition_authorized({},NOW,{"pilot_transition":approval}))
     def test_slots(self):
         self.assertEqual([mf.slot(NOW.replace(hour=h)) for h in range(8,21,3)],["carousel","carousel","reel","carousel","carousel"])
         self.assertIsNone(mf.slot(NOW.replace(minute=46)))
