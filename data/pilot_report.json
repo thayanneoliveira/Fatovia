@@ -1,6 +1,6 @@
 {
   "evaluation_ready": false,
-  "generated_at": "2026-11-19T04:14:59.800112-03:00",
+  "generated_at": "2026-11-19T14:19:54.268714-03:00",
   "issues": [
     "pilot_daily_limit_exceeded",
     "pilot_total_exceeded"
@@ -11,7 +11,7 @@
   "pilot_id": "documentary-20261115",
   "publications": [
     {
-      "age_hours": 88.49,
+      "age_hours": 98.57,
       "document_id": "camara:2653819",
       "media_id": "18213163885365403",
       "permalink": "https://www.instagram.com/p/DfxBuz7FJKv/",
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "age_hours": 81.37,
+      "age_hours": 91.46,
       "document_id": "camara:2653948",
       "media_id": "17901241947394968",
       "permalink": "https://www.instagram.com/p/DfxyoEGIO7b/",
@@ -62,7 +62,7 @@
       ]
     },
     {
-      "age_hours": 65.53,
+      "age_hours": 75.61,
       "document_id": "camara:2653813",
       "media_id": "18077986049477583",
       "permalink": "https://www.instagram.com/p/DfzfarSmlTb/",
@@ -72,7 +72,12 @@
           "status": "window_missed"
         },
         "72": {
-          "status": "not_due"
+          "age_hours": 75.6,
+          "reach": 2,
+          "saved": 0,
+          "shares": 0,
+          "status": "collected",
+          "views": 6
         }
       },
       "topics": [
@@ -80,7 +85,7 @@
       ]
     },
     {
-      "age_hours": 57.3,
+      "age_hours": 67.38,
       "document_id": "camara:2653937",
       "media_id": "18149060461583391",
       "permalink": "https://www.instagram.com/p/Df0X6Z2CfXE/",
@@ -98,14 +103,19 @@
       ]
     },
     {
-      "age_hours": 17.19,
+      "age_hours": 27.27,
       "document_id": "camara:2653940",
       "media_id": "17908023129353266",
       "permalink": "https://www.instagram.com/p/Df4rXyrkceF/",
       "published_at": "2026-11-18T11:03:51.513007-03:00",
       "samples": {
         "24": {
-          "status": "not_due"
+          "age_hours": 27.25,
+          "reach": 2,
+          "saved": 0,
+          "shares": 0,
+          "status": "collected",
+          "views": 4
         },
         "72": {
           "status": "not_due"
@@ -116,7 +126,7 @@
       ]
     },
     {
-      "age_hours": 10.81,
+      "age_hours": 20.89,
       "document_id": "camara:2653811",
       "media_id": "18151573990488064",
       "permalink": "https://www.instagram.com/p/Df5XI8aGRJR/",
@@ -134,7 +144,7 @@
       ]
     },
     {
-      "age_hours": 7.81,
+      "age_hours": 17.89,
       "document_id": "camara:2653822",
       "media_id": "18111958382223422",
       "permalink": "https://www.instagram.com/p/Df5rwjrmUcO/",
@@ -151,13 +161,31 @@
         "saude",
         "economia"
       ]
+    },
+    {
+      "age_hours": 2.84,
+      "document_id": "camara:2653946",
+      "media_id": "18185273779443646",
+      "permalink": "https://www.instagram.com/p/Df7TG8mEXio/",
+      "published_at": "2026-11-19T11:29:38.954024-03:00",
+      "samples": {
+        "24": {
+          "status": "not_due"
+        },
+        "72": {
+          "status": "not_due"
+        }
+      },
+      "topics": [
+        "economia"
+      ]
     }
   ],
-  "published": 7,
+  "published": 8,
   "remaining_allowance": 0,
   "samples_collected": {
-    "24": 1,
-    "72": 2
+    "24": 2,
+    "72": 3
   },
   "status": "review_required"
 }
