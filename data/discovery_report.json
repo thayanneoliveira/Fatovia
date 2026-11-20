@@ -1,45 +1,34 @@
 {
-  "generated_at": "2026-11-20T06:57:00.445703-03:00",
+  "generated_at": "2026-11-20T15:34:04.746744-03:00",
   "note": "Topic co-occurrence is not corroboration of an individual claim or proof of virality.",
   "publication_authorized": false,
   "signals": [
     {
-      "id": "424775dac83fa1f82396",
-      "published_at": "2026-11-19T21:36:00-03:00",
+      "id": "dbf26e21202ba1f08469",
+      "published_at": "2026-11-20T14:07:00-03:00",
       "source": "agencia_brasil",
       "status": "discovery_only",
-      "title": "Repórter da Agência Brasil vence Prêmio SBIm de Jornalismo em Saúde",
+      "title": "Maranhão: professores usam filmes e comida para educação antirracista",
       "topics": [
-        "saude"
+        "educacao"
       ],
-      "url": "https://agenciabrasil.ebc.com.br/saude/noticia/2026-11/reporter-da-agencia-brasil-vence-premio-sbim-de-jornalismo-em-saude"
+      "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-11/maranhao-professores-usam-filmes-e-comida-para-educacao-antirracista"
     },
     {
-      "id": "81141a0e99cf240cd37a",
-      "published_at": "2026-11-19T20:33:00-03:00",
+      "id": "c688389f5e2f9262d20a",
+      "published_at": "2026-11-20T13:06:00-03:00",
       "source": "agencia_brasil",
       "status": "discovery_only",
-      "title": "CMN amplia controle sobre recolhimentos de tributos dos bancos",
+      "title": "Trabalhadores e estudantes protestam por salários e serviços na Itália",
       "topics": [
         "economia"
       ],
-      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/cmn-amplia-controle-sobre-recolhimentos-de-tributos-dos-bancos"
-    },
-    {
-      "id": "f931d4fd0d949fda37b6",
-      "published_at": "2026-11-19T20:11:00-03:00",
-      "source": "agencia_brasil",
-      "status": "discovery_only",
-      "title": "Governo lança campanha para proteger mulheres no meio digital",
-      "topics": [
-        "tecnologia"
-      ],
-      "url": "https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2026-11/governo-lanca-campanha-para-proteger-mulheres-no-meio-digital"
+      "url": "https://agenciabrasil.ebc.com.br/internacional/noticia/2026-11/trabalhadores-e-estudantes-protestam-por-salarios-e-servicos-na-italia"
     }
   ],
   "sources": {
     "agencia_brasil": {
-      "eligible_signals": 3,
+      "eligible_signals": 2,
       "status": "ok"
     },
     "ibge": {
@@ -70,17 +59,7 @@
         "agencia_brasil"
       ],
       "status": "research_required",
-      "topic": "saude"
-    },
-    {
-      "document_count": 1,
-      "explore_links": 0,
-      "source_count": 1,
-      "sources": [
-        "agencia_brasil"
-      ],
-      "status": "research_required",
-      "topic": "tecnologia"
+      "topic": "educacao"
     }
   ]
 }
