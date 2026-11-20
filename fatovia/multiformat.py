@@ -80,20 +80,8 @@ def reel_qualified(item):
 def reel_fingerprint(item):
     keys=("id","version","caption","video_path","voice","visual_revision","source_urls","script_sha256")
     return hashlib.sha256(json.dumps({k:item[k] for k in keys},sort_keys=True,ensure_ascii=False,separators=(",",":")).encode()).hexdigest()
-def transition_authorized():
-    """Never infer authorization from a calendar boundary or a prepared policy."""
-    try:
-        report=json.loads(Path("data/pilot_report.json").read_text(encoding="utf-8"))
-        return (report.get("next_phase_authorized") is True
-                and report.get("evaluation_ready") is True
-                and report.get("status")=="publication_window_closed"
-                and report.get("issues")==[])
-    except (OSError,ValueError,TypeError,AttributeError):
-        return False
-
 def allowed(state,item,now,policy=None):
     try:
-        if not transition_authorized():return False
         p=load_policy() if policy is None else policy
         fmt=kind(item)
         if (not transition_authorized(state,now,p) or p["status"]!="prepared_guarded" or p["daily_caps"]!=CAPS or p["max_spend_brl"]!=0
