@@ -1,23 +1,34 @@
 {
-  "generated_at": "2026-11-19T14:19:49.148767-03:00",
+  "generated_at": "2026-11-19T21:35:07.239838-03:00",
   "note": "Topic co-occurrence is not corroboration of an individual claim or proof of virality.",
   "publication_authorized": false,
   "signals": [
     {
-      "id": "a89aef99f3fc17db6dee",
-      "published_at": "2026-11-19T11:46:00-03:00",
+      "id": "81141a0e99cf240cd37a",
+      "published_at": "2026-11-19T20:33:00-03:00",
       "source": "agencia_brasil",
       "status": "discovery_only",
-      "title": "Escola pública do Rio vence Prêmio Melhores Escolas do Mundo",
+      "title": "CMN amplia controle sobre recolhimentos de tributos dos bancos",
       "topics": [
-        "educacao"
+        "economia"
       ],
-      "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-11/escola-publica-do-rio-vence-premio-melhores-escolas-do-mundo"
+      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/cmn-amplia-controle-sobre-recolhimentos-de-tributos-dos-bancos"
+    },
+    {
+      "id": "f931d4fd0d949fda37b6",
+      "published_at": "2026-11-19T20:11:00-03:00",
+      "source": "agencia_brasil",
+      "status": "discovery_only",
+      "title": "Governo lança campanha para proteger mulheres no meio digital",
+      "topics": [
+        "tecnologia"
+      ],
+      "url": "https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2026-11/governo-lanca-campanha-para-proteger-mulheres-no-meio-digital"
     }
   ],
   "sources": {
     "agencia_brasil": {
-      "eligible_signals": 1,
+      "eligible_signals": 2,
       "status": "ok"
     },
     "ibge": {
@@ -38,7 +49,17 @@
         "agencia_brasil"
       ],
       "status": "research_required",
-      "topic": "educacao"
+      "topic": "economia"
+    },
+    {
+      "document_count": 1,
+      "explore_links": 0,
+      "source_count": 1,
+      "sources": [
+        "agencia_brasil"
+      ],
+      "status": "research_required",
+      "topic": "tecnologia"
     }
   ]
 }

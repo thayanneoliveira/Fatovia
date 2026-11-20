@@ -93,6 +93,52 @@
         "infraestrutura"
       ],
       "views": 6
+    },
+    {
+      "age_hours": 25.13,
+      "media_id": "18111958382223422",
+      "media_type": "CAROUSEL_ALBUM",
+      "observed_at": "2026-11-19T21:35:10.259529-03:00",
+      "published_at": "2026-11-18T23:27:28+00:00",
+      "reach": 1,
+      "saved": 0,
+      "shares": 0,
+      "target_hours": 24,
+      "topics": [
+        "saude",
+        "economia"
+      ],
+      "views": 3
+    },
+    {
+      "age_hours": 28.13,
+      "media_id": "18151573990488064",
+      "media_type": "CAROUSEL_ALBUM",
+      "observed_at": "2026-11-19T21:35:10.259529-03:00",
+      "published_at": "2026-11-18T20:27:18+00:00",
+      "reach": 1,
+      "saved": 0,
+      "shares": 0,
+      "target_hours": 24,
+      "topics": [
+        "saude"
+      ],
+      "views": 6
+    },
+    {
+      "age_hours": 74.63,
+      "media_id": "18149060461583391",
+      "media_type": "CAROUSEL_ALBUM",
+      "observed_at": "2026-11-19T21:35:10.259529-03:00",
+      "published_at": "2026-11-16T21:57:35+00:00",
+      "reach": 2,
+      "saved": 0,
+      "shares": 0,
+      "target_hours": 72,
+      "topics": [
+        "economia"
+      ],
+      "views": 7
     }
   ],
   "metrics": [],
