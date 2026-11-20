@@ -23,14 +23,7 @@
     "topic_matches": 26,
     "verified": 24
   },
-  "selected": [
-    {
-      "discover_sources": 1,
-      "explore": 0,
-      "id": "camara:2655695",
-      "score": 84
-    }
-  ],
-  "staged": 1,
-  "timestamp": "2026-11-19T20:35:59.886477-03:00"
+  "selected": [],
+  "staged": 0,
+  "timestamp": "2026-11-20T11:03:04.551787-03:00"
 }
