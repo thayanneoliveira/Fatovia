@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-11-19T21:35:07.239838-03:00",
+  "generated_at": "2026-11-20T06:57:00.445703-03:00",
   "note": "Topic co-occurrence is not corroboration of an individual claim or proof of virality.",
   "publication_authorized": false,
   "signals": [
+    {
+      "id": "424775dac83fa1f82396",
+      "published_at": "2026-11-19T21:36:00-03:00",
+      "source": "agencia_brasil",
+      "status": "discovery_only",
+      "title": "Repórter da Agência Brasil vence Prêmio SBIm de Jornalismo em Saúde",
+      "topics": [
+        "saude"
+      ],
+      "url": "https://agenciabrasil.ebc.com.br/saude/noticia/2026-11/reporter-da-agencia-brasil-vence-premio-sbim-de-jornalismo-em-saude"
+    },
     {
       "id": "81141a0e99cf240cd37a",
       "published_at": "2026-11-19T20:33:00-03:00",
@@ -28,7 +39,7 @@
   ],
   "sources": {
     "agencia_brasil": {
-      "eligible_signals": 2,
+      "eligible_signals": 3,
       "status": "ok"
     },
     "ibge": {
@@ -50,6 +61,16 @@
       ],
       "status": "research_required",
       "topic": "economia"
+    },
+    {
+      "document_count": 1,
+      "explore_links": 0,
+      "source_count": 1,
+      "sources": [
+        "agencia_brasil"
+      ],
+      "status": "research_required",
+      "topic": "saude"
     },
     {
       "document_count": 1,
