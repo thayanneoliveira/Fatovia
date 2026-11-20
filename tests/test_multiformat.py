@@ -32,6 +32,23 @@ class MixedTests(unittest.TestCase):
             report["issues"]=[]
             report["evaluation_ready"]=False
             self.assertFalse(mf.transition_authorized({},NOW,{"pilot_transition":approval}))
+    def test_transition_requires_explicit_clean_report(self):
+        import json
+        good={"next_phase_authorized":True,"evaluation_ready":True,
+              "status":"publication_window_closed","issues":[]}
+        for report in ({},dict(good,next_phase_authorized=False),
+                       dict(good,issues=["pilot_total_exceeded"]),
+                       dict(good,evaluation_ready=False),dict(good,status="review_required")):
+            with patch.object(Path,"read_text",return_value=json.dumps(report)):
+                self.assertFalse(mf.transition_authorized())
+        with patch.object(Path,"read_text",return_value=json.dumps(good)):
+            self.assertTrue(mf.transition_authorized())
+        with patch.object(Path,"read_text",side_effect=OSError):
+            self.assertFalse(mf.transition_authorized())
+    def test_unauthorized_transition_blocks_both_formats(self):
+        with patch.object(mf,"transition_authorized",return_value=False), patch.object(mf,"quota",side_effect=AssertionError("quota must not be reached")):
+            self.assertFalse(mf.allowed({"published":[]},REEL,NOW,{}))
+            self.assertFalse(mf.allowed({"published":[]},{"format":"carousel"},NOW,{}))
     def test_slots(self):
         self.assertEqual([mf.slot(NOW.replace(hour=h)) for h in range(8,21,3)],["carousel","carousel","reel","carousel","carousel"])
         self.assertIsNone(mf.slot(NOW.replace(minute=46)))
