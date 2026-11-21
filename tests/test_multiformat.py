@@ -32,6 +32,25 @@ class MixedTests(unittest.TestCase):
             report["issues"]=[]
             report["evaluation_ready"]=False
             self.assertFalse(mf.transition_authorized({},NOW,{"pilot_transition":approval}))
+    def test_incident_closure_never_auto_approves(self):
+        import json
+        report={"evaluation_ready":False,"issues":["pilot_total_exceeded"],
+                "pilot_id":"p","published":1,"publications":[{"media_id":"123"}]}
+        approval={"authorized":True,"pilot_id":"p","reviewed_media_ids":["123"],"review_reference":"review-1"}
+        closure={"pilot_id":"p","closure_type":"closed_with_incident","incident_preserved":True,
+                 "legacy_history_must_remain":True,"observed_pilot_count":1,
+                 "issues":["pilot_total_exceeded"],"production_transition_authorized":False,
+                 "reconciliation":{"status":"pending_live_meta_verification","account_id_verified":False,"media_ids_verified":[]}}
+        def read(path,**kwargs):
+            return json.dumps(closure) if "closure" in str(path) else "{}"
+        with patch("fatovia.pilot_report.build",return_value=report),patch.object(Path,"read_text",side_effect=read):
+            self.assertFalse(mf.transition_authorized({},NOW,{"pilot_transition":approval}))
+            closure["production_transition_authorized"]=True
+            self.assertFalse(mf.transition_authorized({},NOW,{"pilot_transition":approval}))
+            closure["reconciliation"]={"status":"verified_against_live_meta","account_id_verified":True,"media_ids_verified":["123"]}
+            self.assertTrue(mf.transition_authorized({},NOW,{"pilot_transition":approval}))
+            closure["issues"]=[]
+            self.assertFalse(mf.transition_authorized({},NOW,{"pilot_transition":approval}))
     def test_transition_missing_policy_fails_closed(self):
         with patch.object(Path,"read_text",side_effect=OSError):
             self.assertFalse(mf.transition_authorized({},NOW,{}))
