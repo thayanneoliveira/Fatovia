@@ -53,11 +53,10 @@
     "reel_cover_editorial": "Escolher miniatura de cada Reel pelo conflito humano, legibilidade em tamanho pequeno, curiosidade honesta e coerencia com o roteiro; validar recorte e arquivo. Nao usar logo de encerramento como capa padrao."
   },
   "deployment_blockers": [
-    "Maria exact approved MP4 exists in conversation runtime and hash matches approved file. Transfer bytes to a public HTTPS origin with no paid service, then verify full SHA256 remotely and finalize documentary/factual and Meta checks.",
-    "No Reel published or staged for automatic delivery yet; old 18 Nov time slot expired. Re-date only after validation.",
-    "Autonomous V5 render engine for future topics remains incomplete."
+    "Reel de Maria foi hospedado com hash de arquivo e A/V aprovados; publicação Meta ainda depende de item autorizado na fila, capa pública e revisão documental/independente do conteúdo.",
+    "Geracao autônoma V5 de novos Reels ainda não homologada."
   ],
-  "notes": "Aprovacao editorial do titular registrada em hash exato, nao substitui auditoria independente nem autorizacao operacional. Preservar cota 4+1, transacao, conciliacao, custo zero e janela prevista, sem fallback da creche.",
+  "notes": "MP4 publico validado via GitHub Pages HTTPS, fluxo elementar audio/video identico ao MP4 aprovado; arquivo produzido por remux sem recodificar; nenhuma publicacao Meta confirmada.",
   "approved_logo": {
     "path": "assets/fatovia-approved.png",
     "sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
@@ -78,7 +77,7 @@
       "reel:creche-v5"
     ],
     "instruction": "Nao publicar o episodio da creche em 18/11, inclusive como contingencia. Arquivar como referencia V5. Priorizar o novo tema. Sem Reel se nao passar todos os controles; nao substituir por tema da creche.",
-    "status": "exact_av_remux_pending_public_http_verification",
+    "status": "public_host_verified_pending_independent_reel_release",
     "brief": {
       "hook": "Por que seu dinheiro parece valer cada vez menos?",
       "mechanism": "Uma desaceleracao positiva dos precos nao e uma queda do nivel de precos. IPCA e media ponderada de uma cesta; a experiencia individual pode divergir.",
@@ -166,7 +165,7 @@
       "note": "Original approval file is accessible in conversation runtime; runtime has no outbound upload connection, GitHub and Cloudflare connectors cannot ingest local bytes through current tool interface. Do not mark hosted or published. Do not request user to regenerate or resend this file."
     },
     "hosted_media": {
-      "status": "verified_stream_identical_remux_pending_http",
+      "status": "verified_stream_identical_remux_hosted",
       "path": "docs/media/reels/FatoVia_Maria_Reel_Revisado.mp4",
       "sha256": "f6148c6aef61b768dd28f2f4d35551cf6752e62cc9290a9b15d8d5e786916220",
       "bytes": 18725140,
@@ -176,7 +175,16 @@
       "audio_stream_sha256": "05f5fd69e2937a07de5706b5f408da09f5b64379f530a5fcf6f78ab28b054359",
       "remux": "ffmpeg stream copy, no re-encode",
       "created_at": "2026-11-21T13:40:28.281518+00:00",
-      "published_to_instagram": false
+      "published_to_instagram": false,
+      "public_url": "https://thayanneoliveira.github.io/Fatovia/media/reels/FatoVia_Maria_Reel_Revisado.mp4",
+      "public_verification": {
+        "run_id": 44910150851,
+        "verified_at": "2026-11-21T13:42:35Z",
+        "http_status": 200,
+        "content_type": "video/mp4",
+        "downloaded_size": 18725140,
+        "downloaded_sha256": "f6148c6aef61b768dd28f2f4d35551cf6752e62cc9290a9b15d8d5e786916220"
+      }
     }
   }
 }
