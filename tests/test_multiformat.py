@@ -43,7 +43,7 @@ class MixedTests(unittest.TestCase):
                  "reconciliation":{"status":"pending_live_meta_verification","account_id_verified":False,"media_ids_verified":[]}}
         def read(path,**kwargs):
             return json.dumps(closure) if "closure" in str(path) else "{}"
-        with patch("fatovia.pilot_report.build",return_value=report),patch.object(Path,"read_text",side_effect=read):
+        with patch("fatovia.pilot_report.build",return_value=report),patch.object(Path,"read_text",autospec=True,side_effect=read):
             self.assertFalse(mf.transition_authorized({},NOW,{"pilot_transition":approval}))
             closure["production_transition_authorized"]=True
             self.assertFalse(mf.transition_authorized({},NOW,{"pilot_transition":approval}))
