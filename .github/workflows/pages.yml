@@ -51,3 +51,6 @@ jobs:
         if: steps.pages_setup.outcome == 'success'
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Validar MP4 publico contra hash da versao aprovada
+        if: steps.pages_setup.outcome == 'success'
+        run: python tools/verify_reel_public.py
