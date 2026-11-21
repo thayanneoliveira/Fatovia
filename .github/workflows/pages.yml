@@ -40,6 +40,8 @@ jobs:
       - name: Informar ativacao manual pendente
         if: steps.pages_setup.outcome != 'success'
         run: echo '::warning::Ative GitHub Pages em Settings > Pages > Source > GitHub Actions.'
+      - name: Impedir hospedagem de Reel diferente do aprovado
+        run: python tools/verify_reel_asset.py
       - name: Enviar apenas conteudo publico (docs)
         if: steps.pages_setup.outcome == 'success'
         uses: actions/upload-pages-artifact@v3
