@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "pilot_id": "documentary-20261115",
+  "closure_type": "closed_with_incident",
+  "owner_decision": "2026-11-21: authorized documentary closure preserving incidents and preparation of a new multiformat phase, contingent on deployment and all gates",
+  "source_report": "data/pilot_report.json",
+  "source_state": "data/state.json",
+  "observed_pilot_count": 8,
+  "pilot_max_total": 4,
+  "issues": [
+    "pilot_daily_limit_exceeded",
+    "pilot_total_exceeded"
+  ],
+  "incident_preserved": true,
+  "legacy_history_must_remain": true,
+  "publication_authorized": false,
+  "production_transition_authorized": false,
+  "reconciliation": {
+    "status": "pending_live_meta_verification",
+    "media_ids_verified": [],
+    "account_id_verified": false
+  },
+  "quality": {
+    "official_sources": "pending",
+    "editorial_reviews": "pending",
+    "logo_hashes": "pending",
+    "reel_hosting": "pending",
+    "reel_cover": "pending",
+    "reel_v5_santa": "pending"
+  },
+  "next_phase": {
+    "daily_caps": {
+      "carousel": 4,
+      "reel": 1
+    },
+    "minimum_required": 0,
+    "additional_spend_brl": 0,
+    "activation": "blocked_until_independent_checks_and_tested_deployment"
+  },
+  "learning": "Calendar rollover must never authorize publication. Incident closure is not a clean pilot report and does not erase overrun."
+}
