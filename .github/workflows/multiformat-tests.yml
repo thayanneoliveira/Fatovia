@@ -1,8 +1,8 @@
 name: FatoVia | Multiformat migration tests
 on:
   push:
-    branches: ['feature/multiformat-publication']
-    paths: ['.github/workflows/multiformat-tests.yml','fatovia/multiformat.py','fatovia/publisher.py','tests/test_multiformat.py','data/multiformat_experiment.json','fatovia/brand.py','fatovia/reel_closing.py','fatovia/render.py','fatovia/editorial_audit.py','tests/test_brand_closing.py','fatovia/__main__.py']
+    branches: ['feature/multiformat-publication', 'fix/pilot-transition-20261119', 'feature/multiformat-incident-closure-20261121']
+    paths: ['.github/workflows/multiformat-tests.yml','fatovia/multiformat.py','fatovia/publisher.py','tests/test_multiformat.py','data/multiformat_experiment.json','data/pilot_incident_closure_20261121.json','fatovia/brand.py','fatovia/reel_closing.py','fatovia/render.py','fatovia/editorial_audit.py','tests/test_brand_closing.py','fatovia/__main__.py']
   workflow_dispatch:
 permissions:
   contents: read
