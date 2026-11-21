@@ -14,6 +14,7 @@ on:
 
 permissions:
   contents: read
+  actions: read
   pages: write
   id-token: write
 
@@ -50,6 +51,27 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./docs
+      - name: Aguardar indexacao do artefato do Pages
+        if: steps.pages_setup.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          for attempt in $(seq 1 10); do
+            if gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/artifacts" --jq '.artifacts[] | select(.name == "github-pages") | .id' | grep -Eq '^[0-9]+
+        if: steps.pages_setup.outcome == 'success'
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Validar MP4 publico contra hash da versao aprovada
+        if: steps.pages_setup.outcome == 'success'
+        run: python tools/verify_reel_public.py
+; then
+              echo "Pages artifact visible in API"
+              break
+            fi
+            if [ "$attempt" -eq 10 ]; then echo "Pages artifact missing"; exit 1; fi
+            sleep 5
+          done
       - name: Publicar site e JPEGs
         if: steps.pages_setup.outcome == 'success'
         id: deployment
