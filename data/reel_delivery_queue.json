@@ -12,8 +12,19 @@
       "approved_video_sha256": "f367280115d72645b712c55883c1e71838e6e6973dd7e4e1887dee46182b9170",
       "mp4_location": null,
       "cover_location": null,
-      "technical_status": "awaiting_exact_file_and_cover",
-      "publish_status": "not_submitted"
+      "technical_status": "candidate_found_hash_mismatch_requires_version_confirmation",
+      "publish_status": "not_submitted",
+      "located_upload": {
+        "filename": "FatoVia_Maria_Reel_Revisado.mp4",
+        "sha256": "11cb7e41c8b5ed02a6837f0763b62946929cbac1fd8abf5d018a1d551971f23d",
+        "size_bytes": 15457919,
+        "duration_seconds": 109.6,
+        "width": 512,
+        "height": 910,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "source": "user-uploaded conversation attachment"
+      }
     }
   ],
   "next_reel": {
