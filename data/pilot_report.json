@@ -1,6 +1,6 @@
 {
   "evaluation_ready": false,
-  "generated_at": "2026-11-21T14:24:57.392745-03:00",
+  "generated_at": "2026-11-21T20:08:07.954757-03:00",
   "issues": [
     "pilot_daily_limit_exceeded",
     "pilot_total_exceeded"
@@ -11,7 +11,7 @@
   "pilot_id": "documentary-20261115",
   "publications": [
     {
-      "age_hours": 146.66,
+      "age_hours": 152.38,
       "document_id": "camara:2653819",
       "media_id": "18213163885365403",
       "permalink": "https://www.instagram.com/p/DfxBuz7FJKv/",
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "age_hours": 139.54,
+      "age_hours": 145.26,
       "document_id": "camara:2653948",
       "media_id": "17901241947394968",
       "permalink": "https://www.instagram.com/p/DfxyoEGIO7b/",
@@ -62,7 +62,7 @@
       ]
     },
     {
-      "age_hours": 123.7,
+      "age_hours": 129.42,
       "document_id": "camara:2653813",
       "media_id": "18077986049477583",
       "permalink": "https://www.instagram.com/p/DfzfarSmlTb/",
@@ -85,7 +85,7 @@
       ]
     },
     {
-      "age_hours": 115.47,
+      "age_hours": 121.19,
       "document_id": "camara:2653937",
       "media_id": "18149060461583391",
       "permalink": "https://www.instagram.com/p/Df0X6Z2CfXE/",
@@ -108,7 +108,7 @@
       ]
     },
     {
-      "age_hours": 75.35,
+      "age_hours": 81.07,
       "document_id": "camara:2653940",
       "media_id": "17908023129353266",
       "permalink": "https://www.instagram.com/p/Df4rXyrkceF/",
@@ -136,7 +136,7 @@
       ]
     },
     {
-      "age_hours": 68.98,
+      "age_hours": 74.7,
       "document_id": "camara:2653811",
       "media_id": "18151573990488064",
       "permalink": "https://www.instagram.com/p/Df5XI8aGRJR/",
@@ -151,7 +151,12 @@
           "views": 6
         },
         "72": {
-          "status": "not_due"
+          "age_hours": 74.68,
+          "reach": 2,
+          "saved": 0,
+          "shares": 0,
+          "status": "collected",
+          "views": 8
         }
       },
       "topics": [
@@ -159,7 +164,7 @@
       ]
     },
     {
-      "age_hours": 65.98,
+      "age_hours": 71.69,
       "document_id": "camara:2653822",
       "media_id": "18111958382223422",
       "permalink": "https://www.instagram.com/p/Df5rwjrmUcO/",
@@ -183,7 +188,7 @@
       ]
     },
     {
-      "age_hours": 50.92,
+      "age_hours": 56.64,
       "document_id": "camara:2653946",
       "media_id": "18185273779443646",
       "permalink": "https://www.instagram.com/p/Df7TG8mEXio/",
@@ -210,7 +215,7 @@
   "remaining_allowance": 0,
   "samples_collected": {
     "24": 5,
-    "72": 5
+    "72": 6
   },
   "status": "review_required"
 }

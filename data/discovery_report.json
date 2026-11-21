@@ -1,11 +1,34 @@
 {
-  "generated_at": "2026-11-21T14:24:53.930511-03:00",
+  "generated_at": "2026-11-21T20:07:56.162327-03:00",
   "note": "Topic co-occurrence is not corroboration of an individual claim or proof of virality.",
   "publication_authorized": false,
-  "signals": [],
+  "signals": [
+    {
+      "id": "b13cb03e2a9dd59f4bd5",
+      "published_at": "2026-11-21T18:59:00-03:00",
+      "source": "agencia_brasil",
+      "status": "discovery_only",
+      "title": "Deputada Talíria Petrone é ameaçada de morte e violência sexual",
+      "topics": [
+        "seguranca"
+      ],
+      "url": "https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2026-11/deputada-taliria-petrone-e-ameacada-de-morte-e-violencia-sexual"
+    },
+    {
+      "id": "b57431b668c8912312cd",
+      "published_at": "2026-11-21T18:28:00-03:00",
+      "source": "agencia_brasil",
+      "status": "discovery_only",
+      "title": "Força Nacional do SUS avalia instalar posto médico em Tupanciretã",
+      "topics": [
+        "saude"
+      ],
+      "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2026-11/forca-nacional-do-sus-avalia-instalar-posto-medico-em-tupancireta"
+    }
+  ],
   "sources": {
     "agencia_brasil": {
-      "eligible_signals": 0,
+      "eligible_signals": 2,
       "status": "ok"
     },
     "ibge": {
@@ -17,5 +40,26 @@
       "status": "ok"
     }
   },
-  "topic_groups": []
+  "topic_groups": [
+    {
+      "document_count": 1,
+      "explore_links": 0,
+      "source_count": 1,
+      "sources": [
+        "agencia_brasil"
+      ],
+      "status": "research_required",
+      "topic": "saude"
+    },
+    {
+      "document_count": 1,
+      "explore_links": 0,
+      "source_count": 1,
+      "sources": [
+        "agencia_brasil"
+      ],
+      "status": "research_required",
+      "topic": "seguranca"
+    }
+  ]
 }
