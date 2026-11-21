@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "date": "2026-11-21",
+  "decision": "hold_no_publish",
+  "tests": {
+    "run_id": 44906157262,
+    "conclusion": "success",
+    "scope": "automated repository unit tests only"
+  },
+  "pilot": {
+    "closure": "documented_with_incident",
+    "recorded_pilot_posts": 8,
+    "pilot_max": 4,
+    "issues": [
+      "pilot_daily_limit_exceeded",
+      "pilot_total_exceeded"
+    ],
+    "total_ledger_posts": 12
+  },
+  "production": {
+    "pr": 4,
+    "draft": true,
+    "merged": false,
+    "main_transition_gate": "not_deployed",
+    "publisher_route": "GitHub Actions publish.yml; conditional on IG_PUBLISH_ENABLED",
+    "live_meta_reconciliation": "not_performed",
+    "account_identity": "not_independently_verified",
+    "checkpoint": "none_open_in_repository_snapshot"
+  },
+  "queue": {
+    "pending_carousels": 8,
+    "reel_approved_items": 0,
+    "publication_attempts_this_run": 0
+  },
+  "reel": {
+    "owner_approved_file_sha256": "f367280115d72645b712c55883c1e71838e6e6973dd7e4e1887dee46182b9170",
+    "file_bytes_independently_verified": false,
+    "hosted_mp4_verified": false,
+    "cover_verified": false,
+    "official_ipca_verified": false,
+    "source_url_flag": "The candidate source https://www.ibge.gov.br/indicadores/pnad is a PNAD indicator path and cannot by itself substantiate IPCA; verify official IPCA release",
+    "voice_and_v5_independently_verified": false
+  },
+  "cost": {
+    "additional_brl": 0,
+    "paid_services_enabled": false
+  },
+  "release_requirements": [
+    "Confirm exact target Meta IG account with authenticated Graph API",
+    "Reconcile all 12 ledger records against live media IDs and ensure no duplicates",
+    "Verify approved closing logo, actual file hashes and carousel evidence",
+    "Verify official source and independent review of every queued item",
+    "Host and hash-check approved Reel and cover; verify Santa R 1.0, V5 and kinetic captions",
+    "Complete explicit pilot transition authorization only after reconciled closure",
+    "Merge reviewed changes and verify production checks; only then permit scheduling"
+  ],
+  "watchdog": "no duplicate task or watchdog created",
+  "learning": "Passing CI does not establish external Meta account, file integrity, hosting or publication readiness. Preserve fail-closed behavior."
+}
