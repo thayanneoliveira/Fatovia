@@ -53,8 +53,9 @@
     "reel_cover_editorial": "Escolher miniatura de cada Reel pelo conflito humano, legibilidade em tamanho pequeno, curiosidade honesta e coerencia com o roteiro; validar recorte e arquivo. Nao usar logo de encerramento como capa padrao."
   },
   "deployment_blockers": [
-    "Transferencia do MP4 aprovado e da capa para hospedagem publica gratuita, checagem dos hashes e verificacao da fonte oficial IPCA, revisao independente remanescente e entrega real Meta ainda pendentes.",
-    "Geracao autonoma de Reels V5 em temas novos ainda nao homologada."
+    "Maria exact approved MP4 exists in conversation runtime and hash matches approved file. Transfer bytes to a public HTTPS origin with no paid service, then verify full SHA256 remotely and finalize documentary/factual and Meta checks.",
+    "No Reel published or staged for automatic delivery yet; old 18 Nov time slot expired. Re-date only after validation.",
+    "Autonomous V5 render engine for future topics remains incomplete."
   ],
   "notes": "Aprovacao editorial do titular registrada em hash exato, nao substitui auditoria independente nem autorizacao operacional. Preservar cota 4+1, transacao, conciliacao, custo zero e janela prevista, sem fallback da creche.",
   "approved_logo": {
@@ -77,7 +78,7 @@
       "reel:creche-v5"
     ],
     "instruction": "Nao publicar o episodio da creche em 18/11, inclusive como contingencia. Arquivar como referencia V5. Priorizar o novo tema. Sem Reel se nao passar todos os controles; nao substituir por tema da creche.",
-    "status": "owner_approved_pending_operational_preflight",
+    "status": "original_approved_file_located_pending_hosting",
     "brief": {
       "hook": "Por que seu dinheiro parece valer cada vez menos?",
       "mechanism": "Uma desaceleracao positiva dos precos nao e uma queda do nivel de precos. IPCA e media ponderada de uma cesta; a experiencia individual pode divergir.",
@@ -145,6 +146,24 @@
       "cover_sha256": "4e266466a5e91977e15e565f4ad1bef09981dbbfc99de6f6b49d7c49c6c3608c",
       "voice": "Santa-R-1.0",
       "publication_candidate_only": true
+    },
+    "file_verification": {
+      "verified_on": "2026-11-21",
+      "status": "original_approved_file_accessible_in_chat_not_uploaded_to_public_host",
+      "filename": "FatoVia_Maria_Reel_Revisado.mp4",
+      "exact_sha256": "f367280115d72645b712c55883c1e71838e6e6973dd7e4e1887dee46182b9170",
+      "byte_count": 18725124,
+      "seconds": 109.585,
+      "width": 1080,
+      "height": 1920,
+      "fps": 24,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "audio_hz": 48000,
+      "verified_against_owner_approval": true,
+      "public_url": null,
+      "publication_confirmed": false,
+      "note": "Original approval file is accessible in conversation runtime; runtime has no outbound upload connection, GitHub and Cloudflare connectors cannot ingest local bytes through current tool interface. Do not mark hosted or published. Do not request user to regenerate or resend this file."
     }
   }
 }
