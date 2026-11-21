@@ -1,5 +1,4 @@
 name: "FatoVia | Hospedagem publica de imagens"
-
 on:
   workflow_dispatch:
   push:
@@ -11,17 +10,14 @@ on:
     workflows: ["FatoVia | Radar documental seguro"]
     types: [completed]
     branches: [main]
-
 permissions:
   contents: read
   actions: read
   pages: write
   id-token: write
-
 concurrency:
   group: "fatovia-pages"
   cancel-in-progress: false
-
 jobs:
   deploy:
     if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
@@ -34,7 +30,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
-      - name: Preparar FFmpeg somente quando ha Reel MP4
+      - name: Instalar FFmpeg apenas para Reel MP4
         if: ${{ hashFiles('docs/media/reels/FatoVia_Maria_Reel_Revisado.mp4') != '' }}
         run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg
       - name: Verificar se Pages esta habilitado
@@ -51,25 +47,21 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./docs
-      - name: Aguardar indexacao do artefato do Pages
+      - name: Aguardar indexacao do artefato Pages
         if: steps.pages_setup.outcome == 'success'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
-          for attempt in $(seq 1 10); do
-            if gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/artifacts" --jq '.artifacts[] | select(.name == "github-pages") | .id' | grep -Eq '^[0-9]+
-        if: steps.pages_setup.outcome == 'success'
-        id: deployment
-        uses: actions/deploy-pages@v4
-      - name: Validar MP4 publico contra hash da versao aprovada
-        if: steps.pages_setup.outcome == 'success'
-        run: python tools/verify_reel_public.py
-; then
-              echo "Pages artifact visible in API"
+          for attempt in 1 2 3 4 5 6 7 8 9 10; do
+            count=$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/artifacts" --jq "[.artifacts[] | select(.name == \"github-pages\")] | length")
+            if [ "$count" -gt 0 ]; then
+              echo "Pages artifact indexed"
               break
             fi
-            if [ "$attempt" -eq 10 ]; then echo "Pages artifact missing"; exit 1; fi
+            if [ "$attempt" -eq 10 ]; then
+              echo "Pages artifact not indexed"; exit 1
+            fi
             sleep 5
           done
       - name: Publicar site e JPEGs
