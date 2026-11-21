@@ -1,24 +1,11 @@
 {
-  "generated_at": "2026-11-21T06:41:02.150341-03:00",
+  "generated_at": "2026-11-21T14:24:53.930511-03:00",
   "note": "Topic co-occurrence is not corroboration of an individual claim or proof of virality.",
   "publication_authorized": false,
-  "signals": [
-    {
-      "id": "28febcd24ea2233b72fe",
-      "published_at": "2026-11-20T18:59:00-03:00",
-      "source": "agencia_brasil",
-      "status": "discovery_only",
-      "title": "Renda de 73% de negras vítimas de violência é de até 2 salários mínimo",
-      "topics": [
-        "economia",
-        "seguranca"
-      ],
-      "url": "https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2026-11/renda-de-73-de-negras-vitimas-de-violencia-e-de-ate-2-salarios-minimo"
-    }
-  ],
+  "signals": [],
   "sources": {
     "agencia_brasil": {
-      "eligible_signals": 1,
+      "eligible_signals": 0,
       "status": "ok"
     },
     "ibge": {
@@ -30,26 +17,5 @@
       "status": "ok"
     }
   },
-  "topic_groups": [
-    {
-      "document_count": 1,
-      "explore_links": 0,
-      "source_count": 1,
-      "sources": [
-        "agencia_brasil"
-      ],
-      "status": "research_required",
-      "topic": "economia"
-    },
-    {
-      "document_count": 1,
-      "explore_links": 0,
-      "source_count": 1,
-      "sources": [
-        "agencia_brasil"
-      ],
-      "status": "research_required",
-      "topic": "seguranca"
-    }
-  ]
+  "topic_groups": []
 }
