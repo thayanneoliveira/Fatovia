@@ -22,18 +22,32 @@ def mode(now):
     # Fixed migration boundary prevents fall-back to the retired pilot if policy becomes corrupt.
     return now.astimezone(TZ).date()>=date(2026,11,18)
 def transition_authorized(state,now,policy):
-    """Date selects routing only; explicit reviewed authorization unlocks delivery."""
+    """A documented incident closure is not authorization to bypass reconciliation."""
     from .pilot_report import build
     try:
         pilot=json.loads(Path("data/pilot_policy.json").read_text(encoding="utf-8"))
         report=build(state,pilot,now)
         approval=policy.get("pilot_transition") or {}
-        return (report["evaluation_ready"] is True and not report["issues"]
-                and approval.get("authorized") is True
+        if not (approval.get("authorized") is True
                 and approval.get("pilot_id")==report["pilot_id"]
-                and approval.get("reviewed_media_ids")==[r["media_id"] for r in report["publications"]]
                 and isinstance(approval.get("review_reference"),str)
-                and bool(approval["review_reference"].strip()))
+                and bool(approval["review_reference"].strip())
+                and approval.get("reviewed_media_ids")==[r["media_id"] for r in report["publications"]]):
+            return False
+        if report["evaluation_ready"] is True and not report["issues"]:
+            return True
+        closure=json.loads(Path("data/pilot_incident_closure_20261121.json").read_text(encoding="utf-8"))
+        reconciliation=closure.get("reconciliation") or {}
+        return (closure.get("pilot_id")==report["pilot_id"]
+                and closure.get("closure_type")=="closed_with_incident"
+                and closure.get("incident_preserved") is True
+                and closure.get("legacy_history_must_remain") is True
+                and closure.get("observed_pilot_count")==report["published"]
+                and set(closure.get("issues",[]))==set(report["issues"])
+                and reconciliation.get("status")=="verified_against_live_meta"
+                and reconciliation.get("account_id_verified") is True
+                and reconciliation.get("media_ids_verified")==[r["media_id"] for r in report["publications"]]
+                and closure.get("production_transition_authorized") is True)
     except (OSError,ValueError,TypeError,KeyError,AttributeError):
         return False
 def kind(item):
