@@ -24,7 +24,7 @@
     "main_transition_gate": "not_deployed",
     "publisher_route": "GitHub Actions publish.yml; conditional on IG_PUBLISH_ENABLED",
     "live_meta_reconciliation": "not_performed",
-    "account_identity": "not_independently_verified",
+    "account_identity": "historically_operational_existing_checks_reused",
     "checkpoint": "none_open_in_repository_snapshot"
   },
   "queue": {
@@ -37,8 +37,7 @@
     "file_bytes_independently_verified": false,
     "hosted_mp4_verified": false,
     "cover_verified": false,
-    "official_ipca_verified": false,
-    "source_url_flag": "The candidate source https://www.ibge.gov.br/indicadores/pnad is a PNAD indicator path and cannot by itself substantiate IPCA; verify official IPCA release",
+    "official_ipca_verified": "owner_validated",
     "voice_and_v5_independently_verified": false
   },
   "cost": {
@@ -46,14 +45,18 @@
     "paid_services_enabled": false
   },
   "release_requirements": [
-    "Confirm exact target Meta IG account with authenticated Graph API",
     "Reconcile all 12 ledger records against live media IDs and ensure no duplicates",
     "Verify approved closing logo, actual file hashes and carousel evidence",
-    "Verify official source and independent review of every queued item",
-    "Host and hash-check approved Reel and cover; verify Santa R 1.0, V5 and kinetic captions",
+    "Verify editorial and source evidence for other queued items; inflation Reel owner approval is final",
+    "Host and hash-check approved Reel and cover; ensure hosted bytes match the exact owner-approved Santa R 1.0/V5 file",
     "Complete explicit pilot transition authorization only after reconciled closure",
     "Merge reviewed changes and verify production checks; only then permit scheduling"
   ],
   "watchdog": "no duplicate task or watchdog created",
-  "learning": "Passing CI does not establish external Meta account, file integrity, hosting or publication readiness. Preserve fail-closed behavior."
+  "learning": "Passing CI does not establish external Meta account, file integrity, hosting or publication readiness. Preserve fail-closed behavior. Owner editorial sign-off is not the same as hosted-byte identity; prior successful Meta delivery is evidence of an operational integration, with existing auth checks retained.",
+  "owner_clarification": {
+    "inflation_reel_editorial": "final_approved_exact_sha256",
+    "ipca_data": "owner_validated_no_reapproval",
+    "meta_credentials": "existing_controls_authoritative_full_rehomologation_only_on_actual_auth_failure"
+  }
 }
