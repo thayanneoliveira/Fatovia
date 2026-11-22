@@ -77,5 +77,26 @@
     "account_rehomologation_required": false,
     "action": "no bypass; no duplicate publication; resolve conflicts and reconcile before dispatch",
     "published_count": 0
+  },
+  "recovery_agent": {
+    "implemented": true,
+    "script": "tools/recovery_agent.py",
+    "tests": "tests/test_recovery_agent.py",
+    "branch": "feature/multiformat-incident-closure-20261121",
+    "agent_mode": "diagnose and recommend; no unsupervised production bypass",
+    "automation": "not scheduled separately; existing watchdog retained",
+    "writable_connector_account_observed": {
+      "provider": "Windsor.ai",
+      "id": "17841434700481151",
+      "label": "nempediu",
+      "identity_for_fatovia": "not independently confirmed"
+    },
+    "next_actions": [
+      "read-only reconcile Meta account and media IDs",
+      "resolve PR #4 conflicts against main",
+      "validate media quality and populate approved_items",
+      "merge only after green tests and verifiable transition"
+    ],
+    "published_this_run": 0
   }
 }
