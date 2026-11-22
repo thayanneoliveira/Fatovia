@@ -3,7 +3,7 @@
   "experiment_id": "multiformato-20261118",
   "start_date": "2026-11-18",
   "timezone": "America/Sao_Paulo",
-  "status": "prepared_guarded",
+  "status": "approved",
   "daily_caps": {
     "carousel": 4,
     "reel": 1
@@ -151,5 +151,6 @@
       "source_data_validated_by_owner": true,
       "no_additional_human_editorial_review_required": true
     }
-  }
+  },
+  "status_note": "Owner authorized automated publishing; operational eligibility remains subject to transition_authorized, verified audit, exact-media hashes, quotas and Meta reconciliation. This status alone does not authorize a POST."
 }
