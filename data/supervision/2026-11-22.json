@@ -98,5 +98,16 @@
       "merge only after green tests and verifiable transition"
     ],
     "published_this_run": 0
+  },
+  "meta_identity_comparison": {
+    "checked_on": "2026-11-22",
+    "source": "Windsor.ai Instagram connector live data",
+    "connector_label": "nempediu",
+    "connector_account_id": "17841434700481151",
+    "live_account_name": "fato.via",
+    "live_account_id": "28180280625000221",
+    "live_media_count": 23,
+    "conclusion": "current username confirmed through connector; differing account identifiers not yet proven equivalent to GitHub META_IG_USER_ID; no direct Meta me query performed",
+    "production_authorization_changed": false
   }
 }
