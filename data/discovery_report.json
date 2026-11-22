@@ -1,34 +1,23 @@
 {
-  "generated_at": "2026-11-22T13:12:35.135433-03:00",
+  "generated_at": "2026-11-22T18:44:55.295055-03:00",
   "note": "Topic co-occurrence is not corroboration of an individual claim or proof of virality.",
   "publication_authorized": false,
   "signals": [
     {
-      "id": "5f48d13fdcf19ebd12c6",
-      "published_at": "2026-11-22T09:32:00-03:00",
+      "id": "34d51e8e115642075482",
+      "published_at": "2026-11-22T17:01:00-03:00",
       "source": "agencia_brasil",
       "status": "discovery_only",
-      "title": "IA na educação exige capacitação de professores, dizem especialistas",
+      "title": "Simpósio de matemática premia professores e expõe soluções de ensino",
       "topics": [
         "educacao"
       ],
-      "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-11/ia-na-educacao-exige-capacitacao-de-professores-dizem-especial"
-    },
-    {
-      "id": "b13cb03e2a9dd59f4bd5",
-      "published_at": "2026-11-21T18:59:00-03:00",
-      "source": "agencia_brasil",
-      "status": "discovery_only",
-      "title": "Deputada Talíria Petrone é ameaçada de morte e violência sexual",
-      "topics": [
-        "seguranca"
-      ],
-      "url": "https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2026-11/deputada-taliria-petrone-e-ameacada-de-morte-e-violencia-sexual"
+      "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-11/simposio-de-matematica-premia-professores-e-expoe-solucoes-de-ensino"
     }
   ],
   "sources": {
     "agencia_brasil": {
-      "eligible_signals": 2,
+      "eligible_signals": 1,
       "status": "ok"
     },
     "ibge": {
@@ -50,16 +39,6 @@
       ],
       "status": "research_required",
       "topic": "educacao"
-    },
-    {
-      "document_count": 1,
-      "explore_links": 0,
-      "source_count": 1,
-      "sources": [
-        "agencia_brasil"
-      ],
-      "status": "research_required",
-      "topic": "seguranca"
     }
   ]
 }
