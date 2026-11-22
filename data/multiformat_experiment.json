@@ -50,12 +50,12 @@
     "duplicate_prevention": true,
     "reconcile_uncertain_posts": true,
     "no_paid_services": true,
-    "reel_cover_editorial": "Escolher miniatura de cada Reel pelo conflito humano, legibilidade em tamanho pequeno, curiosidade honesta e coerencia com o roteiro; validar recorte e arquivo. Nao usar logo de encerramento como capa padrao.",
+    "reel_cover_editorial": "Escolher automaticamente um frame do próprio vídeo com conflito humano e legibilidade no feed. Não exigir arquivo de capa externo nem aprovação editorial adicional. Usar thumb_offset apenas quando suportado e testado pela rota Meta; caso contrário usar a miniatura automática da plataforma. Logo aprovada permanece obrigatória no encerramento do vídeo.",
     "meta_auth_policy": "Use existing production credential checks; no full rehomologation unless an actual authentication failure occurs. Never bypass existing auth failure stop.",
     "editorial_policy": "The owner-approved inflation Reel at its exact SHA256 requires no repeat human content/source review. Retain file identity, hosting, approved logo, cover, deduplication, quotas and transaction gates."
   },
   "deployment_blockers": [
-    "Transferencia do MP4 aprovado e da capa para hospedagem publica gratuita, checagem dos hashes e entrega real Meta ainda pendentes.",
+    "Transferencia do MP4 aprovado para hospedagem publica gratuita, checagem dos hashes e entrega real Meta ainda pendentes.",
     "Geracao autonoma de Reels V5 em temas novos ainda nao homologada."
   ],
   "notes": "Aprovacao editorial do titular registrada em hash exato, nao substitui auditoria independente nem autorizacao operacional. Preservar cota 4+1, transacao, conciliacao, custo zero e janela prevista, sem fallback da creche.",
@@ -115,7 +115,7 @@
       "script_revision": "maria-v2",
       "disclosure": "Dramatização com valores ilustrativos informada na descrição da publicação; no vídeo, contexto hipotético natural e dados oficiais com período e fonte.",
       "cover": {
-        "status": "selected_approved_pending_hosting",
+        "status": "frame_selection_from_video_no_separate_cover_required",
         "source": "Maria v2; opening scene 0, progress 0.80, render argument t=1.8 (not final video timestamp)",
         "visual": "Maria surpresa diante da mesma cesta; nota de R$100 e total R$111,10",
         "hook": "Por que seu dinheiro parece valer cada vez menos?",
@@ -124,7 +124,7 @@
           1080,
           1920
         ],
-        "notes": "Valores ilustrativos da dramatizacao. Selecionar imagem de abertura equivalente na midia final e verificar recortes do feed; nao usar encerramento como capa. Hospedagem e suporte a cover_url/thumb_offset ainda precisam de validacao."
+        "notes": "Miniatura é um frame do próprio Reel; sem arquivo ou hospedagem separados. Seleção por thumb_offset somente após teste de suporte; senão aceitar miniatura automática do Instagram."
       }
     },
     "owner_approval": {
