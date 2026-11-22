@@ -67,3 +67,4 @@ jobs:
           print("Consulta de limite de publicacao OK.")
           print("Nenhuma publicacao realizada.")
           PY
+# Manual read-only identity recheck requested 2026-11-22

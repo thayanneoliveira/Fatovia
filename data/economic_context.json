@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T18:18:58.418557-03:00",
+  "generated_at": "2026-11-22T17:24:16.648439-03:00",
   "limitations": [
     "No causal attribution",
     "No comparison across unlike units or frequencies",
@@ -82,7 +82,7 @@
         "formato": "json"
       },
       "response_sha256": "d1320de0c1edc893b7aaaba1acd9604f72836672e292aff74140a008de24ca99",
-      "retrieved_at": "2026-11-20T18:18:58.418557-03:00",
+      "retrieved_at": "2026-11-22T17:24:16.648439-03:00",
       "series": "16122",
       "source_url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.16122/dados/ultimos/12",
       "status": "ok",
@@ -97,16 +97,6 @@
       "metadata": "https://dadosabertos.bcb.gov.br/dataset/432-taxa-de-juros---meta-selic-definida-pelo-copom",
       "name": "Meta Selic definida pelo Copom",
       "observations": [
-        {
-          "period": "2026-10-22",
-          "source_date": "2026-10-22",
-          "value": "13.75"
-        },
-        {
-          "period": "2026-10-23",
-          "source_date": "2026-10-23",
-          "value": "13.75"
-        },
         {
           "period": "2026-10-24",
           "source_date": "2026-10-24",
@@ -246,16 +236,26 @@
           "period": "2026-11-20",
           "source_date": "2026-11-20",
           "value": "13.75"
+        },
+        {
+          "period": "2026-11-21",
+          "source_date": "2026-11-21",
+          "value": "13.75"
+        },
+        {
+          "period": "2026-11-22",
+          "source_date": "2026-11-22",
+          "value": "13.75"
         }
       ],
       "publication_authorized": false,
       "query_params": {
-        "dataFinal": "20/11/2026",
-        "dataInicial": "22/10/2026",
+        "dataFinal": "22/11/2026",
+        "dataInicial": "24/10/2026",
         "formato": "json"
       },
-      "response_sha256": "ce6c6655f0ea40c230489fdc5c69250eee7fb89c83c945a18e07ac3723acfefa",
-      "retrieved_at": "2026-11-20T18:18:58.418557-03:00",
+      "response_sha256": "ffefb5a44e861fd582e16b9d43d1318e92cc37deeb7f97b4622128134e0a2341",
+      "retrieved_at": "2026-11-22T17:24:16.648439-03:00",
       "series": "432",
       "source_url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados",
       "status": "ok",

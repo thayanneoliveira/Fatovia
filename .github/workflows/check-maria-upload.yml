@@ -1,0 +1,34 @@
+name: FatoVia | Check uploaded Reel against approved streams
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/check-maria-upload.yml'
+      - 'docs/media/reels/FatoVia_Maria_Reel_Revisado.mov'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install ffmpeg / ffprobe on runner
+        run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg
+      - name: Compare video and audio packet hashes with previously approved MP4
+        shell: bash
+        run: |
+          set -euo pipefail
+          src="docs/media/reels/FatoVia_Maria_Reel_Revisado.mov"
+          test -f "$src"
+          echo "Upload SHA256 / size:"
+          sha256sum "$src"
+          stat -c '%s' "$src"
+          ffprobe -v error -show_entries format=format_name,duration,size:stream=codec_name,codec_type,width,height,avg_frame_rate,sample_rate -of json "$src"
+          ffmpeg -hide_banner -loglevel error -i "$src" -map 0:v:0 -c copy -f streamhash -hash SHA256 /tmp/maria-video.hash
+          ffmpeg -hide_banner -loglevel error -i "$src" -map 0:a:0 -c copy -f streamhash -hash SHA256 /tmp/maria-audio.hash
+          cat /tmp/maria-video.hash /tmp/maria-audio.hash
+          grep -Fx "0,v,SHA256=630f22001b64332a0a675491465ad8fc62d577e1759e311731e7af6e206e702b" /tmp/maria-video.hash
+          grep -Fx "0,a,SHA256=05f5fd69e2937a07de5706b5f408da09f5b64379f530a5fcf6f78ab28b054359" /tmp/maria-audio.hash
+          echo "APPROVED_VIDEO_AND_AUDIO_STREAMS_MATCH"

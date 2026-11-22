@@ -55,10 +55,10 @@
     "editorial_policy": "The owner-approved inflation Reel at its exact SHA256 requires no repeat human content/source review. Retain file identity, hosting, approved logo, cover, deduplication, quotas and transaction gates."
   },
   "deployment_blockers": [
-    "Transferencia do MP4 aprovado para hospedagem publica gratuita, checagem dos hashes e entrega real Meta ainda pendentes.",
-    "Geracao autonoma de Reels V5 em temas novos ainda nao homologada."
+    "Reel de Maria foi hospedado com hash de arquivo e A/V aprovados; publicação Meta ainda depende de item autorizado na fila, capa pública e revisão documental/independente do conteúdo.",
+    "Geracao autônoma V5 de novos Reels ainda não homologada."
   ],
-  "notes": "Aprovacao editorial do titular registrada em hash exato, nao substitui auditoria independente nem autorizacao operacional. Preservar cota 4+1, transacao, conciliacao, custo zero e janela prevista, sem fallback da creche.",
+  "notes": "MP4 publico validado via GitHub Pages HTTPS, fluxo elementar audio/video identico ao MP4 aprovado; arquivo produzido por remux sem recodificar; nenhuma publicacao Meta confirmada.",
   "approved_logo": {
     "path": "assets/fatovia-approved.png",
     "sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
@@ -79,7 +79,7 @@
       "reel:creche-v5"
     ],
     "instruction": "Nao publicar o episodio da creche em 18/11, inclusive como contingencia. Arquivar como referencia V5. Priorizar o novo tema. Sem Reel se nao passar todos os controles; nao substituir por tema da creche.",
-    "status": "owner_approved_pending_operational_preflight",
+    "status": "public_host_verified_pending_independent_reel_release",
     "brief": {
       "hook": "Por que seu dinheiro parece valer cada vez menos?",
       "mechanism": "Uma desaceleracao positiva dos precos nao e uma queda do nivel de precos. IPCA e media ponderada de uma cesta; a experiencia individual pode divergir.",
@@ -115,7 +115,7 @@
       "script_revision": "maria-v2",
       "disclosure": "Dramatização com valores ilustrativos informada na descrição da publicação; no vídeo, contexto hipotético natural e dados oficiais com período e fonte.",
       "cover": {
-        "status": "frame_selection_from_video_no_separate_cover_required",
+        "status": "selected_approved_pending_hosting",
         "source": "Maria v2; opening scene 0, progress 0.80, render argument t=1.8 (not final video timestamp)",
         "visual": "Maria surpresa diante da mesma cesta; nota de R$100 e total R$111,10",
         "hook": "Por que seu dinheiro parece valer cada vez menos?",
@@ -124,7 +124,7 @@
           1080,
           1920
         ],
-        "notes": "Miniatura é um frame do próprio Reel; sem arquivo ou hospedagem separados. Seleção por thumb_offset somente após teste de suporte; senão aceitar miniatura automática do Instagram."
+        "notes": "Valores ilustrativos da dramatizacao. Selecionar imagem de abertura equivalente na midia final e verificar recortes do feed; nao usar encerramento como capa. Hospedagem e suporte a cover_url/thumb_offset ainda precisam de validacao."
       }
     },
     "owner_approval": {
@@ -146,10 +146,47 @@
       "decode_check": "passed",
       "cover_sha256": "4e266466a5e91977e15e565f4ad1bef09981dbbfc99de6f6b49d7c49c6c3608c",
       "voice": "Santa-R-1.0",
-      "publication_candidate_only": true,
-      "editorial_final": true,
-      "source_data_validated_by_owner": true,
-      "no_additional_human_editorial_review_required": true
+      "publication_candidate_only": true
+    },
+    "file_verification": {
+      "verified_on": "2026-11-21",
+      "status": "original_approved_file_accessible_in_chat_not_uploaded_to_public_host",
+      "filename": "FatoVia_Maria_Reel_Revisado.mp4",
+      "exact_sha256": "f367280115d72645b712c55883c1e71838e6e6973dd7e4e1887dee46182b9170",
+      "byte_count": 18725124,
+      "seconds": 109.585,
+      "width": 1080,
+      "height": 1920,
+      "fps": 24,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "audio_hz": 48000,
+      "verified_against_owner_approval": true,
+      "public_url": null,
+      "publication_confirmed": false,
+      "note": "Original approval file is accessible in conversation runtime; runtime has no outbound upload connection, GitHub and Cloudflare connectors cannot ingest local bytes through current tool interface. Do not mark hosted or published. Do not request user to regenerate or resend this file."
+    },
+    "hosted_media": {
+      "status": "verified_stream_identical_remux_hosted",
+      "path": "docs/media/reels/FatoVia_Maria_Reel_Revisado.mp4",
+      "sha256": "f6148c6aef61b768dd28f2f4d35551cf6752e62cc9290a9b15d8d5e786916220",
+      "bytes": 18725140,
+      "source_mov_sha256": "680ddcd3d0144cbc7dc332bbf04fa9a01d46449bd8cd831eea6d494f1cad8f91",
+      "original_approved_sha256": "f367280115d72645b712c55883c1e71838e6e6973dd7e4e1887dee46182b9170",
+      "video_stream_sha256": "630f22001b64332a0a675491465ad8fc62d577e1759e311731e7af6e206e702b",
+      "audio_stream_sha256": "05f5fd69e2937a07de5706b5f408da09f5b64379f530a5fcf6f78ab28b054359",
+      "remux": "ffmpeg stream copy, no re-encode",
+      "created_at": "2026-11-21T13:40:28.281518+00:00",
+      "published_to_instagram": false,
+      "public_url": "https://thayanneoliveira.github.io/Fatovia/media/reels/FatoVia_Maria_Reel_Revisado.mp4",
+      "public_verification": {
+        "run_id": 44910150851,
+        "verified_at": "2026-11-21T13:42:35Z",
+        "http_status": 200,
+        "content_type": "video/mp4",
+        "downloaded_size": 18725140,
+        "downloaded_sha256": "f6148c6aef61b768dd28f2f4d35551cf6752e62cc9290a9b15d8d5e786916220"
+      }
     }
   },
   "status_note": "Owner authorized automated publishing; operational eligibility remains subject to transition_authorized, verified audit, exact-media hashes, quotas and Meta reconciliation. This status alone does not authorize a POST."

@@ -4,7 +4,7 @@
     "note": "No retroactive reconstruction of missing age windows; incomplete samples excluded.",
     "recent_media": 23,
     "samples_24h": 5,
-    "samples_72h": 5
+    "samples_72h": 8
   },
   "learning": {
     "eligible_72h": 0,
