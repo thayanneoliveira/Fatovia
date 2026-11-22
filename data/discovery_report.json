@@ -1,8 +1,19 @@
 {
-  "generated_at": "2026-11-22T03:36:09.315166-03:00",
+  "generated_at": "2026-11-22T13:12:35.135433-03:00",
   "note": "Topic co-occurrence is not corroboration of an individual claim or proof of virality.",
   "publication_authorized": false,
   "signals": [
+    {
+      "id": "5f48d13fdcf19ebd12c6",
+      "published_at": "2026-11-22T09:32:00-03:00",
+      "source": "agencia_brasil",
+      "status": "discovery_only",
+      "title": "IA na educação exige capacitação de professores, dizem especialistas",
+      "topics": [
+        "educacao"
+      ],
+      "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-11/ia-na-educacao-exige-capacitacao-de-professores-dizem-especial"
+    },
     {
       "id": "b13cb03e2a9dd59f4bd5",
       "published_at": "2026-11-21T18:59:00-03:00",
@@ -13,17 +24,6 @@
         "seguranca"
       ],
       "url": "https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2026-11/deputada-taliria-petrone-e-ameacada-de-morte-e-violencia-sexual"
-    },
-    {
-      "id": "b57431b668c8912312cd",
-      "published_at": "2026-11-21T18:28:00-03:00",
-      "source": "agencia_brasil",
-      "status": "discovery_only",
-      "title": "Força Nacional do SUS avalia instalar posto médico em Tupanciretã",
-      "topics": [
-        "saude"
-      ],
-      "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2026-11/forca-nacional-do-sus-avalia-instalar-posto-medico-em-tupancireta"
     }
   ],
   "sources": {
@@ -49,7 +49,7 @@
         "agencia_brasil"
       ],
       "status": "research_required",
-      "topic": "saude"
+      "topic": "educacao"
     },
     {
       "document_count": 1,
