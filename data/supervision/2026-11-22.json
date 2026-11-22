@@ -58,5 +58,24 @@
     "feature_branch_has_transition_authorized_check": true,
     "action": "keep publication held; do not merge without green CI on current head and reviewed integration; preserve approved media identity and existing account controls",
     "published_this_followup": 0
+  },
+  "release_attempt": {
+    "at": "2026-11-22",
+    "requested_by_owner": true,
+    "pr": 4,
+    "mergeable": false,
+    "mergeable_state": "dirty",
+    "latest_green_ci_run": 45034535941,
+    "latest_green_ci_head": "6c8e7a37492fe31cb3ef14b2a7e5b7a7c91a059b",
+    "cover_policy": "native video frame; no separate hosted cover",
+    "blocked_by": [
+      "PR #4 conflicts with main; cannot deploy migration",
+      "pilot reconciliation still pending live Meta evidence",
+      "approved_items remains empty; no ready Reel queue record"
+    ],
+    "editorial_reapproval_required": false,
+    "account_rehomologation_required": false,
+    "action": "no bypass; no duplicate publication; resolve conflicts and reconcile before dispatch",
+    "published_count": 0
   }
 }
