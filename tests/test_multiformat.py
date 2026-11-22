@@ -20,6 +20,44 @@ class FakeMeta:
 class MixedTests(unittest.TestCase):
     def test_migration(self):
         self.assertTrue(mf.mode(NOW));self.assertFalse(mf.mode(NOW.replace(day=17)))
+    def test_transition_requires_review(self):
+        report={"evaluation_ready":True,"issues":[],"pilot_id":"p","publications":[{"media_id":"123"}]}
+        approval={"authorized":True,"pilot_id":"p","reviewed_media_ids":["123"],"review_reference":"review-1"}
+        with patch("fatovia.pilot_report.build",return_value=report),patch.object(Path,"read_text",return_value="{}"):
+            self.assertFalse(mf.transition_authorized({},NOW,{}))
+            self.assertTrue(mf.transition_authorized({},NOW,{"pilot_transition":approval}))
+            self.assertFalse(mf.transition_authorized({},NOW,{"pilot_transition":{**approval,"reviewed_media_ids":[]}}))
+            report["issues"]=["pilot_total_exceeded"]
+            self.assertFalse(mf.transition_authorized({},NOW,{"pilot_transition":approval}))
+            report["issues"]=[]
+            report["evaluation_ready"]=False
+            self.assertFalse(mf.transition_authorized({},NOW,{"pilot_transition":approval}))
+    def test_incident_closure_never_auto_approves(self):
+        import json
+        report={"evaluation_ready":False,"issues":["pilot_total_exceeded"],
+                "pilot_id":"p","published":1,"publications":[{"media_id":"123"}]}
+        approval={"authorized":True,"pilot_id":"p","reviewed_media_ids":["123"],"review_reference":"review-1"}
+        closure={"pilot_id":"p","closure_type":"closed_with_incident","incident_preserved":True,
+                 "legacy_history_must_remain":True,"observed_pilot_count":1,
+                 "issues":["pilot_total_exceeded"],"production_transition_authorized":False,
+                 "reconciliation":{"status":"pending_live_meta_verification","account_id_verified":False,"media_ids_verified":[]}}
+        def read(path,**kwargs):
+            return json.dumps(closure) if "closure" in str(path) else "{}"
+        with patch("fatovia.pilot_report.build",return_value=report),patch.object(Path,"read_text",autospec=True,side_effect=read):
+            self.assertFalse(mf.transition_authorized({},NOW,{"pilot_transition":approval}))
+            closure["production_transition_authorized"]=True
+            self.assertFalse(mf.transition_authorized({},NOW,{"pilot_transition":approval}))
+            closure["reconciliation"]={"status":"verified_against_live_meta","account_id_verified":True,"media_ids_verified":["123"]}
+            self.assertTrue(mf.transition_authorized({},NOW,{"pilot_transition":approval}))
+            closure["issues"]=[]
+            self.assertFalse(mf.transition_authorized({},NOW,{"pilot_transition":approval}))
+    def test_transition_missing_policy_fails_closed(self):
+        with patch.object(Path,"read_text",side_effect=OSError):
+            self.assertFalse(mf.transition_authorized({},NOW,{}))
+    def test_unauthorized_transition_blocks_both_formats(self):
+        with patch.object(mf,"transition_authorized",return_value=False), patch.object(mf,"quota",side_effect=AssertionError("quota must not be reached")):
+            self.assertFalse(mf.allowed({"published":[]},REEL,NOW,{}))
+            self.assertFalse(mf.allowed({"published":[]},{"format":"carousel"},NOW,{}))
     def test_slots(self):
         self.assertEqual([mf.slot(NOW.replace(hour=h)) for h in range(8,21,3)],["carousel","carousel","reel","carousel","carousel"])
         self.assertIsNone(mf.slot(NOW.replace(minute=46)))
@@ -35,6 +73,18 @@ class MixedTests(unittest.TestCase):
     def test_missing_logo_fails(self):
         p={"status":"prepared_guarded","daily_caps":mf.CAPS,"max_spend_brl":0,"start_date":"2026-11-18","approved_logo":{"path":"assets/fatovia-approved.png","sha256":None},"approved_items":[]}
         self.assertFalse(mf.allowed({"published":[]},REEL,NOW,p))
+    def test_approved_status_still_requires_transition(self):
+        p={"status":"approved","daily_caps":mf.CAPS,"max_spend_brl":0,
+           "start_date":"2026-11-18","approved_logo":{"path":"assets/fatovia-approved.png","sha256":None},
+           "approved_items":[]}
+        with patch.object(mf,"transition_authorized",return_value=False):
+            self.assertFalse(mf.allowed({"published":[]},REEL,NOW,p))
+    def test_approved_status_still_requires_logo(self):
+        p={"status":"approved","daily_caps":mf.CAPS,"max_spend_brl":0,
+           "start_date":"2026-11-18","approved_logo":{"path":"assets/fatovia-approved.png","sha256":None},
+           "approved_items":[]}
+        with patch.object(mf,"transition_authorized",return_value=True):
+            self.assertFalse(mf.allowed({"published":[]},REEL,NOW,p))
     def test_malformed_policy_fails(self):
         self.assertFalse(mf.allowed({"published":[]},REEL,NOW,{}))
     def test_video_path_traversal(self):

@@ -1,0 +1,113 @@
+{
+  "date": "2026-11-22",
+  "decision": "hold_publication_missing_operational_approvals",
+  "published_this_run": 0,
+  "additional_spend_brl": 0,
+  "main_sha": "6310bbac200408d097f7a844136cca690c09aa68",
+  "state": {
+    "published_total": 12,
+    "last_recorded_at": "2026-11-19T11:29:38.954024-03:00",
+    "pending_carousels": 8,
+    "publishing_checkpoint": null
+  },
+  "reel": {
+    "owner_approved": true,
+    "original_sha256": "f367280115d72645b712c55883c1e71838e6e6973dd7e4e1887dee46182b9170",
+    "hosted_stream_identical_remux_sha256": "f6148c6aef61b768dd28f2f4d35551cf6752e62cc9290a9b15d8d5e786916220",
+    "public_url": "https://thayanneoliveira.github.io/Fatovia/media/reels/FatoVia_Maria_Reel_Revisado.mp4",
+    "public_verified_by_run": 44979624941,
+    "cover_status": "selected_approved_pending_hosting",
+    "approved_items_count": 0,
+    "instagram_published": false
+  },
+  "publisher": {
+    "run_id": 44979718108,
+    "conclusion": "success",
+    "action": "idle",
+    "reason": "Nenhuma midia multiformato com marca, evidencia, revisao e cota validadas",
+    "meta_delivery_step": "skipped",
+    "reconciliation_step": "skipped"
+  },
+  "migration": {
+    "pr": 4,
+    "merged": false,
+    "production_transition_gate": "not_deployed"
+  },
+  "checks": {
+    "historical_account_delivery": "12 ledger records; no current credential failure observed",
+    "official_sources": "no new candidates approved; fresh external source verification not performed",
+    "logo": "approval hash exists; not validated against queued content this run",
+    "kinetic_captions": "not independently inspected this run",
+    "metrics": "existing cohort data; no new performance claims"
+  },
+  "learning": "GitHub Pages deployment success and HTTP hash validation are not Instagram publication. A passing GitHub publisher workflow can return idle without any Meta POST. Avoid requesting a redundant Meta rehomologation; reuse established credential checks. Hold until cover, approved queue, pilot transition and quality gates are satisfied.",
+  "watchdog": "no duplicate task created",
+  "followup": {
+    "requested": "complete_now",
+    "observed_at": "2026-11-22",
+    "verified_main_assets": [
+      "docs/media/reels/FatoVia_Maria_Reel_Revisado.mov",
+      "docs/media/reels/FatoVia_Maria_Reel_Revisado.mp4"
+    ],
+    "main_mp4_size_bytes": 18725140,
+    "approved_original_size_bytes": 18725124,
+    "stream_identical_remux_reported": true,
+    "cover_public_asset_found": false,
+    "approved_items_count": 0,
+    "release_gate_main_missing_transition_authorized_check": true,
+    "feature_branch_has_transition_authorized_check": true,
+    "action": "keep publication held; do not merge without green CI on current head and reviewed integration; preserve approved media identity and existing account controls",
+    "published_this_followup": 0
+  },
+  "release_attempt": {
+    "at": "2026-11-22",
+    "requested_by_owner": true,
+    "pr": 4,
+    "mergeable": false,
+    "mergeable_state": "dirty",
+    "latest_green_ci_run": 45034535941,
+    "latest_green_ci_head": "6c8e7a37492fe31cb3ef14b2a7e5b7a7c91a059b",
+    "cover_policy": "native video frame; no separate hosted cover",
+    "blocked_by": [
+      "PR #4 conflicts with main; cannot deploy migration",
+      "pilot reconciliation still pending live Meta evidence",
+      "approved_items remains empty; no ready Reel queue record"
+    ],
+    "editorial_reapproval_required": false,
+    "account_rehomologation_required": false,
+    "action": "no bypass; no duplicate publication; resolve conflicts and reconcile before dispatch",
+    "published_count": 0
+  },
+  "recovery_agent": {
+    "implemented": true,
+    "script": "tools/recovery_agent.py",
+    "tests": "tests/test_recovery_agent.py",
+    "branch": "feature/multiformat-incident-closure-20261121",
+    "agent_mode": "diagnose and recommend; no unsupervised production bypass",
+    "automation": "not scheduled separately; existing watchdog retained",
+    "writable_connector_account_observed": {
+      "provider": "Windsor.ai",
+      "id": "17841434700481151",
+      "label": "nempediu",
+      "identity_for_fatovia": "not independently confirmed"
+    },
+    "next_actions": [
+      "read-only reconcile Meta account and media IDs",
+      "resolve PR #4 conflicts against main",
+      "validate media quality and populate approved_items",
+      "merge only after green tests and verifiable transition"
+    ],
+    "published_this_run": 0
+  },
+  "meta_identity_comparison": {
+    "checked_on": "2026-11-22",
+    "source": "Windsor.ai Instagram connector live data",
+    "connector_label": "nempediu",
+    "connector_account_id": "17841434700481151",
+    "live_account_name": "fato.via",
+    "live_account_id": "28180280625000221",
+    "live_media_count": 23,
+    "conclusion": "current username confirmed through connector; differing account identifiers not yet proven equivalent to GitHub META_IG_USER_ID; no direct Meta me query performed",
+    "production_authorization_changed": false
+  }
+}

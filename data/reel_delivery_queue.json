@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "status": "awaiting_approved_media_bytes",
+  "account": "@fato.via",
+  "delivery_route": "existing GitHub Actions publisher -> Meta Graph API",
+  "credential_policy": "reuse existing credential validation; full rehomologation only after real authentication failure",
+  "items": [
+    {
+      "id": "reel:inflacao-precos-20261118",
+      "title": "Se a inflação caiu, por que tudo continua caro?",
+      "editorial_status": "owner_approved_final",
+      "approved_video_sha256": "f367280115d72645b712c55883c1e71838e6e6973dd7e4e1887dee46182b9170",
+      "mp4_location": null,
+      "cover_location": null,
+      "technical_status": "candidate_found_hash_mismatch_requires_version_confirmation",
+      "publish_status": "not_submitted",
+      "located_upload": {
+        "filename": "FatoVia_Maria_Reel_Revisado.mp4",
+        "sha256": "11cb7e41c8b5ed02a6837f0763b62946929cbac1fd8abf5d018a1d551971f23d",
+        "size_bytes": 15457919,
+        "duration_seconds": 109.6,
+        "width": 512,
+        "height": 910,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "source": "user-uploaded conversation attachment"
+      }
+    }
+  ],
+  "next_reel": {
+    "status": "preproduction",
+    "requirements": {
+      "style": "Santa-R-1.0 V5",
+      "kinetic_captions": true,
+      "approved_logo_closing": true,
+      "cover": "feed-first human conflict; readable at small size",
+      "source_review": "use established editorial checks",
+      "max_additional_cost_brl": 0
+    },
+    "steps": [
+      "select timely subject with evidence",
+      "write accessible human-centered hook and script",
+      "render Santa-R-1.0 V5",
+      "create cover and closing logo",
+      "bind final owner-approved video and cover hashes",
+      "deliver through existing publisher only after media and dedup checks"
+    ]
+  },
+  "safety": {
+    "do_not_recreate_or_substitute_approved_video": true,
+    "do_not_publish_without_verified_bytes": true,
+    "no_duplicate_publish": true,
+    "no_new_scheduled_workflow": true
+  }
+}
