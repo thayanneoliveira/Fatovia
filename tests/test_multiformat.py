@@ -73,6 +73,18 @@ class MixedTests(unittest.TestCase):
     def test_missing_logo_fails(self):
         p={"status":"prepared_guarded","daily_caps":mf.CAPS,"max_spend_brl":0,"start_date":"2026-11-18","approved_logo":{"path":"assets/fatovia-approved.png","sha256":None},"approved_items":[]}
         self.assertFalse(mf.allowed({"published":[]},REEL,NOW,p))
+    def test_approved_status_still_requires_transition(self):
+        p={"status":"approved","daily_caps":mf.CAPS,"max_spend_brl":0,
+           "start_date":"2026-11-18","approved_logo":{"path":"assets/fatovia-approved.png","sha256":None},
+           "approved_items":[]}
+        with patch.object(mf,"transition_authorized",return_value=False):
+            self.assertFalse(mf.allowed({"published":[]},REEL,NOW,p))
+    def test_approved_status_still_requires_logo(self):
+        p={"status":"approved","daily_caps":mf.CAPS,"max_spend_brl":0,
+           "start_date":"2026-11-18","approved_logo":{"path":"assets/fatovia-approved.png","sha256":None},
+           "approved_items":[]}
+        with patch.object(mf,"transition_authorized",return_value=True):
+            self.assertFalse(mf.allowed({"published":[]},REEL,NOW,p))
     def test_malformed_policy_fails(self):
         self.assertFalse(mf.allowed({"published":[]},REEL,NOW,{}))
     def test_video_path_traversal(self):
