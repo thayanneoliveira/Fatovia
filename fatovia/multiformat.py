@@ -98,7 +98,7 @@ def allowed(state,item,now,policy=None):
     try:
         p=load_policy() if policy is None else policy
         fmt=kind(item)
-        if (not transition_authorized(state,now,p) or p["status"]!="prepared_guarded" or p["daily_caps"]!=CAPS or p["max_spend_brl"]!=0
+        if (not transition_authorized(state,now,p) or p["status"] not in ("prepared_guarded", "approved") or p["daily_caps"]!=CAPS or p["max_spend_brl"]!=0
                 or now.astimezone(TZ).date()<date.fromisoformat(p["start_date"]) or not quota(state,now,fmt)):
             return False
         if any((x["id"],x["version"])==(item["id"],item["version"]) for x in state.get("published",[])):return False
