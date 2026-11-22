@@ -41,5 +41,22 @@
     "metrics": "existing cohort data; no new performance claims"
   },
   "learning": "GitHub Pages deployment success and HTTP hash validation are not Instagram publication. A passing GitHub publisher workflow can return idle without any Meta POST. Avoid requesting a redundant Meta rehomologation; reuse established credential checks. Hold until cover, approved queue, pilot transition and quality gates are satisfied.",
-  "watchdog": "no duplicate task created"
+  "watchdog": "no duplicate task created",
+  "followup": {
+    "requested": "complete_now",
+    "observed_at": "2026-11-22",
+    "verified_main_assets": [
+      "docs/media/reels/FatoVia_Maria_Reel_Revisado.mov",
+      "docs/media/reels/FatoVia_Maria_Reel_Revisado.mp4"
+    ],
+    "main_mp4_size_bytes": 18725140,
+    "approved_original_size_bytes": 18725124,
+    "stream_identical_remux_reported": true,
+    "cover_public_asset_found": false,
+    "approved_items_count": 0,
+    "release_gate_main_missing_transition_authorized_check": true,
+    "feature_branch_has_transition_authorized_check": true,
+    "action": "keep publication held; do not merge without green CI on current head and reviewed integration; preserve approved media identity and existing account controls",
+    "published_this_followup": 0
+  }
 }
