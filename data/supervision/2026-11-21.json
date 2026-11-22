@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-21",
+  "decision": "hold_new_publication_pending_pilot_transition",
+  "publication_initiated": false,
+  "additional_spend_brl": 0,
+  "source": "GitHub repository snapshot",
+  "state_blob": "3630cad95f9e7858d46ba711a4f102a8a82409ff",
+  "pilot_report_blob": "b8d48842cfddfdcdc4869c63c39202d9851fc35d",
+  "ledger": {
+    "published_total": 12,
+    "last_recorded_at": "2026-11-19T11:29:38.954024-03:00",
+    "publishing_checkpoint": null,
+    "pending_carousels": 8
+  },
+  "pilot": {
+    "status": "review_required",
+    "issues": [
+      "pilot_daily_limit_exceeded",
+      "pilot_total_exceeded"
+    ],
+    "next_phase_authorized": false,
+    "evaluation_ready": false
+  },
+  "migration_fix": {
+    "pr": 3,
+    "branch": "fix/pilot-transition-20261119",
+    "ci_run": 44742431925,
+    "ci_conclusion": "success",
+    "merged": false
+  },
+  "reel": "hold: approved_items empty; public hosting/hash, independent review, cover delivery and official IPCA validation not independently confirmed",
+  "account": "not independently verified against live Meta",
+  "source_revalidation": "not independently verified during this run",
+  "media_integrity": "not independently rehashed during this run",
+  "metrics": "10 metric cohort entries in state; no fresh performance optimization attempted",
+  "learning": "CI success is not deployment. Keep production hold until pilot incident resolved and authorization explicitly reviewed. Do not infer a publish event from the ledger alone.",
+  "watchdog": "no duplicate tasks created",
+  "limitations": "No direct Meta reconciliation, official-source fresh verification or current media byte inspection; existing production publisher not modified."
+}

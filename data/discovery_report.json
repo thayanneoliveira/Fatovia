@@ -1,18 +1,19 @@
 {
-  "generated_at": "2026-11-19T04:14:56.093037-03:00",
+  "generated_at": "2026-11-21T06:41:02.150341-03:00",
   "note": "Topic co-occurrence is not corroboration of an individual claim or proof of virality.",
   "publication_authorized": false,
   "signals": [
     {
-      "id": "758237866c4d4332cfba",
-      "published_at": "2026-11-18T17:52:00-03:00",
+      "id": "28febcd24ea2233b72fe",
+      "published_at": "2026-11-20T18:59:00-03:00",
       "source": "agencia_brasil",
       "status": "discovery_only",
-      "title": "SP recebe novas doses da vacina contra a mpox; saiba quem pode receber",
+      "title": "Renda de 73% de negras vítimas de violência é de até 2 salários mínimo",
       "topics": [
-        "saude"
+        "economia",
+        "seguranca"
       ],
-      "url": "https://agenciabrasil.ebc.com.br/saude/noticia/2026-11/sp-recebe-novas-doses-da-vacina-contra-mpox-saiba-quem-pode-receber"
+      "url": "https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2026-11/renda-de-73-de-negras-vitimas-de-violencia-e-de-ate-2-salarios-minimo"
     }
   ],
   "sources": {
@@ -38,7 +39,17 @@
         "agencia_brasil"
       ],
       "status": "research_required",
-      "topic": "saude"
+      "topic": "economia"
+    },
+    {
+      "document_count": 1,
+      "explore_links": 0,
+      "source_count": 1,
+      "sources": [
+        "agencia_brasil"
+      ],
+      "status": "research_required",
+      "topic": "seguranca"
     }
   ]
 }

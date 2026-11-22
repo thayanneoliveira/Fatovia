@@ -63,6 +63,97 @@
         "seguranca"
       ],
       "views": 8
+    },
+    {
+      "age_hours": 27.25,
+      "media_id": "17908023129353266",
+      "media_type": "CAROUSEL_ALBUM",
+      "observed_at": "2026-11-19T14:19:52.188537-03:00",
+      "published_at": "2026-11-18T14:04:52+00:00",
+      "reach": 2,
+      "saved": 0,
+      "shares": 0,
+      "target_hours": 24,
+      "topics": [
+        "economia"
+      ],
+      "views": 4
+    },
+    {
+      "age_hours": 75.6,
+      "media_id": "18077986049477583",
+      "media_type": "CAROUSEL_ALBUM",
+      "observed_at": "2026-11-19T14:19:52.188537-03:00",
+      "published_at": "2026-11-16T13:44:10+00:00",
+      "reach": 2,
+      "saved": 0,
+      "shares": 0,
+      "target_hours": 72,
+      "topics": [
+        "infraestrutura"
+      ],
+      "views": 6
+    },
+    {
+      "age_hours": 25.13,
+      "media_id": "18111958382223422",
+      "media_type": "CAROUSEL_ALBUM",
+      "observed_at": "2026-11-19T21:35:10.259529-03:00",
+      "published_at": "2026-11-18T23:27:28+00:00",
+      "reach": 1,
+      "saved": 0,
+      "shares": 0,
+      "target_hours": 24,
+      "topics": [
+        "saude",
+        "economia"
+      ],
+      "views": 3
+    },
+    {
+      "age_hours": 28.13,
+      "media_id": "18151573990488064",
+      "media_type": "CAROUSEL_ALBUM",
+      "observed_at": "2026-11-19T21:35:10.259529-03:00",
+      "published_at": "2026-11-18T20:27:18+00:00",
+      "reach": 1,
+      "saved": 0,
+      "shares": 0,
+      "target_hours": 24,
+      "topics": [
+        "saude"
+      ],
+      "views": 6
+    },
+    {
+      "age_hours": 74.63,
+      "media_id": "18149060461583391",
+      "media_type": "CAROUSEL_ALBUM",
+      "observed_at": "2026-11-19T21:35:10.259529-03:00",
+      "published_at": "2026-11-16T21:57:35+00:00",
+      "reach": 2,
+      "saved": 0,
+      "shares": 0,
+      "target_hours": 72,
+      "topics": [
+        "economia"
+      ],
+      "views": 7
+    },
+    {
+      "age_hours": 28.06,
+      "media_id": "18185273779443646",
+      "media_type": "CAROUSEL_ALBUM",
+      "observed_at": "2026-11-20T15:34:07.293693-03:00",
+      "published_at": "2026-11-19T14:30:34+00:00",
+      "reach": 3,
+      "saved": 0,
+      "shares": 0,
+      "target_hours": 24,
+      "topics": [
+        "economia"
+      ],
+      "views": 6
     }
   ],
   "metrics": [],
@@ -441,6 +532,60 @@
         "tecnologia"
       ],
       "version": "9928715e313319"
+    },
+    {
+      "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
+      "caption": "O que está previsto nesta proposta?\n\nPL 5756/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-19. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2655695\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2655695/a39168135eade1\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "cards": [
+        "docs/media/camara-2655695/a39168135eade1/01.jpg",
+        "docs/media/camara-2655695/a39168135eade1/02.jpg",
+        "docs/media/camara-2655695/a39168135eade1/03.jpg",
+        "docs/media/camara-2655695/a39168135eade1/04.jpg",
+        "docs/media/camara-2655695/a39168135eade1/05.jpg",
+        "docs/media/camara-2655695/a39168135eade1/06.jpg",
+        "docs/media/camara-2655695/a39168135eade1/07.jpg"
+      ],
+      "discovery_source_count": 1,
+      "editorial_score": 84,
+      "evidence": {
+        "checked_at": "2026-11-19T20:35:59.886477-03:00",
+        "claims": [
+          {
+            "basis": "identificacao_da_proposicao",
+            "field": "title"
+          },
+          {
+            "basis": "ementa_oficial_atribuida",
+            "field": "summary"
+          },
+          {
+            "basis": "registro_de_tramitacao",
+            "field": "stage"
+          }
+        ],
+        "content_sha256": "fa0ecb7d165f79251a7451677d0ef0f558030deb9209673497c3b14dd6764774",
+        "kind": "official_document_attribution",
+        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
+        "record_date": "2026-11-19",
+        "schema": 1,
+        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
+      },
+      "explore_signal_count": 0,
+      "id": "camara:2655695",
+      "public_url": "https://www.camara.leg.br/propostas-legislativas/2655695",
+      "source_name": "Câmara dos Deputados",
+      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-19",
+      "status": "ready",
+      "summary": "Altera a Lei nº 14.172, de 10 de junho de 2021, para ampliar o prazo para aplicação e eventual restituição dos recursos entregues pela União aos Estados e ao Distrito Federal voltados para a garantia do acesso à internet, com fins educacionais, aos estabelecimentos de ensino, aos alunos e aos professores da rede pública de ensino dos Estados, do Distrito Federal e dos Municípios, em virtude da calamidade pública decorrente da covid-19.",
+      "summary_hash": "f9558d0d57c0ed",
+      "template_revision": "documentary-hook-v3",
+      "title": "PL 5756/2026",
+      "topics": [
+        "educacao"
+      ],
+      "version": "a39168135eade1"
     }
   ],
   "published": [

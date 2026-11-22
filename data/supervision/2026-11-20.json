@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-20",
+  "decision": "hold_new_publication",
+  "publication_initiated": false,
+  "additional_spend_brl": 0,
+  "state_blob": "37f2589a08c8ecadc85123e6691946899576c7c9",
+  "pilot": {
+    "published": 8,
+    "max_total": 4,
+    "next_phase_authorized": false,
+    "issues": [
+      "pilot_daily_limit_exceeded",
+      "pilot_total_exceeded"
+    ]
+  },
+  "new_since_previous_report": {
+    "id": "camara:2653946",
+    "media_id": "18185273779443646",
+    "permalink": "https://www.instagram.com/p/Df7TG8mEXio/",
+    "published_at": "2026-11-19T11:29:38.954024-03:00"
+  },
+  "today_ledger_count": 0,
+  "checkpoint": null,
+  "queue": [
+    {
+      "id": "camara:2654371",
+      "status": "hold_pending_authorization_and_fresh_validation"
+    },
+    {
+      "id": "camara:2655462",
+      "status": "hold_pending_authorization_and_fresh_validation"
+    },
+    {
+      "id": "camara:2655411",
+      "status": "hold_pending_authorization_and_fresh_validation"
+    },
+    {
+      "id": "camara:2655695",
+      "status": "hold_pending_authorization_and_fresh_validation"
+    }
+  ],
+  "rejected": [
+    "camara:2653947",
+    "camara:2653944",
+    "camara:2654174",
+    "camara:2654163"
+  ],
+  "reel": "hold_missing_hosted_file_cover_and_independent_review",
+  "source_and_account": "Not independently revalidated in this run; prior audit only",
+  "learning": "Latest available cohorts show reach 1–2, views 3–7, zero saves/shares; insufficient for timing changes",
+  "publisher_run": 44671249720,
+  "limitations": "No live Meta reconciliation or byte rehash; no production gate changes; existing watchdog not duplicated."
+}
