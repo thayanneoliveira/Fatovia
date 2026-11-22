@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-22",
+  "decision": "hold_publication_missing_operational_approvals",
+  "published_this_run": 0,
+  "additional_spend_brl": 0,
+  "main_sha": "6310bbac200408d097f7a844136cca690c09aa68",
+  "state": {
+    "published_total": 12,
+    "last_recorded_at": "2026-11-19T11:29:38.954024-03:00",
+    "pending_carousels": 8,
+    "publishing_checkpoint": null
+  },
+  "reel": {
+    "owner_approved": true,
+    "original_sha256": "f367280115d72645b712c55883c1e71838e6e6973dd7e4e1887dee46182b9170",
+    "hosted_stream_identical_remux_sha256": "f6148c6aef61b768dd28f2f4d35551cf6752e62cc9290a9b15d8d5e786916220",
+    "public_url": "https://thayanneoliveira.github.io/Fatovia/media/reels/FatoVia_Maria_Reel_Revisado.mp4",
+    "public_verified_by_run": 44979624941,
+    "cover_status": "selected_approved_pending_hosting",
+    "approved_items_count": 0,
+    "instagram_published": false
+  },
+  "publisher": {
+    "run_id": 44979718108,
+    "conclusion": "success",
+    "action": "idle",
+    "reason": "Nenhuma midia multiformato com marca, evidencia, revisao e cota validadas",
+    "meta_delivery_step": "skipped",
+    "reconciliation_step": "skipped"
+  },
+  "migration": {
+    "pr": 4,
+    "merged": false,
+    "production_transition_gate": "not_deployed"
+  },
+  "checks": {
+    "historical_account_delivery": "12 ledger records; no current credential failure observed",
+    "official_sources": "no new candidates approved; fresh external source verification not performed",
+    "logo": "approval hash exists; not validated against queued content this run",
+    "kinetic_captions": "not independently inspected this run",
+    "metrics": "existing cohort data; no new performance claims"
+  },
+  "learning": "GitHub Pages deployment success and HTTP hash validation are not Instagram publication. A passing GitHub publisher workflow can return idle without any Meta POST. Avoid requesting a redundant Meta rehomologation; reuse established credential checks. Hold until cover, approved queue, pilot transition and quality gates are satisfied.",
+  "watchdog": "no duplicate task created"
+}
