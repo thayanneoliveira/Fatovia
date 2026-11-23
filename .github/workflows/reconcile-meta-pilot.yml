@@ -1,0 +1,51 @@
+name: "FatoVia | Conciliar 8 IDs do piloto na Meta"
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/reconcile-meta-pilot.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    env:
+      IG_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+      EXPECTED_ID: ${{ vars.META_IG_USER_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Conferir identidade e oito publicacoes na Meta sem publicar
+        run: |
+          python3 - <<'PY'
+          import json,os,urllib.request,urllib.parse,urllib.error,sys
+          from pathlib import Path
+          token=os.getenv("IG_TOKEN","").strip()
+          expected=os.getenv("EXPECTED_ID","").strip()
+          if not token or not expected:sys.exit("Credenciais de producao ausentes")
+          def get(path,fields):
+              url="https://graph.instagram.com/v25.0/"+path+"?"+urllib.parse.urlencode({"fields":fields})
+              req=urllib.request.Request(url,headers={"Authorization":"Bearer "+token})
+              with urllib.request.urlopen(req,timeout=25) as res:return json.load(res)
+          me=get("me","user_id,username")
+          if me.get("username")!="fato.via" or str(me.get("user_id"))!=expected:
+              sys.exit("Identidade Meta nao coincide; nenhuma autorizacao")
+          state=json.loads(Path("data/state.json").read_text())
+          report=json.loads(Path("data/pilot_report.json").read_text())
+          ids=[str(p["media_id"]) for p in report["publications"]]
+          known={str(p.get("media_id")) for p in state["published"]}
+          if len(ids)!=8 or len(set(ids))!=8 or not set(ids)<=known:
+              sys.exit("Piloto ou historico inconsistente")
+          for media_id in ids:
+              try:
+                  media=get(media_id,"id,permalink,caption")
+              except (urllib.error.HTTPError,urllib.error.URLError,TimeoutError,ValueError) as e:
+                  print("META_MEDIA_CHECK_FAILED",media_id,type(e).__name__)
+                  sys.exit(1)
+              if str(media.get("id"))!=media_id or not media.get("permalink"):
+                  sys.exit("Meta retornou ID/permalink inconsistente: "+media_id)
+              print("VERIFIED_MEDIA_ID",media_id)
+          print("VERIFIED_META_ACCOUNT",expected)
+          print("VERIFIED_PILOT_MEDIA_COUNT",len(ids))
+          print("READ_ONLY_NO_PUBLICATION")
+          PY
