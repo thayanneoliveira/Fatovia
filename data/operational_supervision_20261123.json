@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-23",
+  "timezone": "America/Sao_Paulo",
+  "scope": "daily_multiformat_supervision",
+  "observed_at_local": "2026-11-23 08:38",
+  "publication_confirmed_today": 0,
+  "history_count": 12,
+  "last_recorded_publication": "2026-11-19T11:29:38.954024-03:00",
+  "publisher_latest_run": 45107901422,
+  "publisher_result": "idle: Nenhuma midia multiformato com marca, evidencia, revisao e cota validadas",
+  "editorial_audit_generated": "2026-11-23T00:44:04.958041-03:00",
+  "editorial_approved_carousels": 7,
+  "editorial_rejected": [
+    {
+      "id": "camara:2654163",
+      "reason": "source_unavailable_or_changed"
+    }
+  ],
+  "multiformat_approved_items": 0,
+  "reel_queue": "ready_for_guarded_publish_window",
+  "reel_publish_status": "not_submitted",
+  "reel_verified_hosted_asset": true,
+  "live_meta_account_verification_this_run": false,
+  "insights": {
+    "status": "insufficient_sample",
+    "eligible_72h": 0,
+    "min_samples": 20,
+    "recommended_hours": [
+      9,
+      13,
+      17,
+      21
+    ],
+    "note": "Do not interpret recommendations as proven optimal slots"
+  },
+  "operational_learning": [
+    "A successful GitHub workflow can exit idle without publishing; inspect prepare action and Meta media ID.",
+    "Seven documentary approvals do not override multiformat per-item authorization.",
+    "Do not loosen production gates to force daily count.",
+    "Reel has one-time owner editorial exception but still requires live hosting integrity and transaction checks."
+  ],
+  "next_actions": [
+    "Keep existing publisher and watchdog schedules; do not duplicate.",
+    "Recheck eligibility and source freshness in the next publication slot.",
+    "Investigate why approved_items remains empty and validate integration tests before modifying production gates.",
+    "Confirm actual Meta media ID and permalink before marking published."
+  ],
+  "financial_cost_brl": 0
+}
