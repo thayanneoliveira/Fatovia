@@ -205,5 +205,42 @@
       "18185273779443646"
     ],
     "decision": "Owner-approved guarded phase transition after direct Meta 8/8 reconciliation; no item is authorized absent all per-media gates"
+  },
+  "owner_per_content_authorization": {
+    "decision": "authorized_by_owner_pending_operational_validation",
+    "instruction": "Publicar todos os itens individualmente elegiveis, ate os limites diarios, somente pela rota homologada. Esta autorizacao nao substitui gates tecnicos nem altera approved_items antes de teste de integracao.",
+    "carousel_ids": [
+      "camara:2653947",
+      "camara:2653944",
+      "camara:2654174",
+      "camara:2654371",
+      "camara:2655462",
+      "camara:2655411",
+      "camara:2655695"
+    ],
+    "reel_ids": [
+      "reel:inflacao-precos-20261118"
+    ],
+    "excluded_ids": [
+      "camara:2654163",
+      "reel:creche-v5"
+    ],
+    "daily_caps": {
+      "carousel": 4,
+      "reel": 1
+    },
+    "max_spend_brl": 0,
+    "requires": [
+      "source_revalidation",
+      "media_integrity",
+      "approved_logo",
+      "destination_account",
+      "duplicate_prevention",
+      "quota_check",
+      "checkpoint",
+      "meta_reconciliation",
+      "tested_publisher_route"
+    ],
+    "integration_status": "pending_schema_and_publisher_tests"
   }
 }
