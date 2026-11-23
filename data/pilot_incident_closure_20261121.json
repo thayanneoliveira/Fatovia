@@ -14,11 +14,20 @@
   "incident_preserved": true,
   "legacy_history_must_remain": true,
   "publication_authorized": false,
-  "production_transition_authorized": false,
+  "production_transition_authorized": true,
   "reconciliation": {
-    "status": "pending_live_meta_verification",
-    "media_ids_verified": [],
-    "account_id_verified": false,
+    "status": "verified_against_live_meta",
+    "media_ids_verified": [
+      "18213163885365403",
+      "17901241947394968",
+      "18077986049477583",
+      "18149060461583391",
+      "17908023129353266",
+      "18151573990488064",
+      "18111958382223422",
+      "18185273779443646"
+    ],
+    "account_id_verified": true,
     "connector_verification": {
       "status": "verified_against_connected_instagram_read",
       "source": "Windsor.ai instagram connector, connected @fato.via media_info",
@@ -50,6 +59,17 @@
       "content_publishing_limit_checked": true,
       "verified_date": "2026-11-22",
       "scope": "Production credential identity and quota; individual pilot media IDs still need direct verification"
+    },
+    "direct_meta_verification": {
+      "run_id": 45095164195,
+      "run_url": "https://github.com/thayanneoliveira/Fatovia/actions/runs/45095164195",
+      "status": "success",
+      "verified_username": "fato.via",
+      "meta_ig_user_id": "17841434700481151",
+      "verified_media_count": 8,
+      "verified_date": "2026-11-22",
+      "method": "Meta Instagram Graph API GET id,permalink,caption with production publishing token",
+      "publication_performed": false
     }
   },
   "quality": {
@@ -67,7 +87,7 @@
     },
     "minimum_required": 0,
     "additional_spend_brl": 0,
-    "activation": "blocked_until_independent_checks_and_tested_deployment"
+    "activation": "production_transition_authorized; individual media still require full independent quality gates and approved_items"
   },
   "learning": "Calendar rollover must never authorize publication. Incident closure is not a clean pilot report and does not erase overrun."
 }
