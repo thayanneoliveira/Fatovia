@@ -1,6 +1,6 @@
 {
   "revision": "didactic-v4",
-  "basis": "Ementa e tramitação oficiais versionadas; paráfrases e mecanismos condicionais revisados nesta atualização. Não constitui leitura integral, nem prova de impacto.",
+  "basis": "Propostas de redação didática conservadora, derivadas das ementas oficiais versionadas; sujeitas à auditoria independente de fonte, conteúdo e bytes. Não equivalem a aprovação semântica humana nem leitura do texto integral.",
   "items": [
     {
       "id": "camara:2653819",
@@ -319,6 +319,315 @@
         {
           "headline": "Ainda não sabemos por essa ementa",
           "body": "Quais seriam alíquotas, limites, exceções e datas de vigência? Não é possível calcular o impacto individual só com o resumo oficial.",
+          "kind": "questions"
+        }
+      ]
+    },
+    {
+      "id": "camara:2653947",
+      "version": "a9ab7e30775280",
+      "title": "PL 5855/2026",
+      "summary": "Altera a Lei nº 9.249, de 26 de dezembro de 1995, para elevar a alíquota do Imposto de Renda Retido na Fonte incidente sobre os juros sobre o capital próprio.",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-13",
+      "anchors": [
+        "juros sobre o capital próprio"
+      ],
+      "cards": [
+        {
+          "headline": "Juros sobre capital próprio: qual imposto pode mudar?",
+          "body": "A proposta pretende elevar a alíquota do imposto retido na fonte sobre juros sobre capital próprio.",
+          "kind": "question"
+        },
+        {
+          "headline": "O que diz a proposta?",
+          "body": "A mudança proposta é elevar a alíquota do Imposto de Renda Retido na Fonte incidente sobre juros sobre capital próprio.",
+          "kind": "proposal"
+        },
+        {
+          "headline": "Qual é o mecanismo?",
+          "body": "Se a alíquota aplicada a um pagamento aumenta, a retenção inicial sobre esse pagamento também pode aumentar.",
+          "kind": "mechanism"
+        },
+        {
+          "headline": "E na prática?",
+          "body": "Se o texto for aprovado, a tributação dessa modalidade de pagamento poderá mudar. A ementa não informa o efeito final para cada contribuinte.",
+          "kind": "conditional"
+        },
+        {
+          "headline": "O que falta esclarecer?",
+          "body": "Qual seria a nova alíquota? Quando valeria? Quem suportaria o custo? É necessário consultar o texto integral.",
+          "kind": "questions"
+        }
+      ]
+    },
+    {
+      "id": "camara:2653944",
+      "version": "2d94a3cc4eebf7",
+      "title": "PL 5852/2026",
+      "summary": "Institui o Imposto sobre Grandes Fortunas, previsto no art. 153, inciso VII, da Constituição Federal.",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-13",
+      "anchors": [
+        "Imposto sobre Grandes Fortunas"
+      ],
+      "cards": [
+        {
+          "headline": "Imposto sobre grandes fortunas: o que está em discussão?",
+          "body": "Uma proposta pretende instituir o Imposto sobre Grandes Fortunas previsto na Constituição.",
+          "kind": "question"
+        },
+        {
+          "headline": "O que diz a proposta?",
+          "body": "A ementa propõe instituir o Imposto sobre Grandes Fortunas, previsto no artigo 153 da Constituição Federal.",
+          "kind": "proposal"
+        },
+        {
+          "headline": "Qual é o mecanismo?",
+          "body": "Criar um tributo exige definir regras de incidência e cobrança. A ementa não apresenta aqui todos esses parâmetros.",
+          "kind": "mechanism"
+        },
+        {
+          "headline": "E na prática?",
+          "body": "Se aprovado e regulamentado conforme o texto final, o tributo poderá alcançar patrimônios enquadrados nos critérios legais.",
+          "kind": "conditional"
+        },
+        {
+          "headline": "O que falta esclarecer?",
+          "body": "Qual patrimônio seria alcançado? Como seria calculado? Quais exceções existiriam? Consulte o texto completo.",
+          "kind": "questions"
+        }
+      ]
+    },
+    {
+      "id": "camara:2654174",
+      "version": "abe5fda5fc0602",
+      "title": "PLP 305/2026",
+      "summary": "Estabelece a obrigatoriedade de rastreabilidade integral, transparência ativa e vedação à movimentação de recursos públicos em espécie no âmbito das transferências decorrentes de emendas parlamentares e instrumentos congêneres, dispõe sobre mecanismos de controle financeiro digital, altera a Lei n° 4.320, de 17 de março de 1964, e a Lei Complementar n° 101, de 4 de maio de 2000, e dá outras providências.",
+      "stage": "Notificação de Despacho",
+      "stage_date": "2026-11-16",
+      "anchors": [
+        "rastreabilidade integral",
+        "emendas parlamentares"
+      ],
+      "cards": [
+        {
+          "headline": "Emendas parlamentares: como rastrear o dinheiro?",
+          "body": "O projeto propõe rastreabilidade e transparência das transferências de recursos de emendas.",
+          "kind": "question"
+        },
+        {
+          "headline": "O que diz a proposta?",
+          "body": "A proposta exige rastreabilidade integral, transparência ativa e proíbe movimentação em espécie em determinadas transferências.",
+          "kind": "proposal"
+        },
+        {
+          "headline": "Qual é o mecanismo?",
+          "body": "Rastrear etapas de movimentação pode facilitar a identificação de origem, destino e responsáveis pelos recursos públicos.",
+          "kind": "mechanism"
+        },
+        {
+          "headline": "E na prática?",
+          "body": "Se a proposta avançar, as transferências abrangidas poderão exigir registros digitais e novas práticas de controle financeiro.",
+          "kind": "conditional"
+        },
+        {
+          "headline": "O que falta esclarecer?",
+          "body": "Quais transferências entram? Quem fiscaliza? Como seriam tratadas exceções? A ementa não detalha toda a execução.",
+          "kind": "questions"
+        }
+      ]
+    },
+    {
+      "id": "camara:2654163",
+      "version": "6438c89bd557e4",
+      "title": "PL 5861/2026",
+      "summary": "Institui a Lei Suzane Von Richthofen, que proíbe e criminaliza a obtenção de vantagem econômica, direta ou indireta, por pessoa condenada pela prática de infração penal, mediante exploração comercial, promoção ou monetização do próprio delito, estabelece mecanismos de perda de valores, reparação das vítimas e responsabilização de terceiros que atuem para fraudar a proibição, e dá outras providências.",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-16",
+      "anchors": [
+        "vantagem econômica",
+        "monetização do próprio delito"
+      ],
+      "cards": [
+        {
+          "headline": "Lucro com divulgação de crimes: o que propõe o projeto?",
+          "body": "Uma proposta pretende restringir ganhos comerciais relacionados à exploração do próprio delito por condenados.",
+          "kind": "question"
+        },
+        {
+          "headline": "O que diz a proposta?",
+          "body": "O texto propõe proibir e criminalizar vantagem econômica obtida pela exploração comercial ou monetização do próprio delito.",
+          "kind": "proposal"
+        },
+        {
+          "headline": "Qual é o mecanismo?",
+          "body": "A proposta diferencia a condenação penal da exploração econômica do delito, prevendo perda de valores e reparação.",
+          "kind": "mechanism"
+        },
+        {
+          "headline": "E na prática?",
+          "body": "Se aprovada, a norma poderá estabelecer consequências para ganhos enquadrados nas hipóteses definidas pelo texto final.",
+          "kind": "conditional"
+        },
+        {
+          "headline": "O que falta esclarecer?",
+          "body": "Quais condutas seriam abrangidas? Como provar o vínculo econômico? Quais direitos e limites serão preservados?",
+          "kind": "questions"
+        }
+      ]
+    },
+    {
+      "id": "camara:2654371",
+      "version": "146301a4f8f3d0",
+      "title": "PL 5874/2026",
+      "summary": "Institui o cruzamento obrigatório e periódico de dados do Censo Escolar com as folhas de pagamento dos entes federados e com os pagamentos efetuados com recursos do Fundeb, e dispõe sobre a exclusão de estudantes do Censo Escolar, para coibir fraudes e o desvio de recursos da educação.",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-17",
+      "anchors": [
+        "Censo Escolar",
+        "Fundeb"
+      ],
+      "cards": [
+        {
+          "headline": "Fundeb: cruzar dados pode revelar inconsistências?",
+          "body": "O projeto pretende cruzar registros escolares, folhas de pagamento e recursos do Fundeb.",
+          "kind": "question"
+        },
+        {
+          "headline": "O que diz a proposta?",
+          "body": "A proposta prevê cruzamento periódico de dados do Censo Escolar com folhas de pagamento e pagamentos com recursos do Fundeb.",
+          "kind": "proposal"
+        },
+        {
+          "headline": "Qual é o mecanismo?",
+          "body": "Comparar bases de dados pode apontar divergências que precisam de verificação. Uma divergência isolada não comprova fraude.",
+          "kind": "mechanism"
+        },
+        {
+          "headline": "E na prática?",
+          "body": "Se implementado, o cruzamento poderá apoiar controles sobre informações escolares e pagamentos, conforme regras aprovadas.",
+          "kind": "conditional"
+        },
+        {
+          "headline": "O que falta esclarecer?",
+          "body": "Quem fará a conferência? Como corrigir erros cadastrais? Quais garantias terão os envolvidos?",
+          "kind": "questions"
+        }
+      ]
+    },
+    {
+      "id": "camara:2655462",
+      "version": "b2c418b5ca1c25",
+      "title": "PL 5903/2026",
+      "summary": "Institui a Política Nacional de Educação Especial Inclusiva, e altera o art. 3º da Lei nº 13.146, de 6 de julho de 2015.",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-18",
+      "anchors": [
+        "Educação Especial Inclusiva"
+      ],
+      "cards": [
+        {
+          "headline": "Educação inclusiva: o que pretende mudar?",
+          "body": "Uma proposta institui uma política nacional de educação especial inclusiva e altera a Lei Brasileira de Inclusão.",
+          "kind": "question"
+        },
+        {
+          "headline": "O que diz a proposta?",
+          "body": "A ementa institui a Política Nacional de Educação Especial Inclusiva e propõe alteração na Lei nº 13.146.",
+          "kind": "proposal"
+        },
+        {
+          "headline": "Qual é o mecanismo?",
+          "body": "Uma política nacional pode definir diretrizes, mas a ementa isolada não esclarece financiamento nem execução nas escolas.",
+          "kind": "mechanism"
+        },
+        {
+          "headline": "E na prática?",
+          "body": "Se aprovada, a política poderá estabelecer novas orientações para a educação especial inclusiva conforme o texto final.",
+          "kind": "conditional"
+        },
+        {
+          "headline": "O que falta esclarecer?",
+          "body": "Quais serviços e apoios serão previstos? Como serão financiados? Quem será responsável pela implementação?",
+          "kind": "questions"
+        }
+      ]
+    },
+    {
+      "id": "camara:2655411",
+      "version": "9928715e313319",
+      "title": "PL 5897/2026",
+      "summary": "Institui o Programa Remédio na Mão, destinado a facilitar a localização e o acesso gratuito a medicamentos e insumos de saúde disponibilizados pelo Sistema Único de Saúde e pelo Programa Farmácia Popular do Brasil, mediante identificação digital das unidades dispensadoras, consulta atualizada de disponibilidade, orientação sobre requisitos de retirada, indicação de alternativas de atendimento e garantia de acessibilidade informacional.",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-18",
+      "anchors": [
+        "Programa Remédio na Mão",
+        "Sistema Único de Saúde"
+      ],
+      "cards": [
+        {
+          "headline": "Remédio na Mão: como encontrar medicamentos gratuitos?",
+          "body": "O projeto propõe facilitar a busca por medicamentos e insumos disponíveis no SUS e na Farmácia Popular.",
+          "kind": "question"
+        },
+        {
+          "headline": "O que diz a proposta?",
+          "body": "A proposta prevê consulta de disponibilidade, identificação de unidades e orientações sobre requisitos de retirada.",
+          "kind": "proposal"
+        },
+        {
+          "headline": "Qual é o mecanismo?",
+          "body": "Informação atualizada sobre estoque e locais pode reduzir deslocamentos sem garantia de atendimento ou disponibilidade contínua.",
+          "kind": "mechanism"
+        },
+        {
+          "headline": "E na prática?",
+          "body": "Se aprovado e implementado, o programa poderá ajudar usuários a localizar unidades e alternativas de atendimento.",
+          "kind": "conditional"
+        },
+        {
+          "headline": "O que falta esclarecer?",
+          "body": "Como os estoques seriam atualizados? Quem manteria os dados? Como seria garantida a acessibilidade?",
+          "kind": "questions"
+        }
+      ]
+    },
+    {
+      "id": "camara:2655695",
+      "version": "a39168135eade1",
+      "title": "PL 5756/2026",
+      "summary": "Altera a Lei nº 14.172, de 10 de junho de 2021, para ampliar o prazo para aplicação e eventual restituição dos recursos entregues pela União aos Estados e ao Distrito Federal voltados para a garantia do acesso à internet, com fins educacionais, aos estabelecimentos de ensino, aos alunos e aos professores da rede pública de ensino dos Estados, do Distrito Federal e dos Municípios, em virtude da calamidade pública decorrente da covid-19.",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-19",
+      "anchors": [
+        "ampliar o prazo",
+        "acesso à internet"
+      ],
+      "cards": [
+        {
+          "headline": "Internet para escolas: o prazo de uso dos recursos pode mudar?",
+          "body": "A proposta pretende ampliar o prazo para aplicação ou restituição de recursos federais destinados à conectividade educacional.",
+          "kind": "question"
+        },
+        {
+          "headline": "O que diz a proposta?",
+          "body": "O projeto altera a lei sobre recursos para acesso à internet de escolas, estudantes e professores da rede pública.",
+          "kind": "proposal"
+        },
+        {
+          "headline": "Qual é o mecanismo?",
+          "body": "Ampliar um prazo pode alterar o calendário de uso e prestação de contas, mas não cria automaticamente recursos adicionais.",
+          "kind": "mechanism"
+        },
+        {
+          "headline": "E na prática?",
+          "body": "Se aprovado, estados e Distrito Federal poderão ter novos prazos para aplicar ou restituir os recursos abrangidos.",
+          "kind": "conditional"
+        },
+        {
+          "headline": "O que falta esclarecer?",
+          "body": "Qual prazo final seria estabelecido? Quais valores permanecem disponíveis? Como será feita a prestação de contas?",
           "kind": "questions"
         }
       ]
