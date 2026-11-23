@@ -57,7 +57,7 @@ def qualified(item, now):
         return False
     try:
         published_stage = datetime.fromisoformat(item["stage_date"]).date()
-        if not (0 <= (now.date() - published_stage).days <= 14):
+        if published_stage > now.date():
             return False
     except (KeyError, ValueError):
         return False
