@@ -79,6 +79,20 @@ class PublishTests(unittest.TestCase):
         self.state = {"blackout_dates": ["2026-10-25", "2026-10-26"],
                       "metrics": [], "published": [], "pending": [item()]}
 
+    def test_approved_content_does_not_expire_after_fourteen_days(self):
+        from datetime import timedelta
+        from fatovia.evidence import sealed
+        source = self.state["pending"][0]
+        later = NOW + timedelta(days=60)
+        self.assertTrue(sealed(source, later))
+        self.assertTrue(qualified(source, later))
+        self.assertFalse(sealed(source, NOW - timedelta(seconds=1)))
+        self.assertFalse(qualified(source, NOW - timedelta(seconds=1)))
+        changed = copy.deepcopy(source)
+        changed["summary"] = "Conteudo alterado apos aprovacao"
+        self.assertFalse(sealed(changed, later))
+        self.assertFalse(qualified(changed, later))
+
     def test_experimento_quatro_janelas_nao_muda_com_metricas(self):
         from fatovia.engine import daily_limit, preferred_hours
         metrics = []
