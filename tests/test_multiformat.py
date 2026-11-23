@@ -79,6 +79,8 @@ class MixedTests(unittest.TestCase):
         self.assertTrue(mf.owner_authorized({"id":"camara:2653947"},policy))
         self.assertTrue(mf.owner_authorized({"id":"reel:inflacao-precos-20261118","format":"reel"},policy))
         self.assertFalse(mf.owner_authorized({"id":"camara:2654163"},policy))
+        excluded={**policy,"owner_per_content_authorization":{**policy["owner_per_content_authorization"],"carousel_ids":["camara:2654163"]}}
+        self.assertFalse(mf.owner_authorized({"id":"camara:2654163"},excluded))
         self.assertFalse(mf.owner_authorized({"id":"camara:other"},policy))
         self.assertFalse(mf.owner_authorized({"id":"camara:2653947"},{**policy,"owner_per_content_authorization":{}}))
         with patch.object(mf,"transition_authorized",side_effect=AssertionError("must fail before transition")):
