@@ -189,5 +189,21 @@
       }
     }
   },
-  "status_note": "Owner authorized automated publishing; operational eligibility remains subject to transition_authorized, verified audit, exact-media hashes, quotas and Meta reconciliation. This status alone does not authorize a POST."
+  "status_note": "Owner authorized automated publishing; operational eligibility remains subject to transition_authorized, verified audit, exact-media hashes, quotas and Meta reconciliation. This status alone does not authorize a POST.",
+  "pilot_transition": {
+    "authorized": true,
+    "pilot_id": "documentary-20261115",
+    "review_reference": "https://github.com/thayanneoliveira/Fatovia/actions/runs/45095164195",
+    "reviewed_media_ids": [
+      "18213163885365403",
+      "17901241947394968",
+      "18077986049477583",
+      "18149060461583391",
+      "17908023129353266",
+      "18151573990488064",
+      "18111958382223422",
+      "18185273779443646"
+    ],
+    "decision": "Owner-approved guarded phase transition after direct Meta 8/8 reconciliation; no item is authorized absent all per-media gates"
+  }
 }
