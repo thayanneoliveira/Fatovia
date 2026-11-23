@@ -204,20 +204,21 @@
   "metrics": [],
   "pending": [
     {
-      "caption": "O que está previsto nesta proposta?\n\nPL 5855/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653947\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653947/a9ab7e30775280\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
+      "caption": "Juros sobre capital próprio: qual imposto pode mudar?\n\nA mudança proposta é elevar a alíquota do Imposto de Renda Retido na Fonte incidente sobre juros sobre capital próprio.\n\nSe o texto for aprovado, a tributação dessa modalidade de pagamento poderá mudar. A ementa não informa o efeito final para cada contribuinte.\n\nPL 5855/2026 | Registro de 2026-11-13. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2653947\nID editorial: camara:2653947/a9ab7e30775280/didactic-v4\n#FatoVia #PoliticasPublicas",
       "cards": [
-        "docs/media/camara-2653947/a9ab7e30775280/01.jpg",
-        "docs/media/camara-2653947/a9ab7e30775280/02.jpg",
-        "docs/media/camara-2653947/a9ab7e30775280/03.jpg",
-        "docs/media/camara-2653947/a9ab7e30775280/04.jpg",
-        "docs/media/camara-2653947/a9ab7e30775280/05.jpg",
-        "docs/media/camara-2653947/a9ab7e30775280/06.jpg",
-        "docs/media/camara-2653947/a9ab7e30775280/07.jpg"
+        "docs/media/camara-2653947/a9ab7e30775280/didactic-v4/01.jpg",
+        "docs/media/camara-2653947/a9ab7e30775280/didactic-v4/02.jpg",
+        "docs/media/camara-2653947/a9ab7e30775280/didactic-v4/03.jpg",
+        "docs/media/camara-2653947/a9ab7e30775280/didactic-v4/04.jpg",
+        "docs/media/camara-2653947/a9ab7e30775280/didactic-v4/05.jpg",
+        "docs/media/camara-2653947/a9ab7e30775280/didactic-v4/06.jpg",
+        "docs/media/camara-2653947/a9ab7e30775280/didactic-v4/07.jpg"
       ],
       "discovery_source_count": 1,
       "editorial_score": 57,
       "evidence": {
-        "checked_at": "2026-11-15T18:50:50.099313-03:00",
+        "checked_at": "2026-11-22T22:36:10.406880-03:00",
         "claims": [
           {
             "basis": "identificacao_da_proposicao",
@@ -232,7 +233,7 @@
             "field": "stage"
           }
         ],
-        "content_sha256": "012218c4a2685b3ca44aa1ecf4c7486703f2fee43b175cabbb0f571a768fdd80",
+        "content_sha256": "ad55a745ee411033ccd0a5f68dfff20a3b8537d37747ca9938511beea47998ae",
         "kind": "official_document_attribution",
         "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
         "record_date": "2026-11-13",
@@ -249,7 +250,7 @@
       "status": "ready",
       "summary": "Altera a Lei nº 9.249, de 26 de dezembro de 1995, para elevar a alíquota do Imposto de Renda Retido na Fonte incidente sobre os juros sobre o capital próprio.",
       "summary_hash": "c621d796fce35c",
-      "template_revision": "documentary-hook-v3",
+      "template_revision": "didactic-v4",
       "title": "PL 5855/2026",
       "topics": [
         "economia"
@@ -257,20 +258,21 @@
       "version": "a9ab7e30775280"
     },
     {
-      "caption": "O que está previsto nesta proposta?\n\nPL 5852/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-13. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2653944\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2653944/2d94a3cc4eebf7\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
+      "caption": "Imposto sobre grandes fortunas: o que está em discussão?\n\nA ementa propõe instituir o Imposto sobre Grandes Fortunas, previsto no artigo 153 da Constituição Federal.\n\nSe aprovado e regulamentado conforme o texto final, o tributo poderá alcançar patrimônios enquadrados nos critérios legais.\n\nPL 5852/2026 | Registro de 2026-11-13. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2653944\nID editorial: camara:2653944/2d94a3cc4eebf7/didactic-v4\n#FatoVia #PoliticasPublicas",
       "cards": [
-        "docs/media/camara-2653944/2d94a3cc4eebf7/01.jpg",
-        "docs/media/camara-2653944/2d94a3cc4eebf7/02.jpg",
-        "docs/media/camara-2653944/2d94a3cc4eebf7/03.jpg",
-        "docs/media/camara-2653944/2d94a3cc4eebf7/04.jpg",
-        "docs/media/camara-2653944/2d94a3cc4eebf7/05.jpg",
-        "docs/media/camara-2653944/2d94a3cc4eebf7/06.jpg",
-        "docs/media/camara-2653944/2d94a3cc4eebf7/07.jpg"
+        "docs/media/camara-2653944/2d94a3cc4eebf7/didactic-v4/01.jpg",
+        "docs/media/camara-2653944/2d94a3cc4eebf7/didactic-v4/02.jpg",
+        "docs/media/camara-2653944/2d94a3cc4eebf7/didactic-v4/03.jpg",
+        "docs/media/camara-2653944/2d94a3cc4eebf7/didactic-v4/04.jpg",
+        "docs/media/camara-2653944/2d94a3cc4eebf7/didactic-v4/05.jpg",
+        "docs/media/camara-2653944/2d94a3cc4eebf7/didactic-v4/06.jpg",
+        "docs/media/camara-2653944/2d94a3cc4eebf7/didactic-v4/07.jpg"
       ],
       "discovery_source_count": 1,
       "editorial_score": 56,
       "evidence": {
-        "checked_at": "2026-11-15T23:45:39.287309-03:00",
+        "checked_at": "2026-11-22T22:36:10.406880-03:00",
         "claims": [
           {
             "basis": "identificacao_da_proposicao",
@@ -285,7 +287,7 @@
             "field": "stage"
           }
         ],
-        "content_sha256": "5cad6126c0beba2a060f8ba558095dc06f046705c9941e506e709e013683aff0",
+        "content_sha256": "0f9bfda45f2523d328eedfae3d497c774fe928add234736ab0da56607f8ef2f8",
         "kind": "official_document_attribution",
         "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
         "record_date": "2026-11-13",
@@ -302,7 +304,7 @@
       "status": "ready",
       "summary": "Institui o Imposto sobre Grandes Fortunas, previsto no art. 153, inciso VII, da Constituição Federal.",
       "summary_hash": "cf3bbc34af91f6",
-      "template_revision": "documentary-hook-v3",
+      "template_revision": "didactic-v4",
       "title": "PL 5852/2026",
       "topics": [
         "economia"
@@ -310,20 +312,21 @@
       "version": "2d94a3cc4eebf7"
     },
     {
-      "caption": "O que está previsto nesta proposta?\n\nPLP 305/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-16. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2654174\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2654174/abe5fda5fc0602\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
+      "caption": "Emendas parlamentares: como rastrear o dinheiro?\n\nA proposta exige rastreabilidade integral, transparência ativa e proíbe movimentação em espécie em determinadas transferências.\n\nSe a proposta avançar, as transferências abrangidas poderão exigir registros digitais e novas práticas de controle financeiro.\n\nPLP 305/2026 | Registro de 2026-11-16. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2654174\nID editorial: camara:2654174/abe5fda5fc0602/didactic-v4\n#FatoVia #PoliticasPublicas",
       "cards": [
-        "docs/media/camara-2654174/abe5fda5fc0602/01.jpg",
-        "docs/media/camara-2654174/abe5fda5fc0602/02.jpg",
-        "docs/media/camara-2654174/abe5fda5fc0602/03.jpg",
-        "docs/media/camara-2654174/abe5fda5fc0602/04.jpg",
-        "docs/media/camara-2654174/abe5fda5fc0602/05.jpg",
-        "docs/media/camara-2654174/abe5fda5fc0602/06.jpg",
-        "docs/media/camara-2654174/abe5fda5fc0602/07.jpg"
+        "docs/media/camara-2654174/abe5fda5fc0602/didactic-v4/01.jpg",
+        "docs/media/camara-2654174/abe5fda5fc0602/didactic-v4/02.jpg",
+        "docs/media/camara-2654174/abe5fda5fc0602/didactic-v4/03.jpg",
+        "docs/media/camara-2654174/abe5fda5fc0602/didactic-v4/04.jpg",
+        "docs/media/camara-2654174/abe5fda5fc0602/didactic-v4/05.jpg",
+        "docs/media/camara-2654174/abe5fda5fc0602/didactic-v4/06.jpg",
+        "docs/media/camara-2654174/abe5fda5fc0602/didactic-v4/07.jpg"
       ],
       "discovery_source_count": 0,
       "editorial_score": 89,
       "evidence": {
-        "checked_at": "2026-11-16T21:49:55.604648-03:00",
+        "checked_at": "2026-11-22T22:36:10.406880-03:00",
         "claims": [
           {
             "basis": "identificacao_da_proposicao",
@@ -338,7 +341,7 @@
             "field": "stage"
           }
         ],
-        "content_sha256": "7d0e18bec0dd3dda27eb099cef998fa8f7ea5524f5fc75457ff51ed328f8fe6f",
+        "content_sha256": "0ab4a82931b954a5ac72c040b0cd768e378c18d73de72cee030c1aa0942ce20c",
         "kind": "official_document_attribution",
         "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
         "record_date": "2026-11-16",
@@ -355,7 +358,7 @@
       "status": "ready",
       "summary": "Estabelece a obrigatoriedade de rastreabilidade integral, transparência ativa e vedação à movimentação de recursos públicos em espécie no âmbito das transferências decorrentes de emendas parlamentares e instrumentos congêneres, dispõe sobre mecanismos de controle financeiro digital, altera a Lei n° 4.320, de 17 de março de 1964, e a Lei Complementar n° 101, de 4 de maio de 2000, e dá outras providências.",
       "summary_hash": "65f5575716cc06",
-      "template_revision": "documentary-hook-v3",
+      "template_revision": "didactic-v4",
       "title": "PLP 305/2026",
       "topics": [
         "tecnologia"
@@ -363,20 +366,21 @@
       "version": "abe5fda5fc0602"
     },
     {
-      "caption": "O que está previsto nesta proposta?\n\nPL 5861/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-16. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2654163\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654163\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2654163/6438c89bd557e4\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
+      "caption": "Lucro com divulgação de crimes: o que propõe o projeto?\n\nO texto propõe proibir e criminalizar vantagem econômica obtida pela exploração comercial ou monetização do próprio delito.\n\nSe aprovada, a norma poderá estabelecer consequências para ganhos enquadrados nas hipóteses definidas pelo texto final.\n\nPL 5861/2026 | Registro de 2026-11-16. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2654163\nID editorial: camara:2654163/6438c89bd557e4/didactic-v4\n#FatoVia #PoliticasPublicas",
       "cards": [
-        "docs/media/camara-2654163/6438c89bd557e4/01.jpg",
-        "docs/media/camara-2654163/6438c89bd557e4/02.jpg",
-        "docs/media/camara-2654163/6438c89bd557e4/03.jpg",
-        "docs/media/camara-2654163/6438c89bd557e4/04.jpg",
-        "docs/media/camara-2654163/6438c89bd557e4/05.jpg",
-        "docs/media/camara-2654163/6438c89bd557e4/06.jpg",
-        "docs/media/camara-2654163/6438c89bd557e4/07.jpg"
+        "docs/media/camara-2654163/6438c89bd557e4/didactic-v4/01.jpg",
+        "docs/media/camara-2654163/6438c89bd557e4/didactic-v4/02.jpg",
+        "docs/media/camara-2654163/6438c89bd557e4/didactic-v4/03.jpg",
+        "docs/media/camara-2654163/6438c89bd557e4/didactic-v4/04.jpg",
+        "docs/media/camara-2654163/6438c89bd557e4/didactic-v4/05.jpg",
+        "docs/media/camara-2654163/6438c89bd557e4/didactic-v4/06.jpg",
+        "docs/media/camara-2654163/6438c89bd557e4/didactic-v4/07.jpg"
       ],
       "discovery_source_count": 0,
       "editorial_score": 88,
       "evidence": {
-        "checked_at": "2026-11-16T21:49:55.604648-03:00",
+        "checked_at": "2026-11-22T22:36:10.406880-03:00",
         "claims": [
           {
             "basis": "identificacao_da_proposicao",
@@ -391,7 +395,7 @@
             "field": "stage"
           }
         ],
-        "content_sha256": "3bcb5f095a386ebc7a83efe2a194a52c836b0ba95482ee15b13d757277a02e38",
+        "content_sha256": "e57397b53a24e382f153c4d0ed0242a6c39176767f828457be82091c9b8011c6",
         "kind": "official_document_attribution",
         "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
         "record_date": "2026-11-16",
@@ -408,7 +412,7 @@
       "status": "ready",
       "summary": "Institui a Lei Suzane Von Richthofen, que proíbe e criminaliza a obtenção de vantagem econômica, direta ou indireta, por pessoa condenada pela prática de infração penal, mediante exploração comercial, promoção ou monetização do próprio delito, estabelece mecanismos de perda de valores, reparação das vítimas e responsabilização de terceiros que atuem para fraudar a proibição, e dá outras providências.",
       "summary_hash": "cf98c653346da1",
-      "template_revision": "documentary-hook-v3",
+      "template_revision": "didactic-v4",
       "title": "PL 5861/2026",
       "topics": [
         "seguranca"
@@ -417,20 +421,20 @@
     },
     {
       "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-      "caption": "O que está previsto nesta proposta?\n\nPL 5874/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-17. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2654371\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2654371/146301a4f8f3d0\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "caption": "Fundeb: cruzar dados pode revelar inconsistências?\n\nA proposta prevê cruzamento periódico de dados do Censo Escolar com folhas de pagamento e pagamentos com recursos do Fundeb.\n\nSe implementado, o cruzamento poderá apoiar controles sobre informações escolares e pagamentos, conforme regras aprovadas.\n\nPL 5874/2026 | Registro de 2026-11-17. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2654371\nID editorial: camara:2654371/146301a4f8f3d0/didactic-v4\n#FatoVia #PoliticasPublicas",
       "cards": [
-        "docs/media/camara-2654371/146301a4f8f3d0/01.jpg",
-        "docs/media/camara-2654371/146301a4f8f3d0/02.jpg",
-        "docs/media/camara-2654371/146301a4f8f3d0/03.jpg",
-        "docs/media/camara-2654371/146301a4f8f3d0/04.jpg",
-        "docs/media/camara-2654371/146301a4f8f3d0/05.jpg",
-        "docs/media/camara-2654371/146301a4f8f3d0/06.jpg",
-        "docs/media/camara-2654371/146301a4f8f3d0/07.jpg"
+        "docs/media/camara-2654371/146301a4f8f3d0/didactic-v4/01.jpg",
+        "docs/media/camara-2654371/146301a4f8f3d0/didactic-v4/02.jpg",
+        "docs/media/camara-2654371/146301a4f8f3d0/didactic-v4/03.jpg",
+        "docs/media/camara-2654371/146301a4f8f3d0/didactic-v4/04.jpg",
+        "docs/media/camara-2654371/146301a4f8f3d0/didactic-v4/05.jpg",
+        "docs/media/camara-2654371/146301a4f8f3d0/didactic-v4/06.jpg",
+        "docs/media/camara-2654371/146301a4f8f3d0/didactic-v4/07.jpg"
       ],
       "discovery_source_count": 0,
       "editorial_score": 88,
       "evidence": {
-        "checked_at": "2026-11-18T20:24:14.128228-03:00",
+        "checked_at": "2026-11-22T22:36:10.406880-03:00",
         "claims": [
           {
             "basis": "identificacao_da_proposicao",
@@ -445,7 +449,7 @@
             "field": "stage"
           }
         ],
-        "content_sha256": "26df7b0946da4518a2b75c0263f15b0708c22073a280d9a79cd2035a3ae4e20f",
+        "content_sha256": "fdf98c5747c6e5c0af042b83ee5eef16db1f0511073a9b44f5de7ef449e5a1a2",
         "kind": "official_document_attribution",
         "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
         "record_date": "2026-11-17",
@@ -462,7 +466,7 @@
       "status": "ready",
       "summary": "Institui o cruzamento obrigatório e periódico de dados do Censo Escolar com as folhas de pagamento dos entes federados e com os pagamentos efetuados com recursos do Fundeb, e dispõe sobre a exclusão de estudantes do Censo Escolar, para coibir fraudes e o desvio de recursos da educação.",
       "summary_hash": "a7275e4d46308c",
-      "template_revision": "documentary-hook-v3",
+      "template_revision": "didactic-v4",
       "title": "PL 5874/2026",
       "topics": [
         "educacao"
@@ -471,20 +475,20 @@
     },
     {
       "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-      "caption": "O que está previsto nesta proposta?\n\nPL 5903/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-18. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2655462\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2655462/b2c418b5ca1c25\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "caption": "Educação inclusiva: o que pretende mudar?\n\nA ementa institui a Política Nacional de Educação Especial Inclusiva e propõe alteração na Lei nº 13.146.\n\nSe aprovada, a política poderá estabelecer novas orientações para a educação especial inclusiva conforme o texto final.\n\nPL 5903/2026 | Registro de 2026-11-18. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2655462\nID editorial: camara:2655462/b2c418b5ca1c25/didactic-v4\n#FatoVia #PoliticasPublicas",
       "cards": [
-        "docs/media/camara-2655462/b2c418b5ca1c25/01.jpg",
-        "docs/media/camara-2655462/b2c418b5ca1c25/02.jpg",
-        "docs/media/camara-2655462/b2c418b5ca1c25/03.jpg",
-        "docs/media/camara-2655462/b2c418b5ca1c25/04.jpg",
-        "docs/media/camara-2655462/b2c418b5ca1c25/05.jpg",
-        "docs/media/camara-2655462/b2c418b5ca1c25/06.jpg",
-        "docs/media/camara-2655462/b2c418b5ca1c25/07.jpg"
+        "docs/media/camara-2655462/b2c418b5ca1c25/didactic-v4/01.jpg",
+        "docs/media/camara-2655462/b2c418b5ca1c25/didactic-v4/02.jpg",
+        "docs/media/camara-2655462/b2c418b5ca1c25/didactic-v4/03.jpg",
+        "docs/media/camara-2655462/b2c418b5ca1c25/didactic-v4/04.jpg",
+        "docs/media/camara-2655462/b2c418b5ca1c25/didactic-v4/05.jpg",
+        "docs/media/camara-2655462/b2c418b5ca1c25/didactic-v4/06.jpg",
+        "docs/media/camara-2655462/b2c418b5ca1c25/didactic-v4/07.jpg"
       ],
       "discovery_source_count": 0,
       "editorial_score": 87,
       "evidence": {
-        "checked_at": "2026-11-18T20:24:14.128228-03:00",
+        "checked_at": "2026-11-22T22:36:10.406880-03:00",
         "claims": [
           {
             "basis": "identificacao_da_proposicao",
@@ -499,7 +503,7 @@
             "field": "stage"
           }
         ],
-        "content_sha256": "785039ed06b92bd4acf2b794bf43494338e5e042eab7a797a6128d546df4f54d",
+        "content_sha256": "70697771e5b9302520c9a11a3e0646288fa5a4e0a98a0ad47f5f1bb59c6bc89b",
         "kind": "official_document_attribution",
         "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
         "record_date": "2026-11-18",
@@ -516,7 +520,7 @@
       "status": "ready",
       "summary": "Institui a Política Nacional de Educação Especial Inclusiva, e altera o art. 3º da Lei nº 13.146, de 6 de julho de 2015.",
       "summary_hash": "29a703770dcd75",
-      "template_revision": "documentary-hook-v3",
+      "template_revision": "didactic-v4",
       "title": "PL 5903/2026",
       "topics": [
         "educacao"
@@ -525,20 +529,20 @@
     },
     {
       "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-      "caption": "O que está previsto nesta proposta?\n\nPL 5897/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-18. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2655411\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2655411/9928715e313319\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "caption": "Remédio na Mão: como encontrar medicamentos gratuitos?\n\nA proposta prevê consulta de disponibilidade, identificação de unidades e orientações sobre requisitos de retirada.\n\nSe aprovado e implementado, o programa poderá ajudar usuários a localizar unidades e alternativas de atendimento.\n\nPL 5897/2026 | Registro de 2026-11-18. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2655411\nID editorial: camara:2655411/9928715e313319/didactic-v4\n#FatoVia #PoliticasPublicas",
       "cards": [
-        "docs/media/camara-2655411/9928715e313319/01.jpg",
-        "docs/media/camara-2655411/9928715e313319/02.jpg",
-        "docs/media/camara-2655411/9928715e313319/03.jpg",
-        "docs/media/camara-2655411/9928715e313319/04.jpg",
-        "docs/media/camara-2655411/9928715e313319/05.jpg",
-        "docs/media/camara-2655411/9928715e313319/06.jpg",
-        "docs/media/camara-2655411/9928715e313319/07.jpg"
+        "docs/media/camara-2655411/9928715e313319/didactic-v4/01.jpg",
+        "docs/media/camara-2655411/9928715e313319/didactic-v4/02.jpg",
+        "docs/media/camara-2655411/9928715e313319/didactic-v4/03.jpg",
+        "docs/media/camara-2655411/9928715e313319/didactic-v4/04.jpg",
+        "docs/media/camara-2655411/9928715e313319/didactic-v4/05.jpg",
+        "docs/media/camara-2655411/9928715e313319/didactic-v4/06.jpg",
+        "docs/media/camara-2655411/9928715e313319/didactic-v4/07.jpg"
       ],
       "discovery_source_count": 1,
       "editorial_score": 81,
       "evidence": {
-        "checked_at": "2026-11-19T11:27:50.491254-03:00",
+        "checked_at": "2026-11-22T22:36:10.406880-03:00",
         "claims": [
           {
             "basis": "identificacao_da_proposicao",
@@ -553,7 +557,7 @@
             "field": "stage"
           }
         ],
-        "content_sha256": "a9edfab4280d0510c4fc2fbb12034766ca6254e7a06fd1d2369e51fc478456a8",
+        "content_sha256": "da6180d87bade8fe4a8c434440e15e60aa442e932d320d29549d1f78b1a6389f",
         "kind": "official_document_attribution",
         "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
         "record_date": "2026-11-18",
@@ -570,7 +574,7 @@
       "status": "ready",
       "summary": "Institui o Programa Remédio na Mão, destinado a facilitar a localização e o acesso gratuito a medicamentos e insumos de saúde disponibilizados pelo Sistema Único de Saúde e pelo Programa Farmácia Popular do Brasil, mediante identificação digital das unidades dispensadoras, consulta atualizada de disponibilidade, orientação sobre requisitos de retirada, indicação de alternativas de atendimento e garantia de acessibilidade informacional.",
       "summary_hash": "cb40b30540ea3f",
-      "template_revision": "documentary-hook-v3",
+      "template_revision": "didactic-v4",
       "title": "PL 5897/2026",
       "topics": [
         "saude",
@@ -580,20 +584,20 @@
     },
     {
       "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-      "caption": "O que está previsto nesta proposta?\n\nPL 5756/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-19. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2655695\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2655695/a39168135eade1\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "caption": "Internet para escolas: o prazo de uso dos recursos pode mudar?\n\nO projeto altera a lei sobre recursos para acesso à internet de escolas, estudantes e professores da rede pública.\n\nSe aprovado, estados e Distrito Federal poderão ter novos prazos para aplicar ou restituir os recursos abrangidos.\n\nPL 5756/2026 | Registro de 2026-11-19. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2655695\nID editorial: camara:2655695/a39168135eade1/didactic-v4\n#FatoVia #PoliticasPublicas",
       "cards": [
-        "docs/media/camara-2655695/a39168135eade1/01.jpg",
-        "docs/media/camara-2655695/a39168135eade1/02.jpg",
-        "docs/media/camara-2655695/a39168135eade1/03.jpg",
-        "docs/media/camara-2655695/a39168135eade1/04.jpg",
-        "docs/media/camara-2655695/a39168135eade1/05.jpg",
-        "docs/media/camara-2655695/a39168135eade1/06.jpg",
-        "docs/media/camara-2655695/a39168135eade1/07.jpg"
+        "docs/media/camara-2655695/a39168135eade1/didactic-v4/01.jpg",
+        "docs/media/camara-2655695/a39168135eade1/didactic-v4/02.jpg",
+        "docs/media/camara-2655695/a39168135eade1/didactic-v4/03.jpg",
+        "docs/media/camara-2655695/a39168135eade1/didactic-v4/04.jpg",
+        "docs/media/camara-2655695/a39168135eade1/didactic-v4/05.jpg",
+        "docs/media/camara-2655695/a39168135eade1/didactic-v4/06.jpg",
+        "docs/media/camara-2655695/a39168135eade1/didactic-v4/07.jpg"
       ],
       "discovery_source_count": 1,
       "editorial_score": 84,
       "evidence": {
-        "checked_at": "2026-11-19T20:35:59.886477-03:00",
+        "checked_at": "2026-11-22T22:36:10.406880-03:00",
         "claims": [
           {
             "basis": "identificacao_da_proposicao",
@@ -608,7 +612,7 @@
             "field": "stage"
           }
         ],
-        "content_sha256": "fa0ecb7d165f79251a7451677d0ef0f558030deb9209673497c3b14dd6764774",
+        "content_sha256": "f47b2d2a3a680d283cc27c461bb647e7598a9035ebff431171f34639b713ddd3",
         "kind": "official_document_attribution",
         "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
         "record_date": "2026-11-19",
@@ -625,7 +629,7 @@
       "status": "ready",
       "summary": "Altera a Lei nº 14.172, de 10 de junho de 2021, para ampliar o prazo para aplicação e eventual restituição dos recursos entregues pela União aos Estados e ao Distrito Federal voltados para a garantia do acesso à internet, com fins educacionais, aos estabelecimentos de ensino, aos alunos e aos professores da rede pública de ensino dos Estados, do Distrito Federal e dos Municípios, em virtude da calamidade pública decorrente da covid-19.",
       "summary_hash": "f9558d0d57c0ed",
-      "template_revision": "documentary-hook-v3",
+      "template_revision": "didactic-v4",
       "title": "PL 5756/2026",
       "topics": [
         "educacao"
