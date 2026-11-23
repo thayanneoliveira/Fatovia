@@ -9,6 +9,7 @@ on:
       - "fatovia/**"
       - "tests/**"
       - "requirements.txt"
+      - "data/didactic_reviews.json"
   schedule:
     - cron: "17 5,11,17,23 * * *"
 
