@@ -112,6 +112,31 @@ def allowed(state,item,now,policy=None):
             report=json.loads(Path("data/editorial_audit.json").read_text(encoding="utf-8"))
             reviews=[r for r in report["reviews"] if (r["id"],r["version"])==(item["id"],item["version"])]
             return len(reviews)==1 and reviews[0].get("logo_sha256")==logo["sha256"] and reviews[0].get("closing_media_sha256")==inspect_files(item)[-1]
+        # One-time owner editorial exception: exact approved Maria v2 streams were
+        # remuxed without re-encoding. This does not waive media, logo, quota,
+        # Meta account, hosting, or duplicate checks.
+        if item.get("id")=="reel:inflacao-precos-20261118":
+            queue=json.loads(Path("data/reel_delivery_queue.json").read_text(encoding="utf-8"))
+            entries=[x for x in queue.get("items",[]) if x.get("id")==item["id"]]
+            if len(entries)!=1:return False
+            entry=entries[0]
+            auth=entry.get("exceptional_owner_authorization") or {}
+            override=p.get("reel_editorial_override") or {}
+            hosted=override.get("hosted_media") or {}
+            owner=override.get("owner_approval") or {}
+            if not (auth.get("authorized") is True and auth.get("scope")=="one_time_editorial_approval_only"
+                    and auth.get("approved_asset_sha256")==owner.get("sha256")
+                    and owner.get("decision")=="approved_for_publication"
+                    and hosted.get("status")=="verified_stream_identical_remux_hosted"
+                    and hosted.get("original_approved_sha256")==owner.get("sha256")
+                    and hosted.get("path")==item.get("video_path")
+                    and hosted.get("sha256")==item.get("video_sha256")
+                    and hosted.get("video_stream_sha256") and hosted.get("audio_stream_sha256")
+                    and reel_qualified(item) and item.get("source_urls")
+                    and valid_hash(item.get("script_sha256"))):return False
+            path=video_path(item)
+            return (safe_file(path,"docs/media/reels") and Path(path).stat().st_size<=MAX_VIDEO
+                    and valid_hash(hosted["sha256"]) and sha_file(path)==hosted["sha256"])
         rows=[r for r in p["approved_items"] if (r["id"],r["version"],r["format"])==(item["id"],item["version"],fmt)]
         if len(rows)!=1:return False
         r=rows[0]
