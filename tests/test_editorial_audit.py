@@ -10,7 +10,7 @@ from fatovia.editorial_audit import review,approved,POLICY
 
 NOW=datetime.fromisoformat("2026-11-14T12:00:00-03:00")
 class AuditTests(unittest.TestCase):
-    def test_report_binds_bytes_and_expires(self):
+    def test_report_binds_bytes_and_persists(self):
         old=os.getcwd()
         with tempfile.TemporaryDirectory() as tmp:
             try:
@@ -25,7 +25,9 @@ class AuditTests(unittest.TestCase):
                 self.assertEqual(row["decision"],"approved_documentary_only")
                 report={"policy":POLICY,"reviews":[row]}
                 self.assertTrue(approved(item,NOW,report))
-                self.assertFalse(approved(item,NOW+timedelta(hours=25),report))
+                self.assertTrue(approved(item,NOW+timedelta(hours=25),report))
+                self.assertTrue(approved(item,NOW+timedelta(days=60),report))
+                self.assertFalse(approved(item,NOW-timedelta(seconds=1),report))
                 self.assertFalse(approved(item,NOW,{"policy":POLICY,"reviews":[]}))
                 p=Path(item["cards"][0])
                 p.write_bytes(p.read_bytes()+b"tamper")
