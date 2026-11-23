@@ -1,40 +1,611 @@
 {
-  "generated_at": "2026-11-22T20:15:46.617652-03:00",
+  "generated_at": "2026-11-22T22:36:34.982831-03:00",
   "limitations": "Independent rule-based check of the official source, approved template and bytes; not general factual or semantic review.",
   "policy": "documentary-template-v4-didactic",
   "reviews": [
     {
-      "checked_at": "2026-11-22T20:15:46.617652-03:00",
-      "decision": "rejected",
-      "id": "camara:2653947",
-      "issues": [
-        "cards_differ_from_template"
+      "card_sha256": [
+        "19375029174d87bffb94b3648a33dd9b28228739893ef30e89052249e3bda0f8",
+        "4ef26375a31c3ce57a31f2da8fdd29e238837412e472afee9052e113ddad0614",
+        "d2416baafddb2278987a17369646d6c7808f340ea82c8adddef4be0d7ad15b1f",
+        "345f36221827e28f35e334399dd4533f9c033469c0ab5165197c74c4e8b4f50b",
+        "ce9ffc0beb09d50a4eb879cac05f43944fa2333f2a03de8228cc0fa0a020f092",
+        "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
+        "e26f2733173e8a3d39d9e4adeed438c195bc5163d30fb101ba6459ffbeed0939"
       ],
+      "checked_at": "2026-11-22T22:36:34.982831-03:00",
+      "claim_matrix": {
+        "document_id": "camara:2653947",
+        "entries": [
+          {
+            "evidence": {
+              "end": 157,
+              "excerpt": "juros sobre o capital próprio",
+              "field": "summary",
+              "field_sha256": "943ac2ff63618ede42eae3084abc580f2420192174f7f535c8e232c14f994cb0",
+              "start": 128,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_01",
+            "text": "Juros sobre capital próprio: qual imposto pode mudar? | A proposta pretende elevar a alíquota do imposto retido na fonte sobre juros sobre capital próprio.",
+            "type": "reviewed_question"
+          },
+          {
+            "evidence": {
+              "end": 157,
+              "excerpt": "juros sobre o capital próprio",
+              "field": "summary",
+              "field_sha256": "943ac2ff63618ede42eae3084abc580f2420192174f7f535c8e232c14f994cb0",
+              "start": 128,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_02",
+            "text": "O que diz a proposta? | A mudança proposta é elevar a alíquota do Imposto de Renda Retido na Fonte incidente sobre juros sobre capital próprio.",
+            "type": "reviewed_proposal"
+          },
+          {
+            "evidence": {
+              "end": 157,
+              "excerpt": "juros sobre o capital próprio",
+              "field": "summary",
+              "field_sha256": "943ac2ff63618ede42eae3084abc580f2420192174f7f535c8e232c14f994cb0",
+              "start": 128,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_03",
+            "text": "Qual é o mecanismo? | Se a alíquota aplicada a um pagamento aumenta, a retenção inicial sobre esse pagamento também pode aumentar.",
+            "type": "reviewed_mechanism"
+          },
+          {
+            "evidence": {
+              "end": 157,
+              "excerpt": "juros sobre o capital próprio",
+              "field": "summary",
+              "field_sha256": "943ac2ff63618ede42eae3084abc580f2420192174f7f535c8e232c14f994cb0",
+              "start": 128,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_04",
+            "text": "E na prática? | Se o texto for aprovado, a tributação dessa modalidade de pagamento poderá mudar. A ementa não informa o efeito final para cada contribuinte.",
+            "type": "reviewed_conditional"
+          },
+          {
+            "evidence": {
+              "end": 157,
+              "excerpt": "juros sobre o capital próprio",
+              "field": "summary",
+              "field_sha256": "943ac2ff63618ede42eae3084abc580f2420192174f7f535c8e232c14f994cb0",
+              "start": 128,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_05",
+            "text": "O que falta esclarecer? | Qual seria a nova alíquota? Quando valeria? Quem suportaria o custo? É necessário consultar o texto integral.",
+            "type": "reviewed_questions"
+          },
+          {
+            "evidence": {
+              "end": 26,
+              "excerpt": "Apresentação de Proposição",
+              "field": "stage",
+              "field_sha256": "7ad4f3a2409e2196a7e3ccc89d81061c388c76f096e8a3e5181944076982a9b7",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
+            },
+            "limitation": "Registro de tramitação.",
+            "location": "card_06",
+            "text": "Apresentação de Proposição",
+            "type": "procedural_record"
+          },
+          {
+            "evidence": {
+              "end": 10,
+              "excerpt": "2026-11-13",
+              "field": "stage_date",
+              "field_sha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
+            },
+            "limitation": "Não comprova vigência.",
+            "location": "card_06",
+            "text": "2026-11-13",
+            "type": "record_date"
+          },
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5855/2026",
+              "field": "title",
+              "field_sha256": "e6a5ec7e04166382d82f569f7c11afffca5e6dc96f630561573638dd35069352",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
+            },
+            "limitation": "Fonte para leitura integral.",
+            "location": "card_07",
+            "text": "PL 5855/2026",
+            "type": "source_reference"
+          },
+          {
+            "evidence": {
+              "end": 157,
+              "excerpt": "juros sobre o capital próprio",
+              "field": "summary",
+              "field_sha256": "943ac2ff63618ede42eae3084abc580f2420192174f7f535c8e232c14f994cb0",
+              "start": 128,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
+            },
+            "limitation": "Paráfrase revisada.",
+            "location": "caption",
+            "text": "A mudança proposta é elevar a alíquota do Imposto de Renda Retido na Fonte incidente sobre juros sobre capital próprio.",
+            "type": "reviewed_proposal"
+          },
+          {
+            "evidence": {
+              "end": 157,
+              "excerpt": "juros sobre o capital próprio",
+              "field": "summary",
+              "field_sha256": "943ac2ff63618ede42eae3084abc580f2420192174f7f535c8e232c14f994cb0",
+              "start": 128,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
+            },
+            "limitation": "Impacto potencial.",
+            "location": "caption",
+            "text": "Se o texto for aprovado, a tributação dessa modalidade de pagamento poderá mudar. A ementa não informa o efeito final para cada contribuinte.",
+            "type": "reviewed_conditional"
+          }
+        ],
+        "limitation": "Revisão editorial de narrativa controlada; não verifica impacto real ou texto integral.",
+        "policy": "didactic-v4",
+        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947",
+        "unverified_dimensions": [
+          "legal_effect",
+          "implementation",
+          "budget",
+          "causality",
+          "social_impact"
+        ],
+        "version": "a9ab7e30775280"
+      },
+      "claim_matrix_sha256": "68163560cb6bd21e55a72b969cb8832b3ab8e8a82aa21ae784bedcb4fbc2cc38",
+      "closing_media_sha256": "e26f2733173e8a3d39d9e4adeed438c195bc5163d30fb101ba6459ffbeed0939",
+      "content_sha256": "ad55a745ee411033ccd0a5f68dfff20a3b8537d37747ca9938511beea47998ae",
+      "decision": "approved_documentary_only",
+      "id": "camara:2653947",
+      "issues": [],
+      "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
       "policy": "documentary-template-v4-didactic",
       "version": "a9ab7e30775280"
     },
     {
-      "checked_at": "2026-11-22T20:15:46.617652-03:00",
-      "decision": "rejected",
-      "id": "camara:2653944",
-      "issues": [
-        "cards_differ_from_template"
+      "card_sha256": [
+        "b17ed5ac811515b8c3634f8cdecdbb61fbdd9459a9ac0bfcb4c55b3e9ce0850d",
+        "57fca25203bf2160838bf4ed1c31e416d6453d82153ad7a0a66398d9b9800351",
+        "64295e9a4cf324890f47aa836982892171378ac350f5784524ed00a5ff4db930",
+        "ba7f065d1ac07662a600d4a45f8ebf7325eed80411729c4092b85896eb742485",
+        "c37d30f2cf6906e52e66fc07634af0d09ae8d7900e4454a985bc14bca754ac04",
+        "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
+        "a5ab9d4c745a18620bf7def5c0fab4c7ff42dab0f77afbfeebe87ab6cfc341ea"
       ],
+      "checked_at": "2026-11-22T22:36:34.982831-03:00",
+      "claim_matrix": {
+        "document_id": "camara:2653944",
+        "entries": [
+          {
+            "evidence": {
+              "end": 41,
+              "excerpt": "Imposto sobre Grandes Fortunas",
+              "field": "summary",
+              "field_sha256": "ff819c0ae6a2feba3316b0995619cfadc5d2b0675d208c724b104cb6edcd99ba",
+              "start": 11,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_01",
+            "text": "Imposto sobre grandes fortunas: o que está em discussão? | Uma proposta pretende instituir o Imposto sobre Grandes Fortunas previsto na Constituição.",
+            "type": "reviewed_question"
+          },
+          {
+            "evidence": {
+              "end": 41,
+              "excerpt": "Imposto sobre Grandes Fortunas",
+              "field": "summary",
+              "field_sha256": "ff819c0ae6a2feba3316b0995619cfadc5d2b0675d208c724b104cb6edcd99ba",
+              "start": 11,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_02",
+            "text": "O que diz a proposta? | A ementa propõe instituir o Imposto sobre Grandes Fortunas, previsto no artigo 153 da Constituição Federal.",
+            "type": "reviewed_proposal"
+          },
+          {
+            "evidence": {
+              "end": 41,
+              "excerpt": "Imposto sobre Grandes Fortunas",
+              "field": "summary",
+              "field_sha256": "ff819c0ae6a2feba3316b0995619cfadc5d2b0675d208c724b104cb6edcd99ba",
+              "start": 11,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_03",
+            "text": "Qual é o mecanismo? | Criar um tributo exige definir regras de incidência e cobrança. A ementa não apresenta aqui todos esses parâmetros.",
+            "type": "reviewed_mechanism"
+          },
+          {
+            "evidence": {
+              "end": 41,
+              "excerpt": "Imposto sobre Grandes Fortunas",
+              "field": "summary",
+              "field_sha256": "ff819c0ae6a2feba3316b0995619cfadc5d2b0675d208c724b104cb6edcd99ba",
+              "start": 11,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_04",
+            "text": "E na prática? | Se aprovado e regulamentado conforme o texto final, o tributo poderá alcançar patrimônios enquadrados nos critérios legais.",
+            "type": "reviewed_conditional"
+          },
+          {
+            "evidence": {
+              "end": 41,
+              "excerpt": "Imposto sobre Grandes Fortunas",
+              "field": "summary",
+              "field_sha256": "ff819c0ae6a2feba3316b0995619cfadc5d2b0675d208c724b104cb6edcd99ba",
+              "start": 11,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_05",
+            "text": "O que falta esclarecer? | Qual patrimônio seria alcançado? Como seria calculado? Quais exceções existiriam? Consulte o texto completo.",
+            "type": "reviewed_questions"
+          },
+          {
+            "evidence": {
+              "end": 26,
+              "excerpt": "Apresentação de Proposição",
+              "field": "stage",
+              "field_sha256": "7ad4f3a2409e2196a7e3ccc89d81061c388c76f096e8a3e5181944076982a9b7",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
+            },
+            "limitation": "Registro de tramitação.",
+            "location": "card_06",
+            "text": "Apresentação de Proposição",
+            "type": "procedural_record"
+          },
+          {
+            "evidence": {
+              "end": 10,
+              "excerpt": "2026-11-13",
+              "field": "stage_date",
+              "field_sha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
+            },
+            "limitation": "Não comprova vigência.",
+            "location": "card_06",
+            "text": "2026-11-13",
+            "type": "record_date"
+          },
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5852/2026",
+              "field": "title",
+              "field_sha256": "b349fe263fed63cd2673549e20a4eca7ac89d9a8cae409e214dfb946ced7c6ed",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
+            },
+            "limitation": "Fonte para leitura integral.",
+            "location": "card_07",
+            "text": "PL 5852/2026",
+            "type": "source_reference"
+          },
+          {
+            "evidence": {
+              "end": 41,
+              "excerpt": "Imposto sobre Grandes Fortunas",
+              "field": "summary",
+              "field_sha256": "ff819c0ae6a2feba3316b0995619cfadc5d2b0675d208c724b104cb6edcd99ba",
+              "start": 11,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
+            },
+            "limitation": "Paráfrase revisada.",
+            "location": "caption",
+            "text": "A ementa propõe instituir o Imposto sobre Grandes Fortunas, previsto no artigo 153 da Constituição Federal.",
+            "type": "reviewed_proposal"
+          },
+          {
+            "evidence": {
+              "end": 41,
+              "excerpt": "Imposto sobre Grandes Fortunas",
+              "field": "summary",
+              "field_sha256": "ff819c0ae6a2feba3316b0995619cfadc5d2b0675d208c724b104cb6edcd99ba",
+              "start": 11,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
+            },
+            "limitation": "Impacto potencial.",
+            "location": "caption",
+            "text": "Se aprovado e regulamentado conforme o texto final, o tributo poderá alcançar patrimônios enquadrados nos critérios legais.",
+            "type": "reviewed_conditional"
+          }
+        ],
+        "limitation": "Revisão editorial de narrativa controlada; não verifica impacto real ou texto integral.",
+        "policy": "didactic-v4",
+        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944",
+        "unverified_dimensions": [
+          "legal_effect",
+          "implementation",
+          "budget",
+          "causality",
+          "social_impact"
+        ],
+        "version": "2d94a3cc4eebf7"
+      },
+      "claim_matrix_sha256": "4e5dbd1ac74d41a7fe7d401644f062e3fb5e0f37321697af8023a41f36d4b942",
+      "closing_media_sha256": "a5ab9d4c745a18620bf7def5c0fab4c7ff42dab0f77afbfeebe87ab6cfc341ea",
+      "content_sha256": "0f9bfda45f2523d328eedfae3d497c774fe928add234736ab0da56607f8ef2f8",
+      "decision": "approved_documentary_only",
+      "id": "camara:2653944",
+      "issues": [],
+      "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
       "policy": "documentary-template-v4-didactic",
       "version": "2d94a3cc4eebf7"
     },
     {
-      "checked_at": "2026-11-22T20:15:46.617652-03:00",
-      "decision": "rejected",
-      "id": "camara:2654174",
-      "issues": [
-        "cards_differ_from_template"
+      "card_sha256": [
+        "fbedf0e70a442a206d7d33aa268946584a97088e4f75aa0454c7198b9b905472",
+        "6fd575e9c7b29403afe83ab5cf2b33faa378fd793e7915df5c45e6782fa8773c",
+        "7a00babcdab1d8aa6200653dab463c843c30dea1b3f3054142915d067cbe738d",
+        "bd41c25ef8c8169b2678c6eb2c3290ffdd645b9fbbc58535a5e36e31c417dc4c",
+        "a9b188aec64ea4c9d60091f882d89e02534d0ca5dbb48b7be2d7d7a6bf292158",
+        "e8e05ac56965ca5ad2470b61d4227ecf997c1bab3f353fecd1ab46f9db2bd3b2",
+        "64ef934310390157694ec51f96939cdffe52f331ffa44359aae5b90eb60aede2"
       ],
+      "checked_at": "2026-11-22T22:36:34.982831-03:00",
+      "claim_matrix": {
+        "document_id": "camara:2654174",
+        "entries": [
+          {
+            "evidence": {
+              "end": 56,
+              "excerpt": "rastreabilidade integral",
+              "field": "summary",
+              "field_sha256": "7fb3e7c4d08b882fd0d0aaa72d6d482ea74136118ead0da0f50e0a46b7b9bb53",
+              "start": 32,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_01",
+            "text": "Emendas parlamentares: como rastrear o dinheiro? | O projeto propõe rastreabilidade e transparência das transferências de recursos de emendas.",
+            "type": "reviewed_question"
+          },
+          {
+            "evidence": {
+              "end": 200,
+              "excerpt": "emendas parlamentares",
+              "field": "summary",
+              "field_sha256": "7fb3e7c4d08b882fd0d0aaa72d6d482ea74136118ead0da0f50e0a46b7b9bb53",
+              "start": 179,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_01",
+            "text": "Emendas parlamentares: como rastrear o dinheiro? | O projeto propõe rastreabilidade e transparência das transferências de recursos de emendas.",
+            "type": "reviewed_question"
+          },
+          {
+            "evidence": {
+              "end": 56,
+              "excerpt": "rastreabilidade integral",
+              "field": "summary",
+              "field_sha256": "7fb3e7c4d08b882fd0d0aaa72d6d482ea74136118ead0da0f50e0a46b7b9bb53",
+              "start": 32,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_02",
+            "text": "O que diz a proposta? | A proposta exige rastreabilidade integral, transparência ativa e proíbe movimentação em espécie em determinadas transferências.",
+            "type": "reviewed_proposal"
+          },
+          {
+            "evidence": {
+              "end": 200,
+              "excerpt": "emendas parlamentares",
+              "field": "summary",
+              "field_sha256": "7fb3e7c4d08b882fd0d0aaa72d6d482ea74136118ead0da0f50e0a46b7b9bb53",
+              "start": 179,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_02",
+            "text": "O que diz a proposta? | A proposta exige rastreabilidade integral, transparência ativa e proíbe movimentação em espécie em determinadas transferências.",
+            "type": "reviewed_proposal"
+          },
+          {
+            "evidence": {
+              "end": 56,
+              "excerpt": "rastreabilidade integral",
+              "field": "summary",
+              "field_sha256": "7fb3e7c4d08b882fd0d0aaa72d6d482ea74136118ead0da0f50e0a46b7b9bb53",
+              "start": 32,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_03",
+            "text": "Qual é o mecanismo? | Rastrear etapas de movimentação pode facilitar a identificação de origem, destino e responsáveis pelos recursos públicos.",
+            "type": "reviewed_mechanism"
+          },
+          {
+            "evidence": {
+              "end": 200,
+              "excerpt": "emendas parlamentares",
+              "field": "summary",
+              "field_sha256": "7fb3e7c4d08b882fd0d0aaa72d6d482ea74136118ead0da0f50e0a46b7b9bb53",
+              "start": 179,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_03",
+            "text": "Qual é o mecanismo? | Rastrear etapas de movimentação pode facilitar a identificação de origem, destino e responsáveis pelos recursos públicos.",
+            "type": "reviewed_mechanism"
+          },
+          {
+            "evidence": {
+              "end": 56,
+              "excerpt": "rastreabilidade integral",
+              "field": "summary",
+              "field_sha256": "7fb3e7c4d08b882fd0d0aaa72d6d482ea74136118ead0da0f50e0a46b7b9bb53",
+              "start": 32,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_04",
+            "text": "E na prática? | Se a proposta avançar, as transferências abrangidas poderão exigir registros digitais e novas práticas de controle financeiro.",
+            "type": "reviewed_conditional"
+          },
+          {
+            "evidence": {
+              "end": 200,
+              "excerpt": "emendas parlamentares",
+              "field": "summary",
+              "field_sha256": "7fb3e7c4d08b882fd0d0aaa72d6d482ea74136118ead0da0f50e0a46b7b9bb53",
+              "start": 179,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_04",
+            "text": "E na prática? | Se a proposta avançar, as transferências abrangidas poderão exigir registros digitais e novas práticas de controle financeiro.",
+            "type": "reviewed_conditional"
+          },
+          {
+            "evidence": {
+              "end": 56,
+              "excerpt": "rastreabilidade integral",
+              "field": "summary",
+              "field_sha256": "7fb3e7c4d08b882fd0d0aaa72d6d482ea74136118ead0da0f50e0a46b7b9bb53",
+              "start": 32,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_05",
+            "text": "O que falta esclarecer? | Quais transferências entram? Quem fiscaliza? Como seriam tratadas exceções? A ementa não detalha toda a execução.",
+            "type": "reviewed_questions"
+          },
+          {
+            "evidence": {
+              "end": 200,
+              "excerpt": "emendas parlamentares",
+              "field": "summary",
+              "field_sha256": "7fb3e7c4d08b882fd0d0aaa72d6d482ea74136118ead0da0f50e0a46b7b9bb53",
+              "start": 179,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_05",
+            "text": "O que falta esclarecer? | Quais transferências entram? Quem fiscaliza? Como seriam tratadas exceções? A ementa não detalha toda a execução.",
+            "type": "reviewed_questions"
+          },
+          {
+            "evidence": {
+              "end": 23,
+              "excerpt": "Notificação de Despacho",
+              "field": "stage",
+              "field_sha256": "0b920a1ee361e92e5292c0fd466a2ca7df5e2dd97e989e45e51fcde9161a03d1",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
+            },
+            "limitation": "Registro de tramitação.",
+            "location": "card_06",
+            "text": "Notificação de Despacho",
+            "type": "procedural_record"
+          },
+          {
+            "evidence": {
+              "end": 10,
+              "excerpt": "2026-11-16",
+              "field": "stage_date",
+              "field_sha256": "faffe734ef290597a139fa056e87a8ad295127cb0e390e1ea35540b79e420978",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
+            },
+            "limitation": "Não comprova vigência.",
+            "location": "card_06",
+            "text": "2026-11-16",
+            "type": "record_date"
+          },
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PLP 305/2026",
+              "field": "title",
+              "field_sha256": "68154f1fc3ae989ead091cd09228a1fed3eee650db4912f41bc8bd082105c310",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
+            },
+            "limitation": "Fonte para leitura integral.",
+            "location": "card_07",
+            "text": "PLP 305/2026",
+            "type": "source_reference"
+          },
+          {
+            "evidence": {
+              "end": 56,
+              "excerpt": "rastreabilidade integral",
+              "field": "summary",
+              "field_sha256": "7fb3e7c4d08b882fd0d0aaa72d6d482ea74136118ead0da0f50e0a46b7b9bb53",
+              "start": 32,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
+            },
+            "limitation": "Paráfrase revisada.",
+            "location": "caption",
+            "text": "A proposta exige rastreabilidade integral, transparência ativa e proíbe movimentação em espécie em determinadas transferências.",
+            "type": "reviewed_proposal"
+          },
+          {
+            "evidence": {
+              "end": 200,
+              "excerpt": "emendas parlamentares",
+              "field": "summary",
+              "field_sha256": "7fb3e7c4d08b882fd0d0aaa72d6d482ea74136118ead0da0f50e0a46b7b9bb53",
+              "start": 179,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
+            },
+            "limitation": "Impacto potencial.",
+            "location": "caption",
+            "text": "Se a proposta avançar, as transferências abrangidas poderão exigir registros digitais e novas práticas de controle financeiro.",
+            "type": "reviewed_conditional"
+          }
+        ],
+        "limitation": "Revisão editorial de narrativa controlada; não verifica impacto real ou texto integral.",
+        "policy": "didactic-v4",
+        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174",
+        "unverified_dimensions": [
+          "legal_effect",
+          "implementation",
+          "budget",
+          "causality",
+          "social_impact"
+        ],
+        "version": "abe5fda5fc0602"
+      },
+      "claim_matrix_sha256": "bafc9f18122cc88682d47649500a0688df92cc94bac2f160650ea6efa453629b",
+      "closing_media_sha256": "64ef934310390157694ec51f96939cdffe52f331ffa44359aae5b90eb60aede2",
+      "content_sha256": "0ab4a82931b954a5ac72c040b0cd768e378c18d73de72cee030c1aa0942ce20c",
+      "decision": "approved_documentary_only",
+      "id": "camara:2654174",
+      "issues": [],
+      "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
       "policy": "documentary-template-v4-didactic",
       "version": "abe5fda5fc0602"
     },
     {
-      "checked_at": "2026-11-22T20:15:46.617652-03:00",
+      "checked_at": "2026-11-22T22:36:34.982831-03:00",
       "decision": "rejected",
       "id": "camara:2654163",
       "issues": [
@@ -45,52 +616,157 @@
     },
     {
       "card_sha256": [
-        "5358c79775409e058ea24030dd8c8bb2134b1095a00ac39f5947c29e63fdf742",
-        "bd879faa3f00e286b5d4be6058fb129e510b7e1cbf4a4af1a388abedb8002c67",
-        "50fc02cfd1d06be78856d1d7dc75f61c0346bcbdeeeff316b42bc4e81aa7c58f",
-        "3b0e29aa6e6a3994339c130169525e59301d98c2ec3b8b1b80885e359c132d6c",
-        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
-        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
-        "e0455d8181fb89762fed472aca57923e25d716cca1d0ebe697eb9f7d334ef621"
+        "cc87b6484eac79ffa442c9411f2636f4f903ca72e60aca309d4499f511166eea",
+        "701412cbb4eb1d6bc92ae12f61aa45b8eef61edbe18f30d1a39ac1caa785a871",
+        "8348c7ca60c336f2154b2478ffda1bb7e54811a177e5874e0ce41f1c29a5d7ca",
+        "4662d960e5b631cc4161ff2bbbb91d5c54d9a3f267544bbc3ce662234a3e218e",
+        "22d0989659364983081fb2c47ae503a965b7e3fe8b5130f195f3cacab743eb2b",
+        "7cf7ec6b7821111dcea46f960b9f45a30420519980127431b0d5ad1e97065939",
+        "81d319ed637413eb3535a878459863dbae7579b83fd55d97c13cb692ae0207c9"
       ],
-      "checked_at": "2026-11-22T20:15:46.617652-03:00",
+      "checked_at": "2026-11-22T22:36:34.982831-03:00",
       "claim_matrix": {
         "document_id": "camara:2654371",
         "entries": [
           {
             "evidence": {
-              "end": 12,
-              "excerpt": "PL 5874/2026",
-              "field": "title",
-              "field_sha256": "b8e64d7eb641bf5760878737814806b60cf3204dab6c034ad820d2aea5a31df0",
-              "start": 0,
+              "end": 71,
+              "excerpt": "Censo Escolar",
+              "field": "summary",
+              "field_sha256": "65f4f1c98a4bcc90b35a2ede89436f8c521613fb0dc66d3da1368c665e4fb1f3",
+              "start": 58,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
             },
-            "limitation": "Identifica a proposição, não sua aprovação.",
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
             "location": "card_01",
-            "text": "PL 5874/2026",
-            "type": "document_identity"
+            "text": "Fundeb: cruzar dados pode revelar inconsistências? | O projeto pretende cruzar registros escolares, folhas de pagamento e recursos do Fundeb.",
+            "type": "reviewed_question"
           },
           {
             "evidence": {
-              "end": 286,
-              "excerpt": "Institui o cruzamento obrigatório e periódico de dados do Censo Escolar com as folhas de pagamento dos entes federados e com os pagamentos efetuados com recursos do Fundeb, e dispõe sobre a exclusão de estudantes do Censo Escolar, para coibir fraudes e o desvio de recursos da educação.",
+              "end": 171,
+              "excerpt": "Fundeb",
               "field": "summary",
               "field_sha256": "65f4f1c98a4bcc90b35a2ede89436f8c521613fb0dc66d3da1368c665e4fb1f3",
-              "start": 0,
+              "start": 165,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
             },
-            "limitation": "Ementa oficial, não texto integral nem prova de impacto.",
-            "location": "card_02",
-            "text": "Institui o cruzamento obrigatório e periódico de dados do Censo Escolar com as folhas de pagamento dos entes federados e com os pagamentos efetuados com recursos do Fundeb, e dispõe sobre a exclusão de estudantes do Censo Escolar, para coibir fraudes e o desvio de recursos da educação.",
-            "type": "attributed_excerpt"
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_01",
+            "text": "Fundeb: cruzar dados pode revelar inconsistências? | O projeto pretende cruzar registros escolares, folhas de pagamento e recursos do Fundeb.",
+            "type": "reviewed_question"
           },
           {
-            "evidence": null,
-            "limitation": "Não acrescenta fatos externos.",
+            "evidence": {
+              "end": 71,
+              "excerpt": "Censo Escolar",
+              "field": "summary",
+              "field_sha256": "65f4f1c98a4bcc90b35a2ede89436f8c521613fb0dc66d3da1368c665e4fb1f3",
+              "start": 58,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_02",
+            "text": "O que diz a proposta? | A proposta prevê cruzamento periódico de dados do Censo Escolar com folhas de pagamento e pagamentos com recursos do Fundeb.",
+            "type": "reviewed_proposal"
+          },
+          {
+            "evidence": {
+              "end": 171,
+              "excerpt": "Fundeb",
+              "field": "summary",
+              "field_sha256": "65f4f1c98a4bcc90b35a2ede89436f8c521613fb0dc66d3da1368c665e4fb1f3",
+              "start": 165,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_02",
+            "text": "O que diz a proposta? | A proposta prevê cruzamento periódico de dados do Censo Escolar com folhas de pagamento e pagamentos com recursos do Fundeb.",
+            "type": "reviewed_proposal"
+          },
+          {
+            "evidence": {
+              "end": 71,
+              "excerpt": "Censo Escolar",
+              "field": "summary",
+              "field_sha256": "65f4f1c98a4bcc90b35a2ede89436f8c521613fb0dc66d3da1368c665e4fb1f3",
+              "start": 58,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
             "location": "card_03",
-            "text": "A ementa resume o tema. Para conhecer condições, exceções e detalhes, consulte o texto integral.",
-            "type": "template_explanation"
+            "text": "Qual é o mecanismo? | Comparar bases de dados pode apontar divergências que precisam de verificação. Uma divergência isolada não comprova fraude.",
+            "type": "reviewed_mechanism"
+          },
+          {
+            "evidence": {
+              "end": 171,
+              "excerpt": "Fundeb",
+              "field": "summary",
+              "field_sha256": "65f4f1c98a4bcc90b35a2ede89436f8c521613fb0dc66d3da1368c665e4fb1f3",
+              "start": 165,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_03",
+            "text": "Qual é o mecanismo? | Comparar bases de dados pode apontar divergências que precisam de verificação. Uma divergência isolada não comprova fraude.",
+            "type": "reviewed_mechanism"
+          },
+          {
+            "evidence": {
+              "end": 71,
+              "excerpt": "Censo Escolar",
+              "field": "summary",
+              "field_sha256": "65f4f1c98a4bcc90b35a2ede89436f8c521613fb0dc66d3da1368c665e4fb1f3",
+              "start": 58,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_04",
+            "text": "E na prática? | Se implementado, o cruzamento poderá apoiar controles sobre informações escolares e pagamentos, conforme regras aprovadas.",
+            "type": "reviewed_conditional"
+          },
+          {
+            "evidence": {
+              "end": 171,
+              "excerpt": "Fundeb",
+              "field": "summary",
+              "field_sha256": "65f4f1c98a4bcc90b35a2ede89436f8c521613fb0dc66d3da1368c665e4fb1f3",
+              "start": 165,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_04",
+            "text": "E na prática? | Se implementado, o cruzamento poderá apoiar controles sobre informações escolares e pagamentos, conforme regras aprovadas.",
+            "type": "reviewed_conditional"
+          },
+          {
+            "evidence": {
+              "end": 71,
+              "excerpt": "Censo Escolar",
+              "field": "summary",
+              "field_sha256": "65f4f1c98a4bcc90b35a2ede89436f8c521613fb0dc66d3da1368c665e4fb1f3",
+              "start": 58,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_05",
+            "text": "O que falta esclarecer? | Quem fará a conferência? Como corrigir erros cadastrais? Quais garantias terão os envolvidos?",
+            "type": "reviewed_questions"
+          },
+          {
+            "evidence": {
+              "end": 171,
+              "excerpt": "Fundeb",
+              "field": "summary",
+              "field_sha256": "65f4f1c98a4bcc90b35a2ede89436f8c521613fb0dc66d3da1368c665e4fb1f3",
+              "start": 165,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_05",
+            "text": "O que falta esclarecer? | Quem fará a conferência? Como corrigir erros cadastrais? Quais garantias terão os envolvidos?",
+            "type": "reviewed_questions"
           },
           {
             "evidence": {
@@ -101,8 +777,8 @@
               "start": 0,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
             },
-            "limitation": "Registro de tramitação na data de referência.",
-            "location": "card_04",
+            "limitation": "Registro de tramitação.",
+            "location": "card_06",
             "text": "Apresentação de Proposição",
             "type": "procedural_record"
           },
@@ -115,24 +791,10 @@
               "start": 0,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
             },
-            "limitation": "Data do andamento, não da vigência.",
-            "location": "card_04",
+            "limitation": "Não comprova vigência.",
+            "location": "card_06",
             "text": "2026-11-17",
             "type": "record_date"
-          },
-          {
-            "evidence": null,
-            "limitation": "Não atribui impacto, vigência ou financiamento.",
-            "location": "card_05",
-            "text": "A existência de um projeto não comprova aprovação, entrada em vigor, financiamento ou resultados.",
-            "type": "scope_limitation"
-          },
-          {
-            "evidence": null,
-            "limitation": "Questões para acompanhamento, não afirmações comprovadas.",
-            "location": "card_06",
-            "text": "Qual é o texto final?\n\nQuais órgãos respondem pela execução?\n\nHá custo previsto e indicadores de resultado?",
-            "type": "open_questions"
           },
           {
             "evidence": {
@@ -143,42 +805,42 @@
               "start": 0,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
             },
-            "limitation": "Referência documental.",
+            "limitation": "Fonte para leitura integral.",
             "location": "card_07",
             "text": "PL 5874/2026",
             "type": "source_reference"
           },
           {
             "evidence": {
-              "end": 12,
-              "excerpt": "PL 5874/2026",
-              "field": "title",
-              "field_sha256": "b8e64d7eb641bf5760878737814806b60cf3204dab6c034ad820d2aea5a31df0",
-              "start": 0,
+              "end": 71,
+              "excerpt": "Censo Escolar",
+              "field": "summary",
+              "field_sha256": "65f4f1c98a4bcc90b35a2ede89436f8c521613fb0dc66d3da1368c665e4fb1f3",
+              "start": 58,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
             },
-            "limitation": "Identifica a proposição.",
+            "limitation": "Paráfrase revisada.",
             "location": "caption",
-            "text": "PL 5874/2026",
-            "type": "document_identity"
+            "text": "A proposta prevê cruzamento periódico de dados do Censo Escolar com folhas de pagamento e pagamentos com recursos do Fundeb.",
+            "type": "reviewed_proposal"
           },
           {
             "evidence": {
-              "end": 10,
-              "excerpt": "2026-11-17",
-              "field": "stage_date",
-              "field_sha256": "3af512824d0e341bce2cd7739940bb37ce7ca505725ec00377769cb83bdf1fc3",
-              "start": 0,
+              "end": 171,
+              "excerpt": "Fundeb",
+              "field": "summary",
+              "field_sha256": "65f4f1c98a4bcc90b35a2ede89436f8c521613fb0dc66d3da1368c665e4fb1f3",
+              "start": 165,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
             },
-            "limitation": "Data registrada na fonte.",
+            "limitation": "Impacto potencial.",
             "location": "caption",
-            "text": "2026-11-17",
-            "type": "record_date"
+            "text": "Se implementado, o cruzamento poderá apoiar controles sobre informações escolares e pagamentos, conforme regras aprovadas.",
+            "type": "reviewed_conditional"
           }
         ],
-        "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
-        "policy": "documentary-claims-v2-hooks",
+        "limitation": "Revisão editorial de narrativa controlada; não verifica impacto real ou texto integral.",
+        "policy": "didactic-v4",
         "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371",
         "unverified_dimensions": [
           "legal_effect",
@@ -189,9 +851,9 @@
         ],
         "version": "146301a4f8f3d0"
       },
-      "claim_matrix_sha256": "9bbdd39e07070ad45e405fb7727dc6ad2b6332568f41f564f05d807b8eb9db58",
-      "closing_media_sha256": "e0455d8181fb89762fed472aca57923e25d716cca1d0ebe697eb9f7d334ef621",
-      "content_sha256": "26df7b0946da4518a2b75c0263f15b0708c22073a280d9a79cd2035a3ae4e20f",
+      "claim_matrix_sha256": "71dae6356d99e1a9c65d23a9e5b143ca52ba640e57aeef5f37a94844548b627b",
+      "closing_media_sha256": "81d319ed637413eb3535a878459863dbae7579b83fd55d97c13cb692ae0207c9",
+      "content_sha256": "fdf98c5747c6e5c0af042b83ee5eef16db1f0511073a9b44f5de7ef449e5a1a2",
       "decision": "approved_documentary_only",
       "id": "camara:2654371",
       "issues": [],
@@ -201,52 +863,87 @@
     },
     {
       "card_sha256": [
-        "6f2f34311970533727b19e5b732e8a86e608f1397073ade38f678150c5d0afef",
-        "f7ae2c61d5fc405dada17af7b367af8fe4f2b59ec9c06e52fe47137d8e1fa0f5",
-        "50fc02cfd1d06be78856d1d7dc75f61c0346bcbdeeeff316b42bc4e81aa7c58f",
-        "d8b322f61240c9738f7936a9e58ae3429ab32796d516ac1494dcc0bbc9d25ff4",
-        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
-        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
-        "cc70ab72c2e5cf70c6edbb68d57ddcc264fe9ca53b6d160c1af039d44912276d"
+        "b0759b79d73249d806b79125796dfcf43b801c4c190609e6556267d75d85531d",
+        "e3322fa69dade5d058faf0d2d91e8be25be26894eed283f025d668e97adc413d",
+        "6091da2e9249e18a06c56e344bf53dc7d35970e67e204dc617bc324fdda42d42",
+        "fc28f9b6687e34f5fc89199607739f1deb8c9f818788739525db4924e1c7e478",
+        "85f61235618121c96ebba69a54b17bfa06b1c3a7134a288f5b2c7b86c2d24615",
+        "df44923216636e5b22145baf3b10124556c89a344896229774453364c91ba5fa",
+        "2727163333c4ec24b47a0a368147093f734ab7c300db1e5e62543cb74bd7ba36"
       ],
-      "checked_at": "2026-11-22T20:15:46.617652-03:00",
+      "checked_at": "2026-11-22T22:36:34.982831-03:00",
       "claim_matrix": {
         "document_id": "camara:2655462",
         "entries": [
           {
             "evidence": {
-              "end": 12,
-              "excerpt": "PL 5903/2026",
-              "field": "title",
-              "field_sha256": "d13e7aa1cd382f9ec26ded2b1504474c74293e0ae2c70d11b97cc8bfbad51e3e",
-              "start": 0,
+              "end": 59,
+              "excerpt": "Educação Especial Inclusiva",
+              "field": "summary",
+              "field_sha256": "7b2c06e541395712cb51d0fa47e1f906273d0c06d8b30499affd50f0be30e27f",
+              "start": 32,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462"
             },
-            "limitation": "Identifica a proposição, não sua aprovação.",
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
             "location": "card_01",
-            "text": "PL 5903/2026",
-            "type": "document_identity"
+            "text": "Educação inclusiva: o que pretende mudar? | Uma proposta institui uma política nacional de educação especial inclusiva e altera a Lei Brasileira de Inclusão.",
+            "type": "reviewed_question"
           },
           {
             "evidence": {
-              "end": 120,
-              "excerpt": "Institui a Política Nacional de Educação Especial Inclusiva, e altera o art. 3º da Lei nº 13.146, de 6 de julho de 2015.",
+              "end": 59,
+              "excerpt": "Educação Especial Inclusiva",
               "field": "summary",
               "field_sha256": "7b2c06e541395712cb51d0fa47e1f906273d0c06d8b30499affd50f0be30e27f",
-              "start": 0,
+              "start": 32,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462"
             },
-            "limitation": "Ementa oficial, não texto integral nem prova de impacto.",
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
             "location": "card_02",
-            "text": "Institui a Política Nacional de Educação Especial Inclusiva, e altera o art. 3º da Lei nº 13.146, de 6 de julho de 2015.",
-            "type": "attributed_excerpt"
+            "text": "O que diz a proposta? | A ementa institui a Política Nacional de Educação Especial Inclusiva e propõe alteração na Lei nº 13.146.",
+            "type": "reviewed_proposal"
           },
           {
-            "evidence": null,
-            "limitation": "Não acrescenta fatos externos.",
+            "evidence": {
+              "end": 59,
+              "excerpt": "Educação Especial Inclusiva",
+              "field": "summary",
+              "field_sha256": "7b2c06e541395712cb51d0fa47e1f906273d0c06d8b30499affd50f0be30e27f",
+              "start": 32,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
             "location": "card_03",
-            "text": "A ementa resume o tema. Para conhecer condições, exceções e detalhes, consulte o texto integral.",
-            "type": "template_explanation"
+            "text": "Qual é o mecanismo? | Uma política nacional pode definir diretrizes, mas a ementa isolada não esclarece financiamento nem execução nas escolas.",
+            "type": "reviewed_mechanism"
+          },
+          {
+            "evidence": {
+              "end": 59,
+              "excerpt": "Educação Especial Inclusiva",
+              "field": "summary",
+              "field_sha256": "7b2c06e541395712cb51d0fa47e1f906273d0c06d8b30499affd50f0be30e27f",
+              "start": 32,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_04",
+            "text": "E na prática? | Se aprovada, a política poderá estabelecer novas orientações para a educação especial inclusiva conforme o texto final.",
+            "type": "reviewed_conditional"
+          },
+          {
+            "evidence": {
+              "end": 59,
+              "excerpt": "Educação Especial Inclusiva",
+              "field": "summary",
+              "field_sha256": "7b2c06e541395712cb51d0fa47e1f906273d0c06d8b30499affd50f0be30e27f",
+              "start": 32,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_05",
+            "text": "O que falta esclarecer? | Quais serviços e apoios serão previstos? Como serão financiados? Quem será responsável pela implementação?",
+            "type": "reviewed_questions"
           },
           {
             "evidence": {
@@ -257,8 +954,8 @@
               "start": 0,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462"
             },
-            "limitation": "Registro de tramitação na data de referência.",
-            "location": "card_04",
+            "limitation": "Registro de tramitação.",
+            "location": "card_06",
             "text": "Apresentação de Proposição",
             "type": "procedural_record"
           },
@@ -271,24 +968,10 @@
               "start": 0,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462"
             },
-            "limitation": "Data do andamento, não da vigência.",
-            "location": "card_04",
+            "limitation": "Não comprova vigência.",
+            "location": "card_06",
             "text": "2026-11-18",
             "type": "record_date"
-          },
-          {
-            "evidence": null,
-            "limitation": "Não atribui impacto, vigência ou financiamento.",
-            "location": "card_05",
-            "text": "A existência de um projeto não comprova aprovação, entrada em vigor, financiamento ou resultados.",
-            "type": "scope_limitation"
-          },
-          {
-            "evidence": null,
-            "limitation": "Questões para acompanhamento, não afirmações comprovadas.",
-            "location": "card_06",
-            "text": "Qual é o texto final?\n\nQuais órgãos respondem pela execução?\n\nHá custo previsto e indicadores de resultado?",
-            "type": "open_questions"
           },
           {
             "evidence": {
@@ -299,42 +982,42 @@
               "start": 0,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462"
             },
-            "limitation": "Referência documental.",
+            "limitation": "Fonte para leitura integral.",
             "location": "card_07",
             "text": "PL 5903/2026",
             "type": "source_reference"
           },
           {
             "evidence": {
-              "end": 12,
-              "excerpt": "PL 5903/2026",
-              "field": "title",
-              "field_sha256": "d13e7aa1cd382f9ec26ded2b1504474c74293e0ae2c70d11b97cc8bfbad51e3e",
-              "start": 0,
+              "end": 59,
+              "excerpt": "Educação Especial Inclusiva",
+              "field": "summary",
+              "field_sha256": "7b2c06e541395712cb51d0fa47e1f906273d0c06d8b30499affd50f0be30e27f",
+              "start": 32,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462"
             },
-            "limitation": "Identifica a proposição.",
+            "limitation": "Paráfrase revisada.",
             "location": "caption",
-            "text": "PL 5903/2026",
-            "type": "document_identity"
+            "text": "A ementa institui a Política Nacional de Educação Especial Inclusiva e propõe alteração na Lei nº 13.146.",
+            "type": "reviewed_proposal"
           },
           {
             "evidence": {
-              "end": 10,
-              "excerpt": "2026-11-18",
-              "field": "stage_date",
-              "field_sha256": "0f45d26b9bca5bab9215ee29cc079e2776099e08de9df505123e52128fe91375",
-              "start": 0,
+              "end": 59,
+              "excerpt": "Educação Especial Inclusiva",
+              "field": "summary",
+              "field_sha256": "7b2c06e541395712cb51d0fa47e1f906273d0c06d8b30499affd50f0be30e27f",
+              "start": 32,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462"
             },
-            "limitation": "Data registrada na fonte.",
+            "limitation": "Impacto potencial.",
             "location": "caption",
-            "text": "2026-11-18",
-            "type": "record_date"
+            "text": "Se aprovada, a política poderá estabelecer novas orientações para a educação especial inclusiva conforme o texto final.",
+            "type": "reviewed_conditional"
           }
         ],
-        "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
-        "policy": "documentary-claims-v2-hooks",
+        "limitation": "Revisão editorial de narrativa controlada; não verifica impacto real ou texto integral.",
+        "policy": "didactic-v4",
         "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462",
         "unverified_dimensions": [
           "legal_effect",
@@ -345,9 +1028,9 @@
         ],
         "version": "b2c418b5ca1c25"
       },
-      "claim_matrix_sha256": "f02bc538fbdffbbe6e9129f993440a54de1008dd929041f7cb2423ec9d2d7468",
-      "closing_media_sha256": "cc70ab72c2e5cf70c6edbb68d57ddcc264fe9ca53b6d160c1af039d44912276d",
-      "content_sha256": "785039ed06b92bd4acf2b794bf43494338e5e042eab7a797a6128d546df4f54d",
+      "claim_matrix_sha256": "e563e1bbb2d6c2b6a7077a1c6a338f06f74b04d0888fee5da53a46f1f4c3a19e",
+      "closing_media_sha256": "2727163333c4ec24b47a0a368147093f734ab7c300db1e5e62543cb74bd7ba36",
+      "content_sha256": "70697771e5b9302520c9a11a3e0646288fa5a4e0a98a0ad47f5f1bb59c6bc89b",
       "decision": "approved_documentary_only",
       "id": "camara:2655462",
       "issues": [],
@@ -357,59 +1040,157 @@
     },
     {
       "card_sha256": [
-        "27ffbee83c200a807c09dc49a49a833cda1a726895df693c7280e67e88eec7f9",
-        "4fc491e5f518c1726db5f5b89cf8b3f973787feda573d11b1d838e4409ab547f",
-        "41a66000ab3112f73be8ba6433c25b716bfc2db2979f649e1fc37bee324f7c84",
-        "d8b322f61240c9738f7936a9e58ae3429ab32796d516ac1494dcc0bbc9d25ff4",
-        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
-        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
-        "4739f26c76646637802f8bf6eb83fd8a4e1b68d3c380f4bde7ebbbf1d9a491be"
+        "a97d229ecf8d41bf8f3c63a20b200e4e77587b2d2835c81217272c6e7c06e3e7",
+        "50d93592669a3469ea47b61797677e538c717b35a84ca2ca6f35e1edc1f89740",
+        "dcd74d8b8eea1d7c1a729f6cf7db3dc3f8fdf773d7a10decc20c9d6c51c6e982",
+        "f96f64dd8d0abf565a974634136bc3879b0b06781ad5f33ac53df3967d09069c",
+        "c09bbc7ed153dd00f61b267a9516848b78ac8a93269b555eb35f43a379236259",
+        "df44923216636e5b22145baf3b10124556c89a344896229774453364c91ba5fa",
+        "ddb89ab11a5d5d3311cf41c8654852b6cbdc0ccf6a159b142931f721b68e0f2a"
       ],
-      "checked_at": "2026-11-22T20:15:46.617652-03:00",
+      "checked_at": "2026-11-22T22:36:34.982831-03:00",
       "claim_matrix": {
         "document_id": "camara:2655411",
         "entries": [
           {
             "evidence": {
-              "end": 12,
-              "excerpt": "PL 5897/2026",
-              "field": "title",
-              "field_sha256": "8908fb819cc9edfb9c708510e7ad4763df62d07964635c572a5692f35f4c97d3",
-              "start": 0,
+              "end": 34,
+              "excerpt": "Programa Remédio na Mão",
+              "field": "summary",
+              "field_sha256": "ff2a84d3e41bc1135903b5bde1b146b4f2697d70eb897b8c301e37a1d32413e9",
+              "start": 11,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
             },
-            "limitation": "Identifica a proposição, não sua aprovação.",
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
             "location": "card_01",
-            "text": "PL 5897/2026",
-            "type": "document_identity"
+            "text": "Remédio na Mão: como encontrar medicamentos gratuitos? | O projeto propõe facilitar a busca por medicamentos e insumos disponíveis no SUS e na Farmácia Popular.",
+            "type": "reviewed_question"
           },
           {
             "evidence": {
-              "end": 324,
-              "excerpt": "Institui o Programa Remédio na Mão, destinado a facilitar a localização e o acesso gratuito a medicamentos e insumos de saúde disponibilizados pelo Sistema Único de Saúde e pelo Programa Farmácia Popular do Brasil, mediante identificação digital das unidades dispensadoras, consulta atualizada de disponibilidade, orientação",
+              "end": 170,
+              "excerpt": "Sistema Único de Saúde",
               "field": "summary",
               "field_sha256": "ff2a84d3e41bc1135903b5bde1b146b4f2697d70eb897b8c301e37a1d32413e9",
-              "start": 0,
+              "start": 148,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
             },
-            "limitation": "Ementa oficial, não texto integral nem prova de impacto.",
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_01",
+            "text": "Remédio na Mão: como encontrar medicamentos gratuitos? | O projeto propõe facilitar a busca por medicamentos e insumos disponíveis no SUS e na Farmácia Popular.",
+            "type": "reviewed_question"
+          },
+          {
+            "evidence": {
+              "end": 34,
+              "excerpt": "Programa Remédio na Mão",
+              "field": "summary",
+              "field_sha256": "ff2a84d3e41bc1135903b5bde1b146b4f2697d70eb897b8c301e37a1d32413e9",
+              "start": 11,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
             "location": "card_02",
-            "text": "Institui o Programa Remédio na Mão, destinado a facilitar a localização e o acesso gratuito a medicamentos e insumos de saúde disponibilizados pelo Sistema Único de Saúde e pelo Programa Farmácia Popular do Brasil, mediante identificação digital das unidades dispensadoras, consulta atualizada de disponibilidade, orientação",
-            "type": "attributed_excerpt"
+            "text": "O que diz a proposta? | A proposta prevê consulta de disponibilidade, identificação de unidades e orientações sobre requisitos de retirada.",
+            "type": "reviewed_proposal"
           },
           {
             "evidence": {
-              "end": 439,
-              "excerpt": "sobre requisitos de retirada, indicação de alternativas de atendimento e garantia de acessibilidade informacional.",
+              "end": 170,
+              "excerpt": "Sistema Único de Saúde",
               "field": "summary",
               "field_sha256": "ff2a84d3e41bc1135903b5bde1b146b4f2697d70eb897b8c301e37a1d32413e9",
-              "start": 325,
+              "start": 148,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
             },
-            "limitation": "Continuação da ementa oficial.",
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_02",
+            "text": "O que diz a proposta? | A proposta prevê consulta de disponibilidade, identificação de unidades e orientações sobre requisitos de retirada.",
+            "type": "reviewed_proposal"
+          },
+          {
+            "evidence": {
+              "end": 34,
+              "excerpt": "Programa Remédio na Mão",
+              "field": "summary",
+              "field_sha256": "ff2a84d3e41bc1135903b5bde1b146b4f2697d70eb897b8c301e37a1d32413e9",
+              "start": 11,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
             "location": "card_03",
-            "text": "sobre requisitos de retirada, indicação de alternativas de atendimento e garantia de acessibilidade informacional.",
-            "type": "attributed_excerpt"
+            "text": "Qual é o mecanismo? | Informação atualizada sobre estoque e locais pode reduzir deslocamentos sem garantia de atendimento ou disponibilidade contínua.",
+            "type": "reviewed_mechanism"
+          },
+          {
+            "evidence": {
+              "end": 170,
+              "excerpt": "Sistema Único de Saúde",
+              "field": "summary",
+              "field_sha256": "ff2a84d3e41bc1135903b5bde1b146b4f2697d70eb897b8c301e37a1d32413e9",
+              "start": 148,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_03",
+            "text": "Qual é o mecanismo? | Informação atualizada sobre estoque e locais pode reduzir deslocamentos sem garantia de atendimento ou disponibilidade contínua.",
+            "type": "reviewed_mechanism"
+          },
+          {
+            "evidence": {
+              "end": 34,
+              "excerpt": "Programa Remédio na Mão",
+              "field": "summary",
+              "field_sha256": "ff2a84d3e41bc1135903b5bde1b146b4f2697d70eb897b8c301e37a1d32413e9",
+              "start": 11,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_04",
+            "text": "E na prática? | Se aprovado e implementado, o programa poderá ajudar usuários a localizar unidades e alternativas de atendimento.",
+            "type": "reviewed_conditional"
+          },
+          {
+            "evidence": {
+              "end": 170,
+              "excerpt": "Sistema Único de Saúde",
+              "field": "summary",
+              "field_sha256": "ff2a84d3e41bc1135903b5bde1b146b4f2697d70eb897b8c301e37a1d32413e9",
+              "start": 148,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_04",
+            "text": "E na prática? | Se aprovado e implementado, o programa poderá ajudar usuários a localizar unidades e alternativas de atendimento.",
+            "type": "reviewed_conditional"
+          },
+          {
+            "evidence": {
+              "end": 34,
+              "excerpt": "Programa Remédio na Mão",
+              "field": "summary",
+              "field_sha256": "ff2a84d3e41bc1135903b5bde1b146b4f2697d70eb897b8c301e37a1d32413e9",
+              "start": 11,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_05",
+            "text": "O que falta esclarecer? | Como os estoques seriam atualizados? Quem manteria os dados? Como seria garantida a acessibilidade?",
+            "type": "reviewed_questions"
+          },
+          {
+            "evidence": {
+              "end": 170,
+              "excerpt": "Sistema Único de Saúde",
+              "field": "summary",
+              "field_sha256": "ff2a84d3e41bc1135903b5bde1b146b4f2697d70eb897b8c301e37a1d32413e9",
+              "start": 148,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_05",
+            "text": "O que falta esclarecer? | Como os estoques seriam atualizados? Quem manteria os dados? Como seria garantida a acessibilidade?",
+            "type": "reviewed_questions"
           },
           {
             "evidence": {
@@ -420,8 +1201,8 @@
               "start": 0,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
             },
-            "limitation": "Registro de tramitação na data de referência.",
-            "location": "card_04",
+            "limitation": "Registro de tramitação.",
+            "location": "card_06",
             "text": "Apresentação de Proposição",
             "type": "procedural_record"
           },
@@ -434,24 +1215,10 @@
               "start": 0,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
             },
-            "limitation": "Data do andamento, não da vigência.",
-            "location": "card_04",
+            "limitation": "Não comprova vigência.",
+            "location": "card_06",
             "text": "2026-11-18",
             "type": "record_date"
-          },
-          {
-            "evidence": null,
-            "limitation": "Não atribui impacto, vigência ou financiamento.",
-            "location": "card_05",
-            "text": "A existência de um projeto não comprova aprovação, entrada em vigor, financiamento ou resultados.",
-            "type": "scope_limitation"
-          },
-          {
-            "evidence": null,
-            "limitation": "Questões para acompanhamento, não afirmações comprovadas.",
-            "location": "card_06",
-            "text": "Qual é o texto final?\n\nQuais órgãos respondem pela execução?\n\nHá custo previsto e indicadores de resultado?",
-            "type": "open_questions"
           },
           {
             "evidence": {
@@ -462,42 +1229,42 @@
               "start": 0,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
             },
-            "limitation": "Referência documental.",
+            "limitation": "Fonte para leitura integral.",
             "location": "card_07",
             "text": "PL 5897/2026",
             "type": "source_reference"
           },
           {
             "evidence": {
-              "end": 12,
-              "excerpt": "PL 5897/2026",
-              "field": "title",
-              "field_sha256": "8908fb819cc9edfb9c708510e7ad4763df62d07964635c572a5692f35f4c97d3",
-              "start": 0,
+              "end": 34,
+              "excerpt": "Programa Remédio na Mão",
+              "field": "summary",
+              "field_sha256": "ff2a84d3e41bc1135903b5bde1b146b4f2697d70eb897b8c301e37a1d32413e9",
+              "start": 11,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
             },
-            "limitation": "Identifica a proposição.",
+            "limitation": "Paráfrase revisada.",
             "location": "caption",
-            "text": "PL 5897/2026",
-            "type": "document_identity"
+            "text": "A proposta prevê consulta de disponibilidade, identificação de unidades e orientações sobre requisitos de retirada.",
+            "type": "reviewed_proposal"
           },
           {
             "evidence": {
-              "end": 10,
-              "excerpt": "2026-11-18",
-              "field": "stage_date",
-              "field_sha256": "0f45d26b9bca5bab9215ee29cc079e2776099e08de9df505123e52128fe91375",
-              "start": 0,
+              "end": 170,
+              "excerpt": "Sistema Único de Saúde",
+              "field": "summary",
+              "field_sha256": "ff2a84d3e41bc1135903b5bde1b146b4f2697d70eb897b8c301e37a1d32413e9",
+              "start": 148,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
             },
-            "limitation": "Data registrada na fonte.",
+            "limitation": "Impacto potencial.",
             "location": "caption",
-            "text": "2026-11-18",
-            "type": "record_date"
+            "text": "Se aprovado e implementado, o programa poderá ajudar usuários a localizar unidades e alternativas de atendimento.",
+            "type": "reviewed_conditional"
           }
         ],
-        "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
-        "policy": "documentary-claims-v2-hooks",
+        "limitation": "Revisão editorial de narrativa controlada; não verifica impacto real ou texto integral.",
+        "policy": "didactic-v4",
         "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411",
         "unverified_dimensions": [
           "legal_effect",
@@ -508,9 +1275,9 @@
         ],
         "version": "9928715e313319"
       },
-      "claim_matrix_sha256": "34e22c47936f249f98431b31de53cd0833dcef5e3460408d7165c83dab53cf58",
-      "closing_media_sha256": "4739f26c76646637802f8bf6eb83fd8a4e1b68d3c380f4bde7ebbbf1d9a491be",
-      "content_sha256": "a9edfab4280d0510c4fc2fbb12034766ca6254e7a06fd1d2369e51fc478456a8",
+      "claim_matrix_sha256": "284fb18188672b91498d77e193ab6f816d3907ac52a0e01e0bfd416bbd51ce25",
+      "closing_media_sha256": "ddb89ab11a5d5d3311cf41c8654852b6cbdc0ccf6a159b142931f721b68e0f2a",
+      "content_sha256": "da6180d87bade8fe4a8c434440e15e60aa442e932d320d29549d1f78b1a6389f",
       "decision": "approved_documentary_only",
       "id": "camara:2655411",
       "issues": [],
@@ -520,59 +1287,157 @@
     },
     {
       "card_sha256": [
-        "a0cdd74cc2a33cd99c2fdc04e31c7585a997ac377c9010be3db8ee211bde7de5",
-        "162a88a3296049ffb43f519fdf6a73e2f55d57b84e4e1c38f836ddb221eda909",
-        "29d5f250778aee076f7868cbb106fb0852d079d0c734f9f468ac7ae3598611f4",
-        "dbfb76ed177e4d8a0d49c5c98a50baf16b338171ce743d85ea19dc6c6b34edad",
-        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
-        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
-        "0c227b3a07bda15be749d86e3345f7509653f7ce7eef9deb3535093611c005ac"
+        "a5deb33121c0758a68c1064be68699ad9952dee2db9730460077dd7ba903bdce",
+        "0649c11a71ab27c1b0db7c92832f93a33fd7ea9f089cb854c2c7c98af8dfb2ec",
+        "c320f363f01e5734ee73db029333110257f309cac1578ddbd8f17f4c88d885cd",
+        "3303477dfe1062d714c57743039bf612d5ac8da46bc7e0f41b97e1e6faac6d29",
+        "7bd82c8a31a0ea72036459106465506df567cd752e2c6bbbe2acca37e6051898",
+        "9ef2327508291710727ee91cd50a871fa30fd639b0a75c934f827b80cf911aa1",
+        "6886fe1c5e1762503037aaad4a0e63f55bd5e9dbfbcc6579b92e3a8324c1030c"
       ],
-      "checked_at": "2026-11-22T20:15:46.617652-03:00",
+      "checked_at": "2026-11-22T22:36:34.982831-03:00",
       "claim_matrix": {
         "document_id": "camara:2655695",
         "entries": [
           {
             "evidence": {
-              "end": 12,
-              "excerpt": "PL 5756/2026",
-              "field": "title",
-              "field_sha256": "cc9729ba9091fe2012cf6d3be5de5ec9cbee5089429aec0cde6ce385b4fa1180",
-              "start": 0,
+              "end": 68,
+              "excerpt": "ampliar o prazo",
+              "field": "summary",
+              "field_sha256": "d324ffe2e06d822e6b1783cf2a78c2698d4e4824cfdd5247178f119f78508c7c",
+              "start": 53,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
             },
-            "limitation": "Identifica a proposição, não sua aprovação.",
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
             "location": "card_01",
-            "text": "PL 5756/2026",
-            "type": "document_identity"
+            "text": "Internet para escolas: o prazo de uso dos recursos pode mudar? | A proposta pretende ampliar o prazo para aplicação ou restituição de recursos federais destinados à conectividade educacional.",
+            "type": "reviewed_question"
           },
           {
             "evidence": {
-              "end": 324,
-              "excerpt": "Altera a Lei nº 14.172, de 10 de junho de 2021, para ampliar o prazo para aplicação e eventual restituição dos recursos entregues pela União aos Estados e ao Distrito Federal voltados para a garantia do acesso à internet, com fins educacionais, aos estabelecimentos de ensino, aos alunos e aos professores da rede pública de",
+              "end": 220,
+              "excerpt": "acesso à internet",
               "field": "summary",
               "field_sha256": "d324ffe2e06d822e6b1783cf2a78c2698d4e4824cfdd5247178f119f78508c7c",
-              "start": 0,
+              "start": 203,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
             },
-            "limitation": "Ementa oficial, não texto integral nem prova de impacto.",
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_01",
+            "text": "Internet para escolas: o prazo de uso dos recursos pode mudar? | A proposta pretende ampliar o prazo para aplicação ou restituição de recursos federais destinados à conectividade educacional.",
+            "type": "reviewed_question"
+          },
+          {
+            "evidence": {
+              "end": 68,
+              "excerpt": "ampliar o prazo",
+              "field": "summary",
+              "field_sha256": "d324ffe2e06d822e6b1783cf2a78c2698d4e4824cfdd5247178f119f78508c7c",
+              "start": 53,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
             "location": "card_02",
-            "text": "Altera a Lei nº 14.172, de 10 de junho de 2021, para ampliar o prazo para aplicação e eventual restituição dos recursos entregues pela União aos Estados e ao Distrito Federal voltados para a garantia do acesso à internet, com fins educacionais, aos estabelecimentos de ensino, aos alunos e aos professores da rede pública de",
-            "type": "attributed_excerpt"
+            "text": "O que diz a proposta? | O projeto altera a lei sobre recursos para acesso à internet de escolas, estudantes e professores da rede pública.",
+            "type": "reviewed_proposal"
           },
           {
             "evidence": {
-              "end": 439,
-              "excerpt": "ensino dos Estados, do Distrito Federal e dos Municípios, em virtude da calamidade pública decorrente da covid-19.",
+              "end": 220,
+              "excerpt": "acesso à internet",
               "field": "summary",
               "field_sha256": "d324ffe2e06d822e6b1783cf2a78c2698d4e4824cfdd5247178f119f78508c7c",
-              "start": 325,
+              "start": 203,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
             },
-            "limitation": "Continuação da ementa oficial.",
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_02",
+            "text": "O que diz a proposta? | O projeto altera a lei sobre recursos para acesso à internet de escolas, estudantes e professores da rede pública.",
+            "type": "reviewed_proposal"
+          },
+          {
+            "evidence": {
+              "end": 68,
+              "excerpt": "ampliar o prazo",
+              "field": "summary",
+              "field_sha256": "d324ffe2e06d822e6b1783cf2a78c2698d4e4824cfdd5247178f119f78508c7c",
+              "start": 53,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
             "location": "card_03",
-            "text": "ensino dos Estados, do Distrito Federal e dos Municípios, em virtude da calamidade pública decorrente da covid-19.",
-            "type": "attributed_excerpt"
+            "text": "Qual é o mecanismo? | Ampliar um prazo pode alterar o calendário de uso e prestação de contas, mas não cria automaticamente recursos adicionais.",
+            "type": "reviewed_mechanism"
+          },
+          {
+            "evidence": {
+              "end": 220,
+              "excerpt": "acesso à internet",
+              "field": "summary",
+              "field_sha256": "d324ffe2e06d822e6b1783cf2a78c2698d4e4824cfdd5247178f119f78508c7c",
+              "start": 203,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_03",
+            "text": "Qual é o mecanismo? | Ampliar um prazo pode alterar o calendário de uso e prestação de contas, mas não cria automaticamente recursos adicionais.",
+            "type": "reviewed_mechanism"
+          },
+          {
+            "evidence": {
+              "end": 68,
+              "excerpt": "ampliar o prazo",
+              "field": "summary",
+              "field_sha256": "d324ffe2e06d822e6b1783cf2a78c2698d4e4824cfdd5247178f119f78508c7c",
+              "start": 53,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_04",
+            "text": "E na prática? | Se aprovado, estados e Distrito Federal poderão ter novos prazos para aplicar ou restituir os recursos abrangidos.",
+            "type": "reviewed_conditional"
+          },
+          {
+            "evidence": {
+              "end": 220,
+              "excerpt": "acesso à internet",
+              "field": "summary",
+              "field_sha256": "d324ffe2e06d822e6b1783cf2a78c2698d4e4824cfdd5247178f119f78508c7c",
+              "start": 203,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_04",
+            "text": "E na prática? | Se aprovado, estados e Distrito Federal poderão ter novos prazos para aplicar ou restituir os recursos abrangidos.",
+            "type": "reviewed_conditional"
+          },
+          {
+            "evidence": {
+              "end": 68,
+              "excerpt": "ampliar o prazo",
+              "field": "summary",
+              "field_sha256": "d324ffe2e06d822e6b1783cf2a78c2698d4e4824cfdd5247178f119f78508c7c",
+              "start": 53,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_05",
+            "text": "O que falta esclarecer? | Qual prazo final seria estabelecido? Quais valores permanecem disponíveis? Como será feita a prestação de contas?",
+            "type": "reviewed_questions"
+          },
+          {
+            "evidence": {
+              "end": 220,
+              "excerpt": "acesso à internet",
+              "field": "summary",
+              "field_sha256": "d324ffe2e06d822e6b1783cf2a78c2698d4e4824cfdd5247178f119f78508c7c",
+              "start": 203,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_05",
+            "text": "O que falta esclarecer? | Qual prazo final seria estabelecido? Quais valores permanecem disponíveis? Como será feita a prestação de contas?",
+            "type": "reviewed_questions"
           },
           {
             "evidence": {
@@ -583,8 +1448,8 @@
               "start": 0,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
             },
-            "limitation": "Registro de tramitação na data de referência.",
-            "location": "card_04",
+            "limitation": "Registro de tramitação.",
+            "location": "card_06",
             "text": "Apresentação de Proposição",
             "type": "procedural_record"
           },
@@ -597,24 +1462,10 @@
               "start": 0,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
             },
-            "limitation": "Data do andamento, não da vigência.",
-            "location": "card_04",
+            "limitation": "Não comprova vigência.",
+            "location": "card_06",
             "text": "2026-11-19",
             "type": "record_date"
-          },
-          {
-            "evidence": null,
-            "limitation": "Não atribui impacto, vigência ou financiamento.",
-            "location": "card_05",
-            "text": "A existência de um projeto não comprova aprovação, entrada em vigor, financiamento ou resultados.",
-            "type": "scope_limitation"
-          },
-          {
-            "evidence": null,
-            "limitation": "Questões para acompanhamento, não afirmações comprovadas.",
-            "location": "card_06",
-            "text": "Qual é o texto final?\n\nQuais órgãos respondem pela execução?\n\nHá custo previsto e indicadores de resultado?",
-            "type": "open_questions"
           },
           {
             "evidence": {
@@ -625,42 +1476,42 @@
               "start": 0,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
             },
-            "limitation": "Referência documental.",
+            "limitation": "Fonte para leitura integral.",
             "location": "card_07",
             "text": "PL 5756/2026",
             "type": "source_reference"
           },
           {
             "evidence": {
-              "end": 12,
-              "excerpt": "PL 5756/2026",
-              "field": "title",
-              "field_sha256": "cc9729ba9091fe2012cf6d3be5de5ec9cbee5089429aec0cde6ce385b4fa1180",
-              "start": 0,
+              "end": 68,
+              "excerpt": "ampliar o prazo",
+              "field": "summary",
+              "field_sha256": "d324ffe2e06d822e6b1783cf2a78c2698d4e4824cfdd5247178f119f78508c7c",
+              "start": 53,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
             },
-            "limitation": "Identifica a proposição.",
+            "limitation": "Paráfrase revisada.",
             "location": "caption",
-            "text": "PL 5756/2026",
-            "type": "document_identity"
+            "text": "O projeto altera a lei sobre recursos para acesso à internet de escolas, estudantes e professores da rede pública.",
+            "type": "reviewed_proposal"
           },
           {
             "evidence": {
-              "end": 10,
-              "excerpt": "2026-11-19",
-              "field": "stage_date",
-              "field_sha256": "010cc5180132fb0adc25f5f348f229084383e04439f2c21bb9b55505c19a04f8",
-              "start": 0,
+              "end": 220,
+              "excerpt": "acesso à internet",
+              "field": "summary",
+              "field_sha256": "d324ffe2e06d822e6b1783cf2a78c2698d4e4824cfdd5247178f119f78508c7c",
+              "start": 203,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
             },
-            "limitation": "Data registrada na fonte.",
+            "limitation": "Impacto potencial.",
             "location": "caption",
-            "text": "2026-11-19",
-            "type": "record_date"
+            "text": "Se aprovado, estados e Distrito Federal poderão ter novos prazos para aplicar ou restituir os recursos abrangidos.",
+            "type": "reviewed_conditional"
           }
         ],
-        "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
-        "policy": "documentary-claims-v2-hooks",
+        "limitation": "Revisão editorial de narrativa controlada; não verifica impacto real ou texto integral.",
+        "policy": "didactic-v4",
         "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695",
         "unverified_dimensions": [
           "legal_effect",
@@ -671,9 +1522,9 @@
         ],
         "version": "a39168135eade1"
       },
-      "claim_matrix_sha256": "2b192b6272b1f07f9d4313139dccd49683ab61d3574a077b655467c236d44707",
-      "closing_media_sha256": "0c227b3a07bda15be749d86e3345f7509653f7ce7eef9deb3535093611c005ac",
-      "content_sha256": "fa0ecb7d165f79251a7451677d0ef0f558030deb9209673497c3b14dd6764774",
+      "claim_matrix_sha256": "0f9d40f4914b543030fd60b75e90f7c80134f5d909ffc505d6bbdedff2a4e6e1",
+      "closing_media_sha256": "6886fe1c5e1762503037aaad4a0e63f55bd5e9dbfbcc6579b92e3a8324c1030c",
+      "content_sha256": "f47b2d2a3a680d283cc27c461bb647e7598a9035ebff431171f34639b713ddd3",
       "decision": "approved_documentary_only",
       "id": "camara:2655695",
       "issues": [],
