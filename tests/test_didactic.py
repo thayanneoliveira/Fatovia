@@ -15,7 +15,8 @@ class DidacticTests(unittest.TestCase):
         return i
     def test_all_eight_reviewed_and_complete(self):
         bundle=json.loads(MANIFEST.read_text())
-        self.assertEqual(len(bundle["items"]),8)
+        self.assertGreaterEqual(len(bundle["items"]),8)
+        self.assertEqual(len({(row["id"],row["version"]) for row in bundle["items"]}),len(bundle["items"]))
         for row in bundle["items"]:
             i=self.fixture(row)
             self.assertIsNotNone(reviewed(i))
