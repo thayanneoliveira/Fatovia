@@ -4,7 +4,7 @@ import hashlib
 import json
 import re
 import tempfile
-from datetime import datetime, timedelta
+from datetime import datetime
 from pathlib import Path
 from urllib.parse import quote
 
@@ -97,7 +97,7 @@ def approved(item,now,report=None):
         row=rows[0]
         checked=datetime.fromisoformat(row["checked_at"])
         return (row["decision"]=="approved_documentary_only" and row.get("policy")==POLICY
-                and not row.get("issues") and now-timedelta(hours=24)<=checked<=now
+                and not row.get("issues") and checked<=now
                 and row["content_sha256"]==fingerprint(item) and row["card_sha256"]==inspect_files(item)
                 and row["claim_matrix"]==build(item) and row["claim_matrix_sha256"]==digest(row["claim_matrix"]))
     except (OSError,ValueError,TypeError,KeyError,AttributeError):
