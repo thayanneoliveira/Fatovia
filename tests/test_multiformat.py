@@ -70,6 +70,19 @@ class MixedTests(unittest.TestCase):
         self.assertFalse(mf.quota({"published":[{"published_at":NOW.replace(hour=11,minute=35).isoformat()}]},NOW,"reel"))
     def test_blackout(self):
         self.assertFalse(mf.quota({"published":[],"blackout_dates":["2026-11-18"]},NOW,"reel"))
+    def test_owner_scope_is_required_and_exclusions_win(self):
+        policy={"owner_per_content_authorization":{
+            "decision":"authorized_by_owner_pending_operational_validation",
+            "max_spend_brl":0,"daily_caps":mf.CAPS,
+            "carousel_ids":["camara:2653947"],"reel_ids":["reel:inflacao-precos-20261118"],
+            "excluded_ids":["camara:2654163"]}}
+        self.assertTrue(mf.owner_authorized({"id":"camara:2653947"},policy))
+        self.assertTrue(mf.owner_authorized({"id":"reel:inflacao-precos-20261118","format":"reel"},policy))
+        self.assertFalse(mf.owner_authorized({"id":"camara:2654163"},policy))
+        self.assertFalse(mf.owner_authorized({"id":"camara:other"},policy))
+        self.assertFalse(mf.owner_authorized({"id":"camara:2653947"},{**policy,"owner_per_content_authorization":{}}))
+        with patch.object(mf,"transition_authorized",side_effect=AssertionError("must fail before transition")):
+            self.assertFalse(mf.allowed({},{"id":"camara:other"},NOW,policy))
     def test_missing_logo_fails(self):
         p={"status":"prepared_guarded","daily_caps":mf.CAPS,"max_spend_brl":0,"start_date":"2026-11-18","approved_logo":{"path":"assets/fatovia-approved.png","sha256":None},"approved_items":[]}
         self.assertFalse(mf.allowed({"published":[]},REEL,NOW,p))
