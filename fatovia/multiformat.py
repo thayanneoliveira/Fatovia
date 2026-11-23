@@ -94,11 +94,27 @@ def reel_qualified(item):
 def reel_fingerprint(item):
     keys=("id","version","caption","video_path","voice","visual_revision","source_urls","script_sha256")
     return hashlib.sha256(json.dumps({k:item[k] for k in keys},sort_keys=True,ensure_ascii=False,separators=(",",":")).encode()).hexdigest()
+def owner_authorized(item, policy):
+    """Owner's per-content scope is necessary, never sufficient, for publication."""
+    authorization = policy.get("owner_per_content_authorization") or {}
+    if authorization.get("decision") != "authorized_by_owner_pending_operational_validation":
+        return False
+    if authorization.get("max_spend_brl") != 0 or authorization.get("daily_caps") != CAPS:
+        return False
+    item_id = item.get("id")
+    if not isinstance(item_id, str) or item_id in authorization.get("excluded_ids", []):
+        return False
+    fmt = kind(item)
+    if fmt not in CAPS:
+        return False
+    ids = authorization.get("reel_ids" if fmt == "reel" else "carousel_ids", [])
+    return isinstance(ids, list) and ids.count(item_id) == 1
+
 def allowed(state,item,now,policy=None):
     try:
         p=load_policy() if policy is None else policy
         fmt=kind(item)
-        if (not transition_authorized(state,now,p) or p["status"] not in ("prepared_guarded", "approved") or p["daily_caps"]!=CAPS or p["max_spend_brl"]!=0
+        if (not owner_authorized(item,p) or not transition_authorized(state,now,p) or p["status"] not in ("prepared_guarded", "approved") or p["daily_caps"]!=CAPS or p["max_spend_brl"]!=0
                 or now.astimezone(TZ).date()<date.fromisoformat(p["start_date"]) or not quota(state,now,fmt)):
             return False
         if any((x["id"],x["version"])==(item["id"],item["version"]) for x in state.get("published",[])):return False
