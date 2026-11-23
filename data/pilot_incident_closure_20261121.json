@@ -39,6 +39,17 @@
       "verified_date": "2026-11-22",
       "scope": "read-only connected Instagram dataset; not direct Meta publishing-token identity verification",
       "limitations": "Do not treat connector account ID as production Meta_IG_USER_ID without direct confirmation; retain independent production transition gate."
+    },
+    "production_identity_check": {
+      "status": "verified",
+      "source": "GitHub Actions FatoVia | Validar conexao Instagram run 45035159465",
+      "run_url": "https://github.com/thayanneoliveira/Fatovia/actions/runs/45035159465",
+      "username": "fato.via",
+      "meta_ig_user_id": "17841434700481151",
+      "expected_id_matches": true,
+      "content_publishing_limit_checked": true,
+      "verified_date": "2026-11-22",
+      "scope": "Production credential identity and quota; individual pilot media IDs still need direct verification"
     }
   },
   "quality": {
