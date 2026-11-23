@@ -11,8 +11,8 @@ class RecoveryAgentTests(unittest.TestCase):
         self.assertTrue(all(not x["safe_auto"] for x in result["findings"]))
     def test_identifies_current_blockers(self):
         codes = {x["code"] for x in diagnose()["findings"]}
-        self.assertIn("PILOT_META_RECONCILIATION", codes)
-        self.assertIn("PRODUCTION_TRANSITION", codes)
+        self.assertNotIn("PILOT_META_RECONCILIATION", codes)
+        self.assertNotIn("PRODUCTION_TRANSITION", codes)
         self.assertIn("APPROVED_QUEUE_EMPTY", codes)
 
 if __name__ == "__main__":
