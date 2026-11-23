@@ -18,7 +18,28 @@
   "reconciliation": {
     "status": "pending_live_meta_verification",
     "media_ids_verified": [],
-    "account_id_verified": false
+    "account_id_verified": false,
+    "connector_verification": {
+      "status": "verified_against_connected_instagram_read",
+      "source": "Windsor.ai instagram connector, connected @fato.via media_info",
+      "account_username": "fato.via",
+      "connector_account_id": "28180280625000221",
+      "verified_media_ids": [
+        "18213163885365403",
+        "17901241947394968",
+        "18077986049477583",
+        "18149060461583391",
+        "17908023129353266",
+        "18151573990488064",
+        "18111958382223422",
+        "18185273779443646"
+      ],
+      "matched_media_count": 8,
+      "missing_media_ids": [],
+      "verified_date": "2026-11-22",
+      "scope": "read-only connected Instagram dataset; not direct Meta publishing-token identity verification",
+      "limitations": "Do not treat connector account ID as production Meta_IG_USER_ID without direct confirmation; retain independent production transition gate."
+    }
   },
   "quality": {
     "official_sources": "pending",
