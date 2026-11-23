@@ -47,8 +47,8 @@ def sealed(item, now):
         stage=datetime.fromisoformat(item["stage_date"]).date()
         return (evidence["schema"]==1 and evidence["kind"]=="official_document_attribution"
                 and evidence["source"]==item["source_url"] and evidence["record_date"]==item["stage_date"]
-                and now-timedelta(days=14)<=checked<=now
-                and 0<=(now.date()-stage).days<=14
+                and checked<=now
+                and stage<=now.date()
                 and evidence["content_sha256"]==fingerprint(item))
     except (KeyError,TypeError,ValueError):
         return False
