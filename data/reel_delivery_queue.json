@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "status": "awaiting_approved_media_bytes",
+  "status": "ready_for_guarded_publish_window",
   "account": "@fato.via",
   "delivery_route": "existing GitHub Actions publisher -> Meta Graph API",
   "credential_policy": "reuse existing credential validation; full rehomologation only after real authentication failure",
@@ -10,9 +10,9 @@
       "title": "Se a inflação caiu, por que tudo continua caro?",
       "editorial_status": "owner_approved_final",
       "approved_video_sha256": "f367280115d72645b712c55883c1e71838e6e6973dd7e4e1887dee46182b9170",
-      "mp4_location": null,
+      "mp4_location": "https://thayanneoliveira.github.io/Fatovia/media/reels/FatoVia_Maria_Reel_Revisado.mp4",
       "cover_location": null,
-      "technical_status": "candidate_found_hash_mismatch_requires_version_confirmation",
+      "technical_status": "hosted_stream_identical_remux_verified_pending_publish_window",
       "publish_status": "not_submitted",
       "located_upload": {
         "filename": "FatoVia_Maria_Reel_Revisado.mp4",
@@ -23,7 +23,8 @@
         "height": 910,
         "video_codec": "h264",
         "audio_codec": "aac",
-        "source": "user-uploaded conversation attachment"
+        "source": "user-uploaded conversation attachment",
+        "note": "Historical alternative upload; not authorized for publication. The separately verified stream-identical remux is the queued asset."
       },
       "exceptional_owner_authorization": {
         "scope": "one_time_editorial_approval_only",
@@ -39,7 +40,11 @@
           "transaction_reconciliation"
         ],
         "no_substitution": true
-      }
+      },
+      "hosted_sha256": "f6148c6aef61b768dd28f2f4d35551cf6752e62cc9290a9b15d8d5e786916220",
+      "hosted_video_stream_sha256": "630f22001b64332a0a675491465ad8fc62d577e1759e311731e7af6e206e702b",
+      "hosted_audio_stream_sha256": "05f5fd69e2937a07de5706b5f408da09f5b64379f530a5fcf6f78ab28b054359",
+      "hosted_verification_run_id": 44910150851
     }
   ],
   "next_reel": {
