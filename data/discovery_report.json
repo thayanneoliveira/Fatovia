@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T23:38:20.966264-03:00",
+  "generated_at": "2026-11-23T11:29:14.407905-03:00",
   "note": "Topic co-occurrence is not corroboration of an individual claim or proof of virality.",
   "publication_authorized": false,
   "signals": [
@@ -13,22 +13,11 @@
         "educacao"
       ],
       "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/escolas-ja-podem-se-inscrever-para-olitef-2027"
-    },
-    {
-      "id": "34d51e8e115642075482",
-      "published_at": "2026-11-22T17:01:00-03:00",
-      "source": "agencia_brasil",
-      "status": "discovery_only",
-      "title": "Simpósio de matemática premia professores e expõe soluções de ensino",
-      "topics": [
-        "educacao"
-      ],
-      "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-11/simposio-de-matematica-premia-professores-e-expoe-solucoes-de-ensino"
     }
   ],
   "sources": {
     "agencia_brasil": {
-      "eligible_signals": 2,
+      "eligible_signals": 1,
       "status": "ok"
     },
     "ibge": {
@@ -42,7 +31,7 @@
   },
   "topic_groups": [
     {
-      "document_count": 2,
+      "document_count": 1,
       "explore_links": 0,
       "source_count": 1,
       "sources": [
