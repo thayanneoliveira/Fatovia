@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T11:37:31.242497-03:00",
+  "generated_at": "2026-11-24T11:45:21.876190-03:00",
   "limitations": "Independent rule-based check of the official source, approved template and bytes; not general factual or semantic review.",
   "policy": "documentary-template-v4-didactic",
   "reviews": [
@@ -13,7 +13,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "e26f2733173e8a3d39d9e4adeed438c195bc5163d30fb101ba6459ffbeed0939"
       ],
-      "checked_at": "2026-11-24T11:37:31.242497-03:00",
+      "checked_at": "2026-11-24T11:45:21.876190-03:00",
       "claim_matrix": {
         "document_id": "camara:2653947",
         "entries": [
@@ -190,7 +190,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "a5ab9d4c745a18620bf7def5c0fab4c7ff42dab0f77afbfeebe87ab6cfc341ea"
       ],
-      "checked_at": "2026-11-24T11:37:31.242497-03:00",
+      "checked_at": "2026-11-24T11:45:21.876190-03:00",
       "claim_matrix": {
         "document_id": "camara:2653944",
         "entries": [
@@ -367,7 +367,7 @@
         "e8e05ac56965ca5ad2470b61d4227ecf997c1bab3f353fecd1ab46f9db2bd3b2",
         "64ef934310390157694ec51f96939cdffe52f331ffa44359aae5b90eb60aede2"
       ],
-      "checked_at": "2026-11-24T11:37:31.242497-03:00",
+      "checked_at": "2026-11-24T11:45:21.876190-03:00",
       "claim_matrix": {
         "document_id": "camara:2654174",
         "entries": [
@@ -605,16 +605,6 @@
       "version": "abe5fda5fc0602"
     },
     {
-      "checked_at": "2026-11-24T11:37:31.242497-03:00",
-      "decision": "rejected",
-      "id": "camara:2654163",
-      "issues": [
-        "source_unavailable_or_changed"
-      ],
-      "policy": "documentary-template-v4-didactic",
-      "version": "6438c89bd557e4"
-    },
-    {
       "card_sha256": [
         "cc87b6484eac79ffa442c9411f2636f4f903ca72e60aca309d4499f511166eea",
         "701412cbb4eb1d6bc92ae12f61aa45b8eef61edbe18f30d1a39ac1caa785a871",
@@ -624,7 +614,7 @@
         "7cf7ec6b7821111dcea46f960b9f45a30420519980127431b0d5ad1e97065939",
         "81d319ed637413eb3535a878459863dbae7579b83fd55d97c13cb692ae0207c9"
       ],
-      "checked_at": "2026-11-24T11:37:31.242497-03:00",
+      "checked_at": "2026-11-24T11:45:21.876190-03:00",
       "claim_matrix": {
         "document_id": "camara:2654371",
         "entries": [
@@ -871,7 +861,7 @@
         "df44923216636e5b22145baf3b10124556c89a344896229774453364c91ba5fa",
         "2727163333c4ec24b47a0a368147093f734ab7c300db1e5e62543cb74bd7ba36"
       ],
-      "checked_at": "2026-11-24T11:37:31.242497-03:00",
+      "checked_at": "2026-11-24T11:45:21.876190-03:00",
       "claim_matrix": {
         "document_id": "camara:2655462",
         "entries": [
@@ -1048,7 +1038,7 @@
         "df44923216636e5b22145baf3b10124556c89a344896229774453364c91ba5fa",
         "ddb89ab11a5d5d3311cf41c8654852b6cbdc0ccf6a159b142931f721b68e0f2a"
       ],
-      "checked_at": "2026-11-24T11:37:31.242497-03:00",
+      "checked_at": "2026-11-24T11:45:21.876190-03:00",
       "claim_matrix": {
         "document_id": "camara:2655411",
         "entries": [
@@ -1295,7 +1285,7 @@
         "9ef2327508291710727ee91cd50a871fa30fd639b0a75c934f827b80cf911aa1",
         "6886fe1c5e1762503037aaad4a0e63f55bd5e9dbfbcc6579b92e3a8324c1030c"
       ],
-      "checked_at": "2026-11-24T11:37:31.242497-03:00",
+      "checked_at": "2026-11-24T11:45:21.876190-03:00",
       "claim_matrix": {
         "document_id": "camara:2655695",
         "entries": [
@@ -1531,6 +1521,169 @@
       "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
       "policy": "documentary-template-v4-didactic",
       "version": "a39168135eade1"
+    },
+    {
+      "card_sha256": [
+        "6c5cb2dd8fe0e65d99deddd167f6f94bad934dcda2c58c1b73133cd3c0a40c41",
+        "1b856086bb551168d09f1b1bce8e0ecb8a4c5de281877de1a20a380934430261",
+        "ebcb14d5acb55f633f0e69f5cf6234b9716a978f8ef2e0e36e8bb507ded6c7b5",
+        "c9ca9c26844e3d8afa2adbb756b97a74ddb9cf08122e5f3ba005f4bcce9c7994",
+        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
+        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
+        "433e7fd979e49828ec023fa0a0b845d80df4203ae6116ff5647fc997b068c0e3"
+      ],
+      "checked_at": "2026-11-24T11:45:21.876190-03:00",
+      "claim_matrix": {
+        "document_id": "camara:2658959",
+        "entries": [
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5932/2026",
+              "field": "title",
+              "field_sha256": "448236ae63aa5d758a818cd916dc672a2904e80b3900bf94f60e9076fa31f8e8",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2658959"
+            },
+            "limitation": "Identifica a proposição, não sua aprovação.",
+            "location": "card_01",
+            "text": "PL 5932/2026",
+            "type": "document_identity"
+          },
+          {
+            "evidence": {
+              "end": 328,
+              "excerpt": "Altera a Lei nº 12.114, de 9 de dezembro de 2009, para incluir a prevenção, o monitoramento, o controle e o combate a incêndios florestais e queimadas, bem como a pesquisa, o desenvolvimento e a inovação tecnológica relacionados ao tema, entre as atividades passíveis de aplicação dos recursos do Fundo Nacional sobre Mudança do",
+              "field": "summary",
+              "field_sha256": "1bf0a498e0990f0ccef5043f63f60524478faeda7b29b9e9b84e318c10b064e2",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2658959"
+            },
+            "limitation": "Ementa oficial, não texto integral nem prova de impacto.",
+            "location": "card_02",
+            "text": "Altera a Lei nº 12.114, de 9 de dezembro de 2009, para incluir a prevenção, o monitoramento, o controle e o combate a incêndios florestais e queimadas, bem como a pesquisa, o desenvolvimento e a inovação tecnológica relacionados ao tema, entre as atividades passíveis de aplicação dos recursos do Fundo Nacional sobre Mudança do",
+            "type": "attributed_excerpt"
+          },
+          {
+            "evidence": {
+              "end": 335,
+              "excerpt": "Clima.",
+              "field": "summary",
+              "field_sha256": "1bf0a498e0990f0ccef5043f63f60524478faeda7b29b9e9b84e318c10b064e2",
+              "start": 329,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2658959"
+            },
+            "limitation": "Continuação da ementa oficial.",
+            "location": "card_03",
+            "text": "Clima.",
+            "type": "attributed_excerpt"
+          },
+          {
+            "evidence": {
+              "end": 26,
+              "excerpt": "Apresentação de Proposição",
+              "field": "stage",
+              "field_sha256": "7ad4f3a2409e2196a7e3ccc89d81061c388c76f096e8a3e5181944076982a9b7",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2658959"
+            },
+            "limitation": "Registro de tramitação na data de referência.",
+            "location": "card_04",
+            "text": "Apresentação de Proposição",
+            "type": "procedural_record"
+          },
+          {
+            "evidence": {
+              "end": 10,
+              "excerpt": "2026-11-23",
+              "field": "stage_date",
+              "field_sha256": "860cc931f2746b53b7ef28ab1cbfbfb3340695f47990c74420cbd95368a5e60c",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2658959"
+            },
+            "limitation": "Data do andamento, não da vigência.",
+            "location": "card_04",
+            "text": "2026-11-23",
+            "type": "record_date"
+          },
+          {
+            "evidence": null,
+            "limitation": "Não atribui impacto, vigência ou financiamento.",
+            "location": "card_05",
+            "text": "A existência de um projeto não comprova aprovação, entrada em vigor, financiamento ou resultados.",
+            "type": "scope_limitation"
+          },
+          {
+            "evidence": null,
+            "limitation": "Questões para acompanhamento, não afirmações comprovadas.",
+            "location": "card_06",
+            "text": "Qual é o texto final?\n\nQuais órgãos respondem pela execução?\n\nHá custo previsto e indicadores de resultado?",
+            "type": "open_questions"
+          },
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5932/2026",
+              "field": "title",
+              "field_sha256": "448236ae63aa5d758a818cd916dc672a2904e80b3900bf94f60e9076fa31f8e8",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2658959"
+            },
+            "limitation": "Referência documental.",
+            "location": "card_07",
+            "text": "PL 5932/2026",
+            "type": "source_reference"
+          },
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5932/2026",
+              "field": "title",
+              "field_sha256": "448236ae63aa5d758a818cd916dc672a2904e80b3900bf94f60e9076fa31f8e8",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2658959"
+            },
+            "limitation": "Identifica a proposição.",
+            "location": "caption",
+            "text": "PL 5932/2026",
+            "type": "document_identity"
+          },
+          {
+            "evidence": {
+              "end": 10,
+              "excerpt": "2026-11-23",
+              "field": "stage_date",
+              "field_sha256": "860cc931f2746b53b7ef28ab1cbfbfb3340695f47990c74420cbd95368a5e60c",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2658959"
+            },
+            "limitation": "Data registrada na fonte.",
+            "location": "caption",
+            "text": "2026-11-23",
+            "type": "record_date"
+          }
+        ],
+        "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
+        "policy": "documentary-claims-v2-hooks",
+        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2658959",
+        "unverified_dimensions": [
+          "legal_effect",
+          "implementation",
+          "budget",
+          "causality",
+          "social_impact"
+        ],
+        "version": "312e525a513387"
+      },
+      "claim_matrix_sha256": "1a184382e53d24433eb2abc52cd6a959ea5c86785f273eba567101b5bfb6e34f",
+      "closing_media_sha256": "433e7fd979e49828ec023fa0a0b845d80df4203ae6116ff5647fc997b068c0e3",
+      "content_sha256": "20f9d8709e9769434c690a165129b4e6e5eefab8b325b3ad0163b5728019a5ed",
+      "decision": "approved_documentary_only",
+      "id": "camara:2658959",
+      "issues": [],
+      "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
+      "policy": "documentary-template-v4-didactic",
+      "version": "312e525a513387"
     }
   ]
 }
