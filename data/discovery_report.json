@@ -1,56 +1,34 @@
 {
-  "generated_at": "2026-11-23T23:52:53.105107-03:00",
+  "generated_at": "2026-11-24T11:46:25.153442-03:00",
   "note": "Topic co-occurrence is not corroboration of an individual claim or proof of virality.",
   "publication_authorized": false,
   "signals": [
     {
-      "id": "4e568872e13f8d831f73",
-      "published_at": "2026-11-23T21:29:00-03:00",
+      "id": "2c2d6013312b4b91587d",
+      "published_at": "2026-11-24T10:54:00-03:00",
       "source": "agencia_brasil",
       "status": "discovery_only",
-      "title": "BRB diz que banco segue funcionando após suspensão da CVM",
-      "topics": [
-        "saude"
-      ],
-      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/brb-diz-que-banco-segue-funcionando-apos-suspensao-da-cvm"
-    },
-    {
-      "id": "220f7f899ed90649853f",
-      "published_at": "2026-11-23T20:40:00-03:00",
-      "source": "agencia_brasil",
-      "status": "discovery_only",
-      "title": "Jornada 5x2: veja como ficam regras de salário, folgas e horas extras",
+      "title": "INSS começa a pagar décimo terceiro salário nesta terça-feira (24)",
       "topics": [
         "economia"
       ],
-      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/jornada-5x2-veja-como-ficam-regras-de-salario-folgas-e-horas-extras"
+      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/inss-comeca-pagar-decimo-terceiro-salario-nesta-terca-feira-24"
     },
     {
-      "id": "6e5d5b0b72f803837bdf",
-      "published_at": "2026-11-23T19:50:00-03:00",
+      "id": "f5a03ce27dbbdd3f83cd",
+      "published_at": "2026-11-24T10:14:00-03:00",
       "source": "agencia_brasil",
       "status": "discovery_only",
-      "title": "Saúde repassa R$ 200 milhões para maternidades filantrópicas",
+      "title": "Polícia de São Paulo investiga feminicídio na zona leste",
       "topics": [
-        "saude"
+        "seguranca"
       ],
-      "url": "https://agenciabrasil.ebc.com.br/saude/noticia/2026-11/saude-repassa-r-200-milhoes-para-maternidades-filantropicas"
-    },
-    {
-      "id": "71243e25e261d3419755",
-      "published_at": "2026-11-23T18:14:00-03:00",
-      "source": "agencia_brasil",
-      "status": "discovery_only",
-      "title": "CVM suspende registro do BRB e de mais quatro empresas",
-      "topics": [
-        "saude"
-      ],
-      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/cvm-suspende-registro-do-brb-e-de-outras-quatro-empresas"
+      "url": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-11/policia-de-sao-paulo-investiga-feminicidio-na-zona-leste"
     }
   ],
   "sources": {
     "agencia_brasil": {
-      "eligible_signals": 4,
+      "eligible_signals": 2,
       "status": "ok"
     },
     "ibge": {
@@ -64,14 +42,14 @@
   },
   "topic_groups": [
     {
-      "document_count": 3,
+      "document_count": 1,
       "explore_links": 0,
       "source_count": 1,
       "sources": [
         "agencia_brasil"
       ],
       "status": "research_required",
-      "topic": "saude"
+      "topic": "economia"
     },
     {
       "document_count": 1,
@@ -81,7 +59,7 @@
         "agencia_brasil"
       ],
       "status": "research_required",
-      "topic": "economia"
+      "topic": "seguranca"
     }
   ]
 }
