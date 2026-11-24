@@ -581,6 +581,60 @@
         "educacao"
       ],
       "version": "a39168135eade1"
+    },
+    {
+      "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
+      "caption": "O que está previsto nesta proposta?\n\nPL 5932/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-23. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2658959\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2658959\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2658959/312e525a513387\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "cards": [
+        "docs/media/camara-2658959/312e525a513387/01.jpg",
+        "docs/media/camara-2658959/312e525a513387/02.jpg",
+        "docs/media/camara-2658959/312e525a513387/03.jpg",
+        "docs/media/camara-2658959/312e525a513387/04.jpg",
+        "docs/media/camara-2658959/312e525a513387/05.jpg",
+        "docs/media/camara-2658959/312e525a513387/06.jpg",
+        "docs/media/camara-2658959/312e525a513387/07.jpg"
+      ],
+      "discovery_source_count": 0,
+      "editorial_score": 89,
+      "evidence": {
+        "checked_at": "2026-11-24T11:44:43.750129-03:00",
+        "claims": [
+          {
+            "basis": "identificacao_da_proposicao",
+            "field": "title"
+          },
+          {
+            "basis": "ementa_oficial_atribuida",
+            "field": "summary"
+          },
+          {
+            "basis": "registro_de_tramitacao",
+            "field": "stage"
+          }
+        ],
+        "content_sha256": "20f9d8709e9769434c690a165129b4e6e5eefab8b325b3ad0163b5728019a5ed",
+        "kind": "official_document_attribution",
+        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
+        "record_date": "2026-11-23",
+        "schema": 1,
+        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2658959"
+      },
+      "explore_signal_count": 0,
+      "id": "camara:2658959",
+      "public_url": "https://www.camara.leg.br/propostas-legislativas/2658959",
+      "source_name": "Câmara dos Deputados",
+      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2658959",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-23",
+      "status": "ready",
+      "summary": "Altera a Lei nº 12.114, de 9 de dezembro de 2009, para incluir a prevenção, o monitoramento, o controle e o combate a incêndios florestais e queimadas, bem como a pesquisa, o desenvolvimento e a inovação tecnológica relacionados ao tema, entre as atividades passíveis de aplicação dos recursos do Fundo Nacional sobre Mudança do Clima.",
+      "summary_hash": "2118170e136bb6",
+      "template_revision": "documentary-hook-v3",
+      "title": "PL 5932/2026",
+      "topics": [
+        "ambiente"
+      ],
+      "version": "312e525a513387"
     }
   ],
   "published": [

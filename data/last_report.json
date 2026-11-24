@@ -1,5 +1,5 @@
 {
-  "already_published": 12,
+  "already_published": 13,
   "errors": [],
   "found": 25,
   "pending": 8,
@@ -23,7 +23,14 @@
     "topic_matches": 26,
     "verified": 25
   },
-  "selected": [],
-  "staged": 0,
-  "timestamp": "2026-11-24T11:37:05.391174-03:00"
+  "selected": [
+    {
+      "discover_sources": 0,
+      "explore": 0,
+      "id": "camara:2658959",
+      "score": 89
+    }
+  ],
+  "staged": 1,
+  "timestamp": "2026-11-24T11:44:43.750129-03:00"
 }
