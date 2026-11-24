@@ -367,60 +367,6 @@
     },
     {
       "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-      "caption": "Lucro com divulgação de crimes: o que propõe o projeto?\n\nO texto propõe proibir e criminalizar vantagem econômica obtida pela exploração comercial ou monetização do próprio delito.\n\nSe aprovada, a norma poderá estabelecer consequências para ganhos enquadrados nas hipóteses definidas pelo texto final.\n\nPL 5861/2026 | Registro de 2026-11-16. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2654163\nID editorial: camara:2654163/6438c89bd557e4/didactic-v4\n#FatoVia #PoliticasPublicas",
-      "cards": [
-        "docs/media/camara-2654163/6438c89bd557e4/didactic-v4/01.jpg",
-        "docs/media/camara-2654163/6438c89bd557e4/didactic-v4/02.jpg",
-        "docs/media/camara-2654163/6438c89bd557e4/didactic-v4/03.jpg",
-        "docs/media/camara-2654163/6438c89bd557e4/didactic-v4/04.jpg",
-        "docs/media/camara-2654163/6438c89bd557e4/didactic-v4/05.jpg",
-        "docs/media/camara-2654163/6438c89bd557e4/didactic-v4/06.jpg",
-        "docs/media/camara-2654163/6438c89bd557e4/didactic-v4/07.jpg"
-      ],
-      "discovery_source_count": 0,
-      "editorial_score": 88,
-      "evidence": {
-        "checked_at": "2026-11-22T22:36:10.406880-03:00",
-        "claims": [
-          {
-            "basis": "identificacao_da_proposicao",
-            "field": "title"
-          },
-          {
-            "basis": "ementa_oficial_atribuida",
-            "field": "summary"
-          },
-          {
-            "basis": "registro_de_tramitacao",
-            "field": "stage"
-          }
-        ],
-        "content_sha256": "e57397b53a24e382f153c4d0ed0242a6c39176767f828457be82091c9b8011c6",
-        "kind": "official_document_attribution",
-        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
-        "record_date": "2026-11-16",
-        "schema": 1,
-        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654163"
-      },
-      "explore_signal_count": 0,
-      "id": "camara:2654163",
-      "public_url": "https://www.camara.leg.br/propostas-legislativas/2654163",
-      "source_name": "Câmara dos Deputados",
-      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654163",
-      "stage": "Apresentação de Proposição",
-      "stage_date": "2026-11-16",
-      "status": "ready",
-      "summary": "Institui a Lei Suzane Von Richthofen, que proíbe e criminaliza a obtenção de vantagem econômica, direta ou indireta, por pessoa condenada pela prática de infração penal, mediante exploração comercial, promoção ou monetização do próprio delito, estabelece mecanismos de perda de valores, reparação das vítimas e responsabilização de terceiros que atuem para fraudar a proibição, e dá outras providências.",
-      "summary_hash": "cf98c653346da1",
-      "template_revision": "didactic-v4",
-      "title": "PL 5861/2026",
-      "topics": [
-        "seguranca"
-      ],
-      "version": "6438c89bd557e4"
-    },
-    {
-      "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
       "caption": "Fundeb: cruzar dados pode revelar inconsistências?\n\nA proposta prevê cruzamento periódico de dados do Censo Escolar com folhas de pagamento e pagamentos com recursos do Fundeb.\n\nSe implementado, o cruzamento poderá apoiar controles sobre informações escolares e pagamentos, conforme regras aprovadas.\n\nPL 5874/2026 | Registro de 2026-11-17. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2654371\nID editorial: camara:2654371/146301a4f8f3d0/didactic-v4\n#FatoVia #PoliticasPublicas",
       "cards": [
         "docs/media/camara-2654371/146301a4f8f3d0/didactic-v4/01.jpg",
