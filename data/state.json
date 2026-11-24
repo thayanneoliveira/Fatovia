@@ -802,7 +802,13 @@
       "version": "b98ae1ec690f70"
     }
   ],
-  "publishing": null,
+  "publishing": {
+    "format": "reel",
+    "id": "reel:inflacao-precos-20261118",
+    "started_at": "2026-11-24T11:37:59.021126-03:00",
+    "status": "checkpointed",
+    "version": "2bd9004ce9f4cc"
+  },
   "reel_pending": [
     {
       "caption": "Por que seu dinheiro parece valer cada vez menos? Maria mostra a diferença entre inflação desacelerando e preços caindo. Os valores da história são ilustrativos. Fonte para entender o IPCA: IBGE, https://www.ibge.gov.br/explica/inflacao.php\n\nID editorial: reel:inflacao-precos-20261118/2bd9004ce9f4cc",
