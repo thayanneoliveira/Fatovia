@@ -1,23 +1,56 @@
 {
-  "generated_at": "2026-11-23T11:29:14.407905-03:00",
+  "generated_at": "2026-11-23T23:52:53.105107-03:00",
   "note": "Topic co-occurrence is not corroboration of an individual claim or proof of virality.",
   "publication_authorized": false,
   "signals": [
     {
-      "id": "a5cb09b47936c3868dee",
-      "published_at": "2026-11-22T19:00:00-03:00",
+      "id": "4e568872e13f8d831f73",
+      "published_at": "2026-11-23T21:29:00-03:00",
       "source": "agencia_brasil",
       "status": "discovery_only",
-      "title": "Escolas já podem se inscrever para a Olitef 2027",
+      "title": "BRB diz que banco segue funcionando após suspensão da CVM",
       "topics": [
-        "educacao"
+        "saude"
       ],
-      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/escolas-ja-podem-se-inscrever-para-olitef-2027"
+      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/brb-diz-que-banco-segue-funcionando-apos-suspensao-da-cvm"
+    },
+    {
+      "id": "220f7f899ed90649853f",
+      "published_at": "2026-11-23T20:40:00-03:00",
+      "source": "agencia_brasil",
+      "status": "discovery_only",
+      "title": "Jornada 5x2: veja como ficam regras de salário, folgas e horas extras",
+      "topics": [
+        "economia"
+      ],
+      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/jornada-5x2-veja-como-ficam-regras-de-salario-folgas-e-horas-extras"
+    },
+    {
+      "id": "6e5d5b0b72f803837bdf",
+      "published_at": "2026-11-23T19:50:00-03:00",
+      "source": "agencia_brasil",
+      "status": "discovery_only",
+      "title": "Saúde repassa R$ 200 milhões para maternidades filantrópicas",
+      "topics": [
+        "saude"
+      ],
+      "url": "https://agenciabrasil.ebc.com.br/saude/noticia/2026-11/saude-repassa-r-200-milhoes-para-maternidades-filantropicas"
+    },
+    {
+      "id": "71243e25e261d3419755",
+      "published_at": "2026-11-23T18:14:00-03:00",
+      "source": "agencia_brasil",
+      "status": "discovery_only",
+      "title": "CVM suspende registro do BRB e de mais quatro empresas",
+      "topics": [
+        "saude"
+      ],
+      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/cvm-suspende-registro-do-brb-e-de-outras-quatro-empresas"
     }
   ],
   "sources": {
     "agencia_brasil": {
-      "eligible_signals": 1,
+      "eligible_signals": 4,
       "status": "ok"
     },
     "ibge": {
@@ -31,6 +64,16 @@
   },
   "topic_groups": [
     {
+      "document_count": 3,
+      "explore_links": 0,
+      "source_count": 1,
+      "sources": [
+        "agencia_brasil"
+      ],
+      "status": "research_required",
+      "topic": "saude"
+    },
+    {
       "document_count": 1,
       "explore_links": 0,
       "source_count": 1,
@@ -38,7 +81,7 @@
         "agencia_brasil"
       ],
       "status": "research_required",
-      "topic": "educacao"
+      "topic": "economia"
     }
   ]
 }
