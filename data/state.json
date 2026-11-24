@@ -313,60 +313,6 @@
     },
     {
       "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-      "caption": "Emendas parlamentares: como rastrear o dinheiro?\n\nA proposta exige rastreabilidade integral, transparência ativa e proíbe movimentação em espécie em determinadas transferências.\n\nSe a proposta avançar, as transferências abrangidas poderão exigir registros digitais e novas práticas de controle financeiro.\n\nPLP 305/2026 | Registro de 2026-11-16. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2654174\nID editorial: camara:2654174/abe5fda5fc0602/didactic-v4\n#FatoVia #PoliticasPublicas",
-      "cards": [
-        "docs/media/camara-2654174/abe5fda5fc0602/didactic-v4/01.jpg",
-        "docs/media/camara-2654174/abe5fda5fc0602/didactic-v4/02.jpg",
-        "docs/media/camara-2654174/abe5fda5fc0602/didactic-v4/03.jpg",
-        "docs/media/camara-2654174/abe5fda5fc0602/didactic-v4/04.jpg",
-        "docs/media/camara-2654174/abe5fda5fc0602/didactic-v4/05.jpg",
-        "docs/media/camara-2654174/abe5fda5fc0602/didactic-v4/06.jpg",
-        "docs/media/camara-2654174/abe5fda5fc0602/didactic-v4/07.jpg"
-      ],
-      "discovery_source_count": 0,
-      "editorial_score": 89,
-      "evidence": {
-        "checked_at": "2026-11-22T22:36:10.406880-03:00",
-        "claims": [
-          {
-            "basis": "identificacao_da_proposicao",
-            "field": "title"
-          },
-          {
-            "basis": "ementa_oficial_atribuida",
-            "field": "summary"
-          },
-          {
-            "basis": "registro_de_tramitacao",
-            "field": "stage"
-          }
-        ],
-        "content_sha256": "0ab4a82931b954a5ac72c040b0cd768e378c18d73de72cee030c1aa0942ce20c",
-        "kind": "official_document_attribution",
-        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
-        "record_date": "2026-11-16",
-        "schema": 1,
-        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
-      },
-      "explore_signal_count": 0,
-      "id": "camara:2654174",
-      "public_url": "https://www.camara.leg.br/propostas-legislativas/2654174",
-      "source_name": "Câmara dos Deputados",
-      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174",
-      "stage": "Notificação de Despacho",
-      "stage_date": "2026-11-16",
-      "status": "ready",
-      "summary": "Estabelece a obrigatoriedade de rastreabilidade integral, transparência ativa e vedação à movimentação de recursos públicos em espécie no âmbito das transferências decorrentes de emendas parlamentares e instrumentos congêneres, dispõe sobre mecanismos de controle financeiro digital, altera a Lei n° 4.320, de 17 de março de 1964, e a Lei Complementar n° 101, de 4 de maio de 2000, e dá outras providências.",
-      "summary_hash": "65f5575716cc06",
-      "template_revision": "didactic-v4",
-      "title": "PLP 305/2026",
-      "topics": [
-        "tecnologia"
-      ],
-      "version": "abe5fda5fc0602"
-    },
-    {
-      "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
       "caption": "Fundeb: cruzar dados pode revelar inconsistências?\n\nA proposta prevê cruzamento periódico de dados do Censo Escolar com folhas de pagamento e pagamentos com recursos do Fundeb.\n\nSe implementado, o cruzamento poderá apoiar controles sobre informações escolares e pagamentos, conforme regras aprovadas.\n\nPL 5874/2026 | Registro de 2026-11-17. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2654371\nID editorial: camara:2654371/146301a4f8f3d0/didactic-v4\n#FatoVia #PoliticasPublicas",
       "cards": [
         "docs/media/camara-2654371/146301a4f8f3d0/didactic-v4/01.jpg",
@@ -813,15 +759,24 @@
       "title": "Se a inflação caiu, por que tudo continua caro?",
       "topics": [],
       "version": "2bd9004ce9f4cc"
+    },
+    {
+      "evidence_sha256": "0ab4a82931b954a5ac72c040b0cd768e378c18d73de72cee030c1aa0942ce20c",
+      "format": "carousel",
+      "id": "camara:2654174",
+      "media_id": "18116365597868594",
+      "permalink": "https://www.instagram.com/p/DgIz36_AaZ_/",
+      "published_at": "2026-11-24T17:25:49.664480-03:00",
+      "summary": "Estabelece a obrigatoriedade de rastreabilidade integral, transparência ativa e vedação à movimentação de recursos públicos em espécie no âmbito das transferências decorrentes de emendas parlamentares e instrumentos congêneres, dispõe sobre mecanismos de controle financeiro digital, altera a Lei n° 4.320, de 17 de março de 1964, e a Lei Complementar n° 101, de 4 de maio de 2000, e dá outras providências.",
+      "summary_hash": "65f5575716cc06",
+      "title": "PLP 305/2026",
+      "topics": [
+        "tecnologia"
+      ],
+      "version": "abe5fda5fc0602"
     }
   ],
-  "publishing": {
-    "format": "carousel",
-    "id": "camara:2654174",
-    "started_at": "2026-11-24T17:25:47.571435-03:00",
-    "status": "checkpointed",
-    "version": "abe5fda5fc0602"
-  },
+  "publishing": null,
   "reel_pending": [],
   "replacement_request": {
     "authorization": "owner_requested_replacement_after_manual_deletion_2026-11-15",
