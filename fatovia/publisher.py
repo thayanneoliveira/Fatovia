@@ -134,6 +134,30 @@ def choose_due(state, now, approval_check=None, pilot_window=False):
     return candidates[0] if candidates else None
 
 
+def isolate_rejected(state, now, report):
+    """Remove exact rejected revisions from active selection; retain audit evidence."""
+    if state.get("publishing") or report.get("policy")!="documentary-template-v4-didactic":
+        return []
+    removed=[]
+    for item in list(state.get("pending", [])):
+        rows=[r for r in report.get("reviews", []) if (r.get("id"),r.get("version"))==(item.get("id"),item.get("version"))]
+        if len(rows)!=1 or rows[0].get("decision")!="rejected" or not rows[0].get("issues"):
+            continue
+        row=rows[0]
+        try:
+            checked=datetime.fromisoformat(row["checked_at"])
+            if not 0 <= (now-checked).total_seconds() <= 86400:
+                continue
+        except (ValueError,TypeError,KeyError):
+            continue
+        if (state.get("replacement_request") or {}).get("id")==item.get("id"):
+            continue
+        state["pending"].remove(item)
+        state.setdefault("rejected_candidates",[]).append({"item":item,"audit":row,"isolated_at":now.isoformat()})
+        removed.append(item["id"])
+    return removed
+
+
 def prepare(state, now, cfg):
     if not cfg["enabled"]:
         return {"action": "disabled", "reason": "IG_PUBLISH_ENABLED não está true"}
@@ -144,9 +168,14 @@ def prepare(state, now, cfg):
     if mf.mode(now):
         if (state.get("replacement_request") or {}).get("status") in ("awaiting_deletion","deletion_verified"):
             return {"action":"idle","reason":"Substituicao anterior requer conciliacao"}
+        try:
+            isolated=isolate_rejected(state,now,load("data/editorial_audit.json"))
+        except (OSError,ValueError,TypeError,KeyError,AttributeError):
+            isolated=[]
+        if isolated:save(STATE_PATH,state)
         candidates=[p for p in state.get("pending",[])+state.get("reel_pending",[]) if mf.allowed(state,p,now) and (mf.reel_qualified(p) if mf.kind(p)=="reel" else qualified(p,now) and approved(p,now))]
         candidates.sort(key=lambda p:(-p.get("editorial_score",0),p["id"]))
-        if not candidates:return {"action":"idle","reason":"Nenhuma midia multiformato com marca, evidencia, revisao e cota validadas"}
+        if not candidates:return {"action":"idle","reason":"Nenhuma midia multiformato com marca, evidencia, revisao e cota validadas","isolated":isolated}
         item=candidates[0]
         state["publishing"]={"id":item["id"],"version":item["version"],"format":mf.kind(item),"started_at":now.isoformat(),"status":"checkpointed"}
         save(STATE_PATH,state)
