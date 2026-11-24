@@ -65,8 +65,14 @@ def valid_hash(value):
 def slot(now):
     local=now.astimezone(TZ)
     return SLOTS.get(local.hour) if local.minute<=45 else None
-def quota(state,now,fmt):
-    if slot(now)!=fmt or now.astimezone(TZ).date().isoformat() in state.get("blackout_dates",[]):return False
+def quota(state,now,fmt,item=None):
+    local=now.astimezone(TZ)
+    # Owner-authorized extraordinary window, exact Maria v2 only, expires today.
+    extraordinary=(fmt=="reel" and local.date()==date(2026,11,24)
+                   and (item or {}).get("id")=="reel:inflacao-precos-20261118"
+                   and (item or {}).get("version")=="2bd9004ce9f4cc"
+                   and (item or {}).get("video_sha256")=="f6148c6aef61b768dd28f2f4d35551cf6752e62cc9290a9b15d8d5e786916220")
+    if (slot(now)!=fmt and not extraordinary) or local.date().isoformat() in state.get("blackout_dates",[]):return False
     history=[]
     for p in state.get("published",[]):
         stamp=datetime.fromisoformat(p["published_at"].replace("Z","+00:00")).astimezone(TZ)
@@ -115,7 +121,7 @@ def allowed(state,item,now,policy=None):
         p=load_policy() if policy is None else policy
         fmt=kind(item)
         if (not owner_authorized(item,p) or not transition_authorized(state,now,p) or p["status"] not in ("prepared_guarded", "approved") or p["daily_caps"]!=CAPS or p["max_spend_brl"]!=0
-                or now.astimezone(TZ).date()<date.fromisoformat(p["start_date"]) or not quota(state,now,fmt)):
+                or now.astimezone(TZ).date()<date.fromisoformat(p["start_date"]) or not quota(state,now,fmt,item)):
             return False
         if any((x["id"],x["version"])==(item["id"],item["version"]) for x in state.get("published",[])):return False
         logo=p["approved_logo"]
