@@ -261,5 +261,30 @@ class MetaIdentityRegressionTests(unittest.TestCase):
             with self.assertRaises(PublicationError):
                 client.existing(doc)
 
+class RejectedQueueTests(unittest.TestCase):
+    def test_isolates_only_exact_rejected_revision(self):
+        from fatovia.publisher import isolate_rejected
+        a={"id":"a","version":"1"}
+        b={"id":"b","version":"2"}
+        state={"pending":[a,b],"publishing":None}
+        report={"policy":"documentary-template-v4-didactic","reviews":[
+            {"id":"a","version":"1","decision":"rejected","issues":["source_unavailable_or_changed"],"checked_at":NOW.isoformat()},
+            {"id":"b","version":"2","decision":"approved_documentary_only","issues":[],"checked_at":NOW.isoformat()}]}
+        self.assertEqual(isolate_rejected(state,NOW,report),["a"])
+        self.assertEqual(state["pending"],[b])
+        self.assertEqual(state["rejected_candidates"][0]["item"],a)
+        self.assertEqual(isolate_rejected(state,NOW,report),[])
+
+    def test_preserves_active_transaction_and_other_revision(self):
+        from fatovia.publisher import isolate_rejected
+        a={"id":"a","version":"2"}
+        state={"pending":[a],"publishing":{"id":"a"}}
+        report={"policy":"documentary-template-v4-didactic","reviews":[
+            {"id":"a","version":"1","decision":"rejected","issues":["invalid"],"checked_at":NOW.isoformat()}]}
+        self.assertEqual(isolate_rejected(state,NOW,report),[])
+        state["publishing"]=None
+        self.assertEqual(isolate_rejected(state,NOW,report),[])
+        self.assertEqual(state["pending"],[a])
+
 if __name__ == "__main__":
     unittest.main()
