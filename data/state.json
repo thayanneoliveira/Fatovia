@@ -800,34 +800,23 @@
         "economia"
       ],
       "version": "b98ae1ec690f70"
-    }
-  ],
-  "publishing": {
-    "format": "reel",
-    "id": "reel:inflacao-precos-20261118",
-    "started_at": "2026-11-24T11:37:59.021126-03:00",
-    "status": "checkpointed",
-    "version": "2bd9004ce9f4cc"
-  },
-  "reel_pending": [
+    },
     {
-      "caption": "Por que seu dinheiro parece valer cada vez menos? Maria mostra a diferença entre inflação desacelerando e preços caindo. Os valores da história são ilustrativos. Fonte para entender o IPCA: IBGE, https://www.ibge.gov.br/explica/inflacao.php\n\nID editorial: reel:inflacao-precos-20261118/2bd9004ce9f4cc",
-      "editorial_score": 100,
+      "evidence_sha256": "",
       "format": "reel",
       "id": "reel:inflacao-precos-20261118",
-      "script_sha256": "1b052d2ec5a1524c14e875b24a2e3e2894683b91a4cb4679054990d479e72bc6",
-      "source_urls": [
-        "https://www.ibge.gov.br/explica/inflacao.php"
-      ],
-      "status": "ready",
+      "media_id": "18121174793051277",
+      "permalink": "https://www.instagram.com/reel/DgIMAOHjg9w/",
+      "published_at": "2026-11-24T11:38:01.378114-03:00",
+      "summary": "",
+      "summary_hash": "",
       "title": "Se a inflação caiu, por que tudo continua caro?",
-      "version": "2bd9004ce9f4cc",
-      "video_path": "docs/media/reels/FatoVia_Maria_Reel_Revisado.mp4",
-      "video_sha256": "f6148c6aef61b768dd28f2f4d35551cf6752e62cc9290a9b15d8d5e786916220",
-      "visual_revision": "V5",
-      "voice": "Santa-R-1.0"
+      "topics": [],
+      "version": "2bd9004ce9f4cc"
     }
   ],
+  "publishing": null,
+  "reel_pending": [],
   "replacement_request": {
     "authorization": "owner_requested_replacement_after_manual_deletion_2026-11-15",
     "id": "camara:2653819",
