@@ -14,10 +14,10 @@ on:
       - "fatovia/pilot.py"
       - "tests/test_pilot.py"
       - "data/pilot_policy.json"
-  # Uma tentativa por janela editorial (08, 11, 14, 17, 20 BRT).
-  # Recuperacao de falhas ambiguas e feita pelo mesmo publicador, sem POST duplicado.
+  # Tentativas redundantes dentro das janelas BRT; o publicador mantém cotas e intervalo.
+  # Minutos finais permitem recuperar atrasos sem ampliar a janela editorial.
   schedule:
-    - cron: "12 11,14,17,20,23 * * *"
+    - cron: "7,17,27,37 11,14,17,20,23 * * *"
 
 permissions:
   contents: write
