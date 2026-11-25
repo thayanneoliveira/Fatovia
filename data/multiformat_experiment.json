@@ -242,5 +242,17 @@
       "tested_publisher_route"
     ],
     "integration_status": "pending_schema_and_publisher_tests"
+  },
+  "criteria_authorization": {
+    "status": "staged",
+    "max_spend_brl": 0,
+    "daily_caps": {
+      "carousel": 4,
+      "reel": 1
+    },
+    "carousel": true,
+    "reel": false,
+    "v5_pipeline_homologated": false,
+    "activation_requirement": "CI success for criteria authorization and integration; existing independent reviews and all production gates remain mandatory"
   }
 }
