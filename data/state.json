@@ -313,60 +313,6 @@
     },
     {
       "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-      "caption": "Educação inclusiva: o que pretende mudar?\n\nA ementa institui a Política Nacional de Educação Especial Inclusiva e propõe alteração na Lei nº 13.146.\n\nSe aprovada, a política poderá estabelecer novas orientações para a educação especial inclusiva conforme o texto final.\n\nPL 5903/2026 | Registro de 2026-11-18. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2655462\nID editorial: camara:2655462/b2c418b5ca1c25/didactic-v4\n#FatoVia #PoliticasPublicas",
-      "cards": [
-        "docs/media/camara-2655462/b2c418b5ca1c25/didactic-v4/01.jpg",
-        "docs/media/camara-2655462/b2c418b5ca1c25/didactic-v4/02.jpg",
-        "docs/media/camara-2655462/b2c418b5ca1c25/didactic-v4/03.jpg",
-        "docs/media/camara-2655462/b2c418b5ca1c25/didactic-v4/04.jpg",
-        "docs/media/camara-2655462/b2c418b5ca1c25/didactic-v4/05.jpg",
-        "docs/media/camara-2655462/b2c418b5ca1c25/didactic-v4/06.jpg",
-        "docs/media/camara-2655462/b2c418b5ca1c25/didactic-v4/07.jpg"
-      ],
-      "discovery_source_count": 0,
-      "editorial_score": 87,
-      "evidence": {
-        "checked_at": "2026-11-22T22:36:10.406880-03:00",
-        "claims": [
-          {
-            "basis": "identificacao_da_proposicao",
-            "field": "title"
-          },
-          {
-            "basis": "ementa_oficial_atribuida",
-            "field": "summary"
-          },
-          {
-            "basis": "registro_de_tramitacao",
-            "field": "stage"
-          }
-        ],
-        "content_sha256": "70697771e5b9302520c9a11a3e0646288fa5a4e0a98a0ad47f5f1bb59c6bc89b",
-        "kind": "official_document_attribution",
-        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
-        "record_date": "2026-11-18",
-        "schema": 1,
-        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462"
-      },
-      "explore_signal_count": 0,
-      "id": "camara:2655462",
-      "public_url": "https://www.camara.leg.br/propostas-legislativas/2655462",
-      "source_name": "Câmara dos Deputados",
-      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462",
-      "stage": "Apresentação de Proposição",
-      "stage_date": "2026-11-18",
-      "status": "ready",
-      "summary": "Institui a Política Nacional de Educação Especial Inclusiva, e altera o art. 3º da Lei nº 13.146, de 6 de julho de 2015.",
-      "summary_hash": "29a703770dcd75",
-      "template_revision": "didactic-v4",
-      "title": "PL 5903/2026",
-      "topics": [
-        "educacao"
-      ],
-      "version": "b2c418b5ca1c25"
-    },
-    {
-      "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
       "caption": "Remédio na Mão: como encontrar medicamentos gratuitos?\n\nA proposta prevê consulta de disponibilidade, identificação de unidades e orientações sobre requisitos de retirada.\n\nSe aprovado e implementado, o programa poderá ajudar usuários a localizar unidades e alternativas de atendimento.\n\nPL 5897/2026 | Registro de 2026-11-18. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2655411\nID editorial: camara:2655411/9928715e313319/didactic-v4\n#FatoVia #PoliticasPublicas",
       "cards": [
         "docs/media/camara-2655411/9928715e313319/didactic-v4/01.jpg",
@@ -844,15 +790,24 @@
         "educacao"
       ],
       "version": "146301a4f8f3d0"
+    },
+    {
+      "evidence_sha256": "70697771e5b9302520c9a11a3e0646288fa5a4e0a98a0ad47f5f1bb59c6bc89b",
+      "format": "carousel",
+      "id": "camara:2655462",
+      "media_id": "17915661729579044",
+      "permalink": "https://www.instagram.com/p/DgLYsJIFG6w/",
+      "published_at": "2026-11-25T17:26:20.881452-03:00",
+      "summary": "Institui a Política Nacional de Educação Especial Inclusiva, e altera o art. 3º da Lei nº 13.146, de 6 de julho de 2015.",
+      "summary_hash": "29a703770dcd75",
+      "title": "PL 5903/2026",
+      "topics": [
+        "educacao"
+      ],
+      "version": "b2c418b5ca1c25"
     }
   ],
-  "publishing": {
-    "format": "carousel",
-    "id": "camara:2655462",
-    "started_at": "2026-11-25T17:26:18.850073-03:00",
-    "status": "checkpointed",
-    "version": "b2c418b5ca1c25"
-  },
+  "publishing": null,
   "reel_pending": [],
   "replacement_request": {
     "authorization": "owner_requested_replacement_after_manual_deletion_2026-11-15",
