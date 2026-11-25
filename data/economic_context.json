@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T20:07:37.095044-03:00",
+  "generated_at": "2026-11-25T19:37:41.668048-03:00",
   "limitations": [
     "No causal attribution",
     "No comparison across unlike units or frequencies",
@@ -82,7 +82,7 @@
         "formato": "json"
       },
       "response_sha256": "d1320de0c1edc893b7aaaba1acd9604f72836672e292aff74140a008de24ca99",
-      "retrieved_at": "2026-11-24T20:07:37.095044-03:00",
+      "retrieved_at": "2026-11-25T19:37:41.668048-03:00",
       "series": "16122",
       "source_url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.16122/dados/ultimos/12",
       "status": "ok",
@@ -97,11 +97,6 @@
       "metadata": "https://dadosabertos.bcb.gov.br/dataset/432-taxa-de-juros---meta-selic-definida-pelo-copom",
       "name": "Meta Selic definida pelo Copom",
       "observations": [
-        {
-          "period": "2026-10-26",
-          "source_date": "2026-10-26",
-          "value": "13.75"
-        },
         {
           "period": "2026-10-27",
           "source_date": "2026-10-27",
@@ -246,16 +241,21 @@
           "period": "2026-11-24",
           "source_date": "2026-11-24",
           "value": "13.75"
+        },
+        {
+          "period": "2026-11-25",
+          "source_date": "2026-11-25",
+          "value": "13.75"
         }
       ],
       "publication_authorized": false,
       "query_params": {
-        "dataFinal": "24/11/2026",
-        "dataInicial": "26/10/2026",
+        "dataFinal": "25/11/2026",
+        "dataInicial": "27/10/2026",
         "formato": "json"
       },
-      "response_sha256": "7855c4a0d75d020765ca789eeff1e5ddc9ed4cc55859319d45858703cd0aafd9",
-      "retrieved_at": "2026-11-24T20:07:37.095044-03:00",
+      "response_sha256": "9416466848c89569b893a5c0819809b28856fea3163b9ad42f40816a5e9d9536",
+      "retrieved_at": "2026-11-25T19:37:41.668048-03:00",
       "series": "432",
       "source_url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados",
       "status": "ok",
