@@ -85,6 +85,25 @@ class MixedTests(unittest.TestCase):
         self.assertFalse(mf.owner_authorized({"id":"camara:2653947"},{**policy,"owner_per_content_authorization":{}}))
         with patch.object(mf,"transition_authorized",side_effect=AssertionError("must fail before transition")):
             self.assertFalse(mf.allowed({},{"id":"camara:other"},NOW,policy))
+    def test_criteria_authorization_is_opt_in_and_reels_require_homologation(self):
+        p={"owner_per_content_authorization":{"decision":"authorized_by_owner_pending_operational_validation",
+            "max_spend_brl":0,"daily_caps":mf.CAPS,"excluded_ids":["camara:1","reel:creche-v5"]},
+            "criteria_authorization":{"status":"staged","max_spend_brl":0,"daily_caps":mf.CAPS,
+            "carousel":True,"reel":True,"v5_pipeline_homologated":False}}
+        item={"id":"camara:2"}
+        self.assertFalse(mf.owner_authorized(item,p))
+        p["criteria_authorization"]["status"]="enabled_after_ci"
+        self.assertTrue(mf.owner_authorized(item,p))
+        self.assertFalse(mf.owner_authorized({"id":"camara:1"},p))
+        self.assertFalse(mf.owner_authorized({"id":"camara:invalid"},p))
+        reel={"id":"reel:new","format":"reel"}
+        self.assertFalse(mf.owner_authorized(reel,p))
+        p["criteria_authorization"]["v5_pipeline_homologated"]=True
+        self.assertTrue(mf.owner_authorized(reel,p))
+        self.assertFalse(mf.owner_authorized(REEL,p))
+        with patch.object(mf,"transition_authorized",return_value=False):
+            self.assertFalse(mf.allowed({},item,NOW,p))
+
     def test_missing_logo_fails(self):
         p={"status":"prepared_guarded","daily_caps":mf.CAPS,"max_spend_brl":0,"start_date":"2026-11-18","approved_logo":{"path":"assets/fatovia-approved.png","sha256":None},"approved_items":[]}
         self.assertFalse(mf.allowed({"published":[]},REEL,NOW,p))
