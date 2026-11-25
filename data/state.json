@@ -846,7 +846,13 @@
       "version": "146301a4f8f3d0"
     }
   ],
-  "publishing": null,
+  "publishing": {
+    "format": "carousel",
+    "id": "camara:2655462",
+    "started_at": "2026-11-25T17:26:18.850073-03:00",
+    "status": "checkpointed",
+    "version": "b2c418b5ca1c25"
+  },
   "reel_pending": [],
   "replacement_request": {
     "authorization": "owner_requested_replacement_after_manual_deletion_2026-11-15",
