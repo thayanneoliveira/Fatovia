@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T22:27:20.207958-03:00",
+  "generated_at": "2026-11-25T12:38:48.983413-03:00",
   "limitations": "Independent rule-based check of the official source, approved template and bytes; not general factual or semantic review.",
   "policy": "documentary-template-v4-didactic",
   "reviews": [
@@ -13,7 +13,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "e26f2733173e8a3d39d9e4adeed438c195bc5163d30fb101ba6459ffbeed0939"
       ],
-      "checked_at": "2026-11-24T22:27:20.207958-03:00",
+      "checked_at": "2026-11-25T12:38:48.983413-03:00",
       "claim_matrix": {
         "document_id": "camara:2653947",
         "entries": [
@@ -190,7 +190,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "a5ab9d4c745a18620bf7def5c0fab4c7ff42dab0f77afbfeebe87ab6cfc341ea"
       ],
-      "checked_at": "2026-11-24T22:27:20.207958-03:00",
+      "checked_at": "2026-11-25T12:38:48.983413-03:00",
       "claim_matrix": {
         "document_id": "camara:2653944",
         "entries": [
@@ -359,253 +359,6 @@
     },
     {
       "card_sha256": [
-        "cc87b6484eac79ffa442c9411f2636f4f903ca72e60aca309d4499f511166eea",
-        "701412cbb4eb1d6bc92ae12f61aa45b8eef61edbe18f30d1a39ac1caa785a871",
-        "8348c7ca60c336f2154b2478ffda1bb7e54811a177e5874e0ce41f1c29a5d7ca",
-        "4662d960e5b631cc4161ff2bbbb91d5c54d9a3f267544bbc3ce662234a3e218e",
-        "22d0989659364983081fb2c47ae503a965b7e3fe8b5130f195f3cacab743eb2b",
-        "7cf7ec6b7821111dcea46f960b9f45a30420519980127431b0d5ad1e97065939",
-        "81d319ed637413eb3535a878459863dbae7579b83fd55d97c13cb692ae0207c9"
-      ],
-      "checked_at": "2026-11-24T22:27:20.207958-03:00",
-      "claim_matrix": {
-        "document_id": "camara:2654371",
-        "entries": [
-          {
-            "evidence": {
-              "end": 71,
-              "excerpt": "Censo Escolar",
-              "field": "summary",
-              "field_sha256": "65f4f1c98a4bcc90b35a2ede89436f8c521613fb0dc66d3da1368c665e4fb1f3",
-              "start": 58,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_01",
-            "text": "Fundeb: cruzar dados pode revelar inconsistências? | O projeto pretende cruzar registros escolares, folhas de pagamento e recursos do Fundeb.",
-            "type": "reviewed_question"
-          },
-          {
-            "evidence": {
-              "end": 171,
-              "excerpt": "Fundeb",
-              "field": "summary",
-              "field_sha256": "65f4f1c98a4bcc90b35a2ede89436f8c521613fb0dc66d3da1368c665e4fb1f3",
-              "start": 165,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_01",
-            "text": "Fundeb: cruzar dados pode revelar inconsistências? | O projeto pretende cruzar registros escolares, folhas de pagamento e recursos do Fundeb.",
-            "type": "reviewed_question"
-          },
-          {
-            "evidence": {
-              "end": 71,
-              "excerpt": "Censo Escolar",
-              "field": "summary",
-              "field_sha256": "65f4f1c98a4bcc90b35a2ede89436f8c521613fb0dc66d3da1368c665e4fb1f3",
-              "start": 58,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_02",
-            "text": "O que diz a proposta? | A proposta prevê cruzamento periódico de dados do Censo Escolar com folhas de pagamento e pagamentos com recursos do Fundeb.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 171,
-              "excerpt": "Fundeb",
-              "field": "summary",
-              "field_sha256": "65f4f1c98a4bcc90b35a2ede89436f8c521613fb0dc66d3da1368c665e4fb1f3",
-              "start": 165,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_02",
-            "text": "O que diz a proposta? | A proposta prevê cruzamento periódico de dados do Censo Escolar com folhas de pagamento e pagamentos com recursos do Fundeb.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 71,
-              "excerpt": "Censo Escolar",
-              "field": "summary",
-              "field_sha256": "65f4f1c98a4bcc90b35a2ede89436f8c521613fb0dc66d3da1368c665e4fb1f3",
-              "start": 58,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_03",
-            "text": "Qual é o mecanismo? | Comparar bases de dados pode apontar divergências que precisam de verificação. Uma divergência isolada não comprova fraude.",
-            "type": "reviewed_mechanism"
-          },
-          {
-            "evidence": {
-              "end": 171,
-              "excerpt": "Fundeb",
-              "field": "summary",
-              "field_sha256": "65f4f1c98a4bcc90b35a2ede89436f8c521613fb0dc66d3da1368c665e4fb1f3",
-              "start": 165,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_03",
-            "text": "Qual é o mecanismo? | Comparar bases de dados pode apontar divergências que precisam de verificação. Uma divergência isolada não comprova fraude.",
-            "type": "reviewed_mechanism"
-          },
-          {
-            "evidence": {
-              "end": 71,
-              "excerpt": "Censo Escolar",
-              "field": "summary",
-              "field_sha256": "65f4f1c98a4bcc90b35a2ede89436f8c521613fb0dc66d3da1368c665e4fb1f3",
-              "start": 58,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_04",
-            "text": "E na prática? | Se implementado, o cruzamento poderá apoiar controles sobre informações escolares e pagamentos, conforme regras aprovadas.",
-            "type": "reviewed_conditional"
-          },
-          {
-            "evidence": {
-              "end": 171,
-              "excerpt": "Fundeb",
-              "field": "summary",
-              "field_sha256": "65f4f1c98a4bcc90b35a2ede89436f8c521613fb0dc66d3da1368c665e4fb1f3",
-              "start": 165,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_04",
-            "text": "E na prática? | Se implementado, o cruzamento poderá apoiar controles sobre informações escolares e pagamentos, conforme regras aprovadas.",
-            "type": "reviewed_conditional"
-          },
-          {
-            "evidence": {
-              "end": 71,
-              "excerpt": "Censo Escolar",
-              "field": "summary",
-              "field_sha256": "65f4f1c98a4bcc90b35a2ede89436f8c521613fb0dc66d3da1368c665e4fb1f3",
-              "start": 58,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_05",
-            "text": "O que falta esclarecer? | Quem fará a conferência? Como corrigir erros cadastrais? Quais garantias terão os envolvidos?",
-            "type": "reviewed_questions"
-          },
-          {
-            "evidence": {
-              "end": 171,
-              "excerpt": "Fundeb",
-              "field": "summary",
-              "field_sha256": "65f4f1c98a4bcc90b35a2ede89436f8c521613fb0dc66d3da1368c665e4fb1f3",
-              "start": 165,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_05",
-            "text": "O que falta esclarecer? | Quem fará a conferência? Como corrigir erros cadastrais? Quais garantias terão os envolvidos?",
-            "type": "reviewed_questions"
-          },
-          {
-            "evidence": {
-              "end": 26,
-              "excerpt": "Apresentação de Proposição",
-              "field": "stage",
-              "field_sha256": "7ad4f3a2409e2196a7e3ccc89d81061c388c76f096e8a3e5181944076982a9b7",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
-            },
-            "limitation": "Registro de tramitação.",
-            "location": "card_06",
-            "text": "Apresentação de Proposição",
-            "type": "procedural_record"
-          },
-          {
-            "evidence": {
-              "end": 10,
-              "excerpt": "2026-11-17",
-              "field": "stage_date",
-              "field_sha256": "3af512824d0e341bce2cd7739940bb37ce7ca505725ec00377769cb83bdf1fc3",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
-            },
-            "limitation": "Não comprova vigência.",
-            "location": "card_06",
-            "text": "2026-11-17",
-            "type": "record_date"
-          },
-          {
-            "evidence": {
-              "end": 12,
-              "excerpt": "PL 5874/2026",
-              "field": "title",
-              "field_sha256": "b8e64d7eb641bf5760878737814806b60cf3204dab6c034ad820d2aea5a31df0",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
-            },
-            "limitation": "Fonte para leitura integral.",
-            "location": "card_07",
-            "text": "PL 5874/2026",
-            "type": "source_reference"
-          },
-          {
-            "evidence": {
-              "end": 71,
-              "excerpt": "Censo Escolar",
-              "field": "summary",
-              "field_sha256": "65f4f1c98a4bcc90b35a2ede89436f8c521613fb0dc66d3da1368c665e4fb1f3",
-              "start": 58,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
-            },
-            "limitation": "Paráfrase revisada.",
-            "location": "caption",
-            "text": "A proposta prevê cruzamento periódico de dados do Censo Escolar com folhas de pagamento e pagamentos com recursos do Fundeb.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 171,
-              "excerpt": "Fundeb",
-              "field": "summary",
-              "field_sha256": "65f4f1c98a4bcc90b35a2ede89436f8c521613fb0dc66d3da1368c665e4fb1f3",
-              "start": 165,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371"
-            },
-            "limitation": "Impacto potencial.",
-            "location": "caption",
-            "text": "Se implementado, o cruzamento poderá apoiar controles sobre informações escolares e pagamentos, conforme regras aprovadas.",
-            "type": "reviewed_conditional"
-          }
-        ],
-        "limitation": "Revisão editorial de narrativa controlada; não verifica impacto real ou texto integral.",
-        "policy": "didactic-v4",
-        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654371",
-        "unverified_dimensions": [
-          "legal_effect",
-          "implementation",
-          "budget",
-          "causality",
-          "social_impact"
-        ],
-        "version": "146301a4f8f3d0"
-      },
-      "claim_matrix_sha256": "71dae6356d99e1a9c65d23a9e5b143ca52ba640e57aeef5f37a94844548b627b",
-      "closing_media_sha256": "81d319ed637413eb3535a878459863dbae7579b83fd55d97c13cb692ae0207c9",
-      "content_sha256": "fdf98c5747c6e5c0af042b83ee5eef16db1f0511073a9b44f5de7ef449e5a1a2",
-      "decision": "approved_documentary_only",
-      "id": "camara:2654371",
-      "issues": [],
-      "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-      "policy": "documentary-template-v4-didactic",
-      "version": "146301a4f8f3d0"
-    },
-    {
-      "card_sha256": [
         "b0759b79d73249d806b79125796dfcf43b801c4c190609e6556267d75d85531d",
         "e3322fa69dade5d058faf0d2d91e8be25be26894eed283f025d668e97adc413d",
         "6091da2e9249e18a06c56e344bf53dc7d35970e67e204dc617bc324fdda42d42",
@@ -614,7 +367,7 @@
         "df44923216636e5b22145baf3b10124556c89a344896229774453364c91ba5fa",
         "2727163333c4ec24b47a0a368147093f734ab7c300db1e5e62543cb74bd7ba36"
       ],
-      "checked_at": "2026-11-24T22:27:20.207958-03:00",
+      "checked_at": "2026-11-25T12:38:48.983413-03:00",
       "claim_matrix": {
         "document_id": "camara:2655462",
         "entries": [
@@ -791,7 +544,7 @@
         "df44923216636e5b22145baf3b10124556c89a344896229774453364c91ba5fa",
         "ddb89ab11a5d5d3311cf41c8654852b6cbdc0ccf6a159b142931f721b68e0f2a"
       ],
-      "checked_at": "2026-11-24T22:27:20.207958-03:00",
+      "checked_at": "2026-11-25T12:38:48.983413-03:00",
       "claim_matrix": {
         "document_id": "camara:2655411",
         "entries": [
@@ -1038,7 +791,7 @@
         "9ef2327508291710727ee91cd50a871fa30fd639b0a75c934f827b80cf911aa1",
         "6886fe1c5e1762503037aaad4a0e63f55bd5e9dbfbcc6579b92e3a8324c1030c"
       ],
-      "checked_at": "2026-11-24T22:27:20.207958-03:00",
+      "checked_at": "2026-11-25T12:38:48.983413-03:00",
       "claim_matrix": {
         "document_id": "camara:2655695",
         "entries": [
@@ -1285,7 +1038,7 @@
         "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
         "433e7fd979e49828ec023fa0a0b845d80df4203ae6116ff5647fc997b068c0e3"
       ],
-      "checked_at": "2026-11-24T22:27:20.207958-03:00",
+      "checked_at": "2026-11-25T12:38:48.983413-03:00",
       "claim_matrix": {
         "document_id": "camara:2658959",
         "entries": [
@@ -1448,7 +1201,7 @@
         "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
         "db432a636baa79fef857208dd75f2a1309a65e635df6d69f8022db98f5055a6c"
       ],
-      "checked_at": "2026-11-24T22:27:20.207958-03:00",
+      "checked_at": "2026-11-25T12:38:48.983413-03:00",
       "claim_matrix": {
         "document_id": "camara:2659020",
         "entries": [
@@ -1593,6 +1346,162 @@
       "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
       "policy": "documentary-template-v4-didactic",
       "version": "0df9252ed4b520"
+    },
+    {
+      "card_sha256": [
+        "2a866ac7594c8c659fd780a4293d11881cc141efb43dff99938b167cf7af128c",
+        "d9877abf24ae8079ae44438a81cc0e89c384a9527a80007c886c88021cd51106",
+        "50fc02cfd1d06be78856d1d7dc75f61c0346bcbdeeeff316b42bc4e81aa7c58f",
+        "cf8f96e6de92a8b3027f8a822fc696a0e7ce6a3a02c5d8662d6176d771df4f4f",
+        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
+        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
+        "c6cf0409b9fae30fa4d8f35e2f2afa7bfe02b51528015bf88690e6d4afc9fea9"
+      ],
+      "checked_at": "2026-11-25T12:38:48.983413-03:00",
+      "claim_matrix": {
+        "document_id": "camara:2659462",
+        "entries": [
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5961/2026",
+              "field": "title",
+              "field_sha256": "a033fce6a2a10c7819e4de2c7835ca5bc196a94de377c74e2fef6e8895974938",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659462"
+            },
+            "limitation": "Identifica a proposição, não sua aprovação.",
+            "location": "card_01",
+            "text": "PL 5961/2026",
+            "type": "document_identity"
+          },
+          {
+            "evidence": {
+              "end": 278,
+              "excerpt": "Altera a Lei nº 15.516, de 22 de setembro de 2026, para assegurar, nas unidades de saúde, acolhimento em sala reservada e informação sobre direitos às vítimas de violência psicológica, moral, patrimonial e de outras formas de violência diversas do estupro e da violência física.",
+              "field": "summary",
+              "field_sha256": "bcd72b33b9b403996eab0a344575b8ed86cf5f04450ea6ec1990d5fbb9a476c9",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659462"
+            },
+            "limitation": "Ementa oficial, não texto integral nem prova de impacto.",
+            "location": "card_02",
+            "text": "Altera a Lei nº 15.516, de 22 de setembro de 2026, para assegurar, nas unidades de saúde, acolhimento em sala reservada e informação sobre direitos às vítimas de violência psicológica, moral, patrimonial e de outras formas de violência diversas do estupro e da violência física.",
+            "type": "attributed_excerpt"
+          },
+          {
+            "evidence": null,
+            "limitation": "Não acrescenta fatos externos.",
+            "location": "card_03",
+            "text": "A ementa resume o tema. Para conhecer condições, exceções e detalhes, consulte o texto integral.",
+            "type": "template_explanation"
+          },
+          {
+            "evidence": {
+              "end": 26,
+              "excerpt": "Apresentação de Proposição",
+              "field": "stage",
+              "field_sha256": "7ad4f3a2409e2196a7e3ccc89d81061c388c76f096e8a3e5181944076982a9b7",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659462"
+            },
+            "limitation": "Registro de tramitação na data de referência.",
+            "location": "card_04",
+            "text": "Apresentação de Proposição",
+            "type": "procedural_record"
+          },
+          {
+            "evidence": {
+              "end": 10,
+              "excerpt": "2026-11-25",
+              "field": "stage_date",
+              "field_sha256": "661df755a6fb12fe02c26c036e7f26e1958b88fe84e39ad3156c4a67968ecf2e",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659462"
+            },
+            "limitation": "Data do andamento, não da vigência.",
+            "location": "card_04",
+            "text": "2026-11-25",
+            "type": "record_date"
+          },
+          {
+            "evidence": null,
+            "limitation": "Não atribui impacto, vigência ou financiamento.",
+            "location": "card_05",
+            "text": "A existência de um projeto não comprova aprovação, entrada em vigor, financiamento ou resultados.",
+            "type": "scope_limitation"
+          },
+          {
+            "evidence": null,
+            "limitation": "Questões para acompanhamento, não afirmações comprovadas.",
+            "location": "card_06",
+            "text": "Qual é o texto final?\n\nQuais órgãos respondem pela execução?\n\nHá custo previsto e indicadores de resultado?",
+            "type": "open_questions"
+          },
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5961/2026",
+              "field": "title",
+              "field_sha256": "a033fce6a2a10c7819e4de2c7835ca5bc196a94de377c74e2fef6e8895974938",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659462"
+            },
+            "limitation": "Referência documental.",
+            "location": "card_07",
+            "text": "PL 5961/2026",
+            "type": "source_reference"
+          },
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5961/2026",
+              "field": "title",
+              "field_sha256": "a033fce6a2a10c7819e4de2c7835ca5bc196a94de377c74e2fef6e8895974938",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659462"
+            },
+            "limitation": "Identifica a proposição.",
+            "location": "caption",
+            "text": "PL 5961/2026",
+            "type": "document_identity"
+          },
+          {
+            "evidence": {
+              "end": 10,
+              "excerpt": "2026-11-25",
+              "field": "stage_date",
+              "field_sha256": "661df755a6fb12fe02c26c036e7f26e1958b88fe84e39ad3156c4a67968ecf2e",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659462"
+            },
+            "limitation": "Data registrada na fonte.",
+            "location": "caption",
+            "text": "2026-11-25",
+            "type": "record_date"
+          }
+        ],
+        "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
+        "policy": "documentary-claims-v2-hooks",
+        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659462",
+        "unverified_dimensions": [
+          "legal_effect",
+          "implementation",
+          "budget",
+          "causality",
+          "social_impact"
+        ],
+        "version": "b523d110082ee1"
+      },
+      "claim_matrix_sha256": "5952a208f266b7e2f3cae067e88120bbd86a5be53d9bd44d11a2061aa902b603",
+      "closing_media_sha256": "c6cf0409b9fae30fa4d8f35e2f2afa7bfe02b51528015bf88690e6d4afc9fea9",
+      "content_sha256": "4430f88cf85097eb543bbf4f88eb63d3319fa746f6085008425c80d3d86b0f25",
+      "decision": "approved_documentary_only",
+      "id": "camara:2659462",
+      "issues": [],
+      "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
+      "policy": "documentary-template-v4-didactic",
+      "version": "b523d110082ee1"
     }
   ]
 }
