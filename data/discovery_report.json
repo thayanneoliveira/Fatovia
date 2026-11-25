@@ -1,34 +1,45 @@
 {
-  "generated_at": "2026-11-25T08:11:11.720833-03:00",
+  "generated_at": "2026-11-25T18:36:51.897240-03:00",
   "note": "Topic co-occurrence is not corroboration of an individual claim or proof of virality.",
   "publication_authorized": false,
   "signals": [
     {
-      "id": "55051e167cdf85f97a91",
-      "published_at": "2026-11-25T07:02:00-03:00",
+      "id": "bc024f8c4c07236e4f28",
+      "published_at": "2026-11-25T17:14:00-03:00",
       "source": "agencia_brasil",
       "status": "discovery_only",
-      "title": "Governo libera R$ 3,43 bilhões do Orçamento após ajuste fiscal",
-      "topics": [
-        "economia"
-      ],
-      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/governo-libera-r-343-bilhoes-do-orcamento-apos-ajuste-fiscal"
-    },
-    {
-      "id": "7c71419d34b6b4cb46f5",
-      "published_at": "2026-11-24T19:30:00-03:00",
-      "source": "agencia_brasil",
-      "status": "discovery_only",
-      "title": "Queda de árvore em escola pública em SP deixa cinco pessoas feridas",
+      "title": "IA generativa não vai acabar com profissões criativas, diz professora",
       "topics": [
         "educacao"
       ],
-      "url": "https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2026-11/queda-de-arvore-em-escola-publica-em-sp-deixa-cinco-pessoas-feridas"
+      "url": "https://agenciabrasil.ebc.com.br/cultura/noticia/2026-11/ia-generativa-nao-vai-acabar-com-profissoes-criativasdiz-professora"
+    },
+    {
+      "id": "88276d08d35aee57278c",
+      "published_at": "2026-11-25T17:08:00-03:00",
+      "source": "agencia_brasil",
+      "status": "discovery_only",
+      "title": "ABI divulga série de vídeos pelo fim da violência contra mulheres",
+      "topics": [
+        "seguranca"
+      ],
+      "url": "https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2026-11/abi-divulga-serie-de-videos-pelo-fim-da-violencia-contra-mulheres"
+    },
+    {
+      "id": "e2ac07ddcde44cbb313e",
+      "published_at": "2026-11-25T16:34:00-03:00",
+      "source": "agencia_brasil",
+      "status": "discovery_only",
+      "title": "Comissão fixa carga mínima de filosofia e sociologia no ensino médio",
+      "topics": [
+        "educacao"
+      ],
+      "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-11/comissao-fixa-carga-minima-filosofia-e-sociologia-no-ensino-medio"
     }
   ],
   "sources": {
     "agencia_brasil": {
-      "eligible_signals": 2,
+      "eligible_signals": 3,
       "status": "ok"
     },
     "ibge": {
@@ -42,14 +53,14 @@
   },
   "topic_groups": [
     {
-      "document_count": 1,
+      "document_count": 2,
       "explore_links": 0,
       "source_count": 1,
       "sources": [
         "agencia_brasil"
       ],
       "status": "research_required",
-      "topic": "economia"
+      "topic": "educacao"
     },
     {
       "document_count": 1,
@@ -59,7 +70,7 @@
         "agencia_brasil"
       ],
       "status": "research_required",
-      "topic": "educacao"
+      "topic": "seguranca"
     }
   ]
 }
