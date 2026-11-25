@@ -581,6 +581,61 @@
         "seguranca"
       ],
       "version": "0df9252ed4b520"
+    },
+    {
+      "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
+      "caption": "O que está previsto nesta proposta?\n\nPL 5961/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-25. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2659462\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659462\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2659462/b523d110082ee1\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "cards": [
+        "docs/media/camara-2659462/b523d110082ee1/01.jpg",
+        "docs/media/camara-2659462/b523d110082ee1/02.jpg",
+        "docs/media/camara-2659462/b523d110082ee1/03.jpg",
+        "docs/media/camara-2659462/b523d110082ee1/04.jpg",
+        "docs/media/camara-2659462/b523d110082ee1/05.jpg",
+        "docs/media/camara-2659462/b523d110082ee1/06.jpg",
+        "docs/media/camara-2659462/b523d110082ee1/07.jpg"
+      ],
+      "discovery_source_count": 0,
+      "editorial_score": 81,
+      "evidence": {
+        "checked_at": "2026-11-25T12:38:17.409862-03:00",
+        "claims": [
+          {
+            "basis": "identificacao_da_proposicao",
+            "field": "title"
+          },
+          {
+            "basis": "ementa_oficial_atribuida",
+            "field": "summary"
+          },
+          {
+            "basis": "registro_de_tramitacao",
+            "field": "stage"
+          }
+        ],
+        "content_sha256": "4430f88cf85097eb543bbf4f88eb63d3319fa746f6085008425c80d3d86b0f25",
+        "kind": "official_document_attribution",
+        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
+        "record_date": "2026-11-25",
+        "schema": 1,
+        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659462"
+      },
+      "explore_signal_count": 0,
+      "id": "camara:2659462",
+      "public_url": "https://www.camara.leg.br/propostas-legislativas/2659462",
+      "source_name": "Câmara dos Deputados",
+      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659462",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-25",
+      "status": "ready",
+      "summary": "Altera a Lei nº 15.516, de 22 de setembro de 2026, para assegurar, nas unidades de saúde, acolhimento em sala reservada e informação sobre direitos às vítimas de violência psicológica, moral, patrimonial e de outras formas de violência diversas do estupro e da violência física.",
+      "summary_hash": "b6b36a0847b072",
+      "template_revision": "documentary-hook-v3",
+      "title": "PL 5961/2026",
+      "topics": [
+        "saude",
+        "seguranca"
+      ],
+      "version": "b523d110082ee1"
     }
   ],
   "published": [

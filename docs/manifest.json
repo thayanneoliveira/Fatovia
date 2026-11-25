@@ -26,18 +26,6 @@
     },
     {
       "cards": [
-        "media/camara-2654371/146301a4f8f3d0/didactic-v4/01.jpg",
-        "media/camara-2654371/146301a4f8f3d0/didactic-v4/02.jpg",
-        "media/camara-2654371/146301a4f8f3d0/didactic-v4/03.jpg",
-        "media/camara-2654371/146301a4f8f3d0/didactic-v4/04.jpg",
-        "media/camara-2654371/146301a4f8f3d0/didactic-v4/05.jpg",
-        "media/camara-2654371/146301a4f8f3d0/didactic-v4/06.jpg",
-        "media/camara-2654371/146301a4f8f3d0/didactic-v4/07.jpg"
-      ],
-      "title": "PL 5874/2026"
-    },
-    {
-      "cards": [
         "media/camara-2655462/b2c418b5ca1c25/didactic-v4/01.jpg",
         "media/camara-2655462/b2c418b5ca1c25/didactic-v4/02.jpg",
         "media/camara-2655462/b2c418b5ca1c25/didactic-v4/03.jpg",
@@ -95,6 +83,18 @@
         "media/camara-2659020/0df9252ed4b520/07.jpg"
       ],
       "title": "PL 5945/2026"
+    },
+    {
+      "cards": [
+        "media/camara-2659462/b523d110082ee1/01.jpg",
+        "media/camara-2659462/b523d110082ee1/02.jpg",
+        "media/camara-2659462/b523d110082ee1/03.jpg",
+        "media/camara-2659462/b523d110082ee1/04.jpg",
+        "media/camara-2659462/b523d110082ee1/05.jpg",
+        "media/camara-2659462/b523d110082ee1/06.jpg",
+        "media/camara-2659462/b523d110082ee1/07.jpg"
+      ],
+      "title": "PL 5961/2026"
     }
   ],
   "note": "Preparacao editorial: a presenca de um JPEG nao representa publicacao no Instagram.",
