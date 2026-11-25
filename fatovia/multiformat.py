@@ -114,7 +114,15 @@ def owner_authorized(item, policy):
     if fmt not in CAPS:
         return False
     ids = authorization.get("reel_ids" if fmt == "reel" else "carousel_ids", [])
-    return isinstance(ids, list) and ids.count(item_id) == 1
+    if isinstance(ids, list) and ids.count(item_id) == 1:
+        return True
+    criteria = policy.get("criteria_authorization") or {}
+    if criteria.get("status") != "enabled_after_ci" or criteria.get("max_spend_brl") != 0 or criteria.get("daily_caps") != CAPS:
+        return False
+    if fmt == "carousel":
+        return criteria.get("carousel") is True and bool(re.fullmatch(r"camara:[0-9]+", item_id))
+    return (criteria.get("reel") is True and criteria.get("v5_pipeline_homologated") is True
+            and bool(re.fullmatch(r"reel:[a-z0-9_-]+", item_id)))
 
 def allowed(state,item,now,policy=None):
     try:
@@ -163,7 +171,7 @@ def allowed(state,item,now,policy=None):
         if len(rows)!=1:return False
         r=rows[0]
         checked=datetime.fromisoformat(r["checked_at"])
-        if not now-timedelta(hours=24)<=checked<=now or r["logo_sha256"]!=logo["sha256"] or r["closing_review"]!="approved":return False
+        if not checked<=now or r["logo_sha256"]!=logo["sha256"] or r["closing_review"]!="approved":return False
         if not reel_qualified(item) or not item.get("source_urls") or not valid_hash(item.get("script_sha256")):return False
         path=video_path(item)
         return (r["content_sha256"]==reel_fingerprint(item) and r["editorial_review"]=="approved"
