@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T12:55:36.067496-03:00",
+  "generated_at": "2026-11-24T22:27:20.207958-03:00",
   "limitations": "Independent rule-based check of the official source, approved template and bytes; not general factual or semantic review.",
   "policy": "documentary-template-v4-didactic",
   "reviews": [
@@ -13,7 +13,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "e26f2733173e8a3d39d9e4adeed438c195bc5163d30fb101ba6459ffbeed0939"
       ],
-      "checked_at": "2026-11-24T12:55:36.067496-03:00",
+      "checked_at": "2026-11-24T22:27:20.207958-03:00",
       "claim_matrix": {
         "document_id": "camara:2653947",
         "entries": [
@@ -190,7 +190,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "a5ab9d4c745a18620bf7def5c0fab4c7ff42dab0f77afbfeebe87ab6cfc341ea"
       ],
-      "checked_at": "2026-11-24T12:55:36.067496-03:00",
+      "checked_at": "2026-11-24T22:27:20.207958-03:00",
       "claim_matrix": {
         "document_id": "camara:2653944",
         "entries": [
@@ -359,253 +359,6 @@
     },
     {
       "card_sha256": [
-        "fbedf0e70a442a206d7d33aa268946584a97088e4f75aa0454c7198b9b905472",
-        "6fd575e9c7b29403afe83ab5cf2b33faa378fd793e7915df5c45e6782fa8773c",
-        "7a00babcdab1d8aa6200653dab463c843c30dea1b3f3054142915d067cbe738d",
-        "bd41c25ef8c8169b2678c6eb2c3290ffdd645b9fbbc58535a5e36e31c417dc4c",
-        "a9b188aec64ea4c9d60091f882d89e02534d0ca5dbb48b7be2d7d7a6bf292158",
-        "e8e05ac56965ca5ad2470b61d4227ecf997c1bab3f353fecd1ab46f9db2bd3b2",
-        "64ef934310390157694ec51f96939cdffe52f331ffa44359aae5b90eb60aede2"
-      ],
-      "checked_at": "2026-11-24T12:55:36.067496-03:00",
-      "claim_matrix": {
-        "document_id": "camara:2654174",
-        "entries": [
-          {
-            "evidence": {
-              "end": 56,
-              "excerpt": "rastreabilidade integral",
-              "field": "summary",
-              "field_sha256": "7fb3e7c4d08b882fd0d0aaa72d6d482ea74136118ead0da0f50e0a46b7b9bb53",
-              "start": 32,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_01",
-            "text": "Emendas parlamentares: como rastrear o dinheiro? | O projeto propõe rastreabilidade e transparência das transferências de recursos de emendas.",
-            "type": "reviewed_question"
-          },
-          {
-            "evidence": {
-              "end": 200,
-              "excerpt": "emendas parlamentares",
-              "field": "summary",
-              "field_sha256": "7fb3e7c4d08b882fd0d0aaa72d6d482ea74136118ead0da0f50e0a46b7b9bb53",
-              "start": 179,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_01",
-            "text": "Emendas parlamentares: como rastrear o dinheiro? | O projeto propõe rastreabilidade e transparência das transferências de recursos de emendas.",
-            "type": "reviewed_question"
-          },
-          {
-            "evidence": {
-              "end": 56,
-              "excerpt": "rastreabilidade integral",
-              "field": "summary",
-              "field_sha256": "7fb3e7c4d08b882fd0d0aaa72d6d482ea74136118ead0da0f50e0a46b7b9bb53",
-              "start": 32,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_02",
-            "text": "O que diz a proposta? | A proposta exige rastreabilidade integral, transparência ativa e proíbe movimentação em espécie em determinadas transferências.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 200,
-              "excerpt": "emendas parlamentares",
-              "field": "summary",
-              "field_sha256": "7fb3e7c4d08b882fd0d0aaa72d6d482ea74136118ead0da0f50e0a46b7b9bb53",
-              "start": 179,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_02",
-            "text": "O que diz a proposta? | A proposta exige rastreabilidade integral, transparência ativa e proíbe movimentação em espécie em determinadas transferências.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 56,
-              "excerpt": "rastreabilidade integral",
-              "field": "summary",
-              "field_sha256": "7fb3e7c4d08b882fd0d0aaa72d6d482ea74136118ead0da0f50e0a46b7b9bb53",
-              "start": 32,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_03",
-            "text": "Qual é o mecanismo? | Rastrear etapas de movimentação pode facilitar a identificação de origem, destino e responsáveis pelos recursos públicos.",
-            "type": "reviewed_mechanism"
-          },
-          {
-            "evidence": {
-              "end": 200,
-              "excerpt": "emendas parlamentares",
-              "field": "summary",
-              "field_sha256": "7fb3e7c4d08b882fd0d0aaa72d6d482ea74136118ead0da0f50e0a46b7b9bb53",
-              "start": 179,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_03",
-            "text": "Qual é o mecanismo? | Rastrear etapas de movimentação pode facilitar a identificação de origem, destino e responsáveis pelos recursos públicos.",
-            "type": "reviewed_mechanism"
-          },
-          {
-            "evidence": {
-              "end": 56,
-              "excerpt": "rastreabilidade integral",
-              "field": "summary",
-              "field_sha256": "7fb3e7c4d08b882fd0d0aaa72d6d482ea74136118ead0da0f50e0a46b7b9bb53",
-              "start": 32,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_04",
-            "text": "E na prática? | Se a proposta avançar, as transferências abrangidas poderão exigir registros digitais e novas práticas de controle financeiro.",
-            "type": "reviewed_conditional"
-          },
-          {
-            "evidence": {
-              "end": 200,
-              "excerpt": "emendas parlamentares",
-              "field": "summary",
-              "field_sha256": "7fb3e7c4d08b882fd0d0aaa72d6d482ea74136118ead0da0f50e0a46b7b9bb53",
-              "start": 179,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_04",
-            "text": "E na prática? | Se a proposta avançar, as transferências abrangidas poderão exigir registros digitais e novas práticas de controle financeiro.",
-            "type": "reviewed_conditional"
-          },
-          {
-            "evidence": {
-              "end": 56,
-              "excerpt": "rastreabilidade integral",
-              "field": "summary",
-              "field_sha256": "7fb3e7c4d08b882fd0d0aaa72d6d482ea74136118ead0da0f50e0a46b7b9bb53",
-              "start": 32,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_05",
-            "text": "O que falta esclarecer? | Quais transferências entram? Quem fiscaliza? Como seriam tratadas exceções? A ementa não detalha toda a execução.",
-            "type": "reviewed_questions"
-          },
-          {
-            "evidence": {
-              "end": 200,
-              "excerpt": "emendas parlamentares",
-              "field": "summary",
-              "field_sha256": "7fb3e7c4d08b882fd0d0aaa72d6d482ea74136118ead0da0f50e0a46b7b9bb53",
-              "start": 179,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_05",
-            "text": "O que falta esclarecer? | Quais transferências entram? Quem fiscaliza? Como seriam tratadas exceções? A ementa não detalha toda a execução.",
-            "type": "reviewed_questions"
-          },
-          {
-            "evidence": {
-              "end": 23,
-              "excerpt": "Notificação de Despacho",
-              "field": "stage",
-              "field_sha256": "0b920a1ee361e92e5292c0fd466a2ca7df5e2dd97e989e45e51fcde9161a03d1",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
-            },
-            "limitation": "Registro de tramitação.",
-            "location": "card_06",
-            "text": "Notificação de Despacho",
-            "type": "procedural_record"
-          },
-          {
-            "evidence": {
-              "end": 10,
-              "excerpt": "2026-11-16",
-              "field": "stage_date",
-              "field_sha256": "faffe734ef290597a139fa056e87a8ad295127cb0e390e1ea35540b79e420978",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
-            },
-            "limitation": "Não comprova vigência.",
-            "location": "card_06",
-            "text": "2026-11-16",
-            "type": "record_date"
-          },
-          {
-            "evidence": {
-              "end": 12,
-              "excerpt": "PLP 305/2026",
-              "field": "title",
-              "field_sha256": "68154f1fc3ae989ead091cd09228a1fed3eee650db4912f41bc8bd082105c310",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
-            },
-            "limitation": "Fonte para leitura integral.",
-            "location": "card_07",
-            "text": "PLP 305/2026",
-            "type": "source_reference"
-          },
-          {
-            "evidence": {
-              "end": 56,
-              "excerpt": "rastreabilidade integral",
-              "field": "summary",
-              "field_sha256": "7fb3e7c4d08b882fd0d0aaa72d6d482ea74136118ead0da0f50e0a46b7b9bb53",
-              "start": 32,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
-            },
-            "limitation": "Paráfrase revisada.",
-            "location": "caption",
-            "text": "A proposta exige rastreabilidade integral, transparência ativa e proíbe movimentação em espécie em determinadas transferências.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 200,
-              "excerpt": "emendas parlamentares",
-              "field": "summary",
-              "field_sha256": "7fb3e7c4d08b882fd0d0aaa72d6d482ea74136118ead0da0f50e0a46b7b9bb53",
-              "start": 179,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174"
-            },
-            "limitation": "Impacto potencial.",
-            "location": "caption",
-            "text": "Se a proposta avançar, as transferências abrangidas poderão exigir registros digitais e novas práticas de controle financeiro.",
-            "type": "reviewed_conditional"
-          }
-        ],
-        "limitation": "Revisão editorial de narrativa controlada; não verifica impacto real ou texto integral.",
-        "policy": "didactic-v4",
-        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2654174",
-        "unverified_dimensions": [
-          "legal_effect",
-          "implementation",
-          "budget",
-          "causality",
-          "social_impact"
-        ],
-        "version": "abe5fda5fc0602"
-      },
-      "claim_matrix_sha256": "bafc9f18122cc88682d47649500a0688df92cc94bac2f160650ea6efa453629b",
-      "closing_media_sha256": "64ef934310390157694ec51f96939cdffe52f331ffa44359aae5b90eb60aede2",
-      "content_sha256": "0ab4a82931b954a5ac72c040b0cd768e378c18d73de72cee030c1aa0942ce20c",
-      "decision": "approved_documentary_only",
-      "id": "camara:2654174",
-      "issues": [],
-      "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-      "policy": "documentary-template-v4-didactic",
-      "version": "abe5fda5fc0602"
-    },
-    {
-      "card_sha256": [
         "cc87b6484eac79ffa442c9411f2636f4f903ca72e60aca309d4499f511166eea",
         "701412cbb4eb1d6bc92ae12f61aa45b8eef61edbe18f30d1a39ac1caa785a871",
         "8348c7ca60c336f2154b2478ffda1bb7e54811a177e5874e0ce41f1c29a5d7ca",
@@ -614,7 +367,7 @@
         "7cf7ec6b7821111dcea46f960b9f45a30420519980127431b0d5ad1e97065939",
         "81d319ed637413eb3535a878459863dbae7579b83fd55d97c13cb692ae0207c9"
       ],
-      "checked_at": "2026-11-24T12:55:36.067496-03:00",
+      "checked_at": "2026-11-24T22:27:20.207958-03:00",
       "claim_matrix": {
         "document_id": "camara:2654371",
         "entries": [
@@ -861,7 +614,7 @@
         "df44923216636e5b22145baf3b10124556c89a344896229774453364c91ba5fa",
         "2727163333c4ec24b47a0a368147093f734ab7c300db1e5e62543cb74bd7ba36"
       ],
-      "checked_at": "2026-11-24T12:55:36.067496-03:00",
+      "checked_at": "2026-11-24T22:27:20.207958-03:00",
       "claim_matrix": {
         "document_id": "camara:2655462",
         "entries": [
@@ -1038,7 +791,7 @@
         "df44923216636e5b22145baf3b10124556c89a344896229774453364c91ba5fa",
         "ddb89ab11a5d5d3311cf41c8654852b6cbdc0ccf6a159b142931f721b68e0f2a"
       ],
-      "checked_at": "2026-11-24T12:55:36.067496-03:00",
+      "checked_at": "2026-11-24T22:27:20.207958-03:00",
       "claim_matrix": {
         "document_id": "camara:2655411",
         "entries": [
@@ -1285,7 +1038,7 @@
         "9ef2327508291710727ee91cd50a871fa30fd639b0a75c934f827b80cf911aa1",
         "6886fe1c5e1762503037aaad4a0e63f55bd5e9dbfbcc6579b92e3a8324c1030c"
       ],
-      "checked_at": "2026-11-24T12:55:36.067496-03:00",
+      "checked_at": "2026-11-24T22:27:20.207958-03:00",
       "claim_matrix": {
         "document_id": "camara:2655695",
         "entries": [
@@ -1532,7 +1285,7 @@
         "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
         "433e7fd979e49828ec023fa0a0b845d80df4203ae6116ff5647fc997b068c0e3"
       ],
-      "checked_at": "2026-11-24T12:55:36.067496-03:00",
+      "checked_at": "2026-11-24T22:27:20.207958-03:00",
       "claim_matrix": {
         "document_id": "camara:2658959",
         "entries": [
@@ -1684,6 +1437,162 @@
       "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
       "policy": "documentary-template-v4-didactic",
       "version": "312e525a513387"
+    },
+    {
+      "card_sha256": [
+        "2dbbd888e5ca2337a8d866f59cc77f778a414a0a39d3b761944fcbe7e87c8a92",
+        "a994930897a080afca5e3ff0f6cec292c31c030da87f07cad158f311be717670",
+        "50fc02cfd1d06be78856d1d7dc75f61c0346bcbdeeeff316b42bc4e81aa7c58f",
+        "c9ca9c26844e3d8afa2adbb756b97a74ddb9cf08122e5f3ba005f4bcce9c7994",
+        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
+        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
+        "db432a636baa79fef857208dd75f2a1309a65e635df6d69f8022db98f5055a6c"
+      ],
+      "checked_at": "2026-11-24T22:27:20.207958-03:00",
+      "claim_matrix": {
+        "document_id": "camara:2659020",
+        "entries": [
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5945/2026",
+              "field": "title",
+              "field_sha256": "40f8dc2cd0f54c493e90bded1abc8e46d8cfcb76ef3837b6809edabc89e44899",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659020"
+            },
+            "limitation": "Identifica a proposição, não sua aprovação.",
+            "location": "card_01",
+            "text": "PL 5945/2026",
+            "type": "document_identity"
+          },
+          {
+            "evidence": {
+              "end": 300,
+              "excerpt": "Altera a Lei nº 9.503, de 23 de setembro de 1997 (Código de Trânsito Brasileiro), para tratar sobre o dever da Polícia Rodoviária Federal registrar e comunicar os defeitos e as condições de risco das rodovias e estradas federais aos responsáveis por sua conservação e aos governos federal e estadual.",
+              "field": "summary",
+              "field_sha256": "8ce17f26bcdb5139971def53fcc1a60ada60c22982ef36f89877e6ce9a6b1498",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659020"
+            },
+            "limitation": "Ementa oficial, não texto integral nem prova de impacto.",
+            "location": "card_02",
+            "text": "Altera a Lei nº 9.503, de 23 de setembro de 1997 (Código de Trânsito Brasileiro), para tratar sobre o dever da Polícia Rodoviária Federal registrar e comunicar os defeitos e as condições de risco das rodovias e estradas federais aos responsáveis por sua conservação e aos governos federal e estadual.",
+            "type": "attributed_excerpt"
+          },
+          {
+            "evidence": null,
+            "limitation": "Não acrescenta fatos externos.",
+            "location": "card_03",
+            "text": "A ementa resume o tema. Para conhecer condições, exceções e detalhes, consulte o texto integral.",
+            "type": "template_explanation"
+          },
+          {
+            "evidence": {
+              "end": 26,
+              "excerpt": "Apresentação de Proposição",
+              "field": "stage",
+              "field_sha256": "7ad4f3a2409e2196a7e3ccc89d81061c388c76f096e8a3e5181944076982a9b7",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659020"
+            },
+            "limitation": "Registro de tramitação na data de referência.",
+            "location": "card_04",
+            "text": "Apresentação de Proposição",
+            "type": "procedural_record"
+          },
+          {
+            "evidence": {
+              "end": 10,
+              "excerpt": "2026-11-23",
+              "field": "stage_date",
+              "field_sha256": "860cc931f2746b53b7ef28ab1cbfbfb3340695f47990c74420cbd95368a5e60c",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659020"
+            },
+            "limitation": "Data do andamento, não da vigência.",
+            "location": "card_04",
+            "text": "2026-11-23",
+            "type": "record_date"
+          },
+          {
+            "evidence": null,
+            "limitation": "Não atribui impacto, vigência ou financiamento.",
+            "location": "card_05",
+            "text": "A existência de um projeto não comprova aprovação, entrada em vigor, financiamento ou resultados.",
+            "type": "scope_limitation"
+          },
+          {
+            "evidence": null,
+            "limitation": "Questões para acompanhamento, não afirmações comprovadas.",
+            "location": "card_06",
+            "text": "Qual é o texto final?\n\nQuais órgãos respondem pela execução?\n\nHá custo previsto e indicadores de resultado?",
+            "type": "open_questions"
+          },
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5945/2026",
+              "field": "title",
+              "field_sha256": "40f8dc2cd0f54c493e90bded1abc8e46d8cfcb76ef3837b6809edabc89e44899",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659020"
+            },
+            "limitation": "Referência documental.",
+            "location": "card_07",
+            "text": "PL 5945/2026",
+            "type": "source_reference"
+          },
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5945/2026",
+              "field": "title",
+              "field_sha256": "40f8dc2cd0f54c493e90bded1abc8e46d8cfcb76ef3837b6809edabc89e44899",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659020"
+            },
+            "limitation": "Identifica a proposição.",
+            "location": "caption",
+            "text": "PL 5945/2026",
+            "type": "document_identity"
+          },
+          {
+            "evidence": {
+              "end": 10,
+              "excerpt": "2026-11-23",
+              "field": "stage_date",
+              "field_sha256": "860cc931f2746b53b7ef28ab1cbfbfb3340695f47990c74420cbd95368a5e60c",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659020"
+            },
+            "limitation": "Data registrada na fonte.",
+            "location": "caption",
+            "text": "2026-11-23",
+            "type": "record_date"
+          }
+        ],
+        "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
+        "policy": "documentary-claims-v2-hooks",
+        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659020",
+        "unverified_dimensions": [
+          "legal_effect",
+          "implementation",
+          "budget",
+          "causality",
+          "social_impact"
+        ],
+        "version": "0df9252ed4b520"
+      },
+      "claim_matrix_sha256": "ad743d28a5c75113dd36386d64eb5bba1285c1f8144472d56fb9c430982714e1",
+      "closing_media_sha256": "db432a636baa79fef857208dd75f2a1309a65e635df6d69f8022db98f5055a6c",
+      "content_sha256": "f68891b65b34ed6bf30797dfb0132018d9ae269d0b31cfa7162b422d6351ad2a",
+      "decision": "approved_documentary_only",
+      "id": "camara:2659020",
+      "issues": [],
+      "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
+      "policy": "documentary-template-v4-didactic",
+      "version": "0df9252ed4b520"
     }
   ]
 }
