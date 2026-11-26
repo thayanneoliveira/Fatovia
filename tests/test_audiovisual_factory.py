@@ -23,7 +23,7 @@ class FactoryContractTest(unittest.TestCase):
     def test_source_and_script_check(self):
         d=check_story(fixture(),script())
         self.assertEqual(d["beats"],18)
-        self.assertEqual(len(d["sources"]),3)
+        self.assertEqual(len(d["sources"]),4)
         self.assertEqual(d["status"],"structural_pass_fact_review_pending")
     def test_story_is_not_publish_eligible(self):
         obj=plan(fixture(),script(),timeline(script()))
