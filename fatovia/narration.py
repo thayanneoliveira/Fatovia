@@ -15,10 +15,7 @@ from urllib.error import HTTPError, URLError
 MODEL = "gemini-3.8-flash-tts"
 VOICE = "Algenib"
 URL = "https://generativelanguage.googleapis.com/v1beta/interactions"
-STYLE = ("Native Brazilian Portuguese. Natural, spontaneous and conversational delivery. "
-         "Genuine curiosity, subtle emotional variations, natural breathing, dynamic pacing "
-         "and short meaningful pauses. Avoid robotic cadence, exaggerated drama, advertising "
-         "tone and news anchor delivery. Authentic Brazilian male content creator.")
+STYLE = "Native Brazilian Portuguese. Natural, spontaneous and conversational delivery. Speak like a real content creator sharing a fascinating discovery with a friend. Genuine curiosity, subtle emotional variations, natural breathing, dynamic pacing and short, meaningful pauses. Emphasize key ideas without exaggeration. Avoid robotic cadence, exaggerated drama, advertising tone and news anchor delivery."
 MAX_SCRIPT = 4000
 MAX_RESPONSE = 20_000_000
 
