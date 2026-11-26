@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - feature/multiformat-incident-closure-20261121
+      - lab/audiovisual-factory-20261126
   workflow_dispatch:
 permissions:
   contents: read
@@ -18,3 +19,64 @@ jobs:
       - run: python -m pip install -r requirements.txt
       - run: python -m unittest discover -s tests -v
       - run: python -m fatovia.publisher status
+      - run: python -m unittest tests.test_audiovisual_factory -v
+  audiovisual_lab:
+    if: ${{ github.ref == 'refs/heads/lab/audiovisual-factory-20261126' && (github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[factory-render]')) }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    permissions:
+      contents: read
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install deterministic local video rendering requirements
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-lato
+          python -m pip install "Pillow>=10.2,<13" "numpy==1.26.4" requests
+      - name: Reuse existing independently audited Santa R artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: fatovia-factory-santa-r
+          repository: thayanneoliveira/Fatovia
+          run-id: 45853902231
+          github-token: ${{ github.token }}
+          path: voice
+      - name: Verify immutable source voice before visual rendering
+        run: |
+          echo "ecc5dfb7b80102b2acf076f4a3f71aacef0c09853e1dc86526f419cfd4842233  voice/R_episodio.mp3" | sha256sum -c -
+          python - <<'PY'
+          import json
+          a=json.load(open("voice/asr/speech_audit.json"))
+          assert a["reference_words"]==a["recognized_words"]==203 and a["wer"]==0 and a["status"]=="needs_review"
+          assert a["audio_sha256"]=="ecc5dfb7b80102b2acf076f4a3f71aacef0c09853e1dc86526f419cfd4842233"
+          print("Independent ASR checked: 203/203 words; 4 low-confidence timestamps remain")
+          PY
+      - name: Rebuild original V5 animation grammar with new fact-bounded story
+        run: |
+          mkdir -p factory-lab-output
+          python fatovia/v5_renderer.py --fixture data/audiovisual_factory/fixtures/obras_v1.json --voice voice/script.json --audio voice/R_episodio.mp3 --asr voice/asr/speech_audit.json --out factory-lab-output/Joana_Obrasgov_ASR_V5_Lab.mp4 --mode full
+      - name: Independent technical and A/V provenance audit, fail closed
+        run: |
+          python fatovia/v5_audit.py --video factory-lab-output/Joana_Obrasgov_ASR_V5_Lab.mp4 --report factory-lab-output/Joana_Obrasgov_ASR_V5_Lab.report.json --fixture data/audiovisual_factory/fixtures/obras_v1.json --audio voice/R_episodio.mp3 --logo assets/fatovia-approved.png --asr voice/asr/speech_audit.json --out factory-lab-output/audit_asr.json
+          python - <<'PY'
+          import json
+          a=json.load(open("factory-lab-output/audit_asr.json"))
+          assert a["status"]=="TECHNICAL_PASS_AUDIT_PENDING" and not a["failed"]
+          assert a["publish_allowed"] is False and a["published_to_meta"] is False
+          assert "independent_semantic_fact_review_not_complete" in a["pending"]
+          print("Technical PASS; publication BLOCKED, independent semantic and artistic review pending.")
+          PY
+      - name: Retain lab artifacts; never publish to Instagram
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fatovia-joana-v5-autonomous-lab
+          path: factory-lab-output/
+          retention-days: 3
+          if-no-files-found: warn

@@ -1,0 +1,35 @@
+{
+  "schema": "fatovia.real_metric_observation.v1",
+  "accessed_on": "2026-11-26",
+  "connector": "Windsor.ai Instagram authenticated connector, media_insights",
+  "source": "live_read",
+  "media_id": "18121174793051277",
+  "permalink": "https://www.instagram.com/reel/DgIMAOHjg9w/",
+  "metrics": {
+    "reach": 242,
+    "views": 285,
+    "shares": 2,
+    "saved": 1,
+    "follows": null,
+    "avg_watch_time_ms": 19952,
+    "skip_rate_first_3_sec": 0.43
+  },
+  "qualifications": [
+    "Live read reflects an evolving snapshot, not a fixed published-day cohort.",
+    "Follows is null because this source does not support media_follows for Reels.",
+    "No causal attribution to Maria hooks, format or character from single sample.",
+    "80x carousel comparison supplied by user; same-window comparison not independently validated."
+  ],
+  "derived": {
+    "shares_per_reach": 0.008264462809917356,
+    "saves_per_reach": 0.004132231404958678,
+    "average_watch_time_seconds": 19.952
+  },
+  "recommended_hypotheses": [
+    "Compare recognizable daily-life conflict against procedural narration while holding format/duration similar",
+    "Test 3-second opening change using skip rate, not just reach",
+    "Test visually explicit consequence against conceptual list with independently comparable Reel cohorts"
+  ],
+  "eligible_for_automatic_strategy_change": false,
+  "min_comparable_reels": 20
+}

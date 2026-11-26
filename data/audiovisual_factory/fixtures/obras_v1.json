@@ -1,0 +1,183 @@
+{
+  "schema": "fatovia.scene-intent.v1",
+  "status": "lab_only_no_publish",
+  "id": "obras-ja-comecou-20261126",
+  "headline": "A placa está lá. Mas a obra começou?",
+  "hook": "Você já viu uma placa anunciando uma obra que nunca parece começar?",
+  "person": "Joana",
+  "voice": "Santa-R-1.0",
+  "visual_revision": "V5-lab",
+  "source_urls": [
+    "https://www.gov.br/obrasgov/pt-br/perguntas-frequentes",
+    "https://www.gov.br/conecta/catalogo/apis/portal-da-transparencia-do-governo-federal",
+    "https://www.gov.br/obrasgov/pt-br",
+    "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos"
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "text": "Obrasgov permite consulta pública de projetos de investimento abrangidos",
+      "source": "https://www.gov.br/obrasgov/pt-br/perguntas-frequentes"
+    },
+    {
+      "id": "c2",
+      "text": "Portal da Transparência oferece consultas detalhadas de despesas",
+      "source": "https://www.gov.br/conecta/catalogo/apis/portal-da-transparencia-do-governo-federal"
+    },
+    {
+      "id": "c3",
+      "text": "Canal oficial do governo federal permite registrar pedidos de acesso à informação",
+      "source": "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos"
+    }
+  ],
+  "beats": [
+    {
+      "phrase_index": 0,
+      "role": "hook",
+      "action": "announcement",
+      "candidate_scene": "announce",
+      "claim_ids": []
+    },
+    {
+      "phrase_index": 1,
+      "role": "person",
+      "action": "intro",
+      "candidate_scene": "pedro",
+      "claim_ids": []
+    },
+    {
+      "phrase_index": 2,
+      "role": "person",
+      "action": "walk",
+      "candidate_scene": "pedro",
+      "claim_ids": []
+    },
+    {
+      "phrase_index": 3,
+      "role": "announcement",
+      "action": "sign",
+      "candidate_scene": "announce",
+      "claim_ids": []
+    },
+    {
+      "phrase_index": 4,
+      "role": "human_consequence",
+      "action": "hope",
+      "candidate_scene": "work",
+      "claim_ids": []
+    },
+    {
+      "phrase_index": 5,
+      "role": "time",
+      "action": "wait",
+      "candidate_scene": "time",
+      "claim_ids": []
+    },
+    {
+      "phrase_index": 6,
+      "role": "investigation",
+      "action": "question",
+      "candidate_scene": "investigate",
+      "claim_ids": []
+    },
+    {
+      "phrase_index": 7,
+      "role": "action",
+      "action": "investigate",
+      "candidate_scene": "citizen",
+      "claim_ids": []
+    },
+    {
+      "phrase_index": 8,
+      "role": "official_source",
+      "action": "portal",
+      "candidate_scene": "portal",
+      "claim_ids": [
+        "c1"
+      ]
+    },
+    {
+      "phrase_index": 9,
+      "role": "official_source",
+      "action": "portal",
+      "candidate_scene": "portal",
+      "claim_ids": [
+        "c1"
+      ]
+    },
+    {
+      "phrase_index": 10,
+      "role": "official_source",
+      "action": "contract",
+      "candidate_scene": "portal",
+      "claim_ids": [
+        "c2"
+      ]
+    },
+    {
+      "phrase_index": 11,
+      "role": "caveat",
+      "action": "absence",
+      "candidate_scene": "not_proof",
+      "claim_ids": []
+    },
+    {
+      "phrase_index": 12,
+      "role": "verification",
+      "action": "check",
+      "candidate_scene": "check_date",
+      "claim_ids": []
+    },
+    {
+      "phrase_index": 13,
+      "role": "action",
+      "action": "ask",
+      "candidate_scene": "citizen",
+      "claim_ids": [
+        "c3"
+      ]
+    },
+    {
+      "phrase_index": 14,
+      "role": "discovery",
+      "action": "contrast",
+      "candidate_scene": "question",
+      "claim_ids": []
+    },
+    {
+      "phrase_index": 15,
+      "role": "reflection",
+      "action": "question",
+      "candidate_scene": "question",
+      "claim_ids": []
+    },
+    {
+      "phrase_index": 16,
+      "role": "brand",
+      "action": "brand",
+      "candidate_scene": "brand",
+      "claim_ids": []
+    },
+    {
+      "phrase_index": 17,
+      "role": "brand",
+      "action": "brand",
+      "candidate_scene": "brand",
+      "claim_ids": []
+    }
+  ],
+  "restrictions": [
+    "No named real patient or allegation",
+    "Joana is a fictional character",
+    "Do not imply Obrasgov covers all municipal projects",
+    "No fabricated numbers",
+    "No publication from lab",
+    "Do not replace the approved Maria asset"
+  ],
+  "policy_version": "V5-human-first-lab",
+  "source_review_20261126": {
+    "status": "official_pages_located_not_independently_semantically_approved",
+    "reason": "Verified source supports public information access; checked newer Informa.BR route after Fala.BR transition. Claims still require external independent review.",
+    "date": "2026-11-26"
+  }
+}
