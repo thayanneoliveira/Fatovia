@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-11-26T10:48:19.051660-03:00",
+  "generated_at": "2026-11-26T19:56:29.014260-03:00",
   "note": "Topic co-occurrence is not corroboration of an individual claim or proof of virality.",
   "publication_authorized": false,
   "signals": [
     {
-      "id": "5d4a402929e0370145a4",
-      "published_at": "2026-11-26T09:47:00-03:00",
+      "id": "e14de504f834f87110ce",
+      "published_at": "2026-11-26T18:22:00-03:00",
       "source": "agencia_brasil",
       "status": "discovery_only",
-      "title": "SP: polícia faz operação contra empresa que movimentou R$ 4 bi",
+      "title": "STF: estados e municípios são obrigados a pagar piso dos professores",
       "topics": [
-        "seguranca"
+        "educacao"
       ],
-      "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2026-11/sp-policia-faz-operacao-contra-empresa-que-movimentou-r-4-bi"
+      "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-11/stf-estados-e-municipios-sao-obrigados-pagar-piso-dos-professores"
     },
     {
-      "id": "863603322b41f6b75fdf",
-      "published_at": "2026-11-26T08:00:00-03:00",
+      "id": "f64bfec0ec3cd0b939ea",
+      "published_at": "2026-11-26T17:09:00-03:00",
       "source": "agencia_brasil",
       "status": "discovery_only",
-      "title": "Exposição traz ao público diferentes olhares sobre a saúde indígena",
+      "title": "CMO aprova relatório do Orçamento de 2027 com corte de R$ 2,09 bilhões",
       "topics": [
-        "saude"
+        "economia"
       ],
-      "url": "https://agenciabrasil.ebc.com.br/cultura/noticia/2026-11/exposicao-traz-ao-publico-diferentes-olhares-sobre-saude-indigena"
+      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/cmo-aprova-relatorio-do-orcamento-de-2027-com-corte-de-r-209-bilhoes"
     }
   ],
   "sources": {
@@ -49,7 +49,7 @@
         "agencia_brasil"
       ],
       "status": "research_required",
-      "topic": "saude"
+      "topic": "economia"
     },
     {
       "document_count": 1,
@@ -59,7 +59,7 @@
         "agencia_brasil"
       ],
       "status": "research_required",
-      "topic": "seguranca"
+      "topic": "educacao"
     }
   ]
 }
