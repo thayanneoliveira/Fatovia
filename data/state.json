@@ -904,7 +904,13 @@
       "version": "b2c418b5ca1c25"
     }
   ],
-  "publishing": null,
+  "publishing": {
+    "format": "carousel",
+    "id": "camara:2655695",
+    "started_at": "2026-11-26T17:05:32.906161-03:00",
+    "status": "checkpointed",
+    "version": "a39168135eade1"
+  },
   "reel_pending": [],
   "replacement_request": {
     "authorization": "owner_requested_replacement_after_manual_deletion_2026-11-15",
