@@ -41,7 +41,7 @@
   "constraints": {
     "no_minimum_count": true,
     "approved_logo_required_on_closing": true,
-    "voice": "Santa-R-1.0",
+    "voice": "Algenib",
     "visual_reference": "V5",
     "editorial_reference": "V5",
     "source_revalidation": true,
@@ -52,11 +52,24 @@
     "no_paid_services": true,
     "reel_cover_editorial": "Escolher automaticamente um frame do próprio vídeo com conflito humano e legibilidade no feed. Não exigir arquivo de capa externo nem aprovação editorial adicional. Usar thumb_offset apenas quando suportado e testado pela rota Meta; caso contrário usar a miniatura automática da plataforma. Logo aprovada permanece obrigatória no encerramento do vídeo.",
     "meta_auth_policy": "Use existing production credential checks; no full rehomologation unless an actual authentication failure occurs. Never bypass existing auth failure stop.",
-    "editorial_policy": "The owner-approved inflation Reel at its exact SHA256 requires no repeat human content/source review. Retain file identity, hosting, approved logo, cover, deduplication, quotas and transaction gates."
+    "editorial_policy": "The owner-approved inflation Reel at its exact SHA256 requires no repeat human content/source review. Retain file identity, hosting, approved logo, cover, deduplication, quotas and transaction gates.",
+    "narration": {
+      "provider": "Gemini Developer API",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Algenib",
+      "language": "pt-BR",
+      "api_homologated": false,
+      "status": "staged_pending_free_tier_live_test",
+      "max_spend_brl": 0,
+      "automatic_fallback": false,
+      "approved_on": "2026-11-26",
+      "legacy_exception": "Maria v2 exact previously approved stream-identical remux only"
+    }
   },
   "deployment_blockers": [
     "Reel de Maria foi hospedado com hash de arquivo e A/V aprovados; publicação Meta ainda depende de item autorizado na fila, capa pública e revisão documental/independente do conteúdo.",
-    "Geracao autônoma V5 de novos Reels ainda não homologada."
+    "Geracao autônoma V5 de novos Reels ainda não homologada.",
+    "Algenib aprovada pela proprietaria; modelo exato do piloto, projeto Free Tier sem faturamento, API e geracao V5 ponta a ponta ainda pendentes de homologacao."
   ],
   "notes": "MP4 publico validado via GitHub Pages HTTPS, fluxo elementar audio/video identico ao MP4 aprovado; arquivo produzido por remux sem recodificar; nenhuma publicacao Meta confirmada.",
   "approved_logo": {
