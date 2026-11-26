@@ -1,9 +1,18 @@
-name: Voice Lab - Maria Santa R
+name: Voice Lab - Santa R story factory
 on:
   push:
     branches: ['lab/voice-kokoro']
     paths: ['.github/workflows/voice-inflacao-maria.yml']
   workflow_dispatch:
+    inputs:
+      story:
+        description: Narrativa de laboratorio
+        required: true
+        default: obras
+        type: choice
+        options:
+          - obras
+          - maria
 permissions:
   contents: read
 jobs:
@@ -26,15 +35,19 @@ jobs:
           sudo apt-get install -y espeak-ng ffmpeg libsndfile1
           python -m pip install --index-url https://download.pytorch.org/whl/cpu torch==2.6.0
           python -m pip install kokoro==0.9.4 numpy==1.26.4 soundfile==0.13.1 pyworld==0.3.5
-      - name: Generate benchmark and complete episode
-        run: python voice_santa_r.py --input inflacao_maria_roteiro.json --out inflacao_maria_audio
+      - name: Generate validated Santa R voice with exact lab script
+        env:
+          STORY: ${{ inputs.story || 'obras' }}
+        run: |
+          if [ "$STORY" = obras ]; then script=obras_roteiro.json; elif [ "$STORY" = maria ]; then script=inflacao_maria_roteiro.json; else exit 1; fi
+          echo "Script: $script"
+          python voice_santa_r.py --input "$script" --out santa_factory_audio
+          cp "$script" santa_factory_audio/script.json
       - name: Upload diagnostics and samples
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: fatovia-inflacao-maria-santa-r
-          path: |
-            inflacao_maria_audio/
-            inflacao_maria_roteiro.json
+          name: fatovia-factory-santa-r
+          path: santa_factory_audio/
           retention-days: 3
           if-no-files-found: warn
