@@ -1,6 +1,6 @@
 {
   "evaluation_ready": false,
-  "generated_at": "2026-11-25T18:36:56.306888-03:00",
+  "generated_at": "2026-11-26T01:06:37.979524-03:00",
   "issues": [
     "pilot_daily_limit_exceeded",
     "pilot_total_exceeded"
@@ -11,7 +11,7 @@
   "pilot_id": "documentary-20261115",
   "publications": [
     {
-      "age_hours": 246.86,
+      "age_hours": 253.35,
       "document_id": "camara:2653819",
       "media_id": "18213163885365403",
       "permalink": "https://www.instagram.com/p/DfxBuz7FJKv/",
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "age_hours": 239.74,
+      "age_hours": 246.23,
       "document_id": "camara:2653948",
       "media_id": "17901241947394968",
       "permalink": "https://www.instagram.com/p/DfxyoEGIO7b/",
@@ -62,7 +62,7 @@
       ]
     },
     {
-      "age_hours": 223.9,
+      "age_hours": 230.39,
       "document_id": "camara:2653813",
       "media_id": "18077986049477583",
       "permalink": "https://www.instagram.com/p/DfzfarSmlTb/",
@@ -85,7 +85,7 @@
       ]
     },
     {
-      "age_hours": 215.67,
+      "age_hours": 222.16,
       "document_id": "camara:2653937",
       "media_id": "18149060461583391",
       "permalink": "https://www.instagram.com/p/Df0X6Z2CfXE/",
@@ -108,7 +108,7 @@
       ]
     },
     {
-      "age_hours": 175.55,
+      "age_hours": 182.05,
       "document_id": "camara:2653940",
       "media_id": "17908023129353266",
       "permalink": "https://www.instagram.com/p/Df4rXyrkceF/",
@@ -136,7 +136,7 @@
       ]
     },
     {
-      "age_hours": 169.18,
+      "age_hours": 175.67,
       "document_id": "camara:2653811",
       "media_id": "18151573990488064",
       "permalink": "https://www.instagram.com/p/Df5XI8aGRJR/",
@@ -164,7 +164,7 @@
       ]
     },
     {
-      "age_hours": 166.17,
+      "age_hours": 172.67,
       "document_id": "camara:2653822",
       "media_id": "18111958382223422",
       "permalink": "https://www.instagram.com/p/Df5rwjrmUcO/",
@@ -188,7 +188,7 @@
       ]
     },
     {
-      "age_hours": 151.12,
+      "age_hours": 157.62,
       "document_id": "camara:2653946",
       "media_id": "18185273779443646",
       "permalink": "https://www.instagram.com/p/Df7TG8mEXio/",

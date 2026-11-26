@@ -1,40 +1,40 @@
 {
-  "generated_at": "2026-11-25T18:36:51.897240-03:00",
+  "generated_at": "2026-11-26T01:06:35.238661-03:00",
   "note": "Topic co-occurrence is not corroboration of an individual claim or proof of virality.",
   "publication_authorized": false,
   "signals": [
     {
-      "id": "bc024f8c4c07236e4f28",
-      "published_at": "2026-11-25T17:14:00-03:00",
+      "id": "950a8b93d8db17954f62",
+      "published_at": "2026-11-25T20:52:00-03:00",
       "source": "agencia_brasil",
       "status": "discovery_only",
-      "title": "IA generativa não vai acabar com profissões criativas, diz professora",
+      "title": "Câmara aprova protocolo nacional para combater racismo nas escolas",
       "topics": [
         "educacao"
       ],
-      "url": "https://agenciabrasil.ebc.com.br/cultura/noticia/2026-11/ia-generativa-nao-vai-acabar-com-profissoes-criativasdiz-professora"
+      "url": "https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2026-11/camara-aprova-protocolo-nacional-para-combater-racismo-nas-escolas"
     },
     {
-      "id": "88276d08d35aee57278c",
-      "published_at": "2026-11-25T17:08:00-03:00",
+      "id": "d39b4789bf9f64171e8a",
+      "published_at": "2026-11-25T20:22:00-03:00",
       "source": "agencia_brasil",
       "status": "discovery_only",
-      "title": "ABI divulga série de vídeos pelo fim da violência contra mulheres",
+      "title": "Amcham participará de consulta dos EUA sobre tarifas ao Brasil",
       "topics": [
-        "seguranca"
+        "saude"
       ],
-      "url": "https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2026-11/abi-divulga-serie-de-videos-pelo-fim-da-violencia-contra-mulheres"
+      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/amcham-participara-de-consulta-dos-eua-sobre-tarifas-ao-brasil"
     },
     {
-      "id": "e2ac07ddcde44cbb313e",
-      "published_at": "2026-11-25T16:34:00-03:00",
+      "id": "80a718ba37b925613c22",
+      "published_at": "2026-11-25T19:54:00-03:00",
       "source": "agencia_brasil",
       "status": "discovery_only",
-      "title": "Comissão fixa carga mínima de filosofia e sociologia no ensino médio",
+      "title": "Acusado de espancar professor André Aires no centro do Rio vira réu",
       "topics": [
         "educacao"
       ],
-      "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-11/comissao-fixa-carga-minima-filosofia-e-sociologia-no-ensino-medio"
+      "url": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-11/acusado-de-espancar-professor-andre-aires-no-centro-do-rio-vira-reu"
     }
   ],
   "sources": {
@@ -70,7 +70,7 @@
         "agencia_brasil"
       ],
       "status": "research_required",
-      "topic": "seguranca"
+      "topic": "saude"
     }
   ]
 }
