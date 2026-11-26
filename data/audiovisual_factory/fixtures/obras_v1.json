@@ -9,8 +9,9 @@
   "visual_revision": "V5-lab",
   "source_urls": [
     "https://www.gov.br/obrasgov/pt-br/perguntas-frequentes",
-    "https://www.gov.br/cgu/pt-br/acesso-a-informacao/acoes-e-programas",
-    "https://www.gov.br/obrasgov/pt-br"
+    "https://www.gov.br/conecta/catalogo/apis/portal-da-transparencia-do-governo-federal",
+    "https://www.gov.br/obrasgov/pt-br",
+    "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos"
   ],
   "claims": [
     {
@@ -21,7 +22,12 @@
     {
       "id": "c2",
       "text": "Portal da Transparência oferece consultas detalhadas de despesas",
-      "source": "https://www.gov.br/cgu/pt-br/acesso-a-informacao/acoes-e-programas"
+      "source": "https://www.gov.br/conecta/catalogo/apis/portal-da-transparencia-do-governo-federal"
+    },
+    {
+      "id": "c3",
+      "text": "Canal oficial do governo federal permite registrar pedidos de acesso à informação",
+      "source": "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos"
     }
   ],
   "beats": [
@@ -127,7 +133,9 @@
       "role": "action",
       "action": "ask",
       "candidate_scene": "citizen",
-      "claim_ids": []
+      "claim_ids": [
+        "c3"
+      ]
     },
     {
       "phrase_index": 14,
@@ -166,5 +174,10 @@
     "No publication from lab",
     "Do not replace the approved Maria asset"
   ],
-  "policy_version": "V5-human-first-lab"
+  "policy_version": "V5-human-first-lab",
+  "source_review_20261126": {
+    "status": "official_pages_located_not_independently_semantically_approved",
+    "reason": "Verified source supports public information access; checked newer Informa.BR route after Fala.BR transition. Claims still require external independent review.",
+    "date": "2026-11-26"
+  }
 }
