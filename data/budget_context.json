@@ -1388,7 +1388,7 @@
     "SALDO (i) = (e-h)"
   ],
   "entity": "União",
-  "generated_at": "2026-11-25T19:37:43.493616-03:00",
+  "generated_at": "2026-11-26T19:26:58.299631-03:00",
   "limitations": [
     "Reported cells, not independent proof of spending or outcomes",
     "No summation of overlapping totals, accounts, subtotals or intra-budget flows",
