@@ -21,7 +21,7 @@ jobs:
       - run: python -m fatovia.publisher status
       - run: python -m unittest tests.test_audiovisual_factory -v
   audiovisual_lab:
-    if: github.ref == 'refs/heads/lab/audiovisual-factory-20261126'
+    if: ${{ github.ref == 'refs/heads/lab/audiovisual-factory-20261126' && (github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[factory-render]')) }}
     runs-on: ubuntu-24.04
     timeout-minutes: 18
     permissions:
