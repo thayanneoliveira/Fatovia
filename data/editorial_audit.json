@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T12:38:48.983413-03:00",
+  "generated_at": "2026-11-25T22:00:33.656151-03:00",
   "limitations": "Independent rule-based check of the official source, approved template and bytes; not general factual or semantic review.",
   "policy": "documentary-template-v4-didactic",
   "reviews": [
@@ -13,7 +13,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "e26f2733173e8a3d39d9e4adeed438c195bc5163d30fb101ba6459ffbeed0939"
       ],
-      "checked_at": "2026-11-25T12:38:48.983413-03:00",
+      "checked_at": "2026-11-25T22:00:33.656151-03:00",
       "claim_matrix": {
         "document_id": "camara:2653947",
         "entries": [
@@ -190,7 +190,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "a5ab9d4c745a18620bf7def5c0fab4c7ff42dab0f77afbfeebe87ab6cfc341ea"
       ],
-      "checked_at": "2026-11-25T12:38:48.983413-03:00",
+      "checked_at": "2026-11-25T22:00:33.656151-03:00",
       "claim_matrix": {
         "document_id": "camara:2653944",
         "entries": [
@@ -359,183 +359,6 @@
     },
     {
       "card_sha256": [
-        "b0759b79d73249d806b79125796dfcf43b801c4c190609e6556267d75d85531d",
-        "e3322fa69dade5d058faf0d2d91e8be25be26894eed283f025d668e97adc413d",
-        "6091da2e9249e18a06c56e344bf53dc7d35970e67e204dc617bc324fdda42d42",
-        "fc28f9b6687e34f5fc89199607739f1deb8c9f818788739525db4924e1c7e478",
-        "85f61235618121c96ebba69a54b17bfa06b1c3a7134a288f5b2c7b86c2d24615",
-        "df44923216636e5b22145baf3b10124556c89a344896229774453364c91ba5fa",
-        "2727163333c4ec24b47a0a368147093f734ab7c300db1e5e62543cb74bd7ba36"
-      ],
-      "checked_at": "2026-11-25T12:38:48.983413-03:00",
-      "claim_matrix": {
-        "document_id": "camara:2655462",
-        "entries": [
-          {
-            "evidence": {
-              "end": 59,
-              "excerpt": "Educação Especial Inclusiva",
-              "field": "summary",
-              "field_sha256": "7b2c06e541395712cb51d0fa47e1f906273d0c06d8b30499affd50f0be30e27f",
-              "start": 32,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_01",
-            "text": "Educação inclusiva: o que pretende mudar? | Uma proposta institui uma política nacional de educação especial inclusiva e altera a Lei Brasileira de Inclusão.",
-            "type": "reviewed_question"
-          },
-          {
-            "evidence": {
-              "end": 59,
-              "excerpt": "Educação Especial Inclusiva",
-              "field": "summary",
-              "field_sha256": "7b2c06e541395712cb51d0fa47e1f906273d0c06d8b30499affd50f0be30e27f",
-              "start": 32,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_02",
-            "text": "O que diz a proposta? | A ementa institui a Política Nacional de Educação Especial Inclusiva e propõe alteração na Lei nº 13.146.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 59,
-              "excerpt": "Educação Especial Inclusiva",
-              "field": "summary",
-              "field_sha256": "7b2c06e541395712cb51d0fa47e1f906273d0c06d8b30499affd50f0be30e27f",
-              "start": 32,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_03",
-            "text": "Qual é o mecanismo? | Uma política nacional pode definir diretrizes, mas a ementa isolada não esclarece financiamento nem execução nas escolas.",
-            "type": "reviewed_mechanism"
-          },
-          {
-            "evidence": {
-              "end": 59,
-              "excerpt": "Educação Especial Inclusiva",
-              "field": "summary",
-              "field_sha256": "7b2c06e541395712cb51d0fa47e1f906273d0c06d8b30499affd50f0be30e27f",
-              "start": 32,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_04",
-            "text": "E na prática? | Se aprovada, a política poderá estabelecer novas orientações para a educação especial inclusiva conforme o texto final.",
-            "type": "reviewed_conditional"
-          },
-          {
-            "evidence": {
-              "end": 59,
-              "excerpt": "Educação Especial Inclusiva",
-              "field": "summary",
-              "field_sha256": "7b2c06e541395712cb51d0fa47e1f906273d0c06d8b30499affd50f0be30e27f",
-              "start": 32,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_05",
-            "text": "O que falta esclarecer? | Quais serviços e apoios serão previstos? Como serão financiados? Quem será responsável pela implementação?",
-            "type": "reviewed_questions"
-          },
-          {
-            "evidence": {
-              "end": 26,
-              "excerpt": "Apresentação de Proposição",
-              "field": "stage",
-              "field_sha256": "7ad4f3a2409e2196a7e3ccc89d81061c388c76f096e8a3e5181944076982a9b7",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462"
-            },
-            "limitation": "Registro de tramitação.",
-            "location": "card_06",
-            "text": "Apresentação de Proposição",
-            "type": "procedural_record"
-          },
-          {
-            "evidence": {
-              "end": 10,
-              "excerpt": "2026-11-18",
-              "field": "stage_date",
-              "field_sha256": "0f45d26b9bca5bab9215ee29cc079e2776099e08de9df505123e52128fe91375",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462"
-            },
-            "limitation": "Não comprova vigência.",
-            "location": "card_06",
-            "text": "2026-11-18",
-            "type": "record_date"
-          },
-          {
-            "evidence": {
-              "end": 12,
-              "excerpt": "PL 5903/2026",
-              "field": "title",
-              "field_sha256": "d13e7aa1cd382f9ec26ded2b1504474c74293e0ae2c70d11b97cc8bfbad51e3e",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462"
-            },
-            "limitation": "Fonte para leitura integral.",
-            "location": "card_07",
-            "text": "PL 5903/2026",
-            "type": "source_reference"
-          },
-          {
-            "evidence": {
-              "end": 59,
-              "excerpt": "Educação Especial Inclusiva",
-              "field": "summary",
-              "field_sha256": "7b2c06e541395712cb51d0fa47e1f906273d0c06d8b30499affd50f0be30e27f",
-              "start": 32,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462"
-            },
-            "limitation": "Paráfrase revisada.",
-            "location": "caption",
-            "text": "A ementa institui a Política Nacional de Educação Especial Inclusiva e propõe alteração na Lei nº 13.146.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 59,
-              "excerpt": "Educação Especial Inclusiva",
-              "field": "summary",
-              "field_sha256": "7b2c06e541395712cb51d0fa47e1f906273d0c06d8b30499affd50f0be30e27f",
-              "start": 32,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462"
-            },
-            "limitation": "Impacto potencial.",
-            "location": "caption",
-            "text": "Se aprovada, a política poderá estabelecer novas orientações para a educação especial inclusiva conforme o texto final.",
-            "type": "reviewed_conditional"
-          }
-        ],
-        "limitation": "Revisão editorial de narrativa controlada; não verifica impacto real ou texto integral.",
-        "policy": "didactic-v4",
-        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655462",
-        "unverified_dimensions": [
-          "legal_effect",
-          "implementation",
-          "budget",
-          "causality",
-          "social_impact"
-        ],
-        "version": "b2c418b5ca1c25"
-      },
-      "claim_matrix_sha256": "e563e1bbb2d6c2b6a7077a1c6a338f06f74b04d0888fee5da53a46f1f4c3a19e",
-      "closing_media_sha256": "2727163333c4ec24b47a0a368147093f734ab7c300db1e5e62543cb74bd7ba36",
-      "content_sha256": "70697771e5b9302520c9a11a3e0646288fa5a4e0a98a0ad47f5f1bb59c6bc89b",
-      "decision": "approved_documentary_only",
-      "id": "camara:2655462",
-      "issues": [],
-      "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-      "policy": "documentary-template-v4-didactic",
-      "version": "b2c418b5ca1c25"
-    },
-    {
-      "card_sha256": [
         "a97d229ecf8d41bf8f3c63a20b200e4e77587b2d2835c81217272c6e7c06e3e7",
         "50d93592669a3469ea47b61797677e538c717b35a84ca2ca6f35e1edc1f89740",
         "dcd74d8b8eea1d7c1a729f6cf7db3dc3f8fdf773d7a10decc20c9d6c51c6e982",
@@ -544,7 +367,7 @@
         "df44923216636e5b22145baf3b10124556c89a344896229774453364c91ba5fa",
         "ddb89ab11a5d5d3311cf41c8654852b6cbdc0ccf6a159b142931f721b68e0f2a"
       ],
-      "checked_at": "2026-11-25T12:38:48.983413-03:00",
+      "checked_at": "2026-11-25T22:00:33.656151-03:00",
       "claim_matrix": {
         "document_id": "camara:2655411",
         "entries": [
@@ -791,7 +614,7 @@
         "9ef2327508291710727ee91cd50a871fa30fd639b0a75c934f827b80cf911aa1",
         "6886fe1c5e1762503037aaad4a0e63f55bd5e9dbfbcc6579b92e3a8324c1030c"
       ],
-      "checked_at": "2026-11-25T12:38:48.983413-03:00",
+      "checked_at": "2026-11-25T22:00:33.656151-03:00",
       "claim_matrix": {
         "document_id": "camara:2655695",
         "entries": [
@@ -1038,7 +861,7 @@
         "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
         "433e7fd979e49828ec023fa0a0b845d80df4203ae6116ff5647fc997b068c0e3"
       ],
-      "checked_at": "2026-11-25T12:38:48.983413-03:00",
+      "checked_at": "2026-11-25T22:00:33.656151-03:00",
       "claim_matrix": {
         "document_id": "camara:2658959",
         "entries": [
@@ -1201,7 +1024,7 @@
         "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
         "db432a636baa79fef857208dd75f2a1309a65e635df6d69f8022db98f5055a6c"
       ],
-      "checked_at": "2026-11-25T12:38:48.983413-03:00",
+      "checked_at": "2026-11-25T22:00:33.656151-03:00",
       "claim_matrix": {
         "document_id": "camara:2659020",
         "entries": [
@@ -1357,7 +1180,7 @@
         "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
         "c6cf0409b9fae30fa4d8f35e2f2afa7bfe02b51528015bf88690e6d4afc9fea9"
       ],
-      "checked_at": "2026-11-25T12:38:48.983413-03:00",
+      "checked_at": "2026-11-25T22:00:33.656151-03:00",
       "claim_matrix": {
         "document_id": "camara:2659462",
         "entries": [
@@ -1502,6 +1325,162 @@
       "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
       "policy": "documentary-template-v4-didactic",
       "version": "b523d110082ee1"
+    },
+    {
+      "card_sha256": [
+        "b613f2d12cc866a44d0bf7dc788b4662316629b54f4bed6c612e3a3c0362c29c",
+        "6a72d662ccc2c072ec746909e44c0152ed512dfde62fa997a6d21074202b0981",
+        "50fc02cfd1d06be78856d1d7dc75f61c0346bcbdeeeff316b42bc4e81aa7c58f",
+        "5d169c1cb61307dade4157d7c9c2502d1dc1d4f4f5601b8bd486e901bd797f94",
+        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
+        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
+        "a843c672eaf5546cc51f18e5b045d32317cd30c3b36972a2a055df7a3c0d587c"
+      ],
+      "checked_at": "2026-11-25T22:00:33.656151-03:00",
+      "claim_matrix": {
+        "document_id": "camara:2659342",
+        "entries": [
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5960/2026",
+              "field": "title",
+              "field_sha256": "4a6f59c4c5fd775f7f580a770ec668118ecfb9a1b4e21dbd8ebacfd04e13a5e6",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659342"
+            },
+            "limitation": "Identifica a proposição, não sua aprovação.",
+            "location": "card_01",
+            "text": "PL 5960/2026",
+            "type": "document_identity"
+          },
+          {
+            "evidence": {
+              "end": 271,
+              "excerpt": "Institui a Política Nacional de Arborização Urbana, estabelece diretrizes para a compatibilização e o convívio seguro da vegetação com as redes de distribuição de energia elétrica, cria o Sistema Nacional de Informações sobre Arborização Urbana, e dá outras providências.",
+              "field": "summary",
+              "field_sha256": "dc6e2711a7777ecbb4db3dc9fba613512edb344c4a080cb6747a97f666f314d9",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659342"
+            },
+            "limitation": "Ementa oficial, não texto integral nem prova de impacto.",
+            "location": "card_02",
+            "text": "Institui a Política Nacional de Arborização Urbana, estabelece diretrizes para a compatibilização e o convívio seguro da vegetação com as redes de distribuição de energia elétrica, cria o Sistema Nacional de Informações sobre Arborização Urbana, e dá outras providências.",
+            "type": "attributed_excerpt"
+          },
+          {
+            "evidence": null,
+            "limitation": "Não acrescenta fatos externos.",
+            "location": "card_03",
+            "text": "A ementa resume o tema. Para conhecer condições, exceções e detalhes, consulte o texto integral.",
+            "type": "template_explanation"
+          },
+          {
+            "evidence": {
+              "end": 26,
+              "excerpt": "Apresentação de Proposição",
+              "field": "stage",
+              "field_sha256": "7ad4f3a2409e2196a7e3ccc89d81061c388c76f096e8a3e5181944076982a9b7",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659342"
+            },
+            "limitation": "Registro de tramitação na data de referência.",
+            "location": "card_04",
+            "text": "Apresentação de Proposição",
+            "type": "procedural_record"
+          },
+          {
+            "evidence": {
+              "end": 10,
+              "excerpt": "2026-11-24",
+              "field": "stage_date",
+              "field_sha256": "5d949350d8beeebceee172c92b737c60235842fd18da6c1228a5270c50b97353",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659342"
+            },
+            "limitation": "Data do andamento, não da vigência.",
+            "location": "card_04",
+            "text": "2026-11-24",
+            "type": "record_date"
+          },
+          {
+            "evidence": null,
+            "limitation": "Não atribui impacto, vigência ou financiamento.",
+            "location": "card_05",
+            "text": "A existência de um projeto não comprova aprovação, entrada em vigor, financiamento ou resultados.",
+            "type": "scope_limitation"
+          },
+          {
+            "evidence": null,
+            "limitation": "Questões para acompanhamento, não afirmações comprovadas.",
+            "location": "card_06",
+            "text": "Qual é o texto final?\n\nQuais órgãos respondem pela execução?\n\nHá custo previsto e indicadores de resultado?",
+            "type": "open_questions"
+          },
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5960/2026",
+              "field": "title",
+              "field_sha256": "4a6f59c4c5fd775f7f580a770ec668118ecfb9a1b4e21dbd8ebacfd04e13a5e6",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659342"
+            },
+            "limitation": "Referência documental.",
+            "location": "card_07",
+            "text": "PL 5960/2026",
+            "type": "source_reference"
+          },
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5960/2026",
+              "field": "title",
+              "field_sha256": "4a6f59c4c5fd775f7f580a770ec668118ecfb9a1b4e21dbd8ebacfd04e13a5e6",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659342"
+            },
+            "limitation": "Identifica a proposição.",
+            "location": "caption",
+            "text": "PL 5960/2026",
+            "type": "document_identity"
+          },
+          {
+            "evidence": {
+              "end": 10,
+              "excerpt": "2026-11-24",
+              "field": "stage_date",
+              "field_sha256": "5d949350d8beeebceee172c92b737c60235842fd18da6c1228a5270c50b97353",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659342"
+            },
+            "limitation": "Data registrada na fonte.",
+            "location": "caption",
+            "text": "2026-11-24",
+            "type": "record_date"
+          }
+        ],
+        "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
+        "policy": "documentary-claims-v2-hooks",
+        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659342",
+        "unverified_dimensions": [
+          "legal_effect",
+          "implementation",
+          "budget",
+          "causality",
+          "social_impact"
+        ],
+        "version": "32c9b9359dcd43"
+      },
+      "claim_matrix_sha256": "10e47876e22dbfde3b636e01e770113eeeeabd333fc41f62e187c051d3fce0fd",
+      "closing_media_sha256": "a843c672eaf5546cc51f18e5b045d32317cd30c3b36972a2a055df7a3c0d587c",
+      "content_sha256": "7837de55c95bd03034d90f6ed1c65ba17243d644f62ef38d5f27d74370cc8389",
+      "decision": "approved_documentary_only",
+      "id": "camara:2659342",
+      "issues": [],
+      "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
+      "policy": "documentary-template-v4-didactic",
+      "version": "32c9b9359dcd43"
     }
   ]
 }
