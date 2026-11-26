@@ -1,45 +1,34 @@
 {
-  "generated_at": "2026-11-26T01:06:35.238661-03:00",
+  "generated_at": "2026-11-26T10:48:19.051660-03:00",
   "note": "Topic co-occurrence is not corroboration of an individual claim or proof of virality.",
   "publication_authorized": false,
   "signals": [
     {
-      "id": "950a8b93d8db17954f62",
-      "published_at": "2026-11-25T20:52:00-03:00",
+      "id": "5d4a402929e0370145a4",
+      "published_at": "2026-11-26T09:47:00-03:00",
       "source": "agencia_brasil",
       "status": "discovery_only",
-      "title": "Câmara aprova protocolo nacional para combater racismo nas escolas",
+      "title": "SP: polícia faz operação contra empresa que movimentou R$ 4 bi",
       "topics": [
-        "educacao"
+        "seguranca"
       ],
-      "url": "https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2026-11/camara-aprova-protocolo-nacional-para-combater-racismo-nas-escolas"
+      "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2026-11/sp-policia-faz-operacao-contra-empresa-que-movimentou-r-4-bi"
     },
     {
-      "id": "d39b4789bf9f64171e8a",
-      "published_at": "2026-11-25T20:22:00-03:00",
+      "id": "863603322b41f6b75fdf",
+      "published_at": "2026-11-26T08:00:00-03:00",
       "source": "agencia_brasil",
       "status": "discovery_only",
-      "title": "Amcham participará de consulta dos EUA sobre tarifas ao Brasil",
+      "title": "Exposição traz ao público diferentes olhares sobre a saúde indígena",
       "topics": [
         "saude"
       ],
-      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/amcham-participara-de-consulta-dos-eua-sobre-tarifas-ao-brasil"
-    },
-    {
-      "id": "80a718ba37b925613c22",
-      "published_at": "2026-11-25T19:54:00-03:00",
-      "source": "agencia_brasil",
-      "status": "discovery_only",
-      "title": "Acusado de espancar professor André Aires no centro do Rio vira réu",
-      "topics": [
-        "educacao"
-      ],
-      "url": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-11/acusado-de-espancar-professor-andre-aires-no-centro-do-rio-vira-reu"
+      "url": "https://agenciabrasil.ebc.com.br/cultura/noticia/2026-11/exposicao-traz-ao-publico-diferentes-olhares-sobre-saude-indigena"
     }
   ],
   "sources": {
     "agencia_brasil": {
-      "eligible_signals": 3,
+      "eligible_signals": 2,
       "status": "ok"
     },
     "ibge": {
@@ -53,14 +42,14 @@
   },
   "topic_groups": [
     {
-      "document_count": 2,
+      "document_count": 1,
       "explore_links": 0,
       "source_count": 1,
       "sources": [
         "agencia_brasil"
       ],
       "status": "research_required",
-      "topic": "educacao"
+      "topic": "saude"
     },
     {
       "document_count": 1,
@@ -70,7 +59,7 @@
         "agencia_brasil"
       ],
       "status": "research_required",
-      "topic": "saude"
+      "topic": "seguranca"
     }
   ]
 }
