@@ -3,10 +3,6 @@ on:
   push:
     branches: [main]
     paths: [".github/workflows/queue-escala-v6.yml"]
-  workflow_run:
-    workflows: ["FatoVia | Hospedagem publica de imagens"]
-    types: [completed]
-    branches: [main]
   workflow_dispatch:
 permissions:
   contents: write
@@ -15,7 +11,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   queue:
-    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    # Exact asset is already hosted; avoid repeated Pages events cancelling a pending queue run.
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
