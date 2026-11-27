@@ -1,12 +1,16 @@
 name: FatoVia | V6 factory isolated
 on:
   push:
-    branches: ['feature/v6-reel-factory-20261127']
+    branches: ['feature/v6-reel-factory-20261127', 'fix/reel-factory-recovery-20261127', main]
+    paths: ['.github/workflows/reel-factory.yml', 'fatovia/reel_factory.py', 'fatovia/reel_render.py', 'fatovia/reel_release.py']
   schedule:
     - cron: '5 12 * * *'
   workflow_dispatch:
 permissions:
   contents: read
+concurrency:
+  group: fatovia-reel-factory-${{ github.ref }}
+  cancel-in-progress: false
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -20,7 +24,7 @@ jobs:
       - run: python -m compileall -q fatovia
       - run: python -m unittest discover -s tests -v
   draft:
-    if: github.ref == 'refs/heads/main' && github.event_name != 'push'
+    if: github.ref == 'refs/heads/main'
     needs: test
     runs-on: ubuntu-latest
     timeout-minutes: 35
@@ -33,6 +37,16 @@ jobs:
           python-version: '3.12'
       - run: python -m pip install -r requirements.txt
       - run: python -m fatovia.reel_factory --out reel-draft
+      - name: Reportar elegibilidade e custo sem expor credenciais
+        env:
+          FREE_VERIFIED: ${{ vars.FATOVIA_GEMINI_FREE_TIER_VERIFIED }}
+          API_KEY: ${{ secrets.FATOVIA_GEMINI_API_KEY }}
+        run: |
+          python - <<'PY'
+          import os, json
+          from pathlib import Path
+          print(json.dumps({"reviewed_plan":Path("reel-draft/plan.json").is_file(),"free_tier_verified":os.getenv("FREE_VERIFIED")=="true","api_key_configured":bool(os.getenv("API_KEY")),"publish_allowed":False}))
+          PY
       - name: Restore audio cache
         if: hashFiles('reel-draft/script.txt') != ''
         uses: actions/cache@v4

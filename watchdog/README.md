@@ -20,3 +20,6 @@ A matching root `wrangler.jsonc` is provided, pointing only at `watchdog/src/ind
 
 ## Diagnostic revision v2
 The initial real cron invocation emitted `supervision_failed`, without a usable cause. Version `watchdog-diagnostic-v2` emits a controlled stage and reason, never raw API response or exception. In observation mode, every cron can test authenticated GETs even outside publication windows; successful snapshots emit `github_read: ok`. Active mode still skips outside candidate hours and requires explicit activation. A 20-run page is rejected if it may omit runs from the last day. Local tests use mocked transport, not a live token. The real deployment log is required before activation. Publication gap aligned with the existing Python executor (3 hours); its other guards remain authoritative.
+
+## V4: recuperação da fábrica
+Entre 09h20 e 10h59 BRT, verifica a ausência de execução diária do gerador V6, sem despachar se já houver tentativa, Reel pronto, Reel publicado ou blackout. Exige política V6 ativa e variável de custo zero explicitamente verdadeira. Uma falha ou ausência de credencial não permite usar outro serviço pago. A entrega continua independente.

@@ -559,3 +559,13 @@ test("production min gap and no replay",()=>assert.equal(decideProduction({...pr
 test("production rejects excluded source",()=>assert.equal(decideProduction({...prodState,pending:[{...prodState.pending[0],id:"camara:9"}]},prodPolicy,[],new Date("2026-11-27T11:25:00Z"),"true").reason,"no_eligible_candidate"));
 test("production requires explicit reel review",()=>assert.equal(decideProduction(prodState,{...prodPolicy,approved_items:[]},[],new Date("2026-11-27T17:25:00Z"),"true").reason,"no_eligible_candidate"));
 test("production failure and transaction don't dispatch",()=>{const n=new Date("2026-11-27T11:25:00Z");assert.equal(decideProduction({...prodState,publishing:{id:"camara:8"}},prodPolicy,[],n,"true").action,"attention");assert.equal(decideProduction(prodState,prodPolicy,[{status:"completed",event:"schedule",created_at:"2026-11-27T11:07:00Z",conclusion:"failure"}],n,"true").action,"attention")});
+
+import {factoryDecision} from "./src/index.mjs";
+const factoryNow=new Date("2026-11-27T12:25:00Z");
+const factoryState={published:[],reel_pending:[]};
+const factoryPolicy={status:"approved",max_spend_brl:0,v6_authorization:{status:"enabled_after_ci",owner_profile_approved:true,max_spend_brl:0}};
+test("factory missing schedule and verified cost gate",()=>assert.equal(factoryDecision(factoryState,factoryPolicy,[],factoryNow,"true").action,"dispatch"));
+test("factory never runs on unverified cost",()=>assert.equal(factoryDecision(factoryState,factoryPolicy,[],factoryNow,"false").reason,"gemini_free_tier_unverified"));
+test("factory one attempt daily",()=>assert.equal(factoryDecision(factoryState,factoryPolicy,[{status:"completed",event:"schedule",created_at:"2026-11-27T12:05:00Z",conclusion:"failure"}],factoryNow,"true").reason,"factory_attempt_already_recorded"));
+test("factory does not render already queued reel",()=>assert.equal(factoryDecision({...factoryState,reel_pending:[{status:"ready"}]},factoryPolicy,[],factoryNow,"true").reason,"reel_already_queued"));
+test("factory respects approved daily reel",()=>assert.equal(factoryDecision({...factoryState,published:[{format:"reel",published_at:"2026-11-27T08:30:00-03:00"}]},factoryPolicy,[],factoryNow,"true").reason,"reel_already_published"));

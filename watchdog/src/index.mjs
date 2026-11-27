@@ -67,7 +67,7 @@ export function decideProduction(state,policy,runs,now,gate){
 
 const BASE="https://api.github.com/repos/thayanneoliveira/Fatovia";
 const WORKFLOW="/actions/workflows/publish.yml";
-export const REVISION="watchdog-production-v3";
+export const REVISION="watchdog-production-v4";
 
 class CheckError extends Error {
   constructor(stage,reason){super(reason);this.stage=stage;this.reason=reason;}
@@ -100,9 +100,43 @@ async function file(env,stage,path,ref){
   try {return JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(obj.content.replace(/\s/g,"")),x=>x.charCodeAt(0))));}
   catch {fail(stage,"invalid_file_json_or_base64");}
 }
+
+const FACTORY="/actions/workflows/reel-factory.yml";
+export function factoryDecision(state,policy,runs,now,freeTier){
+  const local=new Date(now.getTime()-10800000),day=local.toISOString().slice(0,10),h=local.getUTCHours(),m=local.getUTCMinutes();
+  const out=(reason,action="observe")=>({reason,action,day,target:"reel_factory"});
+  if(!(h===9&&m>=20||h===10))return out("outside_factory_recovery_window");
+  if(policy.status!=="approved"||policy.max_spend_brl!==0||policy.v6_authorization?.status!=="enabled_after_ci"||policy.v6_authorization?.owner_profile_approved!==true||policy.v6_authorization?.max_spend_brl!==0)return out("factory_policy_not_approved","attention");
+  if(!Array.isArray(state.reel_pending)||!Array.isArray(state.published)||!Array.isArray(runs))return out("invalid_factory_snapshot","attention");
+  if(state.reel_pending.some(x=>x.status==="ready"))return out("reel_already_queued");
+  if(state.published.some(x=>x.format==="reel"&&Number.isFinite(Date.parse(x.published_at))&&new Date(Date.parse(x.published_at)-10800000).toISOString().slice(0,10)===day))return out("reel_already_published");
+  if((state.blackout_dates||[]).includes(day))return out("blackout");
+  if(runs.some(r=>r.status!=="completed"))return out("factory_active");
+  if(runs.some(r=>r.event!=="push"&&Number.isFinite(Date.parse(r.created_at))&&new Date(Date.parse(r.created_at)-10800000).toISOString().slice(0,10)===day))return out("factory_attempt_already_recorded");
+  if(freeTier!=="true")return out("gemini_free_tier_unverified","attention");
+  return out("factory_schedule_missed","dispatch");
+}
+async function recoverFactory(env,mode,now){
+  const branch=await request(env,"factory_branch","/branches/main"),ref=branch?.commit?.sha;
+  if(typeof ref!=="string"||!/^[a-f0-9]{40}$/i.test(ref))fail("factory_branch","invalid_branch_response");
+  const [state,policy,runList]=await Promise.all([file(env,"factory_state","data/state.json",ref),file(env,"factory_policy","data/multiformat_experiment.json",ref),request(env,"factory_runs",FACTORY+"/runs?branch=main&per_page=30")]);
+  let gate;
+  try{gate=await request(env,"gemini_free_tier","/actions/variables/FATOVIA_GEMINI_FREE_TIER_VERIFIED");}catch(e){if(e instanceof CheckError&&e.reason==="github_http_404")gate={value:"false"};else throw e;}
+  const d=factoryDecision(state,policy,runList?.workflow_runs,now,gate?.value);
+  if(d.action!=="dispatch")return {revision:REVISION,...d,mode,github_read:"ok"};
+  if(mode!=="active")return {revision:REVISION,...d,mode,action:"observe",would_dispatch:true};
+  const latest=await request(env,"factory_branch_recheck","/branches/main");
+  if(latest?.commit?.sha!==ref)return {revision:REVISION,action:"observe",reason:"factory_state_changed",mode};
+  const g=await request(env,"gemini_free_tier_recheck","/actions/variables/FATOVIA_GEMINI_FREE_TIER_VERIFIED");
+  if(g?.value!=="true")return {revision:REVISION,action:"attention",reason:"gemini_free_tier_unverified",mode};
+  await request(env,"factory_dispatch",FACTORY+"/dispatches","POST",{ref:"main"});
+  return {revision:REVISION,...d,mode,action:"dispatch_requested"};
+}
+
 export async function supervise(env,now=new Date()){
   try {
     const h=new Date(now.getTime()-10800000).getUTCHours();
+    if([9,10].includes(h))return await recoverFactory(env,env.WATCHDOG_MODE==="active"?"active":"observe",now);
     const candidate=[8,11,14,17,20].includes(h);
     if(!candidate&&env.WATCHDOG_MODE==="active")return {revision:REVISION,action:"observe",reason:"outside_candidate_hours"};
     // During commissioning, exercise real read permissions even outside publishing windows.
