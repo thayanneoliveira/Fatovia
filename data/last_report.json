@@ -1,7 +1,9 @@
 {
   "already_published": 17,
-  "errors": [],
-  "found": 25,
+  "errors": [
+    "Radar indisponível (ConnectTimeout)"
+  ],
+  "found": 0,
   "pending": 8,
   "publication": "DISABLED",
   "recommended_daily_limit": 4,
@@ -12,18 +14,9 @@
     21
   ],
   "scan_diagnostics": {
-    "detail_status_used": 25,
-    "expired_or_unsealed_removed": 0,
-    "history_errors": 0,
-    "history_http_errors": {},
-    "history_missing": 0,
-    "invalid": 0,
-    "records": 100,
-    "stale": 0,
-    "topic_matches": 26,
-    "verified": 25
+    "expired_or_unsealed_removed": 0
   },
   "selected": [],
   "staged": 0,
-  "timestamp": "2026-11-27T16:38:07.102846-03:00"
+  "timestamp": "2026-11-27T16:40:49.725888-03:00"
 }
