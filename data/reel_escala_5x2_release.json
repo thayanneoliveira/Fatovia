@@ -1,0 +1,30 @@
+{
+  "item": {
+    "id": "reel:escala-5x2-20261127",
+    "version": "88cf094dc5a501",
+    "format": "reel",
+    "status": "ready",
+    "title": "O preço do pão e a escala 5x2",
+    "topics": [
+      "economia",
+      "trabalho"
+    ],
+    "editorial_score": 90,
+    "voice": "Algenib",
+    "visual_revision": "V6",
+    "source_urls": [
+      "https://www.gov.br/trabalho-e-emprego/pt-br/noticias-e-conteudo/2026/novembro/governo-do-brasil-regulamenta-jornada-de-trabalho-na-escala-5x2",
+      "https://www.gov.br/fundacentro/pt-br/comunicacao/noticias/noticias/2026/novembro/implementacao-de-jornada-de-40h-e-de-escala-5x2-passa-pela-negociacao-coletiva"
+    ],
+    "video_sha256": "88cf094dc5a501c54510b7127347a194292a087bde6155dcca5a63af30e1da9d",
+    "video_path": "docs/media/reels/FatoVia_Escala_5x2_Algenib_V6_Teste.mp4",
+    "caption": "O que o preço do pão tem a ver com a sua jornada de trabalho? 🍞\n\nA transição para a escala 5x2, prevista na EC 141/2026 e regulamentada em novembro, começa em 16/12/2026, sem redução salarial. Há regras específicas e negociação coletiva para determinados regimes.\n\nAna e Carlos são personagens de uma simulação. As 52 folgas adicionais representam uma comparação teórica de 52 semanas regulares, não uma previsão individual. Custos, preços e produtividade podem variar.\n\n💬 O que um dia a mais de descanso mudaria na sua rotina?\n💬 Como uma pequena padaria poderia se adaptar sem comprometer sua operação?\nConte sua perspectiva nos comentários, com respeito aos diferentes pontos de vista.\n\nFontes: MTE (19/11/2026, atualizado em 27/11) e Fundacentro (25/11/2026), em gov.br.\nID editorial: reel:escala-5x2-20261127/88cf094dc5a501\n#Escala5x2 #JornadaDeTrabalho #EconomiaBrasileira #DireitosTrabalhistas #FatoVia"
+  },
+  "artifact_run": 46041693358,
+  "video_sha256": "88cf094dc5a501c54510b7127347a194292a087bde6155dcca5a63af30e1da9d",
+  "bytes": 5095041,
+  "source_review_date": "2026-11-27",
+  "owner_approval": "User approved exact V6 episode and explicitly requested Instagram delivery on 2026-11-27",
+  "review_scope": "Owner audiovisual acceptance; assistant factual review against MTE/Fundacentro and technical verification of exact MP4; hypothetical effects and 52-week illustration disclosed in caption.",
+  "publish_only_existing_window": true
+}

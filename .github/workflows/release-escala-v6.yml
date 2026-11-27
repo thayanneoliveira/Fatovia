@@ -1,0 +1,43 @@
+name: "FatoVia | Entrega V6 aprovada"
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/release-escala-v6.yml']
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: fatovia-v6-release-escala
+  cancel-in-progress: false
+jobs:
+  stage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          name: escala-5x2-v6-algenib-lab
+          run-id: '46041693358'
+          github-token: ${{ github.token }}
+          path: ${{ runner.temp }}/approved-v6
+      - run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+          python -m fatovia.release_escala_v6 host "$RUNNER_TEMP/approved-v6"
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/media/reels/FatoVia_Escala_5x2_Algenib_V6_Teste.mp4
+          if ! git diff --cached --quiet; then
+            git commit -m "Host exact approved V6 Reel"
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
