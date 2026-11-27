@@ -72,6 +72,10 @@ def quota(state,now,fmt,item=None):
                    and (item or {}).get("id")=="reel:inflacao-precos-20261118"
                    and (item or {}).get("version")=="2bd9004ce9f4cc"
                    and (item or {}).get("video_sha256")=="f6148c6aef61b768dd28f2f4d35551cf6752e62cc9290a9b15d8d5e786916220")
+    extraordinary=extraordinary or (fmt=="reel" and local.date()==date(2026,11,27)
+                   and (item or {}).get("id")=="reel:escala-5x2-20261127"
+                   and (item or {}).get("version")=="88cf094dc5a501"
+                   and (item or {}).get("video_sha256")=="88cf094dc5a501c54510b7127347a194292a087bde6155dcca5a63af30e1da9d")
     if (slot(now)!=fmt and not extraordinary) or local.date().isoformat() in state.get("blackout_dates",[]):return False
     history=[]
     for p in state.get("published",[]):

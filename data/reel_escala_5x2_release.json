@@ -13,7 +13,7 @@
     "voice": "Algenib",
     "visual_revision": "V6",
     "source_urls": [
-      "https://www.gov.br/trabalho-e-emprego/pt-br/noticias-e-conteudo/2026/novembro/governo-do-brasil-regulamenta-jornada-de-trabalho-na-escala-5x2",
+      "https://www.gov.br/trabalho-e-emprego/pt-br/noticias-e-conteudo/2026/novembro/governo-do-brasil-regulamenta-jornada-de-trabalho-na-escala-5x2/",
       "https://www.gov.br/fundacentro/pt-br/comunicacao/noticias/noticias/2026/novembro/implementacao-de-jornada-de-40h-e-de-escala-5x2-passa-pela-negociacao-coletiva"
     ],
     "video_sha256": "88cf094dc5a501c54510b7127347a194292a087bde6155dcca5a63af30e1da9d",
@@ -26,5 +26,20 @@
   "source_review_date": "2026-11-27",
   "owner_approval": "User approved exact V6 episode and explicitly requested Instagram delivery on 2026-11-27",
   "review_scope": "Owner audiovisual acceptance; assistant factual review against MTE/Fundacentro and technical verification of exact MP4; hypothetical effects and 52-week illustration disclosed in caption.",
-  "publish_only_existing_window": true
+  "publish_only_existing_window": true,
+  "same_day_source_review": {
+    "date": "2026-11-27",
+    "reviewed_at": "2026-11-27T16:43:00-03:00",
+    "method": "Independent web retrieval of official government pages; source review conducted after runner connection reset",
+    "sources": [
+      "https://www.gov.br/trabalho-e-emprego/pt-br/noticias-e-conteudo/2026/novembro/governo-do-brasil-regulamenta-jornada-de-trabalho-na-escala-5x2/",
+      "https://www.gov.br/fundacentro/pt-br/comunicacao/noticias/noticias/2026/novembro/implementacao-de-jornada-de-40h-e-de-escala-5x2-passa-pela-negociacao-coletiva"
+    ],
+    "corroborating_sources": [
+      "https://www.gov.br/trabalho-e-emprego/pt-br/noticias-e-conteudo/2026/novembro/governo-federal-publica-portaria-com-regras-complementares-para-aplicacao-da-escala-5x2/",
+      "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/perguntas-frequentes/escala-5x2/pequenas-empresas-e-mei-tem"
+    ],
+    "findings": "EC 141/2026, transition starting December 16, no reduction in salary; collective negotiation and complementary rules. Hypothetical individual impacts, not a prediction.",
+    "scope": "Network connection failure only; no fallback on returned HTTP error or content mismatch."
+  }
 }

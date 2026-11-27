@@ -172,3 +172,13 @@ class V6ProfileTests(unittest.TestCase):
         self.policy.update(status="approved",daily_caps=mf.CAPS,max_spend_brl=0,start_date="2026-11-18",approved_logo={"path":"assets/fatovia-approved.png","sha256":"a"*64},approved_items=[])
         with patch.object(mf,"transition_authorized",return_value=True),patch.object(mf,"quota",return_value=True),patch.object(mf,"safe_file",return_value=True),patch.object(mf,"sha_file",return_value="a"*64),patch.object(mf,"approved_logo",return_value=object()):
             self.assertFalse(mf.allowed({"published":[]},self.item,NOW,self.policy))
+
+
+class ExtraordinaryV6Tests(unittest.TestCase):
+    def test_exact_one_day_window(self):
+        now=datetime.fromisoformat("2026-11-27T16:43:00-03:00")
+        item={"id":"reel:escala-5x2-20261127","version":"88cf094dc5a501","video_sha256":"88cf094dc5a501c54510b7127347a194292a087bde6155dcca5a63af30e1da9d"}
+        self.assertTrue(mf.quota({"published":[]},now,"reel",item))
+        self.assertFalse(mf.quota({"published":[]},now.replace(day=28),"reel",item))
+        self.assertFalse(mf.quota({"published":[]},now,"reel",{**item,"video_sha256":"0"*64}))
+        self.assertFalse(mf.quota({"published":[{"published_at":now.replace(hour=14).isoformat(),"format":"reel"}]},now,"reel",item))

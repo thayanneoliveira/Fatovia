@@ -174,6 +174,9 @@ def prepare(state, now, cfg):
             isolated=[]
         if isolated:save(STATE_PATH,state)
         candidates=[p for p in state.get("pending",[])+state.get("reel_pending",[]) if mf.allowed(state,p,now) and (mf.reel_qualified(p) if mf.kind(p)=="reel" else qualified(p,now) and approved(p,now))]
+        target=os.getenv("FATOVIA_EXACT_REEL_TARGET","")
+        if target:
+            candidates=[p for p in candidates if p["id"]==target and mf.kind(p)=="reel"]
         candidates.sort(key=lambda p:(-p.get("editorial_score",0),p["id"]))
         if not candidates:return {"action":"idle","reason":"Nenhuma midia multiformato com marca, evidencia, revisao e cota validadas","isolated":isolated}
         item=candidates[0]
