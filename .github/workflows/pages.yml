@@ -1,6 +1,7 @@
 name: "FatoVia | Hospedagem publica de imagens"
 on:
   workflow_dispatch:
+  workflow_call:
   push:
     branches: [main]
     paths:

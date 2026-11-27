@@ -1,0 +1,102 @@
+name: FatoVia | Entrega generica V6 revisada
+on:
+  push:
+    branches: [main]
+    paths: ['data/reel_review_request.json']
+  workflow_dispatch:
+permissions: {}
+concurrency:
+  group: fatovia-reel-release
+  cancel-in-progress: false
+jobs:
+  host:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      actions: read
+    outputs:
+      run_id: ${{ steps.request.outputs.run_id }}
+      review_sha: ${{ steps.request.outputs.review_sha }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate review request and provenance
+        id: request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          python -m fatovia.reel_review_request --request data/reel_review_request.json --output "$GITHUB_OUTPUT"
+          run=$(python -c 'import json; print(json.load(open("data/reel_review_request.json"))["run_id"])')
+          gh api "repos/$GITHUB_REPOSITORY/actions/runs/$run" | python -m fatovia.reel_review_request --provenance
+      - uses: actions/download-artifact@v4
+        with:
+          name: reel-v6-draft
+          run-id: ${{ steps.request.outputs.run_id }}
+          github-token: ${{ github.token }}
+          path: ${{ runner.temp }}/reel-bundle
+      - run: python -m pip install -r requirements.txt
+      - name: Independently reviewed exact file only
+        run: |
+          set -euo pipefail
+          python -m fatovia.reel_release --bundle "$RUNNER_TEMP/reel-bundle" --review data/reel_review_request.json --stage host
+          git config user.name fatovia-bot
+          git config user.email 'fatovia-bot@users.noreply.github.com'
+          git add docs/media/reels/
+          if ! git diff --cached --quiet; then
+            git commit -m 'Host independently reviewed V6 reel'
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
+  pages:
+    needs: host
+    permissions:
+      contents: read
+      actions: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/pages.yml
+  queue:
+    needs: [host, pages]
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      actions: read
+    concurrency:
+      group: fatovia-state
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@v4
+        with:
+          name: reel-v6-draft
+          run-id: ${{ needs.host.outputs.run_id }}
+          github-token: ${{ github.token }}
+          path: ${{ runner.temp }}/reel-bundle
+      - run: python -m pip install -r requirements.txt
+      - name: Verify immutable review and hosted bytes before queueing
+        env:
+          REVIEW_SHA: ${{ needs.host.outputs.review_sha }}
+        run: |
+          set -euo pipefail
+          test "$(sha256sum data/reel_review_request.json | cut -d' ' -f1)" = "$REVIEW_SHA"
+          python -m fatovia.reel_release --bundle "$RUNNER_TEMP/reel-bundle" --review data/reel_review_request.json --stage queue
+          git config user.name fatovia-bot
+          git config user.email 'fatovia-bot@users.noreply.github.com'
+          git add data/state.json data/multiformat_experiment.json
+          git diff --cached --quiet && exit 0
+          git commit -m 'Queue independently reviewed V6 reel after public SHA verification'
+          git push origin HEAD:main
