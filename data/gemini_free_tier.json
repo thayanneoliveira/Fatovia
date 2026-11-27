@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "status": "verified_free_tier",
+  "project": "FatoVia-TTS",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Algenib",
+  "max_spend_brl": 0,
+  "billing": "not_configured_as_shown",
+  "checked_date": "2026-11-27",
+  "evidence": "Owner-provided Google AI Studio API Keys screenshot displays Free Tier and Configure billing. Key suffix matched in runner before requests; no full credential or screenshot retained in public repository.",
+  "key_suffix_sha256": "5e9bdf50e1979adb017d080655aedabc2ed0683b360916b0bddda39ea93a67c0",
+  "conditions": "Do not enable billing. Revoke this attestation before changing project, billing or key. Explicit false repository variable vetoes calls. No paid fallback."
+}

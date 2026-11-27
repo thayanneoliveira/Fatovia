@@ -569,3 +569,7 @@ test("factory never runs on unverified cost",()=>assert.equal(factoryDecision(fa
 test("factory one attempt daily",()=>assert.equal(factoryDecision(factoryState,factoryPolicy,[{status:"completed",event:"schedule",created_at:"2026-11-27T12:05:00Z",conclusion:"failure"}],factoryNow,"true").reason,"factory_attempt_already_recorded"));
 test("factory does not render already queued reel",()=>assert.equal(factoryDecision({...factoryState,reel_pending:[{status:"ready"}]},factoryPolicy,[],factoryNow,"true").reason,"reel_already_queued"));
 test("factory respects approved daily reel",()=>assert.equal(factoryDecision({...factoryState,published:[{format:"reel",published_at:"2026-11-27T08:30:00-03:00"}]},factoryPolicy,[],factoryNow,"true").reason,"reel_already_published"));
+
+import {attestedFreeTier} from "./src/index.mjs";
+const evidence={schema:1,status:"verified_free_tier",project:"FatoVia-TTS",billing:"not_configured_as_shown",max_spend_brl:0,model:"gemini-3.8-flash-tts",voice:"Algenib",key_suffix_sha256:"a".repeat(64)};
+test("free evidence and veto",()=>{assert(attestedFreeTier(evidence));assert(!attestedFreeTier(evidence,"false"));assert(!attestedFreeTier({...evidence,status:"revoked"}));assert(!attestedFreeTier({...evidence,billing:"enabled"}));});

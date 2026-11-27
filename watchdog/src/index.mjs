@@ -67,7 +67,7 @@ export function decideProduction(state,policy,runs,now,gate){
 
 const BASE="https://api.github.com/repos/thayanneoliveira/Fatovia";
 const WORKFLOW="/actions/workflows/publish.yml";
-export const REVISION="watchdog-production-v4";
+export const REVISION="watchdog-production-v5";
 
 class CheckError extends Error {
   constructor(stage,reason){super(reason);this.stage=stage;this.reason=reason;}
@@ -116,19 +116,27 @@ export function factoryDecision(state,policy,runs,now,freeTier){
   if(freeTier!=="true")return out("gemini_free_tier_unverified","attention");
   return out("factory_schedule_missed","dispatch");
 }
+export function attestedFreeTier(a,override=""){
+  return !!(a&&a.schema===1&&a.status==="verified_free_tier"&&a.project==="FatoVia-TTS"&&a.billing==="not_configured_as_shown"&&a.max_spend_brl===0&&a.model==="gemini-3.8-flash-tts"&&a.voice==="Algenib"&&/^[a-f0-9]{64}$/.test(a.key_suffix_sha256||"")&&["","true"].includes(override));
+}
+async function factoryCostGate(env,ref){
+  let a,override="";
+  try{a=await file(env,"gemini_evidence","data/gemini_free_tier.json",ref);}catch(e){if(e instanceof CheckError&&e.reason==="github_http_404")return "false";throw e;}
+  try{const v=await request(env,"gemini_override","/actions/variables/FATOVIA_GEMINI_FREE_TIER_VERIFIED");override=v?.value;if(typeof override!=="string")return "false";}catch(e){if(!(e instanceof CheckError&&e.reason==="github_http_404"))throw e;}
+  return attestedFreeTier(a,override)?"true":"false";
+}
 async function recoverFactory(env,mode,now){
   const branch=await request(env,"factory_branch","/branches/main"),ref=branch?.commit?.sha;
   if(typeof ref!=="string"||!/^[a-f0-9]{40}$/i.test(ref))fail("factory_branch","invalid_branch_response");
   const [state,policy,runList]=await Promise.all([file(env,"factory_state","data/state.json",ref),file(env,"factory_policy","data/multiformat_experiment.json",ref),request(env,"factory_runs",FACTORY+"/runs?branch=main&per_page=30")]);
-  let gate;
-  try{gate=await request(env,"gemini_free_tier","/actions/variables/FATOVIA_GEMINI_FREE_TIER_VERIFIED");}catch(e){if(e instanceof CheckError&&e.reason==="github_http_404")gate={value:"false"};else throw e;}
-  const d=factoryDecision(state,policy,runList?.workflow_runs,now,gate?.value);
+  const gate=await factoryCostGate(env,ref);
+  const d=factoryDecision(state,policy,runList?.workflow_runs,now,gate);
   if(d.action!=="dispatch")return {revision:REVISION,...d,mode,github_read:"ok"};
   if(mode!=="active")return {revision:REVISION,...d,mode,action:"observe",would_dispatch:true};
   const latest=await request(env,"factory_branch_recheck","/branches/main");
   if(latest?.commit?.sha!==ref)return {revision:REVISION,action:"observe",reason:"factory_state_changed",mode};
-  const g=await request(env,"gemini_free_tier_recheck","/actions/variables/FATOVIA_GEMINI_FREE_TIER_VERIFIED");
-  if(g?.value!=="true")return {revision:REVISION,action:"attention",reason:"gemini_free_tier_unverified",mode};
+  const g=await factoryCostGate(env,ref);
+  if(g!=="true")return {revision:REVISION,action:"attention",reason:"gemini_free_tier_unverified",mode};
   await request(env,"factory_dispatch",FACTORY+"/dispatches","POST",{ref:"main"});
   return {revision:REVISION,...d,mode,action:"dispatch_requested"};
 }

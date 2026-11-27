@@ -1,8 +1,8 @@
 name: FatoVia | V6 factory isolated
 on:
   push:
-    branches: ['feature/v6-reel-factory-20261127', 'fix/reel-factory-recovery-20261127', main]
-    paths: ['.github/workflows/reel-factory.yml', 'fatovia/reel_factory.py', 'fatovia/reel_render.py', 'fatovia/reel_release.py']
+    branches: ['feature/v6-reel-factory-20261127', 'fix/reel-factory-recovery-20261127', 'fix/gemini-free-tier-attestation-20261127', main]
+    paths: ['.github/workflows/reel-factory.yml', 'fatovia/reel_factory.py', 'fatovia/reel_render.py', 'fatovia/reel_release.py', 'fatovia/free_tier.py', 'data/gemini_free_tier.json']
   schedule:
     - cron: '5 12 * * *'
   workflow_dispatch:
@@ -37,16 +37,12 @@ jobs:
           python-version: '3.12'
       - run: python -m pip install -r requirements.txt
       - run: python -m fatovia.reel_factory --out reel-draft
-      - name: Reportar elegibilidade e custo sem expor credenciais
+      - name: Verify owner free tier evidence against masked key suffix
+        id: cost
         env:
-          FREE_VERIFIED: ${{ vars.FATOVIA_GEMINI_FREE_TIER_VERIFIED }}
-          API_KEY: ${{ secrets.FATOVIA_GEMINI_API_KEY }}
-        run: |
-          python - <<'PY'
-          import os, json
-          from pathlib import Path
-          print(json.dumps({"reviewed_plan":Path("reel-draft/plan.json").is_file(),"free_tier_verified":os.getenv("FREE_VERIFIED")=="true","api_key_configured":bool(os.getenv("API_KEY")),"publish_allowed":False}))
-          PY
+          FREE_OVERRIDE: ${{ vars.FATOVIA_GEMINI_FREE_TIER_VERIFIED }}
+          FATOVIA_GEMINI_API_KEY: ${{ secrets.FATOVIA_GEMINI_API_KEY }}
+        run: python -m fatovia.free_tier
       - name: Restore audio cache
         if: hashFiles('reel-draft/script.txt') != ''
         uses: actions/cache@v4
@@ -54,9 +50,9 @@ jobs:
           path: reel-audio-cache
           key: v6-algenib-${{ hashFiles('reel-draft/script.txt') }}
       - name: Render only when free-tier attestation is configured
-        if: hashFiles('reel-draft/plan.json') != '' && vars.FATOVIA_GEMINI_FREE_TIER_VERIFIED == 'true'
+        if: hashFiles('reel-draft/plan.json') != '' && steps.cost.outputs.verified == 'true'
         env:
-          FATOVIA_GEMINI_FREE_TIER_VERIFIED: ${{ vars.FATOVIA_GEMINI_FREE_TIER_VERIFIED }}
+          FATOVIA_GEMINI_FREE_TIER_VERIFIED: ${{ steps.cost.outputs.verified }}
           FATOVIA_GEMINI_API_KEY: ${{ secrets.FATOVIA_GEMINI_API_KEY }}
         run: |
           sudo apt-get update -qq
