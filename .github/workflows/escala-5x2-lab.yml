@@ -5,6 +5,7 @@ on:
     paths: ['.github/workflows/escala-5x2-lab.yml']
 permissions:
   contents: read
+  actions: read
 jobs:
   reel:
     if: github.run_attempt == 1
@@ -23,14 +24,27 @@ jobs:
           sudo apt-get install -y ffmpeg fonts-lato
           python -m pip install pillow numpy faster-whisper
           python -m unittest discover -s tests -p test_narration.py -v
-      - name: Generate Algenib once on previously verified dedicated free-tier project
-        env:
-          FATOVIA_GEMINI_API_KEY: ${{ secrets.FATOVIA_GEMINI_API_KEY }}
-          FATOVIA_GEMINI_FREE_TIER_VERIFIED: 'true'
+      - name: Recover original Algenib audio without another API request
+        uses: actions/download-artifact@v4
+        with:
+          name: escala-5x2-v5-algenib-lab
+          run-id: '46038999686'
+          github-token: ${{ github.token }}
+          path: ${{ runner.temp }}/algenib
+      - name: Verify recovered WAV against original seal
         run: |
-          set -euo pipefail
-          umask 077
-          python -m fatovia.narration --script data/reel_lab_escala_5x2.txt --cache "$RUNNER_TEMP/algenib"
+          python - <<'PY'
+          import hashlib,json,os
+          from pathlib import Path
+          root=Path(os.environ['RUNNER_TEMP'])/'algenib'
+          wavs=list(root.rglob('*.wav'))
+          assert len(wavs)==1
+          wav=wavs[0]
+          seal=json.loads(wav.with_suffix('.json').read_text())
+          assert seal['voice']=='Algenib'
+          assert hashlib.sha256(wav.read_bytes()).hexdigest()==seal['sha256']
+          print('Verified Algenib duration:',seal['duration_seconds'])
+          PY
       - name: Render isolated V5 test and verify decoding
         run: |
           set -euo pipefail

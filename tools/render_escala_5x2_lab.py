@@ -2,6 +2,7 @@
 import sys, math, json, re, bisect, subprocess, hashlib, difflib, unicodedata, wave
 from pathlib import Path
 from PIL import Image
+import numpy as np
 from faster_whisper import WhisperModel
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'fatovia'/'v5_legacy'))
@@ -93,7 +94,9 @@ def main():
     with wave.open(str(audio)) as w:duration=w.getnframes()/w.getframerate()
     if not 20<=duration<=118.4:raise ValueError('Narração fora do limite; não acelerar, truncar ou substituir.')
     model=WhisperModel('small',device='cpu',compute_type='int8',cpu_threads=4)
-    segments,_=model.transcribe(str(audio),language='pt',word_timestamps=True,beam_size=5)
+    pcm=subprocess.check_output(['ffmpeg','-v','error','-i',str(audio),'-ac','1','-ar','16000','-f','f32le','-'])
+    waveform=np.frombuffer(pcm,dtype='<f4').copy()
+    segments,_=model.transcribe(waveform,language='pt',word_timestamps=True,beam_size=5)
     words=[dict(text=w.word.strip(),start=float(w.start),end=float(w.end),probability=float(w.probability)) for seg in segments for w in seg.words if norm(w.word) and w.end>w.start]
     ref=[];owners=[]
     for i,line in enumerate(lines):
