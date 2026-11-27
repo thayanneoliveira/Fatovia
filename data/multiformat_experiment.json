@@ -1,197 +1,114 @@
 {
-  "schema": 1,
-  "experiment_id": "multiformato-20261118",
-  "start_date": "2026-11-18",
-  "timezone": "America/Sao_Paulo",
-  "status": "approved",
+  "approved_items": [
+    {
+      "audio_review": "approved",
+      "checked_at": "2026-11-27T16:48:14.732693-03:00",
+      "closing_media_sha256": "88cf094dc5a501c54510b7127347a194292a087bde6155dcca5a63af30e1da9d",
+      "closing_review": "approved",
+      "content_sha256": "ca8c26157a071e38bf96423a2b60a1221d72cd282bfd36e81cec529d107739d4",
+      "editorial_review": "approved",
+      "format": "reel",
+      "id": "reel:escala-5x2-20261127",
+      "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
+      "review_reference": "https://github.com/thayanneoliveira/Fatovia/actions/runs/46041693358",
+      "review_scope": "Owner audiovisual acceptance; assistant factual review against MTE/Fundacentro and technical verification of exact MP4; hypothetical effects and 52-week illustration disclosed in caption.",
+      "source_review": "approved",
+      "technical_review": "approved",
+      "version": "88cf094dc5a501",
+      "video_sha256": "88cf094dc5a501c54510b7127347a194292a087bde6155dcca5a63af30e1da9d",
+      "visual_review": "approved"
+    }
+  ],
+  "approved_logo": {
+    "confirmed_date": "2026-11-17",
+    "path": "assets/fatovia-approved.png",
+    "sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
+    "size": [
+      240,
+      240
+    ],
+    "source": "owner-confirmed @fato.via avatar; transparent exterior mask only",
+    "source_sha256": "89b88cb9182576dc3336964295baaf322985d9bc43be61cc2425b8f3e082ca56"
+  },
+  "constraints": {
+    "approved_logo_required_on_closing": true,
+    "duplicate_prevention": true,
+    "editorial_policy": "The owner-approved inflation Reel at its exact SHA256 requires no repeat human content/source review. Retain file identity, hosting, approved logo, cover, deduplication, quotas and transaction gates.",
+    "editorial_reference": "V6 multiperspectiva",
+    "exact_media_hash_binding": true,
+    "independent_review": true,
+    "meta_auth_policy": "Use existing production credential checks; no full rehomologation unless an actual authentication failure occurs. Never bypass existing auth failure stop.",
+    "no_minimum_count": true,
+    "no_paid_services": true,
+    "reconcile_uncertain_posts": true,
+    "reel_cover_editorial": "Escolher automaticamente um frame do próprio vídeo com conflito humano e legibilidade no feed. Não exigir arquivo de capa externo nem aprovação editorial adicional. Usar thumb_offset apenas quando suportado e testado pela rota Meta; caso contrário usar a miniatura automática da plataforma. Logo aprovada permanece obrigatória no encerramento do vídeo.",
+    "source_revalidation": true,
+    "visual_reference": "V6",
+    "voice": "Algenib"
+  },
+  "criteria_authorization": {
+    "activation_requirement": "CI success for criteria authorization and integration; existing independent reviews and all production gates remain mandatory",
+    "carousel": true,
+    "daily_caps": {
+      "carousel": 4,
+      "reel": 1
+    },
+    "max_spend_brl": 0,
+    "reel": false,
+    "status": "staged",
+    "v5_pipeline_homologated": false
+  },
   "daily_caps": {
     "carousel": 4,
     "reel": 1
-  },
-  "max_spend_brl": 0,
-  "proposed_slots": [
-    {
-      "hour": 8,
-      "type": "carousel",
-      "candidate": "camara:2653940"
-    },
-    {
-      "hour": 11,
-      "type": "carousel",
-      "candidate": "camara:2653811"
-    },
-    {
-      "hour": 14,
-      "type": "reel",
-      "candidate": "reel:inflacao-precos-20261118",
-      "title": "Se a inflação caiu, por que tudo continua caro?",
-      "date": "2026-11-18"
-    },
-    {
-      "hour": 17,
-      "type": "carousel",
-      "candidate": "camara:2653822"
-    },
-    {
-      "hour": 20,
-      "type": "carousel",
-      "candidate": "camara:2653946"
-    }
-  ],
-  "constraints": {
-    "no_minimum_count": true,
-    "approved_logo_required_on_closing": true,
-    "voice": "Algenib",
-    "visual_reference": "V6",
-    "editorial_reference": "V6 multiperspectiva",
-    "source_revalidation": true,
-    "independent_review": true,
-    "exact_media_hash_binding": true,
-    "duplicate_prevention": true,
-    "reconcile_uncertain_posts": true,
-    "no_paid_services": true,
-    "reel_cover_editorial": "Escolher automaticamente um frame do próprio vídeo com conflito humano e legibilidade no feed. Não exigir arquivo de capa externo nem aprovação editorial adicional. Usar thumb_offset apenas quando suportado e testado pela rota Meta; caso contrário usar a miniatura automática da plataforma. Logo aprovada permanece obrigatória no encerramento do vídeo.",
-    "meta_auth_policy": "Use existing production credential checks; no full rehomologation unless an actual authentication failure occurs. Never bypass existing auth failure stop.",
-    "editorial_policy": "The owner-approved inflation Reel at its exact SHA256 requires no repeat human content/source review. Retain file identity, hosting, approved logo, cover, deduplication, quotas and transaction gates."
   },
   "deployment_blockers": [
     "Reel de Maria foi hospedado com hash de arquivo e A/V aprovados; publicação Meta ainda depende de item autorizado na fila, capa pública e revisão documental/independente do conteúdo.",
     "Geração autônoma genérica de episódios V6 e hospedagem por item ainda requerem integração; o padrão V6 + Algenib está aprovado, sem dispensar revisão e mídia verificável."
   ],
+  "experiment_id": "multiformato-20261118",
+  "max_spend_brl": 0,
   "notes": "MP4 publico validado via GitHub Pages HTTPS, fluxo elementar audio/video identico ao MP4 aprovado; arquivo produzido por remux sem recodificar; nenhuma publicacao Meta confirmada.",
-  "approved_logo": {
-    "path": "assets/fatovia-approved.png",
-    "sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-    "source": "owner-confirmed @fato.via avatar; transparent exterior mask only",
-    "source_sha256": "89b88cb9182576dc3336964295baaf322985d9bc43be61cc2425b8f3e082ca56",
-    "size": [
-      240,
-      240
+  "owner_per_content_authorization": {
+    "carousel_ids": [
+      "camara:2653947",
+      "camara:2653944",
+      "camara:2654174",
+      "camara:2654371",
+      "camara:2655462",
+      "camara:2655411",
+      "camara:2655695"
     ],
-    "confirmed_date": "2026-11-17"
-  },
-  "approved_items": [],
-  "reel_editorial_override": {
-    "date": "2026-11-18",
-    "candidate": "reel:inflacao-precos-20261118",
-    "excluded_candidates": [
-      "creche-v5",
+    "daily_caps": {
+      "carousel": 4,
+      "reel": 1
+    },
+    "decision": "authorized_by_owner_pending_operational_validation",
+    "excluded_ids": [
+      "camara:2654163",
       "reel:creche-v5"
     ],
-    "instruction": "Nao publicar o episodio da creche em 18/11, inclusive como contingencia. Arquivar como referencia V5. Priorizar o novo tema. Sem Reel se nao passar todos os controles; nao substituir por tema da creche.",
-    "status": "public_host_verified_pending_independent_reel_release",
-    "brief": {
-      "hook": "Por que seu dinheiro parece valer cada vez menos?",
-      "mechanism": "Uma desaceleracao positiva dos precos nao e uma queda do nivel de precos. IPCA e media ponderada de uma cesta; a experiencia individual pode divergir.",
-      "official_data": {
-        "reference_month": "2026-10",
-        "monthly_ipca_pct": 0.14,
-        "previous_month": "2026-09",
-        "previous_month_pct": 0.82,
-        "rolling_12_month_pct": 4.63,
-        "access_date": "2026-11-17",
-        "source": "https://www.ibge.gov.br/indicadores/pnad"
-      },
-      "sources": [
-        "https://www.ibge.gov.br/explica/inflacao.php",
-        "https://www.ibge.gov.br/indicadores/pnad"
-      ],
-      "visual_beats": [
-        "Maria compra alimentos com R$100; depois precisa deixar um produto no caixa.",
-        "Notícia da inflação menor, expectativa e novo total de R$111,10.",
-        "Carro desacelera sem voltar.",
-        "IPCA mensal setembro 0,82% e outubro 0,14%, fonte IBGE.",
-        "Mesma nota e carrinho reduzido; poder de compra.",
-        "Duas perguntas e encerramento homologado."
-      ],
-      "guardrails": [
-        "Revalidar dados IBGE antes da publicacao.",
-        "Nao dizer que todos os precos subiram nem atribuir causalidade ou responsabilidade politica sem evidencia.",
-        "Nao apresentar simulacao numerica como dado real.",
-        "Santa R, V5, legendas progressivas e fechamento aprovado; custo adicional zero.",
-        "Somente a versao Maria v2 aprovada com SHA256 exato; jamais publicar Ana ou Creche como substituicao. Revalidar o IPCA mensal de setembro e outubro de 2026 em fonte oficial antes de liberar a midia."
-      ],
-      "narrative": "Maria: identificação antes do conceito, surpresa no caixa, metáfora do carro, dados IBGE, poder de compra e perguntas de fiscalização.",
-      "script_revision": "maria-v2",
-      "disclosure": "Dramatização com valores ilustrativos informada na descrição da publicação; no vídeo, contexto hipotético natural e dados oficiais com período e fonte.",
-      "cover": {
-        "status": "selected_approved_pending_hosting",
-        "source": "Maria v2; opening scene 0, progress 0.80, render argument t=1.8 (not final video timestamp)",
-        "visual": "Maria surpresa diante da mesma cesta; nota de R$100 e total R$111,10",
-        "hook": "Por que seu dinheiro parece valer cada vez menos?",
-        "preview_sha256": "4e266466a5e91977e15e565f4ad1bef09981dbbfc99de6f6b49d7c49c6c3608c",
-        "dimensions": [
-          1080,
-          1920
-        ],
-        "notes": "Valores ilustrativos da dramatizacao. Selecionar imagem de abertura equivalente na midia final e verificar recortes do feed; nao usar encerramento como capa. Hospedagem e suporte a cover_url/thumb_offset ainda precisam de validacao."
-      }
-    },
-    "owner_approval": {
-      "date": "2026-11-18",
-      "decision": "approved_for_publication",
-      "revision": "maria-v2",
-      "filename": "FatoVia_Maria_Reel_Revisado.mp4",
-      "sha256": "f367280115d72645b712c55883c1e71838e6e6973dd7e4e1887dee46182b9170",
-      "bytes": 18725124,
-      "duration_seconds": 109.585,
-      "dimensions": [
-        1080,
-        1920
-      ],
-      "fps": 24,
-      "video_codec": "h264",
-      "audio_codec": "aac",
-      "audio_sample_rate": 48000,
-      "decode_check": "passed",
-      "cover_sha256": "4e266466a5e91977e15e565f4ad1bef09981dbbfc99de6f6b49d7c49c6c3608c",
-      "voice": "Santa-R-1.0",
-      "publication_candidate_only": true
-    },
-    "file_verification": {
-      "verified_on": "2026-11-21",
-      "status": "original_approved_file_accessible_in_chat_not_uploaded_to_public_host",
-      "filename": "FatoVia_Maria_Reel_Revisado.mp4",
-      "exact_sha256": "f367280115d72645b712c55883c1e71838e6e6973dd7e4e1887dee46182b9170",
-      "byte_count": 18725124,
-      "seconds": 109.585,
-      "width": 1080,
-      "height": 1920,
-      "fps": 24,
-      "video_codec": "h264",
-      "audio_codec": "aac",
-      "audio_hz": 48000,
-      "verified_against_owner_approval": true,
-      "public_url": null,
-      "publication_confirmed": false,
-      "note": "Original approval file is accessible in conversation runtime; runtime has no outbound upload connection, GitHub and Cloudflare connectors cannot ingest local bytes through current tool interface. Do not mark hosted or published. Do not request user to regenerate or resend this file."
-    },
-    "hosted_media": {
-      "status": "verified_stream_identical_remux_hosted",
-      "path": "docs/media/reels/FatoVia_Maria_Reel_Revisado.mp4",
-      "sha256": "f6148c6aef61b768dd28f2f4d35551cf6752e62cc9290a9b15d8d5e786916220",
-      "bytes": 18725140,
-      "source_mov_sha256": "680ddcd3d0144cbc7dc332bbf04fa9a01d46449bd8cd831eea6d494f1cad8f91",
-      "original_approved_sha256": "f367280115d72645b712c55883c1e71838e6e6973dd7e4e1887dee46182b9170",
-      "video_stream_sha256": "630f22001b64332a0a675491465ad8fc62d577e1759e311731e7af6e206e702b",
-      "audio_stream_sha256": "05f5fd69e2937a07de5706b5f408da09f5b64379f530a5fcf6f78ab28b054359",
-      "remux": "ffmpeg stream copy, no re-encode",
-      "created_at": "2026-11-21T13:40:28.281518+00:00",
-      "published_to_instagram": false,
-      "public_url": "https://thayanneoliveira.github.io/Fatovia/media/reels/FatoVia_Maria_Reel_Revisado.mp4",
-      "public_verification": {
-        "run_id": 44910150851,
-        "verified_at": "2026-11-21T13:42:35Z",
-        "http_status": 200,
-        "content_type": "video/mp4",
-        "downloaded_size": 18725140,
-        "downloaded_sha256": "f6148c6aef61b768dd28f2f4d35551cf6752e62cc9290a9b15d8d5e786916220"
-      }
-    }
+    "instruction": "Publicar todos os itens individualmente elegiveis, ate os limites diarios, somente pela rota homologada. Esta autorizacao nao substitui gates tecnicos nem altera approved_items antes de teste de integracao.",
+    "integration_status": "pending_schema_and_publisher_tests",
+    "max_spend_brl": 0,
+    "reel_ids": [
+      "reel:inflacao-precos-20261118"
+    ],
+    "requires": [
+      "source_revalidation",
+      "media_integrity",
+      "approved_logo",
+      "destination_account",
+      "duplicate_prevention",
+      "quota_check",
+      "checkpoint",
+      "meta_reconciliation",
+      "tested_publisher_route"
+    ]
   },
-  "status_note": "Owner authorized automated publishing; operational eligibility remains subject to transition_authorized, verified audit, exact-media hashes, quotas and Meta reconciliation. This status alone does not authorize a POST.",
   "pilot_transition": {
     "authorized": true,
+    "decision": "Owner-approved guarded phase transition after direct Meta 8/8 reconciliation; no item is authorized absent all per-media gates",
     "pilot_id": "documentary-20261115",
     "review_reference": "https://github.com/thayanneoliveira/Fatovia/actions/runs/45095164195",
     "reviewed_media_ids": [
@@ -203,75 +120,177 @@
       "18151573990488064",
       "18111958382223422",
       "18185273779443646"
-    ],
-    "decision": "Owner-approved guarded phase transition after direct Meta 8/8 reconciliation; no item is authorized absent all per-media gates"
+    ]
   },
-  "owner_per_content_authorization": {
-    "decision": "authorized_by_owner_pending_operational_validation",
-    "instruction": "Publicar todos os itens individualmente elegiveis, ate os limites diarios, somente pela rota homologada. Esta autorizacao nao substitui gates tecnicos nem altera approved_items antes de teste de integracao.",
-    "carousel_ids": [
-      "camara:2653947",
-      "camara:2653944",
-      "camara:2654174",
-      "camara:2654371",
-      "camara:2655462",
-      "camara:2655411",
-      "camara:2655695"
-    ],
-    "reel_ids": [
-      "reel:inflacao-precos-20261118"
-    ],
-    "excluded_ids": [
-      "camara:2654163",
+  "proposed_slots": [
+    {
+      "candidate": "camara:2653940",
+      "hour": 8,
+      "type": "carousel"
+    },
+    {
+      "candidate": "camara:2653811",
+      "hour": 11,
+      "type": "carousel"
+    },
+    {
+      "candidate": "reel:inflacao-precos-20261118",
+      "date": "2026-11-18",
+      "hour": 14,
+      "title": "Se a inflação caiu, por que tudo continua caro?",
+      "type": "reel"
+    },
+    {
+      "candidate": "camara:2653822",
+      "hour": 17,
+      "type": "carousel"
+    },
+    {
+      "candidate": "camara:2653946",
+      "hour": 20,
+      "type": "carousel"
+    }
+  ],
+  "reel_editorial_override": {
+    "brief": {
+      "cover": {
+        "dimensions": [
+          1080,
+          1920
+        ],
+        "hook": "Por que seu dinheiro parece valer cada vez menos?",
+        "notes": "Valores ilustrativos da dramatizacao. Selecionar imagem de abertura equivalente na midia final e verificar recortes do feed; nao usar encerramento como capa. Hospedagem e suporte a cover_url/thumb_offset ainda precisam de validacao.",
+        "preview_sha256": "4e266466a5e91977e15e565f4ad1bef09981dbbfc99de6f6b49d7c49c6c3608c",
+        "source": "Maria v2; opening scene 0, progress 0.80, render argument t=1.8 (not final video timestamp)",
+        "status": "selected_approved_pending_hosting",
+        "visual": "Maria surpresa diante da mesma cesta; nota de R$100 e total R$111,10"
+      },
+      "disclosure": "Dramatização com valores ilustrativos informada na descrição da publicação; no vídeo, contexto hipotético natural e dados oficiais com período e fonte.",
+      "guardrails": [
+        "Revalidar dados IBGE antes da publicacao.",
+        "Nao dizer que todos os precos subiram nem atribuir causalidade ou responsabilidade politica sem evidencia.",
+        "Nao apresentar simulacao numerica como dado real.",
+        "Santa R, V5, legendas progressivas e fechamento aprovado; custo adicional zero.",
+        "Somente a versao Maria v2 aprovada com SHA256 exato; jamais publicar Ana ou Creche como substituicao. Revalidar o IPCA mensal de setembro e outubro de 2026 em fonte oficial antes de liberar a midia."
+      ],
+      "hook": "Por que seu dinheiro parece valer cada vez menos?",
+      "mechanism": "Uma desaceleracao positiva dos precos nao e uma queda do nivel de precos. IPCA e media ponderada de uma cesta; a experiencia individual pode divergir.",
+      "narrative": "Maria: identificação antes do conceito, surpresa no caixa, metáfora do carro, dados IBGE, poder de compra e perguntas de fiscalização.",
+      "official_data": {
+        "access_date": "2026-11-17",
+        "monthly_ipca_pct": 0.14,
+        "previous_month": "2026-09",
+        "previous_month_pct": 0.82,
+        "reference_month": "2026-10",
+        "rolling_12_month_pct": 4.63,
+        "source": "https://www.ibge.gov.br/indicadores/pnad"
+      },
+      "script_revision": "maria-v2",
+      "sources": [
+        "https://www.ibge.gov.br/explica/inflacao.php",
+        "https://www.ibge.gov.br/indicadores/pnad"
+      ],
+      "visual_beats": [
+        "Maria compra alimentos com R$100; depois precisa deixar um produto no caixa.",
+        "Notícia da inflação menor, expectativa e novo total de R$111,10.",
+        "Carro desacelera sem voltar.",
+        "IPCA mensal setembro 0,82% e outubro 0,14%, fonte IBGE.",
+        "Mesma nota e carrinho reduzido; poder de compra.",
+        "Duas perguntas e encerramento homologado."
+      ]
+    },
+    "candidate": "reel:inflacao-precos-20261118",
+    "date": "2026-11-18",
+    "excluded_candidates": [
+      "creche-v5",
       "reel:creche-v5"
     ],
-    "daily_caps": {
-      "carousel": 4,
-      "reel": 1
+    "file_verification": {
+      "audio_codec": "aac",
+      "audio_hz": 48000,
+      "byte_count": 18725124,
+      "exact_sha256": "f367280115d72645b712c55883c1e71838e6e6973dd7e4e1887dee46182b9170",
+      "filename": "FatoVia_Maria_Reel_Revisado.mp4",
+      "fps": 24,
+      "height": 1920,
+      "note": "Original approval file is accessible in conversation runtime; runtime has no outbound upload connection, GitHub and Cloudflare connectors cannot ingest local bytes through current tool interface. Do not mark hosted or published. Do not request user to regenerate or resend this file.",
+      "public_url": null,
+      "publication_confirmed": false,
+      "seconds": 109.585,
+      "status": "original_approved_file_accessible_in_chat_not_uploaded_to_public_host",
+      "verified_against_owner_approval": true,
+      "verified_on": "2026-11-21",
+      "video_codec": "h264",
+      "width": 1080
     },
-    "max_spend_brl": 0,
-    "requires": [
-      "source_revalidation",
-      "media_integrity",
-      "approved_logo",
-      "destination_account",
-      "duplicate_prevention",
-      "quota_check",
-      "checkpoint",
-      "meta_reconciliation",
-      "tested_publisher_route"
-    ],
-    "integration_status": "pending_schema_and_publisher_tests"
-  },
-  "criteria_authorization": {
-    "status": "staged",
-    "max_spend_brl": 0,
-    "daily_caps": {
-      "carousel": 4,
-      "reel": 1
+    "hosted_media": {
+      "audio_stream_sha256": "05f5fd69e2937a07de5706b5f408da09f5b64379f530a5fcf6f78ab28b054359",
+      "bytes": 18725140,
+      "created_at": "2026-11-21T13:40:28.281518+00:00",
+      "original_approved_sha256": "f367280115d72645b712c55883c1e71838e6e6973dd7e4e1887dee46182b9170",
+      "path": "docs/media/reels/FatoVia_Maria_Reel_Revisado.mp4",
+      "public_url": "https://thayanneoliveira.github.io/Fatovia/media/reels/FatoVia_Maria_Reel_Revisado.mp4",
+      "public_verification": {
+        "content_type": "video/mp4",
+        "downloaded_sha256": "f6148c6aef61b768dd28f2f4d35551cf6752e62cc9290a9b15d8d5e786916220",
+        "downloaded_size": 18725140,
+        "http_status": 200,
+        "run_id": 44910150851,
+        "verified_at": "2026-11-21T13:42:35Z"
+      },
+      "published_to_instagram": false,
+      "remux": "ffmpeg stream copy, no re-encode",
+      "sha256": "f6148c6aef61b768dd28f2f4d35551cf6752e62cc9290a9b15d8d5e786916220",
+      "source_mov_sha256": "680ddcd3d0144cbc7dc332bbf04fa9a01d46449bd8cd831eea6d494f1cad8f91",
+      "status": "verified_stream_identical_remux_hosted",
+      "video_stream_sha256": "630f22001b64332a0a675491465ad8fc62d577e1759e311731e7af6e206e702b"
     },
-    "carousel": true,
-    "reel": false,
-    "v5_pipeline_homologated": false,
-    "activation_requirement": "CI success for criteria authorization and integration; existing independent reviews and all production gates remain mandatory"
+    "instruction": "Nao publicar o episodio da creche em 18/11, inclusive como contingencia. Arquivar como referencia V5. Priorizar o novo tema. Sem Reel se nao passar todos os controles; nao substituir por tema da creche.",
+    "owner_approval": {
+      "audio_codec": "aac",
+      "audio_sample_rate": 48000,
+      "bytes": 18725124,
+      "cover_sha256": "4e266466a5e91977e15e565f4ad1bef09981dbbfc99de6f6b49d7c49c6c3608c",
+      "date": "2026-11-18",
+      "decision": "approved_for_publication",
+      "decode_check": "passed",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "duration_seconds": 109.585,
+      "filename": "FatoVia_Maria_Reel_Revisado.mp4",
+      "fps": 24,
+      "publication_candidate_only": true,
+      "revision": "maria-v2",
+      "sha256": "f367280115d72645b712c55883c1e71838e6e6973dd7e4e1887dee46182b9170",
+      "video_codec": "h264",
+      "voice": "Santa-R-1.0"
+    },
+    "status": "public_host_verified_pending_independent_reel_release"
   },
+  "schema": 1,
+  "start_date": "2026-11-18",
+  "status": "approved",
+  "status_note": "Owner authorized automated publishing; operational eligibility remains subject to transition_authorized, verified audit, exact-media hashes, quotas and Meta reconciliation. This status alone does not authorize a POST.",
+  "timezone": "America/Sao_Paulo",
   "v6_authorization": {
-    "status": "enabled_after_ci",
-    "owner_profile_approved": true,
     "approved_date": "2026-11-27",
-    "reference_run": "https://github.com/thayanneoliveira/Fatovia/actions/runs/46041693358",
-    "max_spend_brl": 0,
+    "autonomous_generation": "not_yet_generic; V6 episode renderer validated; new episodes require new scene plans and factual review",
     "daily_caps": {
       "carousel": 4,
       "reel": 1
     },
-    "scope": "Aprovação do padrão audiovisual, não liberação automática de conteúdo sem revisão individual.",
+    "max_spend_brl": 0,
     "nonblocking_improvements": [
       "estética",
       "naturalidade de movimento",
       "transições",
       "experimentos visuais"
     ],
+    "owner_profile_approved": true,
+    "production_isolation": "Falha de Reel não impede carrosséis. Melhorias opcionais não reprovam mídia que atenda ao padrão estável.",
+    "reference_run": "https://github.com/thayanneoliveira/Fatovia/actions/runs/46041693358",
     "required_per_item": [
       "source_review",
       "editorial_review",
@@ -286,7 +305,7 @@
       "deduplication",
       "transaction_reconciliation"
     ],
-    "production_isolation": "Falha de Reel não impede carrosséis. Melhorias opcionais não reprovam mídia que atenda ao padrão estável.",
-    "autonomous_generation": "not_yet_generic; V6 episode renderer validated; new episodes require new scene plans and factual review"
+    "scope": "Aprovação do padrão audiovisual, não liberação automática de conteúdo sem revisão individual.",
+    "status": "enabled_after_ci"
   }
 }
