@@ -148,3 +148,27 @@ class MixedTests(unittest.TestCase):
             pub.prepare(state,NOW,CFG);self.assertEqual(pub.reconcile(state,NOW,CFG,client=client)["action"],"recovered")
         self.assertFalse(client.calls)
 if __name__=="__main__":unittest.main()
+
+
+class V6ProfileTests(unittest.TestCase):
+    def setUp(self):
+        self.item={**REEL,"id":"reel:new-v6","caption":"Narrativa revisada sobre o tema e suas fontes verificáveis.\nID editorial: reel:new-v6/1234567890abcd","voice":"Algenib","visual_revision":"V6"}
+        self.policy={"owner_per_content_authorization":{"decision":"authorized_by_owner_pending_operational_validation","max_spend_brl":0,"daily_caps":mf.CAPS,"excluded_ids":["reel:creche-v5"],"carousel_ids":["camara:123"],"reel_ids":["reel:inflacao-precos-20261118"]},"v6_authorization":{"status":"enabled_after_ci","owner_profile_approved":True,"max_spend_brl":0,"daily_caps":mf.CAPS}}
+    def test_profiles_are_exact_pairs(self):
+        self.assertTrue(mf.reel_qualified(self.item))
+        self.assertTrue(mf.reel_qualified(REEL))
+        for voice,rev in [("Algenib","V5"),("Santa-R-1.0","V6"),("unknown","V6")]:
+            self.assertFalse(mf.reel_qualified({**self.item,"voice":voice,"visual_revision":rev}))
+    def test_v6_scope_and_carousel_independence(self):
+        self.assertTrue(mf.owner_authorized(self.item,self.policy))
+        self.policy["v6_authorization"]["status"]="staged"
+        self.assertFalse(mf.owner_authorized(self.item,self.policy))
+        self.assertTrue(mf.owner_authorized({"id":"camara:123"},self.policy))
+        self.assertTrue(mf.owner_authorized({"id":"reel:inflacao-precos-20261118","format":"reel"},self.policy))
+    def test_v6_exclusions_and_review_still_required(self):
+        self.policy["owner_per_content_authorization"]["excluded_ids"].append(self.item["id"])
+        self.assertFalse(mf.owner_authorized(self.item,self.policy))
+        self.policy["owner_per_content_authorization"]["excluded_ids"].remove(self.item["id"])
+        self.policy.update(status="approved",daily_caps=mf.CAPS,max_spend_brl=0,start_date="2026-11-18",approved_logo={"path":"assets/fatovia-approved.png","sha256":"a"*64},approved_items=[])
+        with patch.object(mf,"transition_authorized",return_value=True),patch.object(mf,"quota",return_value=True),patch.object(mf,"safe_file",return_value=True),patch.object(mf,"sha_file",return_value="a"*64),patch.object(mf,"approved_logo",return_value=object()):
+            self.assertFalse(mf.allowed({"published":[]},self.item,NOW,self.policy))

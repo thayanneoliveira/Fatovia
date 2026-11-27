@@ -96,7 +96,7 @@ def reel_qualified(item):
             re.fullmatch(r"[a-f0-9]{14}",item.get("version","")) and
             isinstance(item.get("caption"),str) and 50<=len(item["caption"])<=2200 and
             f'ID editorial: {item["id"]}/{item["version"]}' in item["caption"].splitlines() and
-            item.get("voice")=="Santa-R-1.0" and item.get("visual_revision")=="V5")
+            (item.get("voice"),item.get("visual_revision")) in (("Santa-R-1.0","V5"),("Algenib","V6")))
 def reel_fingerprint(item):
     keys=("id","version","caption","video_path","voice","visual_revision","source_urls","script_sha256")
     return hashlib.sha256(json.dumps({k:item[k] for k in keys},sort_keys=True,ensure_ascii=False,separators=(",",":")).encode()).hexdigest()
@@ -116,6 +116,12 @@ def owner_authorized(item, policy):
     ids = authorization.get("reel_ids" if fmt == "reel" else "carousel_ids", [])
     if isinstance(ids, list) and ids.count(item_id) == 1:
         return True
+    # V6 authorization is isolated from the existing carousel and legacy gates.
+    if fmt=="reel" and (item.get("voice"),item.get("visual_revision"))==("Algenib","V6"):
+        v6=policy.get("v6_authorization") or {}
+        return (v6.get("status")=="enabled_after_ci" and v6.get("owner_profile_approved") is True
+                and v6.get("max_spend_brl")==0 and v6.get("daily_caps")==CAPS
+                and bool(re.fullmatch(r"reel:[a-z0-9_-]+",item_id)))
     criteria = policy.get("criteria_authorization") or {}
     if criteria.get("status") != "enabled_after_ci" or criteria.get("max_spend_brl") != 0 or criteria.get("daily_caps") != CAPS:
         return False
@@ -162,6 +168,7 @@ def allowed(state,item,now,policy=None):
                     and hosted.get("path")==item.get("video_path")
                     and hosted.get("sha256")==item.get("video_sha256")
                     and hosted.get("video_stream_sha256") and hosted.get("audio_stream_sha256")
+                    and (item.get("voice"),item.get("visual_revision"))==("Santa-R-1.0","V5")
                     and reel_qualified(item) and item.get("source_urls")
                     and valid_hash(item.get("script_sha256"))):return False
             path=video_path(item)
