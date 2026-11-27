@@ -7,7 +7,13 @@
   "max_spend_brl": 0,
   "billing": "not_configured_as_shown",
   "checked_date": "2026-11-27",
-  "evidence": "Owner-provided Google AI Studio screenshot displays Free Tier and Configure billing. Runner must match the masked suffix before any request; runtime match not yet confirmed. No full credential or screenshot retained in the public repository.",
+  "evidence": "Owner screenshot shows Free Tier and Configure billing; owner confirmed the repository key is the same after rotation. Runtime diagnostics reported a match within the limited visually ambiguous mask set. Only that set is allowed. Suffix comparison is corroboration, not cryptographic proof of project identity; no billing changes authorized.",
   "key_suffix_sha256": "5e9bdf50e1979adb017d080655aedabc2ed0683b360916b0bddda39ea93a67c0",
-  "conditions": "Do not enable billing. Revoke this attestation before changing project, billing or key. Explicit false repository variable vetoes calls. No paid fallback."
+  "conditions": "Do not enable billing. Revoke this attestation before changing project, billing or key. Explicit false repository variable vetoes calls. No paid fallback.",
+  "mask_alternative_sha256": [
+    "67b9382564c1f24e1f99a7bb1061792e3bf9baece31dc0a20d15a3168e7dff3c",
+    "8521030da394e1d7ced3ce16c740f12c161601f96fe6a5e57115edaafef22cf0",
+    "4c6d3235f59767e32fd6f392b46b138f67bae55d8b96e61bec726a27f6ad902f"
+  ],
+  "mask_alternatives_owner_confirmed": true
 }
