@@ -1,15 +1,182 @@
 {
-  "generated_at": "2026-11-27T12:08:41.616997-03:00",
+  "generated_at": "2026-11-27T16:33:22.099334-03:00",
   "limitations": "Independent rule-based check of the official source, approved template and bytes; not general factual or semantic review.",
   "policy": "documentary-template-v4-didactic",
   "reviews": [
     {
-      "checked_at": "2026-11-27T12:08:41.616997-03:00",
-      "decision": "rejected",
-      "id": "camara:2653947",
-      "issues": [
-        "source_unavailable_or_changed"
+      "card_sha256": [
+        "19375029174d87bffb94b3648a33dd9b28228739893ef30e89052249e3bda0f8",
+        "4ef26375a31c3ce57a31f2da8fdd29e238837412e472afee9052e113ddad0614",
+        "d2416baafddb2278987a17369646d6c7808f340ea82c8adddef4be0d7ad15b1f",
+        "345f36221827e28f35e334399dd4533f9c033469c0ab5165197c74c4e8b4f50b",
+        "ce9ffc0beb09d50a4eb879cac05f43944fa2333f2a03de8228cc0fa0a020f092",
+        "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
+        "e26f2733173e8a3d39d9e4adeed438c195bc5163d30fb101ba6459ffbeed0939"
       ],
+      "checked_at": "2026-11-27T16:33:22.099334-03:00",
+      "claim_matrix": {
+        "document_id": "camara:2653947",
+        "entries": [
+          {
+            "evidence": {
+              "end": 157,
+              "excerpt": "juros sobre o capital próprio",
+              "field": "summary",
+              "field_sha256": "943ac2ff63618ede42eae3084abc580f2420192174f7f535c8e232c14f994cb0",
+              "start": 128,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_01",
+            "text": "Juros sobre capital próprio: qual imposto pode mudar? | A proposta pretende elevar a alíquota do imposto retido na fonte sobre juros sobre capital próprio.",
+            "type": "reviewed_question"
+          },
+          {
+            "evidence": {
+              "end": 157,
+              "excerpt": "juros sobre o capital próprio",
+              "field": "summary",
+              "field_sha256": "943ac2ff63618ede42eae3084abc580f2420192174f7f535c8e232c14f994cb0",
+              "start": 128,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_02",
+            "text": "O que diz a proposta? | A mudança proposta é elevar a alíquota do Imposto de Renda Retido na Fonte incidente sobre juros sobre capital próprio.",
+            "type": "reviewed_proposal"
+          },
+          {
+            "evidence": {
+              "end": 157,
+              "excerpt": "juros sobre o capital próprio",
+              "field": "summary",
+              "field_sha256": "943ac2ff63618ede42eae3084abc580f2420192174f7f535c8e232c14f994cb0",
+              "start": 128,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_03",
+            "text": "Qual é o mecanismo? | Se a alíquota aplicada a um pagamento aumenta, a retenção inicial sobre esse pagamento também pode aumentar.",
+            "type": "reviewed_mechanism"
+          },
+          {
+            "evidence": {
+              "end": 157,
+              "excerpt": "juros sobre o capital próprio",
+              "field": "summary",
+              "field_sha256": "943ac2ff63618ede42eae3084abc580f2420192174f7f535c8e232c14f994cb0",
+              "start": 128,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_04",
+            "text": "E na prática? | Se o texto for aprovado, a tributação dessa modalidade de pagamento poderá mudar. A ementa não informa o efeito final para cada contribuinte.",
+            "type": "reviewed_conditional"
+          },
+          {
+            "evidence": {
+              "end": 157,
+              "excerpt": "juros sobre o capital próprio",
+              "field": "summary",
+              "field_sha256": "943ac2ff63618ede42eae3084abc580f2420192174f7f535c8e232c14f994cb0",
+              "start": 128,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_05",
+            "text": "O que falta esclarecer? | Qual seria a nova alíquota? Quando valeria? Quem suportaria o custo? É necessário consultar o texto integral.",
+            "type": "reviewed_questions"
+          },
+          {
+            "evidence": {
+              "end": 26,
+              "excerpt": "Apresentação de Proposição",
+              "field": "stage",
+              "field_sha256": "7ad4f3a2409e2196a7e3ccc89d81061c388c76f096e8a3e5181944076982a9b7",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
+            },
+            "limitation": "Registro de tramitação.",
+            "location": "card_06",
+            "text": "Apresentação de Proposição",
+            "type": "procedural_record"
+          },
+          {
+            "evidence": {
+              "end": 10,
+              "excerpt": "2026-11-13",
+              "field": "stage_date",
+              "field_sha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
+            },
+            "limitation": "Não comprova vigência.",
+            "location": "card_06",
+            "text": "2026-11-13",
+            "type": "record_date"
+          },
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5855/2026",
+              "field": "title",
+              "field_sha256": "e6a5ec7e04166382d82f569f7c11afffca5e6dc96f630561573638dd35069352",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
+            },
+            "limitation": "Fonte para leitura integral.",
+            "location": "card_07",
+            "text": "PL 5855/2026",
+            "type": "source_reference"
+          },
+          {
+            "evidence": {
+              "end": 157,
+              "excerpt": "juros sobre o capital próprio",
+              "field": "summary",
+              "field_sha256": "943ac2ff63618ede42eae3084abc580f2420192174f7f535c8e232c14f994cb0",
+              "start": 128,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
+            },
+            "limitation": "Paráfrase revisada.",
+            "location": "caption",
+            "text": "A mudança proposta é elevar a alíquota do Imposto de Renda Retido na Fonte incidente sobre juros sobre capital próprio.",
+            "type": "reviewed_proposal"
+          },
+          {
+            "evidence": {
+              "end": 157,
+              "excerpt": "juros sobre o capital próprio",
+              "field": "summary",
+              "field_sha256": "943ac2ff63618ede42eae3084abc580f2420192174f7f535c8e232c14f994cb0",
+              "start": 128,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
+            },
+            "limitation": "Impacto potencial.",
+            "location": "caption",
+            "text": "Se o texto for aprovado, a tributação dessa modalidade de pagamento poderá mudar. A ementa não informa o efeito final para cada contribuinte.",
+            "type": "reviewed_conditional"
+          }
+        ],
+        "limitation": "Revisão editorial de narrativa controlada; não verifica impacto real ou texto integral.",
+        "policy": "didactic-v4",
+        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947",
+        "unverified_dimensions": [
+          "legal_effect",
+          "implementation",
+          "budget",
+          "causality",
+          "social_impact"
+        ],
+        "version": "a9ab7e30775280"
+      },
+      "claim_matrix_sha256": "68163560cb6bd21e55a72b969cb8832b3ab8e8a82aa21ae784bedcb4fbc2cc38",
+      "closing_media_sha256": "e26f2733173e8a3d39d9e4adeed438c195bc5163d30fb101ba6459ffbeed0939",
+      "content_sha256": "ad55a745ee411033ccd0a5f68dfff20a3b8537d37747ca9938511beea47998ae",
+      "decision": "approved_documentary_only",
+      "id": "camara:2653947",
+      "issues": [],
+      "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
       "policy": "documentary-template-v4-didactic",
       "version": "a9ab7e30775280"
     },
@@ -23,7 +190,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "a5ab9d4c745a18620bf7def5c0fab4c7ff42dab0f77afbfeebe87ab6cfc341ea"
       ],
-      "checked_at": "2026-11-27T12:08:41.616997-03:00",
+      "checked_at": "2026-11-27T16:33:22.099334-03:00",
       "claim_matrix": {
         "document_id": "camara:2653944",
         "entries": [
@@ -200,7 +367,7 @@
         "df44923216636e5b22145baf3b10124556c89a344896229774453364c91ba5fa",
         "ddb89ab11a5d5d3311cf41c8654852b6cbdc0ccf6a159b142931f721b68e0f2a"
       ],
-      "checked_at": "2026-11-27T12:08:41.616997-03:00",
+      "checked_at": "2026-11-27T16:33:22.099334-03:00",
       "claim_matrix": {
         "document_id": "camara:2655411",
         "entries": [
@@ -447,7 +614,7 @@
         "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
         "433e7fd979e49828ec023fa0a0b845d80df4203ae6116ff5647fc997b068c0e3"
       ],
-      "checked_at": "2026-11-27T12:08:41.616997-03:00",
+      "checked_at": "2026-11-27T16:33:22.099334-03:00",
       "claim_matrix": {
         "document_id": "camara:2658959",
         "entries": [
@@ -610,7 +777,7 @@
         "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
         "db432a636baa79fef857208dd75f2a1309a65e635df6d69f8022db98f5055a6c"
       ],
-      "checked_at": "2026-11-27T12:08:41.616997-03:00",
+      "checked_at": "2026-11-27T16:33:22.099334-03:00",
       "claim_matrix": {
         "document_id": "camara:2659020",
         "entries": [
@@ -766,7 +933,7 @@
         "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
         "c6cf0409b9fae30fa4d8f35e2f2afa7bfe02b51528015bf88690e6d4afc9fea9"
       ],
-      "checked_at": "2026-11-27T12:08:41.616997-03:00",
+      "checked_at": "2026-11-27T16:33:22.099334-03:00",
       "claim_matrix": {
         "document_id": "camara:2659462",
         "entries": [
@@ -922,7 +1089,7 @@
         "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
         "a843c672eaf5546cc51f18e5b045d32317cd30c3b36972a2a055df7a3c0d587c"
       ],
-      "checked_at": "2026-11-27T12:08:41.616997-03:00",
+      "checked_at": "2026-11-27T16:33:22.099334-03:00",
       "claim_matrix": {
         "document_id": "camara:2659342",
         "entries": [
@@ -1078,7 +1245,7 @@
         "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
         "4d1a05ab83f2b4e2327b30c04fd57b68cee742a0e9721ae371d12c01c30667d5"
       ],
-      "checked_at": "2026-11-27T12:08:41.616997-03:00",
+      "checked_at": "2026-11-27T16:33:22.099334-03:00",
       "claim_matrix": {
         "document_id": "camara:2660119",
         "entries": [
