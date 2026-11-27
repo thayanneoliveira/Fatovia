@@ -66,3 +66,5 @@ jobs:
           path: reel-draft/
           if-no-files-found: ignore
           retention-days: 7
+
+# Fresh run after owner credential rotation, 2026-11-27.
