@@ -947,7 +947,13 @@
       "version": "a39168135eade1"
     }
   ],
-  "publishing": null,
+  "publishing": {
+    "format": "reel",
+    "id": "reel:escala-5x2-20261127",
+    "started_at": "2026-11-27T16:48:33.946591-03:00",
+    "status": "checkpointed",
+    "version": "88cf094dc5a501"
+  },
   "reel_pending": [
     {
       "caption": "O que o preço do pão tem a ver com a sua jornada de trabalho? 🍞\n\nA transição para a escala 5x2, prevista na EC 141/2026 e regulamentada em novembro, começa em 16/12/2026, sem redução salarial. Há regras específicas e negociação coletiva para determinados regimes.\n\nAna e Carlos são personagens de uma simulação. As 52 folgas adicionais representam uma comparação teórica de 52 semanas regulares, não uma previsão individual. Custos, preços e produtividade podem variar.\n\n💬 O que um dia a mais de descanso mudaria na sua rotina?\n💬 Como uma pequena padaria poderia se adaptar sem comprometer sua operação?\nConte sua perspectiva nos comentários, com respeito aos diferentes pontos de vista.\n\nFontes: MTE (19/11/2026, atualizado em 27/11) e Fundacentro (25/11/2026), em gov.br.\nID editorial: reel:escala-5x2-20261127/88cf094dc5a501\n#Escala5x2 #JornadaDeTrabalho #EconomiaBrasileira #DireitosTrabalhistas #FatoVia",
