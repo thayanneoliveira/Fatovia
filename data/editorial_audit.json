@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T12:20:47.221260-03:00",
+  "generated_at": "2026-11-26T22:01:57.430789-03:00",
   "limitations": "Independent rule-based check of the official source, approved template and bytes; not general factual or semantic review.",
   "policy": "documentary-template-v4-didactic",
   "reviews": [
@@ -13,7 +13,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "e26f2733173e8a3d39d9e4adeed438c195bc5163d30fb101ba6459ffbeed0939"
       ],
-      "checked_at": "2026-11-26T12:20:47.221260-03:00",
+      "checked_at": "2026-11-26T22:01:57.430789-03:00",
       "claim_matrix": {
         "document_id": "camara:2653947",
         "entries": [
@@ -190,7 +190,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "a5ab9d4c745a18620bf7def5c0fab4c7ff42dab0f77afbfeebe87ab6cfc341ea"
       ],
-      "checked_at": "2026-11-26T12:20:47.221260-03:00",
+      "checked_at": "2026-11-26T22:01:57.430789-03:00",
       "claim_matrix": {
         "document_id": "camara:2653944",
         "entries": [
@@ -367,7 +367,7 @@
         "df44923216636e5b22145baf3b10124556c89a344896229774453364c91ba5fa",
         "ddb89ab11a5d5d3311cf41c8654852b6cbdc0ccf6a159b142931f721b68e0f2a"
       ],
-      "checked_at": "2026-11-26T12:20:47.221260-03:00",
+      "checked_at": "2026-11-26T22:01:57.430789-03:00",
       "claim_matrix": {
         "document_id": "camara:2655411",
         "entries": [
@@ -606,253 +606,6 @@
     },
     {
       "card_sha256": [
-        "a5deb33121c0758a68c1064be68699ad9952dee2db9730460077dd7ba903bdce",
-        "0649c11a71ab27c1b0db7c92832f93a33fd7ea9f089cb854c2c7c98af8dfb2ec",
-        "c320f363f01e5734ee73db029333110257f309cac1578ddbd8f17f4c88d885cd",
-        "3303477dfe1062d714c57743039bf612d5ac8da46bc7e0f41b97e1e6faac6d29",
-        "7bd82c8a31a0ea72036459106465506df567cd752e2c6bbbe2acca37e6051898",
-        "9ef2327508291710727ee91cd50a871fa30fd639b0a75c934f827b80cf911aa1",
-        "6886fe1c5e1762503037aaad4a0e63f55bd5e9dbfbcc6579b92e3a8324c1030c"
-      ],
-      "checked_at": "2026-11-26T12:20:47.221260-03:00",
-      "claim_matrix": {
-        "document_id": "camara:2655695",
-        "entries": [
-          {
-            "evidence": {
-              "end": 68,
-              "excerpt": "ampliar o prazo",
-              "field": "summary",
-              "field_sha256": "d324ffe2e06d822e6b1783cf2a78c2698d4e4824cfdd5247178f119f78508c7c",
-              "start": 53,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_01",
-            "text": "Internet para escolas: o prazo de uso dos recursos pode mudar? | A proposta pretende ampliar o prazo para aplicação ou restituição de recursos federais destinados à conectividade educacional.",
-            "type": "reviewed_question"
-          },
-          {
-            "evidence": {
-              "end": 220,
-              "excerpt": "acesso à internet",
-              "field": "summary",
-              "field_sha256": "d324ffe2e06d822e6b1783cf2a78c2698d4e4824cfdd5247178f119f78508c7c",
-              "start": 203,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_01",
-            "text": "Internet para escolas: o prazo de uso dos recursos pode mudar? | A proposta pretende ampliar o prazo para aplicação ou restituição de recursos federais destinados à conectividade educacional.",
-            "type": "reviewed_question"
-          },
-          {
-            "evidence": {
-              "end": 68,
-              "excerpt": "ampliar o prazo",
-              "field": "summary",
-              "field_sha256": "d324ffe2e06d822e6b1783cf2a78c2698d4e4824cfdd5247178f119f78508c7c",
-              "start": 53,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_02",
-            "text": "O que diz a proposta? | O projeto altera a lei sobre recursos para acesso à internet de escolas, estudantes e professores da rede pública.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 220,
-              "excerpt": "acesso à internet",
-              "field": "summary",
-              "field_sha256": "d324ffe2e06d822e6b1783cf2a78c2698d4e4824cfdd5247178f119f78508c7c",
-              "start": 203,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_02",
-            "text": "O que diz a proposta? | O projeto altera a lei sobre recursos para acesso à internet de escolas, estudantes e professores da rede pública.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 68,
-              "excerpt": "ampliar o prazo",
-              "field": "summary",
-              "field_sha256": "d324ffe2e06d822e6b1783cf2a78c2698d4e4824cfdd5247178f119f78508c7c",
-              "start": 53,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_03",
-            "text": "Qual é o mecanismo? | Ampliar um prazo pode alterar o calendário de uso e prestação de contas, mas não cria automaticamente recursos adicionais.",
-            "type": "reviewed_mechanism"
-          },
-          {
-            "evidence": {
-              "end": 220,
-              "excerpt": "acesso à internet",
-              "field": "summary",
-              "field_sha256": "d324ffe2e06d822e6b1783cf2a78c2698d4e4824cfdd5247178f119f78508c7c",
-              "start": 203,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_03",
-            "text": "Qual é o mecanismo? | Ampliar um prazo pode alterar o calendário de uso e prestação de contas, mas não cria automaticamente recursos adicionais.",
-            "type": "reviewed_mechanism"
-          },
-          {
-            "evidence": {
-              "end": 68,
-              "excerpt": "ampliar o prazo",
-              "field": "summary",
-              "field_sha256": "d324ffe2e06d822e6b1783cf2a78c2698d4e4824cfdd5247178f119f78508c7c",
-              "start": 53,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_04",
-            "text": "E na prática? | Se aprovado, estados e Distrito Federal poderão ter novos prazos para aplicar ou restituir os recursos abrangidos.",
-            "type": "reviewed_conditional"
-          },
-          {
-            "evidence": {
-              "end": 220,
-              "excerpt": "acesso à internet",
-              "field": "summary",
-              "field_sha256": "d324ffe2e06d822e6b1783cf2a78c2698d4e4824cfdd5247178f119f78508c7c",
-              "start": 203,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_04",
-            "text": "E na prática? | Se aprovado, estados e Distrito Federal poderão ter novos prazos para aplicar ou restituir os recursos abrangidos.",
-            "type": "reviewed_conditional"
-          },
-          {
-            "evidence": {
-              "end": 68,
-              "excerpt": "ampliar o prazo",
-              "field": "summary",
-              "field_sha256": "d324ffe2e06d822e6b1783cf2a78c2698d4e4824cfdd5247178f119f78508c7c",
-              "start": 53,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_05",
-            "text": "O que falta esclarecer? | Qual prazo final seria estabelecido? Quais valores permanecem disponíveis? Como será feita a prestação de contas?",
-            "type": "reviewed_questions"
-          },
-          {
-            "evidence": {
-              "end": 220,
-              "excerpt": "acesso à internet",
-              "field": "summary",
-              "field_sha256": "d324ffe2e06d822e6b1783cf2a78c2698d4e4824cfdd5247178f119f78508c7c",
-              "start": 203,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_05",
-            "text": "O que falta esclarecer? | Qual prazo final seria estabelecido? Quais valores permanecem disponíveis? Como será feita a prestação de contas?",
-            "type": "reviewed_questions"
-          },
-          {
-            "evidence": {
-              "end": 26,
-              "excerpt": "Apresentação de Proposição",
-              "field": "stage",
-              "field_sha256": "7ad4f3a2409e2196a7e3ccc89d81061c388c76f096e8a3e5181944076982a9b7",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
-            },
-            "limitation": "Registro de tramitação.",
-            "location": "card_06",
-            "text": "Apresentação de Proposição",
-            "type": "procedural_record"
-          },
-          {
-            "evidence": {
-              "end": 10,
-              "excerpt": "2026-11-19",
-              "field": "stage_date",
-              "field_sha256": "010cc5180132fb0adc25f5f348f229084383e04439f2c21bb9b55505c19a04f8",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
-            },
-            "limitation": "Não comprova vigência.",
-            "location": "card_06",
-            "text": "2026-11-19",
-            "type": "record_date"
-          },
-          {
-            "evidence": {
-              "end": 12,
-              "excerpt": "PL 5756/2026",
-              "field": "title",
-              "field_sha256": "cc9729ba9091fe2012cf6d3be5de5ec9cbee5089429aec0cde6ce385b4fa1180",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
-            },
-            "limitation": "Fonte para leitura integral.",
-            "location": "card_07",
-            "text": "PL 5756/2026",
-            "type": "source_reference"
-          },
-          {
-            "evidence": {
-              "end": 68,
-              "excerpt": "ampliar o prazo",
-              "field": "summary",
-              "field_sha256": "d324ffe2e06d822e6b1783cf2a78c2698d4e4824cfdd5247178f119f78508c7c",
-              "start": 53,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
-            },
-            "limitation": "Paráfrase revisada.",
-            "location": "caption",
-            "text": "O projeto altera a lei sobre recursos para acesso à internet de escolas, estudantes e professores da rede pública.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 220,
-              "excerpt": "acesso à internet",
-              "field": "summary",
-              "field_sha256": "d324ffe2e06d822e6b1783cf2a78c2698d4e4824cfdd5247178f119f78508c7c",
-              "start": 203,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695"
-            },
-            "limitation": "Impacto potencial.",
-            "location": "caption",
-            "text": "Se aprovado, estados e Distrito Federal poderão ter novos prazos para aplicar ou restituir os recursos abrangidos.",
-            "type": "reviewed_conditional"
-          }
-        ],
-        "limitation": "Revisão editorial de narrativa controlada; não verifica impacto real ou texto integral.",
-        "policy": "didactic-v4",
-        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655695",
-        "unverified_dimensions": [
-          "legal_effect",
-          "implementation",
-          "budget",
-          "causality",
-          "social_impact"
-        ],
-        "version": "a39168135eade1"
-      },
-      "claim_matrix_sha256": "0f9d40f4914b543030fd60b75e90f7c80134f5d909ffc505d6bbdedff2a4e6e1",
-      "closing_media_sha256": "6886fe1c5e1762503037aaad4a0e63f55bd5e9dbfbcc6579b92e3a8324c1030c",
-      "content_sha256": "f47b2d2a3a680d283cc27c461bb647e7598a9035ebff431171f34639b713ddd3",
-      "decision": "approved_documentary_only",
-      "id": "camara:2655695",
-      "issues": [],
-      "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-      "policy": "documentary-template-v4-didactic",
-      "version": "a39168135eade1"
-    },
-    {
-      "card_sha256": [
         "6c5cb2dd8fe0e65d99deddd167f6f94bad934dcda2c58c1b73133cd3c0a40c41",
         "1b856086bb551168d09f1b1bce8e0ecb8a4c5de281877de1a20a380934430261",
         "ebcb14d5acb55f633f0e69f5cf6234b9716a978f8ef2e0e36e8bb507ded6c7b5",
@@ -861,7 +614,7 @@
         "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
         "433e7fd979e49828ec023fa0a0b845d80df4203ae6116ff5647fc997b068c0e3"
       ],
-      "checked_at": "2026-11-26T12:20:47.221260-03:00",
+      "checked_at": "2026-11-26T22:01:57.430789-03:00",
       "claim_matrix": {
         "document_id": "camara:2658959",
         "entries": [
@@ -1024,7 +777,7 @@
         "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
         "db432a636baa79fef857208dd75f2a1309a65e635df6d69f8022db98f5055a6c"
       ],
-      "checked_at": "2026-11-26T12:20:47.221260-03:00",
+      "checked_at": "2026-11-26T22:01:57.430789-03:00",
       "claim_matrix": {
         "document_id": "camara:2659020",
         "entries": [
@@ -1180,7 +933,7 @@
         "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
         "c6cf0409b9fae30fa4d8f35e2f2afa7bfe02b51528015bf88690e6d4afc9fea9"
       ],
-      "checked_at": "2026-11-26T12:20:47.221260-03:00",
+      "checked_at": "2026-11-26T22:01:57.430789-03:00",
       "claim_matrix": {
         "document_id": "camara:2659462",
         "entries": [
@@ -1336,7 +1089,7 @@
         "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
         "a843c672eaf5546cc51f18e5b045d32317cd30c3b36972a2a055df7a3c0d587c"
       ],
-      "checked_at": "2026-11-26T12:20:47.221260-03:00",
+      "checked_at": "2026-11-26T22:01:57.430789-03:00",
       "claim_matrix": {
         "document_id": "camara:2659342",
         "entries": [
@@ -1481,6 +1234,169 @@
       "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
       "policy": "documentary-template-v4-didactic",
       "version": "32c9b9359dcd43"
+    },
+    {
+      "card_sha256": [
+        "feee53f63ba6c3677f7f90fbdd6cd0b1202969bac8e4d1c6b805b363840870fe",
+        "578b8eb5bf0a8e5b92ed6800d319a91c459fa3f8d4ae7ff650a838595918d231",
+        "392d7b76db31f783a78e1cec60911bf12a3826743fbfc86bb32b244f2669a4db",
+        "f983043431ac12d81c793dd2cd45fa35c656dc6e8b4527642c95b19df412ca1b",
+        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
+        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
+        "4d1a05ab83f2b4e2327b30c04fd57b68cee742a0e9721ae371d12c01c30667d5"
+      ],
+      "checked_at": "2026-11-26T22:01:57.430789-03:00",
+      "claim_matrix": {
+        "document_id": "camara:2660119",
+        "entries": [
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5991/2026",
+              "field": "title",
+              "field_sha256": "837041a3e23f009aa57b6803fe331bb61e07a38aaf7e14129826cb097206524a",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660119"
+            },
+            "limitation": "Identifica a proposição, não sua aprovação.",
+            "location": "card_01",
+            "text": "PL 5991/2026",
+            "type": "document_identity"
+          },
+          {
+            "evidence": {
+              "end": 321,
+              "excerpt": "Dispõe sobre medidas obrigatórias para o inventário, a preservação física e digital, a digitalização, a recuperação, o controle de qualidade, a indexação, a integração eletrônica e a pesquisa histórica dos acervos de guarda permanente do Registro Civil das Pessoas Naturais anteriores à vigência da Lei nº 6.015, de 31 de",
+              "field": "summary",
+              "field_sha256": "3d49cf97af46f3b13febf41ed4100f906d9836e11bedade50585c4e1e0cb1e58",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660119"
+            },
+            "limitation": "Ementa oficial, não texto integral nem prova de impacto.",
+            "location": "card_02",
+            "text": "Dispõe sobre medidas obrigatórias para o inventário, a preservação física e digital, a digitalização, a recuperação, o controle de qualidade, a indexação, a integração eletrônica e a pesquisa histórica dos acervos de guarda permanente do Registro Civil das Pessoas Naturais anteriores à vigência da Lei nº 6.015, de 31 de",
+            "type": "attributed_excerpt"
+          },
+          {
+            "evidence": {
+              "end": 632,
+              "excerpt": "dezembro de 1973; institui o Programa Nacional de Preservação dos Acervos Históricos do Registro Civil das Pessoas Naturais; altera as Leis nº 6.015, de 31 de dezembro de 1973, nº 8.935, de 18 de novembro de 1994, nº 11.977, de 7 de julho de 2009, e nº 14.382, de 27 de junho de 2022; e dá outras providências.",
+              "field": "summary",
+              "field_sha256": "3d49cf97af46f3b13febf41ed4100f906d9836e11bedade50585c4e1e0cb1e58",
+              "start": 322,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660119"
+            },
+            "limitation": "Continuação da ementa oficial.",
+            "location": "card_03",
+            "text": "dezembro de 1973; institui o Programa Nacional de Preservação dos Acervos Históricos do Registro Civil das Pessoas Naturais; altera as Leis nº 6.015, de 31 de dezembro de 1973, nº 8.935, de 18 de novembro de 1994, nº 11.977, de 7 de julho de 2009, e nº 14.382, de 27 de junho de 2022; e dá outras providências.",
+            "type": "attributed_excerpt"
+          },
+          {
+            "evidence": {
+              "end": 26,
+              "excerpt": "Apresentação de Proposição",
+              "field": "stage",
+              "field_sha256": "7ad4f3a2409e2196a7e3ccc89d81061c388c76f096e8a3e5181944076982a9b7",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660119"
+            },
+            "limitation": "Registro de tramitação na data de referência.",
+            "location": "card_04",
+            "text": "Apresentação de Proposição",
+            "type": "procedural_record"
+          },
+          {
+            "evidence": {
+              "end": 10,
+              "excerpt": "2026-11-26",
+              "field": "stage_date",
+              "field_sha256": "3499899299887758c821185c1130b43595cf63c729475469168ddbce5ec709a7",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660119"
+            },
+            "limitation": "Data do andamento, não da vigência.",
+            "location": "card_04",
+            "text": "2026-11-26",
+            "type": "record_date"
+          },
+          {
+            "evidence": null,
+            "limitation": "Não atribui impacto, vigência ou financiamento.",
+            "location": "card_05",
+            "text": "A existência de um projeto não comprova aprovação, entrada em vigor, financiamento ou resultados.",
+            "type": "scope_limitation"
+          },
+          {
+            "evidence": null,
+            "limitation": "Questões para acompanhamento, não afirmações comprovadas.",
+            "location": "card_06",
+            "text": "Qual é o texto final?\n\nQuais órgãos respondem pela execução?\n\nHá custo previsto e indicadores de resultado?",
+            "type": "open_questions"
+          },
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5991/2026",
+              "field": "title",
+              "field_sha256": "837041a3e23f009aa57b6803fe331bb61e07a38aaf7e14129826cb097206524a",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660119"
+            },
+            "limitation": "Referência documental.",
+            "location": "card_07",
+            "text": "PL 5991/2026",
+            "type": "source_reference"
+          },
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5991/2026",
+              "field": "title",
+              "field_sha256": "837041a3e23f009aa57b6803fe331bb61e07a38aaf7e14129826cb097206524a",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660119"
+            },
+            "limitation": "Identifica a proposição.",
+            "location": "caption",
+            "text": "PL 5991/2026",
+            "type": "document_identity"
+          },
+          {
+            "evidence": {
+              "end": 10,
+              "excerpt": "2026-11-26",
+              "field": "stage_date",
+              "field_sha256": "3499899299887758c821185c1130b43595cf63c729475469168ddbce5ec709a7",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660119"
+            },
+            "limitation": "Data registrada na fonte.",
+            "location": "caption",
+            "text": "2026-11-26",
+            "type": "record_date"
+          }
+        ],
+        "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
+        "policy": "documentary-claims-v2-hooks",
+        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660119",
+        "unverified_dimensions": [
+          "legal_effect",
+          "implementation",
+          "budget",
+          "causality",
+          "social_impact"
+        ],
+        "version": "1d2626b8ceaffc"
+      },
+      "claim_matrix_sha256": "28d14cd1b7fd21d6d535646351d5a5b072e7a78f24e1d44970a764b1d2899cb7",
+      "closing_media_sha256": "4d1a05ab83f2b4e2327b30c04fd57b68cee742a0e9721ae371d12c01c30667d5",
+      "content_sha256": "8ce6585c7134f1bedb5118352b0d06090378e8c9e5615c449b615eed5b34147d",
+      "decision": "approved_documentary_only",
+      "id": "camara:2660119",
+      "issues": [],
+      "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
+      "policy": "documentary-template-v4-didactic",
+      "version": "1d2626b8ceaffc"
     }
   ]
 }
