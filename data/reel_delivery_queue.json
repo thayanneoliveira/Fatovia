@@ -50,21 +50,30 @@
   "next_reel": {
     "status": "preproduction",
     "requirements": {
-      "style": "Santa-R-1.0 V5",
+      "style": "Algenib V6",
       "kinetic_captions": true,
       "approved_logo_closing": true,
       "cover": "feed-first human conflict; readable at small size",
       "source_review": "use established editorial checks",
-      "max_additional_cost_brl": 0
+      "max_additional_cost_brl": 0,
+      "original_scene_art": true,
+      "integrated_audio": true,
+      "max_duration_seconds": 120
     },
     "steps": [
       "select timely subject with evidence",
       "write accessible human-centered hook and script",
-      "render Santa-R-1.0 V5",
+      "render original V6 scenes with Algenib and integrated audio",
       "create cover and closing logo",
-      "bind final owner-approved video and cover hashes",
+      "bind exact final media and independent source, audio, visual and technical reviews",
       "deliver through existing publisher only after media and dedup checks"
-    ]
+    ],
+    "approved_reference": {
+      "run_id": 46041693358,
+      "status": "owner_approved_audiovisual_standard",
+      "publish_status": "not_queued",
+      "reason": "Source and hosting gates are separate from profile approval."
+    }
   },
   "safety": {
     "do_not_recreate_or_substitute_approved_video": true,

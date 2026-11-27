@@ -41,9 +41,9 @@
   "constraints": {
     "no_minimum_count": true,
     "approved_logo_required_on_closing": true,
-    "voice": "Santa-R-1.0",
-    "visual_reference": "V5",
-    "editorial_reference": "V5",
+    "voice": "Algenib",
+    "visual_reference": "V6",
+    "editorial_reference": "V6 multiperspectiva",
     "source_revalidation": true,
     "independent_review": true,
     "exact_media_hash_binding": true,
@@ -56,7 +56,7 @@
   },
   "deployment_blockers": [
     "Reel de Maria foi hospedado com hash de arquivo e A/V aprovados; publicação Meta ainda depende de item autorizado na fila, capa pública e revisão documental/independente do conteúdo.",
-    "Geracao autônoma V5 de novos Reels ainda não homologada."
+    "Geração autônoma genérica de episódios V6 e hospedagem por item ainda requerem integração; o padrão V6 + Algenib está aprovado, sem dispensar revisão e mídia verificável."
   ],
   "notes": "MP4 publico validado via GitHub Pages HTTPS, fluxo elementar audio/video identico ao MP4 aprovado; arquivo produzido por remux sem recodificar; nenhuma publicacao Meta confirmada.",
   "approved_logo": {
@@ -254,5 +254,39 @@
     "reel": false,
     "v5_pipeline_homologated": false,
     "activation_requirement": "CI success for criteria authorization and integration; existing independent reviews and all production gates remain mandatory"
+  },
+  "v6_authorization": {
+    "status": "enabled_after_ci",
+    "owner_profile_approved": true,
+    "approved_date": "2026-11-27",
+    "reference_run": "https://github.com/thayanneoliveira/Fatovia/actions/runs/46041693358",
+    "max_spend_brl": 0,
+    "daily_caps": {
+      "carousel": 4,
+      "reel": 1
+    },
+    "scope": "Aprovação do padrão audiovisual, não liberação automática de conteúdo sem revisão individual.",
+    "nonblocking_improvements": [
+      "estética",
+      "naturalidade de movimento",
+      "transições",
+      "experimentos visuais"
+    ],
+    "required_per_item": [
+      "source_review",
+      "editorial_review",
+      "audio_review",
+      "visual_review",
+      "technical_review",
+      "closing_review",
+      "exact_media_hash",
+      "public_host_integrity",
+      "account_identity",
+      "quota",
+      "deduplication",
+      "transaction_reconciliation"
+    ],
+    "production_isolation": "Falha de Reel não impede carrosséis. Melhorias opcionais não reprovam mídia que atenda ao padrão estável.",
+    "autonomous_generation": "not_yet_generic; V6 episode renderer validated; new episodes require new scene plans and factual review"
   }
 }
