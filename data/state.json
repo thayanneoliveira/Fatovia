@@ -384,61 +384,6 @@
     },
     {
       "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-      "caption": "Remédio na Mão: como encontrar medicamentos gratuitos?\n\nA proposta prevê consulta de disponibilidade, identificação de unidades e orientações sobre requisitos de retirada.\n\nSe aprovado e implementado, o programa poderá ajudar usuários a localizar unidades e alternativas de atendimento.\n\nPL 5897/2026 | Registro de 2026-11-18. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2655411\nID editorial: camara:2655411/9928715e313319/didactic-v4\n#FatoVia #PoliticasPublicas",
-      "cards": [
-        "docs/media/camara-2655411/9928715e313319/didactic-v4/01.jpg",
-        "docs/media/camara-2655411/9928715e313319/didactic-v4/02.jpg",
-        "docs/media/camara-2655411/9928715e313319/didactic-v4/03.jpg",
-        "docs/media/camara-2655411/9928715e313319/didactic-v4/04.jpg",
-        "docs/media/camara-2655411/9928715e313319/didactic-v4/05.jpg",
-        "docs/media/camara-2655411/9928715e313319/didactic-v4/06.jpg",
-        "docs/media/camara-2655411/9928715e313319/didactic-v4/07.jpg"
-      ],
-      "discovery_source_count": 1,
-      "editorial_score": 81,
-      "evidence": {
-        "checked_at": "2026-11-22T22:36:10.406880-03:00",
-        "claims": [
-          {
-            "basis": "identificacao_da_proposicao",
-            "field": "title"
-          },
-          {
-            "basis": "ementa_oficial_atribuida",
-            "field": "summary"
-          },
-          {
-            "basis": "registro_de_tramitacao",
-            "field": "stage"
-          }
-        ],
-        "content_sha256": "da6180d87bade8fe4a8c434440e15e60aa442e932d320d29549d1f78b1a6389f",
-        "kind": "official_document_attribution",
-        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
-        "record_date": "2026-11-18",
-        "schema": 1,
-        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
-      },
-      "explore_signal_count": 0,
-      "id": "camara:2655411",
-      "public_url": "https://www.camara.leg.br/propostas-legislativas/2655411",
-      "source_name": "Câmara dos Deputados",
-      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411",
-      "stage": "Apresentação de Proposição",
-      "stage_date": "2026-11-18",
-      "status": "ready",
-      "summary": "Institui o Programa Remédio na Mão, destinado a facilitar a localização e o acesso gratuito a medicamentos e insumos de saúde disponibilizados pelo Sistema Único de Saúde e pelo Programa Farmácia Popular do Brasil, mediante identificação digital das unidades dispensadoras, consulta atualizada de disponibilidade, orientação sobre requisitos de retirada, indicação de alternativas de atendimento e garantia de acessibilidade informacional.",
-      "summary_hash": "cb40b30540ea3f",
-      "template_revision": "didactic-v4",
-      "title": "PL 5897/2026",
-      "topics": [
-        "saude",
-        "tecnologia"
-      ],
-      "version": "9928715e313319"
-    },
-    {
-      "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
       "caption": "O que está previsto nesta proposta?\n\nPL 5932/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-23. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2658959\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2658959\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2658959/312e525a513387\n#FatoVia #PoliticasPublicas #CongressoNacional",
       "cards": [
         "docs/media/camara-2658959/312e525a513387/01.jpg",
@@ -961,15 +906,25 @@
         "trabalho"
       ],
       "version": "88cf094dc5a501"
+    },
+    {
+      "evidence_sha256": "da6180d87bade8fe4a8c434440e15e60aa442e932d320d29549d1f78b1a6389f",
+      "format": "carousel",
+      "id": "camara:2655411",
+      "media_id": "18354151066286283",
+      "permalink": "https://www.instagram.com/p/DgQ2PgvD_Cq/",
+      "published_at": "2026-11-27T20:20:37.160767-03:00",
+      "summary": "Institui o Programa Remédio na Mão, destinado a facilitar a localização e o acesso gratuito a medicamentos e insumos de saúde disponibilizados pelo Sistema Único de Saúde e pelo Programa Farmácia Popular do Brasil, mediante identificação digital das unidades dispensadoras, consulta atualizada de disponibilidade, orientação sobre requisitos de retirada, indicação de alternativas de atendimento e garantia de acessibilidade informacional.",
+      "summary_hash": "cb40b30540ea3f",
+      "title": "PL 5897/2026",
+      "topics": [
+        "saude",
+        "tecnologia"
+      ],
+      "version": "9928715e313319"
     }
   ],
-  "publishing": {
-    "format": "carousel",
-    "id": "camara:2655411",
-    "started_at": "2026-11-27T20:20:34.901334-03:00",
-    "status": "checkpointed",
-    "version": "9928715e313319"
-  },
+  "publishing": null,
   "reel_pending": [],
   "replacement_request": {
     "authorization": "owner_requested_replacement_after_manual_deletion_2026-11-15",
