@@ -1,23 +1,34 @@
 {
-  "generated_at": "2026-11-27T05:14:59.561876-03:00",
+  "generated_at": "2026-11-27T16:26:19.607954-03:00",
   "note": "Topic co-occurrence is not corroboration of an individual claim or proof of virality.",
   "publication_authorized": false,
   "signals": [
     {
-      "id": "9e07bc4a31bf1d56c2f3",
-      "published_at": "2026-11-26T20:58:00-03:00",
+      "id": "2f30581fbf4803bf5df5",
+      "published_at": "2026-11-27T13:48:00-03:00",
       "source": "agencia_brasil",
       "status": "discovery_only",
-      "title": "Amazonas, Pará e Roraima passam por apagão de energia nesta quinta",
+      "title": "Manaus suspende atividades em parques após piora na qualidade do ar",
       "topics": [
-        "infraestrutura"
+        "saude"
       ],
-      "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2026-11/amazonas-para-e-roraima-passam-por-apagao-de-energia-nesta-quinta"
+      "url": "https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2026-11/manaus-suspende-atividades-em-parques-apos-piora-na-qualidade-do-ar"
+    },
+    {
+      "id": "c2ed9cc8a5da74b8ea6b",
+      "published_at": "2026-11-27T13:46:00-03:00",
+      "source": "agencia_brasil",
+      "status": "discovery_only",
+      "title": "Polícia Civil prende líder de milícia no Rio de Janeiro",
+      "topics": [
+        "seguranca"
+      ],
+      "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2026-11/policia-civil-prende-lider-de-milicia-no-rio-de-janeiro"
     }
   ],
   "sources": {
     "agencia_brasil": {
-      "eligible_signals": 1,
+      "eligible_signals": 2,
       "status": "ok"
     },
     "ibge": {
@@ -38,7 +49,17 @@
         "agencia_brasil"
       ],
       "status": "research_required",
-      "topic": "infraestrutura"
+      "topic": "saude"
+    },
+    {
+      "document_count": 1,
+      "explore_links": 0,
+      "source_count": 1,
+      "sources": [
+        "agencia_brasil"
+      ],
+      "status": "research_required",
+      "topic": "seguranca"
     }
   ]
 }

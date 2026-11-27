@@ -1,13 +1,13 @@
 {
   "collection": {
-    "attempted": 0,
+    "attempted": 1,
     "note": "No retroactive reconstruction of missing age windows; incomplete samples excluded.",
     "recent_media": 28,
     "samples_24h": 9,
-    "samples_72h": 8
+    "samples_72h": 9
   },
   "learning": {
-    "eligible_72h": 0,
+    "eligible_72h": 1,
     "min_samples": 20,
     "recommended_daily_limit": 4,
     "recommended_hours": [
