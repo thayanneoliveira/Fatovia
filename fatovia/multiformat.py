@@ -90,13 +90,20 @@ def video_path(item):
     return path
 def reel_url(item):
     return PAGE_ROOT+"/"+quote(video_path(item).removeprefix("docs/"),safe="/")
+def reel_voice_qualified(item):
+    # Historical exception remains subject to the exact media hash in allowed().
+    if item.get("voice")=="Santa-R-1.0":
+        return (item.get("id")=="reel:inflacao-precos-20261118"
+                and item.get("version")=="2bd9004ce9f4cc"
+                and item.get("video_sha256")=="f6148c6aef61b768dd28f2f4d35551cf6752e62cc9290a9b15d8d5e786916220")
+    return item.get("voice")=="Algenib"
 def reel_qualified(item):
     return (kind(item)=="reel" and item.get("status")=="ready" and
             re.fullmatch(r"reel:[a-z0-9_-]+",item.get("id","")) and
             re.fullmatch(r"[a-f0-9]{14}",item.get("version","")) and
             isinstance(item.get("caption"),str) and 50<=len(item["caption"])<=2200 and
             f'ID editorial: {item["id"]}/{item["version"]}' in item["caption"].splitlines() and
-            item.get("voice")=="Santa-R-1.0" and item.get("visual_revision")=="V5")
+            reel_voice_qualified(item) and item.get("visual_revision")=="V5")
 def reel_fingerprint(item):
     keys=("id","version","caption","video_path","voice","visual_revision","source_urls","script_sha256")
     return hashlib.sha256(json.dumps({k:item[k] for k in keys},sort_keys=True,ensure_ascii=False,separators=(",",":")).encode()).hexdigest()
@@ -172,6 +179,12 @@ def allowed(state,item,now,policy=None):
         r=rows[0]
         checked=datetime.fromisoformat(r["checked_at"])
         if not checked<=now or r["logo_sha256"]!=logo["sha256"] or r["closing_review"]!="approved":return False
+        voice_policy=(p.get("constraints") or {}).get("narration") or {}
+        if not (voice_policy.get("api_homologated") is True
+                and voice_policy.get("model")=="gemini-3.8-flash-tts"
+                and voice_policy.get("voice")=="Algenib"
+                and item.get("voice")=="Algenib"):
+            return False
         if not reel_qualified(item) or not item.get("source_urls") or not valid_hash(item.get("script_sha256")):return False
         path=video_path(item)
         return (r["content_sha256"]==reel_fingerprint(item) and r["editorial_review"]=="approved"

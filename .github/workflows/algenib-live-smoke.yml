@@ -1,0 +1,45 @@
+name: FatoVia | Algenib live smoke (no publishing)
+on:
+  push:
+    branches: ['feature/algenib-tts-20261126']
+    paths: ['.github/workflows/algenib-live-smoke.yml']
+permissions:
+  contents: read
+jobs:
+  audio:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: One free-tier request only
+        env:
+          FATOVIA_GEMINI_API_KEY: ${{ secrets.FATOVIA_GEMINI_API_KEY }}
+          FATOVIA_GEMINI_FREE_TIER_VERIFIED: 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          umask 077
+          mkdir -p "$RUNNER_TEMP/algenib-lab"
+          printf '%s\n' 'Imagine que amanhã você acorde com um milhão de reais na sua conta. Parece incrível, né? Mas e se todo mundo também recebesse um milhão?' > "$RUNNER_TEMP/algenib-lab/script.txt"
+          python -m fatovia.narration --script "$RUNNER_TEMP/algenib-lab/script.txt" --cache "$RUNNER_TEMP/algenib-lab/cache"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          p=Path(os.environ['RUNNER_TEMP'])/'algenib-lab'/'cache'
+          files=list(p.glob('*.json'))
+          assert len(files)==1
+          print(json.dumps(json.loads(files[0].read_text()),ensure_ascii=False))
+          PY
+      - name: Retain lab sample for review only
+        uses: actions/upload-artifact@v4
+        with:
+          name: algenib-live-smoke
+          path: ${{ runner.temp }}/algenib-lab/cache/
+          retention-days: 1
+          if-no-files-found: error

@@ -7,7 +7,7 @@ from fatovia import publisher as pub
 
 NOW=datetime.fromisoformat("2026-11-18T14:12:00-03:00")
 CFG={"enabled":True,"token":"fake","ig_id":"123","base":"https://graph.instagram.com/v25.0"}
-REEL={"format":"reel","id":"reel:creche-v5","version":"1234567890abcd","status":"ready","caption":"Exemplo ficticio de cidadania. Consulte as fontes na legenda.\nID editorial: reel:creche-v5/1234567890abcd","voice":"Santa-R-1.0","visual_revision":"V5","video_path":"docs/media/reels/creche.mp4"}
+REEL={"format":"reel","id":"reel:creche-v5","version":"1234567890abcd","status":"ready","caption":"Exemplo ficticio de cidadania. Consulte as fontes na legenda.\nID editorial: reel:creche-v5/1234567890abcd","voice":"Algenib","visual_revision":"V5","video_path":"docs/media/reels/creche.mp4"}
 class FakeMeta:
     def __init__(self,existing=None):
         self.calls=[];self.found=existing
@@ -125,6 +125,14 @@ class MixedTests(unittest.TestCase):
         with self.assertRaises(ValueError):mf.reel_url({**REEL,"video_path":"docs/media/reels/../x.mp4"})
     def test_reel_qualified(self):
         self.assertTrue(mf.reel_qualified(REEL));self.assertFalse(mf.reel_qualified({**REEL,"voice":"other"}))
+    def test_legacy_voice_only_exact_historical_item(self):
+        legacy={**REEL,"voice":"Santa-R-1.0"}
+        self.assertFalse(mf.reel_qualified(legacy))
+        legacy.update(id="reel:inflacao-precos-20261118",version="2bd9004ce9f4cc",
+            caption="Exemplo de cidadania. Consulte as fontes na legenda.\nID editorial: reel:inflacao-precos-20261118/2bd9004ce9f4cc",
+            video_sha256="f6148c6aef61b768dd28f2f4d35551cf6752e62cc9290a9b15d8d5e786916220")
+        self.assertTrue(mf.reel_qualified(legacy))
+        self.assertFalse(mf.reel_qualified({**legacy,"video_sha256":"0"*64}))
     def test_prepare_deliver_reel_mock(self):
         state={"pending":[],"reel_pending":[dict(REEL)],"published":[]}
         client=FakeMeta()

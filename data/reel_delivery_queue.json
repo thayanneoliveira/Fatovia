@@ -50,7 +50,7 @@
   "next_reel": {
     "status": "preproduction",
     "requirements": {
-      "style": "Santa-R-1.0 V5",
+      "style": "Algenib / Gemini TTS / pt-BR / V5",
       "kinetic_captions": true,
       "approved_logo_closing": true,
       "cover": "feed-first human conflict; readable at small size",
@@ -60,7 +60,7 @@
     "steps": [
       "select timely subject with evidence",
       "write accessible human-centered hook and script",
-      "render Santa-R-1.0 V5",
+      "generate and validate Algenib WAV using verified Free Tier; render V5",
       "create cover and closing logo",
       "bind final owner-approved video and cover hashes",
       "deliver through existing publisher only after media and dedup checks"
