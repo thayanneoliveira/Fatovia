@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {decide} from './src/index.mjs';
+import {decide,decideProduction} from './src/index.mjs';
 const cases=[
   [
     "missed",
@@ -492,7 +492,7 @@ for(const [name,s,p,r,t,g,expected] of cases)test(name,()=>assert.equal(decide(s
 
 import {supervise, REVISION} from './src/index.mjs';
 const T="github_pat_example_test_only";
-const NOW=new Date("2026-11-16T16:05:00Z"); // 13h05 BRT, no publication
+const NOW=new Date("2026-11-27T16:05:00Z"); // 13h05 BRT, no publication
 test("missing token produces precise stage and does not fetch",async()=>{
   const r=await supervise({},NOW);
   assert.equal(r.stage,"credential");
@@ -504,13 +504,13 @@ test("malformed token produces safe reason",async()=>{
 });
 test("read-only commissioning works outside normal windows",async()=>{
   const original=globalThis.fetch;
-  const fixture=cases[0];
+  const fixture=[null,prodState,prodPolicy];
   const calls=[];
   globalThis.fetch=async(url,opts)=>{
     calls.push({url,method:opts.method});
     const data=url.includes("/branches/")?{commit:{sha:"a".repeat(40)}}:
       url.includes("/contents/data/state.json")?{encoding:"base64",content:Buffer.from(JSON.stringify(fixture[1])).toString("base64")}:
-      url.includes("/contents/data/pilot_policy.json")?{encoding:"base64",content:Buffer.from(JSON.stringify(fixture[2])).toString("base64")}:
+      url.includes("/contents/data/multiformat_experiment.json")?{encoding:"base64",content:Buffer.from(JSON.stringify(fixture[2])).toString("base64")}:
       url.includes("/variables/")?{value:"true"}:{workflow_runs:[]};
     return Response.json(data);
   };
@@ -521,7 +521,7 @@ test("read-only commissioning works outside normal windows",async()=>{
     assert.equal(r.reason,"outside_window");
     assert.equal(calls.length,5);
     assert(calls.every(x=>x.method==="GET"));
-    const eligible=await supervise({GITHUB_TOKEN:T},new Date("2026-11-16T12:30:00Z"));
+    const eligible=await supervise({GITHUB_TOKEN:T},new Date("2026-11-27T11:30:00Z"));
     assert.equal(eligible.would_dispatch,true);
     assert(calls.every(x=>x.method==="GET"));
   }finally{globalThis.fetch=original;}
@@ -551,3 +551,11 @@ test("network failure is classified without raw exception",async()=>{
     assert(!JSON.stringify(r).includes(T));
   }finally{globalThis.fetch=original;}
 });
+
+const prodPolicy={status:"approved",max_spend_brl:0,start_date:"2026-11-18",daily_caps:{carousel:4,reel:1},pilot_transition:{authorized:true},owner_per_content_authorization:{decision:"authorized_by_owner_pending_operational_validation",max_spend_brl:0,daily_caps:{carousel:4,reel:1},carousel_ids:[],reel_ids:[],excluded_ids:["camara:9"]},criteria_authorization:{status:"enabled_after_ci",carousel:true},v6_authorization:{status:"enabled_after_ci",owner_profile_approved:true},approved_items:[{id:"reel:next",version:"v",format:"reel"}]};
+const prodState={published:[],pending:[{id:"camara:8",version:"v",status:"ready",template_revision:"didactic-v4"}],reel_pending:[{id:"reel:next",version:"v",status:"ready",voice:"Algenib",visual_revision:"V6"}]};
+for(const h of [8,11,14,17,20])test("production slot "+h,()=>assert.equal(decideProduction(prodState,prodPolicy,[],new Date(Date.UTC(2026,10,27,h+3,25)),"true").action,"dispatch"));
+test("production min gap and no replay",()=>assert.equal(decideProduction({...prodState,published:[{published_at:"2026-11-27T16:48:00-03:00",format:"reel"}]},prodPolicy,[],new Date("2026-11-27T20:25:00Z"),"true").reason,"minimum_gap"));
+test("production rejects excluded source",()=>assert.equal(decideProduction({...prodState,pending:[{...prodState.pending[0],id:"camara:9"}]},prodPolicy,[],new Date("2026-11-27T11:25:00Z"),"true").reason,"no_eligible_candidate"));
+test("production requires explicit reel review",()=>assert.equal(decideProduction(prodState,{...prodPolicy,approved_items:[]},[],new Date("2026-11-27T17:25:00Z"),"true").reason,"no_eligible_candidate"));
+test("production failure and transaction don't dispatch",()=>{const n=new Date("2026-11-27T11:25:00Z");assert.equal(decideProduction({...prodState,publishing:{id:"camara:8"}},prodPolicy,[],n,"true").action,"attention");assert.equal(decideProduction(prodState,prodPolicy,[{status:"completed",event:"schedule",created_at:"2026-11-27T11:07:00Z",conclusion:"failure"}],n,"true").action,"attention")});

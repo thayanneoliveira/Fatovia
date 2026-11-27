@@ -20,20 +20,22 @@ def release(bundle,review,stage,now=None,source_check=verify_live,editorial_chec
     if plan!=build_plan(item,reviewed(item)):raise ValueError("plan not reconstructible from reviewed source")
     file=bundle/"reel.mp4";digest=sha(file);policy=load("data/multiformat_experiment.json");state=load("data/state.json")
     if not (review.get("reviewer") and review.get("scope")=="independent_final_media" and all(review.get(k)=="approved" for k in REVIEWS)
-        and review.get("video_sha256")==report.get("video_sha256")==digest and review.get("script_sha256")==plan["script_sha256"]
+        and review.get("video_sha256")==report.get("video_sha256")==digest and review.get("script_sha256")==report.get("script_sha256")==plan["script_sha256"]
         and review.get("caption_sha256")==report.get("caption_sha256")==hashlib.sha256(plan["caption"].encode()).hexdigest()
         and review.get("logo_sha256")==report.get("logo_sha256")==policy["approved_logo"]["sha256"]
         and report.get("voice")=="Algenib" and report.get("visual_revision")=="V6" and report.get("asr_match",0)>=.94
         and 0<report.get("duration",0)<=120 and report.get("shots",0)>=12 and report.get("resolution")==[1080,1920] and report.get("fps")==24
+        and .025<report.get("rms",0)<.4 and 0<report.get("peak",0)<1
         and file.stat().st_size<=mf.MAX_VIDEO and datetime.fromisoformat(review["checked_at"])<=now):raise ValueError("independent review or technical binding missing")
     ident=plan["id"];ver=plan["version"]
     if not re.fullmatch(r"reel:[a-z0-9_-]+",ident) or not re.fullmatch(r"[0-9a-f]{14}",ver):raise ValueError("identity")
     if state.get("publishing"):raise ValueError("active transaction; defer Reel only")
     if any(x.get("id") in (ident,item["id"]) for k in ("published","reel_pending","withdrawn_publications") for x in state.get(k,[])):raise ValueError("already used source")
     path=Path("docs/media/reels")/(ident.replace(":","-")+"-"+ver+".mp4")
+    if stage not in ("host","queue"):raise ValueError("stage")
     if stage=="host":
         path.parent.mkdir(parents=True,exist_ok=True)
-        if path.exists() and sha(path)!=digest:raise ValueError("conflicting host asset")
+        if path.is_symlink() or (path.exists() and sha(path)!=digest):raise ValueError("conflicting host asset")
         shutil.copyfile(file,path)
         return {"status":"host_staged","path":str(path),"sha256":digest}
     if not mf.safe_file(path,"docs/media/reels") or sha(path)!=digest:raise ValueError("not hosted locally")

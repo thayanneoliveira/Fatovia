@@ -1,7 +1,7 @@
 name: FatoVia | Watchdog tests
 on:
   push:
-    branches: [main]
+    branches: [main, fix/autonomy-chain-20261127]
     paths: ["watchdog/**", ".github/workflows/watchdog-tests.yml"]
   workflow_dispatch:
 permissions:

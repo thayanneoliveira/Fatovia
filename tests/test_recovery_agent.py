@@ -13,7 +13,11 @@ class RecoveryAgentTests(unittest.TestCase):
         codes = {x["code"] for x in diagnose()["findings"]}
         self.assertNotIn("PILOT_META_RECONCILIATION", codes)
         self.assertNotIn("PRODUCTION_TRANSITION", codes)
-        self.assertIn("APPROVED_QUEUE_EMPTY", codes)
+        from tools.recovery_agent import read
+        p=read("data/multiformat_experiment.json"); s=read("data/state.json")
+        pending={(x.get("id"),x.get("version")) for x in s.get("reel_pending",[])}
+        approved={(x.get("id"),x.get("version")) for x in p.get("approved_items",[])}
+        self.assertEqual("APPROVED_QUEUE_EMPTY" in codes, not bool(pending & approved))
 
 if __name__ == "__main__":
     unittest.main()

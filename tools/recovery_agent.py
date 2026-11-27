@@ -23,9 +23,9 @@ def diagnose():
         issue("PRODUCTION_TRANSITION", {"closure": closure.get("production_transition_authorized"),
               "policy": (policy.get("pilot_transition") or {}).get("authorized")},
               "Authorize only after reconciliation, preserved incident and independent tests.")
-    if not policy.get("approved_items"):
-        issue("APPROVED_QUEUE_EMPTY", {"approved_items": 0},
-              "Verify exact hosted Reel, V5, Santa R 1.0, logo and sources; bind evidence to one queue item.")
+    if not any(any((a.get("id"),a.get("version"))==(x.get("id"),x.get("version")) for a in policy.get("approved_items",[])) for x in state.get("reel_pending",[])):
+        issue("APPROVED_QUEUE_EMPTY", {"approved_reels_pending": 0},
+              "Verify exact hosted Reel, approved voice and visual profile, logo and sources; bind independent review to a pending item.")
     if state.get("publishing") is not None:
         issue("UNRESOLVED_CHECKPOINT", {"checkpoint": state["publishing"]},
               "Reconcile against Meta before any new POST.")

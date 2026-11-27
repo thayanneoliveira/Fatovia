@@ -30,9 +30,44 @@ export function decide(state,policy,runs,now,gate){
   if(attempts.some(r=>t-Date.parse(r.updated_at||r.created_at)<15*60000))return out("recent_attempt_cooldown");
   return out("missed_or_unfulfilled_slot","dispatch");
 }
+
+export function decideProduction(state,policy,runs,now,gate){
+  const t=now.getTime(), local=new Date(t-10800000), day=local.toISOString().slice(0,10), h=local.getUTCHours(), m=local.getUTCMinutes();
+  const out=(reason,action="observe")=>({action,reason,day});
+  const caps=policy.daily_caps||{}, owner=policy.owner_per_content_authorization||{};
+  if(!["approved","prepared_guarded"].includes(policy.status)||policy.max_spend_brl!==0||caps.carousel!==4||caps.reel!==1||owner.decision!=="authorized_by_owner_pending_operational_validation"||owner.max_spend_brl!==0||owner.daily_caps?.carousel!==4||owner.daily_caps?.reel!==1||policy.pilot_transition?.authorized!==true||day<policy.start_date)return out("production_policy_not_approved","attention");
+  if(gate!=="true")return out("publication_gate_disabled");
+  if(!Array.isArray(state.published)||!Array.isArray(state.pending)||!Array.isArray(state.reel_pending)||!Array.isArray(runs))return out("invalid_snapshot","attention");
+  if((state.blackout_dates||[]).includes(day))return out("blackout");
+  if(runs.some(r=>r.status!=="completed"))return out("workflow_active");
+  if(state.publishing)return out("transaction_requires_reconciliation","attention");
+  const fmt=({8:"carousel",11:"carousel",14:"reel",17:"carousel",20:"carousel"})[h];
+  if(!fmt||m>40)return out("outside_window");
+  if(m<20)return out("primary_schedule_grace");
+  const localDate=x=>new Date(Date.parse(x)-10800000).toISOString().slice(0,10);
+  const localHour=x=>new Date(Date.parse(x)-10800000).getUTCHours();
+  if(state.published.some(x=>!x.published_at||!Number.isFinite(Date.parse(x.published_at))||Date.parse(x.published_at)>t))return out("invalid_history","attention");
+  const today=state.published.filter(x=>localDate(x.published_at)===day);
+  if(today.length>=5||today.filter(x=>(x.format||"carousel")===fmt).length>=caps[fmt])return out("quota_reached");
+  if(today.some(x=>localHour(x.published_at)===h))return out("slot_already_published");
+  if(today.some(x=>t-Date.parse(x.published_at)<3*3600000))return out("minimum_gap");
+  const ids=fmt==="reel"?owner.reel_ids:owner.carousel_ids;
+  const eligible=(fmt==="reel"?state.reel_pending:state.pending).some(x=>{
+    if(x.status!=="ready"||(owner.excluded_ids||[]).includes(x.id)||state.published.some(p=>p.id===x.id&&p.version===x.version))return false;
+    if(fmt==="carousel")return x.template_revision==="didactic-v4"&&((ids||[]).includes(x.id)||(policy.criteria_authorization?.status==="enabled_after_ci"&&policy.criteria_authorization?.carousel===true&&/^camara:\d+$/.test(x.id)));
+    return (policy.approved_items||[]).some(p=>p.id===x.id&&p.version===x.version&&p.format==="reel")&&((ids||[]).includes(x.id)||(policy.v6_authorization?.status==="enabled_after_ci"&&policy.v6_authorization?.owner_profile_approved===true&&x.voice==="Algenib"&&x.visual_revision==="V6"));
+  });
+  if(!eligible)return out("no_eligible_candidate");
+  const attempts=runs.filter(r=>r.event!=="push"&&r.created_at&&Number.isFinite(Date.parse(r.created_at))&&localDate(r.created_at)===day&&localHour(r.created_at)===h);
+  if(attempts.some(r=>["failure","timed_out","action_required","startup_failure"].includes(r.conclusion)))return out("failure_requires_diagnosis","attention");
+  if(attempts.filter(r=>r.event==="workflow_dispatch").length>=2||attempts.length>=4)return out("retry_budget_reached","attention");
+  if(attempts.some(r=>t-Date.parse(r.updated_at||r.created_at)<10*60000))return out("recent_attempt_cooldown");
+  return out("missed_or_unfulfilled_slot","dispatch");
+}
+
 const BASE="https://api.github.com/repos/thayanneoliveira/Fatovia";
 const WORKFLOW="/actions/workflows/publish.yml";
-export const REVISION="watchdog-diagnostic-v2";
+export const REVISION="watchdog-production-v3";
 
 class CheckError extends Error {
   constructor(stage,reason){super(reason);this.stage=stage;this.reason=reason;}
@@ -68,7 +103,7 @@ async function file(env,stage,path,ref){
 export async function supervise(env,now=new Date()){
   try {
     const h=new Date(now.getTime()-10800000).getUTCHours();
-    const candidate=h>=9&&h<14||h>=17&&h<19;
+    const candidate=[8,11,14,17,20].includes(h);
     if(!candidate&&env.WATCHDOG_MODE==="active")return {revision:REVISION,action:"observe",reason:"outside_candidate_hours"};
     // During commissioning, exercise real read permissions even outside publishing windows.
     const mode=env.WATCHDOG_MODE==="active"?"active":"observe";
@@ -76,16 +111,16 @@ export async function supervise(env,now=new Date()){
     const ref=branch?.commit?.sha;
     if(typeof ref!=="string"||! /^[a-f0-9]{40}$/i.test(ref))fail("branch","invalid_branch_response");
     const [state,policy,gate,runList]=await Promise.all([
-      file(env,"state","data/state.json",ref),file(env,"policy","data/pilot_policy.json",ref),
+      file(env,"state","data/state.json",ref),file(env,"policy","data/multiformat_experiment.json",ref),
       request(env,"publication_gate","/actions/variables/IG_PUBLISH_ENABLED"),
-      request(env,"workflow_runs",WORKFLOW+"/runs?branch=main&per_page=20")
+      request(env,"workflow_runs",WORKFLOW+"/runs?branch=main&per_page=100")
     ]);
     if(!gate||typeof gate.value!=="string")fail("publication_gate","invalid_gate_response");
     if(!state||!policy||!Array.isArray(runList?.workflow_runs))fail("snapshot","invalid_snapshot");
-    if(runList.workflow_runs.length===20&&Date.parse(runList.workflow_runs[19].created_at)>now.getTime()-86400000)
+    if(runList.workflow_runs.length===100&&Date.parse(runList.workflow_runs[99].created_at)>now.getTime()-86400000)
       return {revision:REVISION,action:"attention",stage:"workflow_runs",reason:"run_history_incomplete"};
     const checks={github_read:"ok",mode,gate_enabled:gate.value==="true"};
-    const decision=decide(state,policy,runList.workflow_runs,now,gate.value);
+    const decision=decideProduction(state,policy,runList.workflow_runs,now,gate.value);
     if(decision.action!=="dispatch")return {revision:REVISION,...decision,...checks};
     if(mode!=="active")return {revision:REVISION,...decision,...checks,action:"observe",would_dispatch:true};
     const latest=await request(env,"branch_recheck","/branches/main");

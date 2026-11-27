@@ -55,8 +55,9 @@
     },
     "max_spend_brl": 0,
     "reel": false,
-    "status": "staged",
-    "v5_pipeline_homologated": false
+    "status": "enabled_after_ci",
+    "v5_pipeline_homologated": false,
+    "activation_reference": "Promote only after successful branch CI for fix/autonomy-chain-20261127"
   },
   "daily_caps": {
     "carousel": 4,

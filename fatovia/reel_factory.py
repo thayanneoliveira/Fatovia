@@ -52,10 +52,10 @@ def build_plan(item, review):
         "voice":"Algenib","visual_revision":"V6","status":"draft_requires_independent_review"}
     plan["caption"]=caption(plan)
     return plan
-def select(state,now,check=approved,live=verify_live,reviewer=reviewed):
+def select(state,now,check=approved,live=verify_live,reviewer=reviewed,excluded=()):
     used={x.get("id") for key in ("published","reel_pending","withdrawn_publications") for x in state.get(key,[])}
     for item in sorted(state.get("pending",[]),key=lambda x:(-x.get("editorial_score",0),x["id"])):
-        if item["id"] in used or "reel:"+item["id"].replace(":","-") in used:continue
+        if item["id"] in excluded or "reel:"+item["id"].replace(":","-") in excluded or item["id"] in used or "reel:"+item["id"].replace(":","-") in used:continue
         try:
             if not check(item,now) or not live(item):continue
             row=reviewer(item)
@@ -64,7 +64,8 @@ def select(state,now,check=approved,live=verify_live,reviewer=reviewed):
     return None
 def main():
     ap=argparse.ArgumentParser();ap.add_argument("--out",type=Path,required=True);args=ap.parse_args()
-    plan=select(load("data/state.json"),now_local())
+    policy=load("data/multiformat_experiment.json")
+    plan=select(load("data/state.json"),now_local(),excluded=(policy.get("owner_per_content_authorization") or {}).get("excluded_ids",[]))
     if not plan:
         print("NO_REVIEWED_CANDIDATE");return
     args.out.mkdir(parents=True,exist_ok=True)
