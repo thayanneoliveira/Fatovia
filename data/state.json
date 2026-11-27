@@ -945,39 +945,26 @@
         "educacao"
       ],
       "version": "a39168135eade1"
-    }
-  ],
-  "publishing": {
-    "format": "reel",
-    "id": "reel:escala-5x2-20261127",
-    "started_at": "2026-11-27T16:48:33.946591-03:00",
-    "status": "checkpointed",
-    "version": "88cf094dc5a501"
-  },
-  "reel_pending": [
+    },
     {
-      "caption": "O que o preço do pão tem a ver com a sua jornada de trabalho? 🍞\n\nA transição para a escala 5x2, prevista na EC 141/2026 e regulamentada em novembro, começa em 16/12/2026, sem redução salarial. Há regras específicas e negociação coletiva para determinados regimes.\n\nAna e Carlos são personagens de uma simulação. As 52 folgas adicionais representam uma comparação teórica de 52 semanas regulares, não uma previsão individual. Custos, preços e produtividade podem variar.\n\n💬 O que um dia a mais de descanso mudaria na sua rotina?\n💬 Como uma pequena padaria poderia se adaptar sem comprometer sua operação?\nConte sua perspectiva nos comentários, com respeito aos diferentes pontos de vista.\n\nFontes: MTE (19/11/2026, atualizado em 27/11) e Fundacentro (25/11/2026), em gov.br.\nID editorial: reel:escala-5x2-20261127/88cf094dc5a501\n#Escala5x2 #JornadaDeTrabalho #EconomiaBrasileira #DireitosTrabalhistas #FatoVia",
-      "editorial_score": 90,
+      "evidence_sha256": "",
       "format": "reel",
       "id": "reel:escala-5x2-20261127",
-      "script_sha256": "fc2b97babda38dabbf9bbe59982baf8d014646ac71926e669d02fc7641f5a670",
-      "source_urls": [
-        "https://www.gov.br/trabalho-e-emprego/pt-br/noticias-e-conteudo/2026/novembro/governo-do-brasil-regulamenta-jornada-de-trabalho-na-escala-5x2/",
-        "https://www.gov.br/fundacentro/pt-br/comunicacao/noticias/noticias/2026/novembro/implementacao-de-jornada-de-40h-e-de-escala-5x2-passa-pela-negociacao-coletiva"
-      ],
-      "status": "ready",
+      "media_id": "18124040075022736",
+      "permalink": "https://www.instagram.com/reel/DgQd7bgOsfR/",
+      "published_at": "2026-11-27T16:48:36.391000-03:00",
+      "summary": "",
+      "summary_hash": "",
       "title": "O preço do pão e a escala 5x2",
       "topics": [
         "economia",
         "trabalho"
       ],
-      "version": "88cf094dc5a501",
-      "video_path": "docs/media/reels/FatoVia_Escala_5x2_Algenib_V6_Teste.mp4",
-      "video_sha256": "88cf094dc5a501c54510b7127347a194292a087bde6155dcca5a63af30e1da9d",
-      "visual_revision": "V6",
-      "voice": "Algenib"
+      "version": "88cf094dc5a501"
     }
   ],
+  "publishing": null,
+  "reel_pending": [],
   "replacement_request": {
     "authorization": "owner_requested_replacement_after_manual_deletion_2026-11-15",
     "id": "camara:2653819",
