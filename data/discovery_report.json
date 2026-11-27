@@ -1,34 +1,23 @@
 {
-  "generated_at": "2026-11-26T19:56:29.014260-03:00",
+  "generated_at": "2026-11-27T05:14:59.561876-03:00",
   "note": "Topic co-occurrence is not corroboration of an individual claim or proof of virality.",
   "publication_authorized": false,
   "signals": [
     {
-      "id": "e14de504f834f87110ce",
-      "published_at": "2026-11-26T18:22:00-03:00",
+      "id": "9e07bc4a31bf1d56c2f3",
+      "published_at": "2026-11-26T20:58:00-03:00",
       "source": "agencia_brasil",
       "status": "discovery_only",
-      "title": "STF: estados e municípios são obrigados a pagar piso dos professores",
+      "title": "Amazonas, Pará e Roraima passam por apagão de energia nesta quinta",
       "topics": [
-        "educacao"
+        "infraestrutura"
       ],
-      "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-11/stf-estados-e-municipios-sao-obrigados-pagar-piso-dos-professores"
-    },
-    {
-      "id": "f64bfec0ec3cd0b939ea",
-      "published_at": "2026-11-26T17:09:00-03:00",
-      "source": "agencia_brasil",
-      "status": "discovery_only",
-      "title": "CMO aprova relatório do Orçamento de 2027 com corte de R$ 2,09 bilhões",
-      "topics": [
-        "economia"
-      ],
-      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/cmo-aprova-relatorio-do-orcamento-de-2027-com-corte-de-r-209-bilhoes"
+      "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2026-11/amazonas-para-e-roraima-passam-por-apagao-de-energia-nesta-quinta"
     }
   ],
   "sources": {
     "agencia_brasil": {
-      "eligible_signals": 2,
+      "eligible_signals": 1,
       "status": "ok"
     },
     "ibge": {
@@ -49,17 +38,7 @@
         "agencia_brasil"
       ],
       "status": "research_required",
-      "topic": "economia"
-    },
-    {
-      "document_count": 1,
-      "explore_links": 0,
-      "source_count": 1,
-      "sources": [
-        "agencia_brasil"
-      ],
-      "status": "research_required",
-      "topic": "educacao"
+      "topic": "infraestrutura"
     }
   ]
 }
