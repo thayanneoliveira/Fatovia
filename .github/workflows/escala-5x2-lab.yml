@@ -1,4 +1,4 @@
-name: FatoVia | Escala 5x2 V5 Algenib (laboratorio)
+name: FatoVia | Escala 5x2 V6 Algenib (laboratorio)
 on:
   push:
     branches: ['lab/escala-5x2-v5-algenib-20261127']
@@ -45,7 +45,7 @@ jobs:
           assert hashlib.sha256(wav.read_bytes()).hexdigest()==seal['sha256']
           print('Verified Algenib duration:',seal['duration_seconds'])
           PY
-      - name: Render isolated V5 test and verify decoding
+      - name: Render V6 and validate integrated MP4 audio
         run: |
           set -euo pipefail
           audio="$(find "$RUNNER_TEMP/algenib" -name '*.wav' -print -quit)"
@@ -54,9 +54,9 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: escala-5x2-v5-algenib-lab
+          name: escala-5x2-v6-algenib-lab
           path: |
             reel-lab-output/
             ${{ runner.temp }}/algenib/
           if-no-files-found: warn
-          retention-days: 3
+          retention-days: 7

@@ -1,0 +1,19 @@
+{
+  "status": "lab_only_no_publish",
+  "reference": "Maria: narrative grammar and technical standards only",
+  "characters": {
+    "ana": "original dark skin, curly hair, terracotta apron",
+    "carlos": "original gray hair and beard, navy apron",
+    "buyer": "original glasses and mustard shirt"
+  },
+  "composition_min": 12,
+  "planned_shots": 24,
+  "prohibit_reuse": [
+    "prior episode characters",
+    "prior episode scene assets",
+    "zoom-only animation"
+  ],
+  "delivery": "MP4 with integrated audio; AAC stereo; H264; 1080x1920; 24fps; <=120s",
+  "audio": "reuse verified Algenib WAV, zero new Gemini calls",
+  "approval": "visual and listening review mandatory; no production change"
+}
