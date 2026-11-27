@@ -7,7 +7,7 @@ on:
       - "docs/**"
       - ".github/workflows/pages.yml"
   workflow_run:
-    workflows: ["FatoVia | Radar documental seguro", "FatoVia | Entrega V6 aprovada"]
+    workflows: ["FatoVia | Radar documental seguro"]
     types: [completed]
     branches: [main]
 permissions:

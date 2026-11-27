@@ -2,10 +2,6 @@ name: "FatoVia | Publicacao Instagram controlada"
 
 on:
   workflow_dispatch:
-  workflow_run:
-    workflows: ["FatoVia | Fila V6 apos hospedagem"]
-    types: [completed]
-    branches: [main]
   push:
     branches: [main]
     paths:
@@ -46,7 +42,7 @@ jobs:
         run: python -m fatovia.publisher status
 
   publish:
-    if: ${{ (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')) && github.ref == 'refs/heads/main' && vars.IG_PUBLISH_ENABLED == 'true' }}
+    if: ${{ (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/main' && vars.IG_PUBLISH_ENABLED == 'true' }}
     runs-on: ubuntu-latest
     timeout-minutes: 12
     env:
@@ -55,7 +51,6 @@ jobs:
       META_IG_USER_ID: ${{ vars.META_IG_USER_ID }}
       META_API_HOST: ${{ vars.META_API_HOST }}
       META_GRAPH_VERSION: v25.0
-      FATOVIA_EXACT_REEL_TARGET: ${{ github.event_name == 'workflow_run' && 'reel:escala-5x2-20261127' || '' }}
     steps:
       - uses: actions/checkout@v4
         with:
