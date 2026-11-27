@@ -1,0 +1,48 @@
+name: FatoVia | Escala 5x2 V5 Algenib (laboratorio)
+on:
+  push:
+    branches: ['lab/escala-5x2-v5-algenib-20261127']
+    paths: ['.github/workflows/escala-5x2-lab.yml']
+permissions:
+  contents: read
+jobs:
+  reel:
+    if: github.run_attempt == 1
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Prepare render dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-lato
+          python -m pip install pillow numpy faster-whisper
+          python -m unittest discover -s tests -p test_narration.py -v
+      - name: Generate Algenib once on previously verified dedicated free-tier project
+        env:
+          FATOVIA_GEMINI_API_KEY: ${{ secrets.FATOVIA_GEMINI_API_KEY }}
+          FATOVIA_GEMINI_FREE_TIER_VERIFIED: 'true'
+        run: |
+          set -euo pipefail
+          umask 077
+          python -m fatovia.narration --script data/reel_lab_escala_5x2.txt --cache "$RUNNER_TEMP/algenib"
+      - name: Render isolated V5 test and verify decoding
+        run: |
+          set -euo pipefail
+          audio="$(find "$RUNNER_TEMP/algenib" -name '*.wav' -print -quit)"
+          test -n "$audio"
+          python tools/render_escala_5x2_lab.py "$audio" reel-lab-output
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: escala-5x2-v5-algenib-lab
+          path: |
+            reel-lab-output/
+            ${{ runner.temp }}/algenib/
+          if-no-files-found: warn
+          retention-days: 3
