@@ -646,20 +646,20 @@
     },
     {
       "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-      "caption": "O que está previsto nesta proposta?\n\nPL 5999/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-27. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2660478\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660478\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2660478/4241ddbd1ad89e\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "caption": "O que está previsto nesta proposta?\n\nPL 5999/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-27. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2660478\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660478\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2660478/4241ddbd1ad89e/premium-editorial-v1\n#FatoVia #PoliticasPublicas #CongressoNacional\n\nSalve este post para acompanhar a tramitação. Compartilhe com quem quer entender esta proposta antes de opinar.",
       "cards": [
-        "docs/media/camara-2660478/4241ddbd1ad89e/01.jpg",
-        "docs/media/camara-2660478/4241ddbd1ad89e/02.jpg",
-        "docs/media/camara-2660478/4241ddbd1ad89e/03.jpg",
-        "docs/media/camara-2660478/4241ddbd1ad89e/04.jpg",
-        "docs/media/camara-2660478/4241ddbd1ad89e/05.jpg",
-        "docs/media/camara-2660478/4241ddbd1ad89e/06.jpg",
-        "docs/media/camara-2660478/4241ddbd1ad89e/07.jpg"
+        "docs/media/camara-2660478/4241ddbd1ad89e/premium-editorial-v1/01.jpg",
+        "docs/media/camara-2660478/4241ddbd1ad89e/premium-editorial-v1/02.jpg",
+        "docs/media/camara-2660478/4241ddbd1ad89e/premium-editorial-v1/03.jpg",
+        "docs/media/camara-2660478/4241ddbd1ad89e/premium-editorial-v1/04.jpg",
+        "docs/media/camara-2660478/4241ddbd1ad89e/premium-editorial-v1/05.jpg",
+        "docs/media/camara-2660478/4241ddbd1ad89e/premium-editorial-v1/06.jpg",
+        "docs/media/camara-2660478/4241ddbd1ad89e/premium-editorial-v1/07.jpg"
       ],
       "discovery_source_count": 0,
       "editorial_score": 72,
       "evidence": {
-        "checked_at": "2026-11-28T10:01:33.678051-03:00",
+        "checked_at": "2026-11-28T10:16:59.210590-03:00",
         "claims": [
           {
             "basis": "identificacao_da_proposicao",
@@ -674,7 +674,7 @@
             "field": "stage"
           }
         ],
-        "content_sha256": "a59ece5ffda302e2d32a10d6a4bd9321d279ef959cf4e2fbdae1aabe574f17b6",
+        "content_sha256": "8716177927fe5c1af4176404b9dcc3826e8d3f29b11c7aca6fd0c601ed604aa1",
         "kind": "official_document_attribution",
         "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
         "record_date": "2026-11-27",
@@ -691,7 +691,7 @@
       "status": "ready",
       "summary": "Altera a Lei nº 14.113, de 25 de dezembro de 2020, que regulamenta o Fundeb, para incluir a implementação do ensino de história e cultura afro-brasileira e indígena entre as condicionalidades da complementação da União na modalidade VAAR.",
       "summary_hash": "db1004db17090f",
-      "template_revision": "documentary-hook-v3",
+      "template_revision": "premium-editorial-v1",
       "title": "PL 5999/2026",
       "topics": [
         "educacao"
@@ -700,20 +700,20 @@
     },
     {
       "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-      "caption": "O que está previsto nesta proposta?\n\nPL 6006/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-27. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2660488\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660488\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2660488/42517694849646\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "caption": "O que está previsto nesta proposta?\n\nPL 6006/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-27. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2660488\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660488\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2660488/42517694849646/premium-editorial-v1\n#FatoVia #PoliticasPublicas #CongressoNacional\n\nSalve este post para acompanhar a tramitação. Compartilhe com quem quer entender esta proposta antes de opinar.",
       "cards": [
-        "docs/media/camara-2660488/42517694849646/01.jpg",
-        "docs/media/camara-2660488/42517694849646/02.jpg",
-        "docs/media/camara-2660488/42517694849646/03.jpg",
-        "docs/media/camara-2660488/42517694849646/04.jpg",
-        "docs/media/camara-2660488/42517694849646/05.jpg",
-        "docs/media/camara-2660488/42517694849646/06.jpg",
-        "docs/media/camara-2660488/42517694849646/07.jpg"
+        "docs/media/camara-2660488/42517694849646/premium-editorial-v1/01.jpg",
+        "docs/media/camara-2660488/42517694849646/premium-editorial-v1/02.jpg",
+        "docs/media/camara-2660488/42517694849646/premium-editorial-v1/03.jpg",
+        "docs/media/camara-2660488/42517694849646/premium-editorial-v1/04.jpg",
+        "docs/media/camara-2660488/42517694849646/premium-editorial-v1/05.jpg",
+        "docs/media/camara-2660488/42517694849646/premium-editorial-v1/06.jpg",
+        "docs/media/camara-2660488/42517694849646/premium-editorial-v1/07.jpg"
       ],
       "discovery_source_count": 1,
       "editorial_score": 71,
       "evidence": {
-        "checked_at": "2026-11-28T10:01:33.678051-03:00",
+        "checked_at": "2026-11-28T10:16:59.210590-03:00",
         "claims": [
           {
             "basis": "identificacao_da_proposicao",
@@ -728,7 +728,7 @@
             "field": "stage"
           }
         ],
-        "content_sha256": "502c9a908078f673402375b5c7f04607358ca77720975d60e78627f12fef0ae4",
+        "content_sha256": "3b1410cd894f59874cae8c3ce8b4d78fa85a4cdb3603ff96fa8a5187fd26dcb8",
         "kind": "official_document_attribution",
         "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
         "record_date": "2026-11-27",
@@ -745,7 +745,7 @@
       "status": "ready",
       "summary": "Veda o transporte de Ministros do Supremo Tribunal Federal em aeronaves das Forças Armadas, ressalvadas as hipóteses que especifica, e dispõe sobre o ressarcimento dos custos do transporte irregular.",
       "summary_hash": "33a114d645972b",
-      "template_revision": "documentary-hook-v3",
+      "template_revision": "premium-editorial-v1",
       "title": "PL 6006/2026",
       "topics": [
         "infraestrutura"
