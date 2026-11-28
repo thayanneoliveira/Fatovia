@@ -306,60 +306,6 @@
   "pending": [
     {
       "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-      "caption": "Juros sobre capital próprio: qual imposto pode mudar?\n\nA mudança proposta é elevar a alíquota do Imposto de Renda Retido na Fonte incidente sobre juros sobre capital próprio.\n\nSe o texto for aprovado, a tributação dessa modalidade de pagamento poderá mudar. A ementa não informa o efeito final para cada contribuinte.\n\nPL 5855/2026 | Registro de 2026-11-13. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2653947\nID editorial: camara:2653947/a9ab7e30775280/didactic-v4\n#FatoVia #PoliticasPublicas",
-      "cards": [
-        "docs/media/camara-2653947/a9ab7e30775280/didactic-v4/01.jpg",
-        "docs/media/camara-2653947/a9ab7e30775280/didactic-v4/02.jpg",
-        "docs/media/camara-2653947/a9ab7e30775280/didactic-v4/03.jpg",
-        "docs/media/camara-2653947/a9ab7e30775280/didactic-v4/04.jpg",
-        "docs/media/camara-2653947/a9ab7e30775280/didactic-v4/05.jpg",
-        "docs/media/camara-2653947/a9ab7e30775280/didactic-v4/06.jpg",
-        "docs/media/camara-2653947/a9ab7e30775280/didactic-v4/07.jpg"
-      ],
-      "discovery_source_count": 1,
-      "editorial_score": 57,
-      "evidence": {
-        "checked_at": "2026-11-22T22:36:10.406880-03:00",
-        "claims": [
-          {
-            "basis": "identificacao_da_proposicao",
-            "field": "title"
-          },
-          {
-            "basis": "ementa_oficial_atribuida",
-            "field": "summary"
-          },
-          {
-            "basis": "registro_de_tramitacao",
-            "field": "stage"
-          }
-        ],
-        "content_sha256": "ad55a745ee411033ccd0a5f68dfff20a3b8537d37747ca9938511beea47998ae",
-        "kind": "official_document_attribution",
-        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
-        "record_date": "2026-11-13",
-        "schema": 1,
-        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
-      },
-      "explore_signal_count": 0,
-      "id": "camara:2653947",
-      "public_url": "https://www.camara.leg.br/propostas-legislativas/2653947",
-      "source_name": "Câmara dos Deputados",
-      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947",
-      "stage": "Apresentação de Proposição",
-      "stage_date": "2026-11-13",
-      "status": "ready",
-      "summary": "Altera a Lei nº 9.249, de 26 de dezembro de 1995, para elevar a alíquota do Imposto de Renda Retido na Fonte incidente sobre os juros sobre o capital próprio.",
-      "summary_hash": "c621d796fce35c",
-      "template_revision": "didactic-v4",
-      "title": "PL 5855/2026",
-      "topics": [
-        "economia"
-      ],
-      "version": "a9ab7e30775280"
-    },
-    {
-      "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
       "caption": "Imposto sobre grandes fortunas: o que está em discussão?\n\nA ementa propõe instituir o Imposto sobre Grandes Fortunas, previsto no artigo 153 da Constituição Federal.\n\nSe aprovado e regulamentado conforme o texto final, o tributo poderá alcançar patrimônios enquadrados nos critérios legais.\n\nPL 5852/2026 | Registro de 2026-11-13. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2653944\nID editorial: camara:2653944/2d94a3cc4eebf7/didactic-v4\n#FatoVia #PoliticasPublicas",
       "cards": [
         "docs/media/camara-2653944/2d94a3cc4eebf7/didactic-v4/01.jpg",
@@ -1006,15 +952,24 @@
         "tecnologia"
       ],
       "version": "9928715e313319"
+    },
+    {
+      "evidence_sha256": "ad55a745ee411033ccd0a5f68dfff20a3b8537d37747ca9938511beea47998ae",
+      "format": "carousel",
+      "id": "camara:2653947",
+      "media_id": "17955796263304195",
+      "permalink": "https://www.instagram.com/p/DgSIoLlkVQ9/",
+      "published_at": "2026-11-28T08:20:31.011584-03:00",
+      "summary": "Altera a Lei nº 9.249, de 26 de dezembro de 1995, para elevar a alíquota do Imposto de Renda Retido na Fonte incidente sobre os juros sobre o capital próprio.",
+      "summary_hash": "c621d796fce35c",
+      "title": "PL 5855/2026",
+      "topics": [
+        "economia"
+      ],
+      "version": "a9ab7e30775280"
     }
   ],
-  "publishing": {
-    "format": "carousel",
-    "id": "camara:2653947",
-    "started_at": "2026-11-28T08:20:28.744920-03:00",
-    "status": "checkpointed",
-    "version": "a9ab7e30775280"
-  },
+  "publishing": null,
   "reel_pending": [],
   "replacement_request": {
     "authorization": "owner_requested_replacement_after_manual_deletion_2026-11-15",
