@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T18:26:38.401879-03:00",
+  "generated_at": "2026-11-27T21:33:16.731825-03:00",
   "limitations": "Independent rule-based check of the official source, approved template and bytes; not general factual or semantic review.",
   "policy": "documentary-template-v4-didactic",
   "reviews": [
@@ -13,7 +13,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "e26f2733173e8a3d39d9e4adeed438c195bc5163d30fb101ba6459ffbeed0939"
       ],
-      "checked_at": "2026-11-27T18:26:38.401879-03:00",
+      "checked_at": "2026-11-27T21:33:16.731825-03:00",
       "claim_matrix": {
         "document_id": "camara:2653947",
         "entries": [
@@ -190,7 +190,7 @@
         "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
         "a5ab9d4c745a18620bf7def5c0fab4c7ff42dab0f77afbfeebe87ab6cfc341ea"
       ],
-      "checked_at": "2026-11-27T18:26:38.401879-03:00",
+      "checked_at": "2026-11-27T21:33:16.731825-03:00",
       "claim_matrix": {
         "document_id": "camara:2653944",
         "entries": [
@@ -359,253 +359,6 @@
     },
     {
       "card_sha256": [
-        "a97d229ecf8d41bf8f3c63a20b200e4e77587b2d2835c81217272c6e7c06e3e7",
-        "50d93592669a3469ea47b61797677e538c717b35a84ca2ca6f35e1edc1f89740",
-        "dcd74d8b8eea1d7c1a729f6cf7db3dc3f8fdf773d7a10decc20c9d6c51c6e982",
-        "f96f64dd8d0abf565a974634136bc3879b0b06781ad5f33ac53df3967d09069c",
-        "c09bbc7ed153dd00f61b267a9516848b78ac8a93269b555eb35f43a379236259",
-        "df44923216636e5b22145baf3b10124556c89a344896229774453364c91ba5fa",
-        "ddb89ab11a5d5d3311cf41c8654852b6cbdc0ccf6a159b142931f721b68e0f2a"
-      ],
-      "checked_at": "2026-11-27T18:26:38.401879-03:00",
-      "claim_matrix": {
-        "document_id": "camara:2655411",
-        "entries": [
-          {
-            "evidence": {
-              "end": 34,
-              "excerpt": "Programa Remédio na Mão",
-              "field": "summary",
-              "field_sha256": "ff2a84d3e41bc1135903b5bde1b146b4f2697d70eb897b8c301e37a1d32413e9",
-              "start": 11,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_01",
-            "text": "Remédio na Mão: como encontrar medicamentos gratuitos? | O projeto propõe facilitar a busca por medicamentos e insumos disponíveis no SUS e na Farmácia Popular.",
-            "type": "reviewed_question"
-          },
-          {
-            "evidence": {
-              "end": 170,
-              "excerpt": "Sistema Único de Saúde",
-              "field": "summary",
-              "field_sha256": "ff2a84d3e41bc1135903b5bde1b146b4f2697d70eb897b8c301e37a1d32413e9",
-              "start": 148,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_01",
-            "text": "Remédio na Mão: como encontrar medicamentos gratuitos? | O projeto propõe facilitar a busca por medicamentos e insumos disponíveis no SUS e na Farmácia Popular.",
-            "type": "reviewed_question"
-          },
-          {
-            "evidence": {
-              "end": 34,
-              "excerpt": "Programa Remédio na Mão",
-              "field": "summary",
-              "field_sha256": "ff2a84d3e41bc1135903b5bde1b146b4f2697d70eb897b8c301e37a1d32413e9",
-              "start": 11,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_02",
-            "text": "O que diz a proposta? | A proposta prevê consulta de disponibilidade, identificação de unidades e orientações sobre requisitos de retirada.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 170,
-              "excerpt": "Sistema Único de Saúde",
-              "field": "summary",
-              "field_sha256": "ff2a84d3e41bc1135903b5bde1b146b4f2697d70eb897b8c301e37a1d32413e9",
-              "start": 148,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_02",
-            "text": "O que diz a proposta? | A proposta prevê consulta de disponibilidade, identificação de unidades e orientações sobre requisitos de retirada.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 34,
-              "excerpt": "Programa Remédio na Mão",
-              "field": "summary",
-              "field_sha256": "ff2a84d3e41bc1135903b5bde1b146b4f2697d70eb897b8c301e37a1d32413e9",
-              "start": 11,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_03",
-            "text": "Qual é o mecanismo? | Informação atualizada sobre estoque e locais pode reduzir deslocamentos sem garantia de atendimento ou disponibilidade contínua.",
-            "type": "reviewed_mechanism"
-          },
-          {
-            "evidence": {
-              "end": 170,
-              "excerpt": "Sistema Único de Saúde",
-              "field": "summary",
-              "field_sha256": "ff2a84d3e41bc1135903b5bde1b146b4f2697d70eb897b8c301e37a1d32413e9",
-              "start": 148,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_03",
-            "text": "Qual é o mecanismo? | Informação atualizada sobre estoque e locais pode reduzir deslocamentos sem garantia de atendimento ou disponibilidade contínua.",
-            "type": "reviewed_mechanism"
-          },
-          {
-            "evidence": {
-              "end": 34,
-              "excerpt": "Programa Remédio na Mão",
-              "field": "summary",
-              "field_sha256": "ff2a84d3e41bc1135903b5bde1b146b4f2697d70eb897b8c301e37a1d32413e9",
-              "start": 11,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_04",
-            "text": "E na prática? | Se aprovado e implementado, o programa poderá ajudar usuários a localizar unidades e alternativas de atendimento.",
-            "type": "reviewed_conditional"
-          },
-          {
-            "evidence": {
-              "end": 170,
-              "excerpt": "Sistema Único de Saúde",
-              "field": "summary",
-              "field_sha256": "ff2a84d3e41bc1135903b5bde1b146b4f2697d70eb897b8c301e37a1d32413e9",
-              "start": 148,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_04",
-            "text": "E na prática? | Se aprovado e implementado, o programa poderá ajudar usuários a localizar unidades e alternativas de atendimento.",
-            "type": "reviewed_conditional"
-          },
-          {
-            "evidence": {
-              "end": 34,
-              "excerpt": "Programa Remédio na Mão",
-              "field": "summary",
-              "field_sha256": "ff2a84d3e41bc1135903b5bde1b146b4f2697d70eb897b8c301e37a1d32413e9",
-              "start": 11,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_05",
-            "text": "O que falta esclarecer? | Como os estoques seriam atualizados? Quem manteria os dados? Como seria garantida a acessibilidade?",
-            "type": "reviewed_questions"
-          },
-          {
-            "evidence": {
-              "end": 170,
-              "excerpt": "Sistema Único de Saúde",
-              "field": "summary",
-              "field_sha256": "ff2a84d3e41bc1135903b5bde1b146b4f2697d70eb897b8c301e37a1d32413e9",
-              "start": 148,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_05",
-            "text": "O que falta esclarecer? | Como os estoques seriam atualizados? Quem manteria os dados? Como seria garantida a acessibilidade?",
-            "type": "reviewed_questions"
-          },
-          {
-            "evidence": {
-              "end": 26,
-              "excerpt": "Apresentação de Proposição",
-              "field": "stage",
-              "field_sha256": "7ad4f3a2409e2196a7e3ccc89d81061c388c76f096e8a3e5181944076982a9b7",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
-            },
-            "limitation": "Registro de tramitação.",
-            "location": "card_06",
-            "text": "Apresentação de Proposição",
-            "type": "procedural_record"
-          },
-          {
-            "evidence": {
-              "end": 10,
-              "excerpt": "2026-11-18",
-              "field": "stage_date",
-              "field_sha256": "0f45d26b9bca5bab9215ee29cc079e2776099e08de9df505123e52128fe91375",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
-            },
-            "limitation": "Não comprova vigência.",
-            "location": "card_06",
-            "text": "2026-11-18",
-            "type": "record_date"
-          },
-          {
-            "evidence": {
-              "end": 12,
-              "excerpt": "PL 5897/2026",
-              "field": "title",
-              "field_sha256": "8908fb819cc9edfb9c708510e7ad4763df62d07964635c572a5692f35f4c97d3",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
-            },
-            "limitation": "Fonte para leitura integral.",
-            "location": "card_07",
-            "text": "PL 5897/2026",
-            "type": "source_reference"
-          },
-          {
-            "evidence": {
-              "end": 34,
-              "excerpt": "Programa Remédio na Mão",
-              "field": "summary",
-              "field_sha256": "ff2a84d3e41bc1135903b5bde1b146b4f2697d70eb897b8c301e37a1d32413e9",
-              "start": 11,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
-            },
-            "limitation": "Paráfrase revisada.",
-            "location": "caption",
-            "text": "A proposta prevê consulta de disponibilidade, identificação de unidades e orientações sobre requisitos de retirada.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 170,
-              "excerpt": "Sistema Único de Saúde",
-              "field": "summary",
-              "field_sha256": "ff2a84d3e41bc1135903b5bde1b146b4f2697d70eb897b8c301e37a1d32413e9",
-              "start": 148,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411"
-            },
-            "limitation": "Impacto potencial.",
-            "location": "caption",
-            "text": "Se aprovado e implementado, o programa poderá ajudar usuários a localizar unidades e alternativas de atendimento.",
-            "type": "reviewed_conditional"
-          }
-        ],
-        "limitation": "Revisão editorial de narrativa controlada; não verifica impacto real ou texto integral.",
-        "policy": "didactic-v4",
-        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2655411",
-        "unverified_dimensions": [
-          "legal_effect",
-          "implementation",
-          "budget",
-          "causality",
-          "social_impact"
-        ],
-        "version": "9928715e313319"
-      },
-      "claim_matrix_sha256": "284fb18188672b91498d77e193ab6f816d3907ac52a0e01e0bfd416bbd51ce25",
-      "closing_media_sha256": "ddb89ab11a5d5d3311cf41c8654852b6cbdc0ccf6a159b142931f721b68e0f2a",
-      "content_sha256": "da6180d87bade8fe4a8c434440e15e60aa442e932d320d29549d1f78b1a6389f",
-      "decision": "approved_documentary_only",
-      "id": "camara:2655411",
-      "issues": [],
-      "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-      "policy": "documentary-template-v4-didactic",
-      "version": "9928715e313319"
-    },
-    {
-      "card_sha256": [
         "6c5cb2dd8fe0e65d99deddd167f6f94bad934dcda2c58c1b73133cd3c0a40c41",
         "1b856086bb551168d09f1b1bce8e0ecb8a4c5de281877de1a20a380934430261",
         "ebcb14d5acb55f633f0e69f5cf6234b9716a978f8ef2e0e36e8bb507ded6c7b5",
@@ -614,7 +367,7 @@
         "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
         "433e7fd979e49828ec023fa0a0b845d80df4203ae6116ff5647fc997b068c0e3"
       ],
-      "checked_at": "2026-11-27T18:26:38.401879-03:00",
+      "checked_at": "2026-11-27T21:33:16.731825-03:00",
       "claim_matrix": {
         "document_id": "camara:2658959",
         "entries": [
@@ -777,7 +530,7 @@
         "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
         "db432a636baa79fef857208dd75f2a1309a65e635df6d69f8022db98f5055a6c"
       ],
-      "checked_at": "2026-11-27T18:26:38.401879-03:00",
+      "checked_at": "2026-11-27T21:33:16.731825-03:00",
       "claim_matrix": {
         "document_id": "camara:2659020",
         "entries": [
@@ -933,7 +686,7 @@
         "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
         "c6cf0409b9fae30fa4d8f35e2f2afa7bfe02b51528015bf88690e6d4afc9fea9"
       ],
-      "checked_at": "2026-11-27T18:26:38.401879-03:00",
+      "checked_at": "2026-11-27T21:33:16.731825-03:00",
       "claim_matrix": {
         "document_id": "camara:2659462",
         "entries": [
@@ -1089,7 +842,7 @@
         "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
         "a843c672eaf5546cc51f18e5b045d32317cd30c3b36972a2a055df7a3c0d587c"
       ],
-      "checked_at": "2026-11-27T18:26:38.401879-03:00",
+      "checked_at": "2026-11-27T21:33:16.731825-03:00",
       "claim_matrix": {
         "document_id": "camara:2659342",
         "entries": [
@@ -1245,7 +998,7 @@
         "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
         "4d1a05ab83f2b4e2327b30c04fd57b68cee742a0e9721ae371d12c01c30667d5"
       ],
-      "checked_at": "2026-11-27T18:26:38.401879-03:00",
+      "checked_at": "2026-11-27T21:33:16.731825-03:00",
       "claim_matrix": {
         "document_id": "camara:2660119",
         "entries": [
@@ -1397,6 +1150,162 @@
       "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
       "policy": "documentary-template-v4-didactic",
       "version": "1d2626b8ceaffc"
+    },
+    {
+      "card_sha256": [
+        "6ddef558f51fb6be996bcfdf343c306ef540750989ee8624a46d01b6acf6a657",
+        "77267671cad03e82741d4669c92374ec569d3e9a2cd9f06ed8bd1da054c7acd2",
+        "50fc02cfd1d06be78856d1d7dc75f61c0346bcbdeeeff316b42bc4e81aa7c58f",
+        "f1f9e6c66728073a28b19ab1b4a466ad298e7a509cd9649f79195bcbace28527",
+        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
+        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
+        "28c3a8fe51ef6e562c426f39ef6347f6b4856ce53b47cf5cddcc2cd5683600e3"
+      ],
+      "checked_at": "2026-11-27T21:33:16.731825-03:00",
+      "claim_matrix": {
+        "document_id": "camara:2660442",
+        "entries": [
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5997/2026",
+              "field": "title",
+              "field_sha256": "452d94ec4bd0254383405da4069d814cada5b9205a87478816e0d4ef01279217",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660442"
+            },
+            "limitation": "Identifica a proposição, não sua aprovação.",
+            "location": "card_01",
+            "text": "PL 5997/2026",
+            "type": "document_identity"
+          },
+          {
+            "evidence": {
+              "end": 230,
+              "excerpt": "Dispõe sobre a proibição da divulgação, compartilhamento e impulsionamento de imagens e vídeos que exponham vítimas de violência física nas redes sociais e plataformas digitais, e estabelece medidas de proteção à dignidade humana.",
+              "field": "summary",
+              "field_sha256": "f07325bcb4beeb8df711614b96022409bab829350b21ce449bde02d17928b4d2",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660442"
+            },
+            "limitation": "Ementa oficial, não texto integral nem prova de impacto.",
+            "location": "card_02",
+            "text": "Dispõe sobre a proibição da divulgação, compartilhamento e impulsionamento de imagens e vídeos que exponham vítimas de violência física nas redes sociais e plataformas digitais, e estabelece medidas de proteção à dignidade humana.",
+            "type": "attributed_excerpt"
+          },
+          {
+            "evidence": null,
+            "limitation": "Não acrescenta fatos externos.",
+            "location": "card_03",
+            "text": "A ementa resume o tema. Para conhecer condições, exceções e detalhes, consulte o texto integral.",
+            "type": "template_explanation"
+          },
+          {
+            "evidence": {
+              "end": 26,
+              "excerpt": "Apresentação de Proposição",
+              "field": "stage",
+              "field_sha256": "7ad4f3a2409e2196a7e3ccc89d81061c388c76f096e8a3e5181944076982a9b7",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660442"
+            },
+            "limitation": "Registro de tramitação na data de referência.",
+            "location": "card_04",
+            "text": "Apresentação de Proposição",
+            "type": "procedural_record"
+          },
+          {
+            "evidence": {
+              "end": 10,
+              "excerpt": "2026-11-27",
+              "field": "stage_date",
+              "field_sha256": "da3bbc3fc2e390fae91450f60b4b1bb6eefca50e93a6c5c3919370bcf751b02d",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660442"
+            },
+            "limitation": "Data do andamento, não da vigência.",
+            "location": "card_04",
+            "text": "2026-11-27",
+            "type": "record_date"
+          },
+          {
+            "evidence": null,
+            "limitation": "Não atribui impacto, vigência ou financiamento.",
+            "location": "card_05",
+            "text": "A existência de um projeto não comprova aprovação, entrada em vigor, financiamento ou resultados.",
+            "type": "scope_limitation"
+          },
+          {
+            "evidence": null,
+            "limitation": "Questões para acompanhamento, não afirmações comprovadas.",
+            "location": "card_06",
+            "text": "Qual é o texto final?\n\nQuais órgãos respondem pela execução?\n\nHá custo previsto e indicadores de resultado?",
+            "type": "open_questions"
+          },
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5997/2026",
+              "field": "title",
+              "field_sha256": "452d94ec4bd0254383405da4069d814cada5b9205a87478816e0d4ef01279217",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660442"
+            },
+            "limitation": "Referência documental.",
+            "location": "card_07",
+            "text": "PL 5997/2026",
+            "type": "source_reference"
+          },
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5997/2026",
+              "field": "title",
+              "field_sha256": "452d94ec4bd0254383405da4069d814cada5b9205a87478816e0d4ef01279217",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660442"
+            },
+            "limitation": "Identifica a proposição.",
+            "location": "caption",
+            "text": "PL 5997/2026",
+            "type": "document_identity"
+          },
+          {
+            "evidence": {
+              "end": 10,
+              "excerpt": "2026-11-27",
+              "field": "stage_date",
+              "field_sha256": "da3bbc3fc2e390fae91450f60b4b1bb6eefca50e93a6c5c3919370bcf751b02d",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660442"
+            },
+            "limitation": "Data registrada na fonte.",
+            "location": "caption",
+            "text": "2026-11-27",
+            "type": "record_date"
+          }
+        ],
+        "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
+        "policy": "documentary-claims-v2-hooks",
+        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660442",
+        "unverified_dimensions": [
+          "legal_effect",
+          "implementation",
+          "budget",
+          "causality",
+          "social_impact"
+        ],
+        "version": "61123c2d60c463"
+      },
+      "claim_matrix_sha256": "03d6154c9f6c8c4d2dabee233f89b5bb8dbd9686de97c941945bc85effe6080f",
+      "closing_media_sha256": "28c3a8fe51ef6e562c426f39ef6347f6b4856ce53b47cf5cddcc2cd5683600e3",
+      "content_sha256": "ca3adacc1e3331dbfb97fc4cd45fd742b026638814d9ec73df1f600159e0e5ac",
+      "decision": "approved_documentary_only",
+      "id": "camara:2660442",
+      "issues": [],
+      "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
+      "policy": "documentary-template-v4-didactic",
+      "version": "61123c2d60c463"
     }
   ]
 }
