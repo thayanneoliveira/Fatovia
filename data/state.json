@@ -1008,7 +1008,13 @@
       "version": "9928715e313319"
     }
   ],
-  "publishing": null,
+  "publishing": {
+    "format": "carousel",
+    "id": "camara:2653947",
+    "started_at": "2026-11-28T08:20:28.744920-03:00",
+    "status": "checkpointed",
+    "version": "a9ab7e30775280"
+  },
   "reel_pending": [],
   "replacement_request": {
     "authorization": "owner_requested_replacement_after_manual_deletion_2026-11-15",
