@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T23:38:19.427538-03:00",
+  "generated_at": "2026-11-28T09:54:43.148781-03:00",
   "note": "Topic co-occurrence is not corroboration of an individual claim or proof of virality.",
   "publication_authorized": false,
   "signals": [
@@ -24,22 +24,11 @@
         "infraestrutura"
       ],
       "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/com-bandeira-tarifaria-verde-energia-nao-tera-custo-extra-em-dezembro"
-    },
-    {
-      "id": "dad65c9d4c2a5e83f362",
-      "published_at": "2026-11-27T17:41:00-03:00",
-      "source": "agencia_brasil",
-      "status": "discovery_only",
-      "title": "STF: Dino suspende emendas parlamentares de Flávio Bolsonaro",
-      "topics": [
-        "saude"
-      ],
-      "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/stf-dino-suspende-emendas-parlamentares-de-flavio-bolsonaro"
     }
   ],
   "sources": {
     "agencia_brasil": {
-      "eligible_signals": 3,
+      "eligible_signals": 2,
       "status": "ok"
     },
     "ibge": {
@@ -61,16 +50,6 @@
       ],
       "status": "research_required",
       "topic": "infraestrutura"
-    },
-    {
-      "document_count": 1,
-      "explore_links": 0,
-      "source_count": 1,
-      "sources": [
-        "agencia_brasil"
-      ],
-      "status": "research_required",
-      "topic": "saude"
     }
   ]
 }

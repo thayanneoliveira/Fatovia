@@ -300,6 +300,21 @@
         "tecnologia"
       ],
       "views": 11
+    },
+    {
+      "age_hours": 73.65,
+      "media_id": "18142372786554804",
+      "media_type": "CAROUSEL_ALBUM",
+      "observed_at": "2026-11-28T09:54:45.667299-03:00",
+      "published_at": "2026-11-25T11:15:58+00:00",
+      "reach": 2,
+      "saved": 0,
+      "shares": 0,
+      "target_hours": 72,
+      "topics": [
+        "educacao"
+      ],
+      "views": 12
     }
   ],
   "metrics": [],
