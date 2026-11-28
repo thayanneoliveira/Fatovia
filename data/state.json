@@ -321,74 +321,20 @@
   "pending": [
     {
       "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-      "caption": "Imposto sobre grandes fortunas: o que está em discussão?\n\nA ementa propõe instituir o Imposto sobre Grandes Fortunas, previsto no artigo 153 da Constituição Federal.\n\nSe aprovado e regulamentado conforme o texto final, o tributo poderá alcançar patrimônios enquadrados nos critérios legais.\n\nPL 5852/2026 | Registro de 2026-11-13. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2653944\nID editorial: camara:2653944/2d94a3cc4eebf7/didactic-v4\n#FatoVia #PoliticasPublicas",
+      "caption": "Queimadas: de onde pode vir o dinheiro para prevenção?\n\nIncluir prevenção, monitoramento, controle e combate a incêndios florestais e queimadas, além de pesquisa, desenvolvimento e inovação tecnológica.\n\nSe aprovada, a medida pode ampliar as atividades financiáveis pelo fundo. Isso não garante recursos efetivamente destinados.\n\nPL 5932/2026 | Registro de 2026-11-23. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2658959\nID editorial: camara:2658959/312e525a513387/premium-editorial-v1\n#FatoVia #PoliticasPublicas\n\nSalve este post para acompanhar a tramitação. Compartilhe com quem quer entender como a prevenção de queimadas pode ser financiada.",
       "cards": [
-        "docs/media/camara-2653944/2d94a3cc4eebf7/didactic-v4/01.jpg",
-        "docs/media/camara-2653944/2d94a3cc4eebf7/didactic-v4/02.jpg",
-        "docs/media/camara-2653944/2d94a3cc4eebf7/didactic-v4/03.jpg",
-        "docs/media/camara-2653944/2d94a3cc4eebf7/didactic-v4/04.jpg",
-        "docs/media/camara-2653944/2d94a3cc4eebf7/didactic-v4/05.jpg",
-        "docs/media/camara-2653944/2d94a3cc4eebf7/didactic-v4/06.jpg",
-        "docs/media/camara-2653944/2d94a3cc4eebf7/didactic-v4/07.jpg"
-      ],
-      "discovery_source_count": 1,
-      "editorial_score": 56,
-      "evidence": {
-        "checked_at": "2026-11-22T22:36:10.406880-03:00",
-        "claims": [
-          {
-            "basis": "identificacao_da_proposicao",
-            "field": "title"
-          },
-          {
-            "basis": "ementa_oficial_atribuida",
-            "field": "summary"
-          },
-          {
-            "basis": "registro_de_tramitacao",
-            "field": "stage"
-          }
-        ],
-        "content_sha256": "0f9bfda45f2523d328eedfae3d497c774fe928add234736ab0da56607f8ef2f8",
-        "kind": "official_document_attribution",
-        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
-        "record_date": "2026-11-13",
-        "schema": 1,
-        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
-      },
-      "explore_signal_count": 0,
-      "id": "camara:2653944",
-      "public_url": "https://www.camara.leg.br/propostas-legislativas/2653944",
-      "source_name": "Câmara dos Deputados",
-      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944",
-      "stage": "Apresentação de Proposição",
-      "stage_date": "2026-11-13",
-      "status": "ready",
-      "summary": "Institui o Imposto sobre Grandes Fortunas, previsto no art. 153, inciso VII, da Constituição Federal.",
-      "summary_hash": "cf3bbc34af91f6",
-      "template_revision": "didactic-v4",
-      "title": "PL 5852/2026",
-      "topics": [
-        "economia"
-      ],
-      "version": "2d94a3cc4eebf7"
-    },
-    {
-      "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-      "caption": "O que está previsto nesta proposta?\n\nPL 5932/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-23. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2658959\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2658959\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2658959/312e525a513387\n#FatoVia #PoliticasPublicas #CongressoNacional",
-      "cards": [
-        "docs/media/camara-2658959/312e525a513387/01.jpg",
-        "docs/media/camara-2658959/312e525a513387/02.jpg",
-        "docs/media/camara-2658959/312e525a513387/03.jpg",
-        "docs/media/camara-2658959/312e525a513387/04.jpg",
-        "docs/media/camara-2658959/312e525a513387/05.jpg",
-        "docs/media/camara-2658959/312e525a513387/06.jpg",
-        "docs/media/camara-2658959/312e525a513387/07.jpg"
+        "docs/media/camara-2658959/312e525a513387/premium-editorial-v1/01.jpg",
+        "docs/media/camara-2658959/312e525a513387/premium-editorial-v1/02.jpg",
+        "docs/media/camara-2658959/312e525a513387/premium-editorial-v1/03.jpg",
+        "docs/media/camara-2658959/312e525a513387/premium-editorial-v1/04.jpg",
+        "docs/media/camara-2658959/312e525a513387/premium-editorial-v1/05.jpg",
+        "docs/media/camara-2658959/312e525a513387/premium-editorial-v1/06.jpg",
+        "docs/media/camara-2658959/312e525a513387/premium-editorial-v1/07.jpg"
       ],
       "discovery_source_count": 0,
       "editorial_score": 89,
       "evidence": {
-        "checked_at": "2026-11-24T11:44:43.750129-03:00",
+        "checked_at": "2026-11-28T10:01:33.678051-03:00",
         "claims": [
           {
             "basis": "identificacao_da_proposicao",
@@ -403,7 +349,7 @@
             "field": "stage"
           }
         ],
-        "content_sha256": "20f9d8709e9769434c690a165129b4e6e5eefab8b325b3ad0163b5728019a5ed",
+        "content_sha256": "f2673c0886ac2abb680e74be756b1a1b7a17f203fdf43b25809b1ea8f1d0628d",
         "kind": "official_document_attribution",
         "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
         "record_date": "2026-11-23",
@@ -420,7 +366,7 @@
       "status": "ready",
       "summary": "Altera a Lei nº 12.114, de 9 de dezembro de 2009, para incluir a prevenção, o monitoramento, o controle e o combate a incêndios florestais e queimadas, bem como a pesquisa, o desenvolvimento e a inovação tecnológica relacionados ao tema, entre as atividades passíveis de aplicação dos recursos do Fundo Nacional sobre Mudança do Clima.",
       "summary_hash": "2118170e136bb6",
-      "template_revision": "documentary-hook-v3",
+      "template_revision": "premium-editorial-v1",
       "title": "PL 5932/2026",
       "topics": [
         "ambiente"
@@ -429,20 +375,20 @@
     },
     {
       "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-      "caption": "O que está previsto nesta proposta?\n\nPL 5945/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-23. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2659020\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659020\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2659020/0df9252ed4b520\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "caption": "Quem deve avisar sobre os riscos nas rodovias federais?\n\nTratar do dever da Polícia Rodoviária Federal de registrar e comunicar defeitos e condições de risco.\n\nSe aprovada, a medida pode disciplinar a comunicação dos riscos. Comunicar não equivale a executar o reparo.\n\nPL 5945/2026 | Registro de 2026-11-23. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2659020\nID editorial: camara:2659020/0df9252ed4b520/premium-editorial-v1\n#FatoVia #PoliticasPublicas\n\nSalve este post para acompanhar a tramitação. Compartilhe com quem sempre comenta sobre as condições da estrada.",
       "cards": [
-        "docs/media/camara-2659020/0df9252ed4b520/01.jpg",
-        "docs/media/camara-2659020/0df9252ed4b520/02.jpg",
-        "docs/media/camara-2659020/0df9252ed4b520/03.jpg",
-        "docs/media/camara-2659020/0df9252ed4b520/04.jpg",
-        "docs/media/camara-2659020/0df9252ed4b520/05.jpg",
-        "docs/media/camara-2659020/0df9252ed4b520/06.jpg",
-        "docs/media/camara-2659020/0df9252ed4b520/07.jpg"
+        "docs/media/camara-2659020/0df9252ed4b520/premium-editorial-v1/01.jpg",
+        "docs/media/camara-2659020/0df9252ed4b520/premium-editorial-v1/02.jpg",
+        "docs/media/camara-2659020/0df9252ed4b520/premium-editorial-v1/03.jpg",
+        "docs/media/camara-2659020/0df9252ed4b520/premium-editorial-v1/04.jpg",
+        "docs/media/camara-2659020/0df9252ed4b520/premium-editorial-v1/05.jpg",
+        "docs/media/camara-2659020/0df9252ed4b520/premium-editorial-v1/06.jpg",
+        "docs/media/camara-2659020/0df9252ed4b520/premium-editorial-v1/07.jpg"
       ],
       "discovery_source_count": 0,
       "editorial_score": 83,
       "evidence": {
-        "checked_at": "2026-11-24T22:26:51.386181-03:00",
+        "checked_at": "2026-11-28T10:01:33.678051-03:00",
         "claims": [
           {
             "basis": "identificacao_da_proposicao",
@@ -457,7 +403,7 @@
             "field": "stage"
           }
         ],
-        "content_sha256": "f68891b65b34ed6bf30797dfb0132018d9ae269d0b31cfa7162b422d6351ad2a",
+        "content_sha256": "91e8376aa3527d036cfbce1611b9a030fdf9b889b475f1134b019fd064358e34",
         "kind": "official_document_attribution",
         "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
         "record_date": "2026-11-23",
@@ -474,7 +420,7 @@
       "status": "ready",
       "summary": "Altera a Lei nº 9.503, de 23 de setembro de 1997 (Código de Trânsito Brasileiro), para tratar sobre o dever da Polícia Rodoviária Federal registrar e comunicar os defeitos e as condições de risco das rodovias e estradas federais aos responsáveis por sua conservação e aos governos federal e estadual.",
       "summary_hash": "2efefcb25880bc",
-      "template_revision": "documentary-hook-v3",
+      "template_revision": "premium-editorial-v1",
       "title": "PL 5945/2026",
       "topics": [
         "seguranca"
@@ -483,20 +429,20 @@
     },
     {
       "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-      "caption": "O que está previsto nesta proposta?\n\nPL 5961/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-25. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2659462\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659462\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2659462/b523d110082ee1\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "caption": "Como poderia mudar o acolhimento de vítimas nas unidades de saúde?\n\nAssegurar acolhimento em sala reservada e informação sobre direitos a vítimas de outras formas de violência.\n\nSe aprovada e implementada, a proposta pode ampliar as garantias de acolhimento previstas na legislação.\n\nPL 5961/2026 | Registro de 2026-11-25. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2659462\nID editorial: camara:2659462/b523d110082ee1/premium-editorial-v1\n#FatoVia #PoliticasPublicas\n\nSalve este post para acompanhar a tramitação. Compartilhe com respeito, sem expor vítimas.",
       "cards": [
-        "docs/media/camara-2659462/b523d110082ee1/01.jpg",
-        "docs/media/camara-2659462/b523d110082ee1/02.jpg",
-        "docs/media/camara-2659462/b523d110082ee1/03.jpg",
-        "docs/media/camara-2659462/b523d110082ee1/04.jpg",
-        "docs/media/camara-2659462/b523d110082ee1/05.jpg",
-        "docs/media/camara-2659462/b523d110082ee1/06.jpg",
-        "docs/media/camara-2659462/b523d110082ee1/07.jpg"
+        "docs/media/camara-2659462/b523d110082ee1/premium-editorial-v1/01.jpg",
+        "docs/media/camara-2659462/b523d110082ee1/premium-editorial-v1/02.jpg",
+        "docs/media/camara-2659462/b523d110082ee1/premium-editorial-v1/03.jpg",
+        "docs/media/camara-2659462/b523d110082ee1/premium-editorial-v1/04.jpg",
+        "docs/media/camara-2659462/b523d110082ee1/premium-editorial-v1/05.jpg",
+        "docs/media/camara-2659462/b523d110082ee1/premium-editorial-v1/06.jpg",
+        "docs/media/camara-2659462/b523d110082ee1/premium-editorial-v1/07.jpg"
       ],
       "discovery_source_count": 0,
       "editorial_score": 81,
       "evidence": {
-        "checked_at": "2026-11-25T12:38:17.409862-03:00",
+        "checked_at": "2026-11-28T10:01:33.678051-03:00",
         "claims": [
           {
             "basis": "identificacao_da_proposicao",
@@ -511,7 +457,7 @@
             "field": "stage"
           }
         ],
-        "content_sha256": "4430f88cf85097eb543bbf4f88eb63d3319fa746f6085008425c80d3d86b0f25",
+        "content_sha256": "fb0d30991363031bcd760f81744072afd7b104837be5aaad3c5326fe53897d1e",
         "kind": "official_document_attribution",
         "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
         "record_date": "2026-11-25",
@@ -528,7 +474,7 @@
       "status": "ready",
       "summary": "Altera a Lei nº 15.516, de 22 de setembro de 2026, para assegurar, nas unidades de saúde, acolhimento em sala reservada e informação sobre direitos às vítimas de violência psicológica, moral, patrimonial e de outras formas de violência diversas do estupro e da violência física.",
       "summary_hash": "b6b36a0847b072",
-      "template_revision": "documentary-hook-v3",
+      "template_revision": "premium-editorial-v1",
       "title": "PL 5961/2026",
       "topics": [
         "saude",
@@ -538,20 +484,20 @@
     },
     {
       "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-      "caption": "O que está previsto nesta proposta?\n\nPL 5960/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-24. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2659342\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659342\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2659342/32c9b9359dcd43\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "caption": "Árvores e fios elétricos: quem organiza essa convivência?\n\nInstituir uma Política Nacional de Arborização Urbana e estabelecer diretrizes de convivência segura com redes de distribuição elétrica.\n\nSe aprovada e implementada, a política pode oferecer diretrizes comuns de planejamento. Isso não comprova redução de interrupções.\n\nPL 5960/2026 | Registro de 2026-11-24. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2659342\nID editorial: camara:2659342/32c9b9359dcd43/premium-editorial-v1\n#FatoVia #PoliticasPublicas\n\nSalve este post para acompanhar a tramitação. Compartilhe com quem sempre repara nas árvores e nos fios da rua.",
       "cards": [
-        "docs/media/camara-2659342/32c9b9359dcd43/01.jpg",
-        "docs/media/camara-2659342/32c9b9359dcd43/02.jpg",
-        "docs/media/camara-2659342/32c9b9359dcd43/03.jpg",
-        "docs/media/camara-2659342/32c9b9359dcd43/04.jpg",
-        "docs/media/camara-2659342/32c9b9359dcd43/05.jpg",
-        "docs/media/camara-2659342/32c9b9359dcd43/06.jpg",
-        "docs/media/camara-2659342/32c9b9359dcd43/07.jpg"
+        "docs/media/camara-2659342/32c9b9359dcd43/premium-editorial-v1/01.jpg",
+        "docs/media/camara-2659342/32c9b9359dcd43/premium-editorial-v1/02.jpg",
+        "docs/media/camara-2659342/32c9b9359dcd43/premium-editorial-v1/03.jpg",
+        "docs/media/camara-2659342/32c9b9359dcd43/premium-editorial-v1/04.jpg",
+        "docs/media/camara-2659342/32c9b9359dcd43/premium-editorial-v1/05.jpg",
+        "docs/media/camara-2659342/32c9b9359dcd43/premium-editorial-v1/06.jpg",
+        "docs/media/camara-2659342/32c9b9359dcd43/premium-editorial-v1/07.jpg"
       ],
       "discovery_source_count": 0,
       "editorial_score": 78,
       "evidence": {
-        "checked_at": "2026-11-25T22:00:01.705648-03:00",
+        "checked_at": "2026-11-28T10:01:33.678051-03:00",
         "claims": [
           {
             "basis": "identificacao_da_proposicao",
@@ -566,7 +512,7 @@
             "field": "stage"
           }
         ],
-        "content_sha256": "7837de55c95bd03034d90f6ed1c65ba17243d644f62ef38d5f27d74370cc8389",
+        "content_sha256": "ef4571611c4823bc9e6997b0cb46f820b665495f3207b06eb06e85e736c8b322",
         "kind": "official_document_attribution",
         "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
         "record_date": "2026-11-24",
@@ -583,7 +529,7 @@
       "status": "ready",
       "summary": "Institui a Política Nacional de Arborização Urbana, estabelece diretrizes para a compatibilização e o convívio seguro da vegetação com as redes de distribuição de energia elétrica, cria o Sistema Nacional de Informações sobre Arborização Urbana, e dá outras providências.",
       "summary_hash": "999e0b78d4f669",
-      "template_revision": "documentary-hook-v3",
+      "template_revision": "premium-editorial-v1",
       "title": "PL 5960/2026",
       "topics": [
         "infraestrutura"
@@ -592,20 +538,20 @@
     },
     {
       "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-      "caption": "O que está previsto nesta proposta?\n\nPL 5991/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-26. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2660119\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660119\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2660119/1d2626b8ceaffc\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "caption": "E se um registro civil antigo se perder?\n\nEstabelecer medidas de inventário, preservação, digitalização e recuperação desses registros e instituir um programa nacional.\n\nSe aprovada e implementada, a proposta pode facilitar a preservação e a pesquisa de registros antigos.\n\nPL 5991/2026 | Registro de 2026-11-26. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2660119\nID editorial: camara:2660119/1d2626b8ceaffc/premium-editorial-v1\n#FatoVia #PoliticasPublicas\n\nSalve este post para acompanhar a tramitação. Compartilhe com quem já tentou encontrar um documento antigo da família.",
       "cards": [
-        "docs/media/camara-2660119/1d2626b8ceaffc/01.jpg",
-        "docs/media/camara-2660119/1d2626b8ceaffc/02.jpg",
-        "docs/media/camara-2660119/1d2626b8ceaffc/03.jpg",
-        "docs/media/camara-2660119/1d2626b8ceaffc/04.jpg",
-        "docs/media/camara-2660119/1d2626b8ceaffc/05.jpg",
-        "docs/media/camara-2660119/1d2626b8ceaffc/06.jpg",
-        "docs/media/camara-2660119/1d2626b8ceaffc/07.jpg"
+        "docs/media/camara-2660119/1d2626b8ceaffc/premium-editorial-v1/01.jpg",
+        "docs/media/camara-2660119/1d2626b8ceaffc/premium-editorial-v1/02.jpg",
+        "docs/media/camara-2660119/1d2626b8ceaffc/premium-editorial-v1/03.jpg",
+        "docs/media/camara-2660119/1d2626b8ceaffc/premium-editorial-v1/04.jpg",
+        "docs/media/camara-2660119/1d2626b8ceaffc/premium-editorial-v1/05.jpg",
+        "docs/media/camara-2660119/1d2626b8ceaffc/premium-editorial-v1/06.jpg",
+        "docs/media/camara-2660119/1d2626b8ceaffc/premium-editorial-v1/07.jpg"
       ],
       "discovery_source_count": 0,
       "editorial_score": 84,
       "evidence": {
-        "checked_at": "2026-11-26T22:01:32.693094-03:00",
+        "checked_at": "2026-11-28T10:01:33.678051-03:00",
         "claims": [
           {
             "basis": "identificacao_da_proposicao",
@@ -620,7 +566,7 @@
             "field": "stage"
           }
         ],
-        "content_sha256": "8ce6585c7134f1bedb5118352b0d06090378e8c9e5615c449b615eed5b34147d",
+        "content_sha256": "00d9c3202b5a031b5f17a7fb310fe601b1e44a5c9ace22d281d62806c97ed41c",
         "kind": "official_document_attribution",
         "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
         "record_date": "2026-11-26",
@@ -637,7 +583,7 @@
       "status": "ready",
       "summary": "Dispõe sobre medidas obrigatórias para o inventário, a preservação física e digital, a digitalização, a recuperação, o controle de qualidade, a indexação, a integração eletrônica e a pesquisa histórica dos acervos de guarda permanente do Registro Civil das Pessoas Naturais anteriores à vigência da Lei nº 6.015, de 31 de dezembro de 1973; institui o Programa Nacional de Preservação dos Acervos Históricos do Registro Civil das Pessoas Naturais; altera as Leis nº 6.015, de 31 de dezembro de 1973, nº 8.935, de 18 de novembro de 1994, nº 11.977, de 7 de julho de 2009, e nº 14.382, de 27 de junho de 2022; e dá outras providências.",
       "summary_hash": "51bbfe7fdfad4e",
-      "template_revision": "documentary-hook-v3",
+      "template_revision": "premium-editorial-v1",
       "title": "PL 5991/2026",
       "topics": [
         "tecnologia"
@@ -646,20 +592,20 @@
     },
     {
       "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-      "caption": "O que está previsto nesta proposta?\n\nPL 5997/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-27. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2660442\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660442\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2660442/61123c2d60c463\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "caption": "Exposição de vítimas de violência nas redes: o que propõe o projeto?\n\nProibir a divulgação, o compartilhamento e o impulsionamento de imagens e vídeos que exponham vítimas de violência física.\n\nSe aprovado, o texto pode estabelecer novas regras para essa exposição. A ementa não esclarece todas as exceções.\n\nPL 5997/2026 | Registro de 2026-11-27. Proposta, não benefício comprovado.\n\nFonte oficial: https://www.camara.leg.br/propostas-legislativas/2660442\nID editorial: camara:2660442/61123c2d60c463/premium-editorial-v1\n#FatoVia #PoliticasPublicas\n\nSalve este post para acompanhar a tramitação. Compartilhe informação sem reproduzir imagens de vítimas.",
       "cards": [
-        "docs/media/camara-2660442/61123c2d60c463/01.jpg",
-        "docs/media/camara-2660442/61123c2d60c463/02.jpg",
-        "docs/media/camara-2660442/61123c2d60c463/03.jpg",
-        "docs/media/camara-2660442/61123c2d60c463/04.jpg",
-        "docs/media/camara-2660442/61123c2d60c463/05.jpg",
-        "docs/media/camara-2660442/61123c2d60c463/06.jpg",
-        "docs/media/camara-2660442/61123c2d60c463/07.jpg"
+        "docs/media/camara-2660442/61123c2d60c463/premium-editorial-v1/01.jpg",
+        "docs/media/camara-2660442/61123c2d60c463/premium-editorial-v1/02.jpg",
+        "docs/media/camara-2660442/61123c2d60c463/premium-editorial-v1/03.jpg",
+        "docs/media/camara-2660442/61123c2d60c463/premium-editorial-v1/04.jpg",
+        "docs/media/camara-2660442/61123c2d60c463/premium-editorial-v1/05.jpg",
+        "docs/media/camara-2660442/61123c2d60c463/premium-editorial-v1/06.jpg",
+        "docs/media/camara-2660442/61123c2d60c463/premium-editorial-v1/07.jpg"
       ],
       "discovery_source_count": 1,
       "editorial_score": 75,
       "evidence": {
-        "checked_at": "2026-11-27T21:32:51.464963-03:00",
+        "checked_at": "2026-11-28T10:01:33.678051-03:00",
         "claims": [
           {
             "basis": "identificacao_da_proposicao",
@@ -674,7 +620,7 @@
             "field": "stage"
           }
         ],
-        "content_sha256": "ca3adacc1e3331dbfb97fc4cd45fd742b026638814d9ec73df1f600159e0e5ac",
+        "content_sha256": "62743382ff29366ccf6027247d05e87c973f0d013c2a2665625454105c7b1a1c",
         "kind": "official_document_attribution",
         "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
         "record_date": "2026-11-27",
@@ -691,12 +637,120 @@
       "status": "ready",
       "summary": "Dispõe sobre a proibição da divulgação, compartilhamento e impulsionamento de imagens e vídeos que exponham vítimas de violência física nas redes sociais e plataformas digitais, e estabelece medidas de proteção à dignidade humana.",
       "summary_hash": "af1e2c76db71b7",
-      "template_revision": "documentary-hook-v3",
+      "template_revision": "premium-editorial-v1",
       "title": "PL 5997/2026",
       "topics": [
         "seguranca"
       ],
       "version": "61123c2d60c463"
+    },
+    {
+      "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
+      "caption": "O que está previsto nesta proposta?\n\nPL 5999/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-27. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2660478\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660478\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2660478/4241ddbd1ad89e\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "cards": [
+        "docs/media/camara-2660478/4241ddbd1ad89e/01.jpg",
+        "docs/media/camara-2660478/4241ddbd1ad89e/02.jpg",
+        "docs/media/camara-2660478/4241ddbd1ad89e/03.jpg",
+        "docs/media/camara-2660478/4241ddbd1ad89e/04.jpg",
+        "docs/media/camara-2660478/4241ddbd1ad89e/05.jpg",
+        "docs/media/camara-2660478/4241ddbd1ad89e/06.jpg",
+        "docs/media/camara-2660478/4241ddbd1ad89e/07.jpg"
+      ],
+      "discovery_source_count": 0,
+      "editorial_score": 72,
+      "evidence": {
+        "checked_at": "2026-11-28T10:01:33.678051-03:00",
+        "claims": [
+          {
+            "basis": "identificacao_da_proposicao",
+            "field": "title"
+          },
+          {
+            "basis": "ementa_oficial_atribuida",
+            "field": "summary"
+          },
+          {
+            "basis": "registro_de_tramitacao",
+            "field": "stage"
+          }
+        ],
+        "content_sha256": "a59ece5ffda302e2d32a10d6a4bd9321d279ef959cf4e2fbdae1aabe574f17b6",
+        "kind": "official_document_attribution",
+        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
+        "record_date": "2026-11-27",
+        "schema": 1,
+        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660478"
+      },
+      "explore_signal_count": 0,
+      "id": "camara:2660478",
+      "public_url": "https://www.camara.leg.br/propostas-legislativas/2660478",
+      "source_name": "Câmara dos Deputados",
+      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660478",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-27",
+      "status": "ready",
+      "summary": "Altera a Lei nº 14.113, de 25 de dezembro de 2020, que regulamenta o Fundeb, para incluir a implementação do ensino de história e cultura afro-brasileira e indígena entre as condicionalidades da complementação da União na modalidade VAAR.",
+      "summary_hash": "db1004db17090f",
+      "template_revision": "documentary-hook-v3",
+      "title": "PL 5999/2026",
+      "topics": [
+        "educacao"
+      ],
+      "version": "4241ddbd1ad89e"
+    },
+    {
+      "brand_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
+      "caption": "O que está previsto nesta proposta?\n\nPL 6006/2026\n\nA ementa consta na Câmara e o registro de andamento tem data de 2026-11-27. Uma proposta não equivale a uma lei aprovada nem a benefício implementado.\n\nFonte: https://www.camara.leg.br/propostas-legislativas/2660488\nAPI oficial: https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660488\n\nFatoVia | Conteúdo informativo elaborado automaticamente.\nID editorial: camara:2660488/42517694849646\n#FatoVia #PoliticasPublicas #CongressoNacional",
+      "cards": [
+        "docs/media/camara-2660488/42517694849646/01.jpg",
+        "docs/media/camara-2660488/42517694849646/02.jpg",
+        "docs/media/camara-2660488/42517694849646/03.jpg",
+        "docs/media/camara-2660488/42517694849646/04.jpg",
+        "docs/media/camara-2660488/42517694849646/05.jpg",
+        "docs/media/camara-2660488/42517694849646/06.jpg",
+        "docs/media/camara-2660488/42517694849646/07.jpg"
+      ],
+      "discovery_source_count": 1,
+      "editorial_score": 71,
+      "evidence": {
+        "checked_at": "2026-11-28T10:01:33.678051-03:00",
+        "claims": [
+          {
+            "basis": "identificacao_da_proposicao",
+            "field": "title"
+          },
+          {
+            "basis": "ementa_oficial_atribuida",
+            "field": "summary"
+          },
+          {
+            "basis": "registro_de_tramitacao",
+            "field": "stage"
+          }
+        ],
+        "content_sha256": "502c9a908078f673402375b5c7f04607358ca77720975d60e78627f12fef0ae4",
+        "kind": "official_document_attribution",
+        "limitations": "Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto.",
+        "record_date": "2026-11-27",
+        "schema": 1,
+        "source": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660488"
+      },
+      "explore_signal_count": 0,
+      "id": "camara:2660488",
+      "public_url": "https://www.camara.leg.br/propostas-legislativas/2660488",
+      "source_name": "Câmara dos Deputados",
+      "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660488",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-27",
+      "status": "ready",
+      "summary": "Veda o transporte de Ministros do Supremo Tribunal Federal em aeronaves das Forças Armadas, ressalvadas as hipóteses que especifica, e dispõe sobre o ressarcimento dos custos do transporte irregular.",
+      "summary_hash": "33a114d645972b",
+      "template_revision": "documentary-hook-v3",
+      "title": "PL 6006/2026",
+      "topics": [
+        "infraestrutura"
+      ],
+      "version": "42517694849646"
     }
   ],
   "published": [

@@ -1,5 +1,5 @@
 {
-  "already_published": 19,
+  "already_published": 20,
   "errors": [],
   "found": 25,
   "pending": 8,
@@ -13,7 +13,7 @@
   ],
   "scan_diagnostics": {
     "detail_status_used": 25,
-    "expired_or_unsealed_removed": 0,
+    "expired_or_unsealed_removed": 1,
     "history_errors": 0,
     "history_http_errors": {},
     "history_missing": 0,
@@ -25,12 +25,18 @@
   },
   "selected": [
     {
+      "discover_sources": 0,
+      "explore": 0,
+      "id": "camara:2660478",
+      "score": 72
+    },
+    {
       "discover_sources": 1,
       "explore": 0,
-      "id": "camara:2660442",
-      "score": 75
+      "id": "camara:2660488",
+      "score": 71
     }
   ],
-  "staged": 1,
-  "timestamp": "2026-11-27T21:32:51.464963-03:00"
+  "staged": 2,
+  "timestamp": "2026-11-28T10:01:33.678051-03:00"
 }
