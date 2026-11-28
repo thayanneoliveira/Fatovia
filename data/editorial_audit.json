@@ -1,417 +1,161 @@
 {
-  "generated_at": "2026-11-27T21:33:16.731825-03:00",
+  "generated_at": "2026-11-28T10:02:05.116304-03:00",
   "limitations": "Independent rule-based check of the official source, approved template and bytes; not general factual or semantic review.",
   "policy": "documentary-template-v4-didactic",
   "reviews": [
     {
       "card_sha256": [
-        "19375029174d87bffb94b3648a33dd9b28228739893ef30e89052249e3bda0f8",
-        "4ef26375a31c3ce57a31f2da8fdd29e238837412e472afee9052e113ddad0614",
-        "d2416baafddb2278987a17369646d6c7808f340ea82c8adddef4be0d7ad15b1f",
-        "345f36221827e28f35e334399dd4533f9c033469c0ab5165197c74c4e8b4f50b",
-        "ce9ffc0beb09d50a4eb879cac05f43944fa2333f2a03de8228cc0fa0a020f092",
-        "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
-        "e26f2733173e8a3d39d9e4adeed438c195bc5163d30fb101ba6459ffbeed0939"
+        "8e847e33a8eae0ad12209965fe4db6a9c405c7af06f8845ce4cc4bcb29601224",
+        "dba1b179abddc122a8fdfd0b9a67a80fe4528d06b3c1d53cca341bfc60a96271",
+        "0b9793e8ef79feaaa84af18758a59350b3d7dcbd9412568b8abf99af270f57df",
+        "8c3ee708287b2b865a9aa786ebde28ecec9726588243bf9ebaba11d65db8f6b6",
+        "072e83b77461cc581f2b582fb161769dd62c706294b3276c7ababeac54c751ac",
+        "cc945ab07f9da873da558bbbf03219579812f3541fda5af582171b850527cc7b",
+        "a325327e5212d0dbf83a87e6339014779929c470d7086fa2dde3e7089514e5ef"
       ],
-      "checked_at": "2026-11-27T21:33:16.731825-03:00",
-      "claim_matrix": {
-        "document_id": "camara:2653947",
-        "entries": [
-          {
-            "evidence": {
-              "end": 157,
-              "excerpt": "juros sobre o capital próprio",
-              "field": "summary",
-              "field_sha256": "943ac2ff63618ede42eae3084abc580f2420192174f7f535c8e232c14f994cb0",
-              "start": 128,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_01",
-            "text": "Juros sobre capital próprio: qual imposto pode mudar? | A proposta pretende elevar a alíquota do imposto retido na fonte sobre juros sobre capital próprio.",
-            "type": "reviewed_question"
-          },
-          {
-            "evidence": {
-              "end": 157,
-              "excerpt": "juros sobre o capital próprio",
-              "field": "summary",
-              "field_sha256": "943ac2ff63618ede42eae3084abc580f2420192174f7f535c8e232c14f994cb0",
-              "start": 128,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_02",
-            "text": "O que diz a proposta? | A mudança proposta é elevar a alíquota do Imposto de Renda Retido na Fonte incidente sobre juros sobre capital próprio.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 157,
-              "excerpt": "juros sobre o capital próprio",
-              "field": "summary",
-              "field_sha256": "943ac2ff63618ede42eae3084abc580f2420192174f7f535c8e232c14f994cb0",
-              "start": 128,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_03",
-            "text": "Qual é o mecanismo? | Se a alíquota aplicada a um pagamento aumenta, a retenção inicial sobre esse pagamento também pode aumentar.",
-            "type": "reviewed_mechanism"
-          },
-          {
-            "evidence": {
-              "end": 157,
-              "excerpt": "juros sobre o capital próprio",
-              "field": "summary",
-              "field_sha256": "943ac2ff63618ede42eae3084abc580f2420192174f7f535c8e232c14f994cb0",
-              "start": 128,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_04",
-            "text": "E na prática? | Se o texto for aprovado, a tributação dessa modalidade de pagamento poderá mudar. A ementa não informa o efeito final para cada contribuinte.",
-            "type": "reviewed_conditional"
-          },
-          {
-            "evidence": {
-              "end": 157,
-              "excerpt": "juros sobre o capital próprio",
-              "field": "summary",
-              "field_sha256": "943ac2ff63618ede42eae3084abc580f2420192174f7f535c8e232c14f994cb0",
-              "start": 128,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_05",
-            "text": "O que falta esclarecer? | Qual seria a nova alíquota? Quando valeria? Quem suportaria o custo? É necessário consultar o texto integral.",
-            "type": "reviewed_questions"
-          },
-          {
-            "evidence": {
-              "end": 26,
-              "excerpt": "Apresentação de Proposição",
-              "field": "stage",
-              "field_sha256": "7ad4f3a2409e2196a7e3ccc89d81061c388c76f096e8a3e5181944076982a9b7",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
-            },
-            "limitation": "Registro de tramitação.",
-            "location": "card_06",
-            "text": "Apresentação de Proposição",
-            "type": "procedural_record"
-          },
-          {
-            "evidence": {
-              "end": 10,
-              "excerpt": "2026-11-13",
-              "field": "stage_date",
-              "field_sha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
-            },
-            "limitation": "Não comprova vigência.",
-            "location": "card_06",
-            "text": "2026-11-13",
-            "type": "record_date"
-          },
-          {
-            "evidence": {
-              "end": 12,
-              "excerpt": "PL 5855/2026",
-              "field": "title",
-              "field_sha256": "e6a5ec7e04166382d82f569f7c11afffca5e6dc96f630561573638dd35069352",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
-            },
-            "limitation": "Fonte para leitura integral.",
-            "location": "card_07",
-            "text": "PL 5855/2026",
-            "type": "source_reference"
-          },
-          {
-            "evidence": {
-              "end": 157,
-              "excerpt": "juros sobre o capital próprio",
-              "field": "summary",
-              "field_sha256": "943ac2ff63618ede42eae3084abc580f2420192174f7f535c8e232c14f994cb0",
-              "start": 128,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
-            },
-            "limitation": "Paráfrase revisada.",
-            "location": "caption",
-            "text": "A mudança proposta é elevar a alíquota do Imposto de Renda Retido na Fonte incidente sobre juros sobre capital próprio.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 157,
-              "excerpt": "juros sobre o capital próprio",
-              "field": "summary",
-              "field_sha256": "943ac2ff63618ede42eae3084abc580f2420192174f7f535c8e232c14f994cb0",
-              "start": 128,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947"
-            },
-            "limitation": "Impacto potencial.",
-            "location": "caption",
-            "text": "Se o texto for aprovado, a tributação dessa modalidade de pagamento poderá mudar. A ementa não informa o efeito final para cada contribuinte.",
-            "type": "reviewed_conditional"
-          }
-        ],
-        "limitation": "Revisão editorial de narrativa controlada; não verifica impacto real ou texto integral.",
-        "policy": "didactic-v4",
-        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653947",
-        "unverified_dimensions": [
-          "legal_effect",
-          "implementation",
-          "budget",
-          "causality",
-          "social_impact"
-        ],
-        "version": "a9ab7e30775280"
-      },
-      "claim_matrix_sha256": "68163560cb6bd21e55a72b969cb8832b3ab8e8a82aa21ae784bedcb4fbc2cc38",
-      "closing_media_sha256": "e26f2733173e8a3d39d9e4adeed438c195bc5163d30fb101ba6459ffbeed0939",
-      "content_sha256": "ad55a745ee411033ccd0a5f68dfff20a3b8537d37747ca9938511beea47998ae",
-      "decision": "approved_documentary_only",
-      "id": "camara:2653947",
-      "issues": [],
-      "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-      "policy": "documentary-template-v4-didactic",
-      "version": "a9ab7e30775280"
-    },
-    {
-      "card_sha256": [
-        "b17ed5ac811515b8c3634f8cdecdbb61fbdd9459a9ac0bfcb4c55b3e9ce0850d",
-        "57fca25203bf2160838bf4ed1c31e416d6453d82153ad7a0a66398d9b9800351",
-        "64295e9a4cf324890f47aa836982892171378ac350f5784524ed00a5ff4db930",
-        "ba7f065d1ac07662a600d4a45f8ebf7325eed80411729c4092b85896eb742485",
-        "c37d30f2cf6906e52e66fc07634af0d09ae8d7900e4454a985bc14bca754ac04",
-        "67c760d29e0b86758bcefaf76706b1be5277d177839e3a31411752547783ed26",
-        "a5ab9d4c745a18620bf7def5c0fab4c7ff42dab0f77afbfeebe87ab6cfc341ea"
-      ],
-      "checked_at": "2026-11-27T21:33:16.731825-03:00",
-      "claim_matrix": {
-        "document_id": "camara:2653944",
-        "entries": [
-          {
-            "evidence": {
-              "end": 41,
-              "excerpt": "Imposto sobre Grandes Fortunas",
-              "field": "summary",
-              "field_sha256": "ff819c0ae6a2feba3316b0995619cfadc5d2b0675d208c724b104cb6edcd99ba",
-              "start": 11,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_01",
-            "text": "Imposto sobre grandes fortunas: o que está em discussão? | Uma proposta pretende instituir o Imposto sobre Grandes Fortunas previsto na Constituição.",
-            "type": "reviewed_question"
-          },
-          {
-            "evidence": {
-              "end": 41,
-              "excerpt": "Imposto sobre Grandes Fortunas",
-              "field": "summary",
-              "field_sha256": "ff819c0ae6a2feba3316b0995619cfadc5d2b0675d208c724b104cb6edcd99ba",
-              "start": 11,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_02",
-            "text": "O que diz a proposta? | A ementa propõe instituir o Imposto sobre Grandes Fortunas, previsto no artigo 153 da Constituição Federal.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 41,
-              "excerpt": "Imposto sobre Grandes Fortunas",
-              "field": "summary",
-              "field_sha256": "ff819c0ae6a2feba3316b0995619cfadc5d2b0675d208c724b104cb6edcd99ba",
-              "start": 11,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_03",
-            "text": "Qual é o mecanismo? | Criar um tributo exige definir regras de incidência e cobrança. A ementa não apresenta aqui todos esses parâmetros.",
-            "type": "reviewed_mechanism"
-          },
-          {
-            "evidence": {
-              "end": 41,
-              "excerpt": "Imposto sobre Grandes Fortunas",
-              "field": "summary",
-              "field_sha256": "ff819c0ae6a2feba3316b0995619cfadc5d2b0675d208c724b104cb6edcd99ba",
-              "start": 11,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_04",
-            "text": "E na prática? | Se aprovado e regulamentado conforme o texto final, o tributo poderá alcançar patrimônios enquadrados nos critérios legais.",
-            "type": "reviewed_conditional"
-          },
-          {
-            "evidence": {
-              "end": 41,
-              "excerpt": "Imposto sobre Grandes Fortunas",
-              "field": "summary",
-              "field_sha256": "ff819c0ae6a2feba3316b0995619cfadc5d2b0675d208c724b104cb6edcd99ba",
-              "start": 11,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
-            },
-            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
-            "location": "card_05",
-            "text": "O que falta esclarecer? | Qual patrimônio seria alcançado? Como seria calculado? Quais exceções existiriam? Consulte o texto completo.",
-            "type": "reviewed_questions"
-          },
-          {
-            "evidence": {
-              "end": 26,
-              "excerpt": "Apresentação de Proposição",
-              "field": "stage",
-              "field_sha256": "7ad4f3a2409e2196a7e3ccc89d81061c388c76f096e8a3e5181944076982a9b7",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
-            },
-            "limitation": "Registro de tramitação.",
-            "location": "card_06",
-            "text": "Apresentação de Proposição",
-            "type": "procedural_record"
-          },
-          {
-            "evidence": {
-              "end": 10,
-              "excerpt": "2026-11-13",
-              "field": "stage_date",
-              "field_sha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
-            },
-            "limitation": "Não comprova vigência.",
-            "location": "card_06",
-            "text": "2026-11-13",
-            "type": "record_date"
-          },
-          {
-            "evidence": {
-              "end": 12,
-              "excerpt": "PL 5852/2026",
-              "field": "title",
-              "field_sha256": "b349fe263fed63cd2673549e20a4eca7ac89d9a8cae409e214dfb946ced7c6ed",
-              "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
-            },
-            "limitation": "Fonte para leitura integral.",
-            "location": "card_07",
-            "text": "PL 5852/2026",
-            "type": "source_reference"
-          },
-          {
-            "evidence": {
-              "end": 41,
-              "excerpt": "Imposto sobre Grandes Fortunas",
-              "field": "summary",
-              "field_sha256": "ff819c0ae6a2feba3316b0995619cfadc5d2b0675d208c724b104cb6edcd99ba",
-              "start": 11,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
-            },
-            "limitation": "Paráfrase revisada.",
-            "location": "caption",
-            "text": "A ementa propõe instituir o Imposto sobre Grandes Fortunas, previsto no artigo 153 da Constituição Federal.",
-            "type": "reviewed_proposal"
-          },
-          {
-            "evidence": {
-              "end": 41,
-              "excerpt": "Imposto sobre Grandes Fortunas",
-              "field": "summary",
-              "field_sha256": "ff819c0ae6a2feba3316b0995619cfadc5d2b0675d208c724b104cb6edcd99ba",
-              "start": 11,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944"
-            },
-            "limitation": "Impacto potencial.",
-            "location": "caption",
-            "text": "Se aprovado e regulamentado conforme o texto final, o tributo poderá alcançar patrimônios enquadrados nos critérios legais.",
-            "type": "reviewed_conditional"
-          }
-        ],
-        "limitation": "Revisão editorial de narrativa controlada; não verifica impacto real ou texto integral.",
-        "policy": "didactic-v4",
-        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2653944",
-        "unverified_dimensions": [
-          "legal_effect",
-          "implementation",
-          "budget",
-          "causality",
-          "social_impact"
-        ],
-        "version": "2d94a3cc4eebf7"
-      },
-      "claim_matrix_sha256": "4e5dbd1ac74d41a7fe7d401644f062e3fb5e0f37321697af8023a41f36d4b942",
-      "closing_media_sha256": "a5ab9d4c745a18620bf7def5c0fab4c7ff42dab0f77afbfeebe87ab6cfc341ea",
-      "content_sha256": "0f9bfda45f2523d328eedfae3d497c774fe928add234736ab0da56607f8ef2f8",
-      "decision": "approved_documentary_only",
-      "id": "camara:2653944",
-      "issues": [],
-      "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
-      "policy": "documentary-template-v4-didactic",
-      "version": "2d94a3cc4eebf7"
-    },
-    {
-      "card_sha256": [
-        "6c5cb2dd8fe0e65d99deddd167f6f94bad934dcda2c58c1b73133cd3c0a40c41",
-        "1b856086bb551168d09f1b1bce8e0ecb8a4c5de281877de1a20a380934430261",
-        "ebcb14d5acb55f633f0e69f5cf6234b9716a978f8ef2e0e36e8bb507ded6c7b5",
-        "c9ca9c26844e3d8afa2adbb756b97a74ddb9cf08122e5f3ba005f4bcce9c7994",
-        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
-        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
-        "433e7fd979e49828ec023fa0a0b845d80df4203ae6116ff5647fc997b068c0e3"
-      ],
-      "checked_at": "2026-11-27T21:33:16.731825-03:00",
+      "checked_at": "2026-11-28T10:02:05.116304-03:00",
       "claim_matrix": {
         "document_id": "camara:2658959",
         "entries": [
           {
             "evidence": {
-              "end": 12,
-              "excerpt": "PL 5932/2026",
-              "field": "title",
-              "field_sha256": "448236ae63aa5d758a818cd916dc672a2904e80b3900bf94f60e9076fa31f8e8",
-              "start": 0,
+              "end": 334,
+              "excerpt": "Fundo Nacional sobre Mudança do Clima",
+              "field": "summary",
+              "field_sha256": "1bf0a498e0990f0ccef5043f63f60524478faeda7b29b9e9b84e318c10b064e2",
+              "start": 297,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2658959"
             },
-            "limitation": "Identifica a proposição, não sua aprovação.",
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
             "location": "card_01",
-            "text": "PL 5932/2026",
-            "type": "document_identity"
+            "text": "Queimadas: de onde pode vir o dinheiro para prevenção? | O projeto propõe ampliar as atividades que podem receber recursos do Fundo Nacional sobre Mudança do Clima.",
+            "type": "reviewed_question"
           },
           {
             "evidence": {
-              "end": 328,
-              "excerpt": "Altera a Lei nº 12.114, de 9 de dezembro de 2009, para incluir a prevenção, o monitoramento, o controle e o combate a incêndios florestais e queimadas, bem como a pesquisa, o desenvolvimento e a inovação tecnológica relacionados ao tema, entre as atividades passíveis de aplicação dos recursos do Fundo Nacional sobre Mudança do",
+              "end": 150,
+              "excerpt": "incêndios florestais e queimadas",
               "field": "summary",
               "field_sha256": "1bf0a498e0990f0ccef5043f63f60524478faeda7b29b9e9b84e318c10b064e2",
-              "start": 0,
+              "start": 118,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2658959"
             },
-            "limitation": "Ementa oficial, não texto integral nem prova de impacto.",
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_01",
+            "text": "Queimadas: de onde pode vir o dinheiro para prevenção? | O projeto propõe ampliar as atividades que podem receber recursos do Fundo Nacional sobre Mudança do Clima.",
+            "type": "reviewed_question"
+          },
+          {
+            "evidence": {
+              "end": 334,
+              "excerpt": "Fundo Nacional sobre Mudança do Clima",
+              "field": "summary",
+              "field_sha256": "1bf0a498e0990f0ccef5043f63f60524478faeda7b29b9e9b84e318c10b064e2",
+              "start": 297,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2658959"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
             "location": "card_02",
-            "text": "Altera a Lei nº 12.114, de 9 de dezembro de 2009, para incluir a prevenção, o monitoramento, o controle e o combate a incêndios florestais e queimadas, bem como a pesquisa, o desenvolvimento e a inovação tecnológica relacionados ao tema, entre as atividades passíveis de aplicação dos recursos do Fundo Nacional sobre Mudança do",
-            "type": "attributed_excerpt"
+            "text": "O que está sendo proposto? | Incluir prevenção, monitoramento, controle e combate a incêndios florestais e queimadas, além de pesquisa, desenvolvimento e inovação tecnológica.",
+            "type": "reviewed_proposal"
           },
           {
             "evidence": {
-              "end": 335,
-              "excerpt": "Clima.",
+              "end": 150,
+              "excerpt": "incêndios florestais e queimadas",
               "field": "summary",
               "field_sha256": "1bf0a498e0990f0ccef5043f63f60524478faeda7b29b9e9b84e318c10b064e2",
-              "start": 329,
+              "start": 118,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2658959"
             },
-            "limitation": "Continuação da ementa oficial.",
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_02",
+            "text": "O que está sendo proposto? | Incluir prevenção, monitoramento, controle e combate a incêndios florestais e queimadas, além de pesquisa, desenvolvimento e inovação tecnológica.",
+            "type": "reviewed_proposal"
+          },
+          {
+            "evidence": {
+              "end": 334,
+              "excerpt": "Fundo Nacional sobre Mudança do Clima",
+              "field": "summary",
+              "field_sha256": "1bf0a498e0990f0ccef5043f63f60524478faeda7b29b9e9b84e318c10b064e2",
+              "start": 297,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2658959"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
             "location": "card_03",
-            "text": "Clima.",
-            "type": "attributed_excerpt"
+            "text": "Onde entra a política? | A proposta trata das regras de aplicação dos recursos do fundo, não de uma transferência já realizada.",
+            "type": "reviewed_mechanism"
+          },
+          {
+            "evidence": {
+              "end": 150,
+              "excerpt": "incêndios florestais e queimadas",
+              "field": "summary",
+              "field_sha256": "1bf0a498e0990f0ccef5043f63f60524478faeda7b29b9e9b84e318c10b064e2",
+              "start": 118,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2658959"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_03",
+            "text": "Onde entra a política? | A proposta trata das regras de aplicação dos recursos do fundo, não de uma transferência já realizada.",
+            "type": "reviewed_mechanism"
+          },
+          {
+            "evidence": {
+              "end": 334,
+              "excerpt": "Fundo Nacional sobre Mudança do Clima",
+              "field": "summary",
+              "field_sha256": "1bf0a498e0990f0ccef5043f63f60524478faeda7b29b9e9b84e318c10b064e2",
+              "start": 297,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2658959"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_04",
+            "text": "O que pode mudar? | Se aprovada, a medida pode ampliar as atividades financiáveis pelo fundo. Isso não garante recursos efetivamente destinados.",
+            "type": "reviewed_conditional"
+          },
+          {
+            "evidence": {
+              "end": 150,
+              "excerpt": "incêndios florestais e queimadas",
+              "field": "summary",
+              "field_sha256": "1bf0a498e0990f0ccef5043f63f60524478faeda7b29b9e9b84e318c10b064e2",
+              "start": 118,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2658959"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_04",
+            "text": "O que pode mudar? | Se aprovada, a medida pode ampliar as atividades financiáveis pelo fundo. Isso não garante recursos efetivamente destinados.",
+            "type": "reviewed_conditional"
+          },
+          {
+            "evidence": {
+              "end": 334,
+              "excerpt": "Fundo Nacional sobre Mudança do Clima",
+              "field": "summary",
+              "field_sha256": "1bf0a498e0990f0ccef5043f63f60524478faeda7b29b9e9b84e318c10b064e2",
+              "start": 297,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2658959"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_05",
+            "text": "O que acompanhar? | Qual será o recurso disponível? Como serão escolhidas as ações e avaliados os resultados?",
+            "type": "reviewed_questions"
+          },
+          {
+            "evidence": {
+              "end": 150,
+              "excerpt": "incêndios florestais e queimadas",
+              "field": "summary",
+              "field_sha256": "1bf0a498e0990f0ccef5043f63f60524478faeda7b29b9e9b84e318c10b064e2",
+              "start": 118,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2658959"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_05",
+            "text": "O que acompanhar? | Qual será o recurso disponível? Como serão escolhidas as ações e avaliados os resultados?",
+            "type": "reviewed_questions"
           },
           {
             "evidence": {
@@ -422,8 +166,8 @@
               "start": 0,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2658959"
             },
-            "limitation": "Registro de tramitação na data de referência.",
-            "location": "card_04",
+            "limitation": "Registro de tramitação.",
+            "location": "card_06",
             "text": "Apresentação de Proposição",
             "type": "procedural_record"
           },
@@ -436,24 +180,10 @@
               "start": 0,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2658959"
             },
-            "limitation": "Data do andamento, não da vigência.",
-            "location": "card_04",
+            "limitation": "Não comprova vigência.",
+            "location": "card_06",
             "text": "2026-11-23",
             "type": "record_date"
-          },
-          {
-            "evidence": null,
-            "limitation": "Não atribui impacto, vigência ou financiamento.",
-            "location": "card_05",
-            "text": "A existência de um projeto não comprova aprovação, entrada em vigor, financiamento ou resultados.",
-            "type": "scope_limitation"
-          },
-          {
-            "evidence": null,
-            "limitation": "Questões para acompanhamento, não afirmações comprovadas.",
-            "location": "card_06",
-            "text": "Qual é o texto final?\n\nQuais órgãos respondem pela execução?\n\nHá custo previsto e indicadores de resultado?",
-            "type": "open_questions"
           },
           {
             "evidence": {
@@ -464,42 +194,56 @@
               "start": 0,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2658959"
             },
-            "limitation": "Referência documental.",
+            "limitation": "Fonte para leitura integral.",
             "location": "card_07",
             "text": "PL 5932/2026",
             "type": "source_reference"
           },
           {
             "evidence": {
-              "end": 12,
-              "excerpt": "PL 5932/2026",
-              "field": "title",
-              "field_sha256": "448236ae63aa5d758a818cd916dc672a2904e80b3900bf94f60e9076fa31f8e8",
-              "start": 0,
+              "end": 334,
+              "excerpt": "Fundo Nacional sobre Mudança do Clima",
+              "field": "summary",
+              "field_sha256": "1bf0a498e0990f0ccef5043f63f60524478faeda7b29b9e9b84e318c10b064e2",
+              "start": 297,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2658959"
             },
-            "limitation": "Identifica a proposição.",
+            "limitation": "Paráfrase revisada.",
             "location": "caption",
-            "text": "PL 5932/2026",
-            "type": "document_identity"
+            "text": "Incluir prevenção, monitoramento, controle e combate a incêndios florestais e queimadas, além de pesquisa, desenvolvimento e inovação tecnológica.",
+            "type": "reviewed_proposal"
           },
           {
             "evidence": {
-              "end": 10,
-              "excerpt": "2026-11-23",
-              "field": "stage_date",
-              "field_sha256": "860cc931f2746b53b7ef28ab1cbfbfb3340695f47990c74420cbd95368a5e60c",
-              "start": 0,
+              "end": 150,
+              "excerpt": "incêndios florestais e queimadas",
+              "field": "summary",
+              "field_sha256": "1bf0a498e0990f0ccef5043f63f60524478faeda7b29b9e9b84e318c10b064e2",
+              "start": 118,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2658959"
             },
-            "limitation": "Data registrada na fonte.",
+            "limitation": "Impacto potencial.",
             "location": "caption",
-            "text": "2026-11-23",
-            "type": "record_date"
+            "text": "Se aprovada, a medida pode ampliar as atividades financiáveis pelo fundo. Isso não garante recursos efetivamente destinados.",
+            "type": "reviewed_conditional"
+          },
+          {
+            "evidence": null,
+            "limitation": "Convite não factual; não comprova vigência ou impacto.",
+            "location": "card_07",
+            "text": "Compartilhe com quem quer entender como a prevenção de queimadas pode ser financiada.",
+            "type": "contextual_cta"
+          },
+          {
+            "evidence": null,
+            "limitation": "Convite não factual.",
+            "location": "caption",
+            "text": "Compartilhe com quem quer entender como a prevenção de queimadas pode ser financiada.",
+            "type": "contextual_cta"
           }
         ],
-        "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
-        "policy": "documentary-claims-v2-hooks",
+        "limitation": "Revisão editorial de narrativa controlada; não verifica impacto real ou texto integral.",
+        "policy": "didactic-v4",
         "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2658959",
         "unverified_dimensions": [
           "legal_effect",
@@ -510,9 +254,9 @@
         ],
         "version": "312e525a513387"
       },
-      "claim_matrix_sha256": "1a184382e53d24433eb2abc52cd6a959ea5c86785f273eba567101b5bfb6e34f",
-      "closing_media_sha256": "433e7fd979e49828ec023fa0a0b845d80df4203ae6116ff5647fc997b068c0e3",
-      "content_sha256": "20f9d8709e9769434c690a165129b4e6e5eefab8b325b3ad0163b5728019a5ed",
+      "claim_matrix_sha256": "6cb023d089df73a338f8e30253fe34527c918b61b02b04b163025d30c252c436",
+      "closing_media_sha256": "a325327e5212d0dbf83a87e6339014779929c470d7086fa2dde3e7089514e5ef",
+      "content_sha256": "f2673c0886ac2abb680e74be756b1a1b7a17f203fdf43b25809b1ea8f1d0628d",
       "decision": "approved_documentary_only",
       "id": "camara:2658959",
       "issues": [],
@@ -522,52 +266,157 @@
     },
     {
       "card_sha256": [
-        "2dbbd888e5ca2337a8d866f59cc77f778a414a0a39d3b761944fcbe7e87c8a92",
-        "a994930897a080afca5e3ff0f6cec292c31c030da87f07cad158f311be717670",
-        "50fc02cfd1d06be78856d1d7dc75f61c0346bcbdeeeff316b42bc4e81aa7c58f",
-        "c9ca9c26844e3d8afa2adbb756b97a74ddb9cf08122e5f3ba005f4bcce9c7994",
-        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
-        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
-        "db432a636baa79fef857208dd75f2a1309a65e635df6d69f8022db98f5055a6c"
+        "7f3abfc5e12076aa4103c8baf565fb5999a37f2f7997ebcd4498fb05aebd3bd5",
+        "babf97b6ce681ab44cdb667c8f5524f3068b0ecfeb10c33c89b8b200afef7b06",
+        "2cbf253718f94b26a62a8d47dfdacde18456df1d213b0a687b10b1e0c67a29c9",
+        "d355595951dbcab261fa6a611169548fd808d17ba9a13c2bacd5ecd8f19296d7",
+        "4565b3da3dd0fb1a80e57ba0523577d733d59704396fb126fd2ff435939d6a13",
+        "12f0a771bd75cb5b861240b537ceb2cec0143332afb45ec553c6d2814b6593ac",
+        "87f72edaa1470ec51723eaa3db3bd097239e9def16f66f28c904a0d6aa52417e"
       ],
-      "checked_at": "2026-11-27T21:33:16.731825-03:00",
+      "checked_at": "2026-11-28T10:02:05.116304-03:00",
       "claim_matrix": {
         "document_id": "camara:2659020",
         "entries": [
           {
             "evidence": {
-              "end": 12,
-              "excerpt": "PL 5945/2026",
-              "field": "title",
-              "field_sha256": "40f8dc2cd0f54c493e90bded1abc8e46d8cfcb76ef3837b6809edabc89e44899",
-              "start": 0,
+              "end": 137,
+              "excerpt": "Polícia Rodoviária Federal",
+              "field": "summary",
+              "field_sha256": "8ce17f26bcdb5139971def53fcc1a60ada60c22982ef36f89877e6ce9a6b1498",
+              "start": 111,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659020"
             },
-            "limitation": "Identifica a proposição, não sua aprovação.",
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
             "location": "card_01",
-            "text": "PL 5945/2026",
-            "type": "document_identity"
+            "text": "Quem deve avisar sobre os riscos nas rodovias federais? | O projeto trata do dever da PRF de registrar e comunicar defeitos e condições de risco nas estradas federais.",
+            "type": "reviewed_question"
           },
           {
             "evidence": {
-              "end": 300,
-              "excerpt": "Altera a Lei nº 9.503, de 23 de setembro de 1997 (Código de Trânsito Brasileiro), para tratar sobre o dever da Polícia Rodoviária Federal registrar e comunicar os defeitos e as condições de risco das rodovias e estradas federais aos responsáveis por sua conservação e aos governos federal e estadual.",
+              "end": 208,
+              "excerpt": "condições de risco das rodovias",
               "field": "summary",
               "field_sha256": "8ce17f26bcdb5139971def53fcc1a60ada60c22982ef36f89877e6ce9a6b1498",
-              "start": 0,
+              "start": 177,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659020"
             },
-            "limitation": "Ementa oficial, não texto integral nem prova de impacto.",
-            "location": "card_02",
-            "text": "Altera a Lei nº 9.503, de 23 de setembro de 1997 (Código de Trânsito Brasileiro), para tratar sobre o dever da Polícia Rodoviária Federal registrar e comunicar os defeitos e as condições de risco das rodovias e estradas federais aos responsáveis por sua conservação e aos governos federal e estadual.",
-            "type": "attributed_excerpt"
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_01",
+            "text": "Quem deve avisar sobre os riscos nas rodovias federais? | O projeto trata do dever da PRF de registrar e comunicar defeitos e condições de risco nas estradas federais.",
+            "type": "reviewed_question"
           },
           {
-            "evidence": null,
-            "limitation": "Não acrescenta fatos externos.",
+            "evidence": {
+              "end": 137,
+              "excerpt": "Polícia Rodoviária Federal",
+              "field": "summary",
+              "field_sha256": "8ce17f26bcdb5139971def53fcc1a60ada60c22982ef36f89877e6ce9a6b1498",
+              "start": 111,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659020"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_02",
+            "text": "O que está sendo proposto? | Tratar do dever da Polícia Rodoviária Federal de registrar e comunicar defeitos e condições de risco.",
+            "type": "reviewed_proposal"
+          },
+          {
+            "evidence": {
+              "end": 208,
+              "excerpt": "condições de risco das rodovias",
+              "field": "summary",
+              "field_sha256": "8ce17f26bcdb5139971def53fcc1a60ada60c22982ef36f89877e6ce9a6b1498",
+              "start": 177,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659020"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_02",
+            "text": "O que está sendo proposto? | Tratar do dever da Polícia Rodoviária Federal de registrar e comunicar defeitos e condições de risco.",
+            "type": "reviewed_proposal"
+          },
+          {
+            "evidence": {
+              "end": 137,
+              "excerpt": "Polícia Rodoviária Federal",
+              "field": "summary",
+              "field_sha256": "8ce17f26bcdb5139971def53fcc1a60ada60c22982ef36f89877e6ce9a6b1498",
+              "start": 111,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659020"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
             "location": "card_03",
-            "text": "A ementa resume o tema. Para conhecer condições, exceções e detalhes, consulte o texto integral.",
-            "type": "template_explanation"
+            "text": "Onde entra a política? | A proposta prevê comunicação aos responsáveis pela conservação e aos governos federal e estadual.",
+            "type": "reviewed_mechanism"
+          },
+          {
+            "evidence": {
+              "end": 208,
+              "excerpt": "condições de risco das rodovias",
+              "field": "summary",
+              "field_sha256": "8ce17f26bcdb5139971def53fcc1a60ada60c22982ef36f89877e6ce9a6b1498",
+              "start": 177,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659020"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_03",
+            "text": "Onde entra a política? | A proposta prevê comunicação aos responsáveis pela conservação e aos governos federal e estadual.",
+            "type": "reviewed_mechanism"
+          },
+          {
+            "evidence": {
+              "end": 137,
+              "excerpt": "Polícia Rodoviária Federal",
+              "field": "summary",
+              "field_sha256": "8ce17f26bcdb5139971def53fcc1a60ada60c22982ef36f89877e6ce9a6b1498",
+              "start": 111,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659020"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_04",
+            "text": "O que pode mudar? | Se aprovada, a medida pode disciplinar a comunicação dos riscos. Comunicar não equivale a executar o reparo.",
+            "type": "reviewed_conditional"
+          },
+          {
+            "evidence": {
+              "end": 208,
+              "excerpt": "condições de risco das rodovias",
+              "field": "summary",
+              "field_sha256": "8ce17f26bcdb5139971def53fcc1a60ada60c22982ef36f89877e6ce9a6b1498",
+              "start": 177,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659020"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_04",
+            "text": "O que pode mudar? | Se aprovada, a medida pode disciplinar a comunicação dos riscos. Comunicar não equivale a executar o reparo.",
+            "type": "reviewed_conditional"
+          },
+          {
+            "evidence": {
+              "end": 137,
+              "excerpt": "Polícia Rodoviária Federal",
+              "field": "summary",
+              "field_sha256": "8ce17f26bcdb5139971def53fcc1a60ada60c22982ef36f89877e6ce9a6b1498",
+              "start": 111,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659020"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_05",
+            "text": "O que acompanhar? | Quais seriam os prazos de comunicação? Quem faria os reparos e como acompanhar sua execução?",
+            "type": "reviewed_questions"
+          },
+          {
+            "evidence": {
+              "end": 208,
+              "excerpt": "condições de risco das rodovias",
+              "field": "summary",
+              "field_sha256": "8ce17f26bcdb5139971def53fcc1a60ada60c22982ef36f89877e6ce9a6b1498",
+              "start": 177,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659020"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_05",
+            "text": "O que acompanhar? | Quais seriam os prazos de comunicação? Quem faria os reparos e como acompanhar sua execução?",
+            "type": "reviewed_questions"
           },
           {
             "evidence": {
@@ -578,8 +427,8 @@
               "start": 0,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659020"
             },
-            "limitation": "Registro de tramitação na data de referência.",
-            "location": "card_04",
+            "limitation": "Registro de tramitação.",
+            "location": "card_06",
             "text": "Apresentação de Proposição",
             "type": "procedural_record"
           },
@@ -592,24 +441,10 @@
               "start": 0,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659020"
             },
-            "limitation": "Data do andamento, não da vigência.",
-            "location": "card_04",
+            "limitation": "Não comprova vigência.",
+            "location": "card_06",
             "text": "2026-11-23",
             "type": "record_date"
-          },
-          {
-            "evidence": null,
-            "limitation": "Não atribui impacto, vigência ou financiamento.",
-            "location": "card_05",
-            "text": "A existência de um projeto não comprova aprovação, entrada em vigor, financiamento ou resultados.",
-            "type": "scope_limitation"
-          },
-          {
-            "evidence": null,
-            "limitation": "Questões para acompanhamento, não afirmações comprovadas.",
-            "location": "card_06",
-            "text": "Qual é o texto final?\n\nQuais órgãos respondem pela execução?\n\nHá custo previsto e indicadores de resultado?",
-            "type": "open_questions"
           },
           {
             "evidence": {
@@ -620,42 +455,56 @@
               "start": 0,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659020"
             },
-            "limitation": "Referência documental.",
+            "limitation": "Fonte para leitura integral.",
             "location": "card_07",
             "text": "PL 5945/2026",
             "type": "source_reference"
           },
           {
             "evidence": {
-              "end": 12,
-              "excerpt": "PL 5945/2026",
-              "field": "title",
-              "field_sha256": "40f8dc2cd0f54c493e90bded1abc8e46d8cfcb76ef3837b6809edabc89e44899",
-              "start": 0,
+              "end": 137,
+              "excerpt": "Polícia Rodoviária Federal",
+              "field": "summary",
+              "field_sha256": "8ce17f26bcdb5139971def53fcc1a60ada60c22982ef36f89877e6ce9a6b1498",
+              "start": 111,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659020"
             },
-            "limitation": "Identifica a proposição.",
+            "limitation": "Paráfrase revisada.",
             "location": "caption",
-            "text": "PL 5945/2026",
-            "type": "document_identity"
+            "text": "Tratar do dever da Polícia Rodoviária Federal de registrar e comunicar defeitos e condições de risco.",
+            "type": "reviewed_proposal"
           },
           {
             "evidence": {
-              "end": 10,
-              "excerpt": "2026-11-23",
-              "field": "stage_date",
-              "field_sha256": "860cc931f2746b53b7ef28ab1cbfbfb3340695f47990c74420cbd95368a5e60c",
-              "start": 0,
+              "end": 208,
+              "excerpt": "condições de risco das rodovias",
+              "field": "summary",
+              "field_sha256": "8ce17f26bcdb5139971def53fcc1a60ada60c22982ef36f89877e6ce9a6b1498",
+              "start": 177,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659020"
             },
-            "limitation": "Data registrada na fonte.",
+            "limitation": "Impacto potencial.",
             "location": "caption",
-            "text": "2026-11-23",
-            "type": "record_date"
+            "text": "Se aprovada, a medida pode disciplinar a comunicação dos riscos. Comunicar não equivale a executar o reparo.",
+            "type": "reviewed_conditional"
+          },
+          {
+            "evidence": null,
+            "limitation": "Convite não factual; não comprova vigência ou impacto.",
+            "location": "card_07",
+            "text": "Compartilhe com quem sempre comenta sobre as condições da estrada.",
+            "type": "contextual_cta"
+          },
+          {
+            "evidence": null,
+            "limitation": "Convite não factual.",
+            "location": "caption",
+            "text": "Compartilhe com quem sempre comenta sobre as condições da estrada.",
+            "type": "contextual_cta"
           }
         ],
-        "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
-        "policy": "documentary-claims-v2-hooks",
+        "limitation": "Revisão editorial de narrativa controlada; não verifica impacto real ou texto integral.",
+        "policy": "didactic-v4",
         "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659020",
         "unverified_dimensions": [
           "legal_effect",
@@ -666,9 +515,9 @@
         ],
         "version": "0df9252ed4b520"
       },
-      "claim_matrix_sha256": "ad743d28a5c75113dd36386d64eb5bba1285c1f8144472d56fb9c430982714e1",
-      "closing_media_sha256": "db432a636baa79fef857208dd75f2a1309a65e635df6d69f8022db98f5055a6c",
-      "content_sha256": "f68891b65b34ed6bf30797dfb0132018d9ae269d0b31cfa7162b422d6351ad2a",
+      "claim_matrix_sha256": "a3d49c9b41807907f190b0fdff0c70d2d0a84823179edef82fe8ee66952987aa",
+      "closing_media_sha256": "87f72edaa1470ec51723eaa3db3bd097239e9def16f66f28c904a0d6aa52417e",
+      "content_sha256": "91e8376aa3527d036cfbce1611b9a030fdf9b889b475f1134b019fd064358e34",
       "decision": "approved_documentary_only",
       "id": "camara:2659020",
       "issues": [],
@@ -678,52 +527,157 @@
     },
     {
       "card_sha256": [
-        "2a866ac7594c8c659fd780a4293d11881cc141efb43dff99938b167cf7af128c",
-        "d9877abf24ae8079ae44438a81cc0e89c384a9527a80007c886c88021cd51106",
-        "50fc02cfd1d06be78856d1d7dc75f61c0346bcbdeeeff316b42bc4e81aa7c58f",
-        "cf8f96e6de92a8b3027f8a822fc696a0e7ce6a3a02c5d8662d6176d771df4f4f",
-        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
-        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
-        "c6cf0409b9fae30fa4d8f35e2f2afa7bfe02b51528015bf88690e6d4afc9fea9"
+        "d530fc3eb4c7ef9a828e5ebbeefd01ead5af702023b67de25b8ac6069a953f07",
+        "08979de7c2dba04c894be0378919cb21b7121d29dcc982c1b8bac3a043f7d7ae",
+        "e6595129867b5df8a860eff4b5c89b17d3664fb2f3c921f9b780221e22857637",
+        "bd6f4260765e91a923bab4d7cf6fe47be3fe4adb9c9d96a39bc1a6e09bff9ac6",
+        "349e9696c61c78227502a6ef412141df42f8d9aa6f2b98d6876f2b83c9eacd44",
+        "838c8c8e1461d8d1a00e724eb720d15d4cccd6975c29f79e44965f97c2914c19",
+        "551764894235d7ccb1f9c206c5c9fd80635a15de686529a6de39489304fc9eab"
       ],
-      "checked_at": "2026-11-27T21:33:16.731825-03:00",
+      "checked_at": "2026-11-28T10:02:05.116304-03:00",
       "claim_matrix": {
         "document_id": "camara:2659462",
         "entries": [
           {
             "evidence": {
-              "end": 12,
-              "excerpt": "PL 5961/2026",
-              "field": "title",
-              "field_sha256": "a033fce6a2a10c7819e4de2c7835ca5bc196a94de377c74e2fef6e8895974938",
-              "start": 0,
+              "end": 119,
+              "excerpt": "acolhimento em sala reservada",
+              "field": "summary",
+              "field_sha256": "bcd72b33b9b403996eab0a344575b8ed86cf5f04450ea6ec1990d5fbb9a476c9",
+              "start": 90,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659462"
             },
-            "limitation": "Identifica a proposição, não sua aprovação.",
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
             "location": "card_01",
-            "text": "PL 5961/2026",
-            "type": "document_identity"
+            "text": "Como poderia mudar o acolhimento de vítimas nas unidades de saúde? | O projeto propõe assegurar acolhimento em sala reservada e informação sobre direitos a vítimas de outras formas de violência.",
+            "type": "reviewed_question"
           },
           {
             "evidence": {
-              "end": 278,
-              "excerpt": "Altera a Lei nº 15.516, de 22 de setembro de 2026, para assegurar, nas unidades de saúde, acolhimento em sala reservada e informação sobre direitos às vítimas de violência psicológica, moral, patrimonial e de outras formas de violência diversas do estupro e da violência física.",
+              "end": 203,
+              "excerpt": "violência psicológica, moral, patrimonial",
               "field": "summary",
               "field_sha256": "bcd72b33b9b403996eab0a344575b8ed86cf5f04450ea6ec1990d5fbb9a476c9",
-              "start": 0,
+              "start": 162,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659462"
             },
-            "limitation": "Ementa oficial, não texto integral nem prova de impacto.",
-            "location": "card_02",
-            "text": "Altera a Lei nº 15.516, de 22 de setembro de 2026, para assegurar, nas unidades de saúde, acolhimento em sala reservada e informação sobre direitos às vítimas de violência psicológica, moral, patrimonial e de outras formas de violência diversas do estupro e da violência física.",
-            "type": "attributed_excerpt"
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_01",
+            "text": "Como poderia mudar o acolhimento de vítimas nas unidades de saúde? | O projeto propõe assegurar acolhimento em sala reservada e informação sobre direitos a vítimas de outras formas de violência.",
+            "type": "reviewed_question"
           },
           {
-            "evidence": null,
-            "limitation": "Não acrescenta fatos externos.",
+            "evidence": {
+              "end": 119,
+              "excerpt": "acolhimento em sala reservada",
+              "field": "summary",
+              "field_sha256": "bcd72b33b9b403996eab0a344575b8ed86cf5f04450ea6ec1990d5fbb9a476c9",
+              "start": 90,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659462"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_02",
+            "text": "O que está sendo proposto? | Assegurar acolhimento em sala reservada e informação sobre direitos a vítimas de outras formas de violência.",
+            "type": "reviewed_proposal"
+          },
+          {
+            "evidence": {
+              "end": 203,
+              "excerpt": "violência psicológica, moral, patrimonial",
+              "field": "summary",
+              "field_sha256": "bcd72b33b9b403996eab0a344575b8ed86cf5f04450ea6ec1990d5fbb9a476c9",
+              "start": 162,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659462"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_02",
+            "text": "O que está sendo proposto? | Assegurar acolhimento em sala reservada e informação sobre direitos a vítimas de outras formas de violência.",
+            "type": "reviewed_proposal"
+          },
+          {
+            "evidence": {
+              "end": 119,
+              "excerpt": "acolhimento em sala reservada",
+              "field": "summary",
+              "field_sha256": "bcd72b33b9b403996eab0a344575b8ed86cf5f04450ea6ec1990d5fbb9a476c9",
+              "start": 90,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659462"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
             "location": "card_03",
-            "text": "A ementa resume o tema. Para conhecer condições, exceções e detalhes, consulte o texto integral.",
-            "type": "template_explanation"
+            "text": "Onde entra a política? | A ementa menciona violência psicológica, moral, patrimonial e outras formas diversas do estupro e da violência física.",
+            "type": "reviewed_mechanism"
+          },
+          {
+            "evidence": {
+              "end": 203,
+              "excerpt": "violência psicológica, moral, patrimonial",
+              "field": "summary",
+              "field_sha256": "bcd72b33b9b403996eab0a344575b8ed86cf5f04450ea6ec1990d5fbb9a476c9",
+              "start": 162,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659462"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_03",
+            "text": "Onde entra a política? | A ementa menciona violência psicológica, moral, patrimonial e outras formas diversas do estupro e da violência física.",
+            "type": "reviewed_mechanism"
+          },
+          {
+            "evidence": {
+              "end": 119,
+              "excerpt": "acolhimento em sala reservada",
+              "field": "summary",
+              "field_sha256": "bcd72b33b9b403996eab0a344575b8ed86cf5f04450ea6ec1990d5fbb9a476c9",
+              "start": 90,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659462"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_04",
+            "text": "O que pode mudar? | Se aprovada e implementada, a proposta pode ampliar as garantias de acolhimento previstas na legislação.",
+            "type": "reviewed_conditional"
+          },
+          {
+            "evidence": {
+              "end": 203,
+              "excerpt": "violência psicológica, moral, patrimonial",
+              "field": "summary",
+              "field_sha256": "bcd72b33b9b403996eab0a344575b8ed86cf5f04450ea6ec1990d5fbb9a476c9",
+              "start": 162,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659462"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_04",
+            "text": "O que pode mudar? | Se aprovada e implementada, a proposta pode ampliar as garantias de acolhimento previstas na legislação.",
+            "type": "reviewed_conditional"
+          },
+          {
+            "evidence": {
+              "end": 119,
+              "excerpt": "acolhimento em sala reservada",
+              "field": "summary",
+              "field_sha256": "bcd72b33b9b403996eab0a344575b8ed86cf5f04450ea6ec1990d5fbb9a476c9",
+              "start": 90,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659462"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_05",
+            "text": "O que acompanhar? | Como seriam organizados os espaços reservados? Que orientações seriam oferecidas e como verificar a implementação?",
+            "type": "reviewed_questions"
+          },
+          {
+            "evidence": {
+              "end": 203,
+              "excerpt": "violência psicológica, moral, patrimonial",
+              "field": "summary",
+              "field_sha256": "bcd72b33b9b403996eab0a344575b8ed86cf5f04450ea6ec1990d5fbb9a476c9",
+              "start": 162,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659462"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_05",
+            "text": "O que acompanhar? | Como seriam organizados os espaços reservados? Que orientações seriam oferecidas e como verificar a implementação?",
+            "type": "reviewed_questions"
           },
           {
             "evidence": {
@@ -734,8 +688,8 @@
               "start": 0,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659462"
             },
-            "limitation": "Registro de tramitação na data de referência.",
-            "location": "card_04",
+            "limitation": "Registro de tramitação.",
+            "location": "card_06",
             "text": "Apresentação de Proposição",
             "type": "procedural_record"
           },
@@ -748,24 +702,10 @@
               "start": 0,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659462"
             },
-            "limitation": "Data do andamento, não da vigência.",
-            "location": "card_04",
+            "limitation": "Não comprova vigência.",
+            "location": "card_06",
             "text": "2026-11-25",
             "type": "record_date"
-          },
-          {
-            "evidence": null,
-            "limitation": "Não atribui impacto, vigência ou financiamento.",
-            "location": "card_05",
-            "text": "A existência de um projeto não comprova aprovação, entrada em vigor, financiamento ou resultados.",
-            "type": "scope_limitation"
-          },
-          {
-            "evidence": null,
-            "limitation": "Questões para acompanhamento, não afirmações comprovadas.",
-            "location": "card_06",
-            "text": "Qual é o texto final?\n\nQuais órgãos respondem pela execução?\n\nHá custo previsto e indicadores de resultado?",
-            "type": "open_questions"
           },
           {
             "evidence": {
@@ -776,42 +716,56 @@
               "start": 0,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659462"
             },
-            "limitation": "Referência documental.",
+            "limitation": "Fonte para leitura integral.",
             "location": "card_07",
             "text": "PL 5961/2026",
             "type": "source_reference"
           },
           {
             "evidence": {
-              "end": 12,
-              "excerpt": "PL 5961/2026",
-              "field": "title",
-              "field_sha256": "a033fce6a2a10c7819e4de2c7835ca5bc196a94de377c74e2fef6e8895974938",
-              "start": 0,
+              "end": 119,
+              "excerpt": "acolhimento em sala reservada",
+              "field": "summary",
+              "field_sha256": "bcd72b33b9b403996eab0a344575b8ed86cf5f04450ea6ec1990d5fbb9a476c9",
+              "start": 90,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659462"
             },
-            "limitation": "Identifica a proposição.",
+            "limitation": "Paráfrase revisada.",
             "location": "caption",
-            "text": "PL 5961/2026",
-            "type": "document_identity"
+            "text": "Assegurar acolhimento em sala reservada e informação sobre direitos a vítimas de outras formas de violência.",
+            "type": "reviewed_proposal"
           },
           {
             "evidence": {
-              "end": 10,
-              "excerpt": "2026-11-25",
-              "field": "stage_date",
-              "field_sha256": "661df755a6fb12fe02c26c036e7f26e1958b88fe84e39ad3156c4a67968ecf2e",
-              "start": 0,
+              "end": 203,
+              "excerpt": "violência psicológica, moral, patrimonial",
+              "field": "summary",
+              "field_sha256": "bcd72b33b9b403996eab0a344575b8ed86cf5f04450ea6ec1990d5fbb9a476c9",
+              "start": 162,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659462"
             },
-            "limitation": "Data registrada na fonte.",
+            "limitation": "Impacto potencial.",
             "location": "caption",
-            "text": "2026-11-25",
-            "type": "record_date"
+            "text": "Se aprovada e implementada, a proposta pode ampliar as garantias de acolhimento previstas na legislação.",
+            "type": "reviewed_conditional"
+          },
+          {
+            "evidence": null,
+            "limitation": "Convite não factual; não comprova vigência ou impacto.",
+            "location": "card_07",
+            "text": "Compartilhe com respeito, sem expor vítimas.",
+            "type": "contextual_cta"
+          },
+          {
+            "evidence": null,
+            "limitation": "Convite não factual.",
+            "location": "caption",
+            "text": "Compartilhe com respeito, sem expor vítimas.",
+            "type": "contextual_cta"
           }
         ],
-        "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
-        "policy": "documentary-claims-v2-hooks",
+        "limitation": "Revisão editorial de narrativa controlada; não verifica impacto real ou texto integral.",
+        "policy": "didactic-v4",
         "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659462",
         "unverified_dimensions": [
           "legal_effect",
@@ -822,9 +776,9 @@
         ],
         "version": "b523d110082ee1"
       },
-      "claim_matrix_sha256": "5952a208f266b7e2f3cae067e88120bbd86a5be53d9bd44d11a2061aa902b603",
-      "closing_media_sha256": "c6cf0409b9fae30fa4d8f35e2f2afa7bfe02b51528015bf88690e6d4afc9fea9",
-      "content_sha256": "4430f88cf85097eb543bbf4f88eb63d3319fa746f6085008425c80d3d86b0f25",
+      "claim_matrix_sha256": "b1b4b02b96857090ebd935b79b051b6edcd41e2c7849d3849435b4860e819830",
+      "closing_media_sha256": "551764894235d7ccb1f9c206c5c9fd80635a15de686529a6de39489304fc9eab",
+      "content_sha256": "fb0d30991363031bcd760f81744072afd7b104837be5aaad3c5326fe53897d1e",
       "decision": "approved_documentary_only",
       "id": "camara:2659462",
       "issues": [],
@@ -834,52 +788,157 @@
     },
     {
       "card_sha256": [
-        "b613f2d12cc866a44d0bf7dc788b4662316629b54f4bed6c612e3a3c0362c29c",
-        "6a72d662ccc2c072ec746909e44c0152ed512dfde62fa997a6d21074202b0981",
-        "50fc02cfd1d06be78856d1d7dc75f61c0346bcbdeeeff316b42bc4e81aa7c58f",
-        "5d169c1cb61307dade4157d7c9c2502d1dc1d4f4f5601b8bd486e901bd797f94",
-        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
-        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
-        "a843c672eaf5546cc51f18e5b045d32317cd30c3b36972a2a055df7a3c0d587c"
+        "ce4eb15d9b2ba0c95eac10cd71d3c2226a0c021d2480ec3cb8534a6301c872ca",
+        "dcebb6fd50f564a1d0ee4c90d9bd24fc45eb9da610ec712474a9e58df2872408",
+        "fd56297659a69359adb298f3d8a1f3e673c49ccffeaaa56d9583fc05099e70e7",
+        "b855883149e51d0e3d4cd6fe77f6faea2434a42add89d13001b0011af3e97f54",
+        "14d037ec963224589787473bcc7aab9843e5d3d354604766ecb73b0e50c90324",
+        "098a8355aa3bd756f51eacb05feb4b03ba9ff298b2a4fde82d23e02fee25ce75",
+        "06faa456a2a8407e2471698914819d4fbf9adc39dbcd24e24aa59c4185cdadd1"
       ],
-      "checked_at": "2026-11-27T21:33:16.731825-03:00",
+      "checked_at": "2026-11-28T10:02:05.116304-03:00",
       "claim_matrix": {
         "document_id": "camara:2659342",
         "entries": [
           {
             "evidence": {
-              "end": 12,
-              "excerpt": "PL 5960/2026",
-              "field": "title",
-              "field_sha256": "4a6f59c4c5fd775f7f580a770ec668118ecfb9a1b4e21dbd8ebacfd04e13a5e6",
-              "start": 0,
+              "end": 50,
+              "excerpt": "Política Nacional de Arborização Urbana",
+              "field": "summary",
+              "field_sha256": "dc6e2711a7777ecbb4db3dc9fba613512edb344c4a080cb6747a97f666f314d9",
+              "start": 11,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659342"
             },
-            "limitation": "Identifica a proposição, não sua aprovação.",
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
             "location": "card_01",
-            "text": "PL 5960/2026",
-            "type": "document_identity"
+            "text": "Árvores e fios elétricos: quem organiza essa convivência? | O projeto propõe instituir uma Política Nacional de Arborização Urbana.",
+            "type": "reviewed_question"
           },
           {
             "evidence": {
-              "end": 271,
-              "excerpt": "Institui a Política Nacional de Arborização Urbana, estabelece diretrizes para a compatibilização e o convívio seguro da vegetação com as redes de distribuição de energia elétrica, cria o Sistema Nacional de Informações sobre Arborização Urbana, e dá outras providências.",
+              "end": 179,
+              "excerpt": "redes de distribuição de energia elétrica",
               "field": "summary",
               "field_sha256": "dc6e2711a7777ecbb4db3dc9fba613512edb344c4a080cb6747a97f666f314d9",
-              "start": 0,
+              "start": 138,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659342"
             },
-            "limitation": "Ementa oficial, não texto integral nem prova de impacto.",
-            "location": "card_02",
-            "text": "Institui a Política Nacional de Arborização Urbana, estabelece diretrizes para a compatibilização e o convívio seguro da vegetação com as redes de distribuição de energia elétrica, cria o Sistema Nacional de Informações sobre Arborização Urbana, e dá outras providências.",
-            "type": "attributed_excerpt"
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_01",
+            "text": "Árvores e fios elétricos: quem organiza essa convivência? | O projeto propõe instituir uma Política Nacional de Arborização Urbana.",
+            "type": "reviewed_question"
           },
           {
-            "evidence": null,
-            "limitation": "Não acrescenta fatos externos.",
+            "evidence": {
+              "end": 50,
+              "excerpt": "Política Nacional de Arborização Urbana",
+              "field": "summary",
+              "field_sha256": "dc6e2711a7777ecbb4db3dc9fba613512edb344c4a080cb6747a97f666f314d9",
+              "start": 11,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659342"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_02",
+            "text": "O que está sendo proposto? | Instituir uma Política Nacional de Arborização Urbana e estabelecer diretrizes de convivência segura com redes de distribuição elétrica.",
+            "type": "reviewed_proposal"
+          },
+          {
+            "evidence": {
+              "end": 179,
+              "excerpt": "redes de distribuição de energia elétrica",
+              "field": "summary",
+              "field_sha256": "dc6e2711a7777ecbb4db3dc9fba613512edb344c4a080cb6747a97f666f314d9",
+              "start": 138,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659342"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_02",
+            "text": "O que está sendo proposto? | Instituir uma Política Nacional de Arborização Urbana e estabelecer diretrizes de convivência segura com redes de distribuição elétrica.",
+            "type": "reviewed_proposal"
+          },
+          {
+            "evidence": {
+              "end": 50,
+              "excerpt": "Política Nacional de Arborização Urbana",
+              "field": "summary",
+              "field_sha256": "dc6e2711a7777ecbb4db3dc9fba613512edb344c4a080cb6747a97f666f314d9",
+              "start": 11,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659342"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
             "location": "card_03",
-            "text": "A ementa resume o tema. Para conhecer condições, exceções e detalhes, consulte o texto integral.",
-            "type": "template_explanation"
+            "text": "Onde entra a política? | A proposta também prevê a criação de um Sistema Nacional de Informações sobre Arborização Urbana.",
+            "type": "reviewed_mechanism"
+          },
+          {
+            "evidence": {
+              "end": 179,
+              "excerpt": "redes de distribuição de energia elétrica",
+              "field": "summary",
+              "field_sha256": "dc6e2711a7777ecbb4db3dc9fba613512edb344c4a080cb6747a97f666f314d9",
+              "start": 138,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659342"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_03",
+            "text": "Onde entra a política? | A proposta também prevê a criação de um Sistema Nacional de Informações sobre Arborização Urbana.",
+            "type": "reviewed_mechanism"
+          },
+          {
+            "evidence": {
+              "end": 50,
+              "excerpt": "Política Nacional de Arborização Urbana",
+              "field": "summary",
+              "field_sha256": "dc6e2711a7777ecbb4db3dc9fba613512edb344c4a080cb6747a97f666f314d9",
+              "start": 11,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659342"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_04",
+            "text": "O que pode mudar? | Se aprovada e implementada, a política pode oferecer diretrizes comuns de planejamento. Isso não comprova redução de interrupções.",
+            "type": "reviewed_conditional"
+          },
+          {
+            "evidence": {
+              "end": 179,
+              "excerpt": "redes de distribuição de energia elétrica",
+              "field": "summary",
+              "field_sha256": "dc6e2711a7777ecbb4db3dc9fba613512edb344c4a080cb6747a97f666f314d9",
+              "start": 138,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659342"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_04",
+            "text": "O que pode mudar? | Se aprovada e implementada, a política pode oferecer diretrizes comuns de planejamento. Isso não comprova redução de interrupções.",
+            "type": "reviewed_conditional"
+          },
+          {
+            "evidence": {
+              "end": 50,
+              "excerpt": "Política Nacional de Arborização Urbana",
+              "field": "summary",
+              "field_sha256": "dc6e2711a7777ecbb4db3dc9fba613512edb344c4a080cb6747a97f666f314d9",
+              "start": 11,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659342"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_05",
+            "text": "O que acompanhar? | Como seriam distribuídas as responsabilidades? Quais dados seriam coletados e como acompanhar a execução?",
+            "type": "reviewed_questions"
+          },
+          {
+            "evidence": {
+              "end": 179,
+              "excerpt": "redes de distribuição de energia elétrica",
+              "field": "summary",
+              "field_sha256": "dc6e2711a7777ecbb4db3dc9fba613512edb344c4a080cb6747a97f666f314d9",
+              "start": 138,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659342"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_05",
+            "text": "O que acompanhar? | Como seriam distribuídas as responsabilidades? Quais dados seriam coletados e como acompanhar a execução?",
+            "type": "reviewed_questions"
           },
           {
             "evidence": {
@@ -890,8 +949,8 @@
               "start": 0,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659342"
             },
-            "limitation": "Registro de tramitação na data de referência.",
-            "location": "card_04",
+            "limitation": "Registro de tramitação.",
+            "location": "card_06",
             "text": "Apresentação de Proposição",
             "type": "procedural_record"
           },
@@ -904,24 +963,10 @@
               "start": 0,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659342"
             },
-            "limitation": "Data do andamento, não da vigência.",
-            "location": "card_04",
+            "limitation": "Não comprova vigência.",
+            "location": "card_06",
             "text": "2026-11-24",
             "type": "record_date"
-          },
-          {
-            "evidence": null,
-            "limitation": "Não atribui impacto, vigência ou financiamento.",
-            "location": "card_05",
-            "text": "A existência de um projeto não comprova aprovação, entrada em vigor, financiamento ou resultados.",
-            "type": "scope_limitation"
-          },
-          {
-            "evidence": null,
-            "limitation": "Questões para acompanhamento, não afirmações comprovadas.",
-            "location": "card_06",
-            "text": "Qual é o texto final?\n\nQuais órgãos respondem pela execução?\n\nHá custo previsto e indicadores de resultado?",
-            "type": "open_questions"
           },
           {
             "evidence": {
@@ -932,42 +977,56 @@
               "start": 0,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659342"
             },
-            "limitation": "Referência documental.",
+            "limitation": "Fonte para leitura integral.",
             "location": "card_07",
             "text": "PL 5960/2026",
             "type": "source_reference"
           },
           {
             "evidence": {
-              "end": 12,
-              "excerpt": "PL 5960/2026",
-              "field": "title",
-              "field_sha256": "4a6f59c4c5fd775f7f580a770ec668118ecfb9a1b4e21dbd8ebacfd04e13a5e6",
-              "start": 0,
+              "end": 50,
+              "excerpt": "Política Nacional de Arborização Urbana",
+              "field": "summary",
+              "field_sha256": "dc6e2711a7777ecbb4db3dc9fba613512edb344c4a080cb6747a97f666f314d9",
+              "start": 11,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659342"
             },
-            "limitation": "Identifica a proposição.",
+            "limitation": "Paráfrase revisada.",
             "location": "caption",
-            "text": "PL 5960/2026",
-            "type": "document_identity"
+            "text": "Instituir uma Política Nacional de Arborização Urbana e estabelecer diretrizes de convivência segura com redes de distribuição elétrica.",
+            "type": "reviewed_proposal"
           },
           {
             "evidence": {
-              "end": 10,
-              "excerpt": "2026-11-24",
-              "field": "stage_date",
-              "field_sha256": "5d949350d8beeebceee172c92b737c60235842fd18da6c1228a5270c50b97353",
-              "start": 0,
+              "end": 179,
+              "excerpt": "redes de distribuição de energia elétrica",
+              "field": "summary",
+              "field_sha256": "dc6e2711a7777ecbb4db3dc9fba613512edb344c4a080cb6747a97f666f314d9",
+              "start": 138,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659342"
             },
-            "limitation": "Data registrada na fonte.",
+            "limitation": "Impacto potencial.",
             "location": "caption",
-            "text": "2026-11-24",
-            "type": "record_date"
+            "text": "Se aprovada e implementada, a política pode oferecer diretrizes comuns de planejamento. Isso não comprova redução de interrupções.",
+            "type": "reviewed_conditional"
+          },
+          {
+            "evidence": null,
+            "limitation": "Convite não factual; não comprova vigência ou impacto.",
+            "location": "card_07",
+            "text": "Compartilhe com quem sempre repara nas árvores e nos fios da rua.",
+            "type": "contextual_cta"
+          },
+          {
+            "evidence": null,
+            "limitation": "Convite não factual.",
+            "location": "caption",
+            "text": "Compartilhe com quem sempre repara nas árvores e nos fios da rua.",
+            "type": "contextual_cta"
           }
         ],
-        "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
-        "policy": "documentary-claims-v2-hooks",
+        "limitation": "Revisão editorial de narrativa controlada; não verifica impacto real ou texto integral.",
+        "policy": "didactic-v4",
         "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2659342",
         "unverified_dimensions": [
           "legal_effect",
@@ -978,9 +1037,9 @@
         ],
         "version": "32c9b9359dcd43"
       },
-      "claim_matrix_sha256": "10e47876e22dbfde3b636e01e770113eeeeabd333fc41f62e187c051d3fce0fd",
-      "closing_media_sha256": "a843c672eaf5546cc51f18e5b045d32317cd30c3b36972a2a055df7a3c0d587c",
-      "content_sha256": "7837de55c95bd03034d90f6ed1c65ba17243d644f62ef38d5f27d74370cc8389",
+      "claim_matrix_sha256": "96798d6803698d3ed8b7ab00bc0a7b45d7b331e25a3973e67accf05004deeced",
+      "closing_media_sha256": "06faa456a2a8407e2471698914819d4fbf9adc39dbcd24e24aa59c4185cdadd1",
+      "content_sha256": "ef4571611c4823bc9e6997b0cb46f820b665495f3207b06eb06e85e736c8b322",
       "decision": "approved_documentary_only",
       "id": "camara:2659342",
       "issues": [],
@@ -990,59 +1049,157 @@
     },
     {
       "card_sha256": [
-        "feee53f63ba6c3677f7f90fbdd6cd0b1202969bac8e4d1c6b805b363840870fe",
-        "578b8eb5bf0a8e5b92ed6800d319a91c459fa3f8d4ae7ff650a838595918d231",
-        "392d7b76db31f783a78e1cec60911bf12a3826743fbfc86bb32b244f2669a4db",
-        "f983043431ac12d81c793dd2cd45fa35c656dc6e8b4527642c95b19df412ca1b",
-        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
-        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
-        "4d1a05ab83f2b4e2327b30c04fd57b68cee742a0e9721ae371d12c01c30667d5"
+        "95af814555955fbcd7a89d8ffcad859b829f2bf08d8b5e4d5a35932b0058181f",
+        "7d0ce5fbe1b8624e37e1b584b24f9dffbfe67b25b5eb72900cf81da7f8dc0de7",
+        "3e591a1791c248c276aef93a2d9e710d0ed1639e533196effb00f0f135bd58c4",
+        "733f5c02b0a9864b3427b4fcfd0a6f34c16d332e277601143845a4963184fc5b",
+        "de34d82956af19b726b19b3fe7d447b510c4bd538236a9ea52f1ef8eca8ed48b",
+        "d19886c8c41ad559d11a34c84c12441ecf60eece865630099e111f98a43ff393",
+        "885e9547dd8b80c4e3ea2585829275bc865e8a5c7049030981752db74ef4642a"
       ],
-      "checked_at": "2026-11-27T21:33:16.731825-03:00",
+      "checked_at": "2026-11-28T10:02:05.116304-03:00",
       "claim_matrix": {
         "document_id": "camara:2660119",
         "entries": [
           {
             "evidence": {
-              "end": 12,
-              "excerpt": "PL 5991/2026",
-              "field": "title",
-              "field_sha256": "837041a3e23f009aa57b6803fe331bb61e07a38aaf7e14129826cb097206524a",
-              "start": 0,
+              "end": 83,
+              "excerpt": "preservação física e digital",
+              "field": "summary",
+              "field_sha256": "3d49cf97af46f3b13febf41ed4100f906d9836e11bedade50585c4e1e0cb1e58",
+              "start": 55,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660119"
             },
-            "limitation": "Identifica a proposição, não sua aprovação.",
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
             "location": "card_01",
-            "text": "PL 5991/2026",
-            "type": "document_identity"
+            "text": "E se um registro civil antigo se perder? | O projeto propõe preservar e digitalizar acervos históricos do Registro Civil das Pessoas Naturais anteriores à vigência da Lei 6.015/1973.",
+            "type": "reviewed_question"
           },
           {
             "evidence": {
-              "end": 321,
-              "excerpt": "Dispõe sobre medidas obrigatórias para o inventário, a preservação física e digital, a digitalização, a recuperação, o controle de qualidade, a indexação, a integração eletrônica e a pesquisa histórica dos acervos de guarda permanente do Registro Civil das Pessoas Naturais anteriores à vigência da Lei nº 6.015, de 31 de",
+              "end": 273,
+              "excerpt": "Registro Civil das Pessoas Naturais",
               "field": "summary",
               "field_sha256": "3d49cf97af46f3b13febf41ed4100f906d9836e11bedade50585c4e1e0cb1e58",
-              "start": 0,
+              "start": 238,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660119"
             },
-            "limitation": "Ementa oficial, não texto integral nem prova de impacto.",
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_01",
+            "text": "E se um registro civil antigo se perder? | O projeto propõe preservar e digitalizar acervos históricos do Registro Civil das Pessoas Naturais anteriores à vigência da Lei 6.015/1973.",
+            "type": "reviewed_question"
+          },
+          {
+            "evidence": {
+              "end": 83,
+              "excerpt": "preservação física e digital",
+              "field": "summary",
+              "field_sha256": "3d49cf97af46f3b13febf41ed4100f906d9836e11bedade50585c4e1e0cb1e58",
+              "start": 55,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660119"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
             "location": "card_02",
-            "text": "Dispõe sobre medidas obrigatórias para o inventário, a preservação física e digital, a digitalização, a recuperação, o controle de qualidade, a indexação, a integração eletrônica e a pesquisa histórica dos acervos de guarda permanente do Registro Civil das Pessoas Naturais anteriores à vigência da Lei nº 6.015, de 31 de",
-            "type": "attributed_excerpt"
+            "text": "O que está sendo proposto? | Estabelecer medidas de inventário, preservação, digitalização e recuperação desses registros e instituir um programa nacional.",
+            "type": "reviewed_proposal"
           },
           {
             "evidence": {
-              "end": 632,
-              "excerpt": "dezembro de 1973; institui o Programa Nacional de Preservação dos Acervos Históricos do Registro Civil das Pessoas Naturais; altera as Leis nº 6.015, de 31 de dezembro de 1973, nº 8.935, de 18 de novembro de 1994, nº 11.977, de 7 de julho de 2009, e nº 14.382, de 27 de junho de 2022; e dá outras providências.",
+              "end": 273,
+              "excerpt": "Registro Civil das Pessoas Naturais",
               "field": "summary",
               "field_sha256": "3d49cf97af46f3b13febf41ed4100f906d9836e11bedade50585c4e1e0cb1e58",
-              "start": 322,
+              "start": 238,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660119"
             },
-            "limitation": "Continuação da ementa oficial.",
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_02",
+            "text": "O que está sendo proposto? | Estabelecer medidas de inventário, preservação, digitalização e recuperação desses registros e instituir um programa nacional.",
+            "type": "reviewed_proposal"
+          },
+          {
+            "evidence": {
+              "end": 83,
+              "excerpt": "preservação física e digital",
+              "field": "summary",
+              "field_sha256": "3d49cf97af46f3b13febf41ed4100f906d9836e11bedade50585c4e1e0cb1e58",
+              "start": 55,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660119"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
             "location": "card_03",
-            "text": "dezembro de 1973; institui o Programa Nacional de Preservação dos Acervos Históricos do Registro Civil das Pessoas Naturais; altera as Leis nº 6.015, de 31 de dezembro de 1973, nº 8.935, de 18 de novembro de 1994, nº 11.977, de 7 de julho de 2009, e nº 14.382, de 27 de junho de 2022; e dá outras providências.",
-            "type": "attributed_excerpt"
+            "text": "Onde entra a política? | A ementa inclui controle de qualidade, indexação, integração eletrônica e pesquisa histórica dos acervos.",
+            "type": "reviewed_mechanism"
+          },
+          {
+            "evidence": {
+              "end": 273,
+              "excerpt": "Registro Civil das Pessoas Naturais",
+              "field": "summary",
+              "field_sha256": "3d49cf97af46f3b13febf41ed4100f906d9836e11bedade50585c4e1e0cb1e58",
+              "start": 238,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660119"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_03",
+            "text": "Onde entra a política? | A ementa inclui controle de qualidade, indexação, integração eletrônica e pesquisa histórica dos acervos.",
+            "type": "reviewed_mechanism"
+          },
+          {
+            "evidence": {
+              "end": 83,
+              "excerpt": "preservação física e digital",
+              "field": "summary",
+              "field_sha256": "3d49cf97af46f3b13febf41ed4100f906d9836e11bedade50585c4e1e0cb1e58",
+              "start": 55,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660119"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_04",
+            "text": "O que pode mudar? | Se aprovada e implementada, a proposta pode facilitar a preservação e a pesquisa de registros antigos.",
+            "type": "reviewed_conditional"
+          },
+          {
+            "evidence": {
+              "end": 273,
+              "excerpt": "Registro Civil das Pessoas Naturais",
+              "field": "summary",
+              "field_sha256": "3d49cf97af46f3b13febf41ed4100f906d9836e11bedade50585c4e1e0cb1e58",
+              "start": 238,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660119"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_04",
+            "text": "O que pode mudar? | Se aprovada e implementada, a proposta pode facilitar a preservação e a pesquisa de registros antigos.",
+            "type": "reviewed_conditional"
+          },
+          {
+            "evidence": {
+              "end": 83,
+              "excerpt": "preservação física e digital",
+              "field": "summary",
+              "field_sha256": "3d49cf97af46f3b13febf41ed4100f906d9836e11bedade50585c4e1e0cb1e58",
+              "start": 55,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660119"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_05",
+            "text": "O que acompanhar? | Quais seriam os prazos, custos e condições de consulta? Como verificar a execução do programa?",
+            "type": "reviewed_questions"
+          },
+          {
+            "evidence": {
+              "end": 273,
+              "excerpt": "Registro Civil das Pessoas Naturais",
+              "field": "summary",
+              "field_sha256": "3d49cf97af46f3b13febf41ed4100f906d9836e11bedade50585c4e1e0cb1e58",
+              "start": 238,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660119"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_05",
+            "text": "O que acompanhar? | Quais seriam os prazos, custos e condições de consulta? Como verificar a execução do programa?",
+            "type": "reviewed_questions"
           },
           {
             "evidence": {
@@ -1053,8 +1210,8 @@
               "start": 0,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660119"
             },
-            "limitation": "Registro de tramitação na data de referência.",
-            "location": "card_04",
+            "limitation": "Registro de tramitação.",
+            "location": "card_06",
             "text": "Apresentação de Proposição",
             "type": "procedural_record"
           },
@@ -1067,24 +1224,10 @@
               "start": 0,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660119"
             },
-            "limitation": "Data do andamento, não da vigência.",
-            "location": "card_04",
+            "limitation": "Não comprova vigência.",
+            "location": "card_06",
             "text": "2026-11-26",
             "type": "record_date"
-          },
-          {
-            "evidence": null,
-            "limitation": "Não atribui impacto, vigência ou financiamento.",
-            "location": "card_05",
-            "text": "A existência de um projeto não comprova aprovação, entrada em vigor, financiamento ou resultados.",
-            "type": "scope_limitation"
-          },
-          {
-            "evidence": null,
-            "limitation": "Questões para acompanhamento, não afirmações comprovadas.",
-            "location": "card_06",
-            "text": "Qual é o texto final?\n\nQuais órgãos respondem pela execução?\n\nHá custo previsto e indicadores de resultado?",
-            "type": "open_questions"
           },
           {
             "evidence": {
@@ -1095,42 +1238,56 @@
               "start": 0,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660119"
             },
-            "limitation": "Referência documental.",
+            "limitation": "Fonte para leitura integral.",
             "location": "card_07",
             "text": "PL 5991/2026",
             "type": "source_reference"
           },
           {
             "evidence": {
-              "end": 12,
-              "excerpt": "PL 5991/2026",
-              "field": "title",
-              "field_sha256": "837041a3e23f009aa57b6803fe331bb61e07a38aaf7e14129826cb097206524a",
-              "start": 0,
+              "end": 83,
+              "excerpt": "preservação física e digital",
+              "field": "summary",
+              "field_sha256": "3d49cf97af46f3b13febf41ed4100f906d9836e11bedade50585c4e1e0cb1e58",
+              "start": 55,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660119"
             },
-            "limitation": "Identifica a proposição.",
+            "limitation": "Paráfrase revisada.",
             "location": "caption",
-            "text": "PL 5991/2026",
-            "type": "document_identity"
+            "text": "Estabelecer medidas de inventário, preservação, digitalização e recuperação desses registros e instituir um programa nacional.",
+            "type": "reviewed_proposal"
           },
           {
             "evidence": {
-              "end": 10,
-              "excerpt": "2026-11-26",
-              "field": "stage_date",
-              "field_sha256": "3499899299887758c821185c1130b43595cf63c729475469168ddbce5ec709a7",
-              "start": 0,
+              "end": 273,
+              "excerpt": "Registro Civil das Pessoas Naturais",
+              "field": "summary",
+              "field_sha256": "3d49cf97af46f3b13febf41ed4100f906d9836e11bedade50585c4e1e0cb1e58",
+              "start": 238,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660119"
             },
-            "limitation": "Data registrada na fonte.",
+            "limitation": "Impacto potencial.",
             "location": "caption",
-            "text": "2026-11-26",
-            "type": "record_date"
+            "text": "Se aprovada e implementada, a proposta pode facilitar a preservação e a pesquisa de registros antigos.",
+            "type": "reviewed_conditional"
+          },
+          {
+            "evidence": null,
+            "limitation": "Convite não factual; não comprova vigência ou impacto.",
+            "location": "card_07",
+            "text": "Compartilhe com quem já tentou encontrar um documento antigo da família.",
+            "type": "contextual_cta"
+          },
+          {
+            "evidence": null,
+            "limitation": "Convite não factual.",
+            "location": "caption",
+            "text": "Compartilhe com quem já tentou encontrar um documento antigo da família.",
+            "type": "contextual_cta"
           }
         ],
-        "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
-        "policy": "documentary-claims-v2-hooks",
+        "limitation": "Revisão editorial de narrativa controlada; não verifica impacto real ou texto integral.",
+        "policy": "didactic-v4",
         "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660119",
         "unverified_dimensions": [
           "legal_effect",
@@ -1141,9 +1298,9 @@
         ],
         "version": "1d2626b8ceaffc"
       },
-      "claim_matrix_sha256": "28d14cd1b7fd21d6d535646351d5a5b072e7a78f24e1d44970a764b1d2899cb7",
-      "closing_media_sha256": "4d1a05ab83f2b4e2327b30c04fd57b68cee742a0e9721ae371d12c01c30667d5",
-      "content_sha256": "8ce6585c7134f1bedb5118352b0d06090378e8c9e5615c449b615eed5b34147d",
+      "claim_matrix_sha256": "59ae70121b41adeb53ba7c081484ea3e46324aba46555b29a558b253dcd82315",
+      "closing_media_sha256": "885e9547dd8b80c4e3ea2585829275bc865e8a5c7049030981752db74ef4642a",
+      "content_sha256": "00d9c3202b5a031b5f17a7fb310fe601b1e44a5c9ace22d281d62806c97ed41c",
       "decision": "approved_documentary_only",
       "id": "camara:2660119",
       "issues": [],
@@ -1153,18 +1310,186 @@
     },
     {
       "card_sha256": [
-        "6ddef558f51fb6be996bcfdf343c306ef540750989ee8624a46d01b6acf6a657",
-        "77267671cad03e82741d4669c92374ec569d3e9a2cd9f06ed8bd1da054c7acd2",
-        "50fc02cfd1d06be78856d1d7dc75f61c0346bcbdeeeff316b42bc4e81aa7c58f",
-        "f1f9e6c66728073a28b19ab1b4a466ad298e7a509cd9649f79195bcbace28527",
-        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
-        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
-        "28c3a8fe51ef6e562c426f39ef6347f6b4856ce53b47cf5cddcc2cd5683600e3"
+        "bfd99e5555a8f9705024a721e65276d93ad4a447c1f1613dadf48696b9805e93",
+        "0eb0a35fa53299a9e01fafdec253a78e145f0f98bc5d1e3b37b48d1d15344be9",
+        "01410091897b123a88dbc7fce874ec57d427975f39b1c052b321a46b937cf8a7",
+        "28eb3c5766397162e3e1bcaa0d146fc61314751765fa62bf65d141c3976813a7",
+        "e21030fe70d1a9d8bf3fa91f06ab233fd5edaad5e4116dcfa2ff7913dfb82046",
+        "a5cc840d895564faae4acfd9e99cff461c73c1b5369934478527027e62fbd1fa",
+        "6f349617723f0390e700640392447058efb71553fcad45e840c244ad0e81f263"
       ],
-      "checked_at": "2026-11-27T21:33:16.731825-03:00",
+      "checked_at": "2026-11-28T10:02:05.116304-03:00",
       "claim_matrix": {
         "document_id": "camara:2660442",
         "entries": [
+          {
+            "evidence": {
+              "end": 135,
+              "excerpt": "imagens e vídeos que exponham vítimas de violência física",
+              "field": "summary",
+              "field_sha256": "f07325bcb4beeb8df711614b96022409bab829350b21ce449bde02d17928b4d2",
+              "start": 78,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660442"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_01",
+            "text": "Exposição de vítimas de violência nas redes: o que propõe o projeto? | O projeto propõe proibir a divulgação, o compartilhamento e o impulsionamento de imagens e vídeos que exponham vítimas de violência física.",
+            "type": "reviewed_question"
+          },
+          {
+            "evidence": {
+              "end": 229,
+              "excerpt": "medidas de proteção à dignidade humana",
+              "field": "summary",
+              "field_sha256": "f07325bcb4beeb8df711614b96022409bab829350b21ce449bde02d17928b4d2",
+              "start": 191,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660442"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_01",
+            "text": "Exposição de vítimas de violência nas redes: o que propõe o projeto? | O projeto propõe proibir a divulgação, o compartilhamento e o impulsionamento de imagens e vídeos que exponham vítimas de violência física.",
+            "type": "reviewed_question"
+          },
+          {
+            "evidence": {
+              "end": 135,
+              "excerpt": "imagens e vídeos que exponham vítimas de violência física",
+              "field": "summary",
+              "field_sha256": "f07325bcb4beeb8df711614b96022409bab829350b21ce449bde02d17928b4d2",
+              "start": 78,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660442"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_02",
+            "text": "O que está sendo proposto? | Proibir a divulgação, o compartilhamento e o impulsionamento de imagens e vídeos que exponham vítimas de violência física.",
+            "type": "reviewed_proposal"
+          },
+          {
+            "evidence": {
+              "end": 229,
+              "excerpt": "medidas de proteção à dignidade humana",
+              "field": "summary",
+              "field_sha256": "f07325bcb4beeb8df711614b96022409bab829350b21ce449bde02d17928b4d2",
+              "start": 191,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660442"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_02",
+            "text": "O que está sendo proposto? | Proibir a divulgação, o compartilhamento e o impulsionamento de imagens e vídeos que exponham vítimas de violência física.",
+            "type": "reviewed_proposal"
+          },
+          {
+            "evidence": {
+              "end": 135,
+              "excerpt": "imagens e vídeos que exponham vítimas de violência física",
+              "field": "summary",
+              "field_sha256": "f07325bcb4beeb8df711614b96022409bab829350b21ce449bde02d17928b4d2",
+              "start": 78,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660442"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_03",
+            "text": "Onde entra a política? | A ementa trata das redes sociais e plataformas digitais e prevê medidas de proteção à dignidade humana.",
+            "type": "reviewed_mechanism"
+          },
+          {
+            "evidence": {
+              "end": 229,
+              "excerpt": "medidas de proteção à dignidade humana",
+              "field": "summary",
+              "field_sha256": "f07325bcb4beeb8df711614b96022409bab829350b21ce449bde02d17928b4d2",
+              "start": 191,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660442"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_03",
+            "text": "Onde entra a política? | A ementa trata das redes sociais e plataformas digitais e prevê medidas de proteção à dignidade humana.",
+            "type": "reviewed_mechanism"
+          },
+          {
+            "evidence": {
+              "end": 135,
+              "excerpt": "imagens e vídeos que exponham vítimas de violência física",
+              "field": "summary",
+              "field_sha256": "f07325bcb4beeb8df711614b96022409bab829350b21ce449bde02d17928b4d2",
+              "start": 78,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660442"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_04",
+            "text": "O que pode mudar? | Se aprovado, o texto pode estabelecer novas regras para essa exposição. A ementa não esclarece todas as exceções.",
+            "type": "reviewed_conditional"
+          },
+          {
+            "evidence": {
+              "end": 229,
+              "excerpt": "medidas de proteção à dignidade humana",
+              "field": "summary",
+              "field_sha256": "f07325bcb4beeb8df711614b96022409bab829350b21ce449bde02d17928b4d2",
+              "start": 191,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660442"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_04",
+            "text": "O que pode mudar? | Se aprovado, o texto pode estabelecer novas regras para essa exposição. A ementa não esclarece todas as exceções.",
+            "type": "reviewed_conditional"
+          },
+          {
+            "evidence": {
+              "end": 135,
+              "excerpt": "imagens e vídeos que exponham vítimas de violência física",
+              "field": "summary",
+              "field_sha256": "f07325bcb4beeb8df711614b96022409bab829350b21ce449bde02d17928b4d2",
+              "start": 78,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660442"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_05",
+            "text": "O que acompanhar? | Quais seriam as exceções e responsabilidades? Como seriam definidos os procedimentos de aplicação?",
+            "type": "reviewed_questions"
+          },
+          {
+            "evidence": {
+              "end": 229,
+              "excerpt": "medidas de proteção à dignidade humana",
+              "field": "summary",
+              "field_sha256": "f07325bcb4beeb8df711614b96022409bab829350b21ce449bde02d17928b4d2",
+              "start": 191,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660442"
+            },
+            "limitation": "Paráfrase, explicação geral ou cenário condicional; âncora não comprova impacto.",
+            "location": "card_05",
+            "text": "O que acompanhar? | Quais seriam as exceções e responsabilidades? Como seriam definidos os procedimentos de aplicação?",
+            "type": "reviewed_questions"
+          },
+          {
+            "evidence": {
+              "end": 26,
+              "excerpt": "Apresentação de Proposição",
+              "field": "stage",
+              "field_sha256": "7ad4f3a2409e2196a7e3ccc89d81061c388c76f096e8a3e5181944076982a9b7",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660442"
+            },
+            "limitation": "Registro de tramitação.",
+            "location": "card_06",
+            "text": "Apresentação de Proposição",
+            "type": "procedural_record"
+          },
+          {
+            "evidence": {
+              "end": 10,
+              "excerpt": "2026-11-27",
+              "field": "stage_date",
+              "field_sha256": "da3bbc3fc2e390fae91450f60b4b1bb6eefca50e93a6c5c3919370bcf751b02d",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660442"
+            },
+            "limitation": "Não comprova vigência.",
+            "location": "card_06",
+            "text": "2026-11-27",
+            "type": "record_date"
+          },
           {
             "evidence": {
               "end": 12,
@@ -1174,23 +1499,116 @@
               "start": 0,
               "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660442"
             },
+            "limitation": "Fonte para leitura integral.",
+            "location": "card_07",
+            "text": "PL 5997/2026",
+            "type": "source_reference"
+          },
+          {
+            "evidence": {
+              "end": 135,
+              "excerpt": "imagens e vídeos que exponham vítimas de violência física",
+              "field": "summary",
+              "field_sha256": "f07325bcb4beeb8df711614b96022409bab829350b21ce449bde02d17928b4d2",
+              "start": 78,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660442"
+            },
+            "limitation": "Paráfrase revisada.",
+            "location": "caption",
+            "text": "Proibir a divulgação, o compartilhamento e o impulsionamento de imagens e vídeos que exponham vítimas de violência física.",
+            "type": "reviewed_proposal"
+          },
+          {
+            "evidence": {
+              "end": 229,
+              "excerpt": "medidas de proteção à dignidade humana",
+              "field": "summary",
+              "field_sha256": "f07325bcb4beeb8df711614b96022409bab829350b21ce449bde02d17928b4d2",
+              "start": 191,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660442"
+            },
+            "limitation": "Impacto potencial.",
+            "location": "caption",
+            "text": "Se aprovado, o texto pode estabelecer novas regras para essa exposição. A ementa não esclarece todas as exceções.",
+            "type": "reviewed_conditional"
+          },
+          {
+            "evidence": null,
+            "limitation": "Convite não factual; não comprova vigência ou impacto.",
+            "location": "card_07",
+            "text": "Compartilhe informação sem reproduzir imagens de vítimas.",
+            "type": "contextual_cta"
+          },
+          {
+            "evidence": null,
+            "limitation": "Convite não factual.",
+            "location": "caption",
+            "text": "Compartilhe informação sem reproduzir imagens de vítimas.",
+            "type": "contextual_cta"
+          }
+        ],
+        "limitation": "Revisão editorial de narrativa controlada; não verifica impacto real ou texto integral.",
+        "policy": "didactic-v4",
+        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660442",
+        "unverified_dimensions": [
+          "legal_effect",
+          "implementation",
+          "budget",
+          "causality",
+          "social_impact"
+        ],
+        "version": "61123c2d60c463"
+      },
+      "claim_matrix_sha256": "84ef19e2a10cdf1471d01fa71b86e0dfeea54fc519f3724685d96b2c2e5bbce6",
+      "closing_media_sha256": "6f349617723f0390e700640392447058efb71553fcad45e840c244ad0e81f263",
+      "content_sha256": "62743382ff29366ccf6027247d05e87c973f0d013c2a2665625454105c7b1a1c",
+      "decision": "approved_documentary_only",
+      "id": "camara:2660442",
+      "issues": [],
+      "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
+      "policy": "documentary-template-v4-didactic",
+      "version": "61123c2d60c463"
+    },
+    {
+      "card_sha256": [
+        "4637c430692830d8af8b29dc376a088b1cfe6979d763651c87759c61acb47052",
+        "7d4b13da300cab6647d63563250b78fee504c721947d3bceff6fd067aa514d3f",
+        "50fc02cfd1d06be78856d1d7dc75f61c0346bcbdeeeff316b42bc4e81aa7c58f",
+        "f1f9e6c66728073a28b19ab1b4a466ad298e7a509cd9649f79195bcbace28527",
+        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
+        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
+        "aac7ebf80ca303483c4ed3ec3b8253b75207a8b8be90e7b3eb6f94a15e0da0de"
+      ],
+      "checked_at": "2026-11-28T10:02:05.116304-03:00",
+      "claim_matrix": {
+        "document_id": "camara:2660478",
+        "entries": [
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 5999/2026",
+              "field": "title",
+              "field_sha256": "ce1b9767951141540c1c925b256f85d77f84d31b1a406572c1c5370278b5107a",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660478"
+            },
             "limitation": "Identifica a proposição, não sua aprovação.",
             "location": "card_01",
-            "text": "PL 5997/2026",
+            "text": "PL 5999/2026",
             "type": "document_identity"
           },
           {
             "evidence": {
-              "end": 230,
-              "excerpt": "Dispõe sobre a proibição da divulgação, compartilhamento e impulsionamento de imagens e vídeos que exponham vítimas de violência física nas redes sociais e plataformas digitais, e estabelece medidas de proteção à dignidade humana.",
+              "end": 238,
+              "excerpt": "Altera a Lei nº 14.113, de 25 de dezembro de 2020, que regulamenta o Fundeb, para incluir a implementação do ensino de história e cultura afro-brasileira e indígena entre as condicionalidades da complementação da União na modalidade VAAR.",
               "field": "summary",
-              "field_sha256": "f07325bcb4beeb8df711614b96022409bab829350b21ce449bde02d17928b4d2",
+              "field_sha256": "a1872b4d3ed9cf14cffba1774048c4f1e378ebd89bca4b689bb29d23f98d3bad",
               "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660442"
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660478"
             },
             "limitation": "Ementa oficial, não texto integral nem prova de impacto.",
             "location": "card_02",
-            "text": "Dispõe sobre a proibição da divulgação, compartilhamento e impulsionamento de imagens e vídeos que exponham vítimas de violência física nas redes sociais e plataformas digitais, e estabelece medidas de proteção à dignidade humana.",
+            "text": "Altera a Lei nº 14.113, de 25 de dezembro de 2020, que regulamenta o Fundeb, para incluir a implementação do ensino de história e cultura afro-brasileira e indígena entre as condicionalidades da complementação da União na modalidade VAAR.",
             "type": "attributed_excerpt"
           },
           {
@@ -1207,7 +1625,7 @@
               "field": "stage",
               "field_sha256": "7ad4f3a2409e2196a7e3ccc89d81061c388c76f096e8a3e5181944076982a9b7",
               "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660442"
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660478"
             },
             "limitation": "Registro de tramitação na data de referência.",
             "location": "card_04",
@@ -1221,7 +1639,7 @@
               "field": "stage_date",
               "field_sha256": "da3bbc3fc2e390fae91450f60b4b1bb6eefca50e93a6c5c3919370bcf751b02d",
               "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660442"
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660478"
             },
             "limitation": "Data do andamento, não da vigência.",
             "location": "card_04",
@@ -1245,29 +1663,29 @@
           {
             "evidence": {
               "end": 12,
-              "excerpt": "PL 5997/2026",
+              "excerpt": "PL 5999/2026",
               "field": "title",
-              "field_sha256": "452d94ec4bd0254383405da4069d814cada5b9205a87478816e0d4ef01279217",
+              "field_sha256": "ce1b9767951141540c1c925b256f85d77f84d31b1a406572c1c5370278b5107a",
               "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660442"
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660478"
             },
             "limitation": "Referência documental.",
             "location": "card_07",
-            "text": "PL 5997/2026",
+            "text": "PL 5999/2026",
             "type": "source_reference"
           },
           {
             "evidence": {
               "end": 12,
-              "excerpt": "PL 5997/2026",
+              "excerpt": "PL 5999/2026",
               "field": "title",
-              "field_sha256": "452d94ec4bd0254383405da4069d814cada5b9205a87478816e0d4ef01279217",
+              "field_sha256": "ce1b9767951141540c1c925b256f85d77f84d31b1a406572c1c5370278b5107a",
               "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660442"
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660478"
             },
             "limitation": "Identifica a proposição.",
             "location": "caption",
-            "text": "PL 5997/2026",
+            "text": "PL 5999/2026",
             "type": "document_identity"
           },
           {
@@ -1277,7 +1695,7 @@
               "field": "stage_date",
               "field_sha256": "da3bbc3fc2e390fae91450f60b4b1bb6eefca50e93a6c5c3919370bcf751b02d",
               "start": 0,
-              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660442"
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660478"
             },
             "limitation": "Data registrada na fonte.",
             "location": "caption",
@@ -1287,7 +1705,7 @@
         ],
         "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
         "policy": "documentary-claims-v2-hooks",
-        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660442",
+        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660478",
         "unverified_dimensions": [
           "legal_effect",
           "implementation",
@@ -1295,17 +1713,173 @@
           "causality",
           "social_impact"
         ],
-        "version": "61123c2d60c463"
+        "version": "4241ddbd1ad89e"
       },
-      "claim_matrix_sha256": "03d6154c9f6c8c4d2dabee233f89b5bb8dbd9686de97c941945bc85effe6080f",
-      "closing_media_sha256": "28c3a8fe51ef6e562c426f39ef6347f6b4856ce53b47cf5cddcc2cd5683600e3",
-      "content_sha256": "ca3adacc1e3331dbfb97fc4cd45fd742b026638814d9ec73df1f600159e0e5ac",
+      "claim_matrix_sha256": "e39519f1dc5d0bd5bab72d36b3ad5fde672d2350ad5c4613eaeaf6c448e9b8af",
+      "closing_media_sha256": "aac7ebf80ca303483c4ed3ec3b8253b75207a8b8be90e7b3eb6f94a15e0da0de",
+      "content_sha256": "a59ece5ffda302e2d32a10d6a4bd9321d279ef959cf4e2fbdae1aabe574f17b6",
       "decision": "approved_documentary_only",
-      "id": "camara:2660442",
+      "id": "camara:2660478",
       "issues": [],
       "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
       "policy": "documentary-template-v4-didactic",
-      "version": "61123c2d60c463"
+      "version": "4241ddbd1ad89e"
+    },
+    {
+      "card_sha256": [
+        "cb5f8a1f7dc0a3333688b56bf72060866d8707886053b4b5e707938d8198c55f",
+        "89467e68f26ca2d68ea29a4dd9e0b787336f4d14300828f4d3ff3b18362871fa",
+        "50fc02cfd1d06be78856d1d7dc75f61c0346bcbdeeeff316b42bc4e81aa7c58f",
+        "f1f9e6c66728073a28b19ab1b4a466ad298e7a509cd9649f79195bcbace28527",
+        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
+        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
+        "413b3e62f9d28b51ebeccbde342e27ef39f19f6e22b4be2114eedef6aefc23c7"
+      ],
+      "checked_at": "2026-11-28T10:02:05.116304-03:00",
+      "claim_matrix": {
+        "document_id": "camara:2660488",
+        "entries": [
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 6006/2026",
+              "field": "title",
+              "field_sha256": "d9817003bcaf57821b02ae99306d6c28d8c8c1bb9785f622a0619d14e7c25ca4",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660488"
+            },
+            "limitation": "Identifica a proposição, não sua aprovação.",
+            "location": "card_01",
+            "text": "PL 6006/2026",
+            "type": "document_identity"
+          },
+          {
+            "evidence": {
+              "end": 199,
+              "excerpt": "Veda o transporte de Ministros do Supremo Tribunal Federal em aeronaves das Forças Armadas, ressalvadas as hipóteses que especifica, e dispõe sobre o ressarcimento dos custos do transporte irregular.",
+              "field": "summary",
+              "field_sha256": "8db947d0de91a3b87d02f2b1046f18e502079dd4df7e902ae9045d28a42b0abb",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660488"
+            },
+            "limitation": "Ementa oficial, não texto integral nem prova de impacto.",
+            "location": "card_02",
+            "text": "Veda o transporte de Ministros do Supremo Tribunal Federal em aeronaves das Forças Armadas, ressalvadas as hipóteses que especifica, e dispõe sobre o ressarcimento dos custos do transporte irregular.",
+            "type": "attributed_excerpt"
+          },
+          {
+            "evidence": null,
+            "limitation": "Não acrescenta fatos externos.",
+            "location": "card_03",
+            "text": "A ementa resume o tema. Para conhecer condições, exceções e detalhes, consulte o texto integral.",
+            "type": "template_explanation"
+          },
+          {
+            "evidence": {
+              "end": 26,
+              "excerpt": "Apresentação de Proposição",
+              "field": "stage",
+              "field_sha256": "7ad4f3a2409e2196a7e3ccc89d81061c388c76f096e8a3e5181944076982a9b7",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660488"
+            },
+            "limitation": "Registro de tramitação na data de referência.",
+            "location": "card_04",
+            "text": "Apresentação de Proposição",
+            "type": "procedural_record"
+          },
+          {
+            "evidence": {
+              "end": 10,
+              "excerpt": "2026-11-27",
+              "field": "stage_date",
+              "field_sha256": "da3bbc3fc2e390fae91450f60b4b1bb6eefca50e93a6c5c3919370bcf751b02d",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660488"
+            },
+            "limitation": "Data do andamento, não da vigência.",
+            "location": "card_04",
+            "text": "2026-11-27",
+            "type": "record_date"
+          },
+          {
+            "evidence": null,
+            "limitation": "Não atribui impacto, vigência ou financiamento.",
+            "location": "card_05",
+            "text": "A existência de um projeto não comprova aprovação, entrada em vigor, financiamento ou resultados.",
+            "type": "scope_limitation"
+          },
+          {
+            "evidence": null,
+            "limitation": "Questões para acompanhamento, não afirmações comprovadas.",
+            "location": "card_06",
+            "text": "Qual é o texto final?\n\nQuais órgãos respondem pela execução?\n\nHá custo previsto e indicadores de resultado?",
+            "type": "open_questions"
+          },
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 6006/2026",
+              "field": "title",
+              "field_sha256": "d9817003bcaf57821b02ae99306d6c28d8c8c1bb9785f622a0619d14e7c25ca4",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660488"
+            },
+            "limitation": "Referência documental.",
+            "location": "card_07",
+            "text": "PL 6006/2026",
+            "type": "source_reference"
+          },
+          {
+            "evidence": {
+              "end": 12,
+              "excerpt": "PL 6006/2026",
+              "field": "title",
+              "field_sha256": "d9817003bcaf57821b02ae99306d6c28d8c8c1bb9785f622a0619d14e7c25ca4",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660488"
+            },
+            "limitation": "Identifica a proposição.",
+            "location": "caption",
+            "text": "PL 6006/2026",
+            "type": "document_identity"
+          },
+          {
+            "evidence": {
+              "end": 10,
+              "excerpt": "2026-11-27",
+              "field": "stage_date",
+              "field_sha256": "da3bbc3fc2e390fae91450f60b4b1bb6eefca50e93a6c5c3919370bcf751b02d",
+              "start": 0,
+              "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660488"
+            },
+            "limitation": "Data registrada na fonte.",
+            "location": "caption",
+            "text": "2026-11-27",
+            "type": "record_date"
+          }
+        ],
+        "limitation": "Mapeamento do modelo fixo; não valida narrativa livre, nem o conteúdo substantivo da ementa.",
+        "policy": "documentary-claims-v2-hooks",
+        "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2660488",
+        "unverified_dimensions": [
+          "legal_effect",
+          "implementation",
+          "budget",
+          "causality",
+          "social_impact"
+        ],
+        "version": "42517694849646"
+      },
+      "claim_matrix_sha256": "1605214d7b3bd8da9fcb13e160c7195d47d3d9b0e62dd28a8b8f852f2951c308",
+      "closing_media_sha256": "413b3e62f9d28b51ebeccbde342e27ef39f19f6e22b4be2114eedef6aefc23c7",
+      "content_sha256": "502c9a908078f673402375b5c7f04607358ca77720975d60e78627f12fef0ae4",
+      "decision": "approved_documentary_only",
+      "id": "camara:2660488",
+      "issues": [],
+      "logo_sha256": "df41d13bb11db469d2850c69c0ece41eeb7e33a262e7622b59afb21ef81c7ce6",
+      "policy": "documentary-template-v4-didactic",
+      "version": "42517694849646"
     }
   ]
 }
