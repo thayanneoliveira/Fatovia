@@ -58,7 +58,6 @@ def main():
     for index,item in enumerate(state["pending"]):
         if (item.get("id"),item.get("version")) == (tx.get("id"),tx.get("version")):
             continue
-        from .didactic import reviewed
         if item.get("template_revision") != PREMIUM or (logo_sha and item.get("brand_sha256")!=logo_sha):
             try:
                 if not verify_live(item):
@@ -91,14 +90,24 @@ def main():
     # Limite de armazenamento e de produção: não acumular imagens sem controle.
     slots = max(0, 8 - len(state.get("pending", [])))
     # Reserve at most one open slot for a new official-data story, without displacing active media.
-    civic_chosen=choose(civic_candidates,selection_state,now,maximum=1) if slots else []
+    from .engine import eligible
+    # A monthly/quarterly observation is not a stale legislative procedure.
+    civic_chosen=[]
+    if slots:
+        for candidate in civic_candidates:
+            if not eligible(candidate,selection_state,now) or not fresh_stage(candidate,now):
+                continue
+            if any(p["id"]==candidate["id"] for p in state["pending"]):
+                continue
+            candidate.update(editorial_score=80,explore_signal_count=0,discovery_source_count=0)
+            civic_chosen.append(candidate)
+            break
     selection_state["pending"]=selection_state.get("pending",[])+civic_chosen
     remaining=max(0,min(4,slots)-len(civic_chosen))
     chosen=civic_chosen+(choose([x for x in candidates if not x["id"].startswith("civic:")],selection_state,now,maximum=remaining) if remaining else [])
     staged = 0
     for item in chosen:
         try:
-            from .didactic import reviewed
             render(item,premium=True)
             seal(item, now)
             item["status"] = "ready"
@@ -114,7 +123,7 @@ def main():
     catalog = []
     for item in state.get("pending", [])[:8]:
         cards = item.get("cards", [])
-        if item.get("status") != "ready" or len(cards) != 7:
+        if item.get("status") != "ready" or item.get("template_revision") != PREMIUM or len(cards) != 7:
             continue
         paths = [Path(path) for path in cards]
         try:

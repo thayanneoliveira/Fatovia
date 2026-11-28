@@ -104,7 +104,9 @@ def card(path, number, headline, body, hint, item):
         d.text((66,53),"FATO.VIA",font=font(36,bold=True),fill=CREAM)
     d.line((620,83,1010,83),fill=GOLD,width=2)
     civic=str(item.get("id","")).startswith("civic:")
-    label=(("ENTENDA O CENÁRIO","O DADO OFICIAL","POLÍTICA PÚBLICA","NA PRÁTICA","O QUE ACOMPANHAR","LIMITES DO DADO","CONCLUSÃO E FONTES") if civic else LABELS)[number-1]
+    from .didactic import reviewed
+    generic=not civic and reviewed(item) is None
+    label=(("ENTENDA O CENÁRIO","O DADO OFICIAL","POLÍTICA PÚBLICA","NA PRÁTICA","O QUE ACOMPANHAR","LIMITES DO DADO","CONCLUSÃO E FONTES") if civic else (("ENTENDA O CENÁRIO","EMENTA OFICIAL","CONTEXTO DO TEXTO","TRAMITAÇÃO","LIMITES DA INFORMAÇÃO","O QUE ACOMPANHAR","CONCLUSÃO E FONTES") if generic else LABELS))[number-1]
     lf=font(25,bold=True)
     d.rounded_rectangle((66,150,86+int(d.textlength(label,font=lf)),207),radius=8,fill=SAGE)
     d.text((76,163),label,font=lf,fill="#103629")

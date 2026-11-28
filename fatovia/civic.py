@@ -52,7 +52,7 @@ def valid(item):
         if k not in SPECS:return False
         expected=make(k,item["observation"])
         return all(item.get(x)==expected[x] for x in expected if x!="status")
-    except (ValueError,KeyError,TypeError,ArithmeticError):return False
+    except (ValueError,KeyError,TypeError,ArithmeticError,AttributeError):return False
 
 def fresh(item,now):
     try:
