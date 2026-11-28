@@ -3,6 +3,7 @@ from datetime import datetime
 from pathlib import Path
 from fatovia.civic import make,valid,fresh,verify,flags,cards,SPECS
 from fatovia.engine import from_camara,validate_candidate
+from fatovia.memory import duplicate
 from fatovia.evidence import seal,sealed
 from fatovia.render import render
 from fatovia.editorial_audit import review,approved,POLICY
@@ -22,6 +23,11 @@ class CivicTests(unittest.TestCase):
         self.assertFalse(verify(a,NOW,lambda *args:json.dumps([{"data":"28/11/2026","valor":"14"}]).encode()))
         a["source_url"]="https://example.org"
         self.assertFalse(valid(a))
+    def test_new_month_not_duplicate(self):
+        a=make("ipca",{"period":"2026-09","value":"0.14"})
+        b=make("ipca",{"period":"2026-10","value":"0.14"})
+        self.assertFalse(duplicate(a,b))
+        self.assertTrue(duplicate(a,copy.deepcopy(a)))
     def test_aneel_current_month_only(self):
         raw=b"DatCompetencia;NomBandeiraAcionada\n2026-10-01;Amarela\n2026-11-01;Verde\n"
         self.assertEqual(flags(raw,NOW),[{"period":"2026-11","value":"verde"}])

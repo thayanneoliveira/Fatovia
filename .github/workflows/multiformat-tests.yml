@@ -26,3 +26,6 @@ jobs:
           name: fatovia-premium-49-cards
           path: premium-preview/
           retention-days: 3
+      - name: Validar fontes cívicas reais sem publicar
+        if: github.ref == 'refs/heads/feature/civic-premium-autonomy-20261128'
+        run: python -m fatovia.civic_smoke
