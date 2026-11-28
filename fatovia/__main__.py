@@ -59,7 +59,7 @@ def main():
         if (item.get("id"),item.get("version")) == (tx.get("id"),tx.get("version")):
             continue
         from .didactic import reviewed
-        if (item.get("template_revision") != PREMIUM or (logo_sha and item.get("brand_sha256")!=logo_sha)) and reviewed(item):
+        if item.get("template_revision") != PREMIUM or (logo_sha and item.get("brand_sha256")!=logo_sha):
             try:
                 if not verify_live(item):
                     errors.append(f"Fonte mudou ou indisponível: {item['id']}")
@@ -84,14 +84,22 @@ def main():
     except Exception as exc:
         candidates = []
         errors.append(f"Radar indisponível ({type(exc).__name__})")
+    from .civic import collect as collect_civic
+    civic_candidates,civic_errors=collect_civic(now)
+    diagnostics["civic_sources"]=civic_errors
+    candidates.extend(civic_candidates)
     # Limite de armazenamento e de produção: não acumular imagens sem controle.
     slots = max(0, 8 - len(state.get("pending", [])))
-    chosen = choose(candidates, selection_state, now, maximum=min(4, slots))
+    # Reserve at most one open slot for a new official-data story, without displacing active media.
+    civic_chosen=choose(civic_candidates,selection_state,now,maximum=1) if slots else []
+    selection_state["pending"]=selection_state.get("pending",[])+civic_chosen
+    remaining=max(0,min(4,slots)-len(civic_chosen))
+    chosen=civic_chosen+(choose([x for x in candidates if not x["id"].startswith("civic:")],selection_state,now,maximum=remaining) if remaining else [])
     staged = 0
     for item in chosen:
         try:
             from .didactic import reviewed
-            render(item,premium=bool(reviewed(item)))
+            render(item,premium=True)
             seal(item, now)
             item["status"] = "ready"
             state.setdefault("pending", []).append(item)

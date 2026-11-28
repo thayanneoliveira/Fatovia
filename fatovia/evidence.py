@@ -7,7 +7,9 @@ from urllib.parse import urlparse
 
 
 def projection(item):
-    return {k:item.get(k) for k in ("id","version","title","summary","stage","stage_date","source_url","public_url","caption","cards")}
+    result={k:item.get(k) for k in ("id","version","title","summary","stage","stage_date","source_url","public_url","caption","cards")}
+    if str(item.get("id","")).startswith("civic:"):result["observation"]=item.get("observation")
+    return result
 
 
 def fingerprint(item):
@@ -15,6 +17,9 @@ def fingerprint(item):
 
 
 def source_ok(item):
+    if str(item.get("id","")).startswith("civic:"):
+        from .civic import valid
+        return valid(item)
     m = re.fullmatch(r"camara:([0-9]+)", str(item.get("id","")))
     if not m:
         return False
@@ -27,14 +32,18 @@ def source_ok(item):
 def seal(item, now):
     if not source_ok(item):
         raise ValueError("source_identifier_mismatch")
+    civic=str(item.get("id","")).startswith("civic:")
     item["evidence"] = {
-        "schema":1,"kind":"official_document_attribution","checked_at":now.isoformat(),
+        "schema":1,"kind":"official_series_observation" if civic else "official_document_attribution","checked_at":now.isoformat(),
         "source":item["source_url"],"record_date":item["stage_date"],"content_sha256":fingerprint(item),
         "claims":[{"field":"title","basis":"identificacao_da_proposicao"},
                   {"field":"summary","basis":"ementa_oficial_atribuida"},
                   {"field":"stage","basis":"registro_de_tramitacao"}],
         "limitations":"Não confirma veracidade das alegações do projeto, aprovação, execução ou impacto."
     }
+    if civic:
+        item["evidence"]["claims"]=[{"field":"observation","basis":"official_series"}]
+        item["evidence"]["limitations"]="Não comprova causalidade nem impacto individual."
     return item
 
 
@@ -45,7 +54,7 @@ def sealed(item, now):
     try:
         checked=datetime.fromisoformat(evidence["checked_at"])
         stage=datetime.fromisoformat(item["stage_date"]).date()
-        return (evidence["schema"]==1 and evidence["kind"]=="official_document_attribution"
+        return (evidence["schema"]==1 and evidence["kind"]==("official_series_observation" if str(item.get("id","")).startswith("civic:") else "official_document_attribution")
                 and evidence["source"]==item["source_url"] and evidence["record_date"]==item["stage_date"]
                 and checked<=now
                 and stage<=now.date()
@@ -77,6 +86,10 @@ def read_document(root,fetcher,errors=None):
 
 
 def verify_live(item, fetcher=None):
+    if str(item.get("id","")).startswith("civic:"):
+        from .civic import verify
+        from .engine import now_local
+        return verify(item,now_local(),fetcher) if fetcher is not None else verify(item,now_local())
     # Do not follow arbitrary supplied links or redirects; the source ID is bound above.
     if not source_ok(item):
         return False

@@ -17,6 +17,9 @@ CTA = {
 }
 
 def closing(item):
+    if str(item.get("id","")).startswith("civic:"):
+        from .civic import closing as civic_closing
+        return civic_closing(item)
     return CTA.get(item["id"]+"/"+item["version"], "Compartilhe com quem quer entender esta proposta antes de opinar.")
 
 def font(size, serif=False, bold=False):
@@ -100,7 +103,8 @@ def card(path, number, headline, body, hint, item):
     else:
         d.text((66,53),"FATO.VIA",font=font(36,bold=True),fill=CREAM)
     d.line((620,83,1010,83),fill=GOLD,width=2)
-    label=LABELS[number-1]
+    civic=str(item.get("id","")).startswith("civic:")
+    label=(("ENTENDA O CENÁRIO","O DADO OFICIAL","POLÍTICA PÚBLICA","NA PRÁTICA","O QUE ACOMPANHAR","LIMITES DO DADO","CONCLUSÃO E FONTES") if civic else LABELS)[number-1]
     lf=font(25,bold=True)
     d.rounded_rectangle((66,150,86+int(d.textlength(label,font=lf)),207),radius=8,fill=SAGE)
     d.text((76,163),label,font=lf,fill="#103629")
@@ -112,7 +116,7 @@ def card(path, number, headline, body, hint, item):
         y=block(d,body,66,y,944,350,35,27)
         y+=22
         d.line([(71,y+8),(111,y+8),(111,y+64),(91,y+48),(71,y+64),(71,y+8)],fill=GOLD,width=4)
-        y=block(d,"Salve este post para acompanhar a tramitação.",141,y,865,115,34,30,bold=True)+28
+        y=block(d,"Salve este post para consultar os indicadores." if civic else "Salve este post para acompanhar a tramitação.",141,y,865,115,34,30,bold=True)+28
         d.line([(70,y+15),(119,y),(96,y+53),(87,y+31),(70,y+15)],fill=GOLD,width=4)
         d.line([(87,y+31),(119,y)],fill=GOLD,width=3)
         y=block(d,closing(item),141,y,865,150,34,30)
@@ -120,7 +124,7 @@ def card(path, number, headline, body, hint, item):
         y=block(d,body,66,y,944,1080-y,43,32)
         if number==1: cover_art(d,item,y)
     if y>1115: raise ValueError("footer_overlap")
-    block(d,"Fonte: Câmara dos Deputados | "+item["title"],66,1154,944,60,26,24,color=SAGE)
+    block(d,"Fonte: "+(item["source_name"] if civic else "Câmara dos Deputados")+" | "+item["title"],66,1154,944,60,26,24,color=SAGE)
     d.text((66,1261),"@fato.via",font=font(32),fill=CREAM)
     d.line((260,1280,855,1280),fill=GOLD,width=2)
     d.rounded_rectangle((880,1240,1014,1310),radius=30,outline=GOLD,width=3)

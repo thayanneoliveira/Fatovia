@@ -73,6 +73,9 @@ def from_camara(record, stage):
 
 
 def validate_candidate(item):
+    if str(item.get("id","")).startswith("civic:"):
+        from .civic import valid
+        return [] if valid(item) else ["Indicador oficial inválido"]
     issues = []
     source = urlparse(item.get("source_url", ""))
     if not str(item.get("id", "")).startswith("camara:"):
@@ -190,6 +193,9 @@ def preferred_hours(state):
 
 
 def fresh_stage(item, now):
+    if str(item.get("id","")).startswith("civic:"):
+        from .civic import fresh
+        return fresh(item,now)
     try:
         return 0 <= (now.date() - datetime.fromisoformat(item["stage_date"]).date()).days <= 14
     except (ValueError, KeyError, TypeError):

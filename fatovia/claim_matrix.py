@@ -13,6 +13,9 @@ def digest(value):
     return hashlib.sha256(json.dumps(value,ensure_ascii=False,sort_keys=True,separators=(",",":")).encode()).hexdigest()
 
 def build(item):
+    if str(item.get("id","")).startswith("civic:"):
+        from .civic import matrix
+        return matrix(item)
     if not source_ok(item):
         raise ValueError("source_identifier_mismatch")
     from .render import cards_for, editorial_hook
