@@ -1,34 +1,45 @@
 {
-  "generated_at": "2026-11-27T16:26:19.607954-03:00",
+  "generated_at": "2026-11-27T23:38:19.427538-03:00",
   "note": "Topic co-occurrence is not corroboration of an individual claim or proof of virality.",
   "publication_authorized": false,
   "signals": [
     {
-      "id": "2f30581fbf4803bf5df5",
-      "published_at": "2026-11-27T13:48:00-03:00",
+      "id": "dec506acb34138e9b5c6",
+      "published_at": "2026-11-27T19:40:00-03:00",
       "source": "agencia_brasil",
       "status": "discovery_only",
-      "title": "Manaus suspende atividades em parques após piora na qualidade do ar",
+      "title": "Distribuidoras de energia oferecem descontos para renegociar dívidas",
+      "topics": [
+        "infraestrutura"
+      ],
+      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/distribuidoras-de-energia-oferecem-descontos-para-renegociar-dividas"
+    },
+    {
+      "id": "b77fd7a65b389f48e0ee",
+      "published_at": "2026-11-27T19:29:00-03:00",
+      "source": "agencia_brasil",
+      "status": "discovery_only",
+      "title": "Com bandeira tarifária verde, energia não terá custo extra em dezembro",
+      "topics": [
+        "infraestrutura"
+      ],
+      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/com-bandeira-tarifaria-verde-energia-nao-tera-custo-extra-em-dezembro"
+    },
+    {
+      "id": "dad65c9d4c2a5e83f362",
+      "published_at": "2026-11-27T17:41:00-03:00",
+      "source": "agencia_brasil",
+      "status": "discovery_only",
+      "title": "STF: Dino suspende emendas parlamentares de Flávio Bolsonaro",
       "topics": [
         "saude"
       ],
-      "url": "https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2026-11/manaus-suspende-atividades-em-parques-apos-piora-na-qualidade-do-ar"
-    },
-    {
-      "id": "c2ed9cc8a5da74b8ea6b",
-      "published_at": "2026-11-27T13:46:00-03:00",
-      "source": "agencia_brasil",
-      "status": "discovery_only",
-      "title": "Polícia Civil prende líder de milícia no Rio de Janeiro",
-      "topics": [
-        "seguranca"
-      ],
-      "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2026-11/policia-civil-prende-lider-de-milicia-no-rio-de-janeiro"
+      "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/stf-dino-suspende-emendas-parlamentares-de-flavio-bolsonaro"
     }
   ],
   "sources": {
     "agencia_brasil": {
-      "eligible_signals": 2,
+      "eligible_signals": 3,
       "status": "ok"
     },
     "ibge": {
@@ -42,14 +53,14 @@
   },
   "topic_groups": [
     {
-      "document_count": 1,
+      "document_count": 2,
       "explore_links": 0,
       "source_count": 1,
       "sources": [
         "agencia_brasil"
       ],
       "status": "research_required",
-      "topic": "saude"
+      "topic": "infraestrutura"
     },
     {
       "document_count": 1,
@@ -59,7 +70,7 @@
         "agencia_brasil"
       ],
       "status": "research_required",
-      "topic": "seguranca"
+      "topic": "saude"
     }
   ]
 }
