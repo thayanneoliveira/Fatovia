@@ -62,3 +62,20 @@ Novas versões foram renderizadas, mas não foram republicadas nem os originais 
 ## Critério didático obrigatório do piloto v4
 
 Cada narrativa revisada precisa apresentar tema, proposta, mecanismo, consequência potencial (não certeza), perguntas específicas, situação documental e fonte. O gate de revisão exige ID, versão, ementa e tramitação exatas; limita o comprimento e separa alegação documental de explicação geral. Conteúdo sem revisão didática não entra na lista autorizada. Validação automatizada de estrutura e bytes não é avaliação semântica geral: as oito narrativas são curadas nesta revisão.
+
+
+## Padrão editorial premium aprovado em 28/11/2026
+
+Referência criativa aprovada pela proprietária: modelo editorial escuro do carrossel sobre conta de energia. Esta aprovação é de direção visual, não de fatos, arquivos ou hashes futuros.
+
+- Capa verde profundo, tipografia serifada creme, destaque dourado discreto, imagens contextuais quando houver origem/licença adequada, sem gráfico decorativo que aparente representar dados. Preservar marca e paginação no rodapé. Cards 4:5, 1080 × 1350 JPEG.
+- Uma ideia central por card, espaço negativo, texto curto, hierarquia visual e legibilidade no celular. Não reduzir fonte para encaixar excesso de texto: dividir ou reescrever mantendo qualificadores necessários.
+- Pauta cotidiana deve demonstrar vínculo verificável com legislação, política pública, regulação, orçamento ou instituições. Sem vínculo, descartar a pauta. Pautas de PL devem distinguir proposição, vigência e efeitos documentados; não imputar causalidade sem evidência. Apresentar nuances e fontes oficiais, sem direcionamento partidário.
+- Fechamento com ícones de salvar e compartilhar e chamada contextual leve, quando apropriada. Em temas de violência, tragédia ou vulnerabilidade, usar tom respeitoso e sem humor. Legenda com pergunta pertinente e fontes rastreáveis.
+- Priorizar compartilhamentos, salvamentos e alcance em coortes comparáveis; não afirmar melhoria sem evidência suficiente. Manter custo financeiro adicional zero e autonomia, sem mudar limites ou rotina dos Reels.
+
+### Transição de carrosséis legados
+
+Preservar posts publicados e histórico de mídia. Conteúdo legado pendente com urgência real pode continuar pelo fluxo vigente se passar todos os gates; os demais são candidatos à reformulação em revisão versionada. Rascunhos devem seguir o novo padrão. Não reusar aprovação de arte antiga: a revisão nova exige evidência atualizada, reconstrução determinística, hashes novos, preflight dos bytes hospedados e nova decisão de elegibilidade. Não alterar transação de publicação em curso, apagar histórico, relaxar gates, ou sobrescrever mídia já aprovada.
+
+**Estado da implantação:** diretrizes aprovadas e registradas; renderer premium, seleção de pautas cotidianas e migração executável ainda precisam de implementação, testes e homologação. Até lá, renderer e gates legados permanecem inalterados. Sete cards seguem como contrato técnico atual; os cinco cards do protótipo não alteram esse contrato automaticamente.
