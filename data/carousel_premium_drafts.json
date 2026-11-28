@@ -1,0 +1,282 @@
+{
+  "schema": 1,
+  "revision": "premium-editorial-draft-v1",
+  "snapshot": "2026-11-28",
+  "status": "draft_not_publisher_input",
+  "publication_authorized": false,
+  "items": [
+    {
+      "id": "camara:2653944",
+      "version": "2d94a3cc4eebf7",
+      "title": "PL 5852/2026",
+      "source": "https://www.camara.leg.br/propostas-legislativas/2653944",
+      "source_record_date": "2026-11-13",
+      "legacy_template": "didactic-v4",
+      "triage": "REFORMULAR",
+      "status": "draft_requires_live_review_and_render",
+      "publication_authorized": false,
+      "cards": [
+        {
+          "role": "hook",
+          "headline": "Grandes fortunas: o que está em discussão?",
+          "body": "O projeto propõe instituir um imposto sobre grandes fortunas."
+        },
+        {
+          "role": "proposal",
+          "headline": "O que está sendo proposto?",
+          "body": "O resumo remete à previsão constitucional desse imposto. É preciso ler o texto integral para conhecer as regras."
+        },
+        {
+          "role": "mechanism",
+          "headline": "O que isso significa?",
+          "body": "Quais patrimônios seriam atingidos? Quais seriam as alíquotas e exceções?"
+        },
+        {
+          "role": "status",
+          "headline": "Já está valendo?",
+          "body": "O registro de 2026-11-13 informa: Apresentação de Proposição. Isso não comprova aprovação ou vigência."
+        },
+        {
+          "role": "closing",
+          "headline": "Informação antes de opinião.",
+          "body": "Salve para acompanhar a discussão. Compartilhe com quem quer entender o projeto antes de opinar."
+        }
+      ],
+      "note": "Pré-roteiro de cinco cards; adaptar ao contrato técnico de sete antes da integração. Fonte: ementa registrada; verificar ao vivo e auditar antes de publicar."
+    },
+    {
+      "id": "camara:2658959",
+      "version": "312e525a513387",
+      "title": "PL 5932/2026",
+      "source": "https://www.camara.leg.br/propostas-legislativas/2658959",
+      "source_record_date": "2026-11-23",
+      "legacy_template": "documentary-hook-v3",
+      "triage": "REFORMULAR",
+      "status": "draft_requires_live_review_and_render",
+      "publication_authorized": false,
+      "cards": [
+        {
+          "role": "hook",
+          "headline": "Queimadas: de onde pode vir o dinheiro para prevenção?",
+          "body": "O projeto propõe ampliar as atividades que podem receber recursos do Fundo Nacional sobre Mudança do Clima."
+        },
+        {
+          "role": "proposal",
+          "headline": "O que está sendo proposto?",
+          "body": "A proposta inclui prevenção, monitoramento, combate e pesquisa sobre incêndios florestais e queimadas."
+        },
+        {
+          "role": "mechanism",
+          "headline": "O que isso significa?",
+          "body": "Se aprovada, a medida permitiria financiar essas atividades pelo fundo, conforme as regras aplicáveis. Isso não garante recursos efetivamente destinados."
+        },
+        {
+          "role": "status",
+          "headline": "Já está valendo?",
+          "body": "O registro de 2026-11-23 informa: Apresentação de Proposição. Isso não comprova aprovação ou vigência."
+        },
+        {
+          "role": "closing",
+          "headline": "Informação antes de opinião.",
+          "body": "Salve para acompanhar. Compartilhe com quem quer entender como a prevenção de queimadas pode ser financiada."
+        }
+      ],
+      "note": "Pré-roteiro de cinco cards; adaptar ao contrato técnico de sete antes da integração. Fonte: ementa registrada; verificar ao vivo e auditar antes de publicar."
+    },
+    {
+      "id": "camara:2659020",
+      "version": "0df9252ed4b520",
+      "title": "PL 5945/2026",
+      "source": "https://www.camara.leg.br/propostas-legislativas/2659020",
+      "source_record_date": "2026-11-23",
+      "legacy_template": "documentary-hook-v3",
+      "triage": "REFORMULAR",
+      "status": "draft_requires_live_review_and_render",
+      "publication_authorized": false,
+      "cards": [
+        {
+          "role": "hook",
+          "headline": "Quem deve avisar sobre os riscos nas rodovias federais?",
+          "body": "O projeto trata do dever da PRF de registrar e comunicar defeitos e condições de risco nas estradas federais."
+        },
+        {
+          "role": "proposal",
+          "headline": "O que está sendo proposto?",
+          "body": "A proposta prevê comunicação aos responsáveis pela conservação e aos governos federal e estadual."
+        },
+        {
+          "role": "mechanism",
+          "headline": "O que isso significa?",
+          "body": "Comunicar um risco não é o mesmo que executar o reparo. É preciso acompanhar prazos, responsabilidades e medidas efetivas."
+        },
+        {
+          "role": "status",
+          "headline": "Já está valendo?",
+          "body": "O registro de 2026-11-23 informa: Apresentação de Proposição. Isso não comprova aprovação ou vigência."
+        },
+        {
+          "role": "closing",
+          "headline": "Informação antes de opinião.",
+          "body": "Salve antes da próxima viagem. Compartilhe com quem sempre comenta sobre as condições da estrada."
+        }
+      ],
+      "note": "Pré-roteiro de cinco cards; adaptar ao contrato técnico de sete antes da integração. Fonte: ementa registrada; verificar ao vivo e auditar antes de publicar."
+    },
+    {
+      "id": "camara:2659462",
+      "version": "b523d110082ee1",
+      "title": "PL 5961/2026",
+      "source": "https://www.camara.leg.br/propostas-legislativas/2659462",
+      "source_record_date": "2026-11-25",
+      "legacy_template": "documentary-hook-v3",
+      "triage": "REFORMULAR_TOM_SENSIVEL",
+      "status": "draft_requires_live_review_and_render",
+      "publication_authorized": false,
+      "cards": [
+        {
+          "role": "hook",
+          "headline": "Como poderia mudar o acolhimento de vítimas nas unidades de saúde?",
+          "body": "O projeto propõe assegurar acolhimento em sala reservada e informação sobre direitos a vítimas de outras formas de violência."
+        },
+        {
+          "role": "proposal",
+          "headline": "O que está sendo proposto?",
+          "body": "A medida abrange, entre outras, violência psicológica, moral e patrimonial, conforme a ementa."
+        },
+        {
+          "role": "mechanism",
+          "headline": "O que isso significa?",
+          "body": "Se aprovada, a proposta poderia ampliar as garantias de acolhimento. A implementação precisa ser acompanhada."
+        },
+        {
+          "role": "status",
+          "headline": "Já está valendo?",
+          "body": "O registro de 2026-11-25 informa: Apresentação de Proposição. Isso não comprova aprovação ou vigência."
+        },
+        {
+          "role": "closing",
+          "headline": "Informação antes de opinião.",
+          "body": "Salve para consultar a fonte. Compartilhe com respeito, sem expor vítimas."
+        }
+      ],
+      "note": "Pré-roteiro de cinco cards; adaptar ao contrato técnico de sete antes da integração. Fonte: ementa registrada; verificar ao vivo e auditar antes de publicar."
+    },
+    {
+      "id": "camara:2659342",
+      "version": "32c9b9359dcd43",
+      "title": "PL 5960/2026",
+      "source": "https://www.camara.leg.br/propostas-legislativas/2659342",
+      "source_record_date": "2026-11-24",
+      "legacy_template": "documentary-hook-v3",
+      "triage": "REFORMULAR",
+      "status": "draft_requires_live_review_and_render",
+      "publication_authorized": false,
+      "cards": [
+        {
+          "role": "hook",
+          "headline": "Árvores e fios elétricos: quem organiza essa convivência?",
+          "body": "O projeto propõe instituir uma Política Nacional de Arborização Urbana."
+        },
+        {
+          "role": "proposal",
+          "headline": "O que está sendo proposto?",
+          "body": "A proposta estabelece diretrizes para a convivência segura entre vegetação e redes de distribuição elétrica e prevê um sistema nacional de informações."
+        },
+        {
+          "role": "mechanism",
+          "headline": "O que isso significa?",
+          "body": "Se aprovada, pode criar uma referência comum para planejamento. O resumo não comprova execução ou redução de interrupções de energia."
+        },
+        {
+          "role": "status",
+          "headline": "Já está valendo?",
+          "body": "O registro de 2026-11-24 informa: Apresentação de Proposição. Isso não comprova aprovação ou vigência."
+        },
+        {
+          "role": "closing",
+          "headline": "Informação antes de opinião.",
+          "body": "Salve para acompanhar. Compartilhe com quem sempre repara nas árvores e nos fios da rua."
+        }
+      ],
+      "note": "Pré-roteiro de cinco cards; adaptar ao contrato técnico de sete antes da integração. Fonte: ementa registrada; verificar ao vivo e auditar antes de publicar."
+    },
+    {
+      "id": "camara:2660119",
+      "version": "1d2626b8ceaffc",
+      "title": "PL 5991/2026",
+      "source": "https://www.camara.leg.br/propostas-legislativas/2660119",
+      "source_record_date": "2026-11-26",
+      "legacy_template": "documentary-hook-v3",
+      "triage": "REFORMULAR",
+      "status": "draft_requires_live_review_and_render",
+      "publication_authorized": false,
+      "cards": [
+        {
+          "role": "hook",
+          "headline": "E se um registro civil antigo se perder?",
+          "body": "O projeto propõe preservar e digitalizar acervos históricos do Registro Civil das Pessoas Naturais anteriores à vigência da Lei 6.015/1973."
+        },
+        {
+          "role": "proposal",
+          "headline": "O que está sendo proposto?",
+          "body": "A proposta inclui inventário, recuperação, indexação, controle de qualidade e integração eletrônica."
+        },
+        {
+          "role": "mechanism",
+          "headline": "O que isso significa?",
+          "body": "Se aprovada e implementada, a medida poderia facilitar a preservação e a pesquisa desses registros. Custos e condições precisam ser verificados."
+        },
+        {
+          "role": "status",
+          "headline": "Já está valendo?",
+          "body": "O registro de 2026-11-26 informa: Apresentação de Proposição. Isso não comprova aprovação ou vigência."
+        },
+        {
+          "role": "closing",
+          "headline": "Informação antes de opinião.",
+          "body": "Salve para acompanhar. Compartilhe com quem já tentou encontrar um documento antigo da família."
+        }
+      ],
+      "note": "Pré-roteiro de cinco cards; adaptar ao contrato técnico de sete antes da integração. Fonte: ementa registrada; verificar ao vivo e auditar antes de publicar."
+    },
+    {
+      "id": "camara:2660442",
+      "version": "61123c2d60c463",
+      "title": "PL 5997/2026",
+      "source": "https://www.camara.leg.br/propostas-legislativas/2660442",
+      "source_record_date": "2026-11-27",
+      "legacy_template": "documentary-hook-v3",
+      "triage": "REVISAR_ATUALIDADE_TOM_SENSIVEL",
+      "status": "draft_requires_live_review_and_render",
+      "publication_authorized": false,
+      "cards": [
+        {
+          "role": "hook",
+          "headline": "Exposição de vítimas de violência nas redes: o que propõe o projeto?",
+          "body": "O projeto propõe proibir a divulgação, o compartilhamento e o impulsionamento de imagens e vídeos que exponham vítimas de violência física."
+        },
+        {
+          "role": "proposal",
+          "headline": "O que está sendo proposto?",
+          "body": "A proposta trata de redes sociais e plataformas digitais, com medidas de proteção à dignidade humana."
+        },
+        {
+          "role": "mechanism",
+          "headline": "O que isso significa?",
+          "body": "O alcance, as exceções e as responsabilidades precisam ser conferidos no texto integral. Projeto não equivale a proibição vigente."
+        },
+        {
+          "role": "status",
+          "headline": "Já está valendo?",
+          "body": "O registro de 2026-11-27 informa: Apresentação de Proposição. Isso não comprova aprovação ou vigência."
+        },
+        {
+          "role": "closing",
+          "headline": "Informação antes de opinião.",
+          "body": "Salve para acompanhar a tramitação. Compartilhe informação sem reproduzir imagens de vítimas."
+        }
+      ],
+      "note": "Pré-roteiro de cinco cards; adaptar ao contrato técnico de sete antes da integração. Fonte: ementa registrada; verificar ao vivo e auditar antes de publicar."
+    }
+  ]
+}
