@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T10:02:05.116304-03:00",
+  "generated_at": "2026-11-28T10:17:37.974732-03:00",
   "limitations": "Independent rule-based check of the official source, approved template and bytes; not general factual or semantic review.",
   "policy": "documentary-template-v4-didactic",
   "reviews": [
@@ -13,7 +13,7 @@
         "cc945ab07f9da873da558bbbf03219579812f3541fda5af582171b850527cc7b",
         "a325327e5212d0dbf83a87e6339014779929c470d7086fa2dde3e7089514e5ef"
       ],
-      "checked_at": "2026-11-28T10:02:05.116304-03:00",
+      "checked_at": "2026-11-28T10:17:37.974732-03:00",
       "claim_matrix": {
         "document_id": "camara:2658959",
         "entries": [
@@ -274,7 +274,7 @@
         "12f0a771bd75cb5b861240b537ceb2cec0143332afb45ec553c6d2814b6593ac",
         "87f72edaa1470ec51723eaa3db3bd097239e9def16f66f28c904a0d6aa52417e"
       ],
-      "checked_at": "2026-11-28T10:02:05.116304-03:00",
+      "checked_at": "2026-11-28T10:17:37.974732-03:00",
       "claim_matrix": {
         "document_id": "camara:2659020",
         "entries": [
@@ -535,7 +535,7 @@
         "838c8c8e1461d8d1a00e724eb720d15d4cccd6975c29f79e44965f97c2914c19",
         "551764894235d7ccb1f9c206c5c9fd80635a15de686529a6de39489304fc9eab"
       ],
-      "checked_at": "2026-11-28T10:02:05.116304-03:00",
+      "checked_at": "2026-11-28T10:17:37.974732-03:00",
       "claim_matrix": {
         "document_id": "camara:2659462",
         "entries": [
@@ -796,7 +796,7 @@
         "098a8355aa3bd756f51eacb05feb4b03ba9ff298b2a4fde82d23e02fee25ce75",
         "06faa456a2a8407e2471698914819d4fbf9adc39dbcd24e24aa59c4185cdadd1"
       ],
-      "checked_at": "2026-11-28T10:02:05.116304-03:00",
+      "checked_at": "2026-11-28T10:17:37.974732-03:00",
       "claim_matrix": {
         "document_id": "camara:2659342",
         "entries": [
@@ -1057,7 +1057,7 @@
         "d19886c8c41ad559d11a34c84c12441ecf60eece865630099e111f98a43ff393",
         "885e9547dd8b80c4e3ea2585829275bc865e8a5c7049030981752db74ef4642a"
       ],
-      "checked_at": "2026-11-28T10:02:05.116304-03:00",
+      "checked_at": "2026-11-28T10:17:37.974732-03:00",
       "claim_matrix": {
         "document_id": "camara:2660119",
         "entries": [
@@ -1318,7 +1318,7 @@
         "a5cc840d895564faae4acfd9e99cff461c73c1b5369934478527027e62fbd1fa",
         "6f349617723f0390e700640392447058efb71553fcad45e840c244ad0e81f263"
       ],
-      "checked_at": "2026-11-28T10:02:05.116304-03:00",
+      "checked_at": "2026-11-28T10:17:37.974732-03:00",
       "claim_matrix": {
         "document_id": "camara:2660442",
         "entries": [
@@ -1571,15 +1571,15 @@
     },
     {
       "card_sha256": [
-        "4637c430692830d8af8b29dc376a088b1cfe6979d763651c87759c61acb47052",
-        "7d4b13da300cab6647d63563250b78fee504c721947d3bceff6fd067aa514d3f",
-        "50fc02cfd1d06be78856d1d7dc75f61c0346bcbdeeeff316b42bc4e81aa7c58f",
-        "f1f9e6c66728073a28b19ab1b4a466ad298e7a509cd9649f79195bcbace28527",
-        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
-        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
-        "aac7ebf80ca303483c4ed3ec3b8253b75207a8b8be90e7b3eb6f94a15e0da0de"
+        "88fbdbb1aafab05b04767a5af7b8337276996f3113d644737f0e3690b25d5cb3",
+        "1f9f4727e17355306cc45d6061f9f5488c8bdcab2c1e4a4654ba653f8587526e",
+        "e42611ab392ec012459c9f7ab0b55f080316706fd276a6bc9136d0910eb9000f",
+        "79577a82650e164da65ea6bae6edeb2054ef4d627ef681bff7e0c2082e6cdf7b",
+        "60022b5e57134305eb1d759e3a0269347a34d6fd71dbf785b9d064822a6c5e29",
+        "690339a649c72618e7bff46eca55a9062e77698dc5b1ea1c51a0b840d883ac36",
+        "0c21b244a355b235bfef0e5301e592c155e033a1e8bd22043e005f0030d00bd3"
       ],
-      "checked_at": "2026-11-28T10:02:05.116304-03:00",
+      "checked_at": "2026-11-28T10:17:37.974732-03:00",
       "claim_matrix": {
         "document_id": "camara:2660478",
         "entries": [
@@ -1675,6 +1675,20 @@
             "type": "source_reference"
           },
           {
+            "evidence": null,
+            "limitation": "Convite não factual.",
+            "location": "card_07",
+            "text": "Compartilhe com quem quer entender esta proposta antes de opinar.",
+            "type": "contextual_cta"
+          },
+          {
+            "evidence": null,
+            "limitation": "Convite não factual.",
+            "location": "caption",
+            "text": "Compartilhe com quem quer entender esta proposta antes de opinar.",
+            "type": "contextual_cta"
+          },
+          {
             "evidence": {
               "end": 12,
               "excerpt": "PL 5999/2026",
@@ -1715,9 +1729,9 @@
         ],
         "version": "4241ddbd1ad89e"
       },
-      "claim_matrix_sha256": "e39519f1dc5d0bd5bab72d36b3ad5fde672d2350ad5c4613eaeaf6c448e9b8af",
-      "closing_media_sha256": "aac7ebf80ca303483c4ed3ec3b8253b75207a8b8be90e7b3eb6f94a15e0da0de",
-      "content_sha256": "a59ece5ffda302e2d32a10d6a4bd9321d279ef959cf4e2fbdae1aabe574f17b6",
+      "claim_matrix_sha256": "c81befce6e2109e92b9823793f50f416d1492d9b3ed62a85eda7942bda7ad21e",
+      "closing_media_sha256": "0c21b244a355b235bfef0e5301e592c155e033a1e8bd22043e005f0030d00bd3",
+      "content_sha256": "8716177927fe5c1af4176404b9dcc3826e8d3f29b11c7aca6fd0c601ed604aa1",
       "decision": "approved_documentary_only",
       "id": "camara:2660478",
       "issues": [],
@@ -1727,15 +1741,15 @@
     },
     {
       "card_sha256": [
-        "cb5f8a1f7dc0a3333688b56bf72060866d8707886053b4b5e707938d8198c55f",
-        "89467e68f26ca2d68ea29a4dd9e0b787336f4d14300828f4d3ff3b18362871fa",
-        "50fc02cfd1d06be78856d1d7dc75f61c0346bcbdeeeff316b42bc4e81aa7c58f",
-        "f1f9e6c66728073a28b19ab1b4a466ad298e7a509cd9649f79195bcbace28527",
-        "57154560198e0a95c2d1893fbbf7bf62470035485791fe8748b5dfe56c634672",
-        "a573f6a4c4d48ffc22506d40c16eb07d3448d3e96d4b6cabe7f062710f7798c7",
-        "413b3e62f9d28b51ebeccbde342e27ef39f19f6e22b4be2114eedef6aefc23c7"
+        "ec4d4103e551775b4f05bd933eb604dffa71bd3909697401a49f6311fb519e2f",
+        "d94a717f5052b142fc64eb5efa036cbd7299cfdf2deea52c974a3abe76efd04d",
+        "687219038e15b6f3efbcfaa9dff454ed0e1aefb452a24999c315b23dbc7dca12",
+        "a21eb9444156f20b17c9da5a85983d4b195af9168822b26907d4ed6265fb9bd2",
+        "c71305dcd699f284e98a9ffae25b19c8805a50e0f0b4067f63c7a4594db5e777",
+        "cbb4cf8cf8665963dd5f977c6df77ef8b8715e6acdad8ec258a393e4776ff3be",
+        "0b3b428a8a94e5c2f9a16dd3ded25064447efa71b86850633c81b2341f372d40"
       ],
-      "checked_at": "2026-11-28T10:02:05.116304-03:00",
+      "checked_at": "2026-11-28T10:17:37.974732-03:00",
       "claim_matrix": {
         "document_id": "camara:2660488",
         "entries": [
@@ -1831,6 +1845,20 @@
             "type": "source_reference"
           },
           {
+            "evidence": null,
+            "limitation": "Convite não factual.",
+            "location": "card_07",
+            "text": "Compartilhe com quem quer entender esta proposta antes de opinar.",
+            "type": "contextual_cta"
+          },
+          {
+            "evidence": null,
+            "limitation": "Convite não factual.",
+            "location": "caption",
+            "text": "Compartilhe com quem quer entender esta proposta antes de opinar.",
+            "type": "contextual_cta"
+          },
+          {
             "evidence": {
               "end": 12,
               "excerpt": "PL 6006/2026",
@@ -1871,9 +1899,9 @@
         ],
         "version": "42517694849646"
       },
-      "claim_matrix_sha256": "1605214d7b3bd8da9fcb13e160c7195d47d3d9b0e62dd28a8b8f852f2951c308",
-      "closing_media_sha256": "413b3e62f9d28b51ebeccbde342e27ef39f19f6e22b4be2114eedef6aefc23c7",
-      "content_sha256": "502c9a908078f673402375b5c7f04607358ca77720975d60e78627f12fef0ae4",
+      "claim_matrix_sha256": "11bb6a52e547427eb504ae42827ff64892e85b34c5417240be2e427e867cf9a5",
+      "closing_media_sha256": "0b3b428a8a94e5c2f9a16dd3ded25064447efa71b86850633c81b2341f372d40",
+      "content_sha256": "3b1410cd894f59874cae8c3ce8b4d78fa85a4cdb3603ff96fa8a5187fd26dcb8",
       "decision": "approved_documentary_only",
       "id": "camara:2660488",
       "issues": [],
