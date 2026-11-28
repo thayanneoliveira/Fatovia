@@ -148,7 +148,8 @@ def allowed(state,item,now,policy=None):
         if fmt=="carousel":
             # Independent auditor reconstructs actual final card with approved logo, checks live evidence,
             # then binds both the source-content seal and exact rendered bytes.
-            if item.get("template_revision")!="didactic-v4" or not approved(item,now):return False
+            from .premium_carousel import REVISION as PREMIUM
+            if item.get("template_revision")!=PREMIUM or not approved(item,now):return False
             report=json.loads(Path("data/editorial_audit.json").read_text(encoding="utf-8"))
             reviews=[r for r in report["reviews"] if (r["id"],r["version"])==(item["id"],item["version"])]
             return len(reviews)==1 and reviews[0].get("logo_sha256")==logo["sha256"] and reviews[0].get("closing_media_sha256")==inspect_files(item)[-1]

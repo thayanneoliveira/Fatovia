@@ -1,7 +1,7 @@
 name: FatoVia | Multiformat migration tests
 on:
   push:
-    branches: ['fix/reel-release-bridge-20261127', 'fix/autonomy-chain-20261127', 'feature/multiformat-publication', 'fix/pilot-transition-20261119', 'feature/multiformat-incident-closure-20261121', 'feature/v6-algenib-publisher-20261127']
+    branches: ['feature/carousel-premium-20261128', 'fix/reel-release-bridge-20261127', 'fix/autonomy-chain-20261127', 'feature/multiformat-publication', 'fix/pilot-transition-20261119', 'feature/multiformat-incident-closure-20261121', 'feature/v6-algenib-publisher-20261127']
   workflow_dispatch:
 permissions:
   contents: read

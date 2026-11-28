@@ -29,7 +29,9 @@ def paths_for(item):
     if not re.fullmatch(r"camara-[0-9]+",ident) or not re.fullmatch(r"[0-9a-f]{14}",version):
         raise ValueError("invalid_path_identity")
     from .didactic import REVISION
-    suffix="/"+REVISION if item.get("template_revision")==REVISION else ""
+    from .premium_carousel import REVISION as PREMIUM
+    revision=item.get("template_revision")
+    suffix="/"+revision if revision in (REVISION,PREMIUM) else ""
     return [f"docs/media/{ident}/{version}{suffix}/{i:02}.jpg" for i in range(1,8)]
 
 

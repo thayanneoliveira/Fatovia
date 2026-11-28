@@ -46,6 +46,10 @@ def build(item):
         add("card_07",item["title"],"source_reference","title",item["title"],"Fonte para leitura integral.")
         add("caption",row["cards"][1]["body"],"reviewed_proposal","summary",row["anchors"][0],"Paráfrase revisada.")
         add("caption",row["cards"][3]["body"],"reviewed_conditional","summary",row["anchors"][-1],"Impacto potencial.")
+        from .premium_carousel import REVISION as PREMIUM, closing
+        if item.get("template_revision")==PREMIUM:
+            add("card_07",closing(item),"contextual_cta",limit="Convite não factual; não comprova vigência ou impacto.")
+            add("caption",closing(item),"contextual_cta",limit="Convite não factual.")
         return {"policy":REVISION,"document_id":item["id"],"version":item["version"],"source_url":source,
                 "entries":entries,"unverified_dimensions":["legal_effect","implementation","budget","causality","social_impact"],
                 "limitation":"Revisão editorial de narrativa controlada; não verifica impacto real ou texto integral."}

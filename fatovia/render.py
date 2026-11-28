@@ -164,20 +164,24 @@ def cards_for(item):
     ]
 
 
-def render(item, root="docs/media"):
+def render(item, root="docs/media", premium=False):
+    from .premium_carousel import REVISION as PREMIUM, card as premium_card, closing
+    premium = premium or item.get("template_revision") == PREMIUM
     row=reviewed(item)
     destination = Path(root) / item["id"].replace(":", "-") / item["version"]
+    if premium and not row:
+        raise ValueError("premium_requires_reviewed_narrative")
     if row:
-        destination=destination/REVISION
+        destination=destination/(PREMIUM if premium else REVISION)
     paths = []
     try:
         for number, (headline, body, hint) in enumerate(cards_for(item), 1):
-            paths.append(card(destination / f"{number:02}.jpg", number, headline, body, hint))
+            paths.append(premium_card(destination / f"{number:02}.jpg", number, headline, body, hint, item) if premium else card(destination / f"{number:02}.jpg", number, headline, body, hint))
     except Exception:
         for path in paths:
             Path(path).unlink(missing_ok=True)
         raise
-    item["template_revision"] = REVISION if row else LEGACY_REVISION
+    item["template_revision"] = PREMIUM if premium else (REVISION if row else LEGACY_REVISION)
     from .brand import approved_logo
     if approved_logo() is not None:
         import json
@@ -200,4 +204,7 @@ def render(item, root="docs/media"):
             +"\n\n"+f'{item["title"]} | Registro de {item["stage_date"]}. Proposta, não benefício comprovado.'
             +"\n\nFonte oficial: "+item["public_url"]+"\n"
             +f'ID editorial: {item["id"]}/{item["version"]}/{REVISION}\n#FatoVia #PoliticasPublicas')
+    if premium:
+        item["caption"] = item["caption"].replace(f"/{REVISION}\n",f"/{PREMIUM}\n")
+        item["caption"] += "\n\nSalve este post para acompanhar a tramitação. "+closing(item)
     return item

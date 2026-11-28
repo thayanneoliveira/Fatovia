@@ -93,7 +93,9 @@ def public_urls(item):
 
 def marker(item):
     base=f'ID editorial: {item["id"]}/{item["version"]}'
-    return base+"/didactic-v4" if item.get("template_revision")=="didactic-v4" else base
+    from .premium_carousel import REVISION as PREMIUM
+    revision=item.get("template_revision")
+    return base+"/"+revision if revision in ("didactic-v4",PREMIUM) else base
 
 
 def choose_due(state, now, approval_check=None, pilot_window=False):
