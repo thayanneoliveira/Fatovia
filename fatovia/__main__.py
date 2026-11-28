@@ -4,7 +4,9 @@ import json
 from pathlib import Path
 
 from .engine import choose, load, now_local, rollup_report, save, scan_camara, from_camara, fresh_stage, validate_candidate
-from .evidence import seal, sealed
+from .evidence import seal, sealed, verify_live
+from .premium_carousel import REVISION as PREMIUM
+import copy
 from datetime import datetime, timedelta
 from .render import render, TEMPLATE_REVISION
 from .analytics import pull_metrics
@@ -53,16 +55,21 @@ def main():
     diagnostics["expired_or_unsealed_removed"] = len(old_pending)-len(state["pending"])
     from .brand import approved_logo
     logo_sha=load("data/multiformat_experiment.json")["approved_logo"]["sha256"] if approved_logo() is not None else None
-    for item in state["pending"]:
+    for index,item in enumerate(state["pending"]):
         if (item.get("id"),item.get("version")) == (tx.get("id"),tx.get("version")):
             continue
         from .didactic import reviewed
-        if (item.get("template_revision") != TEMPLATE_REVISION or (logo_sha and item.get("brand_sha256")!=logo_sha)) and reviewed(item):
+        if (item.get("template_revision") != PREMIUM or (logo_sha and item.get("brand_sha256")!=logo_sha)) and reviewed(item):
             try:
-                render(item)
-                seal(item,now)
+                if not verify_live(item):
+                    errors.append(f"Fonte mudou ou indisponível: {item['id']}")
+                    continue
+                revised=copy.deepcopy(item)
+                render(revised,premium=True)
+                seal(revised,now)
+                revised["status"]="ready"
+                state["pending"][index]=revised
             except Exception as exc:
-                item["status"]="review_required"
                 errors.append(f'Falha na migracao {item["id"]}: {type(exc).__name__}')
     selection_state = dict(state)
     try:
@@ -83,7 +90,8 @@ def main():
     staged = 0
     for item in chosen:
         try:
-            render(item)
+            from .didactic import reviewed
+            render(item,premium=bool(reviewed(item)))
             seal(item, now)
             item["status"] = "ready"
             state.setdefault("pending", []).append(item)

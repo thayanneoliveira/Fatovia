@@ -631,6 +631,240 @@
           "kind": "questions"
         }
       ]
+    },
+    {
+      "id": "camara:2658959",
+      "version": "312e525a513387",
+      "title": "PL 5932/2026",
+      "summary": "Altera a Lei nº 12.114, de 9 de dezembro de 2009, para incluir a prevenção, o monitoramento, o controle e o combate a incêndios florestais e queimadas, bem como a pesquisa, o desenvolvimento e a inovação tecnológica relacionados ao tema, entre as atividades passíveis de aplicação dos recursos do Fundo Nacional sobre Mudança do Clima.",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-23",
+      "anchors": [
+        "Fundo Nacional sobre Mudança do Clima",
+        "incêndios florestais e queimadas"
+      ],
+      "cards": [
+        {
+          "headline": "Queimadas: de onde pode vir o dinheiro para prevenção?",
+          "body": "O projeto propõe ampliar as atividades que podem receber recursos do Fundo Nacional sobre Mudança do Clima.",
+          "kind": "question"
+        },
+        {
+          "headline": "O que está sendo proposto?",
+          "body": "Incluir prevenção, monitoramento, controle e combate a incêndios florestais e queimadas, além de pesquisa, desenvolvimento e inovação tecnológica.",
+          "kind": "proposal"
+        },
+        {
+          "headline": "Onde entra a política?",
+          "body": "A proposta trata das regras de aplicação dos recursos do fundo, não de uma transferência já realizada.",
+          "kind": "mechanism"
+        },
+        {
+          "headline": "O que pode mudar?",
+          "body": "Se aprovada, a medida pode ampliar as atividades financiáveis pelo fundo. Isso não garante recursos efetivamente destinados.",
+          "kind": "conditional"
+        },
+        {
+          "headline": "O que acompanhar?",
+          "body": "Qual será o recurso disponível? Como serão escolhidas as ações e avaliados os resultados?",
+          "kind": "questions"
+        }
+      ]
+    },
+    {
+      "id": "camara:2659020",
+      "version": "0df9252ed4b520",
+      "title": "PL 5945/2026",
+      "summary": "Altera a Lei nº 9.503, de 23 de setembro de 1997 (Código de Trânsito Brasileiro), para tratar sobre o dever da Polícia Rodoviária Federal registrar e comunicar os defeitos e as condições de risco das rodovias e estradas federais aos responsáveis por sua conservação e aos governos federal e estadual.",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-23",
+      "anchors": [
+        "Polícia Rodoviária Federal",
+        "condições de risco das rodovias"
+      ],
+      "cards": [
+        {
+          "headline": "Quem deve avisar sobre os riscos nas rodovias federais?",
+          "body": "O projeto trata do dever da PRF de registrar e comunicar defeitos e condições de risco nas estradas federais.",
+          "kind": "question"
+        },
+        {
+          "headline": "O que está sendo proposto?",
+          "body": "Tratar do dever da Polícia Rodoviária Federal de registrar e comunicar defeitos e condições de risco.",
+          "kind": "proposal"
+        },
+        {
+          "headline": "Onde entra a política?",
+          "body": "A proposta prevê comunicação aos responsáveis pela conservação e aos governos federal e estadual.",
+          "kind": "mechanism"
+        },
+        {
+          "headline": "O que pode mudar?",
+          "body": "Se aprovada, a medida pode disciplinar a comunicação dos riscos. Comunicar não equivale a executar o reparo.",
+          "kind": "conditional"
+        },
+        {
+          "headline": "O que acompanhar?",
+          "body": "Quais seriam os prazos de comunicação? Quem faria os reparos e como acompanhar sua execução?",
+          "kind": "questions"
+        }
+      ]
+    },
+    {
+      "id": "camara:2659462",
+      "version": "b523d110082ee1",
+      "title": "PL 5961/2026",
+      "summary": "Altera a Lei nº 15.516, de 22 de setembro de 2026, para assegurar, nas unidades de saúde, acolhimento em sala reservada e informação sobre direitos às vítimas de violência psicológica, moral, patrimonial e de outras formas de violência diversas do estupro e da violência física.",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-25",
+      "anchors": [
+        "acolhimento em sala reservada",
+        "violência psicológica, moral, patrimonial"
+      ],
+      "cards": [
+        {
+          "headline": "Como poderia mudar o acolhimento de vítimas nas unidades de saúde?",
+          "body": "O projeto propõe assegurar acolhimento em sala reservada e informação sobre direitos a vítimas de outras formas de violência.",
+          "kind": "question"
+        },
+        {
+          "headline": "O que está sendo proposto?",
+          "body": "Assegurar acolhimento em sala reservada e informação sobre direitos a vítimas de outras formas de violência.",
+          "kind": "proposal"
+        },
+        {
+          "headline": "Onde entra a política?",
+          "body": "A ementa menciona violência psicológica, moral, patrimonial e outras formas diversas do estupro e da violência física.",
+          "kind": "mechanism"
+        },
+        {
+          "headline": "O que pode mudar?",
+          "body": "Se aprovada e implementada, a proposta pode ampliar as garantias de acolhimento previstas na legislação.",
+          "kind": "conditional"
+        },
+        {
+          "headline": "O que acompanhar?",
+          "body": "Como seriam organizados os espaços reservados? Que orientações seriam oferecidas e como verificar a implementação?",
+          "kind": "questions"
+        }
+      ]
+    },
+    {
+      "id": "camara:2659342",
+      "version": "32c9b9359dcd43",
+      "title": "PL 5960/2026",
+      "summary": "Institui a Política Nacional de Arborização Urbana, estabelece diretrizes para a compatibilização e o convívio seguro da vegetação com as redes de distribuição de energia elétrica, cria o Sistema Nacional de Informações sobre Arborização Urbana, e dá outras providências.",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-24",
+      "anchors": [
+        "Política Nacional de Arborização Urbana",
+        "redes de distribuição de energia elétrica"
+      ],
+      "cards": [
+        {
+          "headline": "Árvores e fios elétricos: quem organiza essa convivência?",
+          "body": "O projeto propõe instituir uma Política Nacional de Arborização Urbana.",
+          "kind": "question"
+        },
+        {
+          "headline": "O que está sendo proposto?",
+          "body": "Instituir uma Política Nacional de Arborização Urbana e estabelecer diretrizes de convivência segura com redes de distribuição elétrica.",
+          "kind": "proposal"
+        },
+        {
+          "headline": "Onde entra a política?",
+          "body": "A proposta também prevê a criação de um Sistema Nacional de Informações sobre Arborização Urbana.",
+          "kind": "mechanism"
+        },
+        {
+          "headline": "O que pode mudar?",
+          "body": "Se aprovada e implementada, a política pode oferecer diretrizes comuns de planejamento. Isso não comprova redução de interrupções.",
+          "kind": "conditional"
+        },
+        {
+          "headline": "O que acompanhar?",
+          "body": "Como seriam distribuídas as responsabilidades? Quais dados seriam coletados e como acompanhar a execução?",
+          "kind": "questions"
+        }
+      ]
+    },
+    {
+      "id": "camara:2660119",
+      "version": "1d2626b8ceaffc",
+      "title": "PL 5991/2026",
+      "summary": "Dispõe sobre medidas obrigatórias para o inventário, a preservação física e digital, a digitalização, a recuperação, o controle de qualidade, a indexação, a integração eletrônica e a pesquisa histórica dos acervos de guarda permanente do Registro Civil das Pessoas Naturais anteriores à vigência da Lei nº 6.015, de 31 de dezembro de 1973; institui o Programa Nacional de Preservação dos Acervos Históricos do Registro Civil das Pessoas Naturais; altera as Leis nº 6.015, de 31 de dezembro de 1973, nº 8.935, de 18 de novembro de 1994, nº 11.977, de 7 de julho de 2009, e nº 14.382, de 27 de junho de 2022; e dá outras providências.",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-26",
+      "anchors": [
+        "preservação física e digital",
+        "Registro Civil das Pessoas Naturais"
+      ],
+      "cards": [
+        {
+          "headline": "E se um registro civil antigo se perder?",
+          "body": "O projeto propõe preservar e digitalizar acervos históricos do Registro Civil das Pessoas Naturais anteriores à vigência da Lei 6.015/1973.",
+          "kind": "question"
+        },
+        {
+          "headline": "O que está sendo proposto?",
+          "body": "Estabelecer medidas de inventário, preservação, digitalização e recuperação desses registros e instituir um programa nacional.",
+          "kind": "proposal"
+        },
+        {
+          "headline": "Onde entra a política?",
+          "body": "A ementa inclui controle de qualidade, indexação, integração eletrônica e pesquisa histórica dos acervos.",
+          "kind": "mechanism"
+        },
+        {
+          "headline": "O que pode mudar?",
+          "body": "Se aprovada e implementada, a proposta pode facilitar a preservação e a pesquisa de registros antigos.",
+          "kind": "conditional"
+        },
+        {
+          "headline": "O que acompanhar?",
+          "body": "Quais seriam os prazos, custos e condições de consulta? Como verificar a execução do programa?",
+          "kind": "questions"
+        }
+      ]
+    },
+    {
+      "id": "camara:2660442",
+      "version": "61123c2d60c463",
+      "title": "PL 5997/2026",
+      "summary": "Dispõe sobre a proibição da divulgação, compartilhamento e impulsionamento de imagens e vídeos que exponham vítimas de violência física nas redes sociais e plataformas digitais, e estabelece medidas de proteção à dignidade humana.",
+      "stage": "Apresentação de Proposição",
+      "stage_date": "2026-11-27",
+      "anchors": [
+        "imagens e vídeos que exponham vítimas de violência física",
+        "medidas de proteção à dignidade humana"
+      ],
+      "cards": [
+        {
+          "headline": "Exposição de vítimas de violência nas redes: o que propõe o projeto?",
+          "body": "O projeto propõe proibir a divulgação, o compartilhamento e o impulsionamento de imagens e vídeos que exponham vítimas de violência física.",
+          "kind": "question"
+        },
+        {
+          "headline": "O que está sendo proposto?",
+          "body": "Proibir a divulgação, o compartilhamento e o impulsionamento de imagens e vídeos que exponham vítimas de violência física.",
+          "kind": "proposal"
+        },
+        {
+          "headline": "Onde entra a política?",
+          "body": "A ementa trata das redes sociais e plataformas digitais e prevê medidas de proteção à dignidade humana.",
+          "kind": "mechanism"
+        },
+        {
+          "headline": "O que pode mudar?",
+          "body": "Se aprovado, o texto pode estabelecer novas regras para essa exposição. A ementa não esclarece todas as exceções.",
+          "kind": "conditional"
+        },
+        {
+          "headline": "O que acompanhar?",
+          "body": "Quais seriam as exceções e responsabilidades? Como seriam definidos os procedimentos de aplicação?",
+          "kind": "questions"
+        }
+      ]
     }
   ]
 }
