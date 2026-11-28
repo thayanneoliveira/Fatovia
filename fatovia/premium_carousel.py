@@ -50,6 +50,42 @@ def block(draw,text,x,y,width,max_height,start,minimum,serif=False,bold=False,co
             return y
     raise ValueError("premium_text_overflow")
 
+def cover_art(d,item,y):
+    # A single contextual line illustration. Not a chart or documentary photograph.
+    if y>850: return
+    x=760; cy=980
+    col="#79916B"; gold=GOLD
+    ident=item["id"]
+    d.ellipse((x-105,cy-105,x+105,cy+105),outline="#385D49",width=3)
+    if ident=="camara:2653944":
+        d.ellipse((x-66,cy-59,x+66,cy+59),outline=gold,width=5)
+        d.text((x-30,cy-37),"R$",font=font(42,bold=True),fill=gold)
+    elif ident=="camara:2658959":
+        d.line([(x,cy+75),(x,cy-15),(x-35,cy-55),(x,cy-90),(x+35,cy-55),(x,cy-15)],fill=col,width=6)
+        d.arc((x-65,cy-55,x+65,cy+85),20,160,fill=gold,width=4)
+    elif ident=="camara:2659020":
+        d.line([(x-78,cy+80),(x-25,cy-80)],fill=col,width=6)
+        d.line([(x+78,cy+80),(x+25,cy-80)],fill=col,width=6)
+        for offset in (-50,0,50):
+            d.line((x,cy+offset-12,x,cy+offset+12),fill=gold,width=5)
+    elif ident=="camara:2659342":
+        d.line([(x-60,cy+75),(x-60,cy-25)],fill=col,width=6)
+        d.ellipse((x-100,cy-100,x-20,cy-12),outline=col,width=5)
+        d.line([(x+52,cy+75),(x+52,cy-76)],fill=gold,width=5)
+        d.line((x+5,cy-53,x+96,cy-53),fill=gold,width=5)
+        d.line((x-10,cy-25,x+100,cy-25),fill=gold,width=3)
+    elif ident=="camara:2660119":
+        d.rounded_rectangle((x-68,cy-82,x+68,cy+82),radius=8,outline=gold,width=5)
+        for offset in (-35,0,35):
+            d.line((x-40,cy+offset,x+40,cy+offset),fill=col,width=4)
+    elif ident in ("camara:2659462","camara:2660442"):
+        d.line([(x,cy-80),(x+68,cy-53),(x+58,cy+20),(x,cy+75),(x-58,cy+20),(x-68,cy-53),(x,cy-80)],fill=gold,width=5)
+        d.line([(x-25,cy),(x-5,cy+24),(x+30,cy-24)],fill=col,width=5)
+    else:
+        d.rounded_rectangle((x-66,cy-82,x+66,cy+82),radius=8,outline=gold,width=5)
+        d.line((x-35,cy-20,x+35,cy-20),fill=col,width=4)
+        d.line((x-35,cy+20,x+35,cy+20),fill=col,width=4)
+
 def card(path, number, headline, body, hint, item):
     if not 1<=number<=7: raise ValueError("card_number")
     im=Image.new("RGB",(1080,1350),"#103629")
@@ -82,6 +118,7 @@ def card(path, number, headline, body, hint, item):
         y=block(d,closing(item),141,y,865,150,34,30)
     else:
         y=block(d,body,66,y,944,1080-y,43,32)
+        if number==1: cover_art(d,item,y)
     if y>1115: raise ValueError("footer_overlap")
     block(d,"Fonte: Câmara dos Deputados | "+item["title"],66,1154,944,60,26,24,color=SAGE)
     d.text((66,1261),"@fato.via",font=font(32),fill=CREAM)
