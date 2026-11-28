@@ -17,3 +17,12 @@ jobs:
       - run: python -m pip install -r requirements.txt
       - run: python -m compileall -q fatovia
       - run: python -m unittest discover -s tests -v
+      - name: Renderizar prévias premium com marca aprovada
+        if: github.ref == 'refs/heads/feature/carousel-premium-20261128'
+        run: python -m fatovia.premium_preview
+      - uses: actions/upload-artifact@v4
+        if: github.ref == 'refs/heads/feature/carousel-premium-20261128'
+        with:
+          name: fatovia-premium-49-cards
+          path: premium-preview/
+          retention-days: 3
