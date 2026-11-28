@@ -13,6 +13,9 @@ def digest(value):
     return hashlib.sha256(json.dumps(value,ensure_ascii=False,sort_keys=True,separators=(",",":")).encode()).hexdigest()
 
 def build(item):
+    if str(item.get("id","")).startswith("civic:"):
+        from .civic import matrix
+        return matrix(item)
     if not source_ok(item):
         raise ValueError("source_identifier_mismatch")
     from .render import cards_for, editorial_hook
@@ -74,6 +77,10 @@ def build(item):
     add("card_05",cards[4][1],"scope_limitation",limit="Não atribui impacto, vigência ou financiamento.")
     add("card_06",cards[5][1],"open_questions",limit="Questões para acompanhamento, não afirmações comprovadas.")
     add("card_07",item["title"],"source_reference","title",item["title"],"Referência documental.")
+    from .premium_carousel import REVISION as PREMIUM, closing
+    if item.get("template_revision")==PREMIUM:
+        add("card_07",closing(item),"contextual_cta",limit="Convite não factual.")
+        add("caption",closing(item),"contextual_cta",limit="Convite não factual.")
     # Caption must be independently reconstructed and checked by editorial_audit.
     add("caption",item["title"],"document_identity","title",item["title"],"Identifica a proposição.")
     add("caption",item["stage_date"],"record_date","stage_date",item["stage_date"],"Data registrada na fonte.")

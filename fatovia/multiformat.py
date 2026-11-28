@@ -130,7 +130,7 @@ def owner_authorized(item, policy):
     if criteria.get("status") != "enabled_after_ci" or criteria.get("max_spend_brl") != 0 or criteria.get("daily_caps") != CAPS:
         return False
     if fmt == "carousel":
-        return criteria.get("carousel") is True and bool(re.fullmatch(r"camara:[0-9]+", item_id))
+        return criteria.get("carousel") is True and bool(re.fullmatch(r"(?:camara:[0-9]+|civic:(?:selic|ipca|emprego|energia))", item_id))
     return (criteria.get("reel") is True and criteria.get("v5_pipeline_homologated") is True
             and bool(re.fullmatch(r"reel:[a-z0-9_-]+", item_id)))
 

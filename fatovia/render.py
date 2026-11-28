@@ -137,6 +137,9 @@ def editorial_hook(item):
     return "O que está previsto nesta proposta?",[]
 
 def cards_for(item):
+    if str(item.get("id","")).startswith("civic:"):
+        from .civic import cards
+        return cards(item)
     row=reviewed(item)
     if row:
         labels=("O tema","O que propõe","Como entender","Impacto possível","Perguntas em aberto")
@@ -166,12 +169,11 @@ def cards_for(item):
 
 def render(item, root="docs/media", premium=False):
     from .premium_carousel import REVISION as PREMIUM, card as premium_card, closing
-    premium = premium or item.get("template_revision") == PREMIUM
-    row=reviewed(item)
+    civic=str(item.get("id","")).startswith("civic:")
+    premium = civic or premium or item.get("template_revision") == PREMIUM
+    row=reviewed(item) if not civic else None
     destination = Path(root) / item["id"].replace(":", "-") / item["version"]
-    if premium and not row:
-        raise ValueError("premium_requires_reviewed_narrative")
-    if row:
+    if premium or row:
         destination=destination/(PREMIUM if premium else REVISION)
     paths = []
     try:
@@ -189,6 +191,10 @@ def render(item, root="docs/media", premium=False):
     else:
         item.pop("brand_sha256",None)
     item["cards"] = paths
+    if civic:
+        from .civic import caption
+        item["caption"]=caption(item)
+        return item
     item["caption"] = (
         f'{editorial_hook(item)[0]}\n\n{item["title"]}\n\n'
         f'A ementa consta na Câmara e o registro de andamento tem data de {item["stage_date"]}. '
@@ -206,5 +212,7 @@ def render(item, root="docs/media", premium=False):
             +f'ID editorial: {item["id"]}/{item["version"]}/{REVISION}\n#FatoVia #PoliticasPublicas')
     if premium:
         item["caption"] = item["caption"].replace(f"/{REVISION}\n",f"/{PREMIUM}\n")
+        if not row:
+            item["caption"]=item["caption"].replace(f'ID editorial: {item["id"]}/{item["version"]}\n',f'ID editorial: {item["id"]}/{item["version"]}/{PREMIUM}\n')
         item["caption"] += "\n\nSalve este post para acompanhar a tramitação. "+closing(item)
     return item

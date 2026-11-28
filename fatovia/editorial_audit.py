@@ -26,7 +26,7 @@ def sha(data):
 def paths_for(item):
     ident=item["id"].replace(":","-")
     version=item["version"]
-    if not re.fullmatch(r"camara-[0-9]+",ident) or not re.fullmatch(r"[0-9a-f]{14}",version):
+    if not re.fullmatch(r"(?:camara-[0-9]+|civic-(?:selic|ipca|emprego|energia))",ident) or not re.fullmatch(r"[0-9a-f]{14}",version):
         raise ValueError("invalid_path_identity")
     from .didactic import REVISION
     from .premium_carousel import REVISION as PREMIUM

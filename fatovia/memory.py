@@ -20,5 +20,8 @@ def overlap(a,b):
 def duplicate(a,b):
     if a.get("id")==b.get("id") and a.get("version")==b.get("version"):
         return True
+    # Repeated observations are identified by period/value, not by identical explanatory prose.
+    if str(a.get("id","")).startswith("civic:") or str(b.get("id","")).startswith("civic:"):
+        return False
     h=a.get("summary_hash")
     return bool(h and h==b.get("summary_hash")) or overlap(a,b)>=0.82
