@@ -3,6 +3,7 @@ from datetime import datetime
 from pathlib import Path
 from PIL import Image
 from fatovia.didactic import reviewed,MANIFEST
+from fatovia.engine import classify,digest
 from fatovia.render import render
 from fatovia.evidence import seal
 from fatovia.editorial_audit import review,approved,POLICY
@@ -22,7 +23,7 @@ class PremiumTests(unittest.TestCase):
                     row=next(r for r in rows if (r["id"],r["version"])==(draft["id"],draft["version"]))
                     item={k:row[k] for k in ("id","version","title","summary","stage","stage_date")}
                     ident=item["id"].split(":")[1]
-                    item.update(source_url="https://dadosabertos.camara.leg.br/api/v2/proposicoes/"+ident,public_url="https://www.camara.leg.br/propostas-legislativas/"+ident,status="ready")
+                    item.update(topics=classify(item["summary"]),summary_hash=digest(item["summary"].casefold()),source_url="https://dadosabertos.camara.leg.br/api/v2/proposicoes/"+ident,public_url="https://www.camara.leg.br/propostas-legislativas/"+ident,status="ready")
                     self.assertIsNotNone(reviewed(item))
                     render(item,premium=True)
                     now=datetime.fromisoformat("2026-11-28T12:00:00-03:00")
